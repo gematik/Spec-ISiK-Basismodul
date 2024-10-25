@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKAbrechnungsfall",
   "url": "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKAbrechnungsfall",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "name": "ISiKAbrechnungsfall",
   "status": "active",
   "experimental": false,
-  "date": "2024-04-30",
+  "date": "2024-10-25",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil beschreibt die Gruppierung von medizinischen Leistungen in ISiK-Szenarien",
   "fhirVersion": "4.0.1",
@@ -17,11 +17,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Account.id",
-        "path": "Account.id",
-        "mustSupport": true
-      },
       {
         "id": "Account.extension",
         "path": "Account.extension",
@@ -138,7 +133,6 @@
       {
         "id": "Account.coverage.extension",
         "path": "Account.coverage.extension",
-        "min": 1,
         "max": "1",
         "mustSupport": true
       },
@@ -146,7 +140,7 @@
         "id": "Account.coverage.extension:Abrechnungsart",
         "path": "Account.coverage.extension",
         "sliceName": "Abrechnungsart",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {

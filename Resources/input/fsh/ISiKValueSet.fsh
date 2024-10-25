@@ -3,7 +3,6 @@ Parent: ValueSet
 Id: ISiKValueSet
 Description: "Dieses Profil beschreibt die maschinenlesbare Auswahl von Codes für die Kodierung spezifischer FHIR-Elemente in ISiK-Szenarien"
 * insert Meta
-* id 1.. MS
 * url 1.. MS
 * version 1.. MS
 * name 1.. MS

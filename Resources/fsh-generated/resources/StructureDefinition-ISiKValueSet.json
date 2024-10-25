@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKValueSet",
   "url": "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKValueSet",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "name": "ISiKValueSet",
   "status": "active",
   "experimental": false,
-  "date": "2024-04-30",
+  "date": "2024-10-25",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil beschreibt die maschinenlesbare Auswahl von Codes für die Kodierung spezifischer FHIR-Elemente in ISiK-Szenarien",
   "fhirVersion": "4.0.1",
@@ -17,12 +17,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "ValueSet.id",
-        "path": "ValueSet.id",
-        "min": 1,
-        "mustSupport": true
-      },
       {
         "id": "ValueSet.url",
         "path": "ValueSet.url",

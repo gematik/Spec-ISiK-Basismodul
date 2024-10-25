@@ -3,11 +3,11 @@
   "id": "Encounter-end-date",
   "url": "https://gematik.de/fhir/isik/v3/Basismodul/SearchParameter/Encounter-end-date",
   "description": "The actual end date of the Encounter (Backport from R5). The parameter cannot repeat or have multiple values.",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "status": "active",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-04-30",
+  "date": "2024-10-25",
   "name": "end-date",
   "code": "end-date",
   "base": [
