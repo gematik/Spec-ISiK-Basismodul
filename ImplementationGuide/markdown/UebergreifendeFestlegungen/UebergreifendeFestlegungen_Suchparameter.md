@@ -152,7 +152,7 @@ Für Suchparameter KÖNNEN die Festlegungen für `_revinclude` implementiert wer
 
     - Beispiele: ``GET [base]/Patient?_revinclude=Encounter:subject``
     - Anwendungshinweise: Weitere Informationen zur Suche nach "_revinclude" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Including other resources in result"](https://www.hl7.org/fhir/R4/search.html#revinclude).
-    - Alle Referenzen für die ein Chaining unterstützt wird MUSS auch der _revinclude-Parameter implementiert werden. Alle unterstützten Revinclude-Referenzen MÜSSEN im CapabilityStatement unter ```CapabilityStatement.rest.resource.searchRevInclude``` angegeben werden. Siehe {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}}.
+    - Alle unterstützten Revinclude-Referenzen MÜSSEN im CapabilityStatement unter ```CapabilityStatement.rest.resource.searchRevInclude``` angegeben werden. Siehe {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}}.
 
 Im Kontext dieser Spezifikation (einschließlich weitere ISIK Module) werden - wo notwendig - weitere Festlegungen für [Chaining](https://hl7.org/fhir/R4/search.html#chaining) und [Reverse Chaining](https://hl7.org/fhir/R4/search.html#has) getroffen.
 
