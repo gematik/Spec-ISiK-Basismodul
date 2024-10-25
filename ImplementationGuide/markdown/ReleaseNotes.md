@@ -9,6 +9,7 @@ Version: 3.0.6
 Datum: t.b.d
 
 * Lockerung der Anforderung für MS-Definition und Suchparameter zu Condition.clinicalStatus (entspricht Änderungen in 4.0.0-rc3 und 2.0.7) https://github.com/gematik/spec-ISiK-Basismodul/pull/428
+* Anpassung der Kardinalität für Account.coverage.extension:Abrechnungsart https://github.com/gematik/spec-ISiK-Basismodul/pull/464
 
 ----
 
