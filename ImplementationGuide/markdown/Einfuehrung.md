@@ -1,9 +1,9 @@
 <img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Basismodul/main-isik-stufe-3/Material/images/Gematik_Logo_Flag.svg" alt="gematik logo" width="400"/>
 
 ----
-Version: 3.0.5
+Version: 3.0.6
 
-Datum: 30.04.2024
+Datum: 25.10.2024
 
 Status: Aktiv
 
