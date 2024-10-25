@@ -5,10 +5,10 @@
   "id": "ISiKAccountType",
   "title": "ISiKAccountType",
   "url": "https://gematik.de/fhir/isik/v3/Basismodul/ValueSet/ISiKAccountType",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-04-30",
+  "date": "2024-10-25",
   "compose": {
     "include": [
       {
