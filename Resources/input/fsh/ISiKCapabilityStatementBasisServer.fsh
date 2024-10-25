@@ -190,21 +190,21 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend." 
 
     * searchRevInclude[+] = "Composition:patient"
-      * insert Expectation (#SHALL)
+      * insert Expectation (#MAY)
     * searchRevInclude[+] = "Composition:subject"
       * insert Expectation (#MAY)
     * searchRevInclude[+] = "Composition:author"
       * insert Expectation (#MAY)
     * searchRevInclude[+] = "Condition:patient"
-      * insert Expectation (#SHALL)
+      * insert Expectation (#MAY)
     * searchRevInclude[+] = "Condition:subject"
       * insert Expectation (#MAY)
     * searchRevInclude[+] = "Procedure:patient"
-      * insert Expectation (#SHALL)
+      * insert Expectation (#MAY)
     * searchRevInclude[+] = "Procedure:subject"
       * insert Expectation (#MAY)
     * searchRevInclude[+] = "Encounter:patient"
-      * insert Expectation (#SHALL)
+      * insert Expectation (#MAY)
     * searchRevInclude[+] = "Encounter:subject"
       * insert Expectation (#MAY)
     * searchRevInclude[+] = "Coverage:beneficiary"
@@ -212,17 +212,17 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
     * searchRevInclude[+] = "Coverage:subscriber"
       * insert Expectation (#MAY)
     * searchRevInclude[+] = "Coverage:patient"
-      * insert Expectation (#SHALL)
+      * insert Expectation (#MAY)
     * searchRevInclude[+] = "Coverage:payor"
       * insert Expectation (#MAY)
     * searchRevInclude[+] = "Account:subject"
       * insert Expectation (#MAY)
     * searchRevInclude[+] = "Account:patient"
-      * insert Expectation (#SHALL)
+      * insert Expectation (#MAY)
     * searchRevInclude[+] = "AllergyIntolerance:patient"
-      * insert Expectation (#SHALL)
+      * insert Expectation (#MAY)
     * searchRevInclude[+] = "Observation:patient"
-      * insert Expectation (#SHALL)
+      * insert Expectation (#MAY)
 
   * resource[+]
     * type = #Encounter
@@ -380,11 +380,11 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
     * searchRevInclude = "Encounter:part-of"
       * insert Expectation(#MAY)
     * searchRevInclude[+] = "Condition:encounter"
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
     * searchRevInclude[+] = "Composition:encounter"
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
     * searchRevInclude[+] = "Procedure:encounter"
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
 
   * resource[+]
     * type = #Account
