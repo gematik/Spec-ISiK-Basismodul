@@ -40,7 +40,7 @@ Begründung: Die Abfragemöglichkeit mittels Präfix arbeitet ungewollten Massen
 ```[base]/Encounter?date=eq2024-01-01&patient=Patient/Test``` <br>
 Suche nach allen Kontakten mit einem Datum am 2024-01-01 für den Patienten "Test".
 
-```[base]/Condition?recorded-date=eq2024-01-01&patient=Patient/Test``` <br>
+```[base]/Condition?recorded-date=ge2024-01-01&recorded-date=lt2024-02-01&patient=Patient/Test``` <br>
 Suche nach allen Diagnosen mit einem Dokumentationsdatum von 2024-01-01T00:00 bis (aber nicht einschließlich) 2024-01-02T00:00 im Patientenkontext "Test".
 
 Es ist zu beachten, dass jedes Datum einen impliziten Werte-Bereich besitzt. Siehe https://hl7.org/fhir/R4/search.html#date.
