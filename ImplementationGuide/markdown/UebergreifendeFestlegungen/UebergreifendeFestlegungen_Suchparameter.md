@@ -146,6 +146,9 @@ Folgende Suchparameter MÜSSEN verpflichtend für Suchparameter implementiert we
     - Anwendungshinweise: Weitere Informationen zur Suche nach "_include" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Including other resources in result"](https://www.hl7.org/fhir/R4/search.html#revinclude).
     - Für alle Referenzen, für die ein Chaining unterstützt wird, MUSS auch der _include-Parameter implementiert werden. Alle unterstützten Include-Referenzen MÜSSEN im CapabilityStatement unter ```CapabilityStatement.rest.resource.searchInclude``` angegeben werden. Siehe {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}}.
 
+
+Für Suchparameter KÖNNEN die Festlegungen für `_revinclude` implementiert werden.
+
 * ``_revinclude``
 
     - Beispiele: ``GET [base]/Patient?_revinclude=Encounter:subject``
