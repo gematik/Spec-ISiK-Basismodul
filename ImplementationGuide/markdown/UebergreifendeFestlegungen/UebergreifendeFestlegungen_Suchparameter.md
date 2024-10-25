@@ -134,7 +134,7 @@ Für Suchparameter KÖNNEN die Festlegungen für [Reverse Chaining](https://hl7.
 
 * ``Reverse Chaining``
 
-    - Beispiel für Reverse Chaining mit Referenz auf einen Patienten aus einem Observation-Kontext:GET [base]/Patient?_has:Observation:patient:code=1234-5
+    - Beispiel für Reverse Chaining mit Referenz auf einen Patienten aus einem Observation-Kontext: ```GET [base]/Patient?_has:Observation:patient:code=1234-5``` <br>
     - Hinweis: Diese Form der Suchanfrage dient im Wesentlichen dem Auffinden von Patienten (z.B. unter Angabe einer besonderen Diagnose, Beobachtung, Prozedur etc.) oder Fallkontakten (z.B. zum Ermitteln des Kontextes einer Prozedur)
 
 Folgende Suchparameter MÜSSEN verpflichtend für Suchparameter implementiert werden, für die auch Chaining erforderlich ist ('patient' und 'encounter'):
