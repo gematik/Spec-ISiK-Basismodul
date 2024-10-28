@@ -41,7 +41,7 @@ Begründung: Die Abfragemöglichkeit mittels Präfix arbeitet ungewollten Massen
 Suche nach allen Kontakten mit einem Datum am 2024-01-01 für den Patienten "Test".
 
 ```[base]/Condition?recorded-date=ge2024-01-01&recorded-date=lt2024-02-01&patient=Patient/Test``` <br>
-Suche nach allen Diagnosen mit einem Dokumentationsdatum Im Zeitraum Januar 2024 (von 2024-01-01 bis (aber nicht einschließlich) 2024-02-01 im Patientenkontext "Test"..
+Suche nach allen Diagnosen mit einem Dokumentationsdatum im Zeitraum Januar 2024 (von 2024-01-01 bis - aber nicht einschließlich - 2024-02-01) im Patientenkontext "Test".
 
 Es ist zu beachten, dass jedes Datum einen impliziten Werte-Bereich besitzt. Siehe https://hl7.org/fhir/R4/search.html#date.
 
@@ -123,7 +123,7 @@ Die aufgelisteten Suchparameter MÜSSEN entsprechend der Vorgaben für das Capab
 
 ## Verkettete Suchparameter (Fokus auf Patient und Encounter)
 
-Für Suchparameter namens 'patient' und 'encounter' MÜSSEN die Festlegungen für [Chaining](https://hl7.org/fhir/R4/search.html#chaining) verpflichtend implementiert werden.
+Für Suchparameter namens 'patient' und 'encounter' MÜSSEN die Festlegungen für [Chaining](https://hl7.org/fhir/R4/search.html#chaining) verpflichtend implementiert werden. Eine Verkettung über die Chaining-Parameter (Multi-Chaining) KANN implementiert werden.
 
 * ``Chaining``
 
