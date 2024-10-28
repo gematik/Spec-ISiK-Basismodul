@@ -8,6 +8,7 @@ Version: 3.0.6
 
 Datum: t.b.d
 
+* Schwächung der Anforderungen für Suchparameter https://github.com/gematik/spec-ISiK-Basismodul/pull/456
 * Lockerung der Anforderung für MS-Definition und Suchparameter zu Condition.clinicalStatus (entspricht Änderungen in 4.0.0-rc3 und 2.0.7) https://github.com/gematik/spec-ISiK-Basismodul/pull/428
 * Entfernen der MS-Flag für .id, da irreführend (entspricht Änderungen in 4.0.0) https://github.com/gematik/spec-ISiK-Basismodul/pull/468
 * Anpassung der Kardinalität für Account.coverage.extension:Abrechnungsart https://github.com/gematik/spec-ISiK-Basismodul/pull/464
