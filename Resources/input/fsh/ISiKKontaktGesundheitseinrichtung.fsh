@@ -257,16 +257,21 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * admitSource 0..1 MS
   * admitSource from AufnahmeanlassVS (extensible)
     * ^short = "Aufnahmeanlass"
-    * ^comment = "Anlass der stationären Aufnahme, z.B. &quot;Einweisung&quot;, &quot;Notfall&quot; etc."
+    * ^comment = "Anlass der stationären Aufnahme, z.B. &quot;Einweisung&quot;, &quot;Notfall&quot; etc.  
+      Begründung MS: Zur Harmonisierung den Festlegungen der Medizininformatik-Initiative"
   * dischargeDisposition MS
     * ^short = "Entlassungsart bzw. -grund"
     * extension contains ExtenstionEntlassungsgrund named Entlassungsgrund 0..1 MS and ExtensionISiKRehaEntlassung named RehaEntlassung 0..1 MS
     * extension[Entlassungsgrund]
       * ^short = "Entlassungsgrund"
-      * ^comment = "Entlassungsgrund nach § 301 Abs. 3 SGB V"
+      * ^comment = "Entlassungsgrund nach § 301 Abs. 3 SGB V  
+        **Einschränkung MS:** Der Entlassungsgrund muss nur implementiert werden,
+         wenn das bestätigungsrelevante System in der Akutversorgung eingesetzt wird."
     * extension[RehaEntlassung]
       * ^short = "Entlassungsgrund Reha"
-      * ^comment = "Entlassungsgrund nach §301 (Abs. 4 und 4a) SGB V"
+      * ^comment = "Entlassungsgrund nach §301 (Abs. 4 und 4a) SGB V  
+      **Einschränkung MS:** Der Entlassungsgrund Reha muss nur implementiert werden,
+        wenn das bestätigungsrelevante System in der Reha-Versorgung eingesetzt wird"
   * extension contains $WahlleistungExtension named Wahlleistung 0.. MS
   * extension[Wahlleistung]
     * ^short = "Wahlleistung"
