@@ -72,8 +72,8 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, 
   beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben."
 
-* type 1.. MS
-* type from ISiKAccountType (required)
+//* type 1.. MS
+//* type from ISiKAccountType (required)
 
 * subject only Reference(Patient)
 * subject 1..1 MS

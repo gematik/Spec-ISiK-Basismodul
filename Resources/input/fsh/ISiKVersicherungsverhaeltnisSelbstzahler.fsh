@@ -54,12 +54,25 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^short = "Patienten-Link"
     * ^comment = "Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten 
     und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc."  
+
 * payor only Reference(Patient or RelatedPerson or Organization)
 * payor MS
   * ^short = "Kostenträger"
   * ^comment = "Der Kostenträger in einem Selbstzahlerverhältnis kann der Patient selbst sein, ein Angehöriger (z.B. Elter) oder eine Organisation (z.B. Botschaft/Amt).
   **Hinweis:** In der Regel sind `payor`und `subscriber` bei Selbstzahlerverhältnissen identisch (die Person , die die Kostenübernahme unterschreibt/zusichert, übernimmt auch die Kosten).
   Es kann jedoch Ausnahmen geben, z.B. der Kostenträger ist eine Organisation, die Kostenübernahme wird jedoch durch eine Person (Vertreter der Organisation) unterzeichnet."
+  * reference MS
+    * ^short = "Personen-Link"
+    * ^comment = "Ist der Kostenträger eine Person (entweder der Patient selbst oder ein Angehöriger), dann MUSS ein Link auf `Patient`, bzw. `RelatedPerson` angegeben werden.  
+    Ist der Kostenträger eine Organisation, dann KANN ein Link auf `Organization` angegeben werden.  
+    Die Verlinkung dient der technischen Zuordnung der Dokumentation zu einer Person 
+    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc."  
+  * display MS
+    * ^short = "Organisations-Bezeichnung"
+    * ^comment = "Ist der Kostenträger eine Organisation und wurde kein Link auf eine `Organization`-Ressource angegeben,
+     dann MUSS die Bezeichnung der Organisation angegeben werden."  
+  
+
 
 Instance: CoveragePrivat
 InstanceOf: ISiKVersicherungsverhaeltnisSelbstzahler

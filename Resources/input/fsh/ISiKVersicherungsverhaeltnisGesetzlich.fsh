@@ -52,10 +52,10 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
 
   **Hinweis:** Die Angabe der VersichertenID des Hauptversicherten in `subscriber.identifier` ist verpflichtend. 
   Weitere Angaben zum Versicherten (Name, Adresse) können in einer `RelatedPerson`-Resource hinterlegt werden, auf die hier referenziert wird."
-  * reference MS
+  * reference 1.. MS
     * ^comment = "Die Verlinkung auf eine Patienten- oder RelatedPerson-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten/Angehörigen 
     und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc."
-  * identifier 1.. MS // Das MS Flag dient der Übernahme von 'identifier' aus der Patienten-Instanz.
+ /*  * identifier 1.. MS // Das MS Flag dient der Übernahme von 'identifier' aus der Patienten-Instanz.
   * identifier only IdentifierKvid10
     * ^short = "Lebenslange Krankenversichertennummer der Hauptversicherten"
     * ^comment = "Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, 
@@ -75,7 +75,8 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^short = "Name des Hauptversicherten"
     * ^comment = "**Begründung MS:** Da das die Versichertennummer nicht zur Darstellung für den Anwender geeignet ist, 
     sollte ergänzend der Name des Versicherten angegeben werden."
-* beneficiary MS
+ */
+  * beneficiary MS
   * ^short = "Versicherte Person"
   * ^comment = "Hier handelt es ich konkret um den Patienten, der unter diesem Versicherungsverhältnis behandelt wird."
   * reference 1.. MS
@@ -93,9 +94,9 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * identifier only IdentifierIknr
     * ^short = "Institutskennzeichern der Versicherung"
     * ^comment = "**Begründung Pflichtfeld:** Als eindeutiger Identifikator der Versicherung ist in vielen Fällen das Institutskennzeichen ausreichend."
-  * identifier MS
+  * identifier 1.. MS
     //* type 1.. MS ...wieso Pflichtfeld!?
-    * system MS
+    * system 1.. MS
       * ^short = "Namensraum der IK-Nummer"
       * ^comment = "Hier ist stets der Wert `http://fhir.de/sid/arge-ik/iknr` anzugeben.  
       **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher."
