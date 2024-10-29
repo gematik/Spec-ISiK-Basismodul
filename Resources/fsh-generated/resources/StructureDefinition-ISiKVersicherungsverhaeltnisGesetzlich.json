@@ -6,7 +6,7 @@
   "name": "ISiKVersicherungsverhaeltnisGesetzlich",
   "status": "active",
   "experimental": false,
-  "date": "2024-10-21",
+  "date": "2024-10-29",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Darstellung eines gesetzlichen Versicherungsverhältnisses in ISiK Szenarien.  \r\n### Motivation\r\nISiK unterstützt Anwendungsszenarien, in denen durch das Krankenhaus erbrachte Leistungen erfasst oder gegenüber Kostenträgern abgerechnet werden.\r\nIn diesen Anwendungsszenarien wird das Versicherungsverhältnis verwendet, um bspw. den Versicherungsstatus oder die Rechnungsanschrift der Versicherung zu ermitteln.  \r\nIn FHIR werden Versicherungsverhältnisse mit der Coverage-Ressource repräsentiert.\r\n\r\n### Kompatibilität\r\nDas Profil ISiKVersicherungsverhaeltnisGesetzlich basiert auf dem [GKV-Profil der deutschen Basisprofile](http://fhir.de/StructureDefinition/coverage-de-basis). \r\nInstanzen, die gegen ISiKVersicherungsverhaeltnisGesetzlich valide sind, sind auch valide gegen\r\n\r\n* [GKV-Profil der deutschen Basisprofile](http://fhir.de/StructureDefinition/coverage-de-basis)\r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
@@ -85,43 +85,7 @@
         "id": "Coverage.subscriber.reference",
         "path": "Coverage.subscriber.reference",
         "comment": "Die Verlinkung auf eine Patienten- oder RelatedPerson-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten/Angehörigen \r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
-        "mustSupport": true
-      },
-      {
-        "id": "Coverage.subscriber.identifier",
-        "path": "Coverage.subscriber.identifier",
-        "short": "Lebenslange Krankenversichertennummer der Hauptversicherten",
-        "comment": "Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, \r\n      unveränderbare Teil der Versichertennummer, \r\n      der lesbar auf die Elektronische Gesundheitskarte aufgedruckt ist.\r\n      Er gilt für alle Krankenversichertennummern, \r\n      unabhängig davon, ob es sich um GKV, PKV oder Sonderkostenträger handelt.  \r\n      **Weitere Hinweise:** siehe [Deutschen Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-LebenslangeKrankenversichertennummer10-stelligeKVID-Identifier?version=current)",
         "min": 1,
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Coverage.subscriber.identifier.system",
-        "path": "Coverage.subscriber.identifier.system",
-        "short": "Namensraum der Versichertennummer",
-        "comment": "Hier ist stets der Wert `http://fhir.de/sid/gkv/kvid-10` anzugeben.  \r\n      **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
-        "mustSupport": true
-      },
-      {
-        "id": "Coverage.subscriber.identifier.value",
-        "path": "Coverage.subscriber.identifier.value",
-        "short": "Lebenslange Krankenversichertennummer",
-        "comment": "Der 10-stellige, unveränderbare Teil der Versichertennummer.",
-        "mustSupport": true
-      },
-      {
-        "id": "Coverage.subscriber.display",
-        "path": "Coverage.subscriber.display",
-        "short": "Name des Hauptversicherten",
-        "comment": "**Begründung MS:** Da das die Versichertennummer nicht zur Darstellung für den Anwender geeignet ist, \r\n    sollte ergänzend der Name des Versicherten angegeben werden.",
         "mustSupport": true
       },
       {
@@ -160,6 +124,7 @@
         "path": "Coverage.payor.identifier",
         "short": "Institutskennzeichern der Versicherung",
         "comment": "**Begründung Pflichtfeld:** Als eindeutiger Identifikator der Versicherung ist in vielen Fällen das Institutskennzeichen ausreichend.",
+        "min": 1,
         "type": [
           {
             "code": "Identifier",

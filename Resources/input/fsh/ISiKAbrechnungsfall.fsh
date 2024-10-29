@@ -27,6 +27,8 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * ^comment = "Insbesondere bei Abrechnungen im DRG-Kontext muss eine Diagnose als Hauptdiagnose und 
   ggf. weitere Diagnosen als abrechnungsrelevante Nebendiagnosen klassifiziert werden. Diese Extension ermöglicht es, diese Qualifikation im Abrechnungskontext vorzunehmen, 
   unabhängig von der *medizinischen* Relevanz, die in `Encounter.diagnosis` erfolgt."
+  * extension[Use] 1..1 MS
+  * extension[Referenz] 1..1 MS
 * identifier 1.. MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"

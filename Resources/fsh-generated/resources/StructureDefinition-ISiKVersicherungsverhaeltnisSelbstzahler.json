@@ -6,7 +6,7 @@
   "name": "ISiKVersicherungsverhaeltnisSelbstzahler",
   "status": "active",
   "experimental": false,
-  "date": "2024-10-21",
+  "date": "2024-10-29",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Darstellung eines gesetzlichen Versicherungsverhältnisses in ISiK Szenarien.  \r\n### Motivation\r\nISiK unterstützt Anwendungsszenarien, in denen durch das Krankenhaus erbrachte Leistungen erfasst oder gegenüber Kostenträgern abgerechnet werden.\r\nIn diesen Anwendungsszenarien wird das Versicherungsverhältnis verwendet, um bspw. den Versicherungsstatus oder die Rechnungsanschrift der Versicherung zu ermitteln.  \r\nIn FHIR werden Versicherungsverhältnisse mit der Coverage-Ressource repräsentiert.\r\n\r\n### Kompatibilität\r\nDas Profil ISiKVersicherungsverhaeltnisSelbstzahler basiert auf dem [Selbstzahler-Profil der deutschen Basisprofile](https://fhir.de/StructureDefinition/coverage-de-sel). \r\nInstanzen, die gegen ISiKVersicherungsverhaeltnisSelbstzahler valide sind, sind auch valide gegen\r\n\r\n* [Selbstzahler-Profil der deutschen Basisprofile](https://fhir.de/StructureDefinition/coverage-de-sel)\r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
@@ -81,6 +81,20 @@
             ]
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Coverage.payor.reference",
+        "path": "Coverage.payor.reference",
+        "short": "Personen-Link",
+        "comment": "Ist der Kostenträger eine Person (entweder der Patient selbst oder ein Angehöriger), dann MUSS ein Link auf `Patient`, bzw. `RelatedPerson` angegeben werden.  \r\n    Ist der Kostenträger eine Organisation, dann KANN ein Link auf `Organization` angegeben werden.  \r\n    Die Verlinkung dient der technischen Zuordnung der Dokumentation zu einer Person \r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "mustSupport": true
+      },
+      {
+        "id": "Coverage.payor.display",
+        "path": "Coverage.payor.display",
+        "short": "Organisations-Bezeichnung",
+        "comment": "Ist der Kostenträger eine Organisation und wurde kein Link auf eine `Organization`-Ressource angegeben,\r\n     dann MUSS die Bezeichnung der Organisation angegeben werden.",
         "mustSupport": true
       }
     ]

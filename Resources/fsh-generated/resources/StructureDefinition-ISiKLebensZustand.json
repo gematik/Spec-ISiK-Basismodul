@@ -7,7 +7,7 @@
   "title": "ISiKLebensZustand",
   "status": "active",
   "experimental": false,
-  "date": "2024-10-21",
+  "date": "2024-10-29",
   "publisher": "gematik GmbH",
   "description": "Basisprofil für ISiKLebensZustand Observation",
   "fhirVersion": "4.0.1",

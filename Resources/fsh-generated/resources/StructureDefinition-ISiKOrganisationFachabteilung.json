@@ -6,7 +6,7 @@
   "name": "ISiKOrganisationFachabteilung",
   "status": "active",
   "experimental": false,
-  "date": "2024-10-21",
+  "date": "2024-10-29",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil beschreibt die Organisationseinheit Fachabteilung innerhalb eines Krankenhauses.",
   "fhirVersion": "4.0.1",

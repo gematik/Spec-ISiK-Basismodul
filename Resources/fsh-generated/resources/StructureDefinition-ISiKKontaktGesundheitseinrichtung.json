@@ -6,7 +6,7 @@
   "name": "ISiKKontaktGesundheitseinrichtung",
   "status": "active",
   "experimental": false,
-  "date": "2024-10-21",
+  "date": "2024-10-29",
   "publisher": "gematik GmbH",
   "description": "\r\nDieses Profil ermöglicht die Abbildung von Besuchen/Aufenthalten eines Patienten in einer Gesundheitseinrichtung.\r\n### Motivation\r\nInformationen über die Besuche des Patienten entlang seines \r\nBehandlungspfades im Krankenhaus sind ein wichtiger Bestandteil \r\ndes einrichtungsinternen Datenaustausches. \r\nSie ermöglichen die Unterscheidung von stationären und ambulanten \r\nsowie aufgenommenen und entlassenen Patienten. \r\nWeiterhin ist aus den Besuchsinformationen der aktuelle Aufenthaltsort \r\ndes Patienten (Fachabteilung, Station, Bettplatz) ermittelbar. \r\nKlinische Ressourcen werden in FHIR durch Verlinkung auf die \r\nEncounter-Ressource in einen Kontext zum Besuch gestellt. \r\nDieser Kontext ist wichtig für die Steuerung von Zugriffsberechtigungen \r\nund Abrechnungsprozessen.  \r\n\r\nZu Beginn der meisten klinischen Workflows steht die Auswahl \r\ndes Besuchskontextes. \r\nDies geschieht bspw. durch das Suchen der Encounter-Ressource \r\nanhand von Eigenschaften wie Aufnahmenummer, Fallart oder Aufnahmedatum. \r\nDaraufhin werden die zutreffenden Suchergebnisse angezeigt \r\nund der gewünschte Besuch ausgewählt.\r\n\r\nIn FHIR werden Besuche, Aufenthalte, aber auch virtuelle Kontakte mit der `Encounter`-Ressource repräsentiert.\r\n\r\n### Kompatibilität\r\nFür das Profil ISiKKontaktGesundheitseinrichtung wird eine Kompatibilität \r\nmit folgenden Profilen angestrebt; \r\nallerdings kann nicht sichergestellt werden, dass Instanzen, \r\ndie gegen ISiKKontaktGesundheitseinrichtung valide sind, \r\nauch valide sind gegen:\r\n\r\n* Profil [Kontakt mit einer Gesundheitseinrichtung \r\nder Medizininformatik-Initiative](https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung)\r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
@@ -474,8 +474,7 @@
         "id": "Encounter.diagnosis",
         "path": "Encounter.diagnosis",
         "short": "Falldiagnosen/-prozeduren",
-        "comment": "Verweis auf Diagnosen/Prozeduren, die eine besondere Rolle im Kontext eines Encounters einnehmen, z.B. &quot;Aufnahmediagnose&quot;   \r\n  **WICHTIGER Hinweis für Implementierer:**   Der Fallbezug von Diagnosen und Prozeduren wird über das jeweilige `encounter`-Element \r\n  der Condition bzw. Procedure-Ressource hinreichend etabliert.  Die *zusätzliche* Rückverlinkung von `Encounter.diagnosis` auf Condition/Procedure wird *nur dann* verwendet, \r\n  wenn einer Diagnose bzw. Prozedur *im Kontext eines Aufenthaltes* eine besondere Rolle zugewiesen werden soll, z.B. Haupt-/Neben-/Aufnahme- oder Überweisungsdiagnose).  \r\n  Hier werden Diagnosen und Prozeduren nur nach ihrer *medizinschen* Relevanz bezüglich eines Aufenthaltes qualifiziert. \r\n  Die Qualifikation von Diagnosen und Prozeduren im Kontext der *Abrechnung* erfolgt in der `Account`-Ressource!",
-        "mustSupport": true
+        "comment": "Verweis auf Diagnosen/Prozeduren, die eine besondere Rolle im Kontext eines Encounters einnehmen, z.B. &quot;Aufnahmediagnose&quot;   \r\n  **WICHTIGER Hinweis für Implementierer:**   Der Fallbezug von Diagnosen und Prozeduren wird über das jeweilige `encounter`-Element \r\n  der Condition bzw. Procedure-Ressource hinreichend etabliert.  Die *zusätzliche* Rückverlinkung von `Encounter.diagnosis` auf Condition/Procedure wird *nur dann* verwendet, \r\n  wenn einer Diagnose bzw. Prozedur *im Kontext eines Aufenthaltes* eine besondere Rolle zugewiesen werden soll, z.B. Haupt-/Neben-/Aufnahme- oder Überweisungsdiagnose).  \r\n  Hier werden Diagnosen und Prozeduren nur nach ihrer *medizinschen* Relevanz bezüglich eines Aufenthaltes qualifiziert. \r\n  Die Qualifikation von Diagnosen und Prozeduren im Kontext der *Abrechnung* erfolgt in der `Account`-Ressource!"
       },
       {
         "id": "Encounter.diagnosis.condition",
@@ -573,12 +572,14 @@
         "path": "Encounter.account.identifier.system",
         "short": "Namensraum des Identifiers",
         "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \r\n      aus dem der Identifier stammt. \r\n      Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \r\n      [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \r\n      **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Encounter.account.identifier.value",
         "path": "Encounter.account.identifier.value",
         "comment": "Enthält den eigentlichen Wert des Identifiers.  \r\n        **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -610,7 +611,7 @@
         "id": "Encounter.hospitalization.admitSource",
         "path": "Encounter.hospitalization.admitSource",
         "short": "Aufnahmeanlass",
-        "comment": "Anlass der stationären Aufnahme, z.B. &quot;Einweisung&quot;, &quot;Notfall&quot; etc.",
+        "comment": "Anlass der stationären Aufnahme, z.B. &quot;Einweisung&quot;, &quot;Notfall&quot; etc.  \r\n      Begründung MS: Zur Harmonisierung den Festlegungen der Medizininformatik-Initiative",
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
@@ -628,7 +629,7 @@
         "path": "Encounter.hospitalization.dischargeDisposition.extension",
         "sliceName": "Entlassungsgrund",
         "short": "Entlassungsgrund",
-        "comment": "Entlassungsgrund nach § 301 Abs. 3 SGB V",
+        "comment": "Entlassungsgrund nach § 301 Abs. 3 SGB V  \r\n        **Einschränkung MS:** Der Entlassungsgrund muss nur implementiert werden,\r\n         wenn das bestätigungsrelevante System in der Akutversorgung eingesetzt wird.",
         "min": 0,
         "max": "1",
         "type": [
@@ -646,7 +647,7 @@
         "path": "Encounter.hospitalization.dischargeDisposition.extension",
         "sliceName": "RehaEntlassung",
         "short": "Entlassungsgrund Reha",
-        "comment": "Entlassungsgrund nach §301 (Abs. 4 und 4a) SGB V",
+        "comment": "Entlassungsgrund nach §301 (Abs. 4 und 4a) SGB V  \r\n      **Einschränkung MS:** Der Entlassungsgrund Reha muss nur implementiert werden,\r\n        wenn das bestätigungsrelevante System in der Reha-Versorgung eingesetzt wird",
         "min": 0,
         "max": "1",
         "type": [

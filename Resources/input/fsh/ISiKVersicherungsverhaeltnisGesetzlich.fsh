@@ -76,7 +76,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^comment = "**Begründung MS:** Da das die Versichertennummer nicht zur Darstellung für den Anwender geeignet ist, 
     sollte ergänzend der Name des Versicherten angegeben werden."
  */
-  * beneficiary MS
+* beneficiary MS
   * ^short = "Versicherte Person"
   * ^comment = "Hier handelt es ich konkret um den Patienten, der unter diesem Versicherungsverhältnis behandelt wird."
   * reference 1.. MS
