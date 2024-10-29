@@ -87,14 +87,14 @@
         "id": "Coverage.payor.reference",
         "path": "Coverage.payor.reference",
         "short": "Personen-Link",
-        "comment": "Ist der Kostenträger eine Person (entweder der Patient selbst oder ein Angehöriger), dann MUSS ein Link auf `Patient`, bzw. `RelatedPerson` angegeben werden.  \r\n    Ist der Kostenträger eine Organisation, dann KANN ein Link auf `Organization` angegeben werden.  \r\n    Die Verlinkung dient der technischen Zuordnung der Dokumentation zu einer Person \r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "Ist der Kostenträger eine Person (entweder der Patient selbst oder ein Angehöriger), dann MUSS ein Link auf `Patient`, bzw. `RelatedPerson` angegeben werden.  \n    Ist der Kostenträger eine Organisation, dann KANN ein Link auf `Organization` angegeben werden.  \n    Die Verlinkung dient der technischen Zuordnung der Dokumentation zu einer Person \n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "mustSupport": true
       },
       {
         "id": "Coverage.payor.display",
         "path": "Coverage.payor.display",
         "short": "Organisations-Bezeichnung",
-        "comment": "Ist der Kostenträger eine Organisation und wurde kein Link auf eine `Organization`-Ressource angegeben,\r\n     dann MUSS die Bezeichnung der Organisation angegeben werden.",
+        "comment": "Ist der Kostenträger eine Organisation und wurde kein Link auf eine `Organization`-Ressource angegeben,\n     dann MUSS die Bezeichnung der Organisation angegeben werden.",
         "mustSupport": true
       }
     ]
