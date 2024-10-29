@@ -13,6 +13,14 @@ on:
   pull_request:
     branches:
     - 'main**'
+  workflow_call:
+    secrets:
+      SIMPLIFIER_USERNAME:
+        required: true
+      SIMPLIFIER_PASSWORD:
+        required: true
+      WORKFLOW_PERMISSION_GITHUB:
+        required: true
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -33,7 +41,7 @@ jobs:
       # Java and .NET are already installed on ubuntu-latest
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.4.2
+        uses: FirelyTeam/firely-terminal-pipeline@v0.4.3
         with:
           PATH_TO_CONFORMANCE_RESOURCES: Resources/fsh-generated/resources/
           #PATH_TO_EXAMPLES: Examples

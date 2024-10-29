@@ -8,7 +8,7 @@
   "experimental": false,
   "date": "2024-10-29",
   "publisher": "gematik GmbH",
-  "description": "Dieses Profil ermöglicht die Darstellung eines gesetzlichen Versicherungsverhältnisses in ISiK Szenarien.  \r\n### Motivation\r\nISiK unterstützt Anwendungsszenarien, in denen durch das Krankenhaus erbrachte Leistungen erfasst oder gegenüber Kostenträgern abgerechnet werden.\r\nIn diesen Anwendungsszenarien wird das Versicherungsverhältnis verwendet, um bspw. den Versicherungsstatus oder die Rechnungsanschrift der Versicherung zu ermitteln.  \r\nIn FHIR werden Versicherungsverhältnisse mit der Coverage-Ressource repräsentiert.\r\n\r\n### Kompatibilität\r\nDas Profil ISiKVersicherungsverhaeltnisSelbstzahler basiert auf dem [Selbstzahler-Profil der deutschen Basisprofile](https://fhir.de/StructureDefinition/coverage-de-sel). \r\nInstanzen, die gegen ISiKVersicherungsverhaeltnisSelbstzahler valide sind, sind auch valide gegen\r\n\r\n* [Selbstzahler-Profil der deutschen Basisprofile](https://fhir.de/StructureDefinition/coverage-de-sel)\r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
+  "description": "Dieses Profil ermöglicht die Darstellung eines gesetzlichen Versicherungsverhältnisses in ISiK Szenarien.  \n### Motivation\nISiK unterstützt Anwendungsszenarien, in denen durch das Krankenhaus erbrachte Leistungen erfasst oder gegenüber Kostenträgern abgerechnet werden.\nIn diesen Anwendungsszenarien wird das Versicherungsverhältnis verwendet, um bspw. den Versicherungsstatus oder die Rechnungsanschrift der Versicherung zu ermitteln.  \nIn FHIR werden Versicherungsverhältnisse mit der Coverage-Ressource repräsentiert.\n\n### Kompatibilität\nDas Profil ISiKVersicherungsverhaeltnisSelbstzahler basiert auf dem [Selbstzahler-Profil der deutschen Basisprofile](https://fhir.de/StructureDefinition/coverage-de-sel). \nInstanzen, die gegen ISiKVersicherungsverhaeltnisSelbstzahler valide sind, sind auch valide gegen\n\n* [Selbstzahler-Profil der deutschen Basisprofile](https://fhir.de/StructureDefinition/coverage-de-sel)\n\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -21,13 +21,13 @@
         "id": "Coverage.status",
         "path": "Coverage.status",
         "short": "Status",
-        "comment": "Zeigt den aktuellen Status der Ressource an.     \r\n  **WICHTIGER Hinweis für Implementierer:**    \r\n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \r\n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch den Wert `active`.\r\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \r\n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.",
+        "comment": "Zeigt den aktuellen Status der Ressource an.     \n  **WICHTIGER Hinweis für Implementierer:**    \n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch den Wert `active`.\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.",
         "mustSupport": true
       },
       {
         "id": "Coverage.type",
         "path": "Coverage.type",
-        "comment": "\r\n  Die Angabe der Versicherungsart `SEL` dient der Kennzeichnung dieser Coverage-Ressource als Selbszahler-Verhältnis.  \r\n  **Begründung Pflichtfeld:** Die Angabe der Versicherungsart dient der Unterscheidung, wenn zu einem Patienten mehrere Coverage-Ressourcen hinterlegt sind, \r\n  z.B. gesetzliche Versicherung + Selbszahlerverhältnis und als Suchkriterium, um gezielt nach der in einem konkreten Kontext relevanten Coverage suchen zu können.  \r\n  **Historie:**  \r\n  28.07.2017 (zulip): TC Konsens bzgl. Verwendung eines eigenen ValueSets anstelle des im Standard definierten preferred bindings, da die dortigen Codes nicht passen.",
+        "comment": "\n  Die Angabe der Versicherungsart `SEL` dient der Kennzeichnung dieser Coverage-Ressource als Selbszahler-Verhältnis.  \n  **Begründung Pflichtfeld:** Die Angabe der Versicherungsart dient der Unterscheidung, wenn zu einem Patienten mehrere Coverage-Ressourcen hinterlegt sind, \n  z.B. gesetzliche Versicherung + Selbszahlerverhältnis und als Suchkriterium, um gezielt nach der in einem konkreten Kontext relevanten Coverage suchen zu können.  \n  **Historie:**  \n  28.07.2017 (zulip): TC Konsens bzgl. Verwendung eines eigenen ValueSets anstelle des im Standard definierten preferred bindings, da die dortigen Codes nicht passen.",
         "mustSupport": true
       },
       {
@@ -62,7 +62,7 @@
         "id": "Coverage.beneficiary.reference",
         "path": "Coverage.beneficiary.reference",
         "short": "Patienten-Link",
-        "comment": "Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten \r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten \n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },
@@ -70,7 +70,7 @@
         "id": "Coverage.payor",
         "path": "Coverage.payor",
         "short": "Kostenträger",
-        "comment": "Der Kostenträger in einem Selbstzahlerverhältnis kann der Patient selbst sein, ein Angehöriger (z.B. Elter) oder eine Organisation (z.B. Botschaft/Amt).\r\n  **Hinweis:** In der Regel sind `payor`und `subscriber` bei Selbstzahlerverhältnissen identisch (die Person , die die Kostenübernahme unterschreibt/zusichert, übernimmt auch die Kosten).\r\n  Es kann jedoch Ausnahmen geben, z.B. der Kostenträger ist eine Organisation, die Kostenübernahme wird jedoch durch eine Person (Vertreter der Organisation) unterzeichnet.",
+        "comment": "Der Kostenträger in einem Selbstzahlerverhältnis kann der Patient selbst sein, ein Angehöriger (z.B. Elter) oder eine Organisation (z.B. Botschaft/Amt).\n  **Hinweis:** In der Regel sind `payor`und `subscriber` bei Selbstzahlerverhältnissen identisch (die Person , die die Kostenübernahme unterschreibt/zusichert, übernimmt auch die Kosten).\n  Es kann jedoch Ausnahmen geben, z.B. der Kostenträger ist eine Organisation, die Kostenübernahme wird jedoch durch eine Person (Vertreter der Organisation) unterzeichnet.",
         "type": [
           {
             "code": "Reference",
