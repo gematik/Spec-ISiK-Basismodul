@@ -189,7 +189,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^comment = "Hier ist stets das *tatsächliche* Entlassdatum anzugeben.
     *Geplante* Entlassdaten müssen über die Extension `plannedEndDate` erfasst werden."
   
-* diagnosis MS
+* diagnosis 
   * ^short = "Falldiagnosen/-prozeduren"
   * ^comment = "Verweis auf Diagnosen/Prozeduren, die eine besondere Rolle im Kontext eines Encounters einnehmen, z.B. &quot;Aufnahmediagnose&quot;   
   **WICHTIGER Hinweis für Implementierer:**   Der Fallbezug von Diagnosen und Prozeduren wird über das jeweilige `encounter`-Element 
@@ -237,14 +237,14 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   im Versorgunskontext aber dennoch Encounter anhand der assoziierten Fallnummer suchen möchten."
   * identifier 1.. MS
     * ^short = "(Abrechnungs-)Fallnummer"
-    * system MS
+    * system 1.. MS
       * ^short = "Namensraum des Identifiers"
       * ^comment = "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, 
       aus dem der Identifier stammt. 
       Hinweise zur Festlegung der URLs für lokale Namensräume sind in den 
       [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  
       **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher."
-    * value MS
+    * value 1.. MS
       * ^comment = "Enthält den eigentlichen Wert des Identifiers.  
         **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden."
   * reference 0.. MS
