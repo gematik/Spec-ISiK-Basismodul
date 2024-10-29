@@ -5,6 +5,8 @@ on: # Trigger on commits to any branch and manual trigger
     push:
         branches:
         - '**' # Trigger on commits to any branch
+    schedule:
+      - cron: '0 0 * * *' # Runs at 00:00 UTC every day
 
 permissions:
   contents: write
