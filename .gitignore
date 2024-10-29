@@ -8,6 +8,11 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
+# Ignore specific fsh-index files
+fsh-index.json
+fsh-index.json.lock
+fsh-index.txt
+
 # Dump file
 *.stackdump
 

@@ -442,7 +442,8 @@ Usage: #example
 * diagnosis.condition = Reference(BehandlungsDiagnoseFreitext)
 * diagnosis.use = http://fhir.de/CodeSystem/KontaktDiagnoseProzedur#treatment-diagnosis
 * account = Reference(AbrechnungsfallDRG)
-* account.identifier.value = "XZY"
+* account.identifier.value = "0123456789"
+* account.identifier.system = "https://test.krankenhaus.de/fhir/sid/abrechnungsnummer"
 * hospitalization.admitSource = $Aufnahmeanlass#E
 * hospitalization.dischargeDisposition.extension.url = "http://fhir.de/StructureDefinition/Entlassungsgrund"
 * hospitalization.dischargeDisposition.extension.extension[0].url = "ErsteUndZweiteStelle"
