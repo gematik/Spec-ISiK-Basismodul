@@ -1454,3 +1454,4 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
   * insert Expectation(#SHALL)  
   * mode = #consumer
   * profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKBerichtBundle"
+  * documentation = "Endpunkt zur Entgegennahme von Subsystem-Berichten in Form eines ISiKBerichtBundles. Weitere Hinweise siehe {{pagelink:BerichtSubsystem}}"
