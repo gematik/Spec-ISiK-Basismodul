@@ -187,8 +187,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     Es ist zu beachten, dass Kapitel auch Unterkapitel enthalten KÖNNEN 
     (Composition.section.section), die bei der Aggregation entsprechend 
     berücksichtigt werden MÜSSEN.  
-
-    Die Mindestanforderungen an den Inhalt der menschenlesbaren Repräsentation umfasst folgende Informationen:
+Die Mindestanforderungen an den Inhalt der menschenlesbaren Repräsentation umfasst folgende Informationen:
 * `section.title` + Freitext oder
 * `section.title` + `Resource.text` der referenzierten Ressource oder
 * `section.title` + eine aggregierte Repräsentation von `Resource.text`,
