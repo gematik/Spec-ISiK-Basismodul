@@ -132,8 +132,8 @@
     "fshName": "composition-blutdruck",
     "fshType": "Instance",
     "fshFile": "ISiKBerichtSubSysteme.fsh",
-    "startLine": 187,
-    "endLine": 205
+    "startLine": 201,
+    "endLine": 219
   },
   {
     "outputFile": "Condition-BehandlungsDiagnoseFreitext.json",
@@ -485,7 +485,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKBerichtSubSysteme.fsh",
     "startLine": 1,
-    "endLine": 185
+    "endLine": 199
   },
   {
     "outputFile": "StructureDefinition-ISiKBinary.json",
