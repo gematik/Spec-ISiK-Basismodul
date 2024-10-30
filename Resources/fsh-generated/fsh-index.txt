@@ -15,7 +15,7 @@ CodeSystem-ISiKBehandlungsergebnisRehaCS.json                            ISiKBeh
 CodeSystem-ISiKBesondereBehandlungsformRehaCS.json                       ISiKBesondereBehandlungsformReha                        CodeSystem  CodeSystems.fsh                               1 - 9
 CodeSystem-ISiKEntlassformRehaCS.json                                    ISiKEntlassformReha                                     CodeSystem  CodeSystems.fsh                               20 - 40
 CodeSystem-ISiKUnterbrechnungRehaCS.json                                 ISiKUnterbrechnungReha                                  CodeSystem  CodeSystems.fsh                               44 - 54
-Composition-composition-blutdruck.json                                   composition-blutdruck                                   Instance    ISiKBerichtSubSysteme.fsh                     201 - 219
+Composition-composition-blutdruck.json                                   composition-blutdruck                                   Instance    ISiKBerichtSubSysteme.fsh                     189 - 207
 Condition-BehandlungsDiagnoseFreitext.json                               BehandlungsDiagnoseFreitext                             Instance    ISiKDiagnose.fsh                              205 - 212
 Condition-Example-condition-ausrufezeichen-primaer.json                  Example-condition-ausrufezeichen-primaer                Instance    ISiKDiagnose.fsh                              137 - 146
 Condition-Example-condition-ausrufezeichen-sekundaer.json                Example-condition-ausrufezeichen-sekundaer              Instance    ISiKDiagnose.fsh                              148 - 161
@@ -59,7 +59,7 @@ StructureDefinition-ISiKAlkoholAbusus.json                               ISiKAlk
 StructureDefinition-ISiKAllergieUnvertraeglichkeit.json                  ISiKAllergieUnvertraeglichkeit                          Profile     ISiKAllergieUnvertraeglichkeit.fsh            1 - 107
 StructureDefinition-ISiKAngehoeriger.json                                ISiKAngehoeriger                                        Profile     ISiKAngehoeriger.fsh                          1 - 47
 StructureDefinition-ISiKBerichtBundle.json                               ISiKBerichtBundle                                       Profile     ISiKBerichtBundle.fsh                         1 - 22
-StructureDefinition-ISiKBerichtSubSysteme.json                           ISiKBerichtSubSysteme                                   Profile     ISiKBerichtSubSysteme.fsh                     1 - 199
+StructureDefinition-ISiKBerichtSubSysteme.json                           ISiKBerichtSubSysteme                                   Profile     ISiKBerichtSubSysteme.fsh                     1 - 187
 StructureDefinition-ISiKBinary.json                                      ISiKBinary                                              Profile     ISiKBinary.fsh                                1 - 15
 StructureDefinition-ISiKCodeSystem.json                                  ISiKCodeSystem                                          Profile     ISiKCodeSystem.fsh                            1 - 14
 StructureDefinition-ISiKCoding.json                                      ISiKCoding                                              Profile     ISiKDataTypeProfiles.fsh                      1 - 9

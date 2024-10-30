@@ -51,18 +51,18 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * div MS
 * identifier 1.. MS
   * ^short = "Eindeutige Dokumenten-ID"
-  * ^comment = "Eine vom erzeugenden Subsystem vergebene, eindeutige DokumentenID.  
+  * ^comment = """Eine vom erzeugenden Subsystem vergebene, eindeutige DokumentenID.  
   Wenn es sich bei dem verwendeten Identifier um eine OID oder UUID handelt, so ist hier der Wert `urn:ietf:rfc:3986` anzugeben und in `Identifier.value` das jeweilige Präfix `urn:uuid:` bzw. `urn:oid:` zu verwenden.  
   Beispiel:
-XML ticked, no escapes: `<>`  
-XML ticked, escaped: `&gt;&lt;`  
+XML ticked, no escapes: `<"">`  
+XML ticked, escaped: `&gt;&quot;&quot;&lt;`  
 ```xml
-&lt;identifier&gt;  
-    &lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;  
-    &lt;value value=&quot;urn:oid:2.16.840.1.113883.6.96&quot;/&gt;  
-&lt;/identifier&gt;
+<identifier> 
+    <system value="urn:ietf:rfc:3986">  
+    <value value="urn:oid:2.16.840.1.113883.6.96"> 
+</identifier>
 ```
-"
+"""
   * system MS
     * ^short = "Namensraum des Identifiers"
     * ^comment = "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, 
