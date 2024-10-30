@@ -93,7 +93,11 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * ^short = "Aufenthaltsbezug"
   * reference 1.. MS
     * ^short = "Encounter-Link"
-    * ^comment = "Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc."
+    * ^comment = "**Begründung Pflichtfeld:** Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt 
+    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.    
+    **WICHTIGER Hinweis für Implementierer:** Die Zuordnung MUSS auf auf einen Encounter der Ebene &quot;Abteilungskontakt&quot; (siehe hierzu {{pagelink:Fall}}) erfolgen. 
+    Bei der Auswahl des Encounters ist zu beachten, dass unter einer (Abrechnungs-)&quot;Fallnummer&quot; (hier: `Encounter.account`) 
+    unter Umständen mehrere Encounter gruppiert sein können (z.B. stationärer Besuch mit mehreren vor- und nachstationären Aufenthalten.)"
 * performed[x] 1.. MS
   * ^short = "Durchführungsdatum oder -Zeitraum"
   * ^comment = "Es muss mindestens entweder ein (partielles) Durchführungsdatum oder der Beginn des Durchführungszeitraumes angegeben werden.
