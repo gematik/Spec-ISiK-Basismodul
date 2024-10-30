@@ -85,7 +85,7 @@
     "fshType": "Instance",
     "fshFile": "ISiKCapabilityStatementBasisServer.fsh",
     "startLine": 1,
-    "endLine": 1456
+    "endLine": 1457
   },
   {
     "outputFile": "CodeSystem-CodeSystemExample.json",
@@ -132,8 +132,8 @@
     "fshName": "composition-blutdruck",
     "fshType": "Instance",
     "fshFile": "ISiKBerichtSubSysteme.fsh",
-    "startLine": 65,
-    "endLine": 82
+    "startLine": 187,
+    "endLine": 205
   },
   {
     "outputFile": "Condition-BehandlungsDiagnoseFreitext.json",
@@ -485,7 +485,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKBerichtSubSysteme.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 185
   },
   {
     "outputFile": "StructureDefinition-ISiKBinary.json",

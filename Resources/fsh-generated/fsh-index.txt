@@ -9,13 +9,13 @@ Binary-Binary-PDF-Example.json                                           Binary-
 Bundle-ISiKBundle-Example.json                                           ISiKBundle-Example                                      Instance    ISiKBerichtBundle.fsh                         24 - 38
 Bundle-SubscriptionNotificationBundleExample.json                        SubscriptionNotificationBundleExample                   Instance    IsiKPatientMerge.fsh                          100 - 113
 Bundle-Szenario1.json                                                    Szenario1                                               Instance    Beispiel-Szenario-1.fsh                       162 - 172
-CapabilityStatement-ISiKCapabilityStatementBasisServer.json              ISiKCapabilityStatementBasisServer                      Instance    ISiKCapabilityStatementBasisServer.fsh        1 - 1456
+CapabilityStatement-ISiKCapabilityStatementBasisServer.json              ISiKCapabilityStatementBasisServer                      Instance    ISiKCapabilityStatementBasisServer.fsh        1 - 1457
 CodeSystem-CodeSystemExample.json                                        CodeSystemExample                                       Instance    ISiKCodeSystem.fsh                            16 - 26
 CodeSystem-ISiKBehandlungsergebnisRehaCS.json                            ISiKBehandlungsergebnisReha                             CodeSystem  CodeSystems.fsh                               11 - 18
 CodeSystem-ISiKBesondereBehandlungsformRehaCS.json                       ISiKBesondereBehandlungsformReha                        CodeSystem  CodeSystems.fsh                               1 - 9
 CodeSystem-ISiKEntlassformRehaCS.json                                    ISiKEntlassformReha                                     CodeSystem  CodeSystems.fsh                               20 - 40
 CodeSystem-ISiKUnterbrechnungRehaCS.json                                 ISiKUnterbrechnungReha                                  CodeSystem  CodeSystems.fsh                               44 - 54
-Composition-composition-blutdruck.json                                   composition-blutdruck                                   Instance    ISiKBerichtSubSysteme.fsh                     65 - 82
+Composition-composition-blutdruck.json                                   composition-blutdruck                                   Instance    ISiKBerichtSubSysteme.fsh                     187 - 205
 Condition-BehandlungsDiagnoseFreitext.json                               BehandlungsDiagnoseFreitext                             Instance    ISiKDiagnose.fsh                              205 - 212
 Condition-Example-condition-ausrufezeichen-primaer.json                  Example-condition-ausrufezeichen-primaer                Instance    ISiKDiagnose.fsh                              137 - 146
 Condition-Example-condition-ausrufezeichen-sekundaer.json                Example-condition-ausrufezeichen-sekundaer              Instance    ISiKDiagnose.fsh                              148 - 161
@@ -59,7 +59,7 @@ StructureDefinition-ISiKAlkoholAbusus.json                               ISiKAlk
 StructureDefinition-ISiKAllergieUnvertraeglichkeit.json                  ISiKAllergieUnvertraeglichkeit                          Profile     ISiKAllergieUnvertraeglichkeit.fsh            1 - 107
 StructureDefinition-ISiKAngehoeriger.json                                ISiKAngehoeriger                                        Profile     ISiKAngehoeriger.fsh                          1 - 47
 StructureDefinition-ISiKBerichtBundle.json                               ISiKBerichtBundle                                       Profile     ISiKBerichtBundle.fsh                         1 - 22
-StructureDefinition-ISiKBerichtSubSysteme.json                           ISiKBerichtSubSysteme                                   Profile     ISiKBerichtSubSysteme.fsh                     1 - 63
+StructureDefinition-ISiKBerichtSubSysteme.json                           ISiKBerichtSubSysteme                                   Profile     ISiKBerichtSubSysteme.fsh                     1 - 185
 StructureDefinition-ISiKBinary.json                                      ISiKBinary                                              Profile     ISiKBinary.fsh                                1 - 15
 StructureDefinition-ISiKCodeSystem.json                                  ISiKCodeSystem                                          Profile     ISiKCodeSystem.fsh                            1 - 14
 StructureDefinition-ISiKCoding.json                                      ISiKCoding                                              Profile     ISiKDataTypeProfiles.fsh                      1 - 9

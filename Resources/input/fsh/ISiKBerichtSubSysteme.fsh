@@ -122,10 +122,10 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * system = "http://ihe-d.de/CodeSystems/IHEXDSclassCode" (exactly)
   * code 1..
 * subject 1.. MS
-* ^short = "Patientenbezug"
-* reference 1.. MS
-  * ^short = "Patienten-Link"
-  * ^comment = "**Begründung Pflichtfeld:** Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung des Dokumentes zu einem Patienten 
+  * ^short = "Patientenbezug"
+  * reference 1.. MS
+    * ^short = "Patienten-Link"
+    * ^comment = "**Begründung Pflichtfeld:** Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung des Dokumentes zu einem Patienten 
   und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc."
 * encounter MS
   * ^short = "Aufenthaltsbezug"
@@ -192,7 +192,8 @@ Usage: #example
 * identifier[=].system = "https://fhir.krankenhaus.example/sid/system-a/berichtnummer"
 * identifier[=].value = "0123456789"
 * status = #final
-* type = $loinc#55112-7
+* type = $loinc#55112-7 
+* type.text = "Kurzbericht"
 * subject.reference = "urn:uuid:3bada18a-6fd2-11ed-a1eb-0242ac112345"
 * encounter.reference = "urn:uuid:74b46c1a-6fc9-11ed-a1eb-0242ac198765"
 * date = "2022-05-03"
