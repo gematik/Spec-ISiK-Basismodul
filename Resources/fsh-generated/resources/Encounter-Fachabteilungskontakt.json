@@ -108,8 +108,8 @@
     {
       "reference": "Account/AbrechnungsfallDRG",
       "identifier": {
-        "value": "0123456789",
-        "system": "https://test.krankenhaus.de/fhir/sid/abrechnungsnummer"
+        "value": "XZY",
+        "system": "https://test.krankenhaus.de/fhir/sid/fallnummer"
       }
     }
   ],

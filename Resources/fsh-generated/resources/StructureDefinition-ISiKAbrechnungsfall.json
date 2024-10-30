@@ -41,6 +41,26 @@
         "mustSupport": true
       },
       {
+        "id": "Account.extension:AbrechnungsDiagnoseProzedur.extension",
+        "path": "Account.extension.extension",
+        "min": 2
+      },
+      {
+        "id": "Account.extension:AbrechnungsDiagnoseProzedur.extension:Use",
+        "path": "Account.extension.extension",
+        "sliceName": "Use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Account.extension:AbrechnungsDiagnoseProzedur.extension:Referenz",
+        "path": "Account.extension.extension",
+        "sliceName": "Referenz",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
         "id": "Account.identifier",
         "path": "Account.identifier",
         "slicing": {
@@ -128,16 +148,6 @@
         "short": "Status",
         "comment": "Zeigt den aktuellen Status der Ressource an.     \n  **WICHTIGER Hinweis für Implementierer:**    \n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch `active` und `inactive`.\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.",
         "mustSupport": true
-      },
-      {
-        "id": "Account.type",
-        "path": "Account.type",
-        "min": 1,
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://gematik.de/fhir/isik/ValueSet/ISiKAccountType"
-        }
       },
       {
         "id": "Account.subject",

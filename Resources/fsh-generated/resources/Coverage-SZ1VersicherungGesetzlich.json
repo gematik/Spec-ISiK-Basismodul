@@ -17,7 +17,6 @@
   "payor": [
     {
       "identifier": {
-        "system": "http://fhir.de/sid/arge-ik/iknr",
         "type": {
           "coding": [
             {
@@ -26,28 +25,29 @@
             }
           ]
         },
+        "system": "http://fhir.de/sid/arge-ik/iknr",
         "value": "260326822"
       },
       "display": "TKKG"
     }
   ],
+  "status": "active",
+  "beneficiary": {
+    "reference": "Patient/SZ1Patient"
+  },
   "subscriber": {
+    "reference": "RelatedPerson/SZ1Mutter",
     "identifier": {
       "type": {
         "coding": [
           {
-            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
-            "code": "KVZ10"
+            "code": "KVZ10",
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
           }
         ]
       },
       "system": "http://fhir.de/sid/gkv/kvid-10",
       "value": "A987654321"
-    },
-    "reference": "RelatedPerson/SZ1Mutter"
-  },
-  "status": "active",
-  "beneficiary": {
-    "reference": "Patient/SZ1Patient"
+    }
   }
 }

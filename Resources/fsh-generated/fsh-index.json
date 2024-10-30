@@ -4,8 +4,8 @@
     "fshName": "AbrechnungsfallDRG",
     "fshType": "Instance",
     "fshFile": "ISiKAbrechnungsfall.fsh",
-    "startLine": 107,
-    "endLine": 125
+    "startLine": 109,
+    "endLine": 127
   },
   {
     "outputFile": "Account-SZ1DRGFall.json",
@@ -188,16 +188,16 @@
     "fshName": "CoverageGesetzlich",
     "fshType": "Instance",
     "fshFile": "ISiKVersicherungsverhaeltnisGesetzlich.fsh",
-    "startLine": 110,
-    "endLine": 119
+    "startLine": 111,
+    "endLine": 120
   },
   {
     "outputFile": "Coverage-CoveragePrivat.json",
     "fshName": "CoveragePrivat",
     "fshType": "Instance",
     "fshFile": "ISiKVersicherungsverhaeltnisSelbstzahler.fsh",
-    "startLine": 64,
-    "endLine": 70
+    "startLine": 77,
+    "endLine": 83
   },
   {
     "outputFile": "Coverage-SZ1VersicherungGesetzlich.json",
@@ -220,8 +220,8 @@
     "fshName": "Fachabteilungskontakt",
     "fshType": "Instance",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 416,
-    "endLine": 454
+    "startLine": 421,
+    "endLine": 461
   },
   {
     "outputFile": "Encounter-FachabteilungskontaktMinimal.json",
@@ -404,24 +404,24 @@
     "fshName": "Encounter-date-start",
     "fshType": "Instance",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 497,
-    "endLine": 515
+    "startLine": 504,
+    "endLine": 522
   },
   {
     "outputFile": "SearchParameter-Encounter-end-date.json",
     "fshName": "Encounter-end-date",
     "fshType": "Instance",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 517,
-    "endLine": 535
+    "startLine": 524,
+    "endLine": 542
   },
   {
     "outputFile": "StructureDefinition-ExtensionISiKRehaEntlassung.json",
     "fshName": "ExtensionISiKRehaEntlassung",
     "fshType": "Extension",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 393,
-    "endLine": 414
+    "startLine": 398,
+    "endLine": 419
   },
   {
     "outputFile": "StructureDefinition-ISiKASKCoding.json",
@@ -445,7 +445,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKAbrechnungsfall.fsh",
     "startLine": 1,
-    "endLine": 104
+    "endLine": 106
   },
   {
     "outputFile": "StructureDefinition-ISiKAlkoholAbusus.json",
@@ -533,7 +533,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
     "startLine": 1,
-    "endLine": 391
+    "endLine": 396
   },
   {
     "outputFile": "StructureDefinition-ISiKLebensZustand.json",
@@ -677,7 +677,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKVersicherungsverhaeltnisGesetzlich.fsh",
     "startLine": 1,
-    "endLine": 107
+    "endLine": 108
   },
   {
     "outputFile": "StructureDefinition-ISiKVersicherungsverhaeltnisSelbstzahler.json",
@@ -685,7 +685,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKVersicherungsverhaeltnisSelbstzahler.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 72
   },
   {
     "outputFile": "StructureDefinition-patient-merge-subscription.json",

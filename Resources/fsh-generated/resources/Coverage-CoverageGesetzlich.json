@@ -17,7 +17,6 @@
   "payor": [
     {
       "identifier": {
-        "system": "http://fhir.de/sid/arge-ik/iknr",
         "type": {
           "coding": [
             {
@@ -26,6 +25,7 @@
             }
           ]
         },
+        "system": "http://fhir.de/sid/arge-ik/iknr",
         "value": "260326822"
       },
       "display": "Eine Gesundheitskasse"
