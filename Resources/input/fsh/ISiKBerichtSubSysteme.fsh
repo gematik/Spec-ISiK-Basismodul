@@ -29,6 +29,7 @@ In der aktuellen Ausbaustufe von ISiK ist lediglich die Übernahme und Anzeige d
 
 In weiteren Ausbaustufen von ISiK soll darüber hinaus eine Übernahme der strukturierten Anteile der Dokumente möglich sein, die den ISiK-Spezifikationen entsprechen, z.B. Diagnosen und Prozeduren.  
 
+### Kompatibilität  
 Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden."
 
 * insert Meta
@@ -53,6 +54,19 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * ^comment = "Eine vom erzeugenden Subsystem vergebene, eindeutige DokumentenID.  
   Wenn es sich bei dem verwendeten Identifier um eine OID oder UUID handelt, so ist hier der Wert `urn:ietf:rfc:3986` anzugeben und in `Identifier.value` das jeweilige Präfix `urn:uuid:` bzw. `urn:oid:` zu verwenden.  
   Beispiel:
+  #no formatting, xml escapes:  
+  &lt;identifier&gt;
+    &lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;
+    &lt;value value=&quot;urn:oid:2.16.840.1.113883.6.96&quot;/&gt;
+&lt;/identifier&gt;  
+  # triple tick, no escape:
+    ```
+<identifier>
+    <system value=&quot;urn:ietf:rfc:3986&quot;/>
+    <value value=&quot;urn:oid:2.16.840.1.113883.6.96&quot;/>
+</identifier>
+```
+# triple tick + xml, xml excape:
   ```xml
 &lt;identifier&gt;
     &lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;
