@@ -54,9 +54,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * ^comment = """Eine vom erzeugenden Subsystem vergebene, eindeutige DokumentenID.  
   Wenn es sich bei dem verwendeten Identifier um eine OID oder UUID handelt, so ist hier der Wert `urn:ietf:rfc:3986` anzugeben und in `Identifier.value` das jeweilige Präfix `urn:uuid:` bzw. `urn:oid:` zu verwenden.  
   Beispiel:
-XML ticked, no escapes: `<"">`  
-XML ticked, escaped: `&gt;&quot;&quot;&lt;`  
-```xml
+```xml  
 <identifier> 
     <system value="urn:ietf:rfc:3986">  
     <value value="urn:oid:2.16.840.1.113883.6.96"> 
