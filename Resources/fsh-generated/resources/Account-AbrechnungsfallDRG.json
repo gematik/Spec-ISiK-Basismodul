@@ -20,6 +20,23 @@
       "value": "0123456789"
     }
   ],
+  "coverage": [
+    {
+      "extension": [
+        {
+          "url": "http://fhir.de/StructureDefinition/ExtensionAbrechnungsart",
+          "valueCoding": {
+            "code": "DRG",
+            "system": "http://fhir.de/CodeSystem/dkgev/Abrechnungsart",
+            "display": "Diagnosebezogene Fallgruppen"
+          }
+        }
+      ],
+      "coverage": {
+        "reference": "Coverage/CoverageGesetzlich"
+      }
+    }
+  ],
   "extension": [
     {
       "url": "http://fhir.de/StructureDefinition/ExtensionAbrechnungsDiagnoseProzedur",
@@ -53,23 +70,6 @@
   "subject": [
     {
       "reference": "Patient/PatientinMusterfrau"
-    }
-  ],
-  "coverage": [
-    {
-      "extension": [
-        {
-          "url": "http://fhir.de/StructureDefinition/ExtensionAbrechnungsart",
-          "valueCoding": {
-            "code": "DRG",
-            "system": "http://fhir.de/CodeSystem/dkgev/Abrechnungsart",
-            "display": "Diagnosebezogene Fallgruppen"
-          }
-        }
-      ],
-      "coverage": {
-        "reference": "Coverage/CoverageGesetzlich"
-      }
     }
   ]
 }

@@ -8,7 +8,7 @@
   "experimental": false,
   "date": "2024-10-30",
   "publisher": "gematik GmbH",
-  "description": "Dieses Profil ermöglicht die Gruppierung von medizinischen Leistungen zu einem gemeinsamen Abrechnungskontext.  \r\n### Motivation\r\nKomplementär zum Datenobjekt &quot;Kontakt - Encounter&quot; können Fälle, im Sinne einer Gruppierung von medizinischen Leistungen \r\ninnerhalb eines gemeinsamen Kontextes, zu einem Abrechnungsfall zusammengefasst werden.\r\nEin solcher Abrechnungsfall kann mehrere Kontakte umfassen (z.B. vorstationärer Besuch, stationärer Aufenthalt und nachstationärer Besuch).  \r\n\r\nGemeinsam mit dem Einrichtungskontakt bildet der Abrechnungsfall einen wichtigen Einstiegspunkt in die Dokumentation der Behandlungsleistungen der Patienten.\r\nAls Bindeglied zwischen den Kontakten und dem Versicherungsverhältnis erfolgt eine feingranulare Auflistung, \r\nin welchen Zeiträumen ein Behandlungskontext zwischen einer Gesundheitseinrichtung und der Patienten bestand.\r\nZudem werden Diagnosen abschließend / nachträglich dokumentiert, sodass eine Übersicht von relevanten (DRG)-Diagnosen ermöglicht wird, \r\nohne die Gesamtheit aller Kontakte betrachten zu müssen.\r\n\r\nIn FHIR wird der Abrechnungsfall mit der `Account`-Ressource repräsentiert.\r\n\r\n### Kompatibilität\r\n* zum Zeitpunkt der Veröffentlichung sind keine abweichenden Modellierungen der Account-Ressource bekannt.\r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
+  "description": "Dieses Profil ermöglicht die Gruppierung von medizinischen Leistungen zu einem gemeinsamen Abrechnungskontext.  \n### Motivation\nKomplementär zum Datenobjekt &quot;Kontakt - Encounter&quot; können Fälle, im Sinne einer Gruppierung von medizinischen Leistungen \ninnerhalb eines gemeinsamen Kontextes, zu einem Abrechnungsfall zusammengefasst werden.\nEin solcher Abrechnungsfall kann mehrere Kontakte umfassen (z.B. vorstationärer Besuch, stationärer Aufenthalt und nachstationärer Besuch).  \n\nGemeinsam mit dem Einrichtungskontakt bildet der Abrechnungsfall einen wichtigen Einstiegspunkt in die Dokumentation der Behandlungsleistungen der Patienten.\nAls Bindeglied zwischen den Kontakten und dem Versicherungsverhältnis erfolgt eine feingranulare Auflistung, \nin welchen Zeiträumen ein Behandlungskontext zwischen einer Gesundheitseinrichtung und der Patienten bestand.\nZudem werden Diagnosen abschließend / nachträglich dokumentiert, sodass eine Übersicht von relevanten (DRG)-Diagnosen ermöglicht wird, \nohne die Gesamtheit aller Kontakte betrachten zu müssen.\n\nIn FHIR wird der Abrechnungsfall mit der `Account`-Ressource repräsentiert.\n\n### Kompatibilität\n* zum Zeitpunkt der Veröffentlichung sind keine abweichenden Modellierungen der Account-Ressource bekannt.\n\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -27,7 +27,7 @@
         "path": "Account.extension",
         "sliceName": "AbrechnungsDiagnoseProzedur",
         "short": "Abrechnungsdiagnose /-prozedur",
-        "comment": "Insbesondere bei Abrechnungen im DRG-Kontext muss eine Diagnose als Hauptdiagnose und \r\n  ggf. weitere Diagnosen als abrechnungsrelevante Nebendiagnosen klassifiziert werden. Diese Extension ermöglicht es, diese Qualifikation im Abrechnungskontext vorzunehmen, \r\n  unabhängig von der *medizinischen* Relevanz, die in `Encounter.diagnosis` erfolgt.",
+        "comment": "Insbesondere bei Abrechnungen im DRG-Kontext muss eine Diagnose als Hauptdiagnose und \n  ggf. weitere Diagnosen als abrechnungsrelevante Nebendiagnosen klassifiziert werden. Diese Extension ermöglicht es, diese Qualifikation im Abrechnungskontext vorzunehmen, \n  unabhängig von der *medizinischen* Relevanz, die in `Encounter.diagnosis` erfolgt.",
         "min": 0,
         "max": "*",
         "type": [
@@ -80,7 +80,7 @@
         "path": "Account.identifier",
         "sliceName": "Abrechnungsnummer",
         "short": "Abrechnungsfallnummer",
-        "comment": "Im DRG-Kontext werden häufig sämtliche Besuche (`Encounter`), die unter einen gemeinsamen Abrechnungskontext zusammengefasst werden, \r\n  unter einer &quot;Fallnummer&quot; geführt. In dieser Konstellation sind die Begriffe &quot;Fallnummer&quot; und &quot;Abrechnungsfallnummer&quot; gleichbedeutend.  \r\n  Dies ist insbesondere im Kontext des Mappings zwischen HL7 V2 und HL7 FHIR zu beachten, da es in V2 Usus ist, \r\n  die Fallnummer (eigentlich Identifier des Abrechnungsfalles) im `PV1`-Segment (Patient Visit) zu übermitteln. \r\n  Es handelt sich dabei jedoch *nicht* um den Identifier des Besuchs (`Encounter`) sondern den des Abrechnungsfalles (`Account`), \r\n  da der Identifier oft für die Gruppierung mehrerer Besuche (z.B. vorstationär + stationär + nachstationär) mit gemeinsamem (DRG)-Kontext verwendet wird.  \r\n  Die Abrechnungsfallnummer in `Account.identifier` muss identisch sein mit dem Identifier, \r\n  der bei den Encountern, die unter diesem Account gruppiert werden, unter `Encounter.account.identifier` angegeben ist.",
+        "comment": "Im DRG-Kontext werden häufig sämtliche Besuche (`Encounter`), die unter einen gemeinsamen Abrechnungskontext zusammengefasst werden, \n  unter einer &quot;Fallnummer&quot; geführt. In dieser Konstellation sind die Begriffe &quot;Fallnummer&quot; und &quot;Abrechnungsfallnummer&quot; gleichbedeutend.  \n  Dies ist insbesondere im Kontext des Mappings zwischen HL7 V2 und HL7 FHIR zu beachten, da es in V2 Usus ist, \n  die Fallnummer (eigentlich Identifier des Abrechnungsfalles) im `PV1`-Segment (Patient Visit) zu übermitteln. \n  Es handelt sich dabei jedoch *nicht* um den Identifier des Besuchs (`Encounter`) sondern den des Abrechnungsfalles (`Account`), \n  da der Identifier oft für die Gruppierung mehrerer Besuche (z.B. vorstationär + stationär + nachstationär) mit gemeinsamem (DRG)-Kontext verwendet wird.  \n  Die Abrechnungsfallnummer in `Account.identifier` muss identisch sein mit dem Identifier, \n  der bei den Encountern, die unter diesem Account gruppiert werden, unter `Encounter.account.identifier` angegeben ist.",
         "min": 1,
         "max": "1",
         "type": [
@@ -133,20 +133,20 @@
         "id": "Account.identifier:Abrechnungsnummer.system",
         "path": "Account.identifier.system",
         "short": "Namensraum des Identifiers",
-        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \r\n    aus dem der Identifier stammt. \r\n    Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \r\n    [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \r\n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \n    aus dem der Identifier stammt. \n    Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \n    [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
         "mustSupport": true
       },
       {
         "id": "Account.identifier:Abrechnungsnummer.value",
         "path": "Account.identifier.value",
-        "comment": "Enthält den eigentlichen Wert des Identifiers.  \r\n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "comment": "Enthält den eigentlichen Wert des Identifiers.  \n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
         "mustSupport": true
       },
       {
         "id": "Account.status",
         "path": "Account.status",
         "short": "Status",
-        "comment": "Zeigt den aktuellen Status der Ressource an.     \r\n  **WICHTIGER Hinweis für Implementierer:**    \r\n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \r\n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch `active` und `inactive`.\r\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \r\n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.",
+        "comment": "Zeigt den aktuellen Status der Ressource an.     \n  **WICHTIGER Hinweis für Implementierer:**    \n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch `active` und `inactive`.\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.",
         "mustSupport": true
       },
       {
@@ -169,7 +169,7 @@
         "id": "Account.subject.reference",
         "path": "Account.subject.reference",
         "short": "Patienten-Link",
-        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten \r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten \n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },
@@ -214,7 +214,7 @@
         "id": "Account.coverage.coverage.reference",
         "path": "Account.coverage.coverage.reference",
         "short": "Coverage-Link",
-        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Coverage-Ressource dient der technischen Zuordnung zwischen Abrechnungsfall und Versicherungsverhältnis\r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Coverage-Ressource dient der technischen Zuordnung zwischen Abrechnungsfall und Versicherungsverhältnis\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },
@@ -222,7 +222,7 @@
         "id": "Account.coverage.priority",
         "path": "Account.coverage.priority",
         "short": "Priorität",
-        "comment": "**Begründung des MS:** Wenn ein Primärsystem mehrere Kostenträger angibt, \r\n    sollte für lesende Systeme ersichtlich sein, welches der Hauptkostenträger ist.   \r\n    **Historie:**  \r\n    Diskussionstand der ISIK-Arbeitsgruppe vom 28.5.: Die Abbildung über einen Integer ist wünschenswert. \r\n    Eine binäre Einteilung in Hauptkostenträger (1) und alle anderen (2) wird der Komplexität der Priorisierung zur Kostenträgerschaft nicht gerecht. \r\n    Eine Ausdifferenzierung ist wünschenswert und sollte angestrebt werden.",
+        "comment": "**Begründung des MS:** Wenn ein Primärsystem mehrere Kostenträger angibt, \n    sollte für lesende Systeme ersichtlich sein, welches der Hauptkostenträger ist.   \n    **Historie:**  \n    Diskussionstand der ISIK-Arbeitsgruppe vom 28.5.: Die Abbildung über einen Integer ist wünschenswert. \n    Eine binäre Einteilung in Hauptkostenträger (1) und alle anderen (2) wird der Komplexität der Priorisierung zur Kostenträgerschaft nicht gerecht. \n    Eine Ausdifferenzierung ist wünschenswert und sollte angestrebt werden.",
         "mustSupport": true
       }
     ]
