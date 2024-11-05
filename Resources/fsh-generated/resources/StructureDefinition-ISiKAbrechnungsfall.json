@@ -6,7 +6,7 @@
   "name": "ISiKAbrechnungsfall",
   "status": "active",
   "experimental": false,
-  "date": "2024-10-30",
+  "date": "2024-11-05",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Gruppierung von medizinischen Leistungen zu einem gemeinsamen Abrechnungskontext.  \r\n### Motivation\r\nKomplementär zum Datenobjekt &quot;Kontakt - Encounter&quot; können Fälle, im Sinne einer Gruppierung von medizinischen Leistungen \r\ninnerhalb eines gemeinsamen Kontextes, zu einem Abrechnungsfall zusammengefasst werden.\r\nEin solcher Abrechnungsfall kann mehrere Kontakte umfassen (z.B. vorstationärer Besuch, stationärer Aufenthalt und nachstationärer Besuch).  \r\n\r\nGemeinsam mit dem Einrichtungskontakt bildet der Abrechnungsfall einen wichtigen Einstiegspunkt in die Dokumentation der Behandlungsleistungen der Patienten.\r\nAls Bindeglied zwischen den Kontakten und dem Versicherungsverhältnis erfolgt eine feingranulare Auflistung, \r\nin welchen Zeiträumen ein Behandlungskontext zwischen einer Gesundheitseinrichtung und der Patienten bestand.\r\nZudem werden Diagnosen abschließend / nachträglich dokumentiert, sodass eine Übersicht von relevanten (DRG)-Diagnosen ermöglicht wird, \r\nohne die Gesamtheit aller Kontakte betrachten zu müssen.\r\n\r\nIn FHIR wird der Abrechnungsfall mit der `Account`-Ressource repräsentiert.\r\n\r\n### Kompatibilität\r\n* zum Zeitpunkt der Veröffentlichung sind keine abweichenden Modellierungen der Account-Ressource bekannt.\r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",

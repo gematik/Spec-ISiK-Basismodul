@@ -6,7 +6,7 @@
   "name": "ISiKVersicherungsverhaeltnisGesetzlich",
   "status": "active",
   "experimental": false,
-  "date": "2024-10-30",
+  "date": "2024-11-05",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Darstellung eines gesetzlichen Versicherungsverhältnisses in ISiK Szenarien.  \r\n### Motivation\r\nISiK unterstützt Anwendungsszenarien, in denen durch das Krankenhaus erbrachte Leistungen erfasst oder gegenüber Kostenträgern abgerechnet werden.\r\nIn diesen Anwendungsszenarien wird das Versicherungsverhältnis verwendet, um bspw. den Versicherungsstatus oder die Rechnungsanschrift der Versicherung zu ermitteln.  \r\nIn FHIR werden Versicherungsverhältnisse mit der Coverage-Ressource repräsentiert.\r\n\r\n### Kompatibilität\r\nDas Profil ISiKVersicherungsverhaeltnisGesetzlich basiert auf dem [GKV-Profil der deutschen Basisprofile](http://fhir.de/StructureDefinition/coverage-de-basis). \r\nInstanzen, die gegen ISiKVersicherungsverhaeltnisGesetzlich valide sind, sind auch valide gegen\r\n\r\n* [GKV-Profil der deutschen Basisprofile](http://fhir.de/StructureDefinition/coverage-de-basis)\r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",

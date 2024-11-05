@@ -6,7 +6,7 @@
   "name": "ISiKAllergieUnvertraeglichkeit",
   "status": "active",
   "experimental": false,
-  "date": "2024-10-30",
+  "date": "2024-11-05",
   "publisher": "gematik GmbH",
   "description": "Diese Profil ermöglicht die Dokumentation von Allergien und Unverträglichkeiten in ISiK Szenarien.",
   "fhirVersion": "4.0.1",

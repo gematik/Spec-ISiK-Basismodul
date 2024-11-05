@@ -42,7 +42,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * ^slicing.rules = #open
 * name contains
     Name 1..1 MS 
-* name [Name]    
+* name[Name]    
   * use 1.. MS
     * ^short = "Verwendungszweck"
     * ^comment = "Hier ist stets der Wert `official` anzugeben.  

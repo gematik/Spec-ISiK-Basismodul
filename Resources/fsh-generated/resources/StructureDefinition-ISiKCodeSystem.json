@@ -6,7 +6,7 @@
   "name": "ISiKCodeSystem",
   "status": "active",
   "experimental": false,
-  "date": "2024-10-30",
+  "date": "2024-11-05",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil beschreibt die maschinenlesbare Repräsentation von system-sepzifischen Kodierungen in ISiK-Szenarien",
   "fhirVersion": "4.0.1",

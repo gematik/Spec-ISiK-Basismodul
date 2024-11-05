@@ -1,6 +1,7 @@
 Output File                                                              Name                                                    Type        FSH File                                      Lines
 Account-AbrechnungsfallDRG.json                                          AbrechnungsfallDRG                                      Instance    ISiKAbrechnungsfall.fsh                       109 - 127
 Account-SZ1DRGFall.json                                                  SZ1DRGFall                                              Instance    Beispiel-Szenario-1.fsh                       71 - 85
+Account-SZ2DRGFall.json                                                  SZ2DRGFall                                              Instance    Beispiel-Szenario-2.fsh                       67 - 81
 AllergyIntolerance-ISiKAllergieUnvertraeglichkeitBeispiel1.json          ISiKAllergieUnvertraeglichkeitBeispiel1                 Instance    ISiKAllergieUnvertraeglichkeit.fsh            109 - 130
 Binary-Binary-JPEG-Example-short.json                                    Binary-JPEG-Example-short                               Instance    ISiKBinary.fsh                                17 - 21
 Binary-Binary-JPEG-Example.json                                          Binary-JPEG-Example                                     Instance    ISiKBinary.fsh                                30 - 34
@@ -9,6 +10,7 @@ Binary-Binary-PDF-Example.json                                           Binary-
 Bundle-ISiKBundle-Example.json                                           ISiKBundle-Example                                      Instance    ISiKBerichtBundle.fsh                         24 - 38
 Bundle-SubscriptionNotificationBundleExample.json                        SubscriptionNotificationBundleExample                   Instance    IsiKPatientMerge.fsh                          100 - 113
 Bundle-Szenario1.json                                                    Szenario1                                               Instance    Beispiel-Szenario-1.fsh                       162 - 172
+Bundle-Szenario2.json                                                    Szenario2                                               Instance    Beispiel-Szenario-2.fsh                       97 - 105
 CapabilityStatement-ISiKCapabilityStatementBasisServer.json              ISiKCapabilityStatementBasisServer                      Instance    ISiKCapabilityStatementBasisServer.fsh        1 - 1457
 CodeSystem-CodeSystemExample.json                                        CodeSystemExample                                       Instance    ISiKCodeSystem.fsh                            16 - 26
 CodeSystem-ISiKBehandlungsergebnisRehaCS.json                            ISiKBehandlungsergebnisReha                             CodeSystem  CodeSystems.fsh                               11 - 18
@@ -22,15 +24,19 @@ Condition-Example-condition-ausrufezeichen-sekundaer.json                Example
 Condition-Example-condition-kreuz-stern-primaer.json                     Example-condition-kreuz-stern-primaer                   Instance    ISiKDiagnose.fsh                              166 - 178
 Condition-Example-condition-kreuz-stern-sekundaer.json                   Example-condition-kreuz-stern-sekundaer                 Instance    ISiKDiagnose.fsh                              180 - 195
 Condition-MittelgradigeIntelligenzminderung.json                         MittelgradigeIntelligenzminderung                       Instance    ISiKDiagnose.fsh                              197 - 206
+Condition-SZ2Primaerdiagnose.json                                        SZ2Primaerdiagnose                                      Instance    Beispiel-Szenario-2.fsh                       24 - 33
+Condition-SZ2Sekundaerdiagnose.json                                      SZ2Sekundaerdiagnose                                    Instance    Beispiel-Szenario-2.fsh                       35 - 46
 Coverage-CoverageGesetzlich.json                                         CoverageGesetzlich                                      Instance    ISiKVersicherungsverhaeltnisGesetzlich.fsh    111 - 120
 Coverage-CoveragePrivat.json                                             CoveragePrivat                                          Instance    ISiKVersicherungsverhaeltnisSelbstzahler.fsh  77 - 83
 Coverage-SZ1VersicherungGesetzlich.json                                  SZ1VersicherungGesetzlich                               Instance    Beispiel-Szenario-1.fsh                       45 - 61
 Coverage-SZ1VersicherungSelbstzahler.json                                SZ1VersicherungSelbstzahler                             Instance    Beispiel-Szenario-1.fsh                       63 - 69
+Coverage-SZ2VersicherungGesetzlich.json                                  SZ2VersicherungGesetzlich                               Instance    Beispiel-Szenario-2.fsh                       83 - 95
 Encounter-Fachabteilungskontakt.json                                     Fachabteilungskontakt                                   Instance    ISiKKontaktGesundheitseinrichtung.fsh         421 - 461
 Encounter-FachabteilungskontaktMinimal.json                              FachabteilungskontaktMinimal                            Instance    ISiKBerichtBundle.fsh                         55 - 68
 Encounter-SZ1Nachstationaer.json                                         SZ1Nachstationaer                                       Instance    Beispiel-Szenario-1.fsh                       143 - 160
 Encounter-SZ1Stationaer.json                                             SZ1Stationaer                                           Instance    Beispiel-Szenario-1.fsh                       106 - 141
 Encounter-SZ1Vorstationaer.json                                          SZ1Vorstationaer                                        Instance    Beispiel-Szenario-1.fsh                       87 - 104
+Encounter-SZ2Encounter.json                                              SZ2Encounter                                            Instance    Beispiel-Szenario-2.fsh                       48 - 65
 Location-BettenstellplatzStandortBeispiel.json                           BettenstellplatzStandortBeispiel                        Instance    ISiKStandort.fsh                              61 - 65
 Location-RaumStandortBeispiel.json                                       RaumStandortBeispiel                                    Instance    ISiKStandort.fsh                              55 - 59
 Observation-ISiKAlkoholAbususBeispiel.json                               ISiKAlkoholAbususBeispiel                               Instance    ISiKLebenszustandOberservations.fsh           103 - 115
@@ -45,6 +51,7 @@ Patient-DorisZiel.json                                                   DorisZi
 Patient-PatientinMusterfrau.json                                         PatientinMusterfrau                                     Instance    ISiKPatient.fsh                               347 - 397
 Patient-PatientinMusterfrauMinimal.json                                  PatientinMusterfrauMinimal                              Instance    ISiKBerichtBundle.fsh                         41 - 53
 Patient-SZ1Patient.json                                                  SZ1Patient                                              Instance    Beispiel-Szenario-1.fsh                       9 - 25
+Patient-SZ2Patient.json                                                  SZ2Patient                                              Instance    Beispiel-Szenario-2.fsh                       6 - 22
 Practitioner-PractitionerWalterArzt.json                                 PractitionerWalterArzt                                  Instance    ISiKPersonImGesundheitsberuf.fsh              92 - 127
 Procedure-Appendektomie.json                                             Appendektomie                                           Instance    ISiKProzedur.fsh                              110 - 123
 RelatedPerson-ISiKAngehoerigerMustermann.json                            ISiKAngehoerigerMustermann                              Instance    ISiKAngehoeriger.fsh                          168 - 179
@@ -57,7 +64,7 @@ StructureDefinition-ISiKATCCoding.json                                   ISiKATC
 StructureDefinition-ISiKAbrechnungsfall.json                             ISiKAbrechnungsfall                                     Profile     ISiKAbrechnungsfall.fsh                       1 - 106
 StructureDefinition-ISiKAlkoholAbusus.json                               ISiKAlkoholAbusus                                       Profile     ISiKLebenszustandOberservations.fsh           91 - 101
 StructureDefinition-ISiKAllergieUnvertraeglichkeit.json                  ISiKAllergieUnvertraeglichkeit                          Profile     ISiKAllergieUnvertraeglichkeit.fsh            1 - 107
-StructureDefinition-ISiKAngehoeriger.json                                ISiKAngehoeriger                                        Profile     ISiKAngehoeriger.fsh                          1 - 45
+StructureDefinition-ISiKAngehoeriger.json                                ISiKAngehoeriger                                        Profile     ISiKAngehoeriger.fsh                          1 - 165
 StructureDefinition-ISiKBerichtBundle.json                               ISiKBerichtBundle                                       Profile     ISiKBerichtBundle.fsh                         1 - 22
 StructureDefinition-ISiKBerichtSubSysteme.json                           ISiKBerichtSubSysteme                                   Profile     ISiKBerichtSubSysteme.fsh                     1 - 185
 StructureDefinition-ISiKBinary.json                                      ISiKBinary                                              Profile     ISiKBinary.fsh                                1 - 15
