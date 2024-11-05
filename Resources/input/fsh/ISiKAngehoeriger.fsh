@@ -28,7 +28,16 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * ^short = "Verwandtschaftsverhältnis"
   * ^comment = "**Begründung MS:** Harmonisierung mit KBV (KBV_PR_Base_RelatedPerson)"
 * telecom MS
-  * ^comment = "**Begründung MS:** Harmonisierung mit KBV (KBV_PR_Base_RelatedPerson)"
+  * ^short = "Telekommunikationsverbindung"
+  * ^comment = "Telekommunikationsverbindung (z.B. Telefonnummer, eMail-Adresse)
+  **Begründung MS:** Harmonisierung mit KBV (KBV_PR_Base_RelatedPerson)"
+  * system 1.. MS
+    * ^short = "Art der Telekommunikationsverbindung"
+    * ^comment = "**Begründung Pflichtfeld:** Harmonisierung mit KBV (KBV_PR_Base_RelatedPerson)"
+  * value 1.. MS
+    * ^short = "Telekommunikations-Endpunkt"
+    * ^comment = "**Begründung Pflichtfeld:** Harmonisierung mit KBV (KBV_PR_Base_RelatedPerson)"
+
 
 * name MS
 * name only HumannameDeBasis
@@ -43,15 +52,16 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
 * name contains
     Name 1..1 MS 
 * name[Name]    
-  * use 1.. MS
+  * use MS
     * ^short = "Verwendungszweck"
-    * ^comment = "Hier ist stets der Wert `official` anzugeben.  
-      **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium"  
-  * family 1.. MS
+    * ^comment = "Verwendungszweck des Namens. Der präferierte Namen für die Brief- und Rechnungszustellung SOLLTE als `official`
+    gekennzeichnet werden und mindestens über einen Vor- und Nachnamen verfügen.    
+    **Begründung MS:** Dient als Unterscheidungs- und Auswahlkriterium"  
+  * family  MS
     * ^short = "Nachname"
     * ^comment = "Vollständiger Nachname bzw. Familienname der Person, einschließlich Vor- und Zusätze.  
       **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind."   
-  * given 1.. MS
+  * given  MS
     * ^short = "Vorname "
     * ^comment = "Kann mehrfach verwendet werden, um den Rufnamen sowie weitere Vornamen, Mittelnamen oder Mittel-Initialen abzubilden.
       **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind."   
@@ -93,7 +103,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * extension[Strasse] 0..0 
     * extension[Hausnummer] 0..0 
     * extension[Adresszusatz] 0..0 
-    * extension[Postfach] 0..1 MS
+    * extension[Postfach] 0..1 
       * ^short = "Postfachnummer"
       * ^comment = "Postfach-Adresse. Bei Angabe eines Postfaches in dieser Extension muss das Postfach auch in Address.line angegeben werden,
         um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. 
@@ -130,19 +140,19 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     **Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar.  
     **Begründung für Reduktion der max. Kardinalität:** Die maximale Kardinalität wurde in Übereinstimmung mit der 
     DIN-Norm 5008 (Schreib- und Gestaltungsregeln für die Text- und Informationsverarbeitung) auf 3 beschränkt."
-    * extension[Strasse] 0..1 MS
+    * extension[Strasse] 0..1 
       * ^short = "Strassenname "
       * ^comment = "Strassenname (ohne Hausnummer).
         Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden,
         um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
-    * extension[Hausnummer] 0..1 MS
+    * extension[Hausnummer] 0..1 
       * ^short = "Hausnummer "
       * ^comment = "Hausnummer, sowie Zusätze (Appartmentnummer, Etage...). 
         Bei Angabe einer Hausnummer in dieser Extension muss diese auch in Address.line angegeben werden,
         um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.   
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
-    * extension[Adresszusatz] 0..1 MS
+    * extension[Adresszusatz] 0..1 
       * ^short = "Adresszusatz "
       * ^comment = "Zusätzliche Informationen, wie z.B. '3. Etage', 'Appartment C'.
         Bei Angabe einer Zusatzinformation in dieser Extension muss diese auch in Address.line angegeben werden,
