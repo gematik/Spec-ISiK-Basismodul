@@ -205,7 +205,7 @@
         "id": "AllergyIntolerance.patient.reference",
         "path": "AllergyIntolerance.patient.reference",
         "short": "Patienten-Link",
-        "comment": "Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation \n    zu einem Patienten und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation \r\n    zu einem Patienten und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },
@@ -219,7 +219,7 @@
         "id": "AllergyIntolerance.encounter.reference",
         "path": "AllergyIntolerance.encounter.reference",
         "short": "Encounter-Link",
-        "comment": "Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt \n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt \r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },

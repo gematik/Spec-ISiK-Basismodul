@@ -1101,7 +1101,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
     * interaction[+]
       * insert Expectation(#SHOULD)
       * code = #search-type   
-      * documentation ="Sofern die Ressourcen zum Standort unterstützt werden, SOLL die REST-Interaktion `search` implementiert werden."
+      * documentation = "Sofern die Ressourcen zum Standort unterstützt werden, SOLL die REST-Interaktion `search` implementiert werden."
 
     * interaction[+]
       * insert Expectation(#SHOULD)

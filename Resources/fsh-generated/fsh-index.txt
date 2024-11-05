@@ -11,7 +11,7 @@ Bundle-ISiKBundle-Example.json                                           ISiKBun
 Bundle-SubscriptionNotificationBundleExample.json                        SubscriptionNotificationBundleExample                   Instance    IsiKPatientMerge.fsh                          100 - 113
 Bundle-Szenario1.json                                                    Szenario1                                               Instance    Beispiel-Szenario-1.fsh                       164 - 174
 Bundle-Szenario2.json                                                    Szenario2                                               Instance    Beispiel-Szenario-2.fsh                       99 - 107
-CapabilityStatement-ISiKCapabilityStatementBasisServer.json              ISiKCapabilityStatementBasisServer                      Instance    ISiKCapabilityStatementBasisServer.fsh        1 - 1457
+CapabilityStatement-ISiKCapabilityStatementBasisServer.json              ISiKCapabilityStatementBasisServer                      Instance    ISiKCapabilityStatementBasisServer.fsh        1 - 1100
 CodeSystem-CodeSystemExample.json                                        CodeSystemExample                                       Instance    ISiKCodeSystem.fsh                            16 - 26
 CodeSystem-ISiKBehandlungsergebnisRehaCS.json                            ISiKBehandlungsergebnisReha                             CodeSystem  CodeSystems.fsh                               11 - 18
 CodeSystem-ISiKBesondereBehandlungsformRehaCS.json                       ISiKBesondereBehandlungsformReha                        CodeSystem  CodeSystems.fsh                               1 - 9
