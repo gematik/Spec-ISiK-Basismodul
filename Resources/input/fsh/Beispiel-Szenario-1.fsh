@@ -3,6 +3,8 @@ Minderjähriges Kind, familienversichert über Mutter,
 Selbstzahlerverhältnis mit abw. Rechnungsempfänger,
 Vorstationärer, stationärer und Nachstationärer Besuch, die über einen DRG-Fall abgerechnet werden
 Stationärer Aufenthalt mit Wahlleistung Begleitperson (keine Kassenleistung)
+
+BundleVisualizer: http://clinfhir.com/bundleVisualizer.html
 */
 
 

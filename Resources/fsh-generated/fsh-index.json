@@ -12,8 +12,8 @@
     "fshName": "SZ1DRGFall",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-1.fsh",
-    "startLine": 71,
-    "endLine": 85
+    "startLine": 73,
+    "endLine": 87
   },
   {
     "outputFile": "Account-SZ2DRGFall.json",
@@ -84,8 +84,8 @@
     "fshName": "Szenario1",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-1.fsh",
-    "startLine": 162,
-    "endLine": 172
+    "startLine": 164,
+    "endLine": 174
   },
   {
     "outputFile": "Bundle-Szenario2.json",
@@ -236,16 +236,16 @@
     "fshName": "SZ1VersicherungGesetzlich",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-1.fsh",
-    "startLine": 45,
-    "endLine": 61
+    "startLine": 47,
+    "endLine": 63
   },
   {
     "outputFile": "Coverage-SZ1VersicherungSelbstzahler.json",
     "fshName": "SZ1VersicherungSelbstzahler",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-1.fsh",
-    "startLine": 63,
-    "endLine": 69
+    "startLine": 65,
+    "endLine": 71
   },
   {
     "outputFile": "Coverage-SZ2VersicherungGesetzlich.json",
@@ -276,24 +276,24 @@
     "fshName": "SZ1Nachstationaer",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-1.fsh",
-    "startLine": 143,
-    "endLine": 160
+    "startLine": 145,
+    "endLine": 162
   },
   {
     "outputFile": "Encounter-SZ1Stationaer.json",
     "fshName": "SZ1Stationaer",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-1.fsh",
-    "startLine": 106,
-    "endLine": 141
+    "startLine": 108,
+    "endLine": 143
   },
   {
     "outputFile": "Encounter-SZ1Vorstationaer.json",
     "fshName": "SZ1Vorstationaer",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-1.fsh",
-    "startLine": 87,
-    "endLine": 104
+    "startLine": 89,
+    "endLine": 106
   },
   {
     "outputFile": "Encounter-SZ2Encounter.json",
@@ -412,8 +412,8 @@
     "fshName": "SZ1Patient",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-1.fsh",
-    "startLine": 9,
-    "endLine": 25
+    "startLine": 11,
+    "endLine": 27
   },
   {
     "outputFile": "Patient-SZ2Patient.json",
@@ -452,8 +452,8 @@
     "fshName": "SZ1Mutter",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-1.fsh",
-    "startLine": 27,
-    "endLine": 43
+    "startLine": 29,
+    "endLine": 45
   },
   {
     "outputFile": "SearchParameter-Encounter-date-start.json",

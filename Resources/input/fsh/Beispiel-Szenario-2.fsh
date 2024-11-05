@@ -1,5 +1,7 @@
 /* 
 Gesetzlich hauptversicherte Patientin mit Kreuz-Stern-Diagnose als (Krankenhaus-)Hauptdiagnose eines stationären Aufenthaltes
+
+BundleVisualizer: http://clinfhir.com/bundleVisualizer.html
 */
 
 
