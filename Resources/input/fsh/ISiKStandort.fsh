@@ -1,7 +1,32 @@
 Profile: ISiKStandort
 Parent: Location
 Id: ISiKStandort
-Description: "Dieses Profil dient der strukturierten Erfassung von Standortangaben eines Krankenhauses oder von Organisationseinheiten innerhalb eines Krankenhauses in ISiK-Szenarien."
+Description: "Dieses Profil dient der strukturierten Erfassung von Standortangaben eines 
+Krankenhauses oder von Organisationseinheiten innerhalb eines Krankenhauses in ISiK-Szenarien.  
+### Motivation
+In FHIR wird die Organisation (Organization) vom Standort (Location) eindeutig abgegrenzt.
+
+Die Abbildung von Standorten in einem Krankenhaus unterstützt u.a. die Raum- und Bettenbelegung in strukturierter Form. 
+
+Die Erfassung des Standortes in strukturierter Form soll u.a. ermöglichen:
+- Zuweisungen von Diensten an bestimmte Standorte im Rahmen des Terminmanagements
+- Die Raum- und Betten-Belegung in strukturierter Form (interdisziplinär) - u.a. für 
+    - Patientenportale im Rahmen der Terminbuchung, z.B. um den Wunsch nach Einzelbett, bzw. 1 oder 2 Betten abzubilden
+    - KIS und weitere Subsysteme:
+      - zur Patientenabholung und Information für den Transportdienst
+      - Abbildung der Verfügbarkeit eines spezifischen Bettenstellplatzes (z.B. mit spezifischem Monitoring-Device) 
+- Im Rahmen der Versorgung kann eine der folgenden Beispiel-Fragen beantworten werden:
+    - Handelt es sich um ein Isolationszimmer?
+    - Gibt es bestimmte Ausstattung, z.B. Beatmungsgeräte?
+    - etc.
+
+Dafür werden Standort-Profile in unterschiedlicher Granularität definiert. 
+
+### Kompatibilität
+Für das Profil ISiKStandort wurde bis zum Zeitpunkt der Veröffentlichung kein Abgleich der 
+Kompatibilität zu anderen Profilen (der KBV und der Medizininformatik-Initiative) durchgeführt.  
+Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.
+"
 * insert Meta
 * identifier MS //Motivation: entspricht https://simplifier.net/medizininformatikinitiative-modulstrukturdaten/sd_mii_struktur_location
   * ^slicing.discriminator.type = #pattern
@@ -44,7 +69,12 @@ Description: "Dieses Profil dient der strukturierten Erfassung von Räumen (als 
 Profile: ISiKStandortBettenstellplatz
 Parent: ISiKStandort
 Id: ISiKStandortBettenstellplatz
-Description: "Dieses Profil dient der strukturierten Erfassung von Bettenstellplätzen (als Standorten) eines Krankenhauses"
+Description: "Dieses Profil dient der strukturierten Erfassung von Bettenstellplätzen (als Standorten) 
+eines Krankenhauses.  
+### Hinweis  
+Ein einzelnes Bett als Gegenstand kann als FHIR-Ressource 'Device' abgebildet werden, 
+das einen Bettenstellplatz referenziert.
+"
 * insert Meta
 * physicalType = $LocationPhysicalType#bd "Bed" // Dies entspreicht der Definition des VS "This is not the physical bed/trolley that may be moved about, but the space it may occupy."
 * operationalStatus MS
