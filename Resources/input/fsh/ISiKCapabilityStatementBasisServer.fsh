@@ -1219,11 +1219,14 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
       * insert Expectation(#MAY)
 
     * interaction[+]
-      * insert Expectation(#MAY)
+      * insert Expectation(#SHOULD)
       * code = #read
+      * documentation = "Sofern die Ressource `Organization` unterstützt wird, SOLL die REST-Interaktion `read` implementiert werden."
     * interaction[+]
-      * insert Expectation(#MAY)
+      * insert Expectation(#SHOULD)
       * code = #search-type   
+      * documentation = "Sofern die Ressource `Organization` unterstützt wird, SOLL die REST-Interaktion `search` implementiert werden."
+    
 
     * insert CommonSearchParameters
     * searchParam[+]
