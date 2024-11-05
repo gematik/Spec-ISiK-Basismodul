@@ -1095,11 +1095,21 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
       * insert Expectation(#MAY)
 
     * interaction[+]
-      * insert Expectation(#MAY)
+      * insert Expectation(#SHOULD)
       * code = #read
+      * documentation ="Sofern die Ressourcen zum Standort unterstützt werden, SOLL die REST-Interaktion `read` implementiert werden."
     * interaction[+]
-      * insert Expectation(#MAY)
+      * insert Expectation(#SHOULD)
       * code = #search-type   
+      * documentation ="Sofern die Ressourcen zum Standort unterstützt werden, SOLL die REST-Interaktion `search` implementiert werden."
+
+    * interaction[+]
+      * insert Expectation(#SHOULD)
+      * code = #update
+      * documentation = "Sofern die Ressourcen zum Standort unterstützt werden, `update` implementiert werden. 
+      Diese dient insbesondere dem Synchronisieren des Status (`Location.operationalStatus`) der abgeleiteten 
+      Ressourcen ISiKStandortRaum und ISiKStandortBettenstellplatz - u.a. zur Kennzeichnung als 
+      'Frei', 'Besetzt', 'Kontaminiert', 'Isoliert', in 'Reinigung' etc."        
 
     * insert CommonSearchParameters
     * searchParam[+]
