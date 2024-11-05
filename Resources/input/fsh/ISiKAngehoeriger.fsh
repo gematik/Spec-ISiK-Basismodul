@@ -29,7 +29,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * ^comment = "**Begründung MS:** Harmonisierung mit KBV (KBV_PR_Base_RelatedPerson)"
 * telecom MS
   * ^short = "Telekommunikationsverbindung"
-  * ^comment = "Telekommunikationsverbindung (z.B. Telefonnummer, eMail-Adresse)
+  * ^comment = "Telekommunikationsverbindung (z.B. Telefonnummer, eMail-Adresse)  
   **Begründung MS:** Harmonisierung mit KBV (KBV_PR_Base_RelatedPerson)"
   * system 1.. MS
     * ^short = "Art der Telekommunikationsverbindung"
