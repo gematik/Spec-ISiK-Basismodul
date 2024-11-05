@@ -8,7 +8,7 @@
   "experimental": false,
   "date": "2024-11-05",
   "publisher": "gematik GmbH",
-  "description": "Dieses Profil dient der strukturierten Erfassung von Bettenstellplätzen (als Standorten) eines Krankenhauses",
+  "description": "Dieses Profil dient der strukturierten Erfassung von Bettenstellplätzen (als Standorten) \r\neines Krankenhauses.  \r\n### Hinweis  \r\nEin einzelnes Bett als Gegenstand kann als FHIR-Ressource 'Device' abgebildet werden, \r\ndas einen Bettenstellplatz referenziert.\r\n",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
