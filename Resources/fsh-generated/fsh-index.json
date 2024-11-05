@@ -308,16 +308,16 @@
     "fshName": "BettenstellplatzStandortBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 61,
-    "endLine": 65
+    "startLine": 91,
+    "endLine": 95
   },
   {
     "outputFile": "Location-RaumStandortBeispiel.json",
     "fshName": "RaumStandortBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 55,
-    "endLine": 59
+    "startLine": 85,
+    "endLine": 89
   },
   {
     "outputFile": "Observation-ISiKAlkoholAbususBeispiel.json",
@@ -428,8 +428,8 @@
     "fshName": "PractitionerWalterArzt",
     "fshType": "Instance",
     "fshFile": "ISiKPersonImGesundheitsberuf.fsh",
-    "startLine": 92,
-    "endLine": 127
+    "startLine": 122,
+    "endLine": 157
   },
   {
     "outputFile": "Procedure-Appendektomie.json",
@@ -444,8 +444,8 @@
     "fshName": "ISiKAngehoerigerMustermann",
     "fshType": "Instance",
     "fshFile": "ISiKAngehoeriger.fsh",
-    "startLine": 168,
-    "endLine": 179
+    "startLine": 178,
+    "endLine": 189
   },
   {
     "outputFile": "RelatedPerson-SZ1Mutter.json",
@@ -525,7 +525,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKAngehoeriger.fsh",
     "startLine": 1,
-    "endLine": 165
+    "endLine": 175
   },
   {
     "outputFile": "StructureDefinition-ISiKBerichtBundle.json",
@@ -645,7 +645,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKPersonImGesundheitsberuf.fsh",
     "startLine": 1,
-    "endLine": 88
+    "endLine": 118
   },
   {
     "outputFile": "StructureDefinition-ISiKProzedur.json",
@@ -693,23 +693,23 @@
     "fshType": "Profile",
     "fshFile": "ISiKStandort.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 57
   },
   {
     "outputFile": "StructureDefinition-ISiKStandortBettenstellplatz.json",
     "fshName": "ISiKStandortBettenstellplatz",
     "fshType": "Profile",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 44,
-    "endLine": 52
+    "startLine": 69,
+    "endLine": 82
   },
   {
     "outputFile": "StructureDefinition-ISiKStandortRaum.json",
     "fshName": "ISiKStandortRaum",
     "fshType": "Profile",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 34,
-    "endLine": 42
+    "startLine": 59,
+    "endLine": 67
   },
   {
     "outputFile": "StructureDefinition-ISiKStillstatus.json",

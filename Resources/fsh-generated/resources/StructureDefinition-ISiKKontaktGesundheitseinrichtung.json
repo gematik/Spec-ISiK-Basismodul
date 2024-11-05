@@ -8,7 +8,7 @@
   "experimental": false,
   "date": "2024-11-05",
   "publisher": "gematik GmbH",
-  "description": "\nDieses Profil ermöglicht die Abbildung von Besuchen/Aufenthalten eines Patienten in einer Gesundheitseinrichtung.\n### Motivation\nInformationen über die Besuche des Patienten entlang seines \nBehandlungspfades im Krankenhaus sind ein wichtiger Bestandteil \ndes einrichtungsinternen Datenaustausches. \nSie ermöglichen die Unterscheidung von stationären und ambulanten \nsowie aufgenommenen und entlassenen Patienten. \nWeiterhin ist aus den Besuchsinformationen der aktuelle Aufenthaltsort \ndes Patienten (Fachabteilung, Station, Bettplatz) ermittelbar. \nKlinische Ressourcen werden in FHIR durch Verlinkung auf die \nEncounter-Ressource in einen Kontext zum Besuch gestellt. \nDieser Kontext ist wichtig für die Steuerung von Zugriffsberechtigungen \nund Abrechnungsprozessen.  \n\nZu Beginn der meisten klinischen Workflows steht die Auswahl \ndes Besuchskontextes. \nDies geschieht bspw. durch das Suchen der Encounter-Ressource \nanhand von Eigenschaften wie Aufnahmenummer, Fallart oder Aufnahmedatum. \nDaraufhin werden die zutreffenden Suchergebnisse angezeigt \nund der gewünschte Besuch ausgewählt.\n\nIn FHIR werden Besuche, Aufenthalte, aber auch virtuelle Kontakte mit der `Encounter`-Ressource repräsentiert.\n\n### Kompatibilität\nFür das Profil ISiKKontaktGesundheitseinrichtung wird eine Kompatibilität \nmit folgenden Profilen angestrebt; \nallerdings kann nicht sichergestellt werden, dass Instanzen, \ndie gegen ISiKKontaktGesundheitseinrichtung valide sind, \nauch valide sind gegen:\n\n* Profil [Kontakt mit einer Gesundheitseinrichtung \nder Medizininformatik-Initiative](https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung)\n\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
+  "description": "\r\nDieses Profil ermöglicht die Abbildung von Besuchen/Aufenthalten eines Patienten in einer Gesundheitseinrichtung.\r\n### Motivation\r\nInformationen über die Besuche des Patienten entlang seines \r\nBehandlungspfades im Krankenhaus sind ein wichtiger Bestandteil \r\ndes einrichtungsinternen Datenaustausches. \r\nSie ermöglichen die Unterscheidung von stationären und ambulanten \r\nsowie aufgenommenen und entlassenen Patienten. \r\nWeiterhin ist aus den Besuchsinformationen der aktuelle Aufenthaltsort \r\ndes Patienten (Fachabteilung, Station, Bettplatz) ermittelbar. \r\nKlinische Ressourcen werden in FHIR durch Verlinkung auf die \r\nEncounter-Ressource in einen Kontext zum Besuch gestellt. \r\nDieser Kontext ist wichtig für die Steuerung von Zugriffsberechtigungen \r\nund Abrechnungsprozessen.  \r\n\r\nZu Beginn der meisten klinischen Workflows steht die Auswahl \r\ndes Besuchskontextes. \r\nDies geschieht bspw. durch das Suchen der Encounter-Ressource \r\nanhand von Eigenschaften wie Aufnahmenummer, Fallart oder Aufnahmedatum. \r\nDaraufhin werden die zutreffenden Suchergebnisse angezeigt \r\nund der gewünschte Besuch ausgewählt.\r\n\r\nIn FHIR werden Besuche, Aufenthalte, aber auch virtuelle Kontakte mit der `Encounter`-Ressource repräsentiert.\r\n\r\n### Kompatibilität\r\nFür das Profil ISiKKontaktGesundheitseinrichtung wird eine Kompatibilität \r\nmit folgenden Profilen angestrebt; \r\nallerdings kann nicht sichergestellt werden, dass Instanzen, \r\ndie gegen ISiKKontaktGesundheitseinrichtung valide sind, \r\nauch valide sind gegen:\r\n\r\n* Profil [Kontakt mit einer Gesundheitseinrichtung \r\nder Medizininformatik-Initiative](https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung)\r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -247,20 +247,20 @@
         "id": "Encounter.identifier:Aufnahmenummer.system",
         "path": "Encounter.identifier.system",
         "short": "Namensraum des Identifiers",
-        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \n    aus dem der Identifier stammt. \n    Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \n    [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \r\n    aus dem der Identifier stammt. \r\n    Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \r\n    [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \r\n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
         "mustSupport": true
       },
       {
         "id": "Encounter.identifier:Aufnahmenummer.value",
         "path": "Encounter.identifier.value",
-        "comment": "Enthält den eigentlichen Wert des Identifiers.  \n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "comment": "Enthält den eigentlichen Wert des Identifiers.  \r\n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
         "mustSupport": true
       },
       {
         "id": "Encounter.status",
         "path": "Encounter.status",
         "short": "Status",
-        "comment": "Zeigt den aktuellen Status der Ressource an.     \n  **WICHTIGER Hinweis für Implementierer:**    \n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch die Werte `in-progress`, `finished` und `cancelled`.\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.  \n  **Historie:** Die Reduktion der zulässigen Status-Werte im Vergleich zur FHIR-Kernspezifikation \n  erfolgt im Vorgriff auf eine entsprechende Anpassung in FHIR R5.",
+        "comment": "Zeigt den aktuellen Status der Ressource an.     \r\n  **WICHTIGER Hinweis für Implementierer:**    \r\n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \r\n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch die Werte `in-progress`, `finished` und `cancelled`.\r\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \r\n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.  \r\n  **Historie:** Die Reduktion der zulässigen Status-Werte im Vergleich zur FHIR-Kernspezifikation \r\n  erfolgt im Vorgriff auf eine entsprechende Anpassung in FHIR R5.",
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -272,7 +272,7 @@
         "id": "Encounter.class",
         "path": "Encounter.class",
         "short": "Fallart",
-        "comment": "Die Klassifikation von Encountern nach Fallarten folgt den internationalen Vorgaben und \n  dient der groben Unterscheidung von Besuchen mit und ohne Bettendisposition (ambulant/stationär). \n  Die in Deutschland übliche Fallklassifikation anhand von unterschiedlichen \n  regulatorischen und abrechnungrelevanten Rahmenbedingungen, erfolgt in `type`.  \n  Für ein korrektes Mapping der in Deutschland gebräuchlichen Fallarten auf `class` siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-AmbulanterStationaererFall?version=current)",
+        "comment": "Die Klassifikation von Encountern nach Fallarten folgt den internationalen Vorgaben und \r\n  dient der groben Unterscheidung von Besuchen mit und ohne Bettendisposition (ambulant/stationär). \r\n  Die in Deutschland übliche Fallklassifikation anhand von unterschiedlichen \r\n  regulatorischen und abrechnungrelevanten Rahmenbedingungen, erfolgt in `type`.  \r\n  Für ein korrektes Mapping der in Deutschland gebräuchlichen Fallarten auf `class` siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-AmbulanterStationaererFall?version=current)",
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -299,7 +299,7 @@
         "path": "Encounter.type",
         "sliceName": "Kontaktebene",
         "short": "Kontaktebene",
-        "comment": "Das Konzept der 'Kontaktebene' stammt aus dem Fallmodell der Medizininformatik-Initiative, \n  das bei Encountern zwischen 'Einrichtungskontakten', 'Fachabteilungskontakten' und 'Versorgungsstellenkontakten' unterscheidet.\n  Im Kontext dieses Moduls werden lediglich Encounter der Ebene 'Fachabteilungskontakt' abgebildet.\n  **Begründung Pflichtfeld:** Die Abteilungsebene muss aus Kompatibilitätsgründen angegeben werden.",
+        "comment": "Das Konzept der 'Kontaktebene' stammt aus dem Fallmodell der Medizininformatik-Initiative, \r\n  das bei Encountern zwischen 'Einrichtungskontakten', 'Fachabteilungskontakten' und 'Versorgungsstellenkontakten' unterscheidet.\r\n  Im Kontext dieses Moduls werden lediglich Encounter der Ebene 'Fachabteilungskontakt' abgebildet.\r\n  **Begründung Pflichtfeld:** Die Abteilungsebene muss aus Kompatibilitätsgründen angegeben werden.",
         "min": 1,
         "max": "1",
         "patternCodeableConcept": {
@@ -343,7 +343,7 @@
         "path": "Encounter.type",
         "sliceName": "KontaktArt",
         "short": "Kontaktart",
-        "comment": "Die Kontaktart dient der feingranularen Differenzierung unterschiedlicher stationärer \n  und ambulanter Fallarten gemäß der in Deutschland üblichen regulatorischen \n  und abrechnungsrelevanten Rahmenbedingungen.  \n  Für ein korrektes Mapping der in Deutschland gebräuchlichen Fallarten auf `type` siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-AmbulanterStationaererFall?version=current)",
+        "comment": "Die Kontaktart dient der feingranularen Differenzierung unterschiedlicher stationärer \r\n  und ambulanter Fallarten gemäß der in Deutschland üblichen regulatorischen \r\n  und abrechnungsrelevanten Rahmenbedingungen.  \r\n  Für ein korrektes Mapping der in Deutschland gebräuchlichen Fallarten auf `type` siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-AmbulanterStationaererFall?version=current)",
         "min": 0,
         "max": "1",
         "patternCodeableConcept": {
@@ -445,7 +445,7 @@
         "id": "Encounter.subject.reference",
         "path": "Encounter.subject.reference",
         "short": "Patienten-Link",
-        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten \n      und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten \r\n      und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },
@@ -453,28 +453,28 @@
         "id": "Encounter.period",
         "path": "Encounter.period",
         "short": "Aufenthaltszeitraum",
-        "comment": "**WICHTIGER Hinweis für Implementierer:** \n  * Das Aufnahmedatum  MUSS angegeben werden, \n  wenn der `status` des Encounters impliziert, dass dieser bereits begonnen hat.\n  * Das Entlassdatum MUSS angegeben werden, \n  wenn der `status` des Encounters impliziert, dass dieser beendet ist.  \n  Siehe hierzu die Übersicht der Invarianten in diesem Profil. ",
+        "comment": "**WICHTIGER Hinweis für Implementierer:** \r\n  * Das Aufnahmedatum  MUSS angegeben werden, \r\n  wenn der `status` des Encounters impliziert, dass dieser bereits begonnen hat.\r\n  * Das Entlassdatum MUSS angegeben werden, \r\n  wenn der `status` des Encounters impliziert, dass dieser beendet ist.  \r\n  Siehe hierzu die Übersicht der Invarianten in diesem Profil. ",
         "mustSupport": true
       },
       {
         "id": "Encounter.period.start",
         "path": "Encounter.period.start",
         "short": "Aufnahmedatum",
-        "comment": "Hier ist stets das *tatsächliche* Aufnahmedatum anzugeben.\n    *Geplante* Aufnahmedaten müssen über die Extension `plannedStartDate` erfasst werden.",
+        "comment": "Hier ist stets das *tatsächliche* Aufnahmedatum anzugeben.\r\n    *Geplante* Aufnahmedaten müssen über die Extension `plannedStartDate` erfasst werden.",
         "mustSupport": true
       },
       {
         "id": "Encounter.period.end",
         "path": "Encounter.period.end",
         "short": "Entlassdatum",
-        "comment": "Hier ist stets das *tatsächliche* Entlassdatum anzugeben.\n    *Geplante* Entlassdaten müssen über die Extension `plannedEndDate` erfasst werden.",
+        "comment": "Hier ist stets das *tatsächliche* Entlassdatum anzugeben.\r\n    *Geplante* Entlassdaten müssen über die Extension `plannedEndDate` erfasst werden.",
         "mustSupport": true
       },
       {
         "id": "Encounter.diagnosis",
         "path": "Encounter.diagnosis",
         "short": "Falldiagnosen/-prozeduren",
-        "comment": "Verweis auf Diagnosen/Prozeduren, die eine besondere Rolle im Kontext eines Encounters einnehmen, z.B. &quot;Aufnahmediagnose&quot;   \n  **WICHTIGER Hinweis für Implementierer:**   Der Fallbezug von Diagnosen und Prozeduren wird über das jeweilige `encounter`-Element \n  der Condition bzw. Procedure-Ressource hinreichend etabliert.  Die *zusätzliche* Rückverlinkung von `Encounter.diagnosis` auf Condition/Procedure wird *nur dann* verwendet, \n  wenn einer Diagnose bzw. Prozedur *im Kontext eines Aufenthaltes* eine besondere Rolle zugewiesen werden soll, z.B. Haupt-/Neben-/Aufnahme- oder Überweisungsdiagnose).  \n  Hier werden Diagnosen und Prozeduren nur nach ihrer *medizinschen* Relevanz bezüglich eines Aufenthaltes qualifiziert. \n  Die Qualifikation von Diagnosen und Prozeduren im Kontext der *Abrechnung* erfolgt in der `Account`-Ressource!"
+        "comment": "Verweis auf Diagnosen/Prozeduren, die eine besondere Rolle im Kontext eines Encounters einnehmen, z.B. &quot;Aufnahmediagnose&quot;   \r\n  **WICHTIGER Hinweis für Implementierer:**   Der Fallbezug von Diagnosen und Prozeduren wird über das jeweilige `encounter`-Element \r\n  der Condition bzw. Procedure-Ressource hinreichend etabliert.  Die *zusätzliche* Rückverlinkung von `Encounter.diagnosis` auf Condition/Procedure wird *nur dann* verwendet, \r\n  wenn einer Diagnose bzw. Prozedur *im Kontext eines Aufenthaltes* eine besondere Rolle zugewiesen werden soll, z.B. Haupt-/Neben-/Aufnahme- oder Überweisungsdiagnose).  \r\n  Hier werden Diagnosen und Prozeduren nur nach ihrer *medizinschen* Relevanz bezüglich eines Aufenthaltes qualifiziert. \r\n  Die Qualifikation von Diagnosen und Prozeduren im Kontext der *Abrechnung* erfolgt in der `Account`-Ressource!"
       },
       {
         "id": "Encounter.diagnosis.condition",
@@ -486,7 +486,7 @@
         "id": "Encounter.diagnosis.condition.reference",
         "path": "Encounter.diagnosis.condition.reference",
         "short": "Condition/Procedure-Link",
-        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf die Condition/Procedure-Ressource dient der technischen Zuordnung des Encounters zur Condition/Precedure \n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf die Condition/Procedure-Ressource dient der technischen Zuordnung des Encounters zur Condition/Precedure \r\n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },
@@ -532,7 +532,7 @@
         "path": "Encounter.diagnosis.use.coding",
         "sliceName": "DiagnosesubTyp",
         "short": "Diagnosesubtyp",
-        "comment": "An deutschen Kodierrichtlinien orientierte, feingranulare Unterscheidung von Diagnose-Rollen, \n      z.B. &quot;Fachabteilungshauptdiagnose&quot;, &quot;Todesursache&quot; etc.",
+        "comment": "An deutschen Kodierrichtlinien orientierte, feingranulare Unterscheidung von Diagnose-Rollen, \r\n      z.B. &quot;Fachabteilungshauptdiagnose&quot;, &quot;Todesursache&quot; etc.",
         "min": 0,
         "max": "*",
         "mustSupport": true,
@@ -550,14 +550,14 @@
         "id": "Encounter.account",
         "path": "Encounter.account",
         "short": "Abrechnungskontext",
-        "comment": "Der Bezug zu einem Account stellt den Abrechnungskontext für einen oder mehrere Encounter her.\n  Mittels der Account-Referenz können zum Beispiel ein vorstationärer, ein stationärer \n  und ein nachstationärer Besuch zu einem 'DRG-Fall' zusammengefasst werden.  \n  **WICHTIGER Hinweis für Implementierer:** Im Deutschen Sprachgebrauch ist unter dem Begriff 'Fall' \n  meist der Abrechnungskontext gemeint, nicht der einzelne Besuch. Die 'Fallnummer' ist daher nicht der Identifier des Encounters, \n  sondern der des Accounts auf den der Encounter referenziert. \n  Auf diesem Wege können mehrere Besuche einer Fallnummer zugeordnet werden.  \n  Da die Fallnummer ein häufig verwendetes Suchkriterium darstellt, \n  ist diese hier als logische Referenz (`account.identifier`) zu hinterlegen.\n  Damit wird sichergestellt, dass diese als Suchparameter für die Suche nach Encountern zur Verfügung steht, \n  auch wenn einzelne Systeme kein Chaining unterstützen oder einzelne Benutzer keine Sichtberechtigung auf Abrechnungsdaten haben,\n  im Versorgunskontext aber dennoch Encounter anhand der assoziierten Fallnummer suchen möchten.",
+        "comment": "Der Bezug zu einem Account stellt den Abrechnungskontext für einen oder mehrere Encounter her.\r\n  Mittels der Account-Referenz können zum Beispiel ein vorstationärer, ein stationärer \r\n  und ein nachstationärer Besuch zu einem 'DRG-Fall' zusammengefasst werden.  \r\n  **WICHTIGER Hinweis für Implementierer:** Im Deutschen Sprachgebrauch ist unter dem Begriff 'Fall' \r\n  meist der Abrechnungskontext gemeint, nicht der einzelne Besuch. Die 'Fallnummer' ist daher nicht der Identifier des Encounters, \r\n  sondern der des Accounts auf den der Encounter referenziert. \r\n  Auf diesem Wege können mehrere Besuche einer Fallnummer zugeordnet werden.  \r\n  Da die Fallnummer ein häufig verwendetes Suchkriterium darstellt, \r\n  ist diese hier als logische Referenz (`account.identifier`) zu hinterlegen.\r\n  Damit wird sichergestellt, dass diese als Suchparameter für die Suche nach Encountern zur Verfügung steht, \r\n  auch wenn einzelne Systeme kein Chaining unterstützen oder einzelne Benutzer keine Sichtberechtigung auf Abrechnungsdaten haben,\r\n  im Versorgunskontext aber dennoch Encounter anhand der assoziierten Fallnummer suchen möchten.",
         "mustSupport": true
       },
       {
         "id": "Encounter.account.reference",
         "path": "Encounter.account.reference",
         "short": "Account-Link",
-        "comment": "**Begründung MS:** Die Verlinkung auf eine Account-Ressource dient der technischen Zuordnung des Besuchs zu einem Abrechnungskontext \n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "**Begründung MS:** Die Verlinkung auf eine Account-Ressource dient der technischen Zuordnung des Besuchs zu einem Abrechnungskontext \r\n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "mustSupport": true
       },
       {
@@ -571,14 +571,14 @@
         "id": "Encounter.account.identifier.system",
         "path": "Encounter.account.identifier.system",
         "short": "Namensraum des Identifiers",
-        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \n      aus dem der Identifier stammt. \n      Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \n      [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \n      **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \r\n      aus dem der Identifier stammt. \r\n      Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \r\n      [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \r\n      **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Encounter.account.identifier.value",
         "path": "Encounter.account.identifier.value",
-        "comment": "Enthält den eigentlichen Wert des Identifiers.  \n        **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "comment": "Enthält den eigentlichen Wert des Identifiers.  \r\n        **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
         "min": 1,
         "mustSupport": true
       },
@@ -594,7 +594,7 @@
         "path": "Encounter.hospitalization.extension",
         "sliceName": "Wahlleistung",
         "short": "Wahlleistung",
-        "comment": "**Begründung MS:**  Vom Patienten gebuchte Wahlleistungen (z.B. Chefarztbehandlung, Einzelzimmer) \n    sind häufig system- und abteilungsübergreifend zu beachten und sollten daher über die Schnittstelle kommuniziert werden können.",
+        "comment": "**Begründung MS:**  Vom Patienten gebuchte Wahlleistungen (z.B. Chefarztbehandlung, Einzelzimmer) \r\n    sind häufig system- und abteilungsübergreifend zu beachten und sollten daher über die Schnittstelle kommuniziert werden können.",
         "min": 0,
         "max": "*",
         "type": [
@@ -611,7 +611,7 @@
         "id": "Encounter.hospitalization.admitSource",
         "path": "Encounter.hospitalization.admitSource",
         "short": "Aufnahmeanlass",
-        "comment": "Anlass der stationären Aufnahme, z.B. &quot;Einweisung&quot;, &quot;Notfall&quot; etc.  \n      Begründung MS: Zur Harmonisierung den Festlegungen der Medizininformatik-Initiative",
+        "comment": "Anlass der stationären Aufnahme, z.B. &quot;Einweisung&quot;, &quot;Notfall&quot; etc.  \r\n      Begründung MS: Zur Harmonisierung den Festlegungen der Medizininformatik-Initiative",
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
@@ -629,7 +629,7 @@
         "path": "Encounter.hospitalization.dischargeDisposition.extension",
         "sliceName": "Entlassungsgrund",
         "short": "Entlassungsgrund",
-        "comment": "Entlassungsgrund nach § 301 Abs. 3 SGB V  \n        **Einschränkung MS:** Der Entlassungsgrund muss nur implementiert werden,\n         wenn das bestätigungsrelevante System in der Akutversorgung eingesetzt wird.",
+        "comment": "Entlassungsgrund nach § 301 Abs. 3 SGB V  \r\n        **Einschränkung MS:** Der Entlassungsgrund muss nur implementiert werden,\r\n         wenn das bestätigungsrelevante System in der Akutversorgung eingesetzt wird.",
         "min": 0,
         "max": "1",
         "type": [
@@ -647,7 +647,7 @@
         "path": "Encounter.hospitalization.dischargeDisposition.extension",
         "sliceName": "RehaEntlassung",
         "short": "Entlassungsgrund Reha",
-        "comment": "Entlassungsgrund nach §301 (Abs. 4 und 4a) SGB V  \n      **Einschränkung MS:** Der Entlassungsgrund Reha muss nur implementiert werden,\n        wenn das bestätigungsrelevante System in der Reha-Versorgung eingesetzt wird",
+        "comment": "Entlassungsgrund nach §301 (Abs. 4 und 4a) SGB V  \r\n      **Einschränkung MS:** Der Entlassungsgrund Reha muss nur implementiert werden,\r\n        wenn das bestätigungsrelevante System in der Reha-Versorgung eingesetzt wird",
         "min": 0,
         "max": "1",
         "type": [
@@ -705,7 +705,7 @@
         "id": "Encounter.location:Zimmer.location.reference",
         "path": "Encounter.location.location.reference",
         "short": "Location-Link",
-        "comment": "**Begründung MS:** Die Verlinkung auf eine Location-Ressource dient der technischen Zuordnung des Besuchs zu einem Aufenthaltsort \n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "**Begründung MS:** Die Verlinkung auf eine Location-Ressource dient der technischen Zuordnung des Besuchs zu einem Aufenthaltsort \r\n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "mustSupport": true
       },
       {
@@ -719,13 +719,13 @@
         "id": "Encounter.location:Zimmer.location.identifier.system",
         "path": "Encounter.location.location.identifier.system",
         "short": "Namensraum des Identifiers",
-        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \n        aus dem der Identifier stammt. \n        Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \n        [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \n        **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \r\n        aus dem der Identifier stammt. \r\n        Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \r\n        [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \r\n        **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
         "mustSupport": true
       },
       {
         "id": "Encounter.location:Zimmer.location.identifier.value",
         "path": "Encounter.location.location.identifier.value",
-        "comment": "Enthält den eigentlichen Wert des Identifiers.  \n          **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "comment": "Enthält den eigentlichen Wert des Identifiers.  \r\n          **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
         "mustSupport": true
       },
       {
@@ -796,7 +796,7 @@
         "id": "Encounter.location:Bettenstellplatz.location.reference",
         "path": "Encounter.location.location.reference",
         "short": "Location-Link",
-        "comment": "**Begründung MS:** Die Verlinkung auf eine Location-Ressource dient der technischen Zuordnung des Besuchs zu einem Aufenthaltsort \n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "**Begründung MS:** Die Verlinkung auf eine Location-Ressource dient der technischen Zuordnung des Besuchs zu einem Aufenthaltsort \r\n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "mustSupport": true
       },
       {
@@ -810,13 +810,13 @@
         "id": "Encounter.location:Bettenstellplatz.location.identifier.system",
         "path": "Encounter.location.location.identifier.system",
         "short": "Namensraum des Identifiers",
-        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \n        aus dem der Identifier stammt. \n        Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \n        [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \n        **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \r\n        aus dem der Identifier stammt. \r\n        Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \r\n        [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \r\n        **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
         "mustSupport": true
       },
       {
         "id": "Encounter.location:Bettenstellplatz.location.identifier.value",
         "path": "Encounter.location.location.identifier.value",
-        "comment": "Enthält den eigentlichen Wert des Identifiers.  \n          **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "comment": "Enthält den eigentlichen Wert des Identifiers.  \r\n          **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
         "mustSupport": true
       },
       {
@@ -889,7 +889,7 @@
         "id": "Encounter.location:Station.location.reference",
         "path": "Encounter.location.location.reference",
         "short": "Location-Link",
-        "comment": "**Begründung MS:** Die Verlinkung auf eine Location-Ressource dient der technischen Zuordnung des Besuchs zu einem Aufenthaltsort \n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "**Begründung MS:** Die Verlinkung auf eine Location-Ressource dient der technischen Zuordnung des Besuchs zu einem Aufenthaltsort \r\n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "mustSupport": true
       },
       {
@@ -903,13 +903,13 @@
         "id": "Encounter.location:Station.location.identifier.system",
         "path": "Encounter.location.location.identifier.system",
         "short": "Namensraum des Identifiers",
-        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \n        aus dem der Identifier stammt. \n        Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \n        [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \n        **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \r\n        aus dem der Identifier stammt. \r\n        Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \r\n        [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \r\n        **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
         "mustSupport": true
       },
       {
         "id": "Encounter.location:Station.location.identifier.value",
         "path": "Encounter.location.location.identifier.value",
-        "comment": "Enthält den eigentlichen Wert des Identifiers.  \n          **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "comment": "Enthält den eigentlichen Wert des Identifiers.  \r\n          **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
         "mustSupport": true
       },
       {

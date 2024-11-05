@@ -1,7 +1,19 @@
 Profile: ISiKPersonImGesundheitsberuf
 Parent: Practitioner
 Id: ISiKPersonImGesundheitsberuf
-Description: "Dieses Profil ermöglicht die Nutzung von in Gesundheitsberufen tätigen Personen in ISiK Szenarien."
+Description: "Dieses Profil ermöglicht die Nutzung von in Gesundheitsberufen tätigen Personen in ISiK Szenarien.
+### Motivation
+
+Das Profil ISIKPersonImGesundheitsberuf bildet alle denkbaren medizinischen Leistungserbringer und Fachexperten  ab. In den ISiK-FHIR-Profilen können PersonImGesundheitsberuf bspw. als Ausführende einer Prozedur auftreten, im Element `performer` der Procedure Ressource, oder als die Person, die eine Diagnose stellt, im Element `asserter` der Condition Ressource.
+
+In FHIR werden PersonImGesundheitsberuf mit der [`Practitioner`](https://hl7.org/fhir/R4/practitioner.html)-Ressource
+ repräsentiert.  
+ Für das Profil ISIKPersonImGesundheitsberuf wird eine Kompatibilität mit folgenden Profilen angestrebt; allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen ISIKPatient valide sind, auch valide sind gegen:
+* [Profil KBV_PR_Base_Practitioner der KBV Basisprofile](https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Practitioner). 
+* [Profil HiGHmed_IC_Practitioner, MI Initiative - HiGHmed Use Case Infection Control der  Medizininformatik Initiative ](https://simplifier.net/medizininformatikinitiative-highmed-ic/highmed-ic-practitioner)
+
+Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden."
+
 * insert Meta
 * obeys prac-de-1
 * . ^constraint[5].source = Canonical(ISiKPersonImGesundheitsberuf)
@@ -14,6 +26,10 @@ Description: "Dieses Profil ermöglicht die Nutzung von in Gesundheitsberufen t�
     EFN 0..1 MS and
     TelematikId 0..1 MS
 * identifier[Arztnummer] only IdentifierLanr
+  * ^short = "Lebenslange Arztnummer"
+  * ^comment = " Im Krankenhaus ist die lebenslange Arztnummer der Ärzte bekannt und MUSS zur eindeutigen Identifikation eines Arztes bereitgestellt werden.
+**Hinweise:** Siehe [Beschreibung der Deutschen Basisprofile](https://ig.fhir.de/basisprofile-de/1.2.0/LebenslangeArztnummerLANR-Identifier.html)
+Während die Deutschen Basisprofile hier die Abkürzung LANR verwenden, ist im KBV-Kontext das Akronym ANR gebräuchlich. Die Bezeichnung des Slices hat jedoch keinerlei Auswirkungen auf die Kompatibilität."
   * ^patternIdentifier.type = $v2-0203#LANR
   * type 1..
 * identifier[EFN] only IdentifierEfn
@@ -32,6 +48,8 @@ Description: "Dieses Profil ermöglicht die Nutzung von in Gesundheitsberufen t�
     Name 1..1 MS and
     Geburtsname 0..1
 * name[Name] only HumannameDeBasis
+  * ^short = "Vollständiger Name"
+  * ^comment = "Der Name des Arztes MUSS in konkreten Anwendungen angezeigt werden können. Es MUSS nach dem Namen des Arztes gesucht werden können."
   * ^patternHumanName.use = #official
   * use 1.. MS
   * use = #official (exactly)
@@ -56,9 +74,12 @@ Description: "Dieses Profil ermöglicht die Nutzung von in Gesundheitsberufen t�
     Strassenanschrift 0..* MS and
     Postfach 0..* MS
 * address[Postfach] only AddressDeBasis
+  * ^short = "Postfachanschrift"
+  * ^comment = "Ist die Postfachadresse bekannt, unter der ein Arzt erreichbar ist, MUSS sie bereitgestellt werden."
   * ^patternAddress.type = #postal
   * type 1.. MS
   * line 1.. MS
+  //VSDM-Extensions WARUM? 
     * extension[Strasse] 0..0
     * extension[Hausnummer] 0..0
     * extension[Adresszusatz] 0..0
@@ -67,10 +88,13 @@ Description: "Dieses Profil ermöglicht die Nutzung von in Gesundheitsberufen t�
   * postalCode 1.. MS
   * country 1.. MS
 * address[Strassenanschrift] only AddressDeBasis
+  * ^short = "Straßenanschrift"
+  * ^comment = "Ist die Adresse bekannt, unter der ein Arzt erreichbar ist, MUSS sie bereitgestellt werden."
   * extension[Stadtteil] MS
   * ^patternAddress.type = #both
   * type 1.. MS
   * line 1.. MS
+  //VSDM-Extensions WARUM? 
     * extension[Strasse] 0..1 MS
     * extension[Hausnummer] 0..1 MS
     * extension[Adresszusatz] 0..1 MS
@@ -79,12 +103,18 @@ Description: "Dieses Profil ermöglicht die Nutzung von in Gesundheitsberufen t�
   * postalCode 1.. MS
   * country 1.. MS
 * gender MS
+  * ^short = "Administratives Geschlecht"
+  * ^short = "Ist das Geschlecht des Arztes bekannt, MUSS es bereitgestellt werden."
+  //Extension WARUM?
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
   * extension[Geschlecht-Administrativ].value[x] MS
+  //Slicing kann weg weil implizit:
 * birthDate.extension ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "url"
   * ^slicing.rules = #open
+  //WAS? WIESO Data-Absent-Reason!? Das Element ist doch optional! Es ist nichtmal MS!!
 * birthDate.extension contains $data-absent-reason named Data-Absent-Reason 0..1 MS
+//Achtung, VZD weicht hier ab: https://simplifier.net/vzd-fhir-directory/practitionerqualificationvs
 * qualification.code ^comment = "Zur Kodierung der Qualifikation ist das entsprechende [ValueSet der KBV](https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_Speciality) zu empfehlen."
 
 
