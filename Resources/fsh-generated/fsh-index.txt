@@ -44,8 +44,8 @@ Observation-ISiKRaucherStatusBeispiel.json                               ISiKRau
 Observation-ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel.json  ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel  Instance    ISiKLebenszustandOberservations.fsh           79 - 89
 Observation-ISiKSchwangerschaftsstatusBeispiel.json                      ISiKSchwangerschaftsstatusBeispiel                      Instance    ISiKLebenszustandOberservations.fsh           55 - 67
 Observation-ISiKStillstatusBeispiel.json                                 ISiKStillstatusBeispiel                                 Instance    ISiKLebenszustandOberservations.fsh           157 - 170
-Organization-AbteilungAllgemeinchirurgieOrganisationBeispiel.json        AbteilungAllgemeinchirurgieOrganisationBeispiel         Instance    ISiKOrganisation.fsh                          242 - 252
-Organization-KrankenhausOrganisationBeispiel.json                        KrankenhausOrganisationBeispiel                         Instance    ISiKOrganisation.fsh                          233 - 239
+Organization-AbteilungAllgemeinchirurgieOrganisationBeispiel.json        AbteilungAllgemeinchirurgieOrganisationBeispiel         Instance    ISiKOrganisation.fsh                          260 - 270
+Organization-KrankenhausOrganisationBeispiel.json                        KrankenhausOrganisationBeispiel                         Instance    ISiKOrganisation.fsh                          251 - 257
 Patient-DorisQuelle.json                                                 DorisQuelle                                             Instance    IsiKPatientMerge.fsh                          49 - 61
 Patient-DorisZiel.json                                                   DorisZiel                                               Instance    IsiKPatientMerge.fsh                          63 - 75
 Patient-PatientinMusterfrau.json                                         PatientinMusterfrau                                     Instance    ISiKPatient.fsh                               347 - 397
@@ -75,8 +75,8 @@ StructureDefinition-ISiKICD10GMCoding.json                               ISiKICD
 StructureDefinition-ISiKKontaktGesundheitseinrichtung.json               ISiKKontaktGesundheitseinrichtung                       Profile     ISiKKontaktGesundheitseinrichtung.fsh         1 - 396
 StructureDefinition-ISiKLebensZustand.json                               ISiKLebensZustand                                       Profile     ISiKLebenszustandOberservations.fsh           1 - 35
 StructureDefinition-ISiKLoincCoding.json                                 ISiKLoincCoding                                         Profile     ISiKDataTypeProfiles.fsh                      21 - 28
-StructureDefinition-ISiKOrganisation.json                                ISiKOrganisation                                        Profile     ISiKOrganisation.fsh                          117 - 227
-StructureDefinition-ISiKOrganisationFachabteilung.json                   ISiKOrganisationFachabteilung                           Profile     ISiKOrganisation.fsh                          1 - 113
+StructureDefinition-ISiKOrganisation.json                                ISiKOrganisation                                        Profile     ISiKOrganisation.fsh                          135 - 245
+StructureDefinition-ISiKOrganisationFachabteilung.json                   ISiKOrganisationFachabteilung                           Profile     ISiKOrganisation.fsh                          1 - 131
 StructureDefinition-ISiKPZNCoding.json                                   ISiKPZNCoding                                           Profile     ISiKDataTypeProfiles.fsh                      64 - 72
 StructureDefinition-ISiKPatient.json                                     ISiKPatient                                             Profile     ISiKPatient.fsh                               2 - 345
 StructureDefinition-ISiKPersonImGesundheitsberuf.json                    ISiKPersonImGesundheitsberuf                            Profile     ISiKPersonImGesundheitsberuf.fsh              1 - 118

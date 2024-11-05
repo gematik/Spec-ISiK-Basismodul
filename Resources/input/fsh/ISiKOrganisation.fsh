@@ -1,7 +1,25 @@
 Profile: ISiKOrganisationFachabteilung
 Parent: Organization
 Id: ISiKOrganisationFachabteilung
-Description: "Dieses Profil beschreibt die Organisationseinheit Fachabteilung innerhalb eines Krankenhauses."
+Description: "Dieses Profil beschreibt die Organisationseinheit Fachabteilung innerhalb eines Krankenhauses.
+### Motivation
+
+Die Abbildung der Aufbauorganisation eines Krankenhauses dient der Festlegung von Zuständigkeiten und (Entscheidungs-)Verantwortungen von Organisationseinheiten (z.B. Fachkliniken, Fachabteilungen und -bereichen etc.) in strukturierter Form. 
+
+In FHIR wird die Organisation (Organization) vom Standort (Location) eindeutig abgegrenzt.
+
+Die Erfassung der Organisation in strukturierter Form ermöglicht u.a.:
+- Zuweisungen von Diensten an bestimmte Bereiche der Aufbauorganisation im Rahmen des Terminmanagements
+- Die Raum- und Betten-Belegung in strukturierter Form (interdisziplinär)
+
+Auch die Erfassung des Krankenhauses als Ganzem ist relevant.
+Entsprechend fokussieren die folgenden Profile zur Organisation auf das Krankenhaus als Ganzes und die Fachabteilung als Organisation.  
+### Kompatibilität
+
+Für das Profil ISiKOrganisation wurde bis zum Zeitpunkt der Veröffentlichung kein Abgleich der Kompatibilität zu anderen Profilen (der KBV und der Medizininformatik-Initiative) durchgeführt.
+Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.
+
+"
 * insert Meta
 * identifier 1..* MS
   * ^slicing.discriminator.type = #pattern

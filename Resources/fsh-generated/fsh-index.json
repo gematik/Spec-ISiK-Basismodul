@@ -364,16 +364,16 @@
     "fshName": "AbteilungAllgemeinchirurgieOrganisationBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKOrganisation.fsh",
-    "startLine": 242,
-    "endLine": 252
+    "startLine": 260,
+    "endLine": 270
   },
   {
     "outputFile": "Organization-KrankenhausOrganisationBeispiel.json",
     "fshName": "KrankenhausOrganisationBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKOrganisation.fsh",
-    "startLine": 233,
-    "endLine": 239
+    "startLine": 251,
+    "endLine": 257
   },
   {
     "outputFile": "Patient-DorisQuelle.json",
@@ -612,8 +612,8 @@
     "fshName": "ISiKOrganisation",
     "fshType": "Profile",
     "fshFile": "ISiKOrganisation.fsh",
-    "startLine": 117,
-    "endLine": 227
+    "startLine": 135,
+    "endLine": 245
   },
   {
     "outputFile": "StructureDefinition-ISiKOrganisationFachabteilung.json",
@@ -621,7 +621,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKOrganisation.fsh",
     "startLine": 1,
-    "endLine": 113
+    "endLine": 131
   },
   {
     "outputFile": "StructureDefinition-ISiKPZNCoding.json",
