@@ -88,8 +88,7 @@
         "id": "RelatedPerson.name:Name.use",
         "path": "RelatedPerson.name.use",
         "short": "Verwendungszweck",
-        "comment": "Hier ist stets der Wert `official` anzugeben.  \n      **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium",
-        "min": 1,
+        "comment": "Verwendungszweck des Namens. Der präferierte Namen für die Brief- und Rechnungszustellung SOLLTE als `official`\n    gekennzeichnet werden und mindestens über einen Vor- und Nachnamen verfügen.    \n    **Begründung MS:** Dient als Unterscheidungs- und Auswahlkriterium",
         "mustSupport": true
       },
       {
@@ -97,7 +96,6 @@
         "path": "RelatedPerson.name.family",
         "short": "Nachname",
         "comment": "Vollständiger Nachname bzw. Familienname der Person, einschließlich Vor- und Zusätze.  \n      **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind.",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -105,7 +103,6 @@
         "path": "RelatedPerson.name.given",
         "short": "Vorname ",
         "comment": "Kann mehrfach verwendet werden, um den Rufnamen sowie weitere Vornamen, Mittelnamen oder Mittel-Initialen abzubilden.\n      **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind.",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -118,7 +115,24 @@
       {
         "id": "RelatedPerson.telecom",
         "path": "RelatedPerson.telecom",
-        "comment": "**Begründung MS:** Harmonisierung mit KBV (KBV_PR_Base_RelatedPerson)",
+        "short": "Telekommunikationsverbindung",
+        "comment": "Telekommunikationsverbindung (z.B. Telefonnummer, eMail-Adresse)  \n  **Begründung MS:** Harmonisierung mit KBV (KBV_PR_Base_RelatedPerson)",
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.telecom.system",
+        "path": "RelatedPerson.telecom.system",
+        "short": "Art der Telekommunikationsverbindung",
+        "comment": "**Begründung Pflichtfeld:** Harmonisierung mit KBV (KBV_PR_Base_RelatedPerson)",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.telecom.value",
+        "path": "RelatedPerson.telecom.value",
+        "short": "Telekommunikations-Endpunkt",
+        "comment": "**Begründung Pflichtfeld:** Harmonisierung mit KBV (KBV_PR_Base_RelatedPerson)",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -193,24 +207,21 @@
         "path": "RelatedPerson.address.line.extension",
         "sliceName": "Strasse",
         "short": "Strassenname ",
-        "comment": "Strassenname (ohne Hausnummer).\n        Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
-        "mustSupport": true
+        "comment": "Strassenname (ohne Hausnummer).\n        Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
       },
       {
         "id": "RelatedPerson.address:Strassenanschrift.line.extension:Hausnummer",
         "path": "RelatedPerson.address.line.extension",
         "sliceName": "Hausnummer",
         "short": "Hausnummer ",
-        "comment": "Hausnummer, sowie Zusätze (Appartmentnummer, Etage...). \n        Bei Angabe einer Hausnummer in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.   \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
-        "mustSupport": true
+        "comment": "Hausnummer, sowie Zusätze (Appartmentnummer, Etage...). \n        Bei Angabe einer Hausnummer in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.   \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
       },
       {
         "id": "RelatedPerson.address:Strassenanschrift.line.extension:Adresszusatz",
         "path": "RelatedPerson.address.line.extension",
         "sliceName": "Adresszusatz",
         "short": "Adresszusatz ",
-        "comment": "Zusätzliche Informationen, wie z.B. '3. Etage', 'Appartment C'.\n        Bei Angabe einer Zusatzinformation in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
-        "mustSupport": true
+        "comment": "Zusätzliche Informationen, wie z.B. '3. Etage', 'Appartment C'.\n        Bei Angabe einer Zusatzinformation in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
       },
       {
         "id": "RelatedPerson.address:Strassenanschrift.line.extension:Postfach",
@@ -313,8 +324,7 @@
         "path": "RelatedPerson.address.line.extension",
         "sliceName": "Postfach",
         "short": "Postfachnummer",
-        "comment": "Postfach-Adresse. Bei Angabe eines Postfaches in dieser Extension muss das Postfach auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. \n        Eine Postfach-Adresse darf nicht in Verbindung mit Address.type `physical` oder `both` verwendet werden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
-        "mustSupport": true
+        "comment": "Postfach-Adresse. Bei Angabe eines Postfaches in dieser Extension muss das Postfach auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. \n        Eine Postfach-Adresse darf nicht in Verbindung mit Address.type `physical` oder `both` verwendet werden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
       },
       {
         "id": "RelatedPerson.address:Postfach.city",
