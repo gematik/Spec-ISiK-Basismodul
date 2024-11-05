@@ -388,8 +388,8 @@
     "fshName": "ISiKAngehoerigerMustermann",
     "fshType": "Instance",
     "fshFile": "ISiKAngehoeriger.fsh",
-    "startLine": 167,
-    "endLine": 178
+    "startLine": 168,
+    "endLine": 179
   },
   {
     "outputFile": "RelatedPerson-SZ1Mutter.json",
@@ -469,7 +469,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKAngehoeriger.fsh",
     "startLine": 1,
-    "endLine": 164
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-ISiKBerichtBundle.json",

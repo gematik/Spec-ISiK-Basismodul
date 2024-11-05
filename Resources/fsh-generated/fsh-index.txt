@@ -47,7 +47,7 @@ Patient-PatientinMusterfrauMinimal.json                                  Patient
 Patient-SZ1Patient.json                                                  SZ1Patient                                              Instance    Beispiel-Szenario-1.fsh                       9 - 25
 Practitioner-PractitionerWalterArzt.json                                 PractitionerWalterArzt                                  Instance    ISiKPersonImGesundheitsberuf.fsh              92 - 127
 Procedure-Appendektomie.json                                             Appendektomie                                           Instance    ISiKProzedur.fsh                              110 - 123
-RelatedPerson-ISiKAngehoerigerMustermann.json                            ISiKAngehoerigerMustermann                              Instance    ISiKAngehoeriger.fsh                          167 - 178
+RelatedPerson-ISiKAngehoerigerMustermann.json                            ISiKAngehoerigerMustermann                              Instance    ISiKAngehoeriger.fsh                          168 - 179
 RelatedPerson-SZ1Mutter.json                                             SZ1Mutter                                               Instance    Beispiel-Szenario-1.fsh                       27 - 43
 SearchParameter-Encounter-date-start.json                                Encounter-date-start                                    Instance    ISiKKontaktGesundheitseinrichtung.fsh         504 - 522
 SearchParameter-Encounter-end-date.json                                  Encounter-end-date                                      Instance    ISiKKontaktGesundheitseinrichtung.fsh         524 - 542
@@ -57,7 +57,7 @@ StructureDefinition-ISiKATCCoding.json                                   ISiKATC
 StructureDefinition-ISiKAbrechnungsfall.json                             ISiKAbrechnungsfall                                     Profile     ISiKAbrechnungsfall.fsh                       1 - 106
 StructureDefinition-ISiKAlkoholAbusus.json                               ISiKAlkoholAbusus                                       Profile     ISiKLebenszustandOberservations.fsh           91 - 101
 StructureDefinition-ISiKAllergieUnvertraeglichkeit.json                  ISiKAllergieUnvertraeglichkeit                          Profile     ISiKAllergieUnvertraeglichkeit.fsh            1 - 107
-StructureDefinition-ISiKAngehoeriger.json                                ISiKAngehoeriger                                        Profile     ISiKAngehoeriger.fsh                          1 - 164
+StructureDefinition-ISiKAngehoeriger.json                                ISiKAngehoeriger                                        Profile     ISiKAngehoeriger.fsh                          1 - 45
 StructureDefinition-ISiKBerichtBundle.json                               ISiKBerichtBundle                                       Profile     ISiKBerichtBundle.fsh                         1 - 22
 StructureDefinition-ISiKBerichtSubSysteme.json                           ISiKBerichtSubSysteme                                   Profile     ISiKBerichtSubSysteme.fsh                     1 - 185
 StructureDefinition-ISiKBinary.json                                      ISiKBinary                                              Profile     ISiKBinary.fsh                                1 - 15
