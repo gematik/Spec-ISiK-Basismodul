@@ -132,56 +132,56 @@
     "fshName": "composition-blutdruck",
     "fshType": "Instance",
     "fshFile": "ISiKBerichtSubSysteme.fsh",
-    "startLine": 189,
-    "endLine": 207
+    "startLine": 187,
+    "endLine": 205
   },
   {
     "outputFile": "Condition-BehandlungsDiagnoseFreitext.json",
     "fshName": "BehandlungsDiagnoseFreitext",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 205,
-    "endLine": 212
+    "startLine": 208,
+    "endLine": 215
   },
   {
     "outputFile": "Condition-Example-condition-ausrufezeichen-primaer.json",
     "fshName": "Example-condition-ausrufezeichen-primaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 137,
-    "endLine": 146
+    "startLine": 140,
+    "endLine": 149
   },
   {
     "outputFile": "Condition-Example-condition-ausrufezeichen-sekundaer.json",
     "fshName": "Example-condition-ausrufezeichen-sekundaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 148,
-    "endLine": 161
+    "startLine": 151,
+    "endLine": 164
   },
   {
     "outputFile": "Condition-Example-condition-kreuz-stern-primaer.json",
     "fshName": "Example-condition-kreuz-stern-primaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 163,
-    "endLine": 175
+    "startLine": 166,
+    "endLine": 178
   },
   {
     "outputFile": "Condition-Example-condition-kreuz-stern-sekundaer.json",
     "fshName": "Example-condition-kreuz-stern-sekundaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 177,
-    "endLine": 192
+    "startLine": 180,
+    "endLine": 195
   },
   {
     "outputFile": "Condition-MittelgradigeIntelligenzminderung.json",
     "fshName": "MittelgradigeIntelligenzminderung",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 194,
-    "endLine": 203
+    "startLine": 197,
+    "endLine": 206
   },
   {
     "outputFile": "Coverage-CoverageGesetzlich.json",
@@ -380,16 +380,16 @@
     "fshName": "Appendektomie",
     "fshType": "Instance",
     "fshFile": "ISiKProzedur.fsh",
-    "startLine": 106,
-    "endLine": 119
+    "startLine": 110,
+    "endLine": 123
   },
   {
     "outputFile": "RelatedPerson-ISiKAngehoerigerMustermann.json",
     "fshName": "ISiKAngehoerigerMustermann",
     "fshType": "Instance",
     "fshFile": "ISiKAngehoeriger.fsh",
-    "startLine": 49,
-    "endLine": 60
+    "startLine": 167,
+    "endLine": 178
   },
   {
     "outputFile": "RelatedPerson-SZ1Mutter.json",
@@ -469,7 +469,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKAngehoeriger.fsh",
     "startLine": 1,
-    "endLine": 47
+    "endLine": 164
   },
   {
     "outputFile": "StructureDefinition-ISiKBerichtBundle.json",
@@ -485,7 +485,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKBerichtSubSysteme.fsh",
     "startLine": 1,
-    "endLine": 187
+    "endLine": 185
   },
   {
     "outputFile": "StructureDefinition-ISiKBinary.json",
@@ -517,7 +517,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKDiagnose.fsh",
     "startLine": 1,
-    "endLine": 135
+    "endLine": 138
   },
   {
     "outputFile": "StructureDefinition-ISiKICD10GMCoding.json",
@@ -597,7 +597,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKProzedur.fsh",
     "startLine": 1,
-    "endLine": 104
+    "endLine": 108
   },
   {
     "outputFile": "StructureDefinition-ISiKRaucherStatus.json",

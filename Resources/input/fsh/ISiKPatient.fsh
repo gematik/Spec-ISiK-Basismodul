@@ -155,7 +155,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
       **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium"  
   * family 1.. MS
     * ^short = "Nachname"
-    * ^comment = "Vollständiger Nachname bzw. Familienname des Patienten, einschließlich Vor- und Zusätze.  
+    * ^comment = "Vollständiger Nachname bzw. Familienname der Person, einschließlich Vor- und Zusätze.  
       **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind."   
     * extension[namenszusatz] 0..1 MS
       * ^short = "Namenszusatz"
@@ -287,7 +287,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * ^patternAddress.type = #both
   * type 1.. MS
     * ^short = "Adresstyp"
-    * ^comment = "Hier ist stets der Wert `postal` anzugeben.  
+    * ^comment = "Hier ist stets der Wert `both` anzugeben.  
     **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium"  
   * line 1.. MS
     * ^short = "Adresszeile"
