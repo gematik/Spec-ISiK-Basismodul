@@ -2,17 +2,30 @@ Profile: ISiKBinary
 Parent: Binary
 Id: ISiKBinary
 Title: "ISiKBinary"
-Description: "Die Binary-Ressource erlaubt den Umgang mit FHIR-fremden Formaten (z.B. PDFs, Bilder, CDA) innerhalb des FHIR-Frameworks.
-Dazu werden die Daten base64-codiert in der Binary-Ressource (in XML oder JSON) transportiert oder 
+Description: "Dieses Profil ermöglicht die Darstellung von FHIR-fremden Formaten (z.B. PDFs, Bilder, CDA) in ISiK Szenarien. 
+
+### Motivation
+FHIR-fremde Formate werden die Daten base64-codiert in der Binary-Ressource (in XML oder JSON) transportiert oder 
 über die REST-API am Binary-Endpunkt in ihrem nativen Format bereitgestellt. 
-Binary-Ressourcen werden von Attachment-Elementen in DocumentReference-Ressourcen verlinkt und damit in den Kontext anderer FHIR-Ressourcen
-(z.B. Patient und Encounter) gestellt.  "
+Binary-Ressourcen werden von Attachment-Elementen in DocumentReference-Ressourcen verlinkt und damit in den Kontext anderer FHIR-Ressourcen (z.B. Patient und Encounter) gestellt. 
+
+### Kompatibilität
+
+Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.
+
+### Hinweis
+
+Das ISIK-Binary-Profil ist *nicht* Bestandteil der Implementierung und des Bestätigungsverfahrens zum ISIK Basismodul.
+Das Profil ist Teil des ISIK Basismoduls, da es als übergreifend genutzte Ressource sowohl im [Modul Terminplanung](https://simplifier.net/guide/isik-terminplanung-v4/ImplementationGuide-markdown-Datenobjekte?version=current) als auch im [Modul Dokumentenaustausch](https://simplifier.net/guide/isik-dokumentenaustausch-v4/ImplementationGuide-markdown-Datenobjekte?version=current) implementiert werden muss.  "
+
 * insert Meta
 * contentType 1..1 MS
   * ^short = "MimeType der Binärdaten"
-  * ^comment = "z.B. &quot;application/pdf&quot; oder &quot;image/jpeg&quot; "
+  * ^comment = "z.B. &quot;application/pdf&quot; oder &quot;image/jpeg&quot;  
+    **Begründung Pflichtfeld:** Ohne Kenntnis des MimeTypes sind die Base65-codierten Daten in `data` nicht interpretierbar"
 * data 1..1 MS
   * ^short = "Base64-codierte Binärdaten"
+  * ^comment = "**Begründung Pflichtfeld:** Sind keine Binärdaten vorhanden, ist diese Ressource sinnlos."
   
 Instance: Binary-JPEG-Example-short
 InstanceOf: Binary

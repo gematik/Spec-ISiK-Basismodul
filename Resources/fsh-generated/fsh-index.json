@@ -20,8 +20,8 @@
     "fshName": "SZ2DRGFall",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-2.fsh",
-    "startLine": 67,
-    "endLine": 81
+    "startLine": 69,
+    "endLine": 83
   },
   {
     "outputFile": "AllergyIntolerance-ISiKAllergieUnvertraeglichkeitBeispiel1.json",
@@ -36,32 +36,32 @@
     "fshName": "Binary-JPEG-Example-short",
     "fshType": "Instance",
     "fshFile": "ISiKBinary.fsh",
-    "startLine": 17,
-    "endLine": 21
+    "startLine": 30,
+    "endLine": 34
   },
   {
     "outputFile": "Binary-Binary-JPEG-Example.json",
     "fshName": "Binary-JPEG-Example",
     "fshType": "Instance",
     "fshFile": "ISiKBinary.fsh",
-    "startLine": 30,
-    "endLine": 34
+    "startLine": 43,
+    "endLine": 47
   },
   {
     "outputFile": "Binary-Binary-PDF-Example-short.json",
     "fshName": "Binary-PDF-Example-short",
     "fshType": "Instance",
     "fshFile": "ISiKBinary.fsh",
-    "startLine": 23,
-    "endLine": 28
+    "startLine": 36,
+    "endLine": 41
   },
   {
     "outputFile": "Binary-Binary-PDF-Example.json",
     "fshName": "Binary-PDF-Example",
     "fshType": "Instance",
     "fshFile": "ISiKBinary.fsh",
-    "startLine": 36,
-    "endLine": 41
+    "startLine": 49,
+    "endLine": 54
   },
   {
     "outputFile": "Bundle-ISiKBundle-Example.json",
@@ -92,8 +92,8 @@
     "fshName": "Szenario2",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-2.fsh",
-    "startLine": 97,
-    "endLine": 105
+    "startLine": 99,
+    "endLine": 107
   },
   {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementBasisServer.json",
@@ -204,16 +204,16 @@
     "fshName": "SZ2Primaerdiagnose",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-2.fsh",
-    "startLine": 24,
-    "endLine": 33
+    "startLine": 26,
+    "endLine": 35
   },
   {
     "outputFile": "Condition-SZ2Sekundaerdiagnose.json",
     "fshName": "SZ2Sekundaerdiagnose",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-2.fsh",
-    "startLine": 35,
-    "endLine": 46
+    "startLine": 37,
+    "endLine": 48
   },
   {
     "outputFile": "Coverage-CoverageGesetzlich.json",
@@ -252,8 +252,8 @@
     "fshName": "SZ2VersicherungGesetzlich",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-2.fsh",
-    "startLine": 83,
-    "endLine": 95
+    "startLine": 85,
+    "endLine": 97
   },
   {
     "outputFile": "Encounter-Fachabteilungskontakt.json",
@@ -300,8 +300,8 @@
     "fshName": "SZ2Encounter",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-2.fsh",
-    "startLine": 48,
-    "endLine": 65
+    "startLine": 50,
+    "endLine": 67
   },
   {
     "outputFile": "Location-BettenstellplatzStandortBeispiel.json",
@@ -420,8 +420,8 @@
     "fshName": "SZ2Patient",
     "fshType": "Instance",
     "fshFile": "Beispiel-Szenario-2.fsh",
-    "startLine": 6,
-    "endLine": 22
+    "startLine": 8,
+    "endLine": 24
   },
   {
     "outputFile": "Practitioner-PractitionerWalterArzt.json",
@@ -549,7 +549,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKBinary.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 28
   },
   {
     "outputFile": "StructureDefinition-ISiKCodeSystem.json",
