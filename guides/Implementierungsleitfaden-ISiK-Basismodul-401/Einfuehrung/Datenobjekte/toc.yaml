@@ -1,0 +1,48 @@
+- name: Index
+  filename: Index.page.md
+- name: CapabilityStatement
+  filename: CapabilityStatement.page.md
+- name: New item
+  filename: New-item.page.md
+- name: Patient (Patient)
+  filename: Datenobjekte_Patient
+- name: Kontakt/Fall (Encounter)
+  filename: Datenobjekte_Kontakt
+- name: Abrechnungsfall (Account)
+  filename: Datenobjekte_Abrechnungsfall
+- name: Diagnose (Condition)
+  filename: Datenobjekte_Diagnose
+- name: Allergie/Unverträglichkeit (AllergyIntolerance)
+  filename: Datenobjekte_AllergieUnvertraeglichkeit
+- name: Spezifische Lebenszustände (Observation)
+  filename: Datenobjekte_Lebenszustand
+- name: Observation
+  filename: Datenobjekte_Observation
+- name: Prozedur (Procedure)
+  filename: Datenobjekte_Prozedur
+- name: Versicherungverhältnis Selbstzahler/privat (Coverage)
+  filename: Versicherungverhältnis-Selbstzahler-privat-Coverage
+- name: Versicherungsverhältnis gesetzlich (Coverage)
+  filename: Versicherungsverhältnis-gesetzlich-Coverage
+- name: Angehöriger (RelatedPerson)
+  filename: Datenobjekte_Angehoeriger
+- name: PersonImGesundheitsberuf (Practitioner)
+  filename: Datenobjekte_PersonImGesundheitsberuf
+- name: Bericht aus Subsystemen (Composition)
+  filename: Datenobjekte_BerichtSubsystem
+- name: Katalog (CodeSystem)
+  filename: Datenobjekte_CodeSystem
+- name: ValueSet (ValueSet)
+  filename: Datenobjekte_ValueSet
+- name: Organisation (Organization)
+  filename: Datenobjekte_Organisation
+- name: Standort (Location)
+  filename: Datenobjekte_Standort
+- name: Binary (Binary)
+  filename: Datenobjekte_Binary
+- name: Subscription patient-merge (R5 Backport Subscription)
+  filename: Datenobjekte_Subscription
+- name: Terminologien
+  filename: Terminologien
+- name: Extensions
+  filename: Extensions
