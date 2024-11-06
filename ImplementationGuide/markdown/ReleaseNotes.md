@@ -5,10 +5,12 @@ Im Rahmen der ISiK-Veröffentlichungen wird das [Semantic Versioning](https://se
 Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.
 
 Version: 4.0.1
-* Fixed CapabilityStatement *near* SearchParameter type & ResourceType Organization spelling, removed custom backport Extension - switched to the official backport mechanism, fixed Bindings to CodeSystems    https://github.com/gematik/spec-ISiK-Basismodul/commit/ ae706142832e2059046ce978c4b0dc472c2375e6
-* Hinweis zur Handhabung von leeren Elementen und einem :not-Modifier hinzugefügt https://github.com/gematik/spec-ISiK-Basismodul/pull/473
 
 Datum: tbd
+
+* Fixed CapabilityStatement *near* SearchParameter type & ResourceType Organization spelling, removed custom backport Extension - switched to the official backport mechanism, fixed Bindings to CodeSystems    https://github.com/gematik/spec-ISiK-Basismodul/commit/ ae706142832e2059046ce978c4b0dc472c2375e6
+* Hinweis zur Handhabung von leeren Elementen und einem :not-Modifier hinzugefügt https://github.com/gematik/spec-ISiK-Basismodul/pull/473
+* Dependency zum R5 backporting IG auf das R4 only  package angepasst https://github.com/gematik/spec-ISiK-Basismodul/pull/479
 
 ----
 
