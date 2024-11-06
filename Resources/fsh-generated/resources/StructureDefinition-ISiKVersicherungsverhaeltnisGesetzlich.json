@@ -8,7 +8,7 @@
   "experimental": false,
   "date": "2024-11-06",
   "publisher": "gematik GmbH",
-  "description": "Dieses Profil ermöglicht die Darstellung eines gesetzlichen Versicherungsverhältnisses in ISiK Szenarien.  \n### Motivation\nISiK unterstützt Anwendungsszenarien, in denen durch das Krankenhaus erbrachte Leistungen erfasst oder gegenüber Kostenträgern abgerechnet werden.\nIn diesen Anwendungsszenarien wird das Versicherungsverhältnis verwendet, um bspw. den Versicherungsstatus oder die Rechnungsanschrift der Versicherung zu ermitteln.  \nIn FHIR werden Versicherungsverhältnisse mit der Coverage-Ressource repräsentiert.\n\n### Kompatibilität\nDas Profil ISiKVersicherungsverhaeltnisGesetzlich basiert auf dem [GKV-Profil der deutschen Basisprofile](http://fhir.de/StructureDefinition/coverage-de-basis). \nInstanzen, die gegen ISiKVersicherungsverhaeltnisGesetzlich valide sind, sind auch valide gegen\n\n* [GKV-Profil der deutschen Basisprofile](http://fhir.de/StructureDefinition/coverage-de-basis)\n\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
+  "description": "Dieses Profil ermöglicht die Darstellung eines gesetzlichen Versicherungsverhältnisses in ISiK Szenarien.  \r\n### Motivation\r\nISiK unterstützt Anwendungsszenarien, in denen durch das Krankenhaus erbrachte Leistungen erfasst oder gegenüber Kostenträgern abgerechnet werden.\r\nIn diesen Anwendungsszenarien wird das Versicherungsverhältnis verwendet, um bspw. den Versicherungsstatus oder die Rechnungsanschrift der Versicherung zu ermitteln.  \r\nIn FHIR werden Versicherungsverhältnisse mit der Coverage-Ressource repräsentiert.\r\n\r\n### Kompatibilität\r\nDas Profil ISiKVersicherungsverhaeltnisGesetzlich basiert auf dem [GKV-Profil der deutschen Basisprofile](http://fhir.de/StructureDefinition/coverage-de-basis). \r\nInstanzen, die gegen ISiKVersicherungsverhaeltnisGesetzlich valide sind, sind auch valide gegen\r\n\r\n* [GKV-Profil der deutschen Basisprofile](http://fhir.de/StructureDefinition/coverage-de-basis)\r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -21,13 +21,13 @@
         "id": "Coverage.status",
         "path": "Coverage.status",
         "short": "Status",
-        "comment": "Zeigt den aktuellen Status der Ressource an.     \n  **WICHTIGER Hinweis für Implementierer:**    \n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch den Wert `active`.\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.",
+        "comment": "Zeigt den aktuellen Status der Ressource an.     \r\n  **WICHTIGER Hinweis für Implementierer:**    \r\n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \r\n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch den Wert `active`.\r\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \r\n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.",
         "mustSupport": true
       },
       {
         "id": "Coverage.type",
         "path": "Coverage.type",
-        "comment": "\n  Die Angabe der Versicherungsart `GKV` dient der Kennzeichnung dieser Coverage-Ressource als gesetzliches Versicherungsverhältnis.  \n  **Begründung Pflichtfeld:** Die Angabe der Versicherungsart dient der Unterscheidung, wenn zu einem Patienten mehrere Coverage-Ressourcen hinterlegt sind, \n  z.B. gesetzliche Versicherung + Selbszahlerverhältnis und als Suchkriterium, um gezielt nach der in einem konkreten Kontext relevanten Coverage suchen zu können.  \n  **Historie:**  \n  28.07.2017 (zulip): TC Konsens bzgl. Verwendung eines eigenen ValueSets anstelle des im Standard definierten preferred bindings, da die dortigen Codes nicht passen.",
+        "comment": "\r\n  Die Angabe der Versicherungsart `GKV` dient der Kennzeichnung dieser Coverage-Ressource als gesetzliches Versicherungsverhältnis.  \r\n  **Begründung Pflichtfeld:** Die Angabe der Versicherungsart dient der Unterscheidung, wenn zu einem Patienten mehrere Coverage-Ressourcen hinterlegt sind, \r\n  z.B. gesetzliche Versicherung + Selbszahlerverhältnis und als Suchkriterium, um gezielt nach der in einem konkreten Kontext relevanten Coverage suchen zu können.  \r\n  **Historie:**  \r\n  28.07.2017 (zulip): TC Konsens bzgl. Verwendung eines eigenen ValueSets anstelle des im Standard definierten preferred bindings, da die dortigen Codes nicht passen.",
         "mustSupport": true
       },
       {
@@ -78,13 +78,13 @@
         "id": "Coverage.subscriber",
         "path": "Coverage.subscriber",
         "short": "Hauptversicherte Person",
-        "comment": "Die hauptversicherte Person kann der Patient selbst sein, oder (z.B. im Falle einer Familienversicherung) auch ein Angehöriger (`RelatedPerson`)\n  **Begründung MS: Die Information über die hauptversicherte Person ist insbesondere im Kontext der Korrespondenz von Bedeutung, \n  da z.B. bei familienversicherten Kindern i.d.R. über die hauptversicherte Person korrespondiert wird.  \n\n  **Hinweis:** Die Angabe der VersichertenID des Hauptversicherten in `subscriber.identifier` ist verpflichtend. \n  Weitere Angaben zum Versicherten (Name, Adresse) können in einer `RelatedPerson`-Resource hinterlegt werden, auf die hier referenziert wird.",
+        "comment": "Die hauptversicherte Person kann der Patient selbst sein, oder (z.B. im Falle einer Familienversicherung) auch ein Angehöriger (`RelatedPerson`)\r\n  **Begründung MS: Die Information über die hauptversicherte Person ist insbesondere im Kontext der Korrespondenz von Bedeutung, \r\n  da z.B. bei familienversicherten Kindern i.d.R. über die hauptversicherte Person korrespondiert wird.  \r\n\r\n  **Hinweis:** Die Angabe der VersichertenID des Hauptversicherten in `subscriber.identifier` ist verpflichtend. \r\n  Weitere Angaben zum Versicherten (Name, Adresse) können in einer `RelatedPerson`-Resource hinterlegt werden, auf die hier referenziert wird.",
         "mustSupport": true
       },
       {
         "id": "Coverage.subscriber.reference",
         "path": "Coverage.subscriber.reference",
-        "comment": "Die Verlinkung auf eine Patienten- oder RelatedPerson-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten/Angehörigen \n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "Die Verlinkung auf eine Patienten- oder RelatedPerson-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten/Angehörigen \r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },
@@ -99,7 +99,7 @@
         "id": "Coverage.beneficiary.reference",
         "path": "Coverage.beneficiary.reference",
         "short": "Patienten-Link",
-        "comment": "Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten \n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten \r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },
@@ -107,7 +107,7 @@
         "id": "Coverage.payor",
         "path": "Coverage.payor",
         "short": "Kostenträger",
-        "comment": "Die Angabe der IK-Nummer in `payor.dentifier` sowie des Namens der Versicherung in `payor.display` ist zwingend erforderlich.  \n  Die Referenz auf eine Resource vom Typ `Organization` in `payor.reference`, die weitere Details zur Versicherung enthalten kann (z.B. Adresse, Kontaktdaten) ist optional.  \n\n  Die Angabe der IK-Nummer des Versicherers in payor.identifier ist verpflichtend. \n  Weitere Angaben zum Versicherer (Name, Adresse) können in einer Organization-Resource hinterlegt werden, auf die hier referenziert wird.",
+        "comment": "Die Angabe der IK-Nummer in `payor.dentifier` sowie des Namens der Versicherung in `payor.display` ist zwingend erforderlich.  \r\n  Die Referenz auf eine Resource vom Typ `Organization` in `payor.reference`, die weitere Details zur Versicherung enthalten kann (z.B. Adresse, Kontaktdaten) ist optional.  \r\n\r\n  Die Angabe der IK-Nummer des Versicherers in payor.identifier ist verpflichtend. \r\n  Weitere Angaben zum Versicherer (Name, Adresse) können in einer Organization-Resource hinterlegt werden, auf die hier referenziert wird.",
         "max": "1",
         "type": [
           {
@@ -139,7 +139,7 @@
         "id": "Coverage.payor.identifier.system",
         "path": "Coverage.payor.identifier.system",
         "short": "Namensraum der IK-Nummer",
-        "comment": "Hier ist stets der Wert `http://fhir.de/sid/arge-ik/iknr` anzugeben.  \n      **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "comment": "Hier ist stets der Wert `http://fhir.de/sid/arge-ik/iknr` anzugeben.  \r\n      **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
         "mustSupport": true
       },
       {
@@ -153,7 +153,7 @@
         "id": "Coverage.payor.display",
         "path": "Coverage.payor.display",
         "short": "Name der Versicherung",
-        "comment": "**Begründung Pflichtfeld:** Da das Institutskennzeichen nicht zur Darstellung für den Anwender geeignet ist, \n    muss ergänzend der Name der Versicherung angegeben werden.",
+        "comment": "**Begründung Pflichtfeld:** Da das Institutskennzeichen nicht zur Darstellung für den Anwender geeignet ist, \r\n    muss ergänzend der Name der Versicherung angegeben werden.",
         "min": 1,
         "mustSupport": true
       }

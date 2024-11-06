@@ -108,8 +108,8 @@
     "fshName": "CodeSystemExample",
     "fshType": "Instance",
     "fshFile": "ISiKCodeSystem.fsh",
-    "startLine": 16,
-    "endLine": 26
+    "startLine": 55,
+    "endLine": 65
   },
   {
     "outputFile": "CodeSystem-ISiKBehandlungsergebnisRehaCS.json",
@@ -324,40 +324,40 @@
     "fshName": "ISiKAlkoholAbususBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 145,
-    "endLine": 157
+    "startLine": 150,
+    "endLine": 162
   },
   {
     "outputFile": "Observation-ISiKRaucherStatusBeispiel.json",
     "fshName": "ISiKRaucherStatusBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 172,
-    "endLine": 185
+    "startLine": 177,
+    "endLine": 190
   },
   {
     "outputFile": "Observation-ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel.json",
     "fshName": "ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 121,
-    "endLine": 131
+    "startLine": 126,
+    "endLine": 136
   },
   {
     "outputFile": "Observation-ISiKSchwangerschaftsstatusBeispiel.json",
     "fshName": "ISiKSchwangerschaftsstatusBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 97,
-    "endLine": 109
+    "startLine": 102,
+    "endLine": 114
   },
   {
     "outputFile": "Observation-ISiKStillstatusBeispiel.json",
     "fshName": "ISiKStillstatusBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 199,
-    "endLine": 212
+    "startLine": 204,
+    "endLine": 217
   },
   {
     "outputFile": "Organization-AbteilungAllgemeinchirurgieOrganisationBeispiel.json",
@@ -508,8 +508,8 @@
     "fshName": "ISiKAlkoholAbusus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 133,
-    "endLine": 143
+    "startLine": 138,
+    "endLine": 148
   },
   {
     "outputFile": "StructureDefinition-ISiKAllergieUnvertraeglichkeit.json",
@@ -557,7 +557,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKCodeSystem.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 53
   },
   {
     "outputFile": "StructureDefinition-ISiKCoding.json",
@@ -597,7 +597,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
     "startLine": 1,
-    "endLine": 77
+    "endLine": 82
   },
   {
     "outputFile": "StructureDefinition-ISiKLoincCoding.json",
@@ -660,24 +660,24 @@
     "fshName": "ISiKRaucherStatus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 159,
-    "endLine": 169
+    "startLine": 164,
+    "endLine": 174
   },
   {
     "outputFile": "StructureDefinition-ISiKSchwangerschaftErwarteterEntbindungstermin.json",
     "fshName": "ISiKSchwangerschaftErwarteterEntbindungstermin",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 111,
-    "endLine": 119
+    "startLine": 116,
+    "endLine": 124
   },
   {
     "outputFile": "StructureDefinition-ISiKSchwangerschaftsstatus.json",
     "fshName": "ISiKSchwangerschaftsstatus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 81,
-    "endLine": 95
+    "startLine": 86,
+    "endLine": 100
   },
   {
     "outputFile": "StructureDefinition-ISiKSnomedCTCoding.json",
@@ -716,8 +716,8 @@
     "fshName": "ISiKStillstatus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 187,
-    "endLine": 197
+    "startLine": 192,
+    "endLine": 202
   },
   {
     "outputFile": "StructureDefinition-ISiKValueSet.json",
@@ -725,7 +725,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKValueSet.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 75
   },
   {
     "outputFile": "StructureDefinition-ISiKVersicherungsverhaeltnisGesetzlich.json",
@@ -828,8 +828,8 @@
     "fshName": "ISiKValueSetExample",
     "fshType": "Instance",
     "fshFile": "ISiKValueSet.fsh",
-    "startLine": 23,
-    "endLine": 36
+    "startLine": 77,
+    "endLine": 90
   },
   {
     "outputFile": "ValueSet-ProzedurenCodesSCT.json",
