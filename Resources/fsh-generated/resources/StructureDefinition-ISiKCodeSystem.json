@@ -8,7 +8,7 @@
   "experimental": false,
   "date": "2024-11-06",
   "publisher": "gematik GmbH",
-  "description": "Dieses Profil beschreibt die maschinenlesbare Repräsentation von \r\nsystem-sepzifischen Kodierungen in ISiK-Szenarien.  \r\n\r\n### Motivation\r\n\r\nISiK erlaubt in diversen Kontexten die Erweiterung der Kodierung durch Krankenhaus-/System-interne Kodierungen. Das Profil ISiKKatalog (CodeSystem) als Profil erlaubt die Repräsentation der dazugehörigen Codes und Display-Werte. \r\n\r\nEine maschinenlesbare Repräsentation dieser Kodierungen erlaubt es Clients, dazugehörige Anzeigetext und Definitionen zu verarbeiten.\r\n\r\nEin Codesystem eignet sich auch dazu, auf dessen Basis definierte [ValueSets zu expandieren](https://hl7.org/fhir/R4/valueset-operation-expand.html).\r\nDa ISiKValueSet expandierte Valuesets vorsieht, ist eine dynamische Expansion in der Regel nicht erforderlich.\r\nDarüber hinausgehend ist ein Use Case im Kontext der Katalogabfrage folgender: Ein Client möchte eine Expansion neu generieren (z.B. mit anderen Expansionen-Parametern), um das ValueSet beispielsweise in einer anderen Sprache auszugeben. ",
+  "description": "Dieses Profil beschreibt die maschinenlesbare Repräsentation von \nsystem-sepzifischen Kodierungen in ISiK-Szenarien.  \n\n### Motivation\n\nISiK erlaubt in diversen Kontexten die Erweiterung der Kodierung durch Krankenhaus-/System-interne Kodierungen. Das Profil ISiKKatalog (CodeSystem) als Profil erlaubt die Repräsentation der dazugehörigen Codes und Display-Werte. \n\nEine maschinenlesbare Repräsentation dieser Kodierungen erlaubt es Clients, dazugehörige Anzeigetext und Definitionen zu verarbeiten.\n\nEin Codesystem eignet sich auch dazu, auf dessen Basis definierte [ValueSets zu expandieren](https://hl7.org/fhir/R4/valueset-operation-expand.html).\nDa ISiKValueSet expandierte Valuesets vorsieht, ist eine dynamische Expansion in der Regel nicht erforderlich.\nDarüber hinausgehend ist ein Use Case im Kontext der Katalogabfrage folgender: Ein Client möchte eine Expansion neu generieren (z.B. mit anderen Expansionen-Parametern), um das ValueSet beispielsweise in einer anderen Sprache auszugeben. ",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -21,7 +21,7 @@
         "id": "CodeSystem.url",
         "path": "CodeSystem.url",
         "short": "Kanonische URL",
-        "comment": "**Bedeutung:** Eindeutige Url zur Identifizierung des CodeSystems. Absolute Url sind zu bevorzugen.  \r\n    **Hinweise:** OIDs SOLLTEN als weitere Identifier des CodeSystems verwendet werden. In jedem Fall SOLLTE ein Canonical Url vergeben werden.",
+        "comment": "**Bedeutung:** Eindeutige Url zur Identifizierung des CodeSystems. Absolute Url sind zu bevorzugen.  \n    **Hinweise:** OIDs SOLLTEN als weitere Identifier des CodeSystems verwendet werden. In jedem Fall SOLLTE ein Canonical Url vergeben werden.",
         "min": 1,
         "mustSupport": true
       },
@@ -29,7 +29,7 @@
         "id": "CodeSystem.version",
         "path": "CodeSystem.version",
         "short": "Version",
-        "comment": "**Bedeutung:** Version des CodeSystems  \r\n    **Hinweise:** Jede Änderung des CodeSystems MUSS eine Änderung in der Version des CodeSystems und gebundenen ValueSets nach sich ziehen. Die Versionierung SOLLTE auf Basis von [Semantic Versioning](https://semver.org) basieren.",
+        "comment": "**Bedeutung:** Version des CodeSystems  \n    **Hinweise:** Jede Änderung des CodeSystems MUSS eine Änderung in der Version des CodeSystems und gebundenen ValueSets nach sich ziehen. Die Versionierung SOLLTE auf Basis von [Semantic Versioning](https://semver.org) basieren.",
         "min": 1,
         "mustSupport": true
       },
@@ -37,7 +37,7 @@
         "id": "CodeSystem.name",
         "path": "CodeSystem.name",
         "short": "Name des Codesystems",
-        "comment": "**Bedeutung:** Maschinenlesbarer Name des CodeSystems  \r\n    **Hinweise:** Der Constraint [cps-0](https://www.hl7.org/fhir/R4/codesystem.html#invs) ist hierbei zu beachten.",
+        "comment": "**Bedeutung:** Maschinenlesbarer Name des CodeSystems  \n    **Hinweise:** Der Constraint [cps-0](https://www.hl7.org/fhir/R4/codesystem.html#invs) ist hierbei zu beachten.",
         "min": 1,
         "mustSupport": true
       },
@@ -45,21 +45,21 @@
         "id": "CodeSystem.status",
         "path": "CodeSystem.status",
         "short": "Status",
-        "comment": "Zeigt den aktuellen Status der Ressource an.     \r\n  **WICHTIGER Hinweis für Implementierer:**    \r\n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \r\n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch 'active' und 'retired''.\r\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \r\n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.",
+        "comment": "Zeigt den aktuellen Status der Ressource an.     \n  **WICHTIGER Hinweis für Implementierer:**    \n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch 'active' und 'retired''.\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.",
         "mustSupport": true
       },
       {
         "id": "CodeSystem.content",
         "path": "CodeSystem.content",
         "short": "Vollständigkeit der Repräsentation",
-        "comment": "**Bedeutung:** Angabe, ob es sich um eine vollständige Repräsentation des CodeSystems oder nur um einen Auszug handelt.\r\n    **Hinweise:** Alle in einem System möglichen Status-Werte müssen über FHIR korrekt repräsentiert werden können, mindestens jedoch die Status-Werte `fragment` und `complete`. Deren korrekte Abbildung wird im Rahmen des Bestätigungsverfahrens überprüft.",
+        "comment": "**Bedeutung:** Angabe, ob es sich um eine vollständige Repräsentation des CodeSystems oder nur um einen Auszug handelt.\n    **Hinweise:** Alle in einem System möglichen Status-Werte müssen über FHIR korrekt repräsentiert werden können, mindestens jedoch die Status-Werte `fragment` und `complete`. Deren korrekte Abbildung wird im Rahmen des Bestätigungsverfahrens überprüft.",
         "mustSupport": true
       },
       {
         "id": "CodeSystem.concept",
         "path": "CodeSystem.concept",
         "short": "",
-        "comment": "**Bedeutung:** Angabe der Konzepte, aus denen sich das CodeSystem zusammensetzt.  \r\n     **Hinweise:** Es MUSS mindestens ein Code und ein Anzeigetext spezifiziert werden.",
+        "comment": "**Bedeutung:** Angabe der Konzepte, aus denen sich das CodeSystem zusammensetzt.  \n     **Hinweise:** Es MUSS mindestens ein Code und ein Anzeigetext spezifiziert werden.",
         "min": 1,
         "mustSupport": true
       },
