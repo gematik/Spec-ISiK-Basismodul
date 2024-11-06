@@ -7,7 +7,7 @@
   "title": "ISiKStillstatus",
   "status": "active",
   "experimental": false,
-  "date": "2024-11-05",
+  "date": "2024-11-06",
   "publisher": "gematik GmbH",
   "description": "Profil zur Abbildung ob gestillt/Muttermilch abgepumpt und gefüttert wird",
   "fhirVersion": "4.0.1",
