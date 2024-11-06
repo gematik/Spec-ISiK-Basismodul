@@ -122,6 +122,6 @@ Usage: #example
 * type = $v3-ActCode#IMP
 * subject = Reference(PatientinMusterfrau)
 * coverage
-  * extension.url = "http://fhir.de/StructureDefinition/ExtensionAbrechnungsart"
-  * extension.valueCoding = $Abrechnungsart#DRG "Diagnosebezogene Fallgruppen"
+  * extension[Abrechnungsart]
+    * valueCoding = $Abrechnungsart#DRG "Diagnosebezogene Fallgruppen"
   * coverage = Reference(CoverageGesetzlich)
