@@ -10,7 +10,7 @@ Datum: t.b.d
 
 * Schwächung der Anforderungen für Suchparameter https://github.com/gematik/spec-ISiK-Basismodul/pull/452
 * Schwächung der Anforderungen für die Übernahme fremder Ressourcen (+ Konkretisierung bei Ablehnung) https://github.com/gematik/spec-ISiK-Basismodul/pull/471
-* Anpassung der Kardinalität für Account.coverage.extension:Abrechnungsart  (Backport aus Stufe 3 : https://github.com/gematik/spec-ISiK-Basismodul/pull/464)
+* Anpassung der Kardinalität für Account.coverage.extension:Abrechnungsart https://github.com/gematik/spec-ISiK-Basismodul/pull/477 (Backport aus Stufe 3 : https://github.com/gematik/spec-ISiK-Basismodul/pull/464)
 
 ---
 
