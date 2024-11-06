@@ -26,8 +26,8 @@ Description: "Dieses Profil beschreibt die Gruppierung von medizinischen Leistun
 * subject contains PatientISiK 1..1 MS
 * subject[PatientISiK] only Reference(Patient)
 * coverage MS
-  * extension 1..1 MS
-  * extension contains http://fhir.de/StructureDefinition/ExtensionAbrechnungsart named Abrechnungsart 1..1 MS
+  * extension 0..1 MS
+  * extension contains http://fhir.de/StructureDefinition/ExtensionAbrechnungsart named Abrechnungsart 0..1 MS
   * coverage MS
 
 Instance: AbrechnungsfallAmbulant
