@@ -17,9 +17,21 @@ Für das Profil ISiKAllergieUnvertraeglichkeit wird eine Kompatibilität mit fol
 * [das Profil EMDAF_PR_AllergyIntolerance der GEVKO](https://fhir.gevko.de/StructureDefinition/EMDAF_PR_AllergyIntolerance)
 * [das Profil AllergyIntolerance-uv-ips der International Patient Summary](http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips)
 
-Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.
-"
+Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden."
+
 * insert Meta
+
+/* 
+hier sollte genauer spezifiziert werden, welche Statuswerte  für clincial- und verificationStatus implementiert werden müssen, z.B. durch Hinzufügen folgenden Kommentars:    
+  **WICHTIGER Hinweis für Implementierer:**    
+  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, 
+  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch <t.b.d>.
+  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, 
+  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.
+
+Alternativ: hier einen Sermon analog zu Condition.clincalStatus einfügen.
+Bitte auch beachten, dass verificationStatus bei Condition derzeit KEIN MS-Flag hat!
+*/
 * clinicalStatus MS
   * ^short = "klinischer Status"
   * coding 1..1 MS
