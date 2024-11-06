@@ -28,8 +28,8 @@
     "fshName": "ISiKAllergieUnvertraeglichkeitBeispiel1",
     "fshType": "Instance",
     "fshFile": "ISiKAllergieUnvertraeglichkeit.fsh",
-    "startLine": 109,
-    "endLine": 130
+    "startLine": 138,
+    "endLine": 159
   },
   {
     "outputFile": "Binary-Binary-JPEG-Example-short.json",
@@ -324,40 +324,40 @@
     "fshName": "ISiKAlkoholAbususBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 103,
-    "endLine": 115
+    "startLine": 145,
+    "endLine": 157
   },
   {
     "outputFile": "Observation-ISiKRaucherStatusBeispiel.json",
     "fshName": "ISiKRaucherStatusBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 130,
-    "endLine": 143
+    "startLine": 172,
+    "endLine": 185
   },
   {
     "outputFile": "Observation-ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel.json",
     "fshName": "ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 79,
-    "endLine": 89
+    "startLine": 121,
+    "endLine": 131
   },
   {
     "outputFile": "Observation-ISiKSchwangerschaftsstatusBeispiel.json",
     "fshName": "ISiKSchwangerschaftsstatusBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 55,
-    "endLine": 67
+    "startLine": 97,
+    "endLine": 109
   },
   {
     "outputFile": "Observation-ISiKStillstatusBeispiel.json",
     "fshName": "ISiKStillstatusBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 157,
-    "endLine": 170
+    "startLine": 199,
+    "endLine": 212
   },
   {
     "outputFile": "Organization-AbteilungAllgemeinchirurgieOrganisationBeispiel.json",
@@ -508,8 +508,8 @@
     "fshName": "ISiKAlkoholAbusus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 91,
-    "endLine": 101
+    "startLine": 133,
+    "endLine": 143
   },
   {
     "outputFile": "StructureDefinition-ISiKAllergieUnvertraeglichkeit.json",
@@ -517,7 +517,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKAllergieUnvertraeglichkeit.fsh",
     "startLine": 1,
-    "endLine": 107
+    "endLine": 136
   },
   {
     "outputFile": "StructureDefinition-ISiKAngehoeriger.json",
@@ -597,7 +597,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 77
   },
   {
     "outputFile": "StructureDefinition-ISiKLoincCoding.json",
@@ -660,24 +660,24 @@
     "fshName": "ISiKRaucherStatus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 117,
-    "endLine": 127
+    "startLine": 159,
+    "endLine": 169
   },
   {
     "outputFile": "StructureDefinition-ISiKSchwangerschaftErwarteterEntbindungstermin.json",
     "fshName": "ISiKSchwangerschaftErwarteterEntbindungstermin",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 69,
-    "endLine": 77
+    "startLine": 111,
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-ISiKSchwangerschaftsstatus.json",
     "fshName": "ISiKSchwangerschaftsstatus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 39,
-    "endLine": 53
+    "startLine": 81,
+    "endLine": 95
   },
   {
     "outputFile": "StructureDefinition-ISiKSnomedCTCoding.json",
@@ -716,8 +716,8 @@
     "fshName": "ISiKStillstatus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 145,
-    "endLine": 155
+    "startLine": 187,
+    "endLine": 197
   },
   {
     "outputFile": "StructureDefinition-ISiKValueSet.json",

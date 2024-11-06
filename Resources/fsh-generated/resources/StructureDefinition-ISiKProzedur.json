@@ -8,7 +8,7 @@
   "experimental": false,
   "date": "2024-11-05",
   "publisher": "gematik GmbH",
-  "description": "Dieses Profil spezifiziert die Minimalanforderungen für die Bereitstellung von Informationen über die Behandlungen/Prozeduren eines Patienten im Rahmen des Bestätigungsverfahrens der gematik.\n### Motivation\nDie Möglichkeit auf eine Übersicht der Prozeduren eines Patienten zuzugreifen, Patienten anhand durchgeführter oder geplanter Prozeduren zu suchen, oder zu prüfen, ob eine konkrete Prozedur bei einem Patienten durchgeführt wurde, sind wichtige Funktionen im klinischen Behandlungsablauf.\n\nIn FHIR werden Prozeduren mit der Procedure-Ressource repräsentiert.\n\nDa die Prozeduren in klinischen Primärsystemen, in der Regel, in OPS-codierter Form vorliegen, fordert ISiK in erster Linie diese Form des Austausches. Falls eine Prozedur zwar dokumentiert aber noch nicht codiert wurde (z.B. wenn die Kodierung erst nach der Entlassung erfolgt), ist alternativ eine Repräsentation als Freitext-Prozedur möglich.\n\n### Kompatibilität\nFür das Profil ISIKProzedur wird eine Kompatibilität mit folgenden Profilen angestrebt; allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen ISIKProzedur valide sind, auch valide sind gegen:\n\n* [Profil Prozedur](https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure) der Medizininformatik Initiative  \nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
+  "description": "Dieses Profil spezifiziert die Minimalanforderungen für die Bereitstellung von Informationen über die Behandlungen/Prozeduren eines Patienten im Rahmen des Bestätigungsverfahrens der gematik.\r\n### Motivation\r\nDie Möglichkeit auf eine Übersicht der Prozeduren eines Patienten zuzugreifen, Patienten anhand durchgeführter oder geplanter Prozeduren zu suchen, oder zu prüfen, ob eine konkrete Prozedur bei einem Patienten durchgeführt wurde, sind wichtige Funktionen im klinischen Behandlungsablauf.\r\n\r\nIn FHIR werden Prozeduren mit der Procedure-Ressource repräsentiert.\r\n\r\nDa die Prozeduren in klinischen Primärsystemen, in der Regel, in OPS-codierter Form vorliegen, fordert ISiK in erster Linie diese Form des Austausches. Falls eine Prozedur zwar dokumentiert aber noch nicht codiert wurde (z.B. wenn die Kodierung erst nach der Entlassung erfolgt), ist alternativ eine Repräsentation als Freitext-Prozedur möglich.\r\n\r\n### Kompatibilität\r\nFür das Profil ISIKProzedur wird eine Kompatibilität mit folgenden Profilen angestrebt; allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen ISIKProzedur valide sind, auch valide sind gegen:\r\n\r\n* [Profil Prozedur](https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure) der Medizininformatik Initiative  \r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -47,7 +47,7 @@
         "path": "Procedure.extension",
         "sliceName": "Dokumentationsdatum",
         "short": "Dokumentationsdatum",
-        "comment": "Datum, an dem die Prozedur dokumentiert wurde.  \n  Es handelt sich hierbei um das fachliche Dokumentationsdatum, nicht zu verwechseln mit dem Datum der technischen Anlage des Datensatzes im Primärsystem. \n  Diese beiden Daten *können* jedoch identisch sein.",
+        "comment": "Datum, an dem die Prozedur dokumentiert wurde.  \r\n  Es handelt sich hierbei um das fachliche Dokumentationsdatum, nicht zu verwechseln mit dem Datum der technischen Anlage des Datensatzes im Primärsystem. \r\n  Diese beiden Daten *können* jedoch identisch sein.",
         "min": 0,
         "max": "1",
         "type": [
@@ -64,14 +64,14 @@
         "id": "Procedure.status",
         "path": "Procedure.status",
         "short": "Status",
-        "comment": "Zeigt den aktuellen Status der Prozedur an.     \n  **WICHTIGER Hinweis für Implementierer:  \n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch die Werte `completed` und `unknown`.\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \n  beispielsweise durch Ausblenden/Durchstreichen von Prozeduren mit dem status `entered-in-error` und Ausgrauen von Prozeduren, die noch nicht stattgefunden haben, o.ä.",
+        "comment": "Zeigt den aktuellen Status der Prozedur an.     \r\n  **WICHTIGER Hinweis für Implementierer:  \r\n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \r\n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch die Werte `completed` und `unknown`.\r\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \r\n  beispielsweise durch Ausblenden/Durchstreichen von Prozeduren mit dem status `entered-in-error` und Ausgrauen von Prozeduren, die noch nicht stattgefunden haben, o.ä.",
         "mustSupport": true
       },
       {
         "id": "Procedure.category",
         "path": "Procedure.category",
         "short": "Kategorie",
-        "comment": "Die Kategorisierung erfolg vorzugsweise auf Basis von SNOMED. Für OPS-codierte Prozeduren MUSS die Kategorie angegeben werden: Sie kann ermittelt werden, \n  indem das erste Zeichen des OPS-Codes mit Hilfe einer [ConceptMap](http://fhir.de/ConceptMap/OPS-SNOMED-Category) auf die zutreffende SNOMED-Kategorie gemappt wird.\n  **Begründung MS:** Die Kategorisierung dient der Verbesserung von Suche und Darstellung.",
+        "comment": "Die Kategorisierung erfolg vorzugsweise auf Basis von SNOMED. Für OPS-codierte Prozeduren MUSS die Kategorie angegeben werden: Sie kann ermittelt werden, \r\n  indem das erste Zeichen des OPS-Codes mit Hilfe einer [ConceptMap](http://fhir.de/ConceptMap/OPS-SNOMED-Category) auf die zutreffende SNOMED-Kategorie gemappt wird.\r\n  **Begründung MS:** Die Kategorisierung dient der Verbesserung von Suche und Darstellung.",
         "mustSupport": true
       },
       {
@@ -111,7 +111,7 @@
         "id": "Procedure.code",
         "path": "Procedure.code",
         "short": "Prozeduren-Code",
-        "comment": "Prozeduren SOLLEN mindestens entweder mit einem OPS-Code oder einem SNOMED-Code aus dem angegebenen ValueSet codiert werden. \n  Ist keine Codierung möglich, MUSS statt dessen eine textuelle Beschreibung der Prozedur angegeben werden.  \n  **Begründung Pflichtfeld:** Ist *weder* eine Codierung *noch* eine textuelle Beschreibung vorhanden, besitzt diese Ressource keine medizinische Aussagefähigkeit.",
+        "comment": "Prozeduren SOLLEN mindestens entweder mit einem OPS-Code oder einem SNOMED-Code aus dem angegebenen ValueSet codiert werden. \r\n  Ist keine Codierung möglich, MUSS statt dessen eine textuelle Beschreibung der Prozedur angegeben werden.  \r\n  **Begründung Pflichtfeld:** Ist *weder* eine Codierung *noch* eine textuelle Beschreibung vorhanden, besitzt diese Ressource keine medizinische Aussagefähigkeit.",
         "min": 1,
         "constraint": [
           {
@@ -186,7 +186,7 @@
         "id": "Procedure.code.coding:OPS.version",
         "path": "Procedure.code.coding.version",
         "short": "Die Jahresversion des OPS Kataloges. Angegeben wird immer die vierstellige Jahreszahl (z.B. `2017`)",
-        "comment": "**Begründung Pflichtfeld:** Bei Verwendung von OPS ist die Angabe der Version zwingend erforderlich. \n      Hierdurch wird der Tatsache Rechnung getragen, dass jede der jährlich neu erscheinenden Fassung von OPS ein neues Codesystem darstellt.",
+        "comment": "**Begründung Pflichtfeld:** Bei Verwendung von OPS ist die Angabe der Version zwingend erforderlich. \r\n      Hierdurch wird der Tatsache Rechnung getragen, dass jede der jährlich neu erscheinenden Fassung von OPS ein neues Codesystem darstellt.",
         "mustSupport": true
       },
       {
@@ -248,7 +248,7 @@
         "id": "Procedure.encounter.reference",
         "path": "Procedure.encounter.reference",
         "short": "Encounter-Link",
-        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt \n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.    \n    **WICHTIGER Hinweis für Implementierer:** Die Zuordnung MUSS auf auf einen Encounter der Ebene &quot;Abteilungskontakt&quot; (siehe hierzu {{pagelink:Fall}}) erfolgen. \n    Bei der Auswahl des Encounters ist zu beachten, dass unter einer (Abrechnungs-)&quot;Fallnummer&quot; (hier: `Encounter.account`) \n    unter Umständen mehrere Encounter gruppiert sein können (z.B. stationärer Besuch mit mehreren vor- und nachstationären Aufenthalten.)",
+        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt \r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.    \r\n    **WICHTIGER Hinweis für Implementierer:** Die Zuordnung MUSS auf auf einen Encounter der Ebene &quot;Abteilungskontakt&quot; (siehe hierzu {{pagelink:Fall}}) erfolgen. \r\n    Bei der Auswahl des Encounters ist zu beachten, dass unter einer (Abrechnungs-)&quot;Fallnummer&quot; (hier: `Encounter.account`) \r\n    unter Umständen mehrere Encounter gruppiert sein können (z.B. stationärer Besuch mit mehreren vor- und nachstationären Aufenthalten.)",
         "min": 1,
         "mustSupport": true
       },
@@ -256,7 +256,7 @@
         "id": "Procedure.performed[x]",
         "path": "Procedure.performed[x]",
         "short": "Durchführungsdatum oder -Zeitraum",
-        "comment": "Es muss mindestens entweder ein (partielles) Durchführungsdatum oder der Beginn des Durchführungszeitraumes angegeben werden.\n  **Begründung Pflichtfeld:** Die zeitliche Einordnung einer Prozedur ist in vielen Fällen maßgeblich für deren medizinische Relevanz.",
+        "comment": "Es muss mindestens entweder ein (partielles) Durchführungsdatum oder der Beginn des Durchführungszeitraumes angegeben werden.\r\n  **Begründung Pflichtfeld:** Die zeitliche Einordnung einer Prozedur ist in vielen Fällen maßgeblich für deren medizinische Relevanz.",
         "min": 1,
         "type": [
           {

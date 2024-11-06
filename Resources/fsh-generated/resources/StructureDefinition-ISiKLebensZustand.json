@@ -9,7 +9,7 @@
   "experimental": false,
   "date": "2024-11-05",
   "publisher": "gematik GmbH",
-  "description": "Basisprofil für ISiKLebensZustand Observation",
+  "description": "Basisprofil für ISiKLebensZustand Observation \r\n\r\n### Motivation\r\n\r\nViele medizinischen Entscheidungen benötigen Informationen zu den Lebensumständen eines Patienten. Hierzu gehören eine aktuelle Schwangerschaft, Raucherstatus sowie der Alkoholabususstatus.\r\nMotivierender Use-Case zur Einführung dieser Profile ist die [Arzneitmitteltherapiesicherheit im Krankenhaus - AMTS](https://simplifier.net/guide/isik-medikation-v4/ImplementationGuide-markdown-UebergreifendeUseCases-AMTS).\r\n\r\nIn FHIR werden Untersuchungen, bzw. Beobachtungen als [`Observation`](https://hl7.org/fhir/R4/observation.html)-Ressource repräsentiert.\r\n\r\nDie folgenden Profile vom Typ Observation sind spezifische Profile im oben genannten Sinn. \r\nEine generische, ISiK-spezifische Observation wir beschrieben unter {{pagelink:Observation-Profil}}.\r\n\r\n### Kompatibilität\r\n\r\nFür Schwangerschaftsstatus & Erwarteter Geburtstermin wird eine Kompatibilität mit folgenden **IPS** Profilen angestrebt:\r\n* [IPS Resource Profile: Observation - Pregnancy: EDD](https://hl7.org/fhir/uv/ips/STU1.1/StructureDefinition-Observation-pregnancy-edd-uv-ips.html). \r\n* [IPS Resource Profile: Observation - Pregnancy: status](https://hl7.org/fhir/uv/ips/STU1.1/StructureDefinition-Observation-pregnancy-status-uv-ips.html)\r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -21,16 +21,22 @@
       {
         "id": "Observation.status",
         "path": "Observation.status",
+        "short": "Status",
+        "comment": "Bedeutung: Der Status MUSS insbesondere zur Differenzierung von abgeschlossenen, \r\n  vorläufigen oder korrigierten Beobachtungen angegeben werden.   \r\n  **WICHTIGER Hinweis für Implementierer:**    \r\n  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, \r\n  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch 'final'.\r\n  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, \r\n  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.",
         "mustSupport": true
       },
       {
         "id": "Observation.category",
         "path": "Observation.category",
+        "short": "Kategorie",
+        "comment": "Bedeutung: Kategorie-Code, der die Untersuchung kategorisiert.",
         "mustSupport": true
       },
       {
         "id": "Observation.code",
         "path": "Observation.code",
+        "short": "Code",
+        "comment": "Bedeutung: Code, der die Untersuchung repräsentiert und kodiert.",
         "mustSupport": true
       },
       {
@@ -92,7 +98,7 @@
         "id": "Observation.subject.reference",
         "path": "Observation.subject.reference",
         "short": "Patienten-Link",
-        "comment": "Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation \n    zu einem Patienten und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation \r\n    zu einem Patienten und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },
@@ -106,13 +112,15 @@
         "id": "Observation.encounter.reference",
         "path": "Observation.encounter.reference",
         "short": "Encounter-Link",
-        "comment": "Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt \n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt \r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
+        "short": "Zeitpunkt/-raum der Beobachtung",
+        "comment": "Bedeutung: Klinisch relevanter Zeitpunkt/Zeitspanne für die Observation.",
         "min": 1,
         "type": [
           {
@@ -127,9 +135,20 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "comment": "Motivation: Ein Lebenszustand benötigt immer einen Wert",
+        "short": "Wert der Beobachtung",
+        "comment": "Bedeutung: Erfasster Wert der Observation.",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "comment": "Bedeutung: Weitere Observation, die mit dieser Observation gemeinsam zu betrachten ist."
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "comment": "Bedeutung: Bei Vitalparametern, die aus mehreren Einzelnen Messpunkten bestehen (Blutdruck, EKG, GCS), werden die gemessenen Einzelwerte jeweils mit einem separaten LOINC-Code in Observation.component.code versehen und der entsprechende Messwert in Observation.component.value erfasst."
       }
     ]
   }
