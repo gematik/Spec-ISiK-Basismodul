@@ -1,0 +1,16 @@
+- name: Index
+  filename: Index.page.md
+- name: Motivation
+  filename: Standort_Motivation.page.md
+- name: 'Profil: Basis'
+  filename: Profil-Basis.page.md
+- name: 'Profil: Raum'
+  filename: Profil-Raum.page.md
+- name: 'Profil: Bettplatz'
+  filename: Profil-Bettplatz.page.md
+- name: Interaktionen
+  filename: Standort_Interaktionen.page.md
+- name: Anmerkungen zu den Must-Support Feldern
+  filename: Anmerkungen-zu-den-Must-Support-Feldern.page.md
+- name: Beispiele
+  filename: Standort_Beispiele.page.md

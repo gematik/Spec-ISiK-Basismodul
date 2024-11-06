@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Motivation
+  filename: Observation_Motivation.page.md
+- name: Profil
+  filename: Observation_Profil.page.md
+- name: Anmerkungen zu den Must-Support Feldern
+  filename: Observation_AnmerkungenZuDenMustSupportFeldern.page.md
+- name: Interaktionen
+  filename: Observation_Interaktionen.page.md

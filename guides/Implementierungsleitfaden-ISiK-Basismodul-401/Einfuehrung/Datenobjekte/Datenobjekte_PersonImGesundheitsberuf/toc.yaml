@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Profil
+  filename: PersonImGesundheitsberuf_Profil.page.md
+- name: Anmerkungen zu Must-Support-Feldern
+  filename: Anmerkungen-zu-Must-Support-Feldern.page.md
+- name: Interaktionen
+  filename: PersonImGesundheitsberuf_Interaktionen.page.md
+- name: Beispiele
+  filename: PersonImGesundheitsberuf_Beispiele.page.md

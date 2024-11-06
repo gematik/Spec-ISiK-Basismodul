@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: 'Szenario 1: DRG-Fall, Kind mit Wahlleistung'
+  filename: Szenario-1-DRG-Fall-Kind-mit-Wahlleistung.page.md
+- name: 'Szenario 2: Kreuz-Stern-Diagnose'
+  filename: Szenario-2-Kreuz-Stern-Diagnose.page.md

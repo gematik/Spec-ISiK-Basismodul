@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Profil
+  filename: Profil.page.md
+- name: Anmerkungen zu den Must-Support-Feldern
+  filename: Anmerkungen-zu-den-Must-Support-Feldern.page.md
+- name: Interaktionen
+  filename: Interaktionen.page.md
+- name: Beispiele
+  filename: Beispiele.page.md

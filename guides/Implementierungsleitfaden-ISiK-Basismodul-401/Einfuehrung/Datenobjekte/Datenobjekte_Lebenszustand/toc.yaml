@@ -1,0 +1,20 @@
+- name: Index
+  filename: Index.page.md
+- name: 'Profil: Lebenszustand'
+  filename: Profil-Lebenszustand.page.md
+- name: 'Profil: Schwangerschaftsstatus'
+  filename: Profil-Schwangerschaftsstatus.page.md
+- name: 'Profil: Erwarteter Entbindungstermin'
+  filename: Profil-Erwarteter-Entbindungstermin.page.md
+- name: 'Profil: Stillstatus'
+  filename: Profil-Stillstatus.page.md
+- name: 'Profil: Alkohol Abusus'
+  filename: Profil-Alkohol-Abusus.page.md
+- name: 'Profil: Raucherstatus'
+  filename: Profil-Raucherstatus.page.md
+- name: Anmerkungen zu den Must-Support Feldern
+  filename: Lebenszustand_AnmerkungenZuDenMustSupportFeldern.page.md
+- name: Interaktionen
+  filename: Lebenszustand_Interaktionen.page.md
+- name: Beispiele
+  filename: Lebenszustand_Beispiele.page.md
