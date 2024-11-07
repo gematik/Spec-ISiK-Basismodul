@@ -469,6 +469,20 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.gender.extension",
+        "path": "Patient.gender.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Patient.gender.extension:Geschlecht-Administrativ",
         "path": "Patient.gender.extension",
         "sliceName": "Geschlecht-Administrativ",
