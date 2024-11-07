@@ -76,8 +76,8 @@
     "fshName": "SubscriptionNotificationBundleExample",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 100,
-    "endLine": 113
+    "startLine": 152,
+    "endLine": 165
   },
   {
     "outputFile": "Bundle-Szenario1.json",
@@ -380,16 +380,16 @@
     "fshName": "DorisQuelle",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 49,
-    "endLine": 61
+    "startLine": 101,
+    "endLine": 113
   },
   {
     "outputFile": "Patient-DorisZiel.json",
     "fshName": "DorisZiel",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 63,
-    "endLine": 75
+    "startLine": 115,
+    "endLine": 127
   },
   {
     "outputFile": "Patient-PatientinMusterfrau.json",
@@ -748,16 +748,16 @@
     "fshName": "PatientMergeSubscription",
     "fshType": "Profile",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 2,
-    "endLine": 18
+    "startLine": 3,
+    "endLine": 58
   },
   {
     "outputFile": "Subscription-PatientMergeSubscriptionExample.json",
     "fshName": "PatientMergeSubscriptionExample",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 20,
-    "endLine": 31
+    "startLine": 72,
+    "endLine": 83
   },
   {
     "outputFile": "ValueSet-DiagnosesSCT.json",
@@ -772,8 +772,8 @@
     "fshName": "FhirMimeTypeVS",
     "fshType": "ValueSet",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 41,
-    "endLine": 47
+    "startLine": 93,
+    "endLine": 99
   },
   {
     "outputFile": "ValueSet-ISiKAccountType.json",
@@ -852,8 +852,8 @@
     "fshName": "RestAndWSSubscriptionChannelType",
     "fshType": "ValueSet",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 33,
-    "endLine": 39
+    "startLine": 85,
+    "endLine": 91
   },
   {
     "outputFile": "ValueSet-SchwangerschaftEtMethodeVS.json",
