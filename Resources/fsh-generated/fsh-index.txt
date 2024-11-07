@@ -8,7 +8,7 @@ Binary-Binary-JPEG-Example.json                                          Binary-
 Binary-Binary-PDF-Example-short.json                                     Binary-PDF-Example-short                                Instance    ISiKBinary.fsh                                36 - 41
 Binary-Binary-PDF-Example.json                                           Binary-PDF-Example                                      Instance    ISiKBinary.fsh                                49 - 54
 Bundle-ISiKBundle-Example.json                                           ISiKBundle-Example                                      Instance    ISiKBerichtBundle.fsh                         24 - 38
-Bundle-SubscriptionNotificationBundleExample.json                        SubscriptionNotificationBundleExample                   Instance    IsiKPatientMerge.fsh                          152 - 165
+Bundle-SubscriptionNotificationBundleExample.json                        SubscriptionNotificationBundleExample                   Instance    IsiKPatientMerge.fsh                          153 - 166
 Bundle-Szenario1.json                                                    Szenario1                                               Instance    Beispiel-Szenario-1.fsh                       164 - 174
 Bundle-Szenario2.json                                                    Szenario2                                               Instance    Beispiel-Szenario-2.fsh                       99 - 107
 CapabilityStatement-ISiKCapabilityStatementBasisServer.json              ISiKCapabilityStatementBasisServer                      Instance    ISiKCapabilityStatementBasisServer.fsh        1 - 1469
@@ -46,8 +46,8 @@ Observation-ISiKSchwangerschaftsstatusBeispiel.json                      ISiKSch
 Observation-ISiKStillstatusBeispiel.json                                 ISiKStillstatusBeispiel                                 Instance    ISiKLebenszustandOberservations.fsh           204 - 217
 Organization-AbteilungAllgemeinchirurgieOrganisationBeispiel.json        AbteilungAllgemeinchirurgieOrganisationBeispiel         Instance    ISiKOrganisation.fsh                          260 - 270
 Organization-KrankenhausOrganisationBeispiel.json                        KrankenhausOrganisationBeispiel                         Instance    ISiKOrganisation.fsh                          251 - 257
-Patient-DorisQuelle.json                                                 DorisQuelle                                             Instance    IsiKPatientMerge.fsh                          101 - 113
-Patient-DorisZiel.json                                                   DorisZiel                                               Instance    IsiKPatientMerge.fsh                          115 - 127
+Patient-DorisQuelle.json                                                 DorisQuelle                                             Instance    IsiKPatientMerge.fsh                          102 - 114
+Patient-DorisZiel.json                                                   DorisZiel                                               Instance    IsiKPatientMerge.fsh                          116 - 128
 Patient-PatientinMusterfrau.json                                         PatientinMusterfrau                                     Instance    ISiKPatient.fsh                               347 - 397
 Patient-PatientinMusterfrauMinimal.json                                  PatientinMusterfrauMinimal                              Instance    ISiKBerichtBundle.fsh                         41 - 53
 Patient-SZ1Patient.json                                                  SZ1Patient                                              Instance    Beispiel-Szenario-1.fsh                       11 - 27
@@ -92,10 +92,10 @@ StructureDefinition-ISiKStillstatus.json                                 ISiKSti
 StructureDefinition-ISiKValueSet.json                                    ISiKValueSet                                            Profile     ISiKValueSet.fsh                              1 - 75
 StructureDefinition-ISiKVersicherungsverhaeltnisGesetzlich.json          ISiKVersicherungsverhaeltnisGesetzlich                  Profile     ISiKVersicherungsverhaeltnisGesetzlich.fsh    1 - 108
 StructureDefinition-ISiKVersicherungsverhaeltnisSelbstzahler.json        ISiKVersicherungsverhaeltnisSelbstzahler                Profile     ISiKVersicherungsverhaeltnisSelbstzahler.fsh  1 - 72
-StructureDefinition-patient-merge-subscription.json                      PatientMergeSubscription                                Profile     IsiKPatientMerge.fsh                          3 - 58
-Subscription-PatientMergeSubscriptionExample.json                        PatientMergeSubscriptionExample                         Instance    IsiKPatientMerge.fsh                          72 - 83
+StructureDefinition-patient-merge-subscription.json                      PatientMergeSubscription                                Profile     IsiKPatientMerge.fsh                          3 - 59
+Subscription-PatientMergeSubscriptionExample.json                        PatientMergeSubscriptionExample                         Instance    IsiKPatientMerge.fsh                          73 - 84
 ValueSet-DiagnosesSCT.json                                               DiagnosesSCT                                            ValueSet    valueSets.fsh                                 1 - 10
-ValueSet-FhirMimeTypeVS.json                                             FhirMimeTypeVS                                          ValueSet    IsiKPatientMerge.fsh                          93 - 99
+ValueSet-FhirMimeTypeVS.json                                             FhirMimeTypeVS                                          ValueSet    IsiKPatientMerge.fsh                          94 - 100
 ValueSet-ISiKAccountType.json                                            ISiKAccountType                                         ValueSet    valueSets.fsh                                 36 - 41
 ValueSet-ISiKBehandlungsergebnisReha.json                                ISiKBehandlungsergebnisReha                             ValueSet    valueSets.fsh                                 79 - 83
 ValueSet-ISiKBesondereBehandlungsformReha.json                           ISiKBesondereBehandlungsformReha                        ValueSet    valueSets.fsh                                 73 - 77
@@ -105,7 +105,7 @@ ValueSet-ISiKUnterbrechnungReha.json                                     ISiKUnt
 ValueSet-ISiKValueSetExample.json                                        ISiKValueSetExample                                     Instance    ISiKValueSet.fsh                              77 - 90
 ValueSet-ProzedurenCodesSCT.json                                         ProzedurenCodesSCT                                      ValueSet    valueSets.fsh                                 12 - 16
 ValueSet-ProzedurenKategorieSCT.json                                     ProzedurenKategorieSCT                                  ValueSet    valueSets.fsh                                 18 - 27
-ValueSet-RestAndWSSubscriptionChannelType.json                           RestAndWSSubscriptionChannelType                        ValueSet    IsiKPatientMerge.fsh                          85 - 91
+ValueSet-RestAndWSSubscriptionChannelType.json                           RestAndWSSubscriptionChannelType                        ValueSet    IsiKPatientMerge.fsh                          86 - 92
 ValueSet-SchwangerschaftEtMethodeVS.json                                 SchwangerschaftEtMethodeVS                              ValueSet    valueSets.fsh                                 51 - 62
 ValueSet-SchwangerschaftsstatusVS.json                                   SchwangerschaftsstatusVS                                ValueSet    valueSets.fsh                                 43 - 49
 ValueSet-StillstatusVS.json                                              StillstatusVS                                           ValueSet    valueSets.fsh                                 64 - 71
