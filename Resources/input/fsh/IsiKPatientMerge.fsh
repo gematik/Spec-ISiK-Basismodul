@@ -21,6 +21,7 @@ Der [SubscriptionStatus](https://hl7.org/fhir/uv/subscriptions-backport/Structur
 Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden."
 
 * insert Meta
+* ^fhirVersion = #4.0.1
 * status MS
   * ^short = ""
   * ^comment = "**Bedeutung:** Der Status der Subscription, der den Serverstatus der Subscription angibt. 
