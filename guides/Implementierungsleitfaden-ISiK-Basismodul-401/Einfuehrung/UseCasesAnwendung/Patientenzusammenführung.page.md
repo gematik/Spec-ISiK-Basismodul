@@ -34,7 +34,7 @@ Weitere Informationen zum Subscription Workflow finden sich hier:
 
 [Subscription Workflow - Subscriptions R5 Backport](https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/workflow.html)
 
-### Prove of Concept Implementierung
+### Proof of Concept Implementierung
 Zur Illustration der technischen Umsetzung für die Patient merge Notification dient ein [Prove of Concept (POC) mit Anleitung](https://github.com/gematik/poc-isik-patient-merge). 
 
 ### Notification Channel Types
@@ -63,7 +63,7 @@ Allerdings SOLL das patientenführende System nach einem merge die Elemente der 
 - .link.other = Reference.identifier (logische Referenz mittels Patientennummer Identifier auf “obsoleten” Patient)
 - .link.type = “replaces”
 
-Siehe auch: {{pagelink:ImplementationGuide/markdown/Patient/Patient_Profil.md, text:Patienten Profil }}
+Siehe auch: {{pagelink:Patient-Profil, text:Patienten Profil }}
 
 ### Referenzen auf das Patientenobjekt
 Es gilt folgende Annahme: Das patientenführende System SOLL sicherstellen, dass alle auf die obsolete Ressource referenzierenden FHIR-Ressourcen nach dem Patient merge auf die resultierende Ressource referenzieren.

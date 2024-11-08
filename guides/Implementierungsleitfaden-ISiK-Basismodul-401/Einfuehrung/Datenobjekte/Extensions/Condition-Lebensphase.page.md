@@ -4,7 +4,17 @@ expand: 2
 ---
 
 ## {{link}}
-
+<fql output="inline">
+using scope
+from
+	StructureDefinition
+where
+	url = %canonical
+select
+	description
+with
+  no header
+</fql>
 ### Metadaten
 
 <fql output="transpose" headers="true">
@@ -21,9 +31,7 @@ select
 
 <tabs>
   <tab title="Darstellung">{{tree, snapshot}}</tab>
-  <tab title="Beschreibung"> 
-    {{page:Extension-FQL-Beschreibung}}
-  </tab>
+
   <tab title="XML">{{xml}}</tab>
   <tab title="JSON">{{json}}</tab>
   <tab title="Link">{{link}}</tab> 
