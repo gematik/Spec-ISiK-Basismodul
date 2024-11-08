@@ -62,6 +62,10 @@
 
 ### Stornierung von Patienten
 
-Im Rahmen des ISiK Basismoduls SOLLTE die Stornierung eines Patienten entweder durch das Löschen der Patienten-Ressource oder der Verwendung des Feldes `Patient.active` abgebildet werden. Dies ist abhängig davon, wie die Stornierung im bestätigungsrelevanten System umgesetzt ist. Im letzteren Fall wird die Stornierung durch das Setzen von `Patient.active` auf `false` gekennzeichnet.
+Im Rahmen des ISiK Basismoduls SOLL die Stornierung eines Patienten entweder erfolgen durch
+* das Löschen der Patienten-Ressource oder
+* die Verwendung des Feldes Patient.active
+
+Die konkrete Implementierung ist abhängig davon, wie die Stornierung im bestätigungsrelevanten System umgesetzt ist. Im letzteren Fall wird die Stornierung durch das Setzen von Patient.active auf "false" gekennzeichnet.
 
 ---
