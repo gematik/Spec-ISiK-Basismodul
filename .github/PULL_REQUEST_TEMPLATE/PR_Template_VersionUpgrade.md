@@ -13,13 +13,10 @@ All jobs with an `x` in the boxes were performed to the best of knowledge.
 
 ## Pre-Merge Activities
 <!--- Lets check everything before we continue. -->
-- [ ] This PR refers to a versioned Branch with a name and a version number in the form of N.n.n, e.g. "TC_3.2.1".
-- [ ] This PR has a clean meaningful commit history. Minor commits or commits without description have been squashed, at the latest now.
-- [ ] The _./github/workflows/main.yml_ refers to the correct Firely Terminal and SUSHI Version. 
-    > **_Firely Terminal Pipeline_**  0.4.0.
-
-    > **_SUSHI Versions_**  3.5.0.
-- [ ] By running the _Release_Publish.py_ script, release version and date was updated accordingly. The script ran without errors.
+- This PR refers to a versioned Branch with a name and a version number in the form of N.n.n, e.g. "TC_3.2.1".
+-  (automated for basis)
+    - The _./github/workflows/main.yml_ refers to the correct Firely Terminal and SUSHI Version.
+    - By running the _Release_Publish.py_ script, release version and date was updated accordingly. The script ran without errors.
 - [ ] Eventually, increase the dependency of to newer Basis Modul (package and sushi-config)
 - [ ] New Release Notes were created, alined to the commit history and cleaned. In Github, go to 
   - [ ]  _-> Releases_ then _-> Draft a new release_ with the _Modul Name and Version_, then
@@ -48,9 +45,7 @@ All jobs with an `x` in the boxes were performed to the best of knowledge.
 - [ ] Provide / Archive the IG in the corresponding _gh-pages_ branch of the GitHub project.
   - [ ] Checkout the Branch (no need to merge it later).
   - [ ] Export from Simplifier via _-> Guides -> Expand the Modul ... -> Export_
-  - [ ] Unpack the zip, remove the packages folder (because its kinda big), and move everything else to a (version corresponding) new folder in the branch folder structure.
-  - [ ] Update the file index.html and check rendering
-  - [ ] commit the branch.
+  - [ ] Add the zip (other tasks are automated by action called "Unzip and Update IG Version in webpage", in order to provide the Archige in the following page . https://gematik.github.io/spec-ISiK-Basismodul/index.html)
 - [ ] If ISiK Basismodul was updated all depending Modules should be updated  with a renewed dependency to the incremented Basismodul version - possibly including and closing technical corrections
 
 
