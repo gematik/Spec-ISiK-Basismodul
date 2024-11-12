@@ -4,11 +4,16 @@ name: CI (FHIR Validation)
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master-isik-stufe-2 ]
+    paths:
+    - 'Resources/**'
+    branches-ignore:
+    - 'main**'
+
+  # will run whenever a pull request is made to (target) any branch that starts with main
   pull_request:
-    branches: [ master-isik-stufe-2 ]
+    branches:
+    - 'main**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

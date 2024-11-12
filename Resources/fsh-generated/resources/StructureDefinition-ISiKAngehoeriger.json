@@ -2,10 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKAngehoeriger",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKAngehoeriger",
+  "version": "2.0.9",
   "name": "ISiKAngehoeriger",
   "status": "active",
   "experimental": false,
-  "date": "2024-07-04",
+  "date": "2024-11-12",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Nutzung von Angehörigen in ISiK Szenarien.",
   "fhirVersion": "4.0.1",
@@ -53,6 +54,20 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.gender.extension",
+        "path": "RelatedPerson.gender.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "RelatedPerson.gender.extension:Geschlecht-Administrativ",
