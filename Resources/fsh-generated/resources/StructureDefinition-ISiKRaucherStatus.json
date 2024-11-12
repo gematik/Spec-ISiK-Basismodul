@@ -7,7 +7,7 @@
   "title": "ISiK Raucherstatus",
   "status": "active",
   "experimental": false,
-  "date": "2024-11-06",
+  "date": "2024-11-08",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "kind": "resource",
