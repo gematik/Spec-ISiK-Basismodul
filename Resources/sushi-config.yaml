@@ -3,7 +3,7 @@ fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false
 status: active
-version: "2.0.9"
+version: 2.0.9
 publisher:
   name: Gematik GmbH
   url: https://www.gematik.de/
