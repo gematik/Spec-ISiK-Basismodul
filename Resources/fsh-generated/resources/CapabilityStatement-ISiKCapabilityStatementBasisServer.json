@@ -4,11 +4,11 @@
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/CapabilityStatement/basis-server",
   "status": "active",
   "experimental": false,
-  "version": "2.0.7",
+  "version": "2.0.9",
   "publisher": "gematik GmbH",
-  "date": "2024-07-04",
+  "date": "2024-11-12",
   "implementationGuide": [
-    "https://gematik.de/fhir/isik/v2/Basismodul/ImplementationGuide|2.0.7"
+    "https://gematik.de/fhir/isik/v2/Basismodul/ImplementationGuide|2.0.9"
   ],
   "name": "ISiKCapabilityStatementBasisServer",
   "title": "ISiK CapabilityStatement Basis Server",
