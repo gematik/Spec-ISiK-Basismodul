@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ProzedurenCodesSCT",
+  "id": "ProzedurenCodesSCT",
+  "description": "Enthaelt alle SNOMED Procedure Codes",
+  "version": "2.0.9",
+  "url": "https://gematik.de/fhir/isik/v2/Basismodul/ValueSet/ProzedurenCodesSCT",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-12",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "71388002"
+          }
+        ]
+      }
+    ]
+  }
+}

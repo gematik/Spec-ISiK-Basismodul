@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "PatientinMusterfrauMinimal",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "MR",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "system": "https://fhir.krankenhaus.example/sid/PID",
+      "value": "TestPID"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Fürstin von Musterfrau",
+      "given": [
+        "Erika"
+      ],
+      "prefix": [
+        "Dr."
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1964-08-12"
+}

@@ -1,0 +1,612 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKPatient",
+  "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKPatient",
+  "version": "2.0.9",
+  "name": "ISiKPatient",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-12",
+  "publisher": "gematik GmbH",
+  "description": "Dieses Profil beschreibt die Nutzung von administrativen Patientendaten in ISiK-Szenarien.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "constraint": [
+          {
+            "key": "isik-pat-1",
+            "severity": "error",
+            "human": "Falls die Geschlechtsangabe 'other' gewählt wird, muss die amtliche Differenzierung per Extension angegeben werden",
+            "expression": "gender.exists() and gender='other' implies gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').exists()",
+            "source": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKPatient"
+          }
+        ]
+      },
+      {
+        "id": "Patient.id",
+        "path": "Patient.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:VersichertenId-GKV",
+        "path": "Patient.identifier",
+        "sliceName": "VersichertenId-GKV",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-kvid-10"
+            ]
+          }
+        ],
+        "patternIdentifier": {
+          "type": {
+            "coding": [
+              {
+                "code": "GKV",
+                "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+              }
+            ]
+          }
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:VersichertenId-GKV.type",
+        "path": "Patient.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:VersichertenId-GKV.system",
+        "path": "Patient.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:VersichertenId-GKV.value",
+        "path": "Patient.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:Patientennummer",
+        "path": "Patient.identifier",
+        "sliceName": "Patientennummer",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-pid"
+            ]
+          }
+        ],
+        "patternIdentifier": {
+          "type": {
+            "coding": [
+              {
+                "code": "MR",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+              }
+            ]
+          }
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:Patientennummer.type",
+        "path": "Patient.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:Patientennummer.system",
+        "path": "Patient.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:Patientennummer.value",
+        "path": "Patient.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:Versichertennummer_PKV",
+        "path": "Patient.identifier",
+        "sliceName": "Versichertennummer_PKV",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-pkv"
+            ]
+          }
+        ],
+        "patternIdentifier": {
+          "type": {
+            "coding": [
+              {
+                "code": "PKV",
+                "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+              }
+            ]
+          }
+        },
+        "mustSupport": false
+      },
+      {
+        "id": "Patient.identifier:Versichertennummer_PKV.use",
+        "path": "Patient.identifier.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:Versichertennummer_PKV.type",
+        "path": "Patient.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:Versichertennummer_PKV.value",
+        "path": "Patient.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:Versichertennummer_PKV.assigner",
+        "path": "Patient.identifier.assigner",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:Versichertennummer_PKV.assigner.identifier.system",
+        "path": "Patient.identifier.assigner.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:Versichertennummer_PKV.assigner.identifier.value",
+        "path": "Patient.identifier.assigner.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:Versichertennummer_PKV.assigner.display",
+        "path": "Patient.identifier.assigner.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "comment": "Einschränkung der Übergreifenden MS-Definition: Verfügt ein bestätigungsrelevantes System nicht über die Datenstruktur zur Hinterlegung des Aktivitätsstatus einer Patienten-Ressource, so MUSS dieses System die Information NICHT abbilden. Das System SOLL jedoch den Aktivitätsstatus hart kodieren in der Patienteninstanz (Patient.active auf 'true'), sodass Clients nicht missverständlich mit einer inaktiven Patient-Ressource interagieren.",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "comment": "In order to maintain the differntiations of name parts as given in the VSDM dataset or qualify prefixes as academic titles, vendors can opt to support the extensions specified in the German HumanName Base Profile https://simplifier.net/basisprofil-de-r4/humannamedebasis\r\nThis is however not required within the scope of this specification.",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name",
+        "path": "Patient.name",
+        "sliceName": "Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://fhir.de/StructureDefinition/humanname-de-basis"
+            ]
+          }
+        ],
+        "patternHumanName": {
+          "use": "official"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.use",
+        "path": "Patient.name.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family",
+        "path": "Patient.name.family",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family.extension:namenszusatz",
+        "path": "Patient.name.family.extension",
+        "sliceName": "namenszusatz",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family.extension:nachname",
+        "path": "Patient.name.family.extension",
+        "sliceName": "nachname",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.family.extension:vorsatzwort",
+        "path": "Patient.name.family.extension",
+        "sliceName": "vorsatzwort",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.given",
+        "path": "Patient.name.given",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.prefix",
+        "path": "Patient.name.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.prefix.extension:prefix-qualifier",
+        "path": "Patient.name.prefix.extension",
+        "sliceName": "prefix-qualifier",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name.prefix.extension:prefix-qualifier.value[x]",
+        "path": "Patient.name.prefix.extension.value[x]",
+        "fixedCode": "AC"
+      },
+      {
+        "id": "Patient.name:Geburtsname",
+        "path": "Patient.name",
+        "sliceName": "Geburtsname",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://fhir.de/StructureDefinition/humanname-de-basis"
+            ]
+          }
+        ],
+        "patternHumanName": {
+          "use": "maiden"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Geburtsname.use",
+        "path": "Patient.name.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Geburtsname.family",
+        "path": "Patient.name.family",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Geburtsname.family.extension:namenszusatz",
+        "path": "Patient.name.family.extension",
+        "sliceName": "namenszusatz",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Geburtsname.family.extension:nachname",
+        "path": "Patient.name.family.extension",
+        "sliceName": "nachname",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Geburtsname.family.extension:vorsatzwort",
+        "path": "Patient.name.family.extension",
+        "sliceName": "vorsatzwort",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Geburtsname.given",
+        "path": "Patient.name.given",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name:Geburtsname.prefix",
+        "path": "Patient.name.prefix",
+        "max": "0"
+      },
+      {
+        "id": "Patient.telecom.system",
+        "path": "Patient.telecom.system",
+        "min": 1
+      },
+      {
+        "id": "Patient.telecom.value",
+        "path": "Patient.telecom.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.gender.extension",
+        "path": "Patient.gender.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Patient.gender.extension:Geschlecht-Administrativ",
+        "path": "Patient.gender.extension",
+        "sliceName": "Geschlecht-Administrativ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/StructureDefinition/gender-amtlich-de"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate.extension:Data-Absent-Reason",
+        "path": "Patient.birthDate.extension",
+        "sliceName": "Data-Absent-Reason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate.extension:Data-Absent-Reason.value[x]",
+        "path": "Patient.birthDate.extension.value[x]",
+        "fixedCode": "unknown",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "comment": "In order to differentiate between post box addresses and physical addresses, street names and house numbers, and to add city district names, vendors can opt to support the extensions as suggested in the German Address Base Profile http://fhir.de/StructureDefinition/address-de-basis.\r\nSuch differentiations are however not required within the scope of this specification.",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Strassenanschrift",
+        "path": "Patient.address",
+        "sliceName": "Strassenanschrift",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://fhir.de/StructureDefinition/address-de-basis"
+            ]
+          }
+        ],
+        "patternAddress": {
+          "type": "both"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.extension:Stadtteil",
+        "path": "Patient.address.extension",
+        "sliceName": "Stadtteil",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.type",
+        "path": "Patient.address.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.line",
+        "path": "Patient.address.line",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.line.extension:Strasse",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Strasse",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.line.extension:Hausnummer",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Hausnummer",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.line.extension:Adresszusatz",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Adresszusatz",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.line.extension:Postfach",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Postfach",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.city",
+        "path": "Patient.address.city",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.postalCode",
+        "path": "Patient.address.postalCode",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.country",
+        "path": "Patient.address.country",
+        "min": 1,
+        "constraint": [
+          {
+            "key": "address-cnt-2or3-char",
+            "severity": "warning",
+            "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
+            "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
+            "source": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKPatient"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Postfach",
+        "path": "Patient.address",
+        "sliceName": "Postfach",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://fhir.de/StructureDefinition/address-de-basis"
+            ]
+          }
+        ],
+        "patternAddress": {
+          "type": "postal"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Postfach.type",
+        "path": "Patient.address.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Postfach.line",
+        "path": "Patient.address.line",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Postfach.line.extension:Strasse",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Strasse",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address:Postfach.line.extension:Hausnummer",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Hausnummer",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address:Postfach.line.extension:Adresszusatz",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Adresszusatz",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address:Postfach.line.extension:Postfach",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Postfach",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Postfach.city",
+        "path": "Patient.address.city",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Postfach.postalCode",
+        "path": "Patient.address.postalCode",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Postfach.country",
+        "path": "Patient.address.country",
+        "min": 1,
+        "constraint": [
+          {
+            "key": "address-cnt-2or3-char",
+            "severity": "warning",
+            "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
+            "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
+            "source": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKPatient"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

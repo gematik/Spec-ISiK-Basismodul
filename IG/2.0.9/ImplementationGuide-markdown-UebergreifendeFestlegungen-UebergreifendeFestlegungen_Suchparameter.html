@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Implementierungsleitfaden ISiK-Basismodul Stufe 2</title>
+
+        <link rel="icon" href="static/styles/common/favicon.ico" />
+
+        <script src="static/styles/common/jquery/jquery.min.js"></script>
+        <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/common/main.min.css" />
+        <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+        <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="static/ImplementationGuide/style/style.css?v=1db34fde28fb680" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-twolevelmenu">
+
+                    <div class="header" role="banner" aria-label="Header">
+                        
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                <a class="navbar-brand" href="ImplementationGuide-markdown-Einfuehrung.html">
+                    Implementierungsleitfaden ISiK-Basismodul Stufe 2
+                </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+                    <li>
+                        <a href="ImplementationGuide-markdown-Einfuehrung.html">
+                            Einf&#xFC;hrung
+                        </a>
+                    </li>
+
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseNotes.html">
+                                Release Notes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-Motivation.html">
+                                Motivation
+                            </a>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &#xDC;bergreifende Festlegungen <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen.html">
+                                            &#xDC;bergreifende Festlegungen
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Methodik.html">
+                                            Methodik
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme.html">
+                                            Best&#xE4;tigungsrelevante Systeme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-KompatibilitaetDerGematikSpezifikation.html">
+                                            Kompatibilit&#xE4;t der gematik-Spezifikation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Must-Support-Flags.html">
+                                            Must-Support-Flags
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Repraesentationsformate.html">
+                                            Repr&#xE4;sentationsformate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Suchparameter.html">
+                                            Suchparameter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Rest.html">
+                                            REST-API
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Datenobjekte <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte.html">
+                                            Datenobjekte
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-CapabilityStatement.html">
+                                            CapabilityStatement
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Patient.html">
+                                            Patient (Patient)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Kontakt.html">
+                                            Kontakt/Fall (Encounter)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Abrechnungsfall.html">
+                                            Abrechnungsfall (Account)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Diagnose.html">
+                                            Diagnose (Condition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Prozedur.html">
+                                            Prozedur (Procedure)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Versicherungsverhaeltnis.html">
+                                            Versicherungsverh&#xE4;ltnis (Coverage)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Angehoeriger.html">
+                                            Angeh&#xF6;riger (RelatedPerson)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_PersonImGesundheitsberuf.html">
+                                            PersonImGesundheitsberuf (Practitioner)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_BerichtSubsystem.html">
+                                            Bericht aus Subsystemen (Composition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_CodeSystem.html">
+                                            Katalog (CodeSystem)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_ValueSet.html">
+                                            ValueSet (ValueSet)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Binary.html">
+                                            Binary (Binary)
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                    </div>
+
+                    <div class="content container" role="main" aria-label="Main content">
+                        
+
+
+<div class="row">
+
+
+    <div class="col-md-24">
+
+        <div id="preview-content">
+
+            <h2 id="allgemeine-hinweise-zu-suchparametern">Allgemeine Hinweise zu Suchparametern</h2>
+<p>Originäre ISiK Use Cases sind versorgungsorientiert und patientenorientiert. Dies resultiert darin, dass in der Profilierung der ISiK-Datenobjekte das Vorhandensein einer Referenz auf ISiKPatient (Patient) und ISiKKontaktGesundheitseinrichtung (Encounter) wo möglich gefordert wird. Entsprechend sind Abfragen durch Clients auf Basis von bekannten Informationen aus <em>einer</em> Patient- und/oder Encounter-Ressource zu begrenzen (Abfragen auf Patientenkohorten oder sonstige Forschungsabfragen sind nicht im Fokus von ISiK).
+Auf Basis dieser grundsätzlichen Design-Entscheidung können Clients davon ausgehen, dass alle vorliegenden referenzierten bzw. referenzierenden Ressourcen aus dem Kontext der genannten Ressourcen-Typen abrufbar sind. Durch das Vorliegen der Referenzen erfolgt die Dokumentation aller Datenobjekte stets im korrekten Patientenkontext. Zudem liegen für den jeweiligen Kontext relevante Informationen zur Interpretation der Dokumentation und Sicherstellung der Datenintegrität vor.</p>
+<p>Innerhalb der jeweiligen Abschnitte 'Interaktionen' (Siehe <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte.html" title='ImplementationGuide/markdown/Datenobjekte/Datenobjekte.md'>Datenobjekte</a>) werden für alle innerhalb dieses Implementierungsleitfadens spezifizierten FHIR-Ressourcen Suchparameter bestimmt, welche im Rahmen des Bestätigungsverfahrens von ISiK unterstützt werden MÜSSEN.</p>
+<p>Ein Server MUSS sicherstellen, dass nicht unterstützte oder leere Suchparameter ignoriert werden und <strong>nicht</strong> zu einem Fehler führen. Siehe <a href="https://www.hl7.org/fhir/R4/search.html#errors">FHIR RESTful Search - Handling Errors</a>.
+Alle vom Server für eine konkrete Suche verwendeten Parameter MÜSSEN im Self-Link des Searchset-Bundles angegeben sein, siehe <a href="https://hl7.org/fhir/R4/search.html#selflink">Self-Link</a>.</p>
+<p>Alle Suchparameter in FHIR entsprechen einem von neun definierten <a href="https://hl7.org/fhir/R4/search.html">Such-Parameter-Typen</a>:</p>
+<ul>
+<li>Number</li>
+<li>Date/DateTime</li>
+<li>String</li>
+<li>Token</li>
+<li>Reference</li>
+<li>Composite</li>
+<li>Quantity</li>
+<li>URI</li>
+<li>Special</li>
+</ul>
+<p>Des Weiteren werden zusätzlich sogenannte 'Modifier' pro Suchparameter-Typ definiert. Eine Übersicht findet sich unter <a href="https://hl7.org/fhir/R4/search.html#modifiers">&quot;Search Modifiers&quot;</a>.</p>
+<p>Für die im Rahmen dieses Leitfadens relevanten Typen gelten folgende allgemeinen Festlegungen:</p>
+<h3 id="datedatetime">Date/DateTime</h3>
+<p>Die Präfixe <code>lt</code>,<code>le</code>,<code>gt</code>,<code>ge</code>,<code>eq</code> MÜSSEN für jeden Suchparameter vom Typ 'date/dateTime' unterstützt werden.</p>
+<p>Begründung: Die Funktionalität datums-eingeschränkt suchen zu können ist essentiell.</p>
+<p>Hinweis: Die Abfragemöglichkeit arbeitet ungewollten Massendatenabfragen entgegen, da sich sonst Suchen zwangsläufig über den gesamten Zeitraum erstrecken würden.</p>
+<p><strong>Beispiele</strong>:</p>
+<p><code>[base]/Encounter?date=eq2024-01-01&amp;patient=Patient/Test</code> <br>
+Suche nach allen Kontakten mit einem Datum am 2024-01-01T00:00 im Patientenkontext &quot;Test&quot;.</p>
+<p><code>[base]/Condition?recorded-date=eq2024-01-01&amp;patient=Patient/Test</code> <br>
+Suche nach allen Diagnosen mit einem Dokumentationsdatum von 2024-01-01T00:00 bis (aber nicht einschließlich) 2024-01-02T00:00 im Patientenkontext &quot;Test&quot;.</p>
+<p>Es ist zu beachten, dass jedes Datum einen impliziten Werte-Bereich besitzt. Siehe <a href="https://hl7.org/fhir/R4/search.html#date">https://hl7.org/fhir/R4/search.html#date</a>.</p>
+<h3 id="string">String</h3>
+<p>Der Modifier <code>:contains</code> MUSS für alle spezifizierten Suchparameter vom Typ 'String' unterstützt werden.</p>
+<p><strong>Beispiele</strong>:</p>
+<p><code>[base]/Patient?address:contains=Berlin</code> <br>
+Diese Suchanfrage gibt alle Patienten zurück zum Client, welche in einem Adress-Bestandteil den String 'Berlin' enthält (z.B. alle Berliner Adressen unabhängig von konkreten Bezirken).</p>
+<h3 id="token">Token</h3>
+<p>Der Modifier <code>:not</code> MUSS für alle spezifizierten Suchparameter vom Typ 'Token' unterstützt werden, sofern diese auf die Datentypen &quot;code&quot;, &quot;Coding&quot; oder &quot;CodeableConcept&quot; verwendet werden.</p>
+<p>Der Modifier <code>:text</code> MUSS für alle spezifizierten Suchparameter vom Typ 'Token' unterstützt werden, sofern diese auf die Datentypen &quot;Coding&quot; oder &quot;CodeableConcept&quot; verwendet werden.</p>
+<p><strong>Beispiele</strong>:</p>
+<p><code>[base]/Condition?code:text=Freitext</code> <br>
+Diese Suche gibt alle Condition-Ressourcen zurück zum Client, welche innerhalb <code>Condition.code.text</code> das Wort &quot;Freitext&quot; enthält. Es ist zu beachten, dass hier ein partielles Matching erfolgen MUSS (es ist implizit der Modifier :contains anzunehmen).</p>
+<p><code>[base]/Condition?code:not=Test</code> <br>
+Diese Suche gibt alle Condition-Ressourcen zurück zum Client, welche innerhalb <code>Condition.code.coding</code> NICHT den Code 'Test' enthält. Es ist zu beachten, dass dies auch alle Ressourcen beinhaltet, die keinen kodierten Wert für <code>Condition.code</code> enthalten.</p>
+<h3 id="reference">Reference</h3>
+<p>Der Modifier <code>:identifier</code> KANN für alle spezifizierten Suchparameter vom Typ 'Reference' unterstützt werden.</p>
+<p>Der Modifier :identifier MUSS implementiert werden, wenn die entsprechende Reference eine 1..1-Kardinalität oder ein MS-Flag auf Reference.identifier hat.</p>
+<p>Dies gilt beispielsweise für Encounter.account - also die Referenz zwischen ISiKKontaktGesundheitseinrichtung und ISiKAbrechnungsfall. Encounter MÜSSEN anhand der Fallnummer gesucht werden können, ohne dass Clients Zugriffsberechtigungen auf Accounts haben müssen, bzw. ohne dass Account zwingend implementiert/referenziert werden muss. Der Suchabruf erfolgt entsprechend dann nur über die logische Referenz.</p>
+<p>Begründung: Die Unterstützung dieser Suchparameter-Typen ist essentiell für Abfragen mit <a href="https://hl7.org/fhir/r4/search.html#chaining">Chaining</a> und <a href="https://hl7.org/fhir/r4/search.html#has">Reverse Chaining</a>. Innerhalb der Spezifikation ist für jedes Datenobjekt spezifiziert weshalb eine solche Abfrage versorgungsrelevant ist.</p>
+<p><strong>Beispiele</strong>:</p>
+<p><code>[base]/Coverage?Payor:identifier=http://fhir.de/sid/arge-ik/iknr|123456</code> <br>
+Diese Suche gibt alle Coverage-Ressourcen zurück zum Client, welche innerhalb <code>Coverage.payor</code> eine logische Referenz auf den Versicherer mit der IK-Nummer &quot;123456&quot; enthält.</p>
+<p>Für Suchparameter vom Typ 'Reference' sind nur teilweise die Festlegungen für <a href="https://hl7.org/fhir/R4/search.html#chaining">Chaining</a> und <a href="https://hl7.org/fhir/R4/search.html#has">Reverse Chaining</a> verpflichtend zu implementieren (siehe &quot;Verkettete Suchparameter&quot;).</p>
+<p><strong>Beispiele</strong>:</p>
+<p><code>[base]/Procedure?subject.name=Test</code>
+Diese Suche gibt alle Prozeduren zurück zum Client, welche innerhalb <code>Procedure.subject</code> auf einen Patienten verweist mit dem Namen &quot;Test&quot;.</p>
+<p><code>[base]/Condition?_has:Encounter:diagnosis:identifier=https://example.org/fhir/sid/aufnahmenummer|1234</code>
+Diese Suche gibt alle Diagnosen zurück, die im Kontext des Kontakts mit der Aufnahmenummer '1234' dokumentiert worden sind.</p>
+<h2 id="verpflichtende-suchparameter-alle-datenobjekte">Verpflichtende Suchparameter (Alle Datenobjekte)</h2>
+<p>Folgende Suchparameter MÜSSEN für alle bestätigungsrelevanten Datenobjekte implementiert werden:</p>
+<ul>
+<li><p><code>_id</code></p>
+<ul>
+<li>Beispiele: <code>GET [base]/Patient?_id=103270</code></li>
+<li>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;_id&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#all">FHIR-Basisspezifikation - Abschnitt &quot;Parameters for all resources&quot;</a>.</li>
+<li>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</li>
+</ul>
+</li>
+<li><p><code>_tag</code></p>
+<ul>
+<li>Beispiele: <code>GET [base]/Patient?_tag=https://example.org/codes|needs-review</code></li>
+<li>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;_tag&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#all">FHIR-Basisspezifikation - Abschnitt &quot;Parameters for all resources&quot;</a> und <a href="https://www.hl7.org/fhir/R4/resource.html#simple-tags">FHIR-Basisspezifikation - Abschnitt &quot;Tags&quot;</a>.</li>
+</ul>
+</li>
+<li><p><code>_count</code></p>
+<ul>
+<li>Beispiele: <code>GET [base]/Patient?_count=100</code></li>
+<li>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;_count&quot; finden sich in der <a href="https://www.hl7.org/fhir/R4/search.html#count">FHIR-Basisspezifikation - Abschnitt &quot;Page Count&quot;</a>.</li>
+</ul>
+<p>Hieraus ergibt sich, dass durch ein <a href="https://www.hl7.org/fhir/R4/http.html#paging">Paging entsprechend der FHIR-Kernspezifikation</a> unterstützt werden MUSS.
+Für die URIs in den Link-Relationen &quot;first&quot;, &quot;last&quot;, &quot;next&quot;, sowie &quot;prev&quot; MUSS sichergestellt werden, dass NICHT die ursprünglich verwendeten Suchparameter, sowie anderweitig sensitive Informationen enthalten, welche in der Suchanfrage an das bestätigungsrelevante System versendet wurden.
+Der &quot;self&quot;-Link innerhalb des Such-Bundles MUSS entsprechend der Vorgaben aus <a href="https://www.hl7.org/fhir/R4/search.html#conformance">FHIR Kernspezifikation - 3.1.1.6 - Server Conformance</a> strukturiert sein.</p>
+<p>Der <code>:iterate</code> Modifier KANN unterstützt werden.</p>
+</li>
+</ul>
+<p>Die aufgelisteten Suchparameter MÜSSEN entsprechend der Vorgaben für das CapabilityStatement pro Ressource aufgelistet werden.</p>
+<h2 id="verkettete-suchparameter-fokus-auf-patient-und-encounter">Verkettete Suchparameter (Fokus auf Patient und Encounter)</h2>
+<p>Für Suchparameter namens 'patient' und 'encounter' MÜSSEN die Festlegungen für <a href="https://hl7.org/fhir/R4/search.html#chaining">Chaining</a> verpflichtend implementiert werden.</p>
+<ul>
+<li><p><code>Chaining</code></p>
+<ul>
+<li>Beispiel für Chaining mit Referenz auf einen Patienten:  <code>GET [base]/Encounter?patient.identifier=1234</code></li>
+<li>Hinweis: Die Patient-Instanz ist für die Abfrage zentral, weshalb diese Form der Suchabfrage hier notwendig erscheint (siehe einleitenden Absatz dieses Abschnitts). Analog gilt dies für den Fallkontakt (Encounter).</li>
+</ul>
+</li>
+</ul>
+<p>Für Suchparameter KÖNNEN die Festlegungen für <a href="https://hl7.org/fhir/R4/search.html#has">Reverse Chaining</a> implementiert werden.</p>
+<ul>
+<li><p><code>Reverse Chaining</code></p>
+<ul>
+<li>Beispiel für Reverse Chaining mit Referenz auf einen Patienten aus einem Observation-Kontext:GET [base]/Patient?_has:Observation:patient:code=1234-5</li>
+<li>Hinweis: Diese Form der Suchanfrage dient im Wesentlichen dem Auffinden von Patienten (z.B. unter angabe einer BEsondern Diagnose, beobachtung Prozedur etc.) oder Fallkontakten (z.B. zum Ermitteln des Kontextes einer Prozedur)</li>
+</ul>
+</li>
+</ul>
+<p>Folgende Suchparameter MÜSSEN verpflichtend für Suchparameter implementiert werden, für die auch Chaining erforderlich ist ('patient' und 'encounter'):</p>
+<ul>
+<li><p><code>_include</code></p>
+<ul>
+<li>Beispiele: <code>GET [base]/Encounter?_include=Encounter:patient</code></li>
+<li>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;_include&quot; finden sich in der <a href="https://www.hl7.org/fhir/R4/search.html#revinclude">FHIR-Basisspezifikation - Abschnitt &quot;Including other resources in result&quot;</a>.</li>
+<li>Für alle Referenzen, für die ein Chaining unterstützt wird, MUSS auch der _include-Parameter implementiert werden. Alle unterstützten Include-Referenzen MÜSSEN im CapabilityStatement unter <code>CapabilityStatement.rest.resource.searchInclude</code> angegeben werden. Siehe <a href="ImplementationGuide-markdown-CapabilityStatement.html" title='ImplementationGuide/markdown/CapabilityStatement.md'>CapabilityStatement</a>.</li>
+</ul>
+</li>
+<li><p><code>_revinclude</code></p>
+<ul>
+<li>Beispiele: <code>GET [base]/Patient?_revinclude=Encounter:subject</code></li>
+<li>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;_revinclude&quot; finden sich in der <a href="https://www.hl7.org/fhir/R4/search.html#revinclude">FHIR-Basisspezifikation - Abschnitt &quot;Including other resources in result&quot;</a>.</li>
+<li>Alle Referenzen für die ein Chaining unterstützt wird MUSS auch der _revinclude-Parameter implementiert werden. Alle unterstützten Revinclude-Referenzen MÜSSEN im CapabilityStatement unter <code>CapabilityStatement.rest.resource.searchRevInclude</code> angegeben werden. Siehe <a href="ImplementationGuide-markdown-CapabilityStatement.html" title='ImplementationGuide/markdown/CapabilityStatement.md'>CapabilityStatement</a>.</li>
+</ul>
+</li>
+</ul>
+<p>Im Kontext dieser Spezifikation (einschließlich weitere ISIK Module) werden - wo notwendig - weitere Festlegungen für <a href="https://hl7.org/fhir/R4/search.html#chaining">Chaining</a> und <a href="https://hl7.org/fhir/R4/search.html#has">Reverse Chaining</a> getroffen.</p>
+<p>Mehrfach-Chaining ist generell nicht gefordert, es sei denn es wird in einem Modul für einzelne Parameter explizit verlangt.</p>
+<h2 id="best-practice-empfehlungen-fur-standard-suchfilter">Best-Practice-Empfehlungen für Standard-Suchfilter</h2>
+<p>Diese grundlegenden Best-Practice-Empfehlungen beziehen sich auf die korrekte Verwaltung des Suchprozesses seitens des Servers, mit Bezug auf Sicherheit im klinischen Umfeld. Unstimmigkeiten in den Erwartungen zwischen Client und Server können dazu führen, dass mehr Ressourcen als erwartet oder angemessen gefunden werden, oder, dass Ressourcen in den Suchergebnissen fehlen, die eigentlich vorhanden sein sollten. Im Folgenden werden daher Empfehlungen für Standard-Suchfilter genannt, die ein Grundmaß an Sicherheit im klinischen Umfeld bereitstellen sollen.</p>
+<ul>
+<li><p>Der Server SOLLTE dafür sorgen, dass Clients die benötigten Informationen finden können, auch bei Inhalten, die sich über mehrere FHIR-Ressourcen hinweg strecken.</p>
+</li>
+<li><p>Wenn der Inhalt eines Suchparameters leer ist, SOLLTE der Server diesen ignorieren.</p>
+</li>
+<li><p>Wenn der Inhalt eines Suchparameters syntaktisch falsch ist, SOLLTE der Server einen Fehler zurückgeben. Handelt es sich jedoch um eine logische Bedingung (z.B. einen Code), SOLLTE der Server die Suche verarbeiten, einschließlich des Parameters. Als Ergebnis wird in diesem Fall eine leere Suchmenge zurückgegeben, da der Parameter nicht erfüllt werden kann. In solchen Fällen kann zusätzlich ein OperationOutcome mit Hinweisen und Warnungen über den Suchprozess in das Ergebnis aufgenommen werden. Dieses wird in die Suchergebnisse als Eintrag mit <a href="https://www.hl7.org/fhir/R4/bundle-definitions.html#Bundle.entry.search.mode">search mode</a> = <a href="https://www.hl7.org/fhir/R4/valueset-search-entry-mode.html"><code>outcome</code></a> aufgenommen. Clients können diese Informationen nutzen, um zukünftige Suchen zu verbessern.</p>
+</li>
+<li><p>Wenn der Server geeignete Standardfilter bei der Suche auf der Grundlage des Patientenkontextes (z.B. das Herausfiltern von fehlerhaften Datensätzen oder inaktiven und verstorbenen Patienten) enthält, SOLLTEN diese angemessen und eindeutig dokumentiert sein (vorzugsweise durch Aufnahme in den 'self link' für eine Suche).</p>
+</li>
+<li><p>Weitere Hinweise können in der <a href="https://www.hl7.org/fhir/R4/search.html#errors">FHIR Spezifikation im Abschnitt <code>Search</code></a> eingesehen werden.</p>
+</li>
+</ul>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

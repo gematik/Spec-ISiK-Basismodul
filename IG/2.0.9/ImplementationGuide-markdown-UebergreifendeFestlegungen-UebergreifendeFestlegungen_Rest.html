@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Implementierungsleitfaden ISiK-Basismodul Stufe 2</title>
+
+        <link rel="icon" href="static/styles/common/favicon.ico" />
+
+        <script src="static/styles/common/jquery/jquery.min.js"></script>
+        <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/common/main.min.css" />
+        <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+        <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="static/ImplementationGuide/style/style.css?v=1db34fde28fb680" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-twolevelmenu">
+
+                    <div class="header" role="banner" aria-label="Header">
+                        
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                <a class="navbar-brand" href="ImplementationGuide-markdown-Einfuehrung.html">
+                    Implementierungsleitfaden ISiK-Basismodul Stufe 2
+                </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+                    <li>
+                        <a href="ImplementationGuide-markdown-Einfuehrung.html">
+                            Einf&#xFC;hrung
+                        </a>
+                    </li>
+
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseNotes.html">
+                                Release Notes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-Motivation.html">
+                                Motivation
+                            </a>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &#xDC;bergreifende Festlegungen <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen.html">
+                                            &#xDC;bergreifende Festlegungen
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Methodik.html">
+                                            Methodik
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme.html">
+                                            Best&#xE4;tigungsrelevante Systeme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-KompatibilitaetDerGematikSpezifikation.html">
+                                            Kompatibilit&#xE4;t der gematik-Spezifikation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Must-Support-Flags.html">
+                                            Must-Support-Flags
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Repraesentationsformate.html">
+                                            Repr&#xE4;sentationsformate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Suchparameter.html">
+                                            Suchparameter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Rest.html">
+                                            REST-API
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Datenobjekte <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte.html">
+                                            Datenobjekte
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-CapabilityStatement.html">
+                                            CapabilityStatement
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Patient.html">
+                                            Patient (Patient)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Kontakt.html">
+                                            Kontakt/Fall (Encounter)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Abrechnungsfall.html">
+                                            Abrechnungsfall (Account)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Diagnose.html">
+                                            Diagnose (Condition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Prozedur.html">
+                                            Prozedur (Procedure)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Versicherungsverhaeltnis.html">
+                                            Versicherungsverh&#xE4;ltnis (Coverage)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Angehoeriger.html">
+                                            Angeh&#xF6;riger (RelatedPerson)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_PersonImGesundheitsberuf.html">
+                                            PersonImGesundheitsberuf (Practitioner)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_BerichtSubsystem.html">
+                                            Bericht aus Subsystemen (Composition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_CodeSystem.html">
+                                            Katalog (CodeSystem)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_ValueSet.html">
+                                            ValueSet (ValueSet)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Binary.html">
+                                            Binary (Binary)
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                    </div>
+
+                    <div class="content container" role="main" aria-label="Main content">
+                        
+
+
+<div class="row">
+
+
+    <div class="col-md-24">
+
+        <div id="preview-content">
+
+            <h1 id="rest-api">REST-API</h1>
+<h2 id="read-interaktionen">Read-Interaktionen</h2>
+<p>Instanzen von Datenobjekten, die die REST-Interaktion &quot;READ&quot; fordern MÜSSEN per HTTP GET auf <code>[BASE_URL]/[resourceType]/[ID]</code> abgerufen werden können.
+Siehe: <a href="https://www.hl7.org/fhir/R4/http.html#read">https://www.hl7.org/fhir/R4/http.html#read</a></p>
+<h2 id="search-interaktionen">Search-Interaktionen</h2>
+<p>Die Suche MUSS sowohl mittels HTTP GET als auch HTTP POST (vgl. <a href="https://www.hl7.org/fhir/R4/search.html#Introduction">FHIR RESTful Search - Introduction</a>) unterstützt werden. Die URL-Parameter komplexer Suchanfragen können personenbezogene Merkmale enthalten, daher ist im Echtbetrieb die Suche mittels HTTP POST in Verbindung mit TLS-Verschlüsselung vorzuziehen.</p>
+<h2 id="create-interaktionen">Create-Interaktionen</h2>
+<p>Das Erstellen einer Ressource kann per HTTP POST (vgl. <a href="https://www.hl7.org/fhir/R4/http.html#create">FHIR RESTful API - create</a>) unterstützt werden. Einzelne Datenobjekte (spezifiziert im vorliegenden Basismodul oder in einem ISiK Erweiterungsmodul) können diese Interaktion als verpflichtend kennzeichnen.</p>
+<p>Es liegt im Ermessen des bestätigungsrelevanten Systems, ob eine externe Ressource durch das System direkt übernommen wird. Auch wie die Herkunft der übernommenen Ressource gekennzeichnet wird, liegt im Ermessen des bestätigungsrelevanten Systems.</p>
+<p>Eine Ressource welche nicht durch das bestätigungsrelevante System angelegt wird, KANN in <code>Resource.meta.tag</code> eine Angabe enthalten, welche indiziert, dass diese Ressource durch ein Fremdsystem erzeugt wurde. Dieser Tag KANN durch den Server hinzugefügt werden, sollte der Client diese Angabe nicht mit übermitteln. Eine von einem System vorgenommene Auszeichnung von Fremdübernahmen SOLL über den Code <code>external</code> aus dem Kodiersystem <code>https://fhir.de/CodeSystem/common-meta-tag-de</code> erfolgen. Weitere Kodierungen KÖNNEN hinzugefügt werden.</p>
+<pre><code>json
+{
+    &quot;resourceType&quot;: &quot;Patient&quot;,
+    &quot;meta&quot;: {
+        &quot;tag&quot;: [
+            {
+                &quot;system&quot;: &quot;http://fhir.de/CodeSystem/common-meta-tag-de&quot;,
+                &quot;code&quot;: &quot;external&quot;
+            }
+        ]
+    }
+    [...]
+}
+</code></pre>
+<p>Eine weitere Differenzierung der Herkunft kann mittels <code>Resource.meta.security</code> kodiert werden. Hierzu KÖNNEN Codes aus dem ValueSet <a href="https://terminology.hl7.org/ValueSet/v3-SecurityIntegrityObservationValue">SecurityIntegrityObservationValue</a> verwendet werden.</p>
+<p>Sollte die erzeugte Ressource dauerhaft in das bestätigungsrelevante System übernommen werden, KANN der entsprechende Tag in <code>Patient.meta.tag</code> entfernt werden. In diesem Falle MUSS die id der Ressource stabil bleiben und darf nicht verändert werden.</p>
+<p>Per Create-Interaktion erzeugte Ressourcen MÜSSEN im Falle einer erfolgreichen Übermittlung direkt über die READ- und SEARCH-Interaktionen zur Verfügung gestellt werden.</p>
+<p>Ressourcen, die zu einem entsprechenden ISiK-Profil nicht konform sind, MÜSSEN durch das bestätigungsrelevante System abgelehnt werden. Als Antwort MUSS ein HTTP Status-Code 400 - Bad Request mit einer <code>OperationOutcome</code>-Ressource zurückgegeben werden, falls es sich um einen syntaktischen Fehler in der Repräsentation der Ressource handelt. Die <code>OperationOutcome</code> MUSS eine Auflistung aller Fehler in der übermittelten Ressource in kodierter Form vorweisen. Anderweitig (semantisch) invalide Ressourcen MÜSSEN ebenfalls mit einer entsprechenden OperationOutcome-Ressource abgewiesen werden. In diesem Fall SOLLTE der HTTP Status-Code HTTP 422 - Unprocessable Entity verwendet werden.</p>
+<h2 id="update-interaktionen">Update-Interaktionen</h2>
+<p>Das Update einer Ressource KANN per HTTP PUT (vgl. <a href="https://www.hl7.org/fhir/R4/http.html#update">FHIR RESTful API - update</a>) unterstützt werden. Es ist zu beachten, dass beim Update einer Ressource bestimmte dazugehörige <a href="https://www.hl7.org/fhir/R4/resource.html#Meta">Metadaten</a> beibehalten werden SOLLTEN. Die gleichen Vorgaben für die Handhabung von invaliden Ressourcen wie beschrieben im Abschnitt &quot;Create-Interaktionen&quot;, gelten auch für Update-Interaktionen.</p>
+<h2 id="sicherheitsaspekte">Sicherheitsaspekte</h2>
+<p>Alle REST-Interaktionen müssen sowohl mittels HTTP als auch HTTPS (TLS-Verschlüsselung) unterstützt werden. Vorgaben zur TLS-Verschlüsselung sind dem nachfolgenden Link für die FHIR Security Check List zu entnehmen.
+Im Echtbetrieb MUSS die Kommunikation ausschließlich per HTTPS erfolgen.
+Weiterhin sind geeignete Maßnahmen zur Risiko-Minimierung (z.B. Benutzerautorisierung / -authentifikation) zu treffen, siehe <a href="http://build.fhir.org/security.html#6.1.0">http://build.fhir.org/security.html#6.1.0</a>.
+Diese sind in Stufe 2 des ISiK Basismoduls jedoch nicht bestätigungsrelevant.</p>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

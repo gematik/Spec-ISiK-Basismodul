@@ -1,0 +1,256 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKProzedur",
+  "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKProzedur",
+  "version": "2.0.9",
+  "name": "ISiKProzedur",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-12",
+  "publisher": "gematik GmbH",
+  "description": "Diese Profil ermöglicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure",
+        "path": "Procedure",
+        "constraint": [
+          {
+            "key": "proc-ISiK-1",
+            "severity": "error",
+            "human": "Falls die Prozedur per OPS kodiert wird, MUSS eine SNOMED-CT kodierte Category abgebildet werden",
+            "expression": "code.coding.where(system = 'http://fhir.de/CodeSystem/bfarm/ops').exists() implies category.coding.where(system = 'http://snomed.info/sct').exists()",
+            "source": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKProzedur"
+          },
+          {
+            "key": "proc-ISiK-2",
+            "severity": "error",
+            "human": "Falls eine codierte Prozedur vorliegt MUSS eine kodierte Category abgebildet werden",
+            "expression": "code.coding.exists() implies category.coding.exists()",
+            "source": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKProzedur"
+          }
+        ]
+      },
+      {
+        "id": "Procedure.id",
+        "path": "Procedure.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension",
+        "path": "Procedure.extension",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:Dokumentationsdatum",
+        "path": "Procedure.extension",
+        "sliceName": "Dokumentationsdatum",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category.coding",
+        "path": "Procedure.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Procedure.category.coding:SNOMED-CT",
+        "path": "Procedure.category.coding",
+        "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://gematik.de/fhir/isik/v2/Basismodul/ValueSet/ProzedurenKategorieSCT"
+        }
+      },
+      {
+        "id": "Procedure.category.coding:SNOMED-CT.system",
+        "path": "Procedure.category.coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category.coding:SNOMED-CT.code",
+        "path": "Procedure.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "constraint": [
+          {
+            "key": "sct-ops-1",
+            "severity": "error",
+            "human": "Falls die Prozedur kodiert vorliegt, SOLL mindestens ein OPS oder SNOMED-CT Code angegeben werden. Liegt die Prozedur nicht kodiert vor SOLL Freitext angegeben werden.",
+            "expression": "coding.exists() implies coding.where(system = 'http://snomed.info/sct').exists() or coding.where(system = 'http://fhir.de/CodeSystem/bfarm/ops').exists()",
+            "source": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKProzedur"
+          },
+          {
+            "key": "proc-ISiK-3",
+            "severity": "error",
+            "human": "Entweder MUSS eine kodierte Prozedur vorliegen oder eine textuelle Beschreibung. Stattdessen nur Extensions hinzuzufügen (vgl. https://www.hl7.org/fhir/R4/element.html - ele-1), ist explizit nicht erlaubt.",
+            "expression": "coding.exists().not() implies text.exists()",
+            "source": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKProzedur"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:OPS",
+        "path": "Procedure.code.coding",
+        "sliceName": "OPS",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "http://fhir.de/StructureDefinition/CodingOPS"
+            ]
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/ValueSet/bfarm/ops"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:OPS.extension:Seitenlokalisation",
+        "path": "Procedure.code.coding.extension",
+        "sliceName": "Seitenlokalisation",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:OPS.system",
+        "path": "Procedure.code.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:OPS.version",
+        "path": "Procedure.code.coding.version",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:OPS.code",
+        "path": "Procedure.code.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:SNOMED-CT",
+        "path": "Procedure.code.coding",
+        "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://gematik.de/fhir/isik/v2/Basismodul/ValueSet/ProzedurenCodesSCT"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:SNOMED-CT.system",
+        "path": "Procedure.code.coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:SNOMED-CT.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.text",
+        "path": "Procedure.code.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject.reference",
+        "path": "Procedure.subject.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.encounter",
+        "path": "Procedure.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.note",
+        "path": "Procedure.note",
+        "mustSupport": true
+      }
+    ]
+  }
+}

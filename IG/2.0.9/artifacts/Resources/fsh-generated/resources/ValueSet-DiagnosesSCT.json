@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DiagnosesSCT",
+  "id": "DiagnosesSCT",
+  "description": "Enthaelt alle SNOMED Clinical finding, Event und Situation with explicit context codes",
+  "version": "2.0.9",
+  "url": "https://gematik.de/fhir/isik/v2/Basismodul/ValueSet/DiagnosesSCT",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-12",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "404684003"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "272379006"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "243796009"
+          }
+        ]
+      }
+    ]
+  }
+}
