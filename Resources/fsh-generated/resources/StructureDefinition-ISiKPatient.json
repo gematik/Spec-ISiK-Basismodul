@@ -2,10 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKPatient",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKPatient",
+  "version": "2.0.7",
   "name": "ISiKPatient",
   "status": "active",
   "experimental": false,
-  "date": "2024-07-04",
+  "date": "2024-11-12",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil beschreibt die Nutzung von administrativen Patientendaten in ISiK-Szenarien.",
   "fhirVersion": "4.0.1",
@@ -197,6 +198,7 @@
       {
         "id": "Patient.active",
         "path": "Patient.active",
+        "comment": "Einschränkung der Übergreifenden MS-Definition: Verfügt ein bestätigungsrelevantes System nicht über die Datenstruktur zur Hinterlegung des Aktivitätsstatus einer Patienten-Ressource, so MUSS dieses System die Information NICHT abbilden. Das System SOLL jedoch den Aktivitätsstatus hart kodieren in der Patienteninstanz (Patient.active auf 'true'), sodass Clients nicht missverständlich mit einer inaktiven Patient-Ressource interagieren.",
         "mustSupport": true
       },
       {
@@ -361,6 +363,20 @@
         "path": "Patient.gender",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Patient.gender.extension",
+        "path": "Patient.gender.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "Patient.gender.extension:Geschlecht-Administrativ",
