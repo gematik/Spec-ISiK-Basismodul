@@ -6,7 +6,7 @@
   "name": "ISiKVersicherungsverhaeltnisSelbstzahler",
   "status": "active",
   "experimental": false,
-  "date": "2024-10-25",
+  "date": "2024-10-28",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht Selbstzahler Szenarien in ISiK.",
   "fhirVersion": "4.0.1",
