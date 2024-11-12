@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKAbrechnungsfall",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKAbrechnungsfall",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "name": "ISiKAbrechnungsfall",
   "status": "active",
   "experimental": false,

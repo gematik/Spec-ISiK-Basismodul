@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKBinary",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKBinary",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "name": "ISiKBinary",
   "title": "ISiKBinary",
   "status": "active",

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKDiagnose",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKDiagnose",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "name": "ISiKDiagnose",
   "status": "active",
   "experimental": false,

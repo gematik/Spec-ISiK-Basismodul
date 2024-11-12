@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKCodeSystem",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKCodeSystem",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "name": "ISiKCodeSystem",
   "status": "active",
   "experimental": false,

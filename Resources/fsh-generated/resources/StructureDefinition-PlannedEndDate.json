@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "PlannedEndDate",
   "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "name": "PlannedEndDate",
   "status": "active",
   "experimental": false,

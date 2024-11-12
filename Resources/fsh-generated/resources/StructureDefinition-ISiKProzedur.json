@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKProzedur",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKProzedur",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "name": "ISiKProzedur",
   "status": "active",
   "experimental": false,
