@@ -1,0 +1,116 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKBerichtBundle",
+  "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKBerichtBundle",
+  "version": "2.0.9",
+  "name": "ISiKBerichtBundle",
+  "title": "ISiKBerichtBundle",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-12",
+  "publisher": "gematik GmbH",
+  "description": "A document style representation of the receipt (complete, self-contained, signed)",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle",
+        "path": "Bundle",
+        "constraint": [
+          {
+            "key": "ISiK-docBundle-1",
+            "severity": "error",
+            "human": "All referenced Resources must be contained in the Bundle",
+            "expression": "Bundle.entry.descendants().reference.distinct().subsetOf(%context.entry.fullUrl)",
+            "source": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKBerichtBundle"
+          }
+        ]
+      },
+      {
+        "id": "Bundle.identifier",
+        "path": "Bundle.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "document",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.timestamp",
+        "path": "Bundle.timestamp",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resource"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.fullUrl",
+        "path": "Bundle.entry.fullUrl",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.search",
+        "path": "Bundle.entry.search",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.request",
+        "path": "Bundle.entry.request",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.response",
+        "path": "Bundle.entry.response",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry:Composition",
+        "path": "Bundle.entry",
+        "sliceName": "Composition",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:Composition.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Composition",
+            "profile": [
+              "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKBerichtSubSysteme"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

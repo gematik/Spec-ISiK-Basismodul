@@ -1,0 +1,275 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKAngehoeriger",
+  "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKAngehoeriger",
+  "version": "2.0.9",
+  "name": "ISiKAngehoeriger",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-12",
+  "publisher": "gematik GmbH",
+  "description": "Dieses Profil ermöglicht die Nutzung von Angehörigen in ISiK Szenarien.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "RelatedPerson",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedPerson",
+        "path": "RelatedPerson",
+        "constraint": [
+          {
+            "key": "relatedp-de-1",
+            "severity": "error",
+            "human": "Falls die Geschlechtsangabe 'other' gewählt wird, muss die amtliche Differenzierung per Extension angegeben werden",
+            "expression": "gender.exists() and gender='other' implies gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').exists()",
+            "source": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKAngehoeriger"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.patient",
+        "path": "RelatedPerson.patient",
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.patient.reference",
+        "path": "RelatedPerson.patient.reference",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.name",
+        "path": "RelatedPerson.name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://fhir.de/StructureDefinition/humanname-de-basis"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.gender.extension",
+        "path": "RelatedPerson.gender.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "RelatedPerson.gender.extension:Geschlecht-Administrativ",
+        "path": "RelatedPerson.gender.extension",
+        "sliceName": "Geschlecht-Administrativ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/StructureDefinition/gender-amtlich-de"
+            ]
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "RelatedPerson.address",
+        "path": "RelatedPerson.address",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "comment": "In order to differentiate between post box addresses and physical addresses, street names and house numbers, and to add city district names, vendors can opt to support the extensions as suggested in the German Address Base Profile http://fhir.de/StructureDefinition/address-de-basis.\r\nSuch differentiations are however not required within the scope of this specification.",
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Strassenanschrift",
+        "path": "RelatedPerson.address",
+        "sliceName": "Strassenanschrift",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://fhir.de/StructureDefinition/address-de-basis"
+            ]
+          }
+        ],
+        "patternAddress": {
+          "type": "both"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Strassenanschrift.extension:Stadtteil",
+        "path": "RelatedPerson.address.extension",
+        "sliceName": "Stadtteil",
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Strassenanschrift.type",
+        "path": "RelatedPerson.address.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Strassenanschrift.line",
+        "path": "RelatedPerson.address.line",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Strassenanschrift.line.extension:Strasse",
+        "path": "RelatedPerson.address.line.extension",
+        "sliceName": "Strasse",
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Strassenanschrift.line.extension:Hausnummer",
+        "path": "RelatedPerson.address.line.extension",
+        "sliceName": "Hausnummer",
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Strassenanschrift.line.extension:Adresszusatz",
+        "path": "RelatedPerson.address.line.extension",
+        "sliceName": "Adresszusatz",
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Strassenanschrift.line.extension:Postfach",
+        "path": "RelatedPerson.address.line.extension",
+        "sliceName": "Postfach",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address:Strassenanschrift.city",
+        "path": "RelatedPerson.address.city",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Strassenanschrift.postalCode",
+        "path": "RelatedPerson.address.postalCode",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Strassenanschrift.country",
+        "path": "RelatedPerson.address.country",
+        "min": 1,
+        "constraint": [
+          {
+            "key": "address-cnt-2or3-char",
+            "severity": "warning",
+            "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
+            "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
+            "source": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKAngehoeriger"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Postfach",
+        "path": "RelatedPerson.address",
+        "sliceName": "Postfach",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://fhir.de/StructureDefinition/address-de-basis"
+            ]
+          }
+        ],
+        "patternAddress": {
+          "type": "postal"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Postfach.type",
+        "path": "RelatedPerson.address.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Postfach.line",
+        "path": "RelatedPerson.address.line",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Postfach.line.extension:Strasse",
+        "path": "RelatedPerson.address.line.extension",
+        "sliceName": "Strasse",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address:Postfach.line.extension:Hausnummer",
+        "path": "RelatedPerson.address.line.extension",
+        "sliceName": "Hausnummer",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address:Postfach.line.extension:Adresszusatz",
+        "path": "RelatedPerson.address.line.extension",
+        "sliceName": "Adresszusatz",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address:Postfach.line.extension:Postfach",
+        "path": "RelatedPerson.address.line.extension",
+        "sliceName": "Postfach",
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Postfach.city",
+        "path": "RelatedPerson.address.city",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Postfach.postalCode",
+        "path": "RelatedPerson.address.postalCode",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.address:Postfach.country",
+        "path": "RelatedPerson.address.country",
+        "min": 1,
+        "constraint": [
+          {
+            "key": "address-cnt-2or3-char",
+            "severity": "warning",
+            "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
+            "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
+            "source": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKAngehoeriger"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

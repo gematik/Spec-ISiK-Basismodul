@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKCodeSystem",
+  "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKCodeSystem",
+  "version": "2.0.9",
+  "name": "ISiKCodeSystem",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-12",
+  "publisher": "gematik GmbH",
+  "description": "Dieses Profil beschreibt die maschinenlesbare Repräsentation von system-sepzifischen Kodierungen in ISiK-Szenarien",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CodeSystem",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CodeSystem",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CodeSystem.id",
+        "path": "CodeSystem.id",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.url",
+        "path": "CodeSystem.url",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.version",
+        "path": "CodeSystem.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.name",
+        "path": "CodeSystem.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.status",
+        "path": "CodeSystem.status",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.content",
+        "path": "CodeSystem.content",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept",
+        "path": "CodeSystem.concept",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.code",
+        "path": "CodeSystem.concept.code",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.display",
+        "path": "CodeSystem.concept.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.definition",
+        "path": "CodeSystem.concept.definition",
+        "mustSupport": true
+      }
+    ]
+  }
+}

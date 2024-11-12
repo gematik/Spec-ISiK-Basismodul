@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ProzedurenKategorieSCT",
+  "id": "ProzedurenKategorieSCT",
+  "description": "Enthaelt alle SNOMED Codes für ein Mapping der OPS Klassentitel",
+  "version": "2.0.9",
+  "url": "https://gematik.de/fhir/isik/v2/Basismodul/ValueSet/ProzedurenKategorieSCT",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-12",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "103693007",
+            "display": "Diagnostic procedure"
+          },
+          {
+            "code": "363679005",
+            "display": "Imaging"
+          },
+          {
+            "code": "387713003",
+            "display": "Surgical procedure"
+          },
+          {
+            "code": "18629005",
+            "display": "Administration of medicine"
+          },
+          {
+            "code": "277132007",
+            "display": "Therapeutic procedure"
+          },
+          {
+            "code": "394841004",
+            "display": "Other category"
+          }
+        ]
+      }
+    ]
+  }
+}

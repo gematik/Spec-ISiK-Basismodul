@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Implementierungsleitfaden ISiK-Basismodul Stufe 2</title>
+
+        <link rel="icon" href="static/styles/common/favicon.ico" />
+
+        <script src="static/styles/common/jquery/jquery.min.js"></script>
+        <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/common/main.min.css" />
+        <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+        <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="static/ImplementationGuide/style/style.css?v=1db34fde28fb680" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-twolevelmenu">
+
+                    <div class="header" role="banner" aria-label="Header">
+                        
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                <a class="navbar-brand" href="ImplementationGuide-markdown-Einfuehrung.html">
+                    Implementierungsleitfaden ISiK-Basismodul Stufe 2
+                </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+                    <li>
+                        <a href="ImplementationGuide-markdown-Einfuehrung.html">
+                            Einf&#xFC;hrung
+                        </a>
+                    </li>
+
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseNotes.html">
+                                Release Notes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-Motivation.html">
+                                Motivation
+                            </a>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &#xDC;bergreifende Festlegungen <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen.html">
+                                            &#xDC;bergreifende Festlegungen
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Methodik.html">
+                                            Methodik
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme.html">
+                                            Best&#xE4;tigungsrelevante Systeme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-KompatibilitaetDerGematikSpezifikation.html">
+                                            Kompatibilit&#xE4;t der gematik-Spezifikation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Must-Support-Flags.html">
+                                            Must-Support-Flags
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Repraesentationsformate.html">
+                                            Repr&#xE4;sentationsformate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Suchparameter.html">
+                                            Suchparameter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Rest.html">
+                                            REST-API
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Datenobjekte <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte.html">
+                                            Datenobjekte
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-CapabilityStatement.html">
+                                            CapabilityStatement
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Patient.html">
+                                            Patient (Patient)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Kontakt.html">
+                                            Kontakt/Fall (Encounter)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Abrechnungsfall.html">
+                                            Abrechnungsfall (Account)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Diagnose.html">
+                                            Diagnose (Condition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Prozedur.html">
+                                            Prozedur (Procedure)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Versicherungsverhaeltnis.html">
+                                            Versicherungsverh&#xE4;ltnis (Coverage)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Angehoeriger.html">
+                                            Angeh&#xF6;riger (RelatedPerson)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_PersonImGesundheitsberuf.html">
+                                            PersonImGesundheitsberuf (Practitioner)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_BerichtSubsystem.html">
+                                            Bericht aus Subsystemen (Composition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_CodeSystem.html">
+                                            Katalog (CodeSystem)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_ValueSet.html">
+                                            ValueSet (ValueSet)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Binary.html">
+                                            Binary (Binary)
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                    </div>
+
+                    <div class="content container" role="main" aria-label="Main content">
+                        
+
+
+<div class="row">
+
+
+    <div class="col-md-24">
+
+        <div id="preview-content">
+
+            <h3 id="anmerkungen-zu-den-must-support-feldern">Anmerkungen zu den Must-Support-Feldern</h3>
+<h3 id="composition.id"><code>Composition.id</code></h3>
+<p><strong>Bedeutung:</strong> Subsystem-interne Datensatz-ID</p>
+<h3 id="composition.profile"><code>Composition.profile</code></h3>
+<p><strong>Bedeutung:</strong> Erklärung zur Konformität zum ISiK-Profil</p>
+<h3 id="composition.text"><code>Composition.text</code></h3>
+<p><strong>Bedeutung:</strong> menschenlesbare Repräsentation des Dokumentenkopfes (Metadaten)</p>
+<p><strong>Hinweise:</strong> Die Mindestanforderungen an den Inhalt der menschenlesbaren Repräsentation umfasst folgende Informationen:</p>
+<ul>
+<li>Composition.subject:Patient.name.family</li>
+<li>Composition.subject:Patient.birthDate</li>
+<li>Composition.subject:Patient.identifier:pid</li>
+<li>Composition.status</li>
+<li>Composition.type.text</li>
+<li>Composition.date</li>
+<li>Composition.title</li>
+<li>Composition.author.display</li>
+</ul>
+<h3 id="composition.identifier"><code>Composition.identifier</code></h3>
+<p><strong>Bedeutung:</strong> Subsystem-seitig zugewiesener Identifier des Berichtes mit Angabe der URL des vom Subsystem verwendeten Namensraumes</p>
+<p><strong>Hinweise:</strong> Werden eigene Identifier bzw. NamingSystems verwendet, so sei auf den Leitfaden der Basisprofile Deutschland (HL7 Deutschland) zu den <a href="https://ig.fhir.de/basisprofile-de/stable/Terminologie-Namensraeume.html">Best-Practices bei Namensräumen</a> verwiesen.</p>
+<p>Dazu ein Beispiel für einen Identifier eines Sub-System-Berichts:</p>
+<div class="lang-xml editor-colors"><div style="color:Black;background-color:White;"><pre>
+<span style="color:Blue;">&lt;</span><span style="color:#A31515;">identifier</span><span style="color:Blue;">&gt;</span>
+    <span style="color:Blue;">&lt;</span><span style="color:#A31515;">system</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">https://fhir.krankenhaus.example/sid/system-a/berichtnummer</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+    <span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">0123456789</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">identifier</span><span style="color:Blue;">&gt;</span>
+
+</pre></div>
+</div>
+<p>Die Verwendung von OIDs ist möglich, wird jedoch nicht empfohlen. Für die Verwendnung von OIDs KANN folgendes Format verwendet werden:</p>
+<ul>
+<li>Das Feld <code>system</code> enthält den festen Wert &quot;urn:ietf:rfc:3986&quot;</li>
+<li>Das Feld <code>value</code> enthält die OID mit dem Präfix &quot;urn:oid:&quot;</li>
+</ul>
+<p>Beispiel:</p>
+<div class="lang-xml editor-colors"><div style="color:Black;background-color:White;"><pre>
+<span style="color:Blue;">&lt;</span><span style="color:#A31515;">identifier</span><span style="color:Blue;">&gt;</span>
+    <span style="color:Blue;">&lt;</span><span style="color:#A31515;">system</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">urn:ietf:rfc:3986</span><span style="color:Black;">&quot;</span><span style="color:Blue;">/&gt;</span>
+    <span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">urn:oid:2.16.840.1.113883.6.96</span><span style="color:Black;">&quot;</span><span style="color:Blue;">/&gt;</span>
+<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">identifier</span><span style="color:Blue;">&gt;</span>
+
+</pre></div>
+</div>
+<h3 id="composition.status"><code>Composition.status</code></h3>
+<p><strong>Bedeutung:</strong> Status des Dokumentes</p>
+<h3 id="composition.type"><code>Composition.type</code></h3>
+<p><strong>Bedeutung:</strong> Dokumenttyp</p>
+<p><strong>Hinweise:</strong> In der aktuellen Ausbaustufe von ISiK ist textuelle Repräsentation des Dokumenttyps (<code>type.text</code>) ausreichend. Die darüber hinausgehende Codierung des Dokumenttyps (z.B. mit LOINC, IHE-Typecodes oder KDL) in <code>type.coding</code> KANN implementiert werden</p>
+<h3 id="composition.subject"><code>Composition.subject</code></h3>
+<p><strong>Bedeutung:</strong> Patientenbezug des Dokumentes</p>
+<h3 id="composition.context"><code>Composition.context</code></h3>
+<p><strong>Bedeutung:</strong> Fallbezug des Dokumentes</p>
+<h3 id="composition.date"><code>Composition.date</code></h3>
+<p><strong>Bedeutung:</strong> Datum der letzten Änderung am Dokument</p>
+<h3 id="composition.author.display"><code>Composition.author.display</code></h3>
+<p><strong>Bedeutung:</strong> Autor des Dokumentes (Person, Subsystem)</p>
+<p><strong>Hinweise:</strong> In der aktuellen Ausbaustufe von ISiK ist die Verwendung der textuellen Repräsentation (display) von Autor und Subsystem ausreichend. Die darüber hinaus gehende Verlinkung auf Practitioner bzw. Device-Ressourcen KANN implementiert werden.</p>
+<h3 id="composition.title"><code>Composition.title</code></h3>
+<p><strong>Bedeutung:</strong> Dokumentenbezeichnung</p>
+<p><strong>Hinweise:</strong> Die Dokumentenbezeichnung dient der Darstellung des Dokumentes in einer Übersicht, z.B. in einer Patientenakte, und KANN der schnellen Auffindbarkeit eines gesuchten Dokumentes dienen. Geeignete Bezeichnungen sind zum Beispiel</p>
+<ul>
+<li>&quot;Kleines Blutbild vom 13.10.2020&quot;</li>
+<li>&quot;Pathologiebefund (Abstrich) vom 13.10.2020&quot;</li>
+<li>&quot;Blutgasmessung vom 13.10.2020 14:14h&quot;</li>
+</ul>
+<h3 id="composition.section.title"><code>Composition.section.title</code></h3>
+<p><strong>Bedeutung:</strong> Kapitelüberschrift</p>
+<h3 id="composition.section.text"><code>Composition.section.text</code></h3>
+<p><strong>Bedeutung:</strong> menschenlesbare Repräsentation des Inhalts eines Kapitels</p>
+<p><strong>Hinweise:</strong> Für Aggregation einer vollständigen menschenlesbaren Repräsentation MÜSSEN die Repräsentationen der einzelnen Kapitel an die Repräsentation der Metadaten (<code>Composition.text</code>) angehängt werden. Für die Separierung KÖNNEN einfache &lt;div&gt;-Tags verwendet werden.
+Es ist zu beachten, dass Kapitel auch Unterkapitel enthalten KÖNNEN (<code>Composition.section.section</code>), die bei der Aggregation entsprechend berücksichtigt werden MÜSSEN.</p>
+<p>Die Mindestanforderungen an den Inhalt der menschenlesbaren Repräsentation umfasst folgende Informationen:</p>
+<ul>
+<li><code>section.title</code> + Freitext <strong>oder</strong></li>
+<li><code>section.title</code> + <code>Resource.text</code> der referenzierten Ressource <strong>oder</strong></li>
+<li><code>section.title</code> + eine aggregierte Repräsentation von <code>Resource.text</code> wenn in einer Section mehrere Ressourcen referenziert werden.</li>
+</ul>
+<hr />
+
+
+
+        </div>
+
+    </div>
+</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
