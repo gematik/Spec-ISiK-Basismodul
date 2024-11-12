@@ -6,7 +6,7 @@
   "name": "ISiKOrganisation",
   "status": "active",
   "experimental": false,
-  "date": "2024-11-06",
+  "date": "2024-11-08",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil beschreibt die Nutzung von Organisationseinheiten innerhalb eines Krankenhauses oder eines Krankenhauses als ganzem in ISiK-Szenarien.",
   "fhirVersion": "4.0.1",
@@ -246,7 +246,7 @@
           ],
           "rules": "open"
         },
-        "comment": "In order to differentiate between post box addresses and physical addresses, street names and house numbers, and to add city district names, vendors can opt to support the extensions as suggested in the German Address Base Profile http://fhir.de/StructureDefinition/address-de-basis.\r\nSuch differentiations are however not required within the scope of this specification.",
+        "comment": "Um zwischen Postfachadressen und physischen Adressen, Straßennamen und Hausnummern zu unterscheiden und Städtenamenszusätze hinzuzufügen, können Anbieter die Erweiterungen unterstützen, die im Deutschen Adress-Basisprofil vorgeschlagen werden (http://fhir.de/StructureDefinition/address-de-basis). Solche Differenzierungen sind jedoch im Rahmen dieser Spezifikation nicht erforderlich.",
         "mustSupport": true
       },
       {
