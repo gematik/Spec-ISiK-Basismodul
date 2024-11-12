@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKAngehoeriger",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKAngehoeriger",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "name": "ISiKAngehoeriger",
   "status": "active",
   "experimental": false,

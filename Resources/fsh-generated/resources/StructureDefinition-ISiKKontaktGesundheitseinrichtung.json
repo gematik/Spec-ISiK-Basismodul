@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKKontaktGesundheitseinrichtung",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKKontaktGesundheitseinrichtung",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "name": "ISiKKontaktGesundheitseinrichtung",
   "status": "active",
   "experimental": false,

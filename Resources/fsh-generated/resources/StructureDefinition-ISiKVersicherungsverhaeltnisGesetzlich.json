@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKVersicherungsverhaeltnisGesetzlich",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKVersicherungsverhaeltnisGesetzlich",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "name": "ISiKVersicherungsverhaeltnisGesetzlich",
   "status": "active",
   "experimental": false,

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKPersonImGesundheitsberuf",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "name": "ISiKPersonImGesundheitsberuf",
   "status": "active",
   "experimental": false,

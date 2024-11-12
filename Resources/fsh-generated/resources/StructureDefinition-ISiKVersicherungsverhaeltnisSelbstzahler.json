@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKVersicherungsverhaeltnisSelbstzahler",
   "url": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKVersicherungsverhaeltnisSelbstzahler",
-  "version": "2.0.7",
+  "version": "2.0.9",
   "name": "ISiKVersicherungsverhaeltnisSelbstzahler",
   "status": "active",
   "experimental": false,
