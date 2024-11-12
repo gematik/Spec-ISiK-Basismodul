@@ -1,6 +1,6 @@
 {
   "name": "de.gematik.isik-basismodul",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "fhirVersions": [
     "4.0.1"
   ],

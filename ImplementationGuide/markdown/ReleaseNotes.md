@@ -4,6 +4,17 @@ Im Rahmen der ISiK-Veröffentlichungen wird das [Semantic Versioning](https://se
 
 Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.
 
+Version: 2.0.8
+
+Datum: 12.11.2024
+
+* Schwächung der Anforderungen für Suchparameter https://github.com/gematik/spec-ISiK-Basismodul/pull/452
+* Schwächung der Anforderungen für die Übernahme fremder Ressourcen (+ Konkretisierung bei Ablehnung) https://github.com/gematik/spec-ISiK-Basismodul/pull/471
+* Anpassung der Kardinalität für Account.coverage.extension:Abrechnungsart https://github.com/gematik/spec-ISiK-Basismodul/pull/477 (Backport aus Stufe 3 : https://github.com/gematik/spec-ISiK-Basismodul/pull/464)
+* Klarstellung zu Patient.active aus Stufe 4 übernommen https://github.com/gematik/spec-ISiK-Basismodul/pull/481
+
+---
+
 
 Version: 2.0.7
 

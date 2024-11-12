@@ -26,6 +26,6 @@
 
 ### `Account.coverage`
 
-**Bedeutung:** Pro Abrechnungskontext (z.B. Selbstzahler, DRG, PEPP) sollte ein eigener Account angelegt werden. Für jeden Account sollte ersichtlich sein über welche Coverage der Account beglichen werden soll.
+**Bedeutung:** Unter `Account.coverage` SOLL der Kostenträger referenziert werden, über den der Fall abgerechnet wird. Falls bekannt, SOLL angegeben werden, in welcher Abrechnungsart die Abrechnung erfolgt.
 
 ---
