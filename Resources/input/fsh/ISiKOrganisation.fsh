@@ -207,7 +207,7 @@ Description: "Dieses Profil beschreibt die Nutzung von Organisationseinheiten in
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-  * ^comment = "In order to differentiate between post box addresses and physical addresses, street names and house numbers, and to add city district names, vendors can opt to support the extensions as suggested in the German Address Base Profile http://fhir.de/StructureDefinition/address-de-basis.\r\nSuch differentiations are however not required within the scope of this specification."
+  * ^comment = "Um zwischen Postfachadressen und physischen Adressen, Straßennamen und Hausnummern zu unterscheiden und Städtenamenszusätze hinzuzufügen, können Anbieter die Erweiterungen unterstützen, die im Deutschen Adress-Basisprofil vorgeschlagen werden (http://fhir.de/StructureDefinition/address-de-basis). Solche Differenzierungen sind jedoch im Rahmen dieser Spezifikation nicht erforderlich."
 * address contains
     Strassenanschrift 0..* MS and
     Postfach 0..* MS
