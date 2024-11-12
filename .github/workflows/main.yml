@@ -4,12 +4,16 @@ name: CI (FHIR Validation)
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push and change on Resources or pull request
   push:
     paths:
-      - 'Resources/**'
+    - 'Resources/**'
+    branches-ignore:
+    - 'main**'
+
+  # will run whenever a pull request is made to (target) any branch that starts with main
   pull_request:
-    branches: ['*']
+    branches:
+    - 'main**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
