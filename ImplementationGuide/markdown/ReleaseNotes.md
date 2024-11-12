@@ -6,7 +6,7 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version: 2.0.8
 
-Datum: t.b.d
+Datum: 12.11.2024
 
 * Schwächung der Anforderungen für Suchparameter https://github.com/gematik/spec-ISiK-Basismodul/pull/452
 * Schwächung der Anforderungen für die Übernahme fremder Ressourcen (+ Konkretisierung bei Ablehnung) https://github.com/gematik/spec-ISiK-Basismodul/pull/471
