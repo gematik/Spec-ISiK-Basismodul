@@ -3,10 +3,16 @@ name: Update Dependency
 on: # Trigger on commits to any branch and manual trigger
     workflow_dispatch: # Allows manual trigger  
     push:
-        branches:
-        - '**' # Trigger on commits to any branch
+      paths:
+      - 'Resources/**'
+      branches-ignore:
+      - 'main**'
+    pull_request:
+      branches:
+      - 'main**'
     schedule:
       - cron: '0 0 * * *' # Runs at 00:00 UTC every day
+
 
 permissions:
   contents: write
