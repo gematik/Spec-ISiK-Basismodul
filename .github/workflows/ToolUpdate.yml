@@ -48,7 +48,33 @@ jobs:
         echo $LATEST_VERSION_SUSHI
 
     
-    # TODO add an if statement to prevent the workflow from running if the version is the same as the one in the main.yml file
+    - name: Check if Firely version is up-to-date
+      id: check_firely_version
+      run: |
+        CURRENT_VERSION_FIRELY=$(grep -oP 'FirelyTeam/firely-terminal-pipeline@\K[^"]+' .github/workflows/main.yml)
+        if [ "$CURRENT_VERSION_FIRELY" = "$LATEST_VERSION_FIRELY" ]; then
+          echo "Firely version is up-to-date"
+          echo "update_needed=false" >> $GITHUB_ENV
+        else
+          echo "update_needed=true" >> $GITHUB_ENV
+        fi
+
+    - name: Check if Sushi version is up-to-date
+      id: check_sushi_version
+      run: |
+        CURRENT_VERSION_SUSHI=$(grep -oP 'SUSHI_VERSION: \K[^"]+' .github/workflows/main.yml)
+        if [ "$CURRENT_VERSION_SUSHI" = "$LATEST_VERSION_SUSHI" ]; then
+          echo "Sushi version is up-to-date"
+          echo "update_needed=false" >> $GITHUB_ENV
+        else
+          echo "update_needed=true" >> $GITHUB_ENV
+        fi
+
+    - name: Stop if no update is needed
+      if: env.update_needed == 'false'
+      run: |
+        echo "No update needed. Exiting."
+        exit 0
 
     
     - name: Update main.yml for Firely and Sushi
