@@ -72,6 +72,7 @@ jobs:
 
     - name: Stop if no update is needed
       if: env.update_needed == 'false'
+      continue-on-error: false
       run: |
         echo "No update needed. Exiting."
         exit 0
