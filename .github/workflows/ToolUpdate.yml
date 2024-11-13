@@ -79,14 +79,12 @@ jobs:
 
     
     - name: Update main.yml for Firely and Sushi
-      if: env.update_needed == 'true'
       run: |
         # Update the main.yml file with the new versions of Firely and Sushi
         sed -i "s|uses: FirelyTeam/firely-terminal-pipeline@.*|uses: FirelyTeam/firely-terminal-pipeline@$LATEST_VERSION_FIRELY|" .github/workflows/main.yml
         sed -i "s|SUSHI_VERSION: .*|SUSHI_VERSION: $LATEST_VERSION_SUSHI|" .github/workflows/main.yml
 
     - name: Commit changes
-      if: env.update_needed == 'true'
       env:
         GITHUB_TOKEN: ${{ github.token }}
       run: |
@@ -99,7 +97,6 @@ jobs:
         git push https://x-access-token:${{ secrets.WORKFLOW_PERMISSION_GITHUB }}@github.com/${{ github.repository }}.git update-dependency-${LATEST_VERSION_FIRELY}-${LATEST_VERSION_SUSHI}
 
     - name: Create Pull Request
-      if: env.update_needed == 'true'
       uses: actions/github-script@v6
       with:
         script: |
