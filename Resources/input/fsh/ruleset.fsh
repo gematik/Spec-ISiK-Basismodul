@@ -3,14 +3,14 @@ RuleSet: Meta
 * ^status = #active
 * ^experimental = false
 * ^publisher = "gematik GmbH"
-* ^date = "2024-11-12"
+* ^date = "2024-11-14"
 
 RuleSet: MetaInstance
 * version = "3.0.6"
 * status = #active
 * experimental = false
 * publisher = "gematik GmbH"
-* date = "2024-11-12"
+* date = "2024-11-14"
 
 RuleSet: Meta-CapabilityStatement
 * insert MetaInstance
