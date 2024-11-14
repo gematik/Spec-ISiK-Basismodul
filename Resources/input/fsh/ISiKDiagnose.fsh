@@ -129,7 +129,7 @@ Usage: #example
 * code.coding.version = "2020"
 * code.coding = $icd-10-gm#M17.0 "Primäre Gonarthrose"
 * subject = Reference(PatientinAnnaMueller)
-* asserer = Reference(PractitionerPeters)
+* asserter = Reference(PractitionerPeters)
 * recordedDate = "2024-10-21"
 
 Instance: BehandlungsDiagnoseFreitext
