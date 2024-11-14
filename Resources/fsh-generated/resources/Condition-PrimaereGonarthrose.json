@@ -1,0 +1,31 @@
+{
+  "resourceType": "Condition",
+  "id": "PrimaereGonarthrose",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKDiagnose"
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "version": "2020",
+        "code": "M17.0",
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "display": "Primäre Gonarthrose"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientinAnnaMueller"
+  },
+  "recordedDate": "2024-10-21"
+}
