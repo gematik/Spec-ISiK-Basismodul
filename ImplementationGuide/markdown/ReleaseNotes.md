@@ -11,6 +11,7 @@ Datum: tbd
 * Fixed CapabilityStatement *near* SearchParameter type & ResourceType Organization spelling, removed custom backport Extension - switched to the official backport mechanism, fixed Bindings to CodeSystems    https://github.com/gematik/spec-ISiK-Basismodul/commit/ ae706142832e2059046ce978c4b0dc472c2375e6
 * Hinweis zur Handhabung von leeren Elementen und einem :not-Modifier hinzugefügt https://github.com/gematik/spec-ISiK-Basismodul/pull/473
 * Dependency zum R5 backporting IG auf das R4 only  package angepasst https://github.com/gematik/spec-ISiK-Basismodul/pull/479
+* Korrektur und teils Schwächung der Anforderungen für Suchparameter https://github.com/gematik/spec-ISiK-Basismodul/commit/d6dc4ba547114d1fcace01708295b191376a351f 
 
 ----
 
