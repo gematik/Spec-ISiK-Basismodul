@@ -163,6 +163,9 @@ Usage: #example
 * identifier[VersichertenId-GKV].type = $identifier-type-de-basis#GKV
 * identifier[VersichertenId-GKV].system = "http://fhir.de/sid/gkv/kvid-10"
 * identifier[VersichertenId-GKV].value = "A1234567890"
+* identifier[Patientennummer].type = $v2-0203#MR
+* identifier[Patientennummer].system = "https://fhir.krankenhaus.example/sid/PID"
+* identifier[Patientennummer].value = "TestPID1"
 * active = true
 * name[Name]
   * family = "Müller"
