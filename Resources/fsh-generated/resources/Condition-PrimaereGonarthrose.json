@@ -27,5 +27,8 @@
   "subject": {
     "reference": "Patient/PatientinAnnaMueller"
   },
+  "asserter": {
+    "reference": "Practitioner/PractitionerPeters"
+  },
   "recordedDate": "2024-10-21"
 }
