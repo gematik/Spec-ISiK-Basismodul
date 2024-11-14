@@ -157,6 +157,34 @@ Usage: #example
 * address[=].postalCode = "98764"
 * address[=].country = "DE"
 
+Instance: 
+InstanceOf: ISiKPatient
+Usage: #example
+* identifier[VersichertenId-GKV].type = $identifier-type-de-basis#GKV
+* identifier[VersichertenId-GKV].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[VersichertenId-GKV].value = "A1234567890"
+* active = true
+* name[Name]
+  * family = "Müller"
+    * extension[+].url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
+    * extension[=].valueString = "Müller"
+  * given = "Anna"
+* gender = #female
+* birthDate = "1957-08-12"
+* address[0].type = #both
+* address[=].line[0] = "Musterweg 2"
+* address[=].line[+] = "3. Etage"
+* address[=].line[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+* address[=].line[=].extension[=].valueString = "Musterweg"
+* address[=].line[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+* address[=].line[=].extension[=].valueString = "2"
+* address[=].line[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
+* address[=].line[=].extension.valueString = "3. Etage"
+* address[=].city = "Demmin"
+* address[=].postalCode = "17109"
+* address[=].country = "DE"
+
+
 
 Invariant: isik-pat-1
 Description: "Falls die Geschlechtsangabe 'other' gewählt wird, muss die amtliche Differenzierung per Extension angegeben werden"
