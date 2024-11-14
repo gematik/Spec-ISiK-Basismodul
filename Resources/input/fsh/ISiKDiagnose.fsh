@@ -122,6 +122,15 @@ Usage: #example
 * onsetDateTime = "2019-09-02"
 * recordedDate = "2021-01-01"
 
+Instance: PrimaereGonarthrose
+InstanceOf: ISiKDiagnose
+Usage: #example
+* clinicalStatus = $condition-clinical#active
+* code.coding.version = "2020"
+* code.coding = $icd-10-gm#M17.0 "Primäre Gonarthrose"
+* subject = Reference(PatientinAnnaMueller)
+* recordedDate = "2024-10-21"
+
 Instance: BehandlungsDiagnoseFreitext
 InstanceOf: ISiKDiagnose
 Usage: #example

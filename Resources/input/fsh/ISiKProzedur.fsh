@@ -64,6 +64,16 @@ Usage: #example
 * performedDateTime = "2020-04-23"
 * note.text = "Testnotiz"
 
+Instance: KnieImplantation
+InstanceOf: ISiKProzedur
+Usage: #example
+* status = #unknown
+* category = $sct#387713003 "Surgical procedure (procedure)"
+* code.coding[0] = $ops#5-822 "Implantation einer Knie-Endoprothese "
+* code.text = "Implantation einer Knie-Endoprothese "
+* subject = Reference(PatientinAnnaMueller)
+* note.text = "Ziel der Prozedur: Mobilität und Lebensqualität verbessern"
+
 Invariant: proc-ISiK-1
 Description: "Falls die Prozedur per OPS kodiert wird, MUSS eine SNOMED-CT kodierte Category abgebildet werden"
 Severity: #error

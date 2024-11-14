@@ -127,6 +127,40 @@ Usage: #example
 * qualification.code.coding.version = "http://snomed.info/sct/900000000000207008/version/20200131"
 * qualification.code.coding = $sct#112247003 "Medical doctor (occupation)"
 
+Instance: PractitionerPeters
+InstanceOf: ISiKPersonImGesundheitsberuf
+Usage: #example
+* meta.source = "http://krankenhaus.de"
+* identifier[0].type = $v2-0203#LANR
+* identifier[=].system = "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"
+* identifier[=].value = "123456789"
+* identifier[+].type = $v2-0203#DN
+* identifier[=].system = "http://fhir.de/sid/bundesaerztekammer/efn"
+* identifier[=].value = "123456789123456"
+* active = true
+* name[Name]
+  * text = "Anja Peters"
+  * family = "Peters"
+    * extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
+    * extension.valueString = "Peters"
+  * given = "Anja"
+* address.type = #both
+* address.line = "Schmiedegasse 16"
+  * extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+  * extension[=].valueString = "16"
+  * extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+  * extension[=].valueString = "Schmiedegasse"
+* address.city = "Potsdam"
+* address.postalCode = "14469"
+* address.country = "DE"
+* gender = #female
+* birthDate.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* birthDate.extension.valueCode = #masked
+* qualification.code.coding.version = "http://snomed.info/sct/900000000000207008/version/20200131"
+* qualification.code.coding = $sct#112247003 "Medical doctor (occupation)"
+
+
+
 Invariant: prac-de-1
 Description: "Die amtliche Differenzierung der Geschlechtsangabe 'other' darf nur gefüllt sein, wenn das Geschlecht 'other' angegeben ist"
 Severity: #error
