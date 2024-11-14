@@ -157,7 +157,7 @@ Usage: #example
 * address[=].postalCode = "98764"
 * address[=].country = "DE"
 
-Instance: 
+Instance: PatientinAnnaMueller
 InstanceOf: ISiKPatient
 Usage: #example
 * identifier[VersichertenId-GKV].type = $identifier-type-de-basis#GKV
