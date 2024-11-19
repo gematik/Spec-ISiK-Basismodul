@@ -6,7 +6,7 @@
   "name": "ISiKProzedur",
   "status": "active",
   "experimental": false,
-  "date": "2024-10-28",
+  "date": "2024-11-19",
   "publisher": "gematik GmbH",
   "description": "Diese Profil ermöglicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien.",
   "fhirVersion": "4.0.1",

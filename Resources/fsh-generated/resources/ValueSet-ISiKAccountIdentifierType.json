@@ -4,11 +4,11 @@
   "name": "ISiKAccountIdentifierType",
   "id": "ISiKAccountIdentifierType",
   "title": "ISiKAccountIdentifierType",
-  "url": "https://gematik.de/fhir/isik/v3/Basismodul/ValueSet/ISiKAccountIdentifierType",
   "version": "3.0.6",
+  "url": "https://gematik.de/fhir/isik/v3/Basismodul/ValueSet/ISiKAccountIdentifierType",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-10-28",
+  "date": "2024-11-19",
   "compose": {
     "include": [
       {

@@ -3,11 +3,11 @@
   "status": "active",
   "name": "ISiKLocationPhysicalType",
   "id": "ISiKLocationPhysicalType",
-  "url": "https://gematik.de/fhir/isik/v3/Basismodul/ValueSet/ISiKLocationPhysicalType",
   "version": "3.0.6",
+  "url": "https://gematik.de/fhir/isik/v3/Basismodul/ValueSet/ISiKLocationPhysicalType",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-10-28",
+  "date": "2024-11-19",
   "compose": {
     "include": [
       {
