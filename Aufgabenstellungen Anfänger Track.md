@@ -43,5 +43,5 @@ Wir wollen nun verschiedene REST-Interaktionen üben. Dazu verwenden wir den Tes
 9. Suche nach allen weiblichen Patientinnen, die älter als Anna Maier sind.
 10. Primäre Gonarthrose kann durch Übergewicht begünstigt werden. Suche nach allen Patientinnen, die einen BMI >30 haben.
 11. Kopiere das Patientenprofil von Frau Maier und erstelle damit ein neues Patientenprofil mit deinem Vor- und Nachnamen.
-12. Lösche nun das Profil mit deinem Namen wieder.
+12. Lösche nun das Patientenprofil mit deinem Namen wieder.
 
