@@ -1,0 +1,162 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKAbrechnungsfall",
+  "url": "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKAbrechnungsfall",
+  "version": "3.0.6",
+  "name": "ISiKAbrechnungsfall",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-19",
+  "publisher": "gematik GmbH",
+  "description": "Dieses Profil beschreibt die Gruppierung von medizinischen Leistungen in ISiK-Szenarien",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Account",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Account",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Account.extension",
+        "path": "Account.extension",
+        "mustSupport": true
+      },
+      {
+        "id": "Account.extension:AbrechnungsDiagnoseProzedur",
+        "path": "Account.extension",
+        "sliceName": "AbrechnungsDiagnoseProzedur",
+        "comment": "In dieser Extension SOLL das 'Use' Element nur einfach verwendet werden, um eine eindeutige Zuweisung (1 zu N) gegenüber dem Element 'Referenz' zu gewährleisten.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/StructureDefinition/ExtensionAbrechnungsDiagnoseProzedur"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Account.identifier",
+        "path": "Account.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Account.identifier:Abrechnungsnummer",
+        "path": "Account.identifier",
+        "sliceName": "Abrechnungsnummer",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/identifier-abrechnungsnummer"
+            ]
+          }
+        ],
+        "patternIdentifier": {
+          "type": {
+            "coding": [
+              {
+                "code": "AN",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+              }
+            ]
+          }
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Account.identifier:Abrechnungsnummer.type",
+        "path": "Account.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Account.identifier:Abrechnungsnummer.system",
+        "path": "Account.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Account.identifier:Abrechnungsnummer.value",
+        "path": "Account.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Account.status",
+        "path": "Account.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Account.type",
+        "path": "Account.type",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://gematik.de/fhir/isik/v3/Basismodul/ValueSet/ISiKAccountType"
+        }
+      },
+      {
+        "id": "Account.subject",
+        "path": "Account.subject",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Account.coverage",
+        "path": "Account.coverage",
+        "mustSupport": true
+      },
+      {
+        "id": "Account.coverage.extension",
+        "path": "Account.coverage.extension",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Account.coverage.extension:Abrechnungsart",
+        "path": "Account.coverage.extension",
+        "sliceName": "Abrechnungsart",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/StructureDefinition/ExtensionAbrechnungsart"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Account.coverage.coverage",
+        "path": "Account.coverage.coverage",
+        "mustSupport": true
+      }
+    ]
+  }
+}

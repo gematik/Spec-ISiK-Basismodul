@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ISiKAccountIdentifierType",
+  "id": "ISiKAccountIdentifierType",
+  "title": "ISiKAccountIdentifierType",
+  "version": "3.0.6",
+  "url": "https://gematik.de/fhir/isik/v3/Basismodul/ValueSet/ISiKAccountIdentifierType",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-19",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "concept": [
+          {
+            "code": "AN",
+            "display": "Account number"
+          }
+        ]
+      }
+    ]
+  }
+}

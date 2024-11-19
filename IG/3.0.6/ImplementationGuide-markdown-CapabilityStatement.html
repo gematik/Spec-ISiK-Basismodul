@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Implementierungsleitfaden ISiK-Basismodul</title>
+
+    <link rel="icon" href="static/styles/common/favicon.ico" />
+
+    <script src="static/styles/common/jquery/jquery.min.js"></script>
+    <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/common/main.min.css" />
+    <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" /> 
+
+    <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+    <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/twolevelmenu/style.css?v=1db3a791ed08b00" />
+
+</head>
+
+<body>
+
+    <div id="ig-viewer">
+
+        <div class="ig-view-content">
+
+            <div id="ig-view-twolevelmenu">
+
+                <div class="header" role="banner" aria-label="Header">
+                    
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                <a class="navbar-brand" href="ImplementationGuide-markdown-Einfuehrung.html">
+                    Implementierungsleitfaden ISiK-Basismodul
+                </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+                    <li>
+                        <a href="ImplementationGuide-markdown-Einfuehrung.html">
+                            Einf&#xFC;hrung
+                        </a>
+                    </li>
+
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseNotes.html">
+                                Release Notes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-Motivation.html">
+                                Motivation
+                            </a>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &#xDC;bergreifende Festlegungen <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen.html">
+                                            &#xDC;bergreifende Festlegungen
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Methodik.html">
+                                            Methodik
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme.html">
+                                            Best&#xE4;tigungsrelevante Systeme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-KompatibilitaetDerGematikSpezifikation.html">
+                                            Kompatibilit&#xE4;t der gematik-Spezifikation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Must-Support-Flags.html">
+                                            Must-Support-Flags
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Repraesentationsformate.html">
+                                            Repr&#xE4;sentationsformate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Suchparameter.html">
+                                            Suchparameter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Rest.html">
+                                            REST-API
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Datenobjekte <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte.html">
+                                            Datenobjekte
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-CapabilityStatement.html">
+                                            CapabilityStatement
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Patient.html">
+                                            Patient (Patient)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Kontakt.html">
+                                            Kontakt/Fall (Encounter)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Abrechnungsfall.html">
+                                            Abrechnungsfall (Account)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Diagnose.html">
+                                            Diagnose (Condition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Prozedur.html">
+                                            Prozedur (Procedure)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Versicherungsverhaeltnis.html">
+                                            Versicherungsverh&#xE4;ltnis (Coverage)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Angehoeriger.html">
+                                            Angeh&#xF6;riger (RelatedPerson)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_PersonImGesundheitsberuf.html">
+                                            PersonImGesundheitsberuf (Practitioner)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_BerichtSubsystem.html">
+                                            Bericht aus Subsystemen (Composition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_CodeSystem.html">
+                                            Katalog (CodeSystem)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_ValueSet.html">
+                                            ValueSet (ValueSet)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Binary.html">
+                                            Binary (Binary)
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                </div>
+
+                <div class="content container" role="main" aria-label="Main content">
+                    
+
+
+<div class="row">
+
+
+    <div class="col-md-24">
+
+        <div id="preview-content">
+
+            <h2 id="konformitatserklarung-capabilitystatement">Konformitätserklärung <a href="https://hl7.org/fhir/R4/capabilitystatement.html">(CapabilityStatement)</a></h2>
+<p>Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine <a href="https://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a>-Ressource bereitstellen.</p>
+<p>Hierzu MUSS die <a href="https://hl7.org/fhir/R4/http.html#capabilities">capabilities-Interaktion gemäß FHIR-Spezifikation</a> unterstützt werden.
+Der MODE-Parameter kann ignoriert werden.</p>
+<p>Das CapabilityStatement in dieser Spezifikation stellt die Anforderungen seitens der gematik dar (<code>kind</code> = &quot;requirements&quot;). Zur Unterscheidung von Anforderungen, die erfüllt werden MÜSSEN gegenüber jenen, die erfüllt werden KÖNNEN, wird die <a href="https://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html">CapabilityStatement-Expectation</a>-Extension mit den möglichen Werten &quot;SHALL&quot; (=MUSS) und &quot;MAY&quot; (=KANN) verwendet.</p>
+<p>Eine Server-Instanz MUSS ihrerseits ein CapabilityStatement vom <code>kind</code>= &quot;instance&quot; liefern und im Element <code>software</code> den Namen und die Versionsnummer angeben.
+Darüber hinaus MUSS in <code>CapabilityStatement.instantiates</code> die Canonical URL des nachfolgenden CapabilityStatement in der jeweiligen CapabilityStatement Instanz angegeben werden.</p>
+<p>Das CapabilityStatement der Instanz MUSS alle Funktionalitäten auflisten, die im folgenden CapabilityStatement mit &quot;SHALL&quot; gekennzeichnet sind. Das CapabilityStatement KANN darüber hinaus die mit &quot;MAY&quot; gekennzeichneten Funktionalitäten, sowie weitere Funktionalitäten auflisten, sofern diese in der Instanz implementiert wurden.</p>
+<p>Die Verwendung der <a href="https://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html">CapabilityStatement-Expectation</a>-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich.</p>
+<h2 id="capabilitystatement-requirement-isik">CapabilityStatement (Requirement) ISiK</h2>
+<p>Canonical: <code>https://gematik.de/fhir/isik/v3/Basismodul/CapabilityStatement/core-server</code></p>
+<p><a href="https://gematik.de/fhir/isik/v3/Basismodul/CapabilityStatement/basis-server">Link Simplifier Profil Übersicht</a></p>
+<p><div xmlns="http://www.w3.org/1999/xhtml"><p><h3>REST Capabilities Server</h3></p><table class="regular"><tr><td>Mode</td><td>Server</td></tr></table><p><h4>Resource Interactions</h4></p><p><table class="small"><tr><th><b>Resource Type</b></th><th><b>Supported Profiles</b></th><th><b>Read</b></th><th><b>SearchType</b></th></tr><tr><td>Patient</td><td><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKPatient.json" title="Dieses Profil beschreibt die Nutzung von administrativen Patientendaten in ISiK-Szenarien.">ISiKPatient</a></li></td><td>SHALL</td><td>SHALL</td></tr><tr><td>Encounter</td><td><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKKontaktGesundheitseinrichtung.json" title="Dieses Profil ermöglicht die Herstellung eines Fallbezuges welcher in der Mehrheit der ISiK Szenarien im Krankenhaus essentiell ist.">ISiKKontaktGesundheitseinrichtung</a></li></td><td>SHALL</td><td>SHALL</td></tr><tr><td>Account</td><td><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKAbrechnungsfall.json" title="Dieses Profil beschreibt die Gruppierung von medizinischen Leistungen in ISiK-Szenarien">ISiKAbrechnungsfall</a></li></td><td>SHALL</td><td>SHALL</td></tr><tr><td>Condition</td><td><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDiagnose.json" title="Dieses Profil ermöglicht die Nutzung von Diagnosen in ISiK Szenarien.">ISiKDiagnose</a></li></td><td>SHALL</td><td>SHALL</td></tr><tr><td>Procedure</td><td><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKProzedur.json" title="Diese Profil ermöglicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien.">ISiKProzedur</a></li></td><td>SHALL</td><td>SHALL</td></tr><tr><td>Coverage</td><td><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKVersicherungsverhaeltnisGesetzlich.json" title="Dieses Profil ermöglicht die Darstellung eines gesetzlichen Versicherungsverhältnisses in ISiK Szenarien.">ISiKVersicherungsverhaeltnisGesetzlich</a></li><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKVersicherungsverhaeltnisSelbstzahler.json" title="Dieses Profil ermöglicht Selbstzahler Szenarien in ISiK.">ISiKVersicherungsverhaeltnisSelbstzahler</a></li></td><td>SHALL</td><td>SHALL</td></tr><tr><td>RelatedPerson</td><td><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKAngehoeriger.json" title="Dieses Profil ermöglicht die Nutzung von Angehörigen in ISiK Szenarien.">ISiKAngehoeriger</a></li></td><td>SHALL</td><td>SHALL</td></tr><tr><td>Practitioner</td><td><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKPersonImGesundheitsberuf.json" title="Dieses Profil ermöglicht die Nutzung von in Gesundheitsberufen tätigen Personen in ISiK Szenarien.">ISiKPersonImGesundheitsberuf</a></li></td><td>SHALL</td><td>SHALL</td></tr><tr><td>ValueSet</td><td><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKValueSet.json" title="Dieses Profil beschreibt die maschinenlesbare Auswahl von Codes für die Kodierung spezifischer FHIR-Elemente in ISiK-Szenarien">ISiKValueSet</a></li></td><td>SHALL</td><td>SHALL</td></tr><tr><td>Composition</td><td><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKBerichtSubSysteme.json" title="Dieses Profil ermöglicht die Krankenhaus-interne Übermittlung eines Berichtes in Form eines Dokumentes, die in ISiK Szenarien von Subsystemen an Primärsysteme gesendet werden.">ISiKBerichtSubSysteme</a></li></td><td></td><td></td></tr><tr><td>Bundle</td><td><li><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKBerichtBundle.json" title="A document style representation of the receipt (complete, self-contained, signed)">ISiKBerichtBundle</a></li></td><td></td><td></td></tr></table></p><p><h4>Search Parameters per resource type</h4></p><p><b>Patient</b></p><table class="small"><tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Level</b></th></tr><tr><td>_id</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>identifier</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>family</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>SHALL</td></tr><tr><td>given</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>SHALL</td></tr><tr><td>birthdate</td><td><a href="http://hl7.org/fhir/r4/search.html#date" target="_blank">date</a></td><td>SHALL</td></tr><tr><td>gender</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>name</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr><tr><td>_profile</td><td><a href="http://hl7.org/fhir/r4/search.html#uri" target="_blank">uri</a></td><td>MAY</td></tr><tr><td>address</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr><tr><td>address-city</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr><tr><td>address-country</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr><tr><td>address-postalcode</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr><tr><td>active</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>MAY</td></tr><tr><td>telecom</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>MAY</td></tr></table><p class="small">Supported Reverse Includes:</p><ul class="small"><li>Composition:patient</li><li>Composition:subject</li><li>Composition:author</li><li>Condition:patient</li><li>Condition:subject</li><li>Procedure:patient</li><li>Procedure:subject</li><li>Encounter:patient</li><li>Encounter:subject</li><li>Coverage:beneficiary</li><li>Coverage:subscriber</li><li>Coverage:patient</li><li>Coverage:payor</li><li>Account:subject</li><li>Account:patient</li></ul><p><b>Encounter</b></p><table class="small"><tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Level</b></th></tr><tr><td>_id</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>identifier</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>status</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>class</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>type</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>patient</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>subject</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>account</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>date</td><td><a href="http://hl7.org/fhir/r4/search.html#date" target="_blank">date</a></td><td>SHALL</td></tr><tr><td>date-start</td><td><a href="http://hl7.org/fhir/r4/search.html#date" target="_blank">date</a></td><td>SHALL</td></tr><tr><td>end-date</td><td><a href="http://hl7.org/fhir/r4/search.html#date" target="_blank">date</a></td><td>SHALL</td></tr><tr><td>location</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>MAY</td></tr><tr><td>service-provider</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>MAY</td></tr><tr><td>_profile</td><td><a href="http://hl7.org/fhir/r4/search.html#uri" target="_blank">uri</a></td><td>MAY</td></tr></table><p class="small">Supported Includes:</p><ul class="small"><li>Encounter:patient</li><li>Encounter:subject</li><li>Encounter:part-of</li><li>Encounter:diagnosis</li><li>Encounter:account</li></ul><p class="small">Supported Reverse Includes:</p><ul class="small"><li>Encounter:part-of</li><li>Condition:encounter</li><li>Composition:encounter</li><li>Procedure:encounter</li></ul><p><b>Account</b></p><table class="small"><tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Level</b></th></tr><tr><td>_id</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>identifier</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>status</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>type</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>patient</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>_profile</td><td><a href="http://hl7.org/fhir/r4/search.html#uri" target="_blank">uri</a></td><td>MAY</td></tr></table><p><b>Condition</b></p><table class="small"><tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Level</b></th></tr><tr><td>_id</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>clinical-status</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>patient</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>subject</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>encounter</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>recorded-date</td><td><a href="http://hl7.org/fhir/r4/search.html#date" target="_blank">date</a></td><td>SHALL</td></tr><tr><td>related</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>_profile</td><td><a href="http://hl7.org/fhir/r4/search.html#uri" target="_blank">uri</a></td><td>MAY</td></tr><tr><td>category</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>MAY</td></tr></table><p class="small">Supported Includes:</p><ul class="small"><li>Condition:patient</li><li>Condition:subject</li><li>Condition:encounter</li></ul><p class="small">Supported Reverse Includes:</p><ul class="small"><li>Encounter:diagnosis</li></ul><p><b>Procedure</b></p><table class="small"><tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Level</b></th></tr><tr><td>_id</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>status</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>category</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>code</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>patient</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>subject</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>encounter</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>date</td><td><a href="http://hl7.org/fhir/r4/search.html#date" target="_blank">date</a></td><td>SHALL</td></tr><tr><td>_profile</td><td><a href="http://hl7.org/fhir/r4/search.html#uri" target="_blank">uri</a></td><td>MAY</td></tr></table><p class="small">Supported Includes:</p><ul class="small"><li>Procedure:patient</li><li>Procedure:subject</li><li>Procedure:encounter</li></ul><p class="small">Supported Reverse Includes:</p><ul class="small"><li>Encounter:diagnosis</li></ul><p><b>Coverage</b></p><table class="small"><tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Level</b></th></tr><tr><td>_id</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>identifier</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>status</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>type</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>beneficiary</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>payor</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>subscriber</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>MAY</td></tr><tr><td>_profile</td><td><a href="http://hl7.org/fhir/r4/search.html#uri" target="_blank">uri</a></td><td>MAY</td></tr></table><p class="small">Supported Includes:</p><ul class="small"><li>Coverage:subscriber</li><li>Coverage:patient</li><li>Coverage:payor</li><li>Coverage:beneficiary</li></ul><p><b>RelatedPerson</b></p><table class="small"><tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Level</b></th></tr><tr><td>_id</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>patient</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>name</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr><tr><td>_profile</td><td><a href="http://hl7.org/fhir/r4/search.html#uri" target="_blank">uri</a></td><td>MAY</td></tr><tr><td>address</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr><tr><td>address-city</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr><tr><td>address-country</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr><tr><td>address-postalcode</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr></table><p class="small">Supported Includes:</p><ul class="small"><li>RelatedPerson:patient</li></ul><p class="small">Supported Reverse Includes:</p><ul class="small"><li>Coverage:subscriber</li><li>Coverage:payor</li></ul><p><b>Practitioner</b></p><table class="small"><tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Level</b></th></tr><tr><td>_id</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>identifier</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>family</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>SHALL</td></tr><tr><td>given</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>SHALL</td></tr><tr><td>address</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr><tr><td>gender</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>MAY</td></tr><tr><td>_profile</td><td><a href="http://hl7.org/fhir/r4/search.html#uri" target="_blank">uri</a></td><td>MAY</td></tr><tr><td>name</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>MAY</td></tr></table><p><b>ValueSet</b></p><table class="small"><tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Level</b></th></tr><tr><td>_id</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>url</td><td><a href="http://hl7.org/fhir/r4/search.html#uri" target="_blank">uri</a></td><td>SHALL</td></tr><tr><td>name</td><td><a href="http://hl7.org/fhir/r4/search.html#string" target="_blank">string</a></td><td>SHALL</td></tr><tr><td>status</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>version</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>context-type-value</td><td><a href="http://hl7.org/fhir/r4/search.html#composite" target="_blank">composite</a></td><td>MAY</td></tr></table><p><b>Composition</b></p><p>No search parameters are stated for this resource type</p><p><b>Bundle</b></p><p>No search parameters are stated for this resource type</p><p><h3>Document Capabilities</h3></p><table class="regular"><tr><th><b>Mode</b></th><th><b>Profile</b></th></tr><tr><td>Consumer</td><td><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKBerichtBundle.json" title="A document style representation of the receipt (complete, self-contained, signed)">ISiKBerichtBundle</a></td></tr></table></div></p>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+            
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

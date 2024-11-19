@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Implementierungsleitfaden ISiK-Basismodul</title>
+
+    <link rel="icon" href="static/styles/common/favicon.ico" />
+
+    <script src="static/styles/common/jquery/jquery.min.js"></script>
+    <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/common/main.min.css" />
+    <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" /> 
+
+    <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+    <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/twolevelmenu/style.css?v=1db3a791ed08b00" />
+
+</head>
+
+<body>
+
+    <div id="ig-viewer">
+
+        <div class="ig-view-content">
+
+            <div id="ig-view-twolevelmenu">
+
+                <div class="header" role="banner" aria-label="Header">
+                    
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                <a class="navbar-brand" href="ImplementationGuide-markdown-Einfuehrung.html">
+                    Implementierungsleitfaden ISiK-Basismodul
+                </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+                    <li>
+                        <a href="ImplementationGuide-markdown-Einfuehrung.html">
+                            Einf&#xFC;hrung
+                        </a>
+                    </li>
+
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseNotes.html">
+                                Release Notes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-Motivation.html">
+                                Motivation
+                            </a>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &#xDC;bergreifende Festlegungen <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen.html">
+                                            &#xDC;bergreifende Festlegungen
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Methodik.html">
+                                            Methodik
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme.html">
+                                            Best&#xE4;tigungsrelevante Systeme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-KompatibilitaetDerGematikSpezifikation.html">
+                                            Kompatibilit&#xE4;t der gematik-Spezifikation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Must-Support-Flags.html">
+                                            Must-Support-Flags
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Repraesentationsformate.html">
+                                            Repr&#xE4;sentationsformate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Suchparameter.html">
+                                            Suchparameter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Rest.html">
+                                            REST-API
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Datenobjekte <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte.html">
+                                            Datenobjekte
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-CapabilityStatement.html">
+                                            CapabilityStatement
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Patient.html">
+                                            Patient (Patient)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Kontakt.html">
+                                            Kontakt/Fall (Encounter)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Abrechnungsfall.html">
+                                            Abrechnungsfall (Account)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Diagnose.html">
+                                            Diagnose (Condition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Prozedur.html">
+                                            Prozedur (Procedure)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Versicherungsverhaeltnis.html">
+                                            Versicherungsverh&#xE4;ltnis (Coverage)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Angehoeriger.html">
+                                            Angeh&#xF6;riger (RelatedPerson)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_PersonImGesundheitsberuf.html">
+                                            PersonImGesundheitsberuf (Practitioner)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_BerichtSubsystem.html">
+                                            Bericht aus Subsystemen (Composition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_CodeSystem.html">
+                                            Katalog (CodeSystem)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_ValueSet.html">
+                                            ValueSet (ValueSet)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Binary.html">
+                                            Binary (Binary)
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                </div>
+
+                <div class="content container" role="main" aria-label="Main content">
+                    
+
+
+<div class="row">
+
+
+    <div class="col-md-24">
+
+        <div id="preview-content">
+
+            <h3 id="interaktionen">Interaktionen</h3>
+<p>Für die Ressource Patient MUSS die REST-Interaktion &quot;READ&quot; implementiert werden.</p>
+<p>Für die Ressource Patient KANN die REST-Interaktion &quot;POST&quot; implementiert werden. Diese Interaktion dient für die Vorabübermittelung von (unverifizierten und/oder unvollständigen) Patientenstammdaten.</p>
+<ul>
+<li>Das bestätigungsrelevante System SOLLTE die übermittelte <code>Patient</code>-Ressource löschen oder als inaktiv kennzeichnen, insoweit Geschäftsregeln oder andere Gründe dazu führen, dass die <code>Patient</code>-Ressource nicht permanent im System angelegt wird (z.B. keine Bestätigung durch die Anwender*in des Systems oder keine Aufnahme der Patient*in).</li>
+</ul>
+<p>Folgende Suchparameter sind für das Bestätigungsverfahren relevant, auch in Kombination:</p>
+<ol>
+<li><p>Der Suchparameter &quot;_id&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?_id=103270</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;_id&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#all">FHIR-Basisspezifikation - Abschnitt &quot;Parameters for all resources&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;identifier&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?identifier=http://fhir.krankenhaus.example|1032702</code></p>
+<p><code>GET [base]/Patient?identifier=1032702</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.identifier&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;given&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?given=Erika</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.name.given&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#string">FHIR-Basisspezifikation - Abschnitt &quot;String Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;family&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?family=Musterfrau</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.name.family&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#string">FHIR-Basisspezifikation - Abschnitt &quot;String Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;birthdate&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?birthdate=1964-12-08</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.birthDate&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#date">FHIR-Basisspezifikation - Abschnitt &quot;Date Search&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;gender&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?gender=female</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.gender&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;name&quot; KANN unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?name=Erika</code></p>
+<p><code>GET [base]/Patient?name=Musterfrau</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.name&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#string">FHIR-Basisspezifikation - Abschnitt &quot;String Search&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;address&quot; KANN unterstützt werden:</p>
+<p>Beispiele</p>
+<p><code>GET [base]/Patient?address=Berlin</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.address&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#string">FHIR-Basisspezifikation - Abschnitt &quot;String Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;address-city&quot; KANN unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?address-city=Berlin</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.address.city&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#string">FHIR-Basisspezifikation - Abschnitt &quot;String Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;address-country&quot; KANN unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?address-country=DE</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.address.country&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#string">FHIR-Basisspezifikation - Abschnitt &quot;String Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;address-postalcode&quot; KANN unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?address-postalcode=10117</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.address.postalCode&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#string">FHIR-Basisspezifikation - Abschnitt &quot;String Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;active&quot; KANN unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?active=true</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.active&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;telecom&quot; KANN unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Patient?telecom=phone|+49152236898</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Patient.telecom&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend.</p>
+</li>
+</ol>
+<hr />
+
+
+
+        </div>
+
+    </div>
+</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+            
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

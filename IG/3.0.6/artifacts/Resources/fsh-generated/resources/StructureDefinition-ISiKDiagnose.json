@@ -1,0 +1,309 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKDiagnose",
+  "url": "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKDiagnose",
+  "version": "3.0.6",
+  "name": "ISiKDiagnose",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-19",
+  "publisher": "gematik GmbH",
+  "description": "Dieses Profil ermöglicht die Nutzung von Diagnosen in ISiK Szenarien.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition",
+        "constraint": [
+          {
+            "key": "isik-con1",
+            "severity": "error",
+            "human": "Falls eine kodierte Diagnose vorliegt muss angegeben werden durch welchen Kontakt diese Dokumentation erfolgte.",
+            "expression": "code.coding.exists() implies encounter.exists()",
+            "source": "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKDiagnose"
+          }
+        ]
+      },
+      {
+        "id": "Condition.extension",
+        "path": "Condition.extension",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.extension:related",
+        "path": "Condition.extension",
+        "sliceName": "related",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/condition-related"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "definition": "Einschränkung der übergreifenden MS-Definition: Verfügt ein bestätigungsrelevantes System nicht über die Datenstruktur zur Hinterlegung des Status einer Diagnose, so MUSS dieses System die Information NICHT abbilden. Das System MUSS jedoch den Status kodieren in der Diagnose, sofern die Information verfügbar ist.",
+        "comment": "Hintergrund zur Motivation der MS-Definition: Auch in Stufe 3 sind keine (Client-seitigen) schreibenden Operationen für das Erstellen einer Condition-Ressource vorgesehen (siehe CapabilityStatement). Das heißt entweder führen KISe entsprechende Informationen und exponieren diese, oder es gibt keinen pragmatischen Mechanismus (im ISIK-Kontext), um den Use Case einer zusätzlichen Annotation mittels Client zu erfüllen. Da alle KIS-Hersteller, die sich zu Wort gemeldet haben, eine Befüllung von Condition.clinicalStatus NICHT unterstützen, erscheint das MS nach übergreifender Definition und ein verpflichtender Testfall nicht angemessen.",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "min": 1,
+        "constraint": [
+          {
+            "key": "icd-text-1",
+            "severity": "error",
+            "human": "Entweder MUSS eine kodierte Diagnose vorliegen oder eine textuelle Beschreibung. Stattdessen nur Extensions hinzuzufügen (vgl. https://www.hl7.org/fhir/element.html - ele-1), ist explizit nicht erlaubt.",
+            "expression": "coding.exists().not() implies text.exists()",
+            "source": "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKDiagnose"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding",
+        "path": "Condition.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:ICD-10-GM",
+        "path": "Condition.code.coding",
+        "sliceName": "ICD-10-GM",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "http://fhir.de/StructureDefinition/CodingICD10GM"
+            ]
+          }
+        ],
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:ICD-10-GM.extension:Mehrfachcodierungs-Kennzeichen",
+        "path": "Condition.code.coding.extension",
+        "sliceName": "Mehrfachcodierungs-Kennzeichen",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:ICD-10-GM.extension:Seitenlokalisation",
+        "path": "Condition.code.coding.extension",
+        "sliceName": "Seitenlokalisation",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:ICD-10-GM.extension:Diagnosesicherheit",
+        "path": "Condition.code.coding.extension",
+        "sliceName": "Diagnosesicherheit",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:Alpha-ID",
+        "path": "Condition.code.coding",
+        "sliceName": "Alpha-ID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "http://fhir.de/StructureDefinition/CodingAlphaID"
+            ]
+          }
+        ],
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/alpha-id"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:Alpha-ID.system",
+        "path": "Condition.code.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:Alpha-ID.code",
+        "path": "Condition.code.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:SNOMED-CT",
+        "path": "Condition.code.coding",
+        "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://gematik.de/fhir/isik/v3/Basismodul/ValueSet/DiagnosesSCT"
+        }
+      },
+      {
+        "id": "Condition.code.coding:SNOMED-CT.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:SNOMED-CT.code",
+        "path": "Condition.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:Orphanet",
+        "path": "Condition.code.coding",
+        "sliceName": "Orphanet",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://www.orpha.net"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:Orphanet.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:Orphanet.code",
+        "path": "Condition.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.subject.reference",
+        "path": "Condition.subject.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.encounter",
+        "path": "Condition.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.onset[x]",
+        "path": "Condition.onset[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Condition.onset[x]:onsetPeriod",
+        "path": "Condition.onset[x]",
+        "sliceName": "onsetPeriod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Condition.onset[x]:onsetPeriod.start.extension:Lebensphase-Start",
+        "path": "Condition.onset[x].start.extension",
+        "sliceName": "Lebensphase-Start",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/StructureDefinition/lebensphase"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.onset[x]:onsetPeriod.end.extension:Lebensphase-Ende",
+        "path": "Condition.onset[x].end.extension",
+        "sliceName": "Lebensphase-Ende",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/StructureDefinition/lebensphase"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.onset[x]:onsetDateTime",
+        "path": "Condition.onset[x]",
+        "sliceName": "onsetDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.note",
+        "path": "Condition.note",
+        "mustSupport": true
+      }
+    ]
+  }
+}

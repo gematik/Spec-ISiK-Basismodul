@@ -1,0 +1,29 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "Encounter-date-start",
+  "url": "https://gematik.de/fhir/isik/v3/Basismodul/SearchParameter/Encounter-date-start",
+  "description": "The actual start date of the Encounter (Backport from R5). The parameter cannot repeat or have multiple values.",
+  "version": "3.0.6",
+  "status": "active",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-19",
+  "name": "date-start",
+  "code": "date-start",
+  "base": [
+    "Encounter"
+  ],
+  "type": "date",
+  "expression": "Encounter.period.start",
+  "comparator": [
+    "eq",
+    "ne",
+    "gt",
+    "ge",
+    "lt",
+    "le",
+    "sa",
+    "eb",
+    "ap"
+  ]
+}

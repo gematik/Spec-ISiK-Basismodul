@@ -1,0 +1,776 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Implementierungsleitfaden ISiK-Basismodul</title>
+
+    <link rel="icon" href="static/styles/common/favicon.ico" />
+
+    <script src="static/styles/common/jquery/jquery.min.js"></script>
+    <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/common/main.min.css" />
+    <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" /> 
+
+    <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+    <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/twolevelmenu/style.css?v=1db3a791ed08b00" />
+
+</head>
+
+<body>
+
+    <div id="ig-viewer">
+
+        <div class="ig-view-content">
+
+            <div id="ig-view-twolevelmenu">
+
+                <div class="header" role="banner" aria-label="Header">
+                    
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                <a class="navbar-brand" href="ImplementationGuide-markdown-Einfuehrung.html">
+                    Implementierungsleitfaden ISiK-Basismodul
+                </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+                    <li>
+                        <a href="ImplementationGuide-markdown-Einfuehrung.html">
+                            Einf&#xFC;hrung
+                        </a>
+                    </li>
+
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseNotes.html">
+                                Release Notes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-Motivation.html">
+                                Motivation
+                            </a>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &#xDC;bergreifende Festlegungen <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen.html">
+                                            &#xDC;bergreifende Festlegungen
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Methodik.html">
+                                            Methodik
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme.html">
+                                            Best&#xE4;tigungsrelevante Systeme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-KompatibilitaetDerGematikSpezifikation.html">
+                                            Kompatibilit&#xE4;t der gematik-Spezifikation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Must-Support-Flags.html">
+                                            Must-Support-Flags
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Repraesentationsformate.html">
+                                            Repr&#xE4;sentationsformate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Suchparameter.html">
+                                            Suchparameter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Rest.html">
+                                            REST-API
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Datenobjekte <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte.html">
+                                            Datenobjekte
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-CapabilityStatement.html">
+                                            CapabilityStatement
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Patient.html">
+                                            Patient (Patient)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Kontakt.html">
+                                            Kontakt/Fall (Encounter)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Abrechnungsfall.html">
+                                            Abrechnungsfall (Account)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Diagnose.html">
+                                            Diagnose (Condition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Prozedur.html">
+                                            Prozedur (Procedure)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Versicherungsverhaeltnis.html">
+                                            Versicherungsverh&#xE4;ltnis (Coverage)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Angehoeriger.html">
+                                            Angeh&#xF6;riger (RelatedPerson)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_PersonImGesundheitsberuf.html">
+                                            PersonImGesundheitsberuf (Practitioner)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_BerichtSubsystem.html">
+                                            Bericht aus Subsystemen (Composition)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_CodeSystem.html">
+                                            Katalog (CodeSystem)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_ValueSet.html">
+                                            ValueSet (ValueSet)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Binary.html">
+                                            Binary (Binary)
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                </div>
+
+                <div class="content container" role="main" aria-label="Main content">
+                    
+
+
+<div class="row">
+
+        <div class="col-md-6">
+            <ul class="nav nav-pills nav-stacked affix-top">
+                    <li>
+                        <a title="Motivation" href="#ImplementationGuide-markdown-Abrechnungsfall-Abrechnungsfall-Motivation">Motivation</a>
+                    </li>
+                    <li>
+                        <a title="Kompatibilit&#xE4;t" href="#markdown-Abrechnungsfall-Abrechnungsfall-Kompatibilitaet">Kompatibilit&#xE4;t</a>
+                    </li>
+                    <li>
+                        <a title="Profil" href="#ImplementationGuide-markdown-Abrechnungsfall-Abrechnungsfall-Profil">Profil</a>
+                    </li>
+                    <li>
+                        <a title="Anmerkungen zu den Must-Support Feldern" href="#markdown-Abrechnungsfall-Abrechnungsfall-AnmerkungenZuDenMustSupportFeldern">Anmerkungen zu den Must-Support Feldern</a>
+                    </li>
+                    <li>
+                        <a title="Interaktionen" href="#ImplementationGuide-markdown-Abrechnungsfall-Abrechnungsfall_Interaktionen">Interaktionen</a>
+                    </li>
+                    <li>
+                        <a title="Beispiele" href="#ImplementationGuide-markdown-Abrechnungsfall-Abrechnungsfall-Beispiele">Beispiele</a>
+                    </li>
+            </ul>
+        </div>
+
+    <div class="col-md-18">
+
+        <div id="preview-content">
+
+            <h2 id="abrechnungsfall-account">Abrechnungsfall <a href="https://hl7.org/fhir/R4/account.html">(Account)</a></h2>
+<hr />
+
+
+                    <div id="ImplementationGuide-markdown-Abrechnungsfall-Abrechnungsfall-Motivation">
+                        <h3 id="motivation">Motivation</h3>
+<p>Komplementär zum Datenobjekt &quot;Kontakt - Encounter&quot; können Fälle, im Sinne einer Gruppierung von medizinischen Leistungen, innerhalb eines gemeinsamen Kontextes, zu einem Abrechnungsfall zusammengefasst werden.
+Ein solcher Abrechnungsfall kann mehrere Kontakte umfassen (z.B. vorstationärer Besuch, stationärer Aufenthalt und nachstationärer Besuch).</p>
+<p>Gemeinsam mit dem Einrichtungskontakt bildet der Abrechnungsfall einen wichtigen Einstiegspunkt in die Dokumentation der Behandlungsleistungen der Patienten.
+Als Bindeglied zwischen den Kontakten und dem Versicherungsverhältnis erfolgt eine feingranulare Auflistung, in welchen Zeiträumen ein Behandlungskontext zwischen einer Gesundheitseinrichtung und der Patienten bestand.
+Zudem werden Diagnosen abschließend / nachträglich dokumentiert, sodass eine Übersicht von relevanten (DRG)-Diagnosen ermöglicht wird, ohne die Gesamtheit aller Kontakte betrachten zu müssen.</p>
+<hr />
+
+                    </div>
+                    <div id="markdown-Abrechnungsfall-Abrechnungsfall-Kompatibilitaet">
+                        <h3 id="kompatibilitat">Kompatibilität</h3>
+<p>Für das Profil ISiKAbrechnungsfall wurde bis zum Zeitpunkt der Veröffentlichung kein Abgleich der Kompatibilität zu anderen Profilen (der KBV und der Medizininformatik-Initiative) durchgeführt.</p>
+<hr />
+
+                    </div>
+                    <div id="ImplementationGuide-markdown-Abrechnungsfall-Abrechnungsfall-Profil">
+                        <h3 id="profil">Profil</h3>
+<table class='table table-bordered scrollbar '><thead><tr><th>Name</th><th>Canonical</th></tr></thead><tbody><tr><td>ISiKAbrechnungsfall</td><td><a target='_blank' href='/resolve?&scope=isik-basis-v3@current&canonical=https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKAbrechnungsfall'>https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKAbrechnungsfall</a></td></tr>
+</tbody></table>
+<p><div class="stu3-treetable" id="ce8e737234ae4d4fb69998901d6e224f" data-level="1"><div class="treetable-wrapper hybrid"><div class="treetable-left-panel"><table class="treetable"><tr class="collapsed constraints" data-id="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon resource" title="Resource"></span><span class="constraints" title="ISiKAbrechnungsfall is the name of the resource
+Account is the type of the resource
+Account is the name of the parent resource"><b>ISiKAbrechnungsfall</b><span class="constraints"> (</span><a title="Account
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Account.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Account.json"  class="constraints">Account</a><span class="constraints">)</span></span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td></td><td class="profile"><a title="Account
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Account.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Account.json" >Account</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account</pre></p></div><span><b>Short description </b></span><p><span>Tracks balance, charges, for patient or cost center</span></p><span><b>Alternate names </b></span><p><span>Cost center</span><span>, </span><span>Record</span></p><span><b>Definition </b></span><div class="markdown"><p>A financial tool for tracking value accrued for a particular purpose.  In the healthcare field, used to track charges for a patient, cost centers, etc.</p>
+</div><span><b>Data type </b></span><p><a title="Account
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Account.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Account.json" >Account</a></p><span><b>Constraints</b></span><div><ul><li><b>dom-2: </b>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br><code>contained.contained.empty()</code></li><li><b>dom-4: </b>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br><code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code></li><li><b>dom-3: </b>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br><code>contained.where(((&#39;#&#39;+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = &#39;#&#39;).exists() or descendants().where(as(canonical) = &#39;#&#39;).exists() or descendants().where(as(canonical) = &#39;#&#39;).exists()).not()).trace(&#39;unmatched&#39;, id).empty()</code></li><li><b>dom-6: </b>A resource should have narrative for robust management<br><code>text.`div`.exists()</code></li><li><b>dom-5: </b>If a resource is contained in another resource, it SHALL NOT have a security label<br><code>contained.meta.security.empty()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>Entity. Role, or Act</li><li><b>rim: </b>Account</li></ul></td></tr><tr class="common" id="Account.id" data-id="4e7e9ae904cd4561806096bc376ff09d" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>id</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.id</pre></p></div><span><b>Short description </b></span><p><span>Logical id of this artifact</span></p><span><b>Definition </b></span><div class="markdown"><p>The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The only time that a resource does not have an id is when it is being submitted to the server using a create operation.</p>
+</div><span><b>Data type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p></td></tr><tr class="common" id="Account.meta" data-id="ce9e5e20565b4996acac856a025989f1" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon datatype" title="Data Type"></span><span>meta</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Meta
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Meta.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Meta.json" >Meta</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.meta</pre></p></div><span><b>Short description </b></span><p><span>Metadata about the resource</span></p><span><b>Definition </b></span><div class="markdown"><p>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.</p>
+</div><span><b>Data type </b></span><p><a title="Meta
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Meta.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Meta.json" >Meta</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="common" id="Account.implicitRules" data-id="6461f0212fbc43a2af71275bf87d052e" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>implicitRules</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element is a modifying element">?!</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.implicitRules</pre></p></div><span><b>Short description </b></span><p><span>A set of rules under which this content was created</span></p><span><b>Definition </b></span><div class="markdown"><p>A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
+</div><span><b>Data type </b></span><p><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li></ul></td></tr><tr class="common" id="Account.language" data-id="8bc54d191a614803af3a04984a40d875" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>language</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.language</pre></p></div><span><b>Short description </b></span><p><span>Language of the resource content</span></p><span><b>Definition </b></span><div class="markdown"><p>The base language in which the resource is written.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).</p>
+</div><span><b>Data type </b></span><p><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a></p><span><b>Binding </b></span><p><div class="markdown"><p>A human language.</p>
+</div><a title="CommonLanguages
+hl7.fhir.r4.core 4.0.1
+ValueSet-languages.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/ValueSet-languages.json" >CommonLanguages</a><span> (</span><a title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." href="http://hl7.org/fhir/r4/terminologies.html#preferred" >preferred</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li></ul></td></tr><tr class="common" id="Account.text" data-id="7a71a247249c4adaa13ca2ed09e3885e" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon datatype" title="Data Type"></span><span>text</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Narrative
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Narrative.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Narrative.json" >Narrative</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.text</pre></p></div><span><b>Short description </b></span><p><span>Text summary of the resource, for human interpretation</span></p><span><b>Alternate names </b></span><p><span>narrative</span><span>, </span><span>html</span><span>, </span><span>xhtml</span><span>, </span><span>display</span></p><span><b>Definition </b></span><div class="markdown"><p>A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded information is added later.</p>
+</div><span><b>Data type </b></span><p><a title="Narrative
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Narrative.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Narrative.json" >Narrative</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li><li><b>rim: </b>Act.text?</li></ul></td></tr><tr class="common" id="Account.contained" data-id="26e08c57e30e4c0da70e2d72ce99fd3c" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon datatype" title="Data Type"></span><span>contained</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Resource
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Resource.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Resource.json" >Resource</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.contained</pre></p></div><span><b>Short description </b></span><p><span>Contained, inline Resources</span></p><span><b>Alternate names </b></span><p><span>inline resources</span><span>, </span><span>anonymous resources</span><span>, </span><span>contained resources</span></p><span><b>Definition </b></span><div class="markdown"><p>These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.</p>
+</div><span><b>Data type </b></span><p><a title="Resource
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Resource.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Resource.json" >Resource</a></p><span><b>Mappings</b></span><ul><li><b>rim: </b>Entity. Role, or Act</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="collapsed sliced constraints" id="Account.extension" data-id="44edb63b28bd4ce8aeb0c94c95247519" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon extension" title="Extension"></span><span class="constraints">extension</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.extension</pre></p></div><span><b>Short description </b></span><p><span>Additional content defined by implementations</span></p><span><b>Alternate names </b></span><p><span>extensions</span><span>, </span><span>user content</span></p><span><b>Definition </b></span><div class="markdown"><p>May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</div><span><b>Data type </b></span><p><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></p><span><b>Sliced: </b></span><p><span>Unordered, Open, by url(Value)</span></p><div><span>Extensions are always sliced by (at least) url</span></div><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="constraints" id="Account.extension:AbrechnungsDiagnoseProzedur" data-id="4498611a25ac45649b6cb651ecab9b42" data-parentId="44edb63b28bd4ce8aeb0c94c95247519"><td class="profile"><span class="baseIcon complexExtension" title="Complex Extension"></span><span class="constraints" title="Follow the Extension URL link in the description for more details">AbrechnungsDiagnoseProzedur</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json"  class="constraints">Extension</a><span class="constraints">(</span><span class="constraints">Complex</span><span class="constraints">)</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element id</b></span><div><p><pre>Account.extension:AbrechnungsDiagnoseProzedur</pre></p></div><span><b>Short description </b></span><p><span>Fallbezogene Abrechnungsrelevanz von Diagnosen und Prozeduren</span></p><span><b>Alternate names </b></span><p><span>extensions</span><span>, </span><span>user content</span></p><span><b>Definition </b></span><div class="markdown"><p>Optional Extension Element - found in all resources.</p>
+</div><span class="constraints"><b>Comments </b></span><div class="markdown constraints"><p>In dieser Extension SOLL das 'Use' Element nur einfach verwendet werden, um eine eindeutige Zuweisung (1 zu N) gegenüber dem Element 'Referenz' zu gewährleisten.</p>
+</div><span class="constraints"><b>Data type </b></span><p><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json"  class="constraints">Extension</a><span class="constraints">(</span><span class="constraints">Complex</span><span class="constraints">)</span></p><span class="constraints"><b>Extension URL </b></span><p><a  href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&filepath=package/Extension-AbrechnungsDiagnoseProzedur.json" target="Fallbezogene Abrechnungsrelevanz von Diagnosen und Prozeduren
+de.basisprofil.r4 1.4.0
+Extension-AbrechnungsDiagnoseProzedur.json" class="constraints">http://fhir.de/StructureDefinition/ExtensionAbrechnungsDiagnoseProzedur</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="common sliced" id="Account.modifierExtension" data-id="30593ffc6ec448078c0f468ed75eab73" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon modifierExtension" title="Modifier Extension"></span><span>modifierExtension</span></td><td class="profile"><span title="This element is a modifying element">?!</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.modifierExtension</pre></p></div><span><b>Short description </b></span><p><span>Extensions that cannot be ignored</span></p><span><b>Alternate names </b></span><p><span>extensions</span><span>, </span><span>user content</span></p><span><b>Definition </b></span><div class="markdown"><p>May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+<p>Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</div><span><b>Data type </b></span><p><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></p><span><b>Sliced: </b></span><p><span>Unordered, Open, by url(Value)</span></p><div><span>Extensions are always sliced by (at least) url</span></div><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="collapsed sliced constraints" id="Account.identifier" data-id="05d7ad3c4d894961bf2643a4a0f2d2dc" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon slice" title="Sliced"></span><span class="constraints">identifier</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>*</span></td><td class="profile"><a title="Identifier
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Identifier.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Identifier.json" >Identifier</a></td><td class="details hidden"><span class="pin-control"></span><span><b>Element id</b></span><div><p><pre>Account.identifier</pre></p></div><span><b>Short description </b></span><p><span>Account number</span></p><span><b>Definition </b></span><div class="markdown"><p>Unique identifier used to reference the account.  Might or might not be intended for human use (e.g. credit card number).</p>
+</div><span><b>Data type </b></span><p><a title="Identifier
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Identifier.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Identifier.json" >Identifier</a></p><span class="constraints"><b>Sliced: </b></span><p><span class="constraints">Unordered, Open, by $this(Pattern)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>v2: </b>CX / EI (occasionally, more often EI maps to a resource id or a URL)</li><li><b>rim: </b>II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]</li><li><b>servd: </b>Identifier</li><li><b>w5: </b>FiveWs.identifier</li><li><b>rim: </b>.id</li></ul></td></tr><tr class="collapsed constraints" id="Account.identifier:Abrechnungsnummer" data-id="47ee736b6d5f4851b41fabaf3270d2e4" data-parentId="05d7ad3c4d894961bf2643a4a0f2d2dc"><td class="profile"><span class="baseIcon individualSlice" title="Slice"></span><span class="constraints">Abrechnungsnummer</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span class="constraints">1</span></td><td class="profile"><a title="Identifier-Profil f&#252;r die Abbildung einer organisationsspezifischen Abrechnungsnummer (&quot;Fallnummer&quot;)" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-identifier-abrechnungsnummer.json"  class="constraints">IdentifierAbrechnungsnummer</a><span class="fixed-label constraints">Pattern</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element id</b></span><div><p><pre>Account.identifier:Abrechnungsnummer</pre></p></div><span class="constraints"><b>Short description </b></span><p><span class="constraints">An identifier intended for computation</span></p><span class="constraints"><b>Definition </b></span><div class="markdown constraints"><p>An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.</p>
+</div><span class="constraints"><b>Data type </b></span><p><a title="Identifier-Profil f&#252;r die Abbildung einer organisationsspezifischen Abrechnungsnummer (&quot;Fallnummer&quot;)" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-identifier-abrechnungsnummer.json"  class="constraints">IdentifierAbrechnungsnummer</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span class="constraints"><b>Pattern </b></span><div><p><pre class="constraints">{
+  &quot;type&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;,
+        &quot;code&quot;: &quot;AN&quot;
+      }
+    ]
+  }
+}</pre></p></div><span class="constraints"><b>Mappings</b></span><ul><li class="constraints"><b>rim: </b>n/a</li><li class="constraints"><b>v2: </b>CX / EI (occasionally, more often EI maps to a resource id or a URL)</li><li class="constraints"><b>rim: </b>II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]</li><li class="constraints"><b>servd: </b>Identifier</li><li><b>w5: </b>FiveWs.identifier</li><li><b>rim: </b>.id</li></ul></td></tr><tr class="common" id="Account.identifier:Abrechnungsnummer.id" data-id="78931bed9b6745df8df9c178a1806702" data-parentId="47ee736b6d5f4851b41fabaf3270d2e4"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>id</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.identifier:Abrechnungsnummer.id</pre></p></div><span><b>Short description </b></span><p><span>Unique id for inter-element referencing</span></p><span><b>Definition </b></span><div class="markdown"><p>Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
+</div><span><b>Data type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li></ul></td></tr><tr class="common sliced" id="Account.identifier:Abrechnungsnummer.extension" data-id="96fe52d305c8467fb292c2131321f217" data-parentId="47ee736b6d5f4851b41fabaf3270d2e4"><td class="profile"><span class="baseIcon extension" title="Extension"></span><span>extension</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.identifier:Abrechnungsnummer.extension</pre></p></div><span><b>Short description </b></span><p><span>Additional content defined by implementations</span></p><span><b>Alternate names </b></span><p><span>extensions</span><span>, </span><span>user content</span></p><span><b>Definition </b></span><div class="markdown"><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</div><span><b>Data type </b></span><p><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></p><span><b>Sliced: </b></span><p><span>Unordered, Open, by url(Value)</span></p><div><span>Extensions are always sliced by (at least) url</span></div><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr id="Account.identifier:Abrechnungsnummer.use" data-id="1483ef3e6d0142ab9dc5ea4645c23ee8" data-parentId="47ee736b6d5f4851b41fabaf3270d2e4"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>use</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element is a modifying element">?!</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.identifier:Abrechnungsnummer.use</pre></p></div><span><b>Short description </b></span><p><span>usual | official | temp | secondary | old (If known)</span></p><span><b>Definition </b></span><div class="markdown"><p>The purpose of this identifier.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.</p>
+</div><span><b>Data type </b></span><p><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a></p><span><b>Binding </b></span><p><div class="markdown"><p>Identifies the purpose for this identifier, if known .</p>
+</div><a title="IdentifierUse
+hl7.fhir.r4.core 4.0.1
+ValueSet-identifier-use.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/ValueSet-identifier-use.json" >IdentifierUse</a><span> (</span><a title="To be conformant, the concept in this element SHALL be from the specified value set." href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>v2: </b>N/A</li><li><b>rim: </b>Role.code or implied by context</li></ul></td></tr><tr class="constraints" id="Account.identifier:Abrechnungsnummer.type" data-id="2d687605a3014d3285c0e27be14c2ca8" data-parentId="47ee736b6d5f4851b41fabaf3270d2e4"><td class="profile"><span class="baseIcon datatype" title="Data Type"></span><span class="constraints">type</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-CodeableConcept.json" >CodeableConcept</a><span class="binding-label">Binding</span><span class="fixed-label constraints">Pattern</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.identifier:Abrechnungsnummer.type</pre></p></div><span><b>Short description </b></span><p><span>Description of identifier</span></p><span><b>Definition </b></span><div class="markdown"><p>A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Allows users to make use of identifiers when the identifier system is not known.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.</p>
+</div><span><b>Data type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-CodeableConcept.json" >CodeableConcept</a></p><span><b>Binding </b></span><p><div class="markdown"><p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.</p>
+</div><a title="An instance of ValueSet" href="artifacts/Resources/fsh-generated/resources/ValueSet-ISiKAccountIdentifierType.json" >ISiKAccountIdentifierType</a><span> (</span><a title="To be conformant, the concept in this element SHALL be from the specified value set." href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span class="constraints"><b>Pattern </b></span><div><p><pre class="constraints">{
+  &quot;coding&quot;: [
+    {
+      &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;,
+      &quot;code&quot;: &quot;AN&quot;
+    }
+  ]
+}</pre></p></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>v2: </b>CE/CNE/CWE</li><li><b>rim: </b>CD</li><li><b>orim: </b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li><b>v2: </b>CX.5</li><li><b>rim: </b>Role.code or implied by context</li></ul></td></tr><tr class="constraints" id="Account.identifier:Abrechnungsnummer.system" data-id="fce7980b8cc14f65a06d310848b69e9f" data-parentId="47ee736b6d5f4851b41fabaf3270d2e4"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span class="constraints">system</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.identifier:Abrechnungsnummer.system</pre></p></div><span><b>Short description </b></span><p><span>The namespace for the identifier value</span></p><span><b>Definition </b></span><div class="markdown"><p>Establishes the namespace for the value - that is, a URL that describes a set values that are unique.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Identifier.system is always case sensitive.</p>
+</div><span><b>Data type </b></span><p><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Examples </b></span><div><span>General</span><p><pre>http://www.acme.com/identifiers/patient</pre></p></div><br><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>v2: </b>CX.4 / EI-2-4</li><li><b>rim: </b>II.root or Role.id.root</li><li><b>servd: </b>./IdentifierType</li></ul></td></tr><tr class="constraints" id="Account.identifier:Abrechnungsnummer.value" data-id="6892e000dc5841fc9da6cf8179030464" data-parentId="47ee736b6d5f4851b41fabaf3270d2e4"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span class="constraints">value</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.identifier:Abrechnungsnummer.value</pre></p></div><span><b>Short description </b></span><p><span>The value that is unique</span></p><span><b>Definition </b></span><div class="markdown"><p>The portion of the identifier typically relevant to the user and which is unique within the context of the system.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the <a href="extension-rendered-value.html">Rendered Value extension</a>. Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.</p>
+</div><span><b>Data type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Examples </b></span><div><span>General</span><p><pre>123456</pre></p></div><br><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>v2: </b>CX.1 / EI.1</li><li><b>rim: </b>II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)</li><li><b>servd: </b>./Value</li></ul></td></tr><tr id="Account.identifier:Abrechnungsnummer.period" data-id="d737a763525e456f9b958545773169ae" data-parentId="47ee736b6d5f4851b41fabaf3270d2e4"><td class="profile"><span class="baseIcon datatype" title="Data Type"></span><span>period</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Period
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Period.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Period.json" >Period</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.identifier:Abrechnungsnummer.period</pre></p></div><span><b>Short description </b></span><p><span>Time period when id is/was valid for use</span></p><span><b>Definition </b></span><div class="markdown"><p>Time period during which identifier is/was valid for use.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;).</p>
+<p>Period is not used for a duration (a measure of elapsed time). See <a href="datatypes.html#Duration">Duration</a>.</p>
+</div><span><b>Data type </b></span><p><a title="Period
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Period.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Period.json" >Period</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>per-1: </b>If present, start SHALL have a lower value than end<br><code>start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>v2: </b>DR</li><li><b>rim: </b>IVL&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;] or URG&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;]</li><li><b>v2: </b>CX.7 + CX.8</li><li><b>rim: </b>Role.effectiveTime or implied by context</li><li><b>servd: </b>./StartDate and ./EndDate</li></ul></td></tr><tr id="Account.identifier:Abrechnungsnummer.assigner" data-id="2c7f2d844a8d49f29d98b9009a8fa06a" data-parentId="47ee736b6d5f4851b41fabaf3270d2e4"><td class="profile"><span class="baseIcon reference" title="Reference to another Resource"></span><span>assigner</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Organization
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Organization.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Organization.json" >Organization</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.identifier:Abrechnungsnummer.assigner</pre></p></div><span><b>Short description </b></span><p><span>Organization that issued id (may be just text)</span></p><span><b>Definition </b></span><div class="markdown"><p>Organization that issued/manages the identifier.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.</p>
+</div><span><b>Data type </b></span><p><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Organization
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Organization.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Organization.json" >Organization</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ref-1: </b>SHALL have a contained resource if a local reference is provided<br><code>reference.startsWith(&#39;#&#39;).not() or (reference.substring(1).trace(&#39;url&#39;) in %rootResource.contained.id.trace(&#39;ids&#39;))</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li><b>v2: </b>CX.4 / (CX.4,CX.9,CX.10)</li><li><b>rim: </b>II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</li><li><b>servd: </b>./IdentifierIssuingAuthority</li></ul></td></tr><tr class="constraints" id="Account.status" data-id="2eb7af2f587d405181fe408ec34bfb4d" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span class="constraints">status</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span> <span title="This element is a modifying element">?!</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.status</pre></p></div><span><b>Short description </b></span><p><span>active | inactive | entered-in-error | on-hold | unknown</span></p><span><b>Definition </b></span><div class="markdown"><p>Indicates whether the account is presently used/usable or not.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>This element is labeled as a modifier because the status contains the codes inactive and entered-in-error that mark the Account as not currently valid.</p>
+</div><span><b>Data type </b></span><p><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a></p><span><b>Binding </b></span><p><div class="markdown"><p>Indicates whether the account is available to be used.</p>
+</div><a title="AccountStatus
+hl7.fhir.r4.core 4.0.1
+ValueSet-account-status.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/ValueSet-account-status.json" >AccountStatus</a><span> (</span><a title="To be conformant, the concept in this element SHALL be from the specified value set." href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>w5: </b>FiveWs.status</li><li><b>rim: </b>.statusCode</li></ul></td></tr><tr class="constraints" id="Account.type" data-id="3b972f620f344fbb842fb605705c2d48" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon datatype" title="Data Type"></span><span class="constraints">type</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>1</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-CodeableConcept.json" >CodeableConcept</a><span class="binding-label constraints">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element id</b></span><div><p><pre>Account.type</pre></p></div><span><b>Short description </b></span><p><span>E.g. patient, expense, depreciation</span></p><span><b>Definition </b></span><div class="markdown"><p>Categorizes the account for reporting and searching purposes.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+</div><span><b>Data type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-CodeableConcept.json" >CodeableConcept</a></p><span class="constraints"><b>Binding </b></span><p><div class="markdown constraints"><p>The usage type of this account, permits categorization of accounts.</p>
+</div><a title="An instance of ValueSet" href="artifacts/Resources/fsh-generated/resources/ValueSet-ISiKAccountType.json"  class="constraints">ISiKAccountType</a><span class="constraints"> (</span><a title="To be conformant, the concept in this element SHALL be from the specified value set." href="http://hl7.org/fhir/r4/terminologies.html#required"  class="constraints">required</a><span class="constraints">)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>v2: </b>CE/CNE/CWE</li><li><b>rim: </b>CD</li><li><b>orim: </b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li><b>w5: </b>FiveWs.class</li><li><b>rim: </b>.code</li></ul></td></tr><tr id="Account.name" data-id="96ebe9de873947d7ae9bcc23901f28f7" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>name</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.name</pre></p></div><span><b>Short description </b></span><p><span>Human-readable label</span></p><span><b>Alternate names </b></span><p><span>Title</span></p><span><b>Definition </b></span><div class="markdown"><p>Name used for the account when displaying it to humans in reports, etc.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>w5: </b>FiveWs.what[x]</li><li><b>rim: </b>.title</li></ul></td></tr><tr class="constraints" id="Account.subject" data-id="c1a7b08b68a84785bd6d7a75f60db69b" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon reference" title="Reference to another Resource"></span><span class="constraints">subject</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span class="constraints">1</span></td><td class="profile"><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json"  class="constraints">Reference</a><span class="constraints">(</span><a title="Patient
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Patient.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Patient.json"  class="constraints">Patient</a><span class="constraints">)</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element id</b></span><div><p><pre>Account.subject</pre></p></div><span><b>Short description </b></span><p><span>The entity that caused the expenses</span></p><span><b>Alternate names </b></span><p><span>target</span></p><span><b>Definition </b></span><div class="markdown"><p>Identifies the entity which incurs the expenses. While the immediate recipients of services or goods might be entities related to the subject, the expenses were ultimately incurred by the subject of the Account.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Accounts can be applied to non-patients for tracking other non-patient related activities, such as group services (patients not tracked, and costs charged to another body), or might not be allocated.</p>
+</div><span class="constraints"><b>Data type </b></span><p><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json"  class="constraints">Reference</a><span class="constraints">(</span><a title="Patient
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Patient.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Patient.json"  class="constraints">Patient</a><span class="constraints">)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ref-1: </b>SHALL have a contained resource if a local reference is provided<br><code>reference.startsWith(&#39;#&#39;).not() or (reference.substring(1).trace(&#39;url&#39;) in %rootResource.contained.id.trace(&#39;ids&#39;))</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li><b>w5: </b>FiveWs.subject[x]</li><li><b>rim: </b>.subject</li><li><b>w5: </b>FiveWs.subject</li></ul></td></tr><tr id="Account.servicePeriod" data-id="7417907aa2994724bb9dca48f6ee23a2" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon datatype" title="Data Type"></span><span>servicePeriod</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Period
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Period.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Period.json" >Period</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.servicePeriod</pre></p></div><span><b>Short description </b></span><p><span>Transaction window</span></p><span><b>Definition </b></span><div class="markdown"><p>The date range of services associated with this account.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>It is possible for transactions to be posted outside the service period, as long as the service was provided within the defined service period.</p>
+</div><span><b>Data type </b></span><p><a title="Period
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Period.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Period.json" >Period</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>per-1: </b>If present, start SHALL have a lower value than end<br><code>start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>v2: </b>DR</li><li><b>rim: </b>IVL&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;] or URG&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;]</li><li><b>w5: </b>FiveWs.done[x]</li><li><b>rim: </b>.coverage.insurancePolicy.effectiveTime</li></ul></td></tr><tr class="collapsed constraints" id="Account.coverage" data-id="c5dd677540804d5fb5486c9b9bcf343c" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon backboneElement" title="Element"></span><span class="constraints">coverage</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.coverage</pre></p></div><span><b>Short description </b></span><p><span>The party(s) that are responsible for covering the payment of this account, and what order should they be applied to the account</span></p><span><b>Definition </b></span><div class="markdown"><p>The party(s) that are responsible for covering the payment of this account, and what order should they be applied to the account.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Typically. this may be some form of insurance, internal charges, or self-pay.</p>
+<p>Local or jurisdictional business rules may determine which coverage covers which types of billable items charged to the account, and in which order.
+Where the order is important, a local/jurisdictional extension may be defined to specify the order for the type of charge.</p>
+</div><span><b>Data type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>.coverage</li></ul></td></tr><tr class="common" id="Account.coverage.id" data-id="cbe897e5b4374f2389a1a9e11d1730e5" data-parentId="c5dd677540804d5fb5486c9b9bcf343c"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>id</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.coverage.id</pre></p></div><span><b>Short description </b></span><p><span>Unique id for inter-element referencing</span></p><span><b>Definition </b></span><div class="markdown"><p>Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
+</div><span><b>Data type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li></ul></td></tr><tr class="collapsed sliced constraints" id="Account.coverage.extension" data-id="52af2fbe21714d96a242aebc4c470a79" data-parentId="c5dd677540804d5fb5486c9b9bcf343c"><td class="profile"><span class="baseIcon extension" title="Extension"></span><span class="constraints">extension</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span class="constraints">..</span><span class="constraints">1</span></td><td class="profile"><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.coverage.extension</pre></p></div><span><b>Short description </b></span><p><span>Additional content defined by implementations</span></p><span><b>Alternate names </b></span><p><span>extensions</span><span>, </span><span>user content</span></p><span><b>Definition </b></span><div class="markdown"><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</div><span><b>Data type </b></span><p><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></p><span><b>Sliced: </b></span><p><span>Unordered, Open, by url(Value)</span></p><div><span>Extensions are always sliced by (at least) url</span></div><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="constraints" id="Account.coverage.extension:Abrechnungsart" data-id="e03e5e9933f84123aab180760640ed41" data-parentId="52af2fbe21714d96a242aebc4c470a79"><td class="profile"><span class="baseIcon extension" title="Extension"></span><span class="constraints" title="Follow the Extension URL link in the description for more details">Abrechnungsart</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span class="constraints">..</span><span class="constraints">1</span></td><td class="profile"><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json"  class="constraints">Extension</a><span class="constraints">(</span><a title="Coding
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Coding.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Coding.json" >Coding</a><span class="constraints">)</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element id</b></span><div><p><pre>Account.coverage.extension:Abrechnungsart</pre></p></div><span class="constraints"><b>Short description </b></span><p><span class="constraints">Abrechnungsart</span></p><span><b>Alternate names </b></span><p><span>extensions</span><span>, </span><span>user content</span></p><span class="constraints"><b>Definition </b></span><div class="markdown constraints"><p>Optional Extension Element - found in all resources.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</div><span class="constraints"><b>Data type </b></span><p><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json"  class="constraints">Extension</a><span class="constraints">(</span><a title="Coding
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Coding.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Coding.json" >Coding</a><span class="constraints">)</span></p><span class="constraints"><b>Extension URL </b></span><p><a  href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&filepath=package/Extension-Abrechnungsart.json" target="Abrechnungsart
+de.basisprofil.r4 1.4.0
+Extension-Abrechnungsart.json" class="constraints">http://fhir.de/StructureDefinition/ExtensionAbrechnungsart</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="common" id="Account.coverage.modifierExtension" data-id="fcdf3c338d274cf7a69878997b73f86e" data-parentId="c5dd677540804d5fb5486c9b9bcf343c"><td class="profile"><span class="baseIcon modifierExtension" title="Modifier Extension"></span><span>modifierExtension</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element is a modifying element">?!</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.coverage.modifierExtension</pre></p></div><span><b>Short description </b></span><p><span>Extensions that cannot be ignored even if unrecognized</span></p><span><b>Alternate names </b></span><p><span>extensions</span><span>, </span><span>user content</span><span>, </span><span>modifiers</span></p><span><b>Definition </b></span><div class="markdown"><p>May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+<p>Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</div><span><b>Data type </b></span><p><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="constraints" id="Account.coverage.coverage" data-id="fc714f2b033743c89087b04e2491d8d2" data-parentId="c5dd677540804d5fb5486c9b9bcf343c"><td class="profile"><span class="baseIcon reference" title="Reference to another Resource"></span><span class="constraints">coverage</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Coverage
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Coverage.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Coverage.json" >Coverage</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.coverage.coverage</pre></p></div><span><b>Short description </b></span><p><span>The party(s), such as insurances, that may contribute to the payment of this account</span></p><span><b>Definition </b></span><div class="markdown"><p>The party(s) that contribute to payment (or part of) of the charges applied to this account (including self-pay).</p>
+<p>A coverage may only be responsible for specific types of charges, and the sequence of the coverages in the account could be important when processing billing.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
+</div><span><b>Data type </b></span><p><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Coverage
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Coverage.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Coverage.json" >Coverage</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ref-1: </b>SHALL have a contained resource if a local reference is provided<br><code>reference.startsWith(&#39;#&#39;).not() or (reference.substring(1).trace(&#39;url&#39;) in %rootResource.contained.id.trace(&#39;ids&#39;))</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li><b>rim: </b>.coverage.insurancePolicy.author</li></ul></td></tr><tr id="Account.coverage.priority" data-id="589ab028b5064c6a84d20b83736c4d08" data-parentId="c5dd677540804d5fb5486c9b9bcf343c"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>priority</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="positiveInt
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-positiveInt.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-positiveInt.json" >positiveInt</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.coverage.priority</pre></p></div><span><b>Short description </b></span><p><span>The priority of the coverage in the context of this account</span></p><span><b>Alternate names </b></span><p><span>coordination of benefit priority</span></p><span><b>Definition </b></span><div class="markdown"><p>The priority of the coverage in the context of this account.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>It is common in some jurisdictions for there to be multiple coverages allocated to an account, and a sequence is required to order the settling of the account (often with insurance claiming).</p>
+</div><span><b>Data type </b></span><p><a title="positiveInt
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-positiveInt.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-positiveInt.json" >positiveInt</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>.coverage.sequenceNumber</li></ul></td></tr><tr id="Account.owner" data-id="8a81a1c362fd49f38949abfe08741e44" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon reference" title="Reference to another Resource"></span><span>owner</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Organization
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Organization.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Organization.json" >Organization</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.owner</pre></p></div><span><b>Short description </b></span><p><span>Entity managing the Account</span></p><span><b>Definition </b></span><div class="markdown"><p>Indicates the service area, hospital, department, etc. with responsibility for managing the Account.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
+</div><span><b>Data type </b></span><p><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Organization
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Organization.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Organization.json" >Organization</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ref-1: </b>SHALL have a contained resource if a local reference is provided<br><code>reference.startsWith(&#39;#&#39;).not() or (reference.substring(1).trace(&#39;url&#39;) in %rootResource.contained.id.trace(&#39;ids&#39;))</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li><b>rim: </b>.holder</li></ul></td></tr><tr id="Account.description" data-id="447a2abf22b045579ac059c3ecfacedb" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>description</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.description</pre></p></div><span><b>Short description </b></span><p><span>Explanation of purpose/use</span></p><span><b>Definition </b></span><div class="markdown"><p>Provides additional information about what the account tracks and how it is used.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>.subjectOf.observationEvent[code=&quot;annotation&quot;].value</li></ul></td></tr><tr class="collapsed" id="Account.guarantor" data-id="2b71bc4fd4164468b36d660ebb626a64" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon backboneElement" title="Element"></span><span>guarantor</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.guarantor</pre></p></div><span><b>Short description </b></span><p><span>The parties ultimately responsible for balancing the Account</span></p><span><b>Definition </b></span><div class="markdown"><p>The parties responsible for balancing the account if other payment options fall short.</p>
+</div><span><b>Data type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>.holder.guarantorRole</li></ul></td></tr><tr class="common" id="Account.guarantor.id" data-id="989d0e77cac64185a7fa39538b329266" data-parentId="2b71bc4fd4164468b36d660ebb626a64"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>id</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.guarantor.id</pre></p></div><span><b>Short description </b></span><p><span>Unique id for inter-element referencing</span></p><span><b>Definition </b></span><div class="markdown"><p>Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
+</div><span><b>Data type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li></ul></td></tr><tr class="common sliced" id="Account.guarantor.extension" data-id="e8a6fd85d5704edcaf0a420d70699168" data-parentId="2b71bc4fd4164468b36d660ebb626a64"><td class="profile"><span class="baseIcon extension" title="Extension"></span><span>extension</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.guarantor.extension</pre></p></div><span><b>Short description </b></span><p><span>Additional content defined by implementations</span></p><span><b>Alternate names </b></span><p><span>extensions</span><span>, </span><span>user content</span></p><span><b>Definition </b></span><div class="markdown"><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</div><span><b>Data type </b></span><p><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></p><span><b>Sliced: </b></span><p><span>Unordered, Open, by url(Value)</span></p><div><span>Extensions are always sliced by (at least) url</span></div><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="common" id="Account.guarantor.modifierExtension" data-id="24f478c606e34db3be1b0bcac73ef922" data-parentId="2b71bc4fd4164468b36d660ebb626a64"><td class="profile"><span class="baseIcon modifierExtension" title="Modifier Extension"></span><span>modifierExtension</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element is a modifying element">?!</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.guarantor.modifierExtension</pre></p></div><span><b>Short description </b></span><p><span>Extensions that cannot be ignored even if unrecognized</span></p><span><b>Alternate names </b></span><p><span>extensions</span><span>, </span><span>user content</span><span>, </span><span>modifiers</span></p><span><b>Definition </b></span><div class="markdown"><p>May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+<p>Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</div><span><b>Data type </b></span><p><a title="Extension
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr id="Account.guarantor.party" data-id="a3c38fc5fb0e48578cf4581305306679" data-parentId="2b71bc4fd4164468b36d660ebb626a64"><td class="profile"><span class="baseIcon reference" title="Reference to another Resource"></span><span>party</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Patient
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Patient.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Patient.json" >Patient</a><span> | </span><a title="RelatedPerson
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-RelatedPerson.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-RelatedPerson.json" >RelatedPerson</a><span> | </span><a title="Organization
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Organization.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Organization.json" >Organization</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.guarantor.party</pre></p></div><span><b>Short description </b></span><p><span>Responsible entity</span></p><span><b>Definition </b></span><div class="markdown"><p>The entity who is responsible.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
+</div><span><b>Data type </b></span><p><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Patient
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Patient.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Patient.json" >Patient</a><span> | </span><a title="RelatedPerson
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-RelatedPerson.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-RelatedPerson.json" >RelatedPerson</a><span> | </span><a title="Organization
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Organization.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Organization.json" >Organization</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ref-1: </b>SHALL have a contained resource if a local reference is provided<br><code>reference.startsWith(&#39;#&#39;).not() or (reference.substring(1).trace(&#39;url&#39;) in %rootResource.contained.id.trace(&#39;ids&#39;))</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li><b>rim: </b>.holder.guarantorRole[guarantorPerson|guarantorOrganization]</li></ul></td></tr><tr id="Account.guarantor.onHold" data-id="e5e4c932a13f4dda98a2dddabfce4983" data-parentId="2b71bc4fd4164468b36d660ebb626a64"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>onHold</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="boolean
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-boolean.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-boolean.json" >boolean</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.guarantor.onHold</pre></p></div><span><b>Short description </b></span><p><span>Credit or other hold applied</span></p><span><b>Definition </b></span><div class="markdown"><p>A guarantor may be placed on credit hold or otherwise have their role temporarily suspended.</p>
+</div><span><b>Data type </b></span><p><a title="boolean
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-boolean.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-boolean.json" >boolean</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>.holder.guarantorRole.statusCode</li></ul></td></tr><tr id="Account.guarantor.period" data-id="0a375b18f65e43bcb1f47b8415651dc3" data-parentId="2b71bc4fd4164468b36d660ebb626a64"><td class="profile"><span class="baseIcon datatype" title="Data Type"></span><span>period</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Period
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Period.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Period.json" >Period</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.guarantor.period</pre></p></div><span><b>Short description </b></span><p><span>Guarantee account during</span></p><span><b>Definition </b></span><div class="markdown"><p>The timeframe during which the guarantor accepts responsibility for the account.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;).</p>
+<p>Period is not used for a duration (a measure of elapsed time). See <a href="datatypes.html#Duration">Duration</a>.</p>
+</div><span><b>Data type </b></span><p><a title="Period
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Period.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Period.json" >Period</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>per-1: </b>If present, start SHALL have a lower value than end<br><code>start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>v2: </b>DR</li><li><b>rim: </b>IVL&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;] or URG&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;]</li><li><b>rim: </b>.holder.guarantorRole.effectiveTime</li></ul></td></tr><tr id="Account.partOf" data-id="40c53624f13542efa8882592b6a1e7d2" data-parentId="b213ad1ed96a4a27b5b4bc50bbe60a15"><td class="profile"><span class="baseIcon reference" title="Reference to another Resource"></span><span>partOf</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Account
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Account.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Account.json" >Account</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Account.partOf</pre></p></div><span><b>Short description </b></span><p><span>Reference to a parent Account</span></p><span><b>Definition </b></span><div class="markdown"><p>Reference to a parent Account.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
+</div><span><b>Data type </b></span><p><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Account
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Account.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Account.json" >Account</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ref-1: </b>SHALL have a contained resource if a local reference is provided<br><code>reference.startsWith(&#39;#&#39;).not() or (reference.substring(1).trace(&#39;url&#39;) in %rootResource.contained.id.trace(&#39;ids&#39;))</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li></ul></td></tr></table></div><div class="treetable-right-panel"></div></div></div><script type="text/javascript">
+(function() {
+var isTreetableVisible = document.querySelector(".treetable") != null;
+if (isTreetableVisible) {
+var resourceTreeTablece8e737234ae4d4fb69998901d6e224f = new Stu3TreeTable(false);
+resourceTreeTablece8e737234ae4d4fb69998901d6e224f.init("ce8e737234ae4d4fb69998901d6e224f");
+}
+})();
+</script></p>
+<p>Weitere Hinweise zu den Abgrenzungen der Begrifflichkeiten Fall und Kontakt finden sie unter <a href="https://ig.fhir.de/basisprofile-de/1.2.0/Ressourcen-AmbulanterStationaererFall.html">Deutsche Basisprofile - Abschnitt Ambulanter/stationärer Fall / Kontakt (Encounter)</a>.</p>
+<hr />
+<p><strong>Terminology Bindings</strong></p>
+<table class='table table-bordered scrollbar '><thead><tr><th>Path</th><th>Name</th><th>Strength</th><th>URL</th></tr></thead><tbody><tr><td>Account.type</td><td>ISiKAccountType</td><td>required</td><td><a target='_blank' href='/resolve?&scope=isik-basis-v3@current&canonical=https://gematik.de/fhir/isik/v3/Basismodul/ValueSet/ISiKAccountType'>https://gematik.de/fhir/isik/v3/Basismodul/ValueSet/ISiKAccountType</a></td></tr>
+</tbody></table>
+<hr />
+
+                    </div>
+                    <div id="markdown-Abrechnungsfall-Abrechnungsfall-AnmerkungenZuDenMustSupportFeldern">
+                        <h3 id="anmerkungen-zu-den-must-support-feldern">Anmerkungen zu den Must-Support Feldern</h3>
+<h3 id="account.extensionabrechnungsdiagnose"><code>Account.extension:Abrechnungsdiagnose</code></h3>
+<p><strong>Bedeutung:</strong> DRG- und hiervon abweichende Krankenhausdiagnosen sollten im Account zusammenfassend und abschließend angegeben werden. Relevante Prozeduren können ebenfalls aufgelistet werden.</p>
+<h3 id="account.identifier"><code>Account.identifier</code></h3>
+<p><strong>Bedeutung:</strong> Der Account muss die Abrechnungsnummer des referenzierenden Kontaktes (Encounter) enthalten. Dies entspricht dem Wert des Elements Encounter.account.identifier.</p>
+<h3 id="account.status"><code>Account.status</code></h3>
+<p><strong>Bedeutung:</strong> Der Status MUSS insbesondere zur Differenzierung von abgeschlossenen und derzeitig noch aktiven Abrechnungsfällen angegeben werden. Alle in einem System möglichen Status-Werte müssen über FHIR korrekt repräsentiert werden können, mindestens jedoch die Status-Werte &quot;active&quot;, &quot;inactive&quot;. Deren korrekte Abbildung wird im Rahmen des Bestätigungsverfahrens überprüft.</p>
+<p><strong>Hinweise:</strong> Siehe Beschreibung in der <a href="https://hl7.org/fhir/R4/account-definitions.html#Account.status">FHIR Kernspezifikation</a></p>
+<h3 id="account.type"><code>Account.type</code></h3>
+<p><strong>Bedeutung:</strong> Alle Accounts MÜSSEN eindeutig kategorisiert werden können, sodass eine Filterung pro Typ möglich ist.</p>
+<p><strong>Hinweise:</strong> Verpflichtende Kodierung per <a href="https://hl7.org/fhir/R4/v3/ActEncounterCode/vs.html">HL7 v3 Value Set ActEncounterCode</a> als Äquivalent zu Encounter.class.</p>
+<h3 id="account.subject"><code>Account.subject</code></h3>
+<p><strong>Bedeutung:</strong> Ein Patientenbezug des Falls MUSS stets zum Zwecke der Nachvollziehbarkeit und Datenintegrität vorliegen.</p>
+<h3 id="account.coverage"><code>Account.coverage</code></h3>
+<p><strong>Bedeutung:</strong> Unter <code>Account.coverage</code> SOLL der Kostenträger referenziert werden, über den der Fall abgerechnet wird. Falls bekannt, SOLL angegeben werden, in welcher Abrechnungsart die Abrechnung erfolgt.</p>
+<hr />
+
+                    </div>
+                    <div id="ImplementationGuide-markdown-Abrechnungsfall-Abrechnungsfall_Interaktionen">
+                        <h3 id="interaktionen">Interaktionen</h3>
+<p>Für die Ressource Account MUSS die REST-Interaktion &quot;READ&quot; implementiert werden.</p>
+<p>Folgende Suchparameter sind für das Bestätigungsverfahren relevant, auch in Kombination:</p>
+<ol>
+<li><p>Der Suchparameter &quot;_id&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Account?_id=103270</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;_id&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#all">FHIR-Basisspezifikation - Abschnitt &quot;Parameters for all resources&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;identifier&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Account?identifier=http://test.krankenhaus.de/fhir/sid/fallnr|123456</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Account.identifier&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;status&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Account?status=active</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Account.status&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;type&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Account?type=http://terminology.hl7.org/CodeSystem/v3-ActCode|AMB</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Account.type&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;patient&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Account?patient=Patient/123</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Account.subject&quot; finden sich in der <a href="https://www.hl7.org/fhir/R4/search.html#reference">FHIR-Basisspezifikation - Abschnitt &quot;Reference Search&quot;</a>.</p>
+<hr />
+</li>
+</ol>
+
+                    </div>
+                    <div id="ImplementationGuide-markdown-Abrechnungsfall-Abrechnungsfall-Beispiele">
+                        <h4 id="beispiele">Beispiele</h4>
+<p>Valides Minimalbeispiel für das Profil ISiKAbrechnungsfall:</p>
+<p><pre class="resource-validation-xml"><pre><span class="brace">{</span>
+    <span class="element">&quot;</span><span class="element">resourceType</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Account</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">id</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">AbrechnungsfallDRG</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">meta</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">profile</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+            <span class="string">&quot;</span><span class="string">https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKAbrechnungsfall</span><span class="string">&quot;</span>
+        <span class="brace">]</span>
+    <span class="brace">}</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">identifier</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+        <span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">type</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                    <span class="brace">{</span>
+                        <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">AN</span><span class="string">&quot;</span><span class="symbol">,</span>
+                        <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://terminology.hl7.org/CodeSystem/v2-0203</span><span class="string">&quot;</span>
+                    <span class="brace">}</span>
+                <span class="brace">]</span>
+            <span class="brace">}</span><span class="symbol">,</span>
+            <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">https://test.krankenhaus.de/fhir/sid/abrechnungsnummer</span><span class="string">&quot;</span><span class="symbol">,</span>
+            <span class="element">&quot;</span><span class="element">value</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">0123456789</span><span class="string">&quot;</span>
+        <span class="brace">}</span>
+    <span class="brace">]</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">extension</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+        <span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">url</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://fhir.de/StructureDefinition/ExtensionAbrechnungsDiagnoseProzedur</span><span class="string">&quot;</span><span class="symbol">,</span>
+            <span class="element">&quot;</span><span class="element">extension</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">url</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Use</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">valueCoding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+                        <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">hospital-main-diagnosis</span><span class="string">&quot;</span><span class="symbol">,</span>
+                        <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://fhir.de/CodeSystem/KontaktDiagnoseProzedur</span><span class="string">&quot;</span><span class="symbol">,</span>
+                        <span class="element">&quot;</span><span class="element">display</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Krankenhaus Hauptdiagnose</span><span class="string">&quot;</span>
+                    <span class="brace">}</span>
+                <span class="brace">}</span><span class="symbol">,</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">url</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Referenz</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">valueReference</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+                        <span class="element">&quot;</span><span class="element">reference</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Condition/DiagnoseSelteneErkrankung</span><span class="string">&quot;</span>
+                    <span class="brace">}</span>
+                <span class="brace">}</span>
+            <span class="brace">]</span>
+        <span class="brace">}</span>
+    <span class="brace">]</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">status</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">active</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">type</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+            <span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">IMP</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://terminology.hl7.org/CodeSystem/v3-ActCode</span><span class="string">&quot;</span>
+            <span class="brace">}</span>
+        <span class="brace">]</span>
+    <span class="brace">}</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">subject</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+        <span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">reference</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Patient/PatientinMusterfrau</span><span class="string">&quot;</span>
+        <span class="brace">}</span>
+    <span class="brace">]</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">coverage</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+        <span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">extension</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">url</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://fhir.de/StructureDefinition/ExtensionAbrechnungsart</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">valueCoding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+                        <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">DRG</span><span class="string">&quot;</span><span class="symbol">,</span>
+                        <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://fhir.de/CodeSystem/dkgev/Abrechnungsart</span><span class="string">&quot;</span><span class="symbol">,</span>
+                        <span class="element">&quot;</span><span class="element">display</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Diagnosebezogene Fallgruppen</span><span class="string">&quot;</span>
+                    <span class="brace">}</span>
+                <span class="brace">}</span>
+            <span class="brace">]</span><span class="symbol">,</span>
+            <span class="element">&quot;</span><span class="element">coverage</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">reference</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Coverage/CoverageGesetzlich</span><span class="string">&quot;</span>
+            <span class="brace">}</span>
+        <span class="brace">}</span>
+    <span class="brace">]</span>
+<span class="brace">}</span></pre></pre></p>
+
+                    </div>
+
+        </div>
+
+    </div>
+</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+            
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
