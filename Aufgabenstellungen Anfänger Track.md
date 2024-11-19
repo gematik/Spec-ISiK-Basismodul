@@ -31,15 +31,17 @@ Lade und installiere Postman oder greife über den Browser auf Postman zu und re
 
 ### Aufgabe 1: 
 
-Wir wollen nun verschiedene REST-Interaktionen üben. Dazu verwenden wir den Testserver **X**. Setze im Header-Tab von Postman den Accept-Header auf das gewünschte Antwortformat (*application/fhir+json*) und den Content-Type-Header auf das Format der gesendeten Daten (*application/fhir+json*), damit der Server die Inhalte richtig verarbeiten kann.
+Wir wollen nun verschiedene REST-Interaktionen üben. Dazu verwenden wir den Testserver **X**. Setze im Header-Tab von Postman den Accept-Header auf das gewünschte Antwortformat (*application/fhir+json*) und den Content-Type-Header auf das Format der gesendeten Daten (*application/fhir+json*), damit der Server die Inhalte richtig verarbeiten kann. Importiere folgende Collection in Postman und bearbeite dort die Aufgaben.
 
-1. Erstelle in Postman eine neue Anfrage und füge das Patientenprofil von Frau Dr. Peters hinzu. Notiere dir die ID.
-2. Verwende die ID von Frau Müller, um ihr Patientenprofil zu erhalten.
-3. Erstelle nun auch eine Condition-Ressource in Postman für Frau Müller.
-4. Frau Müller hat Herrn Maier geheiratet und seinen Nachnamen angenommen. Pass den Nachnamen im Patientenprofil an.
-5. Lösche nun das Profil von Frau Müller.
-6. Rufe die Historie der Ressource ab, die du in der vorherigen Übung erstellt hast
-7. Suche nach allen weiblichen Patientinnen, die älter als Anna Müller sind. 
-8. Suche nach allen Patientinnen, die eine Primäre Gonarthrose haben.
-9. Fordere eine Kurz-Zusammenfassung der Daten von Anna Müller an.
+1. Erstelle das Patientenprofil von Frau Dr. Peters. Notiere dir die ID.
+2. Erstelle das Patientenprofil von Frau Müller. Notiere dir die ID.
+4. Erstelle nun eine Condition-Ressource in Postman für Primäre Gonarthrose für Frau Müller.
+5. Verwende die ID von Frau Müller, um ihr Patientenprofil zu erhalten.
+6. Frau Müller hat Herrn Maier geheiratet und seinen Nachnamen angenommen. Pass den Nachnamen im Patientenprofil an.
+7. Rufe die Historie der Ressource ab, die du in der vorherigen Übung erstellt hast
+8. Suche nach allen weiblichen Patientinnen, die älter als Anna Müller sind.
+9. Suche nach allen Patientinnen, die eine Primäre Gonarthrose haben.
+10. Fordere eine Kurz-Zusammenfassung der Daten von Anna Müller an.
+11. Kopiere das Patientenprofil von Frau Müller und erstelle damit ein neues Patientenprofil mit deinem Vor- und Nachnamen.
+12. Lösche nun das Profil mit deinem Namen wieder.
 
