@@ -8,7 +8,7 @@ Anna Müller, 67 Jahre, mit der Diagnose primäre Gonarthrose, beidseitig (ICD M
 - **Geschlecht**: Weiblich
 - **Familienstand**: Verheiratet, 2 erwachsene Kinder
 - **Beruflicher Hintergrund**: Früher Sekretärin, nun in Rente
-- **Wohnort**: Demmin in Mecklenburg-Vorpommern , lebt in einem Einfamilienhaus mit Garten → Sollen 
+- **Wohnort**: Demmin in Mecklenburg-Vorpommern, lebt in einem Einfamilienhaus mit Garten 
 - **Krankenversichertennummer**: A1234567890
 - **Hobbys und Interessen**: Gartenarbeit, Spaziergänge, Treffen mit Freunden, Zeit mit den Enkeln verbringen
 - **Bezeichnung**: Primäre Gonarthrose
@@ -27,21 +27,21 @@ Laden Sie die json Datei mit dem Namen  [Condition-PrimaereGonarthrose_Ausschnit
 
 Die API Plattform Postman kann verwendet werden, um FHIR-Ressourcen zu senden und zu empfangen; er ist sowohl als Browser-Erweiterung als auch als App verfügbar. Mit einem Post-Client lassen sich Server-Anfragen über das Hypertext Transfer Protocol (HTTP) erstellen. FHIR liefert die Antwort als Rohdaten (XML oder JSON) an, daher ist ein HTTP-Client wie Postman notwendig, um die Daten abzurufen und anzuzeigen.
 
-Lade und installiere Postman oder greife über den Browser auf Postman zu und registriere dich. Alternative REST-Clients können auch verwendet werden, sofern die Teilnehmenden mit deren Handhabung vertraut sind. Die Erstellung eines Accounts ist nur bei der Nutzung der Browser-Erweiterung notwendig.
+Laden und installieren Sie Postman oder greifes Sie über den Browser auf Postman zu und registrieren Sie sich. Alternative REST-Clients können auch verwendet werden, sofern Sie mit deren Handhabung vertraut sind. Die Erstellung eines Accounts ist nur bei der Nutzung der Browser-Erweiterung notwendig.
 
-### Aufgabe 1: 
+### Aufgabe:
 
-Wir wollen nun verschiedene REST-Interaktionen üben. Dazu verwenden wir den Testserver **X**. Setze im Header-Tab von Postman den Accept-Header auf das gewünschte Antwortformat (*application/fhir+json*) und den Content-Type-Header auf das Format der gesendeten Daten (*application/fhir+json*), damit der Server die Inhalte richtig verarbeiten kann. Importiere folgende Collection in Postman und bearbeite dort die Aufgaben.
+Wir wollen nun verschiedene REST-Interaktionen üben. Dazu verwenden wir den Testserver **X**. Setzen Sie im Header-Tab von Postman den Accept-Header auf das gewünschte Antwortformat (*application/fhir+json*) und den Content-Type-Header auf das Format der gesendeten Daten (*application/fhir+json*), damit der Server die Inhalte richtig verarbeiten kann. Importieren Sie folgende Collection in Postman und bearbeiten Sie dort die Aufgaben.
 
-1. Erstelle das Patientenprofil von Frau Dr. Peters. Notiere dir die ID.
-2. Erstelle das Patientenprofil von Frau Müller. Notiere dir die ID.
-4. Erstelle nun eine Condition-Ressource in Postman für Primäre Gonarthrose für Frau Müller.
-5. Verwende die ID von Frau Müller, um ihr Patientenprofil zu erhalten.
-6. Frau Müller hat Herrn Maier geheiratet und seinen Nachnamen angenommen. Pass den Nachnamen im Patientenprofil an.
-7. Fordere eine Kurz-Zusammenfassung der Daten von Anna Maier an.
-8. Rufe die Historie der Ressource ab, die du in der vorherigen Übung erstellt hast
-9. Suche nach allen weiblichen Patientinnen, die älter als Anna Maier sind.
-10. Primäre Gonarthrose kann durch Übergewicht begünstigt werden. Suche nach allen Patientinnen, die einen BMI >30 haben.
-11. Kopiere das Patientenprofil von Frau Maier und erstelle damit ein neues Patientenprofil mit deinem Vor- und Nachnamen.
-12. Lösche nun das Patientenprofil mit deinem Namen wieder.
+1. Erstellen Sie das Patientenprofil von Frau Dr. Peters. Notieren Sie sich die ID.
+2. Erstellen Sie das Patientenprofil von Frau Müller. Notieren Sie sich die ID.
+4. Erstellen Sie nun eine Condition-Ressource in Postman für Primäre Gonarthrose für Frau Müller.
+5. Verwenden Sie die ID von Frau Müller, um ihr Patientenprofil zu erhalten.
+6. Frau Müller hat Herrn Maier geheiratet und seinen Nachnamen angenommen. Passen Sie den Nachnamen im Patientenprofil an.
+7. Forderen Sie eine Kurz-Zusammenfassung der Daten von Anna Maier an.
+8. Rufen Sie die Historie der Ressource ab, die du in der vorherigen Übung erstellt hast
+9. Suchen Sie nach allen weiblichen Patientinnen, die älter als Anna Maier sind.
+10. Primäre Gonarthrose kann durch Übergewicht begünstigt werden. Suchen Sie nach allen Patientinnen, die einen BMI >30 haben.
+11. Kopieren Sie das Patientenprofil von Frau Maier und erstellen Sie damit ein neues Patientenprofil mit Ihrem Vor- und Nachnamen.
+12. Löschen Sie nun das Patientenprofil mit Ihrem Namen wieder.
 
