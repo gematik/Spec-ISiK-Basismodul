@@ -5,7 +5,6 @@ Description: "Diese Profil ermöglicht die Nutzung von Prozedur-bezogenen Inform
 * insert Meta
 * obeys proc-ISiK-1 and proc-ISiK-2
 * . ^constraint[5].source = Canonical(ISiKProzedur)
-* id MS
 * extension MS
 * extension ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "url"

@@ -5,7 +5,6 @@ Description: "Dieses Profil beschreibt die Nutzung von administrativen Patienten
 * insert Meta
 * obeys isik-pat-1
 * . ^constraint[5].source = Canonical(ISiKPatient)
-* id 0..1 MS
 * identifier MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
@@ -35,6 +34,7 @@ Description: "Dieses Profil beschreibt die Nutzung von administrativen Patienten
     * identifier.value MS
     * display MS
 * active MS
+  * ^comment = "Einschränkung der Übergreifenden MS-Definition: Verfügt ein bestätigungsrelevantes System nicht über die Datenstruktur zur Hinterlegung des Aktivitätsstatus einer Patienten-Ressource, so MUSS dieses System die Information NICHT abbilden. Das System SOLL jedoch den Aktivitätsstatus hart kodieren in der Patienteninstanz (Patient.active auf 'true'), sodass Clients nicht missverständlich mit einer inaktiven Patient-Ressource interagieren."
 * name MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"

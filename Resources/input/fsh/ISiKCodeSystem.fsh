@@ -3,7 +3,6 @@ Parent: CodeSystem
 Id: ISiKCodeSystem
 Description: "Dieses Profil beschreibt die maschinenlesbare Repräsentation von system-sepzifischen Kodierungen in ISiK-Szenarien"
 * insert Meta
-* id 1.. MS
 * url 1.. MS
 * version 1.. MS
 * name 1.. MS

@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKBerichtSubSysteme",
   "url": "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKBerichtSubSysteme",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "name": "ISiKBerichtSubSysteme",
   "status": "active",
   "experimental": false,
-  "date": "2024-04-30",
+  "date": "2024-11-19",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Krankenhaus-interne Übermittlung eines Berichtes in Form eines Dokumentes, die in ISiK Szenarien von Subsystemen an Primärsysteme gesendet werden.",
   "fhirVersion": "4.0.1",
@@ -17,11 +17,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Composition.id",
-        "path": "Composition.id",
-        "mustSupport": true
-      },
       {
         "id": "Composition.text",
         "path": "Composition.text",

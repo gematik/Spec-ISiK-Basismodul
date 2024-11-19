@@ -5,7 +5,6 @@ Description: "Dieses Profil erm√∂glicht die Nutzung von in Gesundheitsberufen t√
 * insert Meta
 * obeys prac-de-1
 * . ^constraint[5].source = Canonical(ISiKPersonImGesundheitsberuf)
-* id MS
 * identifier 1.. MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"

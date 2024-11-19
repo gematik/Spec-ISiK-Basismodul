@@ -7,7 +7,6 @@ Description: "Dieses Profil beschreibt die Gruppierung von medizinischen Leistun
 * extension contains http://fhir.de/StructureDefinition/ExtensionAbrechnungsDiagnoseProzedur named AbrechnungsDiagnoseProzedur 0..* MS
 * extension[AbrechnungsDiagnoseProzedur]
   * ^comment = "In dieser Extension SOLL das 'Use' Element nur einfach verwendet werden, um eine eindeutige Zuweisung (1 zu N) gegenüber dem Element 'Referenz' zu gewährleisten."
-* id MS
 * identifier 1.. MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"

@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKKontaktGesundheitseinrichtung",
   "url": "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKKontaktGesundheitseinrichtung",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "name": "ISiKKontaktGesundheitseinrichtung",
   "status": "active",
   "experimental": false,
-  "date": "2024-04-30",
+  "date": "2024-11-19",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Herstellung eines Fallbezuges welcher in der Mehrheit der ISiK Szenarien im Krankenhaus essentiell ist.",
   "fhirVersion": "4.0.1",
@@ -78,11 +78,6 @@
             "source": "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKKontaktGesundheitseinrichtung"
           }
         ]
-      },
-      {
-        "id": "Encounter.id",
-        "path": "Encounter.id",
-        "mustSupport": true
       },
       {
         "id": "Encounter.extension",

@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKPersonImGesundheitsberuf",
   "url": "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "name": "ISiKPersonImGesundheitsberuf",
   "status": "active",
   "experimental": false,
-  "date": "2024-04-30",
+  "date": "2024-11-19",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Nutzung von in Gesundheitsberufen tätigen Personen in ISiK Szenarien.",
   "fhirVersion": "4.0.1",
@@ -29,11 +29,6 @@
             "source": "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf"
           }
         ]
-      },
-      {
-        "id": "Practitioner.id",
-        "path": "Practitioner.id",
-        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier",
@@ -423,6 +418,20 @@
         "id": "Practitioner.gender",
         "path": "Practitioner.gender",
         "mustSupport": true
+      },
+      {
+        "id": "Practitioner.gender.extension",
+        "path": "Practitioner.gender.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "Practitioner.gender.extension:Geschlecht-Administrativ",

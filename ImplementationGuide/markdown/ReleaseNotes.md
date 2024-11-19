@@ -4,11 +4,18 @@ Im Rahmen der ISiK-Veröffentlichungen wird das [Semantic Versioning](https://se
 
 Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.
 
+----
+
 Version: 3.0.6
 
-Datum: t.b.d
+Datum: 19.11.2024
 
+* Schwächung der Anforderungen für Suchparameter https://github.com/gematik/spec-ISiK-Basismodul/pull/456
 * Lockerung der Anforderung für MS-Definition und Suchparameter zu Condition.clinicalStatus (entspricht Änderungen in 4.0.0-rc3 und 2.0.7) https://github.com/gematik/spec-ISiK-Basismodul/pull/428
+* Entfernen der MS-Flag für .id, da irreführend (entspricht Änderungen in 4.0.0) https://github.com/gematik/spec-ISiK-Basismodul/pull/468
+* Anpassung der Kardinalität für Account.coverage.extension:Abrechnungsart https://github.com/gematik/spec-ISiK-Basismodul/pull/464
+* Klarstellung zu Patient.active aus Stufe 4 übernommen https://github.com/gematik/spec-ISiK-Basismodul/pull/480
+* Update UebergreifendeFestlegungen_Rest.md https://github.com/gematik/spec-ISiK-Basismodul/pull/472
 
 ----
 

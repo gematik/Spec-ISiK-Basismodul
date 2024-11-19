@@ -6,11 +6,11 @@
       "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKCodeSystem"
     ]
   },
-  "version": "3.0.5",
+  "version": "3.0.6",
   "status": "active",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-04-30",
+  "date": "2024-11-19",
   "url": "http://example.org/fhir/CodeSystem/TestKatalog",
   "name": "TestKatalog",
   "content": "complete",
