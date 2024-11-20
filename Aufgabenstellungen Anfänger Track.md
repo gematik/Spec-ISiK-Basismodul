@@ -36,13 +36,12 @@ Wir wollen nun verschiedene REST-Interaktionen üben. Dazu verwenden wir den Tes
 1. Erstellen Sie das Patientenprofil von Frau Dr. Peters. Notieren Sie sich die ID.
 2. Erstellen Sie das Patientenprofil von Frau Müller. Notieren Sie sich die ID.
 4. Erstellen Sie nun eine Condition-Ressource in Postman für Primäre Gonarthrose für Frau Müller.
-5. Verwenden Sie die ID von Frau Müller, um ihr Patientenprofil zu erhalten.
-6. Frau Müller hat Herrn Maier geheiratet und seinen Nachnamen angenommen. Passen Sie den Nachnamen im Patientenprofil an.
-7. Forderen Sie eine Kurz-Zusammenfassung der Daten von Anna Maier an.
-8. Rufen Sie die Historie der Ressource ab, die du in der vorherigen Übung erstellt hast
-9. Suchen Sie nach allen weiblichen Patientinnen, die älter als Anna Maier sind.
-10. Lassen Sie sich genau fünf Patient:innen ausgeben.
-11. Lassen Sie sich die Anzahl aller Patient:innen auf dem Server zurück geben.
-12. Kopieren Sie das Patientenprofil von Frau Maier und erstellen Sie damit ein neues Patientenprofil mit Ihrem Vor- und Nachnamen.
-13. Löschen Sie nun das Patientenprofil mit Ihrem Namen wieder.
+5. Frau Müller hat Herrn Maier geheiratet und seinen Nachnamen angenommen. Passen Sie den Nachnamen im Patientenprofil an.
+6. Forderen Sie eine Kurz-Zusammenfassung der Daten von Anna Maier an.
+7. Rufen Sie die Historie der Ressource ab, die du in der vorherigen Übung erstellt hast
+8. Suchen Sie nach allen weiblichen Patientinnen, die älter als Anna Maier sind.
+9. Lassen Sie sich genau fünf Patient:innen ausgeben.
+10. Lassen Sie sich die Anzahl aller Patient:innen auf dem Server zurück geben.
+11. Kopieren Sie das Patientenprofil von Frau Maier und erstellen Sie damit ein neues Patientenprofil mit Ihrem Vor- und Nachnamen.
+12. Löschen Sie nun das Patientenprofil mit Ihrem Namen wieder.
 
