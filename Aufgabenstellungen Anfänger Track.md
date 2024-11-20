@@ -41,7 +41,8 @@ Wir wollen nun verschiedene REST-Interaktionen üben. Dazu verwenden wir den Tes
 7. Forderen Sie eine Kurz-Zusammenfassung der Daten von Anna Maier an.
 8. Rufen Sie die Historie der Ressource ab, die du in der vorherigen Übung erstellt hast
 9. Suchen Sie nach allen weiblichen Patientinnen, die älter als Anna Maier sind.
-10. Primäre Gonarthrose kann durch Übergewicht begünstigt werden. Suchen Sie nach allen Patientinnen, die einen BMI >30 haben.
-11. Kopieren Sie das Patientenprofil von Frau Maier und erstellen Sie damit ein neues Patientenprofil mit Ihrem Vor- und Nachnamen.
-12. Löschen Sie nun das Patientenprofil mit Ihrem Namen wieder.
+10. Lassen Sie sich genau fünf Patient:innen ausgeben.
+11. Lassen Sie sich die Anzahl aller Patient:innen auf dem Server zurück geben.
+12. Kopieren Sie das Patientenprofil von Frau Maier und erstellen Sie damit ein neues Patientenprofil mit Ihrem Vor- und Nachnamen.
+13. Löschen Sie nun das Patientenprofil mit Ihrem Namen wieder.
 
