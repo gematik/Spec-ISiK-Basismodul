@@ -2,7 +2,7 @@ Profile: ISiKCodeSystem
 Parent: CodeSystem
 Id: ISiKCodeSystem
 Description: "Dieses Profil beschreibt die maschinenlesbare Repräsentation von 
-system-sepzifischen Kodierungen in ISiK-Szenarien.  
+system-spezifischen Kodierungen in ISiK-Szenarien.  
 
 ### Motivation
 
@@ -17,11 +17,11 @@ Darüber hinausgehend ist ein Use Case im Kontext der Katalogabfrage folgender: 
 * url 1.. MS
   * ^short = "Kanonische URL"
   * ^comment = "**Bedeutung:** Eindeutige Url zur Identifizierung des CodeSystems. Absolute Url sind zu bevorzugen.  
-    **Hinweise:** OIDs SOLLTEN als weitere Identifier des CodeSystems verwendet werden. In jedem Fall SOLLTE ein Canonical Url vergeben werden."
+    **Hinweise:** OIDs SOLLTEN als weitere Identifier des CodeSystems verwendet werden. In jedem Fall SOLLTE eine Canonical Url vergeben werden."
 * version 1.. MS
   * ^short = "Version"
   * ^comment = "**Bedeutung:** Version des CodeSystems  
-    **Hinweise:** Jede Änderung des CodeSystems MUSS eine Änderung in der Version des CodeSystems und gebundenen ValueSets nach sich ziehen. Die Versionierung SOLLTE auf Basis von [Semantic Versioning](https://semver.org) basieren."
+    **Hinweise:** Jede Änderung des CodeSystems MUSS eine Änderung in der Version des CodeSystems und gebundenen ValueSets nach sich ziehen. Die Versionierung SOLLTE auf dem Konzept von [Semantic Versioning](https://semver.org) basieren."
 * name 1.. MS
   * ^short = "Name des Codesystems"
   * ^comment = "**Bedeutung:** Maschinenlesbarer Name des CodeSystems  
