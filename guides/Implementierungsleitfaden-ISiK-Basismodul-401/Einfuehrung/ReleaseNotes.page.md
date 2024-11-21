@@ -18,6 +18,8 @@ https://github.com/gematik/spec-ISiK-Basismodul/issues/438
 * `fixed` Anpassung der include/revinclude Anforderungen in den übergreifenden Festelegungen und dem CapabilityStatement
 * `fixed` CodeSystem-Ressource wird im CapabilityStatement nun korrekt angezeigt
 https://github.com/gematik/spec-ISiK-Basismodul/issues/436
+* `fixed` CapabilityStatement *near* SearchParameter type & ResourceType Organization spelling, removed custom backport Extension - switched to the official backport mechanism, fixed Bindings to CodeSystems    https://github.com/gematik/spec-ISiK-Basismodul/commit/ae706142832e2059046ce978c4b0dc472c2375e6
+* `improved` Hinweis zur Handhabung von leeren Elementen und einem :not-Modifier hinzugefügt https://github.com/gematik/spec-ISiK-Basismodul/pull/473 obsoleter PR, dafür umgesetzt hier: https://github.com/gematik/spec-ISiK-Basismodul/commit/e63cc68d311057f7b30b5b405c5533bef41e9d68
 
 ## Version: 4.0.0
 
