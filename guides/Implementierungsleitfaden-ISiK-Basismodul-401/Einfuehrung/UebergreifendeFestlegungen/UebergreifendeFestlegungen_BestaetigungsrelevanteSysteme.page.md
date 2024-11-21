@@ -245,4 +245,4 @@ Tabellarisch gelistet wird hier die Bestätigungsrelevanz in Bezug auf die zuvor
 
 # Festlegungen auf Profilebene im CapabilityStatement
 
-Festlegungen zu Anforderungen auf Profilebene werden unter {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}} geführt.
+Festlegungen zu Anforderungen auf Profilebene werden unter {{pagelink:guides\Implementierungsleitfaden-ISiK-Basismodul-401\Einfuehrung\Datenobjekte\CapabilityStatement.page.md}} geführt.

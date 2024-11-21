@@ -20,7 +20,7 @@ Der Fall, im Sinne einer Gruppierung von medizinischen Leistungen, die in einem 
 Der medizinische Fall gruppiert Informationen, die im Kontext einer gemeinsamen (Dauer-)Diagnose stehen und wird in FHIR durch die EpisodeOfCare dargestellt.
 {{render:Material/Images/Encounter/Encounter-Modell-Medizinisch.png}}
 
-Wichtig ist die Herausstellung, dass "Besuch" und "Fall" wechselseitig keine synonyme Begriffe sind. 
+Wichtig ist die Herausstellung, dass "Besuch" und "Fall" wechselseitig keine synonymen Begriffe sind. 
 
 ---
 
