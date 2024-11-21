@@ -114,7 +114,7 @@ Folgende Suchparameter MÜSSEN für alle bestätigungsrelevanten Datenobjekte im
     - Beispiele: ``GET [base]/Patient?_count=100``
     - Anwendungshinweise: Weitere Informationen zur Suche nach "_count" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Page Count"](https://www.hl7.org/fhir/R4/search.html#count).
 
-    Hieraus ergibt sich, dass durch ein [Paging entsprechend der FHIR-Kernspezifikation](https://www.hl7.org/fhir/R4/http.html#paging) unterstützt werden MUSS.
+    Hieraus ergibt sich, dass durch [Paging entsprechend der FHIR-Kernspezifikation](https://www.hl7.org/fhir/R4/http.html#paging) unterstützt werden MUSS.
     Für die URIs in den Link-Relationen "first", "last", "next", sowie "prev" MUSS sichergestellt werden, dass NICHT die ursprünglich verwendeten Suchparameter, sowie anderweitig sensitive Informationen enthalten, welche in der Suchanfrage an das bestätigungsrelevante System versendet wurden.
     Der "self"-Link innerhalb des Such-Bundles MUSS entsprechend der Vorgaben aus [FHIR Kernspezifikation - 3.1.1.6 - Server Conformance](https://www.hl7.org/fhir/R4/search.html#conformance) strukturiert sein.
 
