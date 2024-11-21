@@ -90,7 +90,7 @@ Datum: 1.3.2024
 
 
 ----
-Version: 3.0.3
+## Version: 3.0.3
 
 Datum: 15.01.2024
 
@@ -99,7 +99,7 @@ Datum: 15.01.2024
 **Full Changelog**: https://github.com/gematik/spec-ISiK-Basismodul/compare/v.3.0.2...v.3.0.3
 
 ----
-Version: 3.0.2
+## Version: 3.0.2
 
 Datum: 09.01.2024
 
@@ -108,7 +108,7 @@ Datum: 09.01.2024
 **Full Changelog**: https://github.com/gematik/spec-ISiK-Basismodul/compare/v.3.0.1...v.3.0.2
 
 ----
-Version: 3.0.1
+## Version: 3.0.1
 
 Datum: 05.12.2023
 
@@ -125,14 +125,14 @@ Datum: 05.12.2023
 **Full Changelog**: https://github.com/gematik/spec-ISiK-Basismodul/compare/v.3.0.0...v.3.0.1
 
 ----
-Version: 3.0.0
+## Version: 3.0.0
 
 Datum: 01.07.2023
 
 * Mit dem Release der Stufe 3.0.0 werden die unten gelisteten Änderungen normativ festgesetzt.
 
 ----
-Version: 3.0.0-rc3
+## Version: 3.0.0-rc3
 
 Datum: 30.05.2023
 
@@ -158,7 +158,7 @@ Datum: 30.05.2023
   * update Reference - Kommentierung Stufe 3 by @f-peverali in https://github.com/gematik/spec-ISiK-Basismodul/pull/256
 
 ----
-Version: 3.0.0-rc2
+## Version: 3.0.0-rc2
 
 Datum: 03.04.2023
 
@@ -166,7 +166,7 @@ Datum: 03.04.2023
   * feat: Encounter.date start/end SearchParameters backported from R5, e… by @patrick-werner in <https://github.com/gematik/spec-ISiK-Basismodul/pull/242>
 
 ----
-Version: 3.0.0-rc1
+## Version: 3.0.0-rc1
 
 Datum: 31.03.2023
 
@@ -180,7 +180,7 @@ Datum: 31.03.2023
 **Full Changelog**: <https://github.com/gematik/spec-ISiK-Basismodul/compare/master-isik-stufe-2...main-isik-stufe-3-rc>
 
 ----
-Version: 2.0.5
+## Version: 2.0.5
 
 Datum: 24.03.2023
 
@@ -193,7 +193,7 @@ Datum: 24.03.2023
   - Fixed identifier-Slicing of Type VersichertenId-GKV
 
 ----
-Version: 2.0.4
+## Version: 2.0.4
 
 Datum: 31.01.2023
 
@@ -203,7 +203,7 @@ Datum: 31.01.2023
 - weitere Änderungen an Implementierungsleitfaeden (informativ)
 
 ----
-Version: 2.0.3
+## Version: 2.0.3
 
 Datum: 21.12.2022
 
@@ -218,7 +218,7 @@ Datum: 21.12.2022
 
 
 ----
-Version: 2.0.2
+## Version: 2.0.2
 
 Datum: 31.10.2022
 
@@ -238,7 +238,7 @@ Datum: 31.10.2022
 - Invarianten wurden verbessert
 
 ----
-Version: 2.0.1
+## Version: 2.0.1
 
 Datum: 30.09.2022
 
@@ -258,7 +258,7 @@ Datum: 30.09.2022
   * .type und .status ist nun Must Support
 
 ----
-Version: 2.0.0
+## Version: 2.0.0
 
 Datum: 30.06.2022
 
@@ -303,7 +303,7 @@ Datum: 30.06.2022
     * Must-Support-Flag entfernt auf Element "Encounter.partOf"
 
 ----
-Version: 2.0.0-ballot
+## Version: 2.0.0-ballot
 
 Datum: 08.04.2022
 
