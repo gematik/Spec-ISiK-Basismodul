@@ -80,6 +80,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
 * subject only Reference(Patient)
 * subject 1..1 MS
   * ^short = "Patientenbezug"
+  * ^comment = "**Begründung Pflichtfeld:** Ein Patientenbezug des Falls muss stets zum Zwecke der Nachvollziehbarkeit und Datenintegrität vorliegen."
   * reference 1.. MS
     * ^short = "Patienten-Link"
     * ^comment = "**Begründung Pflichtfeld:** Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten 
