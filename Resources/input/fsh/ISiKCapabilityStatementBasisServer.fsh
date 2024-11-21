@@ -7,7 +7,7 @@ Usage: #definition
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.gematik.de"
 * description = 
-  "Dieses CapabilityStatement beschreibt alle Interaktionen 
+  "Dieses CapabilityStatement beschreibt alle Interaktionen, 
   die ein ISiK-konformes System unterstützen MUSS bzw. KANN,
   um das Bestätigungsverfahren für dieses Modul zu bestehen.   
 
