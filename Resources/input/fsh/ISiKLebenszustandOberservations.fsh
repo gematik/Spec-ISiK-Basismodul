@@ -15,7 +15,7 @@ Dieses Profil ist eine generische, ISiK-spezifische Observation für die Abbildu
 Die folgenden Profile vom Typ `Observation` sind spezifische Profile im oben genannten Sinn:  
 * {{pagelink:Schwangerschaftsstatus-Profil}}
 * {{pagelink:ErwarteterEntbindungstermin-Profil}}
-* {{pagelink:StillstatusBeispiel-Profil}} 
+* {{pagelink:Stillstatus-Profil}} 
 * {{pagelink:AlkoholAbusus-Profil}} 
 * {{pagelink:RaucherStatus-Profil}} 
 
