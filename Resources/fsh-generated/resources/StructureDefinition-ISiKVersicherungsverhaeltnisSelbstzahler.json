@@ -70,7 +70,7 @@
         "id": "Coverage.payor",
         "path": "Coverage.payor",
         "short": "Kostenträger",
-        "comment": "Der Kostenträger in einem Selbstzahlerverhältnis kann der Patient selbst sein, ein Angehöriger (z.B. Elter) oder eine Organisation (z.B. Botschaft/Amt).\n  **Hinweis:** In der Regel sind `payor`und `subscriber` bei Selbstzahlerverhältnissen identisch (die Person , die die Kostenübernahme unterschreibt/zusichert, übernimmt auch die Kosten).\n  Es kann jedoch Ausnahmen geben, z.B. der Kostenträger ist eine Organisation, die Kostenübernahme wird jedoch durch eine Person (Vertreter der Organisation) unterzeichnet.",
+        "comment": "Der Kostenträger in einem Selbstzahlerverhältnis kann der Patient selbst sein, ein Angehöriger (z.B. Eltern) oder eine Organisation (z.B. Botschaft/Amt).\n  **Hinweis:** In der Regel sind `payor`und `subscriber` bei Selbstzahlerverhältnissen identisch (die Person , die die Kostenübernahme unterschreibt/zusichert, übernimmt auch die Kosten).\n  Es kann jedoch Ausnahmen geben, z.B. der Kostenträger ist eine Organisation, die Kostenübernahme wird jedoch durch eine Person (Vertreter der Organisation) unterzeichnet.",
         "type": [
           {
             "code": "Reference",
