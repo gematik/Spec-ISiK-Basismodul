@@ -4,7 +4,7 @@ expand: 4
 ---
 ### Beispiele
 
-### Valides Minimalbeispiel Patient
+Beispiel einer Diagnose
 
 <tabs>
     <tab title="Übersicht">      
