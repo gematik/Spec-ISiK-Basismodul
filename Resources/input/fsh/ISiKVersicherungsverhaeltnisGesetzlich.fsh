@@ -86,7 +86,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
 * payor ..1 MS
 * payor only Reference(Organization)
   * ^short = "Kostenträger"
-  * ^comment = "Die Angabe der IK-Nummer in `payor.dentifier` sowie des Namens der Versicherung in `payor.display` ist zwingend erforderlich.  
+  * ^comment = "Die Angabe der IK-Nummer in `payor.identifier` sowie des Namens der Versicherung in `payor.display` ist zwingend erforderlich.  
   Die Referenz auf eine Resource vom Typ `Organization` in `payor.reference`, die weitere Details zur Versicherung enthalten kann (z.B. Adresse, Kontaktdaten) ist optional.  
 
   Die Angabe der IK-Nummer des Versicherers in payor.identifier ist verpflichtend. 
