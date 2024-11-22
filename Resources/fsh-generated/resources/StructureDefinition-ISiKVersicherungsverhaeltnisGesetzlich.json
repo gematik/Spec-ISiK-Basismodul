@@ -107,7 +107,7 @@
         "id": "Coverage.payor",
         "path": "Coverage.payor",
         "short": "Kostenträger",
-        "comment": "Die Angabe der IK-Nummer in `payor.dentifier` sowie des Namens der Versicherung in `payor.display` ist zwingend erforderlich.  \n  Die Referenz auf eine Resource vom Typ `Organization` in `payor.reference`, die weitere Details zur Versicherung enthalten kann (z.B. Adresse, Kontaktdaten) ist optional.  \n\n  Die Angabe der IK-Nummer des Versicherers in payor.identifier ist verpflichtend. \n  Weitere Angaben zum Versicherer (Name, Adresse) können in einer Organization-Resource hinterlegt werden, auf die hier referenziert wird.",
+        "comment": "Die Angabe der IK-Nummer in `payor.identifier` sowie des Namens der Versicherung in `payor.display` ist zwingend erforderlich.  \n  Die Referenz auf eine Resource vom Typ `Organization` in `payor.reference`, die weitere Details zur Versicherung enthalten kann (z.B. Adresse, Kontaktdaten) ist optional.  \n\n  Die Angabe der IK-Nummer des Versicherers in payor.identifier ist verpflichtend. \n  Weitere Angaben zum Versicherer (Name, Adresse) können in einer Organization-Resource hinterlegt werden, auf die hier referenziert wird.",
         "max": "1",
         "type": [
           {
