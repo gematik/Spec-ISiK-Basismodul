@@ -58,7 +58,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
 * payor only Reference(Patient or RelatedPerson or Organization)
 * payor MS
   * ^short = "Kostenträger"
-  * ^comment = "Der Kostenträger in einem Selbstzahlerverhältnis kann der Patient selbst sein, ein Angehöriger (z.B. Elter) oder eine Organisation (z.B. Botschaft/Amt).
+  * ^comment = "Der Kostenträger in einem Selbstzahlerverhältnis kann der Patient selbst sein, ein Angehöriger (z.B. Eltern) oder eine Organisation (z.B. Botschaft/Amt).
   **Hinweis:** In der Regel sind `payor`und `subscriber` bei Selbstzahlerverhältnissen identisch (die Person , die die Kostenübernahme unterschreibt/zusichert, übernimmt auch die Kosten).
   Es kann jedoch Ausnahmen geben, z.B. der Kostenträger ist eine Organisation, die Kostenübernahme wird jedoch durch eine Person (Vertreter der Organisation) unterzeichnet."
   * reference MS
