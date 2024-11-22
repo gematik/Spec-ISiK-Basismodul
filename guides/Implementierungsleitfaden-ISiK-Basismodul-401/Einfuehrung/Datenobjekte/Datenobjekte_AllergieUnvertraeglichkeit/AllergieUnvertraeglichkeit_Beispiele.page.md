@@ -4,7 +4,8 @@ expand: 4
 ---
 ## Beispiele
 
-### valides Minmalbeispiel
+Beispiel Allergie/Unverträglichkeit:
+
 <tabs>
     <tab title="Übersicht">      
         {{render:Resources/fsh-generated/resources/AllergyIntolerance-ISiKAllergieUnvertraeglichkeitBeispiel1.json}}

@@ -11,9 +11,9 @@ Motivierender Use-Case zur Einführung dieser Profile ist die [Arzneitmittelther
 
 In FHIR werden Untersuchungen, bzw. Beobachtungen als [`Observation`](https://hl7.org/fhir/R4/observation.html)-Ressource repräsentiert.
 
-Dieses Profil ist eine generische, ISiK-spezifische Observation für die Abbildung von Lebenszuständen}}.  
+Dieses Profil ist eine generische, ISiK-spezifische Observation für die Abbildung von Lebenszuständen.  
 Die folgenden Profile vom Typ `Observation` sind spezifische Profile im oben genannten Sinn:  
-* {{pagelink:Schwangerschaftsstatus-Profil-Profil}}
+* {{pagelink:Schwangerschaftsstatus-Profil}}
 * {{pagelink:ErwarteterEntbindungstermin-Profil}}
 * {{pagelink:StillstatusBeispiel-Profil}} 
 * {{pagelink:AlkoholAbusus-Profil}} 

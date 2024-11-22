@@ -1,6 +1,6 @@
 ---
 topic: StillstatusBeispiel-Profil
-canonical: https://gematik.de/fhir/isik/StructureDefinition/ISiKStillstatusBeispiel
+canonical: https://gematik.de/fhir/isik/StructureDefinition/ISiKStillstatus
 ---
 ## {{link}}
 
