@@ -23,7 +23,7 @@ Für den Transport wird die Composition zusammen mit allen direkt oder indirekt 
 Das Document-Bundle trägt alle Eigenschaften eines Dokumentes: Abgeschlossenheit, Unveränderbarkeit, Signierbarkeit.  
 
 Es obliegt dem empfangenden System, ob dieses Dokument lediglich in seiner Gesamtheit persistiert wird, oder ob darüber hinaus einzelne Bestandteile (Ressourcen) 
-als strukturierte Daten automatisch oder auf Veranlsassung eines Benutzers in die Patientenakte übernommen werden. 
+als strukturierte Daten automatisch oder auf Veranlassung eines Benutzers in die Patientenakte übernommen werden. 
 
 In der aktuellen Ausbaustufe von ISiK ist lediglich die Übernahme und Anzeige der Dokument-Metadaten (z.B. Dokumenttyp, Dokumentdatum, Quelle) und der menschenlesbaren HTML-Repräsentation in die Primärsysteme erforderlich.  
 
