@@ -79,6 +79,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * code 1..
 * subject MS
   * ^short = "Patientenbezug"
+  * ^comment = "**Begründung Must-Support:** Ein Patientenbezug der Diagnose MUSS stets zum Zwecke der Nachvollziehbarkeit und Datenintegrität vorliegen."
   * reference 1.. MS
     * ^short = "Patienten-Link"
     * ^comment = "Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation 
