@@ -31,7 +31,7 @@ Laden und installieren Sie Postman oder greifes Sie über den Browser auf Postma
 
 ### Aufgabe:
 
-Wir wollen nun verschiedene REST-Interaktionen üben. Dazu verwenden wir den Testserver **X**. Setzen Sie im Header-Tab von Postman den Accept-Header auf das gewünschte Antwortformat (*application/fhir+json*) und den Content-Type-Header auf das Format der gesendeten Daten (*application/fhir+json*), damit der Server die Inhalte richtig verarbeiten kann. Importieren Sie folgende Collection in Postman und bearbeiten Sie dort die Aufgaben.
+Wir wollen nun verschiedene REST-Interaktionen üben. Dazu verwenden wir den Testserver **https://fhir.echinos.eu/fhir**. Setzen Sie im Header-Tab von Postman den Accept-Header auf das gewünschte Antwortformat (*application/fhir+json*) und den Content-Type-Header auf das Format der gesendeten Daten (*application/fhir+json*), damit der Server die Inhalte richtig verarbeiten kann. Importieren Sie folgende Collection in Postman und bearbeiten Sie dort die Aufgaben.
 
 1. Erstellen Sie das Patientenprofil von Frau Dr. Peters. Notieren Sie sich die ID. Die Instanz befindet sich bereits im Body der gelieferten Postman-Collection
 2. Erstellen Sie das Patientenprofil von Frau Müller. Notieren Sie sich die ID.
