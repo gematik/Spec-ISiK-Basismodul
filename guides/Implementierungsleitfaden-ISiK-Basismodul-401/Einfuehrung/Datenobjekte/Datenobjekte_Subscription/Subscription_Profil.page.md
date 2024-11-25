@@ -57,7 +57,7 @@ where
 for 
     differential.element
     where 
-        mustSupport = true and binding.exists()
+        binding.exists()
     select
         Element: id, Staerke: binding.strength, ValueSet: binding.valueSet
 </fql>
