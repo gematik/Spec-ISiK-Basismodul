@@ -5,6 +5,7 @@
   "name": "ISiKUnterbrechnungReha",
   "id": "ISiKUnterbrechnungRehaCS",
   "description": "ISiK Unterbrechung Reha. Dokumentiert die relevanten Gründe einer Unterbrechung einer Rehabilitationsmaßnahme im Einzelfall. Vgl. Schlüsseltabelle 2.111 Erläuterung zur Unterbrechung.",
+  "version": "4.0.0",
   "url": "https://gematik.de/fhir/isik/CodeSystem/ISiKUnterbrechnungRehaCS",
   "concept": [
     {
@@ -36,7 +37,6 @@
       "display": "Sonstiger Grund, der zur Unterbrechung der Pflegekosten führt"
     }
   ],
-  "version": "4.0.0",
   "experimental": false,
   "publisher": "gematik GmbH",
   "date": "2024-08-30",

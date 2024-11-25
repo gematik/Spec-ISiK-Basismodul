@@ -5,6 +5,7 @@
   "name": "ISiKBehandlungsergebnisReha",
   "id": "ISiKBehandlungsergebnisRehaCS",
   "description": "Behandlungsergebnis Reha gemäß §301(4 UND 4A) SGB V. Diagnosenbezogene Bewertung des Behandlungsergebnisses für einen Versicherten/Berechtigten bei Entlassung aus der Reha-Maßnahme bzw. Stellung eines Antrags auf Verlängerung. Vgl. Schlüsseltabelle 2.71 Diagnose - Behandlungsergebnis.",
+  "version": "4.0.0",
   "url": "https://gematik.de/fhir/isik/CodeSystem/ISiKBehandlungsergebnisRehaCS",
   "concept": [
     {
@@ -24,7 +25,6 @@
       "display": "verschlechtert"
     }
   ],
-  "version": "4.0.0",
   "experimental": false,
   "publisher": "gematik GmbH",
   "date": "2024-08-30",

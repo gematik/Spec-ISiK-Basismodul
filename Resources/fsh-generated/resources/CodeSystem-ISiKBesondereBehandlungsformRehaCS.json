@@ -5,6 +5,7 @@
   "name": "ISiKBesondereBehandlungsformReha",
   "id": "ISiKBesondereBehandlungsformRehaCS",
   "description": "Besondere Behandlungsform der Reha gemäß §301(4 UND 4A) SGB V. Vgl. Schlüsseltabelle 2.51 Besondere Behandlungsformen.",
+  "version": "4.0.0",
   "url": "https://gematik.de/fhir/isik/CodeSystem/ISiKBesondereBehandlungsformRehaCS",
   "concept": [
     {
@@ -31,7 +32,6 @@
       "display": "sonstige"
     }
   ],
-  "version": "4.0.0",
   "experimental": false,
   "publisher": "gematik GmbH",
   "date": "2024-08-30",
