@@ -1,0 +1,47 @@
+{
+  "resourceType": "Patient",
+  "id": "SZ1Patient",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "MR",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "system": "http://beispiel-krankenhaus.de/sid/Patienten",
+      "value": "12345"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "KVZ10",
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+          }
+        ]
+      },
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "value": "A123456789"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Musterfrau",
+      "given": [
+        "Töchterchen"
+      ]
+    }
+  ],
+  "active": true,
+  "gender": "female",
+  "birthDate": "2010-01-01"
+}

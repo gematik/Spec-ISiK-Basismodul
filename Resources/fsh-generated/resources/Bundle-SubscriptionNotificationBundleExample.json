@@ -45,7 +45,7 @@
               },
               {
                 "name": "timestamp",
-                "valueDate": "2024-02-22"
+                "valueInstant": "2024-02-22T18:30:05+01:00"
               },
               {
                 "name": "focus",
@@ -56,10 +56,17 @@
             ]
           }
         ]
+      },
+      "request": {
+        "method": "GET",
+        "url": "https://gematik.de/fhir/isik/SubscriptionTopic/patient-merge/$status"
+      },
+      "response": {
+        "status": "200"
       }
     },
     {
-      "fullUrl": "http://example.com/fhir/Patient/DorisQuelle/_history/2",
+      "fullUrl": "http://example.org/fhir/Patient/DorisQuelle",
       "resource": {
         "resourceType": "Patient",
         "id": "DorisQuelle",
@@ -109,7 +116,10 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/DorisQuelle"
+        "url": "Patient"
+      },
+      "response": {
+        "status": "201"
       }
     }
   ]

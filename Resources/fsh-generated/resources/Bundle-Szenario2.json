@@ -1,0 +1,322 @@
+{
+  "resourceType": "Bundle",
+  "id": "Szenario2",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "SZ2Patient",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://beispiel-krankenhaus.de/sid/Patienten",
+            "value": "222222"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "KVZ10",
+                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+                }
+              ]
+            },
+            "system": "http://fhir.de/sid/gkv/kvid-10",
+            "value": "A222222222"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Musterfrau",
+            "given": [
+              "Friedlinde"
+            ]
+          }
+        ],
+        "active": true,
+        "gender": "female",
+        "birthDate": "1924-01-01"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "SZ2Primaerdiagnose",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen",
+                  "valueCoding": {
+                    "code": "†",
+                    "system": "http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen"
+                  }
+                }
+              ],
+              "code": "E10.30",
+              "display": "Diabetes mellitus",
+              "version": "2024"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SZ2Patient"
+        },
+        "encounter": {
+          "reference": "Encounter/SZ2Encounter"
+        },
+        "recordedDate": "2024-11-05"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "SZ2Sekundaerdiagnose",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen",
+                  "valueCoding": {
+                    "code": "*",
+                    "system": "http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen"
+                  }
+                }
+              ],
+              "code": "H36.0",
+              "display": "Retinopathia diabetica",
+              "version": "2024"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+            "valueReference": {
+              "reference": "Condition/SZ2Primaerdiagnose"
+            }
+          }
+        ],
+        "subject": {
+          "reference": "Patient/SZ2Patient"
+        },
+        "encounter": {
+          "reference": "Encounter/SZ2Encounter"
+        },
+        "recordedDate": "2024-11-05"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "SZ2Encounter",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung"
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "abteilungskontakt",
+                "system": "http://fhir.de/CodeSystem/Kontaktebene"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://fhir.de/CodeSystem/kontaktart-de",
+                "code": "stationaer",
+                "display": "Stationär"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "VN",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://beispiel-krankenhaus.de/sid/besuchsnummer",
+            "value": "222222222-2"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "Patient/SZ2Patient"
+        },
+        "period": {
+          "start": "2024-10-07",
+          "end": "2024-10-10"
+        },
+        "account": [
+          {
+            "reference": "Account/SZ2DRGFall",
+            "identifier": {
+              "system": "http://beispiel-krankenhaus.de/sid/fallnummern",
+              "value": "22222222222"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Account",
+        "id": "SZ2DRGFall",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKAbrechnungsfall"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "AN",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://beispiel-krankenhaus.de/sid/fallnummern",
+            "value": "22222222222"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/ExtensionAbrechnungsDiagnoseProzedur",
+            "extension": [
+              {
+                "url": "Use",
+                "valueCoding": {
+                  "code": "hospital-main-diagnosis",
+                  "system": "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur"
+                }
+              },
+              {
+                "url": "Referenz",
+                "valueReference": {
+                  "reference": "Condition/SZ2Primaerdiagnose"
+                }
+              }
+            ]
+          }
+        ],
+        "coverage": [
+          {
+            "extension": [
+              {
+                "url": "http://fhir.de/StructureDefinition/ExtensionAbrechnungsart",
+                "valueCoding": {
+                  "code": "DRG",
+                  "system": "http://fhir.de/CodeSystem/dkgev/Abrechnungsart",
+                  "display": "Diagnosebezogene Fallgruppen"
+                }
+              }
+            ],
+            "coverage": {
+              "reference": "Coverage/SZ2VersicherungGesetzlich"
+            }
+          }
+        ],
+        "status": "active",
+        "type": {
+          "coding": [
+            {
+              "code": "IMP",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/SZ2Patient"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "SZ2VersicherungGesetzlich",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKVersicherungsverhaeltnisGesetzlich"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "GKV",
+              "system": "http://fhir.de/CodeSystem/versicherungsart-de-basis"
+            }
+          ]
+        },
+        "payor": [
+          {
+            "identifier": {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "XX"
+                  }
+                ]
+              },
+              "system": "http://fhir.de/sid/arge-ik/iknr",
+              "value": "260326855"
+            },
+            "display": "BKK für Testpatienten"
+          }
+        ],
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/SZ2Patient"
+        },
+        "subscriber": {
+          "reference": "Patient/SZ2Patient"
+        }
+      }
+    }
+  ]
+}

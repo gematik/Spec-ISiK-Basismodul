@@ -1,0 +1,28 @@
+- name: Index
+  filename: Index.page.md
+- name: Account - Abrechnungsdiagnose-/Prozedur
+  filename: Account-Abrechnungsdiagnose-Prozedur.page.md
+- name: Account - Abrechnungsart
+  filename: Account-Abrechnungsart.page.md
+- name: Condition - Related
+  filename: Condition-related.page.md
+- name: Condition - Lebensphase
+  filename: Condition-Lebensphase.page.md
+- name: Encounter - PlannedStartDate (R5)
+  filename: Encounter-PlannedStartDate-R5.page.md
+- name: Encounter - PlannedEndDate (R5)
+  filename: Encounter-PlannedEndDate-R5.page.md
+- name: Encounter - Entlassgrund
+  filename: Encounter-Entlassgrund.page.md
+- name: Encounter - Aufnahmegrund
+  filename: Encounter-Aufnahmegrund.page.md
+- name: Encounter - Wahlleistung
+  filename: Encounter-Wahlleistung.page.md
+- name: Encounter - Entlassungsgrund
+  filename: Encounter-Entlassungsgrund.page.md
+- name: Encounter - RehaEntlassung
+  filename: Encounter-RehaEntlassung.page.md
+- name: Patient - Geschlecht-Administrativ
+  filename: Patient-Geschlecht-Administrativ.page.md
+- name: Procedure - Dokumentationsdatum
+  filename: Procedure-Dokumentationsdatum.page.md

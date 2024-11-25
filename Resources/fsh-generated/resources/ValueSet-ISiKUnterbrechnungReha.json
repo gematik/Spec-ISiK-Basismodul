@@ -4,11 +4,11 @@
   "name": "ISiKUnterbrechnungReha",
   "id": "ISiKUnterbrechnungReha",
   "description": "ISiK Unterbrechung Reha. Dokumentiert die relevanten Gründe einer Unterbrechung einer Rehabilitationsmaßnahme im Einzelfall. Vgl. Schlüsseltabelle 2.111 Erläuterung zur Unterbrechung.",
+  "version": "4.0.1",
   "url": "https://gematik.de/fhir/isik/ValueSet/ISiKUnterbrechnungReha",
-  "version": "4.0.0",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-08-30",
+  "date": "2024-11-25",
   "compose": {
     "include": [
       {

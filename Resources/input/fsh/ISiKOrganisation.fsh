@@ -1,7 +1,25 @@
 Profile: ISiKOrganisationFachabteilung
 Parent: Organization
 Id: ISiKOrganisationFachabteilung
-Description: "Dieses Profil beschreibt die Organisationseinheit Fachabteilung innerhalb eines Krankenhauses."
+Description: "Dieses Profil beschreibt die Organisationseinheit Fachabteilung innerhalb eines Krankenhauses.
+### Motivation
+
+Die Abbildung der Aufbauorganisation eines Krankenhauses dient der Festlegung von Zuständigkeiten und (Entscheidungs-)Verantwortungen von Organisationseinheiten (z.B. Fachkliniken, Fachabteilungen und -bereichen etc.) in strukturierter Form. 
+
+In FHIR wird die Organisation (Organization) vom Standort (Location) eindeutig abgegrenzt.
+
+Die Erfassung der Organisation in strukturierter Form ermöglicht u.a.:
+- Zuweisungen von Diensten an bestimmte Bereiche der Aufbauorganisation im Rahmen des Terminmanagements
+- Die Raum- und Betten-Belegung in strukturierter Form (interdisziplinär)
+
+Auch die Erfassung des Krankenhauses als Ganzem ist relevant.
+Entsprechend fokussieren die folgenden Profile zur Organisation auf das Krankenhaus als Ganzes und die Fachabteilung als Organisation.  
+### Kompatibilität
+
+Für das Profil ISiKOrganisation wurde bis zum Zeitpunkt der Veröffentlichung kein Abgleich der Kompatibilität zu anderen Profilen (der KBV und der Medizininformatik-Initiative) durchgeführt.
+Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.
+
+"
 * insert Meta
 * identifier 1..* MS
   * ^slicing.discriminator.type = #pattern
@@ -56,7 +74,7 @@ Description: "Dieses Profil beschreibt die Organisationseinheit Fachabteilung in
   Fachbereich 0..1 MS
 * type[organisationstyp] = $organization_type#dept
   * ^comment = "Motivation: Eine Fachabteilung muss als solche hinsichtlich des Typs kodiert werden."
-* type[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertCS (required)
+* type[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertVS
   * ^comment = "Motivation: Das ValueSet muss bindend sein, damit Systemübergreifend der Fachabteilungstyp einheitlich kodiert werden kann. 
   
   Dieses ValueSet KANN über ein Mapping (siehe Abschnitt https://wiki.hl7.de/index.php?title=IG:Value_Sets_f%C3%BCr_XDS#DocumentEntry.practiceSettingCode) mit dem ValueSet der Fachrichtung verknüpft werden und darüber ggf. die Integration von Systemen erleichtern."  
@@ -170,10 +188,10 @@ Description: "Dieses Profil beschreibt die Nutzung von Organisationseinheiten in
   organisationstyp 0..1 MS and
   EinrichtungsArt 0..1 and
   ErweiterterFachabteilungsschluessel 0..1 MS
-* type[organisationstyp] from $organization_type (required)
+* type[organisationstyp] from $organization_typeVS (required)
 * type[organisationstyp].coding.system 1.. MS
 * type[organisationstyp].coding.code 1.. MS
-* type[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertCS (required)
+* type[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertVS (required)
 * type[ErweiterterFachabteilungsschluessel].coding.system 1.. MS
 * type[ErweiterterFachabteilungsschluessel].coding.code 1.. MS
 * type[EinrichtungsArt] from $IHEXDSFacilityType (required)
@@ -189,7 +207,7 @@ Description: "Dieses Profil beschreibt die Nutzung von Organisationseinheiten in
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-  * ^comment = "In order to differentiate between post box addresses and physical addresses, street names and house numbers, and to add city district names, vendors can opt to support the extensions as suggested in the German Address Base Profile http://fhir.de/StructureDefinition/address-de-basis.\r\nSuch differentiations are however not required within the scope of this specification."
+  * ^comment = "Um zwischen Postfachadressen und physischen Adressen, Straßennamen und Hausnummern zu unterscheiden und Städtenamenszusätze hinzuzufügen, können Anbieter die Erweiterungen unterstützen, die im Deutschen Adress-Basisprofil vorgeschlagen werden (http://fhir.de/StructureDefinition/address-de-basis). Solche Differenzierungen sind jedoch im Rahmen dieser Spezifikation nicht erforderlich."
 * address contains
     Strassenanschrift 0..* MS and
     Postfach 0..* MS

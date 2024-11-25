@@ -4,48 +4,64 @@
     "fshName": "AbrechnungsfallDRG",
     "fshType": "Instance",
     "fshFile": "ISiKAbrechnungsfall.fsh",
-    "startLine": 34,
-    "endLine": 52
+    "startLine": 109,
+    "endLine": 127
+  },
+  {
+    "outputFile": "Account-SZ1DRGFall.json",
+    "fshName": "SZ1DRGFall",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-1.fsh",
+    "startLine": 73,
+    "endLine": 87
+  },
+  {
+    "outputFile": "Account-SZ2DRGFall.json",
+    "fshName": "SZ2DRGFall",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-2.fsh",
+    "startLine": 69,
+    "endLine": 83
   },
   {
     "outputFile": "AllergyIntolerance-ISiKAllergieUnvertraeglichkeitBeispiel1.json",
     "fshName": "ISiKAllergieUnvertraeglichkeitBeispiel1",
     "fshType": "Instance",
     "fshFile": "ISiKAllergieUnvertraeglichkeit.fsh",
-    "startLine": 100,
-    "endLine": 121
+    "startLine": 138,
+    "endLine": 159
   },
   {
     "outputFile": "Binary-Binary-JPEG-Example-short.json",
     "fshName": "Binary-JPEG-Example-short",
     "fshType": "Instance",
     "fshFile": "ISiKBinary.fsh",
-    "startLine": 17,
-    "endLine": 21
+    "startLine": 30,
+    "endLine": 34
   },
   {
     "outputFile": "Binary-Binary-JPEG-Example.json",
     "fshName": "Binary-JPEG-Example",
     "fshType": "Instance",
     "fshFile": "ISiKBinary.fsh",
-    "startLine": 30,
-    "endLine": 34
+    "startLine": 43,
+    "endLine": 47
   },
   {
     "outputFile": "Binary-Binary-PDF-Example-short.json",
     "fshName": "Binary-PDF-Example-short",
     "fshType": "Instance",
     "fshFile": "ISiKBinary.fsh",
-    "startLine": 23,
-    "endLine": 28
+    "startLine": 36,
+    "endLine": 41
   },
   {
     "outputFile": "Binary-Binary-PDF-Example.json",
     "fshName": "Binary-PDF-Example",
     "fshType": "Instance",
     "fshFile": "ISiKBinary.fsh",
-    "startLine": 36,
-    "endLine": 41
+    "startLine": 49,
+    "endLine": 54
   },
   {
     "outputFile": "Bundle-ISiKBundle-Example.json",
@@ -60,8 +76,24 @@
     "fshName": "SubscriptionNotificationBundleExample",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 100,
-    "endLine": 109
+    "startLine": 153,
+    "endLine": 166
+  },
+  {
+    "outputFile": "Bundle-Szenario1.json",
+    "fshName": "Szenario1",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-1.fsh",
+    "startLine": 164,
+    "endLine": 174
+  },
+  {
+    "outputFile": "Bundle-Szenario2.json",
+    "fshName": "Szenario2",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-2.fsh",
+    "startLine": 99,
+    "endLine": 107
   },
   {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementBasisServer.json",
@@ -69,15 +101,15 @@
     "fshType": "Instance",
     "fshFile": "ISiKCapabilityStatementBasisServer.fsh",
     "startLine": 1,
-    "endLine": 1157
+    "endLine": 1469
   },
   {
     "outputFile": "CodeSystem-CodeSystemExample.json",
     "fshName": "CodeSystemExample",
     "fshType": "Instance",
     "fshFile": "ISiKCodeSystem.fsh",
-    "startLine": 16,
-    "endLine": 26
+    "startLine": 55,
+    "endLine": 65
   },
   {
     "outputFile": "CodeSystem-ISiKBehandlungsergebnisRehaCS.json",
@@ -116,80 +148,120 @@
     "fshName": "composition-blutdruck",
     "fshType": "Instance",
     "fshFile": "ISiKBerichtSubSysteme.fsh",
-    "startLine": 65,
-    "endLine": 82
+    "startLine": 187,
+    "endLine": 205
   },
   {
     "outputFile": "Condition-BehandlungsDiagnoseFreitext.json",
     "fshName": "BehandlungsDiagnoseFreitext",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 133,
-    "endLine": 140
+    "startLine": 208,
+    "endLine": 215
   },
   {
     "outputFile": "Condition-Example-condition-ausrufezeichen-primaer.json",
     "fshName": "Example-condition-ausrufezeichen-primaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 65,
-    "endLine": 74
+    "startLine": 140,
+    "endLine": 149
   },
   {
     "outputFile": "Condition-Example-condition-ausrufezeichen-sekundaer.json",
     "fshName": "Example-condition-ausrufezeichen-sekundaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 76,
-    "endLine": 89
+    "startLine": 151,
+    "endLine": 164
   },
   {
     "outputFile": "Condition-Example-condition-kreuz-stern-primaer.json",
     "fshName": "Example-condition-kreuz-stern-primaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 91,
-    "endLine": 103
+    "startLine": 166,
+    "endLine": 178
   },
   {
     "outputFile": "Condition-Example-condition-kreuz-stern-sekundaer.json",
     "fshName": "Example-condition-kreuz-stern-sekundaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 105,
-    "endLine": 120
+    "startLine": 180,
+    "endLine": 195
   },
   {
     "outputFile": "Condition-MittelgradigeIntelligenzminderung.json",
     "fshName": "MittelgradigeIntelligenzminderung",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 122,
-    "endLine": 131
+    "startLine": 197,
+    "endLine": 206
+  },
+  {
+    "outputFile": "Condition-SZ2Primaerdiagnose.json",
+    "fshName": "SZ2Primaerdiagnose",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-2.fsh",
+    "startLine": 26,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Condition-SZ2Sekundaerdiagnose.json",
+    "fshName": "SZ2Sekundaerdiagnose",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-2.fsh",
+    "startLine": 37,
+    "endLine": 48
   },
   {
     "outputFile": "Coverage-CoverageGesetzlich.json",
     "fshName": "CoverageGesetzlich",
     "fshType": "Instance",
     "fshFile": "ISiKVersicherungsverhaeltnisGesetzlich.fsh",
-    "startLine": 45,
-    "endLine": 54
+    "startLine": 111,
+    "endLine": 120
   },
   {
     "outputFile": "Coverage-CoveragePrivat.json",
     "fshName": "CoveragePrivat",
     "fshType": "Instance",
     "fshFile": "ISiKVersicherungsverhaeltnisSelbstzahler.fsh",
-    "startLine": 18,
-    "endLine": 24
+    "startLine": 77,
+    "endLine": 83
+  },
+  {
+    "outputFile": "Coverage-SZ1VersicherungGesetzlich.json",
+    "fshName": "SZ1VersicherungGesetzlich",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-1.fsh",
+    "startLine": 47,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Coverage-SZ1VersicherungSelbstzahler.json",
+    "fshName": "SZ1VersicherungSelbstzahler",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-1.fsh",
+    "startLine": 65,
+    "endLine": 71
+  },
+  {
+    "outputFile": "Coverage-SZ2VersicherungGesetzlich.json",
+    "fshName": "SZ2VersicherungGesetzlich",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-2.fsh",
+    "startLine": 85,
+    "endLine": 97
   },
   {
     "outputFile": "Encounter-Fachabteilungskontakt.json",
     "fshName": "Fachabteilungskontakt",
     "fshType": "Instance",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 169,
-    "endLine": 207
+    "startLine": 421,
+    "endLine": 461
   },
   {
     "outputFile": "Encounter-FachabteilungskontaktMinimal.json",
@@ -200,100 +272,132 @@
     "endLine": 68
   },
   {
+    "outputFile": "Encounter-SZ1Nachstationaer.json",
+    "fshName": "SZ1Nachstationaer",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-1.fsh",
+    "startLine": 145,
+    "endLine": 162
+  },
+  {
+    "outputFile": "Encounter-SZ1Stationaer.json",
+    "fshName": "SZ1Stationaer",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-1.fsh",
+    "startLine": 108,
+    "endLine": 143
+  },
+  {
+    "outputFile": "Encounter-SZ1Vorstationaer.json",
+    "fshName": "SZ1Vorstationaer",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-1.fsh",
+    "startLine": 89,
+    "endLine": 106
+  },
+  {
+    "outputFile": "Encounter-SZ2Encounter.json",
+    "fshName": "SZ2Encounter",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-2.fsh",
+    "startLine": 50,
+    "endLine": 67
+  },
+  {
     "outputFile": "Location-BettenstellplatzStandortBeispiel.json",
     "fshName": "BettenstellplatzStandortBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 61,
-    "endLine": 65
+    "startLine": 91,
+    "endLine": 95
   },
   {
     "outputFile": "Location-RaumStandortBeispiel.json",
     "fshName": "RaumStandortBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 55,
-    "endLine": 59
+    "startLine": 85,
+    "endLine": 89
   },
   {
     "outputFile": "Observation-ISiKAlkoholAbususBeispiel.json",
     "fshName": "ISiKAlkoholAbususBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 93,
-    "endLine": 105
+    "startLine": 150,
+    "endLine": 162
   },
   {
     "outputFile": "Observation-ISiKRaucherStatusBeispiel.json",
     "fshName": "ISiKRaucherStatusBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 120,
-    "endLine": 133
+    "startLine": 177,
+    "endLine": 190
   },
   {
     "outputFile": "Observation-ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel.json",
     "fshName": "ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 69,
-    "endLine": 79
+    "startLine": 126,
+    "endLine": 136
   },
   {
     "outputFile": "Observation-ISiKSchwangerschaftsstatusBeispiel.json",
     "fshName": "ISiKSchwangerschaftsstatusBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 45,
-    "endLine": 57
+    "startLine": 102,
+    "endLine": 114
   },
   {
     "outputFile": "Observation-ISiKStillstatusBeispiel.json",
     "fshName": "ISiKStillstatusBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 147,
-    "endLine": 160
+    "startLine": 204,
+    "endLine": 217
   },
   {
     "outputFile": "Organization-AbteilungAllgemeinchirurgieOrganisationBeispiel.json",
     "fshName": "AbteilungAllgemeinchirurgieOrganisationBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKOrganisation.fsh",
-    "startLine": 242,
-    "endLine": 252
+    "startLine": 260,
+    "endLine": 270
   },
   {
     "outputFile": "Organization-KrankenhausOrganisationBeispiel.json",
     "fshName": "KrankenhausOrganisationBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKOrganisation.fsh",
-    "startLine": 233,
-    "endLine": 239
+    "startLine": 251,
+    "endLine": 257
   },
   {
     "outputFile": "Patient-DorisQuelle.json",
     "fshName": "DorisQuelle",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 49,
-    "endLine": 61
+    "startLine": 102,
+    "endLine": 114
   },
   {
     "outputFile": "Patient-DorisZiel.json",
     "fshName": "DorisZiel",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 63,
-    "endLine": 75
+    "startLine": 116,
+    "endLine": 128
   },
   {
     "outputFile": "Patient-PatientinMusterfrau.json",
     "fshName": "PatientinMusterfrau",
     "fshType": "Instance",
     "fshFile": "ISiKPatient.fsh",
-    "startLine": 122,
-    "endLine": 172
+    "startLine": 347,
+    "endLine": 397
   },
   {
     "outputFile": "Patient-PatientinMusterfrauMinimal.json",
@@ -304,52 +408,76 @@
     "endLine": 53
   },
   {
+    "outputFile": "Patient-SZ1Patient.json",
+    "fshName": "SZ1Patient",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-1.fsh",
+    "startLine": 11,
+    "endLine": 27
+  },
+  {
+    "outputFile": "Patient-SZ2Patient.json",
+    "fshName": "SZ2Patient",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-2.fsh",
+    "startLine": 8,
+    "endLine": 24
+  },
+  {
     "outputFile": "Practitioner-PractitionerWalterArzt.json",
     "fshName": "PractitionerWalterArzt",
     "fshType": "Instance",
     "fshFile": "ISiKPersonImGesundheitsberuf.fsh",
-    "startLine": 92,
-    "endLine": 127
+    "startLine": 122,
+    "endLine": 157
   },
   {
     "outputFile": "Procedure-Appendektomie.json",
     "fshName": "Appendektomie",
     "fshType": "Instance",
     "fshFile": "ISiKProzedur.fsh",
-    "startLine": 47,
-    "endLine": 60
+    "startLine": 110,
+    "endLine": 123
   },
   {
     "outputFile": "RelatedPerson-ISiKAngehoerigerMustermann.json",
     "fshName": "ISiKAngehoerigerMustermann",
     "fshType": "Instance",
     "fshFile": "ISiKAngehoeriger.fsh",
-    "startLine": 49,
-    "endLine": 60
+    "startLine": 178,
+    "endLine": 189
+  },
+  {
+    "outputFile": "RelatedPerson-SZ1Mutter.json",
+    "fshName": "SZ1Mutter",
+    "fshType": "Instance",
+    "fshFile": "Beispiel-Szenario-1.fsh",
+    "startLine": 29,
+    "endLine": 45
   },
   {
     "outputFile": "SearchParameter-Encounter-date-start.json",
     "fshName": "Encounter-date-start",
     "fshType": "Instance",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 250,
-    "endLine": 268
+    "startLine": 504,
+    "endLine": 522
   },
   {
     "outputFile": "SearchParameter-Encounter-end-date.json",
     "fshName": "Encounter-end-date",
     "fshType": "Instance",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 270,
-    "endLine": 288
+    "startLine": 524,
+    "endLine": 542
   },
   {
     "outputFile": "StructureDefinition-ExtensionISiKRehaEntlassung.json",
     "fshName": "ExtensionISiKRehaEntlassung",
     "fshType": "Extension",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 146,
-    "endLine": 167
+    "startLine": 398,
+    "endLine": 419
   },
   {
     "outputFile": "StructureDefinition-ISiKASKCoding.json",
@@ -373,15 +501,15 @@
     "fshType": "Profile",
     "fshFile": "ISiKAbrechnungsfall.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 106
   },
   {
     "outputFile": "StructureDefinition-ISiKAlkoholAbusus.json",
     "fshName": "ISiKAlkoholAbusus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 81,
-    "endLine": 91
+    "startLine": 138,
+    "endLine": 148
   },
   {
     "outputFile": "StructureDefinition-ISiKAllergieUnvertraeglichkeit.json",
@@ -389,7 +517,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKAllergieUnvertraeglichkeit.fsh",
     "startLine": 1,
-    "endLine": 98
+    "endLine": 136
   },
   {
     "outputFile": "StructureDefinition-ISiKAngehoeriger.json",
@@ -397,7 +525,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKAngehoeriger.fsh",
     "startLine": 1,
-    "endLine": 47
+    "endLine": 175
   },
   {
     "outputFile": "StructureDefinition-ISiKBerichtBundle.json",
@@ -413,7 +541,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKBerichtSubSysteme.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 185
   },
   {
     "outputFile": "StructureDefinition-ISiKBinary.json",
@@ -421,7 +549,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKBinary.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 28
   },
   {
     "outputFile": "StructureDefinition-ISiKCodeSystem.json",
@@ -429,7 +557,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKCodeSystem.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 53
   },
   {
     "outputFile": "StructureDefinition-ISiKCoding.json",
@@ -445,7 +573,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKDiagnose.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 138
   },
   {
     "outputFile": "StructureDefinition-ISiKICD10GMCoding.json",
@@ -461,7 +589,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
     "startLine": 1,
-    "endLine": 130
+    "endLine": 396
   },
   {
     "outputFile": "StructureDefinition-ISiKLebensZustand.json",
@@ -469,7 +597,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
     "startLine": 1,
-    "endLine": 26
+    "endLine": 82
   },
   {
     "outputFile": "StructureDefinition-ISiKLoincCoding.json",
@@ -484,8 +612,8 @@
     "fshName": "ISiKOrganisation",
     "fshType": "Profile",
     "fshFile": "ISiKOrganisation.fsh",
-    "startLine": 117,
-    "endLine": 227
+    "startLine": 135,
+    "endLine": 245
   },
   {
     "outputFile": "StructureDefinition-ISiKOrganisationFachabteilung.json",
@@ -493,7 +621,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKOrganisation.fsh",
     "startLine": 1,
-    "endLine": 113
+    "endLine": 131
   },
   {
     "outputFile": "StructureDefinition-ISiKPZNCoding.json",
@@ -508,8 +636,8 @@
     "fshName": "ISiKPatient",
     "fshType": "Profile",
     "fshFile": "ISiKPatient.fsh",
-    "startLine": 1,
-    "endLine": 120
+    "startLine": 2,
+    "endLine": 345
   },
   {
     "outputFile": "StructureDefinition-ISiKPersonImGesundheitsberuf.json",
@@ -517,7 +645,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKPersonImGesundheitsberuf.fsh",
     "startLine": 1,
-    "endLine": 88
+    "endLine": 118
   },
   {
     "outputFile": "StructureDefinition-ISiKProzedur.json",
@@ -525,31 +653,31 @@
     "fshType": "Profile",
     "fshFile": "ISiKProzedur.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 108
   },
   {
     "outputFile": "StructureDefinition-ISiKRaucherStatus.json",
     "fshName": "ISiKRaucherStatus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 107,
-    "endLine": 117
+    "startLine": 164,
+    "endLine": 174
   },
   {
     "outputFile": "StructureDefinition-ISiKSchwangerschaftErwarteterEntbindungstermin.json",
     "fshName": "ISiKSchwangerschaftErwarteterEntbindungstermin",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 59,
-    "endLine": 67
+    "startLine": 116,
+    "endLine": 124
   },
   {
     "outputFile": "StructureDefinition-ISiKSchwangerschaftsstatus.json",
     "fshName": "ISiKSchwangerschaftsstatus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 29,
-    "endLine": 43
+    "startLine": 86,
+    "endLine": 100
   },
   {
     "outputFile": "StructureDefinition-ISiKSnomedCTCoding.json",
@@ -565,31 +693,31 @@
     "fshType": "Profile",
     "fshFile": "ISiKStandort.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 57
   },
   {
     "outputFile": "StructureDefinition-ISiKStandortBettenstellplatz.json",
     "fshName": "ISiKStandortBettenstellplatz",
     "fshType": "Profile",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 44,
-    "endLine": 52
+    "startLine": 69,
+    "endLine": 82
   },
   {
     "outputFile": "StructureDefinition-ISiKStandortRaum.json",
     "fshName": "ISiKStandortRaum",
     "fshType": "Profile",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 34,
-    "endLine": 42
+    "startLine": 59,
+    "endLine": 67
   },
   {
     "outputFile": "StructureDefinition-ISiKStillstatus.json",
     "fshName": "ISiKStillstatus",
     "fshType": "Profile",
     "fshFile": "ISiKLebenszustandOberservations.fsh",
-    "startLine": 135,
-    "endLine": 145
+    "startLine": 192,
+    "endLine": 202
   },
   {
     "outputFile": "StructureDefinition-ISiKValueSet.json",
@@ -597,7 +725,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKValueSet.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 75
   },
   {
     "outputFile": "StructureDefinition-ISiKVersicherungsverhaeltnisGesetzlich.json",
@@ -605,7 +733,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKVersicherungsverhaeltnisGesetzlich.fsh",
     "startLine": 1,
-    "endLine": 43
+    "endLine": 108
   },
   {
     "outputFile": "StructureDefinition-ISiKVersicherungsverhaeltnisSelbstzahler.json",
@@ -613,39 +741,23 @@
     "fshType": "Profile",
     "fshFile": "ISiKVersicherungsverhaeltnisSelbstzahler.fsh",
     "startLine": 1,
-    "endLine": 16
-  },
-  {
-    "outputFile": "StructureDefinition-PlannedEndDate.json",
-    "fshName": "PlannedEndDate",
-    "fshType": "Extension",
-    "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 140,
-    "endLine": 144
-  },
-  {
-    "outputFile": "StructureDefinition-PlannedStartDate.json",
-    "fshName": "PlannedStartDate",
-    "fshType": "Extension",
-    "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 133,
-    "endLine": 137
+    "endLine": 72
   },
   {
     "outputFile": "StructureDefinition-patient-merge-subscription.json",
     "fshName": "PatientMergeSubscription",
     "fshType": "Profile",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 2,
-    "endLine": 18
+    "startLine": 3,
+    "endLine": 59
   },
   {
     "outputFile": "Subscription-PatientMergeSubscriptionExample.json",
     "fshName": "PatientMergeSubscriptionExample",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 20,
-    "endLine": 31
+    "startLine": 73,
+    "endLine": 84
   },
   {
     "outputFile": "ValueSet-DiagnosesSCT.json",
@@ -660,8 +772,8 @@
     "fshName": "FhirMimeTypeVS",
     "fshType": "ValueSet",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 41,
-    "endLine": 47
+    "startLine": 94,
+    "endLine": 100
   },
   {
     "outputFile": "ValueSet-ISiKAccountType.json",
@@ -716,8 +828,8 @@
     "fshName": "ISiKValueSetExample",
     "fshType": "Instance",
     "fshFile": "ISiKValueSet.fsh",
-    "startLine": 23,
-    "endLine": 36
+    "startLine": 77,
+    "endLine": 90
   },
   {
     "outputFile": "ValueSet-ProzedurenCodesSCT.json",
@@ -740,8 +852,8 @@
     "fshName": "RestAndWSSubscriptionChannelType",
     "fshType": "ValueSet",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 33,
-    "endLine": 39
+    "startLine": 86,
+    "endLine": 92
   },
   {
     "outputFile": "ValueSet-SchwangerschaftEtMethodeVS.json",

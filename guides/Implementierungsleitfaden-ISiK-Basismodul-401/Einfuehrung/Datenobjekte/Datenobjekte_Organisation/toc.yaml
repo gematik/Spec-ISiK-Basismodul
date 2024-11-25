@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: 'Profil: Organisation'
+  filename: Profil-Organisation.page.md
+- name: 'Profil: Fachabteilung'
+  filename: Profil-Fachabteilung.page.md
+- name: Interaktionen
+  filename: Organisation_Interaktionen.page.md
+- name: Anmerkungen zu den Must-Support Feldern
+  filename: Anmerkungen-zu-den-Must-Support-Feldern.page.md
+- name: Beispiele
+  filename: Organisation_Beispiele.page.md

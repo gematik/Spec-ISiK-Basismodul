@@ -1,0 +1,514 @@
+{
+  "resourceType": "Bundle",
+  "id": "Szenario1",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "SZ1Patient",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://beispiel-krankenhaus.de/sid/Patienten",
+            "value": "12345"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "KVZ10",
+                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+                }
+              ]
+            },
+            "system": "http://fhir.de/sid/gkv/kvid-10",
+            "value": "A123456789"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Musterfrau",
+            "given": [
+              "Töchterchen"
+            ]
+          }
+        ],
+        "active": true,
+        "gender": "female",
+        "birthDate": "2010-01-01"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "SZ1Mutter",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKAngehoeriger"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "KVZ10",
+                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+                }
+              ]
+            },
+            "system": "http://fhir.de/sid/gkv/kvid-10",
+            "value": "A987654321"
+          }
+        ],
+        "patient": {
+          "reference": "Patient/SZ1Patient"
+        },
+        "name": [
+          {
+            "family": "Musterfrau",
+            "given": [
+              "Mama"
+            ]
+          }
+        ],
+        "address": [
+          {
+            "type": "both",
+            "line": [
+              "Milchstr. 42"
+            ],
+            "city": "Beispielstadt",
+            "postalCode": "78143",
+            "country": "DE"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "code": "MTH",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "SZ1VersicherungGesetzlich",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKVersicherungsverhaeltnisGesetzlich"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "GKV",
+              "system": "http://fhir.de/CodeSystem/versicherungsart-de-basis"
+            }
+          ]
+        },
+        "payor": [
+          {
+            "identifier": {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "XX"
+                  }
+                ]
+              },
+              "system": "http://fhir.de/sid/arge-ik/iknr",
+              "value": "260326822"
+            },
+            "display": "TKKG"
+          }
+        ],
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/SZ1Patient"
+        },
+        "subscriber": {
+          "reference": "RelatedPerson/SZ1Mutter",
+          "identifier": {
+            "type": {
+              "coding": [
+                {
+                  "code": "KVZ10",
+                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+                }
+              ]
+            },
+            "system": "http://fhir.de/sid/gkv/kvid-10",
+            "value": "A987654321"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "SZ1VersicherungSelbstzahler",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKVersicherungsverhaeltnisSelbstzahler"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/versicherungsart-de-basis",
+              "code": "SEL"
+            }
+          ]
+        },
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/SZ1Patient"
+        },
+        "payor": [
+          {
+            "reference": "RelatedPerson/SZ1Mutter"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "SZ1Vorstationaer",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung"
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "abteilungskontakt",
+                "system": "http://fhir.de/CodeSystem/Kontaktebene"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://fhir.de/CodeSystem/kontaktart-de",
+                "code": "vorstationaer",
+                "display": "Vorstationär"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "VN",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://beispiel-krankenhaus.de/sid/besuchsnummer",
+            "value": "0123456789-1"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "code": "AMB",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "Patient/SZ1Patient"
+        },
+        "period": {
+          "start": "2024-10-01",
+          "end": "2024-10-01"
+        },
+        "account": [
+          {
+            "reference": "Account/SZ1DRGFall",
+            "identifier": {
+              "system": "http://beispiel-krankenhaus.de/sid/fallnummern",
+              "value": "0123456789"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "SZ1Stationaer",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung"
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "abteilungskontakt",
+                "system": "http://fhir.de/CodeSystem/Kontaktebene"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://fhir.de/CodeSystem/kontaktart-de",
+                "code": "stationaer",
+                "display": "Stationär"
+              }
+            ]
+          }
+        ],
+        "hospitalization": {
+          "extension": [
+            {
+              "url": "http://fhir.de/StructureDefinition/Wahlleistung",
+              "valueCoding": {
+                "code": "unterkunft-und-verpflegung-begleitperson-kinder-ohne-med-begruedung",
+                "system": "http://fhir.de/CodeSystem/wahlleistungen-de",
+                "display": "Unterkunft und Verpflegung einer Begleitperson ohne med. Begründung"
+              }
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "VN",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://beispiel-krankenhaus.de/sid/besuchsnummer",
+            "value": "0123456789-2"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "Patient/SZ1Patient"
+        },
+        "period": {
+          "start": "2024-10-07",
+          "end": "2024-10-10"
+        },
+        "account": [
+          {
+            "reference": "Account/SZ1DRGFall",
+            "identifier": {
+              "system": "http://beispiel-krankenhaus.de/sid/fallnummern",
+              "value": "0123456789"
+            }
+          }
+        ],
+        "location": [
+          {
+            "physicalType": {
+              "coding": [
+                {
+                  "code": "bd",
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "display": "Bed"
+                }
+              ]
+            },
+            "status": "active",
+            "location": {
+              "identifier": {
+                "system": "http://beispiel-krankenhaus.de/sid/betten",
+                "value": "123"
+              },
+              "display": "Bettenstellplatz 123"
+            }
+          },
+          {
+            "physicalType": {
+              "coding": [
+                {
+                  "code": "ro",
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "display": "Room"
+                }
+              ]
+            },
+            "status": "active",
+            "location": {
+              "identifier": {
+                "system": "http://beispiel-krankenhaus.de/sid/zimmer",
+                "value": "12"
+              },
+              "display": "Zimmer 12"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "SZ1Nachstationaer",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung"
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "abteilungskontakt",
+                "system": "http://fhir.de/CodeSystem/Kontaktebene"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://fhir.de/CodeSystem/kontaktart-de",
+                "code": "nachstationaer",
+                "display": "Nachstationär"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "VN",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://beispiel-krankenhaus.de/sid/besuchsnummer",
+            "value": "0123456789-3"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "code": "AMB",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "Patient/SZ1Patient"
+        },
+        "period": {
+          "start": "2024-10-14",
+          "end": "2024-10-14"
+        },
+        "account": [
+          {
+            "reference": "Account/SZ1DRGFall",
+            "identifier": {
+              "system": "http://beispiel-krankenhaus.de/sid/fallnummern",
+              "value": "0123456789"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Account",
+        "id": "SZ1DRGFall",
+        "meta": {
+          "profile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKAbrechnungsfall"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "AN",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://beispiel-krankenhaus.de/sid/fallnummern",
+            "value": "0123456789"
+          }
+        ],
+        "coverage": [
+          {
+            "extension": [
+              {
+                "url": "http://fhir.de/StructureDefinition/ExtensionAbrechnungsart",
+                "valueCoding": {
+                  "code": "DRG",
+                  "system": "http://fhir.de/CodeSystem/dkgev/Abrechnungsart",
+                  "display": "Diagnosebezogene Fallgruppen"
+                }
+              }
+            ],
+            "coverage": {
+              "reference": "Coverage/SZ1VersicherungGesetzlich"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://fhir.de/StructureDefinition/ExtensionAbrechnungsart",
+                "valueCoding": {
+                  "code": "SZ",
+                  "system": "http://fhir.de/CodeSystem/dkgev/Abrechnungsart",
+                  "display": "Selbstzahlerrechnung"
+                }
+              }
+            ],
+            "coverage": {
+              "reference": "Coverage/SZ1VersicherungSelbstzahler"
+            }
+          }
+        ],
+        "status": "active",
+        "type": {
+          "coding": [
+            {
+              "code": "IMP",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+            }
+          ]
+        },
+        "subject": [
+          {
+            "reference": "Patient/SZ1Patient"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: IHE-Profile
+  filename: KompatibilitaetDerGematikSpezifikation_IHE.page.md
+- name: Nationale FHIR-Spezifikationen
+  filename: KompatibilitaetDerGematikSpezifikation_Andere.page.md

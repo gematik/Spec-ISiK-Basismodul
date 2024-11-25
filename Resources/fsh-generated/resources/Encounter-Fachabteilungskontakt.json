@@ -108,7 +108,8 @@
     {
       "reference": "Account/AbrechnungsfallDRG",
       "identifier": {
-        "value": "XZY"
+        "value": "XZY",
+        "system": "https://test.krankenhaus.de/fhir/sid/fallnummer"
       }
     }
   ],

@@ -53,7 +53,8 @@
               "code": "55112-7",
               "system": "http://loinc.org"
             }
-          ]
+          ],
+          "text": "Kurzbericht"
         },
         "subject": {
           "reference": "urn:uuid:3bada18a-6fd2-11ed-a1eb-0242ac112345"

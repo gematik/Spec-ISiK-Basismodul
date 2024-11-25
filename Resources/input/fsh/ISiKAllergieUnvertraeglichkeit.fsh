@@ -1,8 +1,37 @@
 Profile: ISiKAllergieUnvertraeglichkeit
 Parent: AllergyIntolerance
 Id: ISiKAllergieUnvertraeglichkeit
-Description: "Diese Profil ermöglicht die Dokumentation von Allergien und Unverträglichkeiten in ISiK Szenarien."
+Description: "
+Diese Profil ermöglicht die Dokumentation von Allergien und Unverträglichkeiten in ISiK Szenarien.
+### Motivation
+
+Die Möglichkeit, auf eine Übersicht der Allergien und Unverträglichkeiten eines Patienten zuzugreifen, ist eine wichtige Funktion im klinischen Behandlungsablauf. Dies gilt insbesondere, aber nicht ausschließlich, im Bereich der Arzneimitteltherapiesicherheit.
+Motivierender Use-Case zur Einführung dieser Profile ist die [Arzneitmitteltherapiesicherheit im Krankenhaus - AMTS](https://simplifier.net/guide/isik-medikation-v4/ImplementationGuide-markdown-UebergreifendeUseCases-AMTS).
+
+In FHIR werden Allergien und Unverträglichkeiten mit der [AllergyIntolerance](https://hl7.org/fhir/R4/allergyintolerance.html)-Ressource repräsentiert.
+
+### Kompatibilität
+
+Für das Profil ISiKAllergieUnvertraeglichkeit wird eine Kompatibilität mit folgenden Profilen angestrebt; allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen ISiKAllergieUnvertraeglichkeit valide sind, auch valide sind gegen:
+* [das Profil KBV_PR_Base_AllergyIntolerance der KBV](https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_AllergyIntolerance)
+* [das Profil EMDAF_PR_AllergyIntolerance der GEVKO](https://fhir.gevko.de/StructureDefinition/EMDAF_PR_AllergyIntolerance)
+* [das Profil AllergyIntolerance-uv-ips der International Patient Summary](http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips)
+
+Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden."
+
 * insert Meta
+
+/* 
+hier sollte genauer spezifiziert werden, welche Statuswerte  für clincial- und verificationStatus implementiert werden müssen, z.B. durch Hinzufügen folgenden Kommentars:    
+  **WICHTIGER Hinweis für Implementierer:**    
+  * Alle server-seitigen Implementierungen MÜSSEN in der Lage sein, 
+  die systemintern möglichen Statuswerte korrekt in FHIR abzubilden, mindestens jedoch <t.b.d>.
+  * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, 
+  beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben.
+
+Alternativ: hier einen Sermon analog zu Condition.clincalStatus einfügen.
+Bitte auch beachten, dass verificationStatus bei Condition derzeit KEIN MS-Flag hat!
+*/
 * clinicalStatus MS
   * ^short = "klinischer Status"
   * coding 1..1 MS
@@ -44,16 +73,25 @@ Description: "Diese Profil ermöglicht die Dokumentation von Allergien und Unver
     * display MS
   * text MS
 * patient MS
-  * ^short = "Patient (Referenz)"
+  * ^short = "Patientenbezug"
+  * reference 1.. MS
+    * ^short = "Patienten-Link"
+    * ^comment = "Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation 
+    zu einem Patienten und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc."
 * encounter MS
-  * ^short = "Aufenthalt, bei dem die Allergie/Unverträglichkeit festgestellt wurde (nicht notwendigerweise der aktuelle Aufenthalt)"
+  * ^short = "Aufenthaltsbezug"
+  * reference 1.. MS
+    * ^short = "Encounter-Link"
+    * ^comment = "Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt 
+    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc."
+
 * onset[x] MS
   * ^short = "Beginn-Zeitpunkt"
 * onsetDateTime MS
 * onsetAge MS
 * onsetString MS
 * recordedDate MS
-  * ^short = ""
+  * ^short = "Datum an dem die Allergie/Unverträglichkeit aufgezeichnet wurde"
 * recorder MS
   * ^short = "Person/Rolle, die die Information dokumentiert"
   * reference MS

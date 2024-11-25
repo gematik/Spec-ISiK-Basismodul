@@ -4,11 +4,11 @@
   "name": "DiagnosesSCT",
   "id": "DiagnosesSCT",
   "description": "Enthaelt alle SNOMED Clinical finding, Event und Situation with explicit context codes",
+  "version": "4.0.1",
   "url": "https://gematik.de/fhir/isik/ValueSet/DiagnosesSCT",
-  "version": "4.0.0",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-08-30",
+  "date": "2024-11-25",
   "compose": {
     "include": [
       {

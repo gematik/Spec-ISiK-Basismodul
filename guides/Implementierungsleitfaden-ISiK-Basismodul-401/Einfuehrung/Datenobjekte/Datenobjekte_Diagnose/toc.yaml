@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Profil
+  filename: Diagnose_Profil.page.md
+- name: Anmerkungen zu den Must-Support Feldern
+  filename: Diagnose_AnmerkungenZuDenMustSupportFeldern.page.md
+- name: Interaktionen
+  filename: Diagnose_Interaktionen.page.md
+- name: Beispiele
+  filename: Diagnose_Beispiele.page.md

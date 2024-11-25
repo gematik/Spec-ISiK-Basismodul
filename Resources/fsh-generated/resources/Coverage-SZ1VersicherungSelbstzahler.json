@@ -1,0 +1,26 @@
+{
+  "resourceType": "Coverage",
+  "id": "SZ1VersicherungSelbstzahler",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKVersicherungsverhaeltnisSelbstzahler"
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/versicherungsart-de-basis",
+        "code": "SEL"
+      }
+    ]
+  },
+  "status": "active",
+  "beneficiary": {
+    "reference": "Patient/SZ1Patient"
+  },
+  "payor": [
+    {
+      "reference": "RelatedPerson/SZ1Mutter"
+    }
+  ]
+}

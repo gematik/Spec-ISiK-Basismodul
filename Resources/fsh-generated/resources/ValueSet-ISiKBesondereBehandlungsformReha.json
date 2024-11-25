@@ -4,11 +4,11 @@
   "name": "ISiKBesondereBehandlungsformReha",
   "id": "ISiKBesondereBehandlungsformReha",
   "description": "Besondere Behandlungsform der Reha gemäß §301(4 UND 4A) SGB V. Vgl. Schlüsseltabelle 2.51 Besondere Behandlungsformen.",
+  "version": "4.0.1",
   "url": "https://gematik.de/fhir/isik/ValueSet/ISiKBesondereBehandlungsformReha",
-  "version": "4.0.0",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-08-30",
+  "date": "2024-11-25",
   "compose": {
     "include": [
       {

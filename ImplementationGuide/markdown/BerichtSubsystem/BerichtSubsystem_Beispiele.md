@@ -1,3 +1,0 @@
-### Beispiele
-
-{{json:composition-blutdruck}}

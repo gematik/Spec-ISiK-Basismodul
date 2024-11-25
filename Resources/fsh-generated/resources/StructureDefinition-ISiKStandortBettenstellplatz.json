@@ -2,13 +2,13 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKStandortBettenstellplatz",
   "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKStandortBettenstellplatz",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "name": "ISiKStandortBettenstellplatz",
   "status": "active",
   "experimental": false,
-  "date": "2024-08-30",
+  "date": "2024-11-25",
   "publisher": "gematik GmbH",
-  "description": "Dieses Profil dient der strukturierten Erfassung von Bettenstellplätzen (als Standorten) eines Krankenhauses",
+  "description": "Dieses Profil dient der strukturierten Erfassung von Bettenstellplätzen (als Standorten) \r\neines Krankenhauses.  \r\n### Hinweis  \r\nEin einzelnes Bett als Gegenstand kann als FHIR-Ressource 'Device' abgebildet werden, \r\ndas einen Bettenstellplatz referenziert.\r\n",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -24,7 +24,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/v2-0116"
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0116"
         }
       },
       {

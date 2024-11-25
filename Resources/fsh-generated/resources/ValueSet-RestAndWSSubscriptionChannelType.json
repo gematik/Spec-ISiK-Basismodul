@@ -5,11 +5,11 @@
   "id": "RestAndWSSubscriptionChannelType",
   "title": "RestAndWSSubscriptionChannelType",
   "description": "Subscription Channel Type for ISiK",
+  "version": "4.0.1",
   "url": "https://gematik.de/fhir/isik/ValueSet/RestAndWSSubscriptionChannelType",
-  "version": "4.0.0",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-08-30",
+  "date": "2024-11-25",
   "compose": {
     "include": [
       {

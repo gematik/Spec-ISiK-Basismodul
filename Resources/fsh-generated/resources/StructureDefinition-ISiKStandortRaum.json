@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKStandortRaum",
   "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKStandortRaum",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "name": "ISiKStandortRaum",
   "status": "active",
   "experimental": false,
-  "date": "2024-08-30",
+  "date": "2024-11-25",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil dient der strukturierten Erfassung von Räumen (als Standorten) eines Krankenhauses.",
   "fhirVersion": "4.0.1",
@@ -24,7 +24,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/v2-0116"
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0116"
         }
       },
       {
