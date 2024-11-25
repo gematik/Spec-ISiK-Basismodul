@@ -10,7 +10,7 @@
   "status": "active",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-11-22",
+  "date": "2024-11-25",
   "url": "http://example.org/fhir/CodeSystem/TestKatalog",
   "name": "TestKatalog",
   "content": "complete",

@@ -7,7 +7,7 @@
   "title": "ISiKICD10GMCoding",
   "status": "active",
   "experimental": false,
-  "date": "2024-11-22",
+  "date": "2024-11-25",
   "publisher": "gematik GmbH",
   "description": "Data Type profile for ICD10-GM Codings in ISiK",
   "fhirVersion": "4.0.1",
