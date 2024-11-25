@@ -1,0 +1,432 @@
+{
+	"info": {
+		"_postman_id": "1aaa7164-487f-497f-be6b-ad99fac9b60e",
+		"name": "Connectathon Köln Anfänger Track",
+		"description": "Hier Informationen vielleicht auch den kompletten Text reinbauen?!",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39746134",
+		"_collection_link": "https://connectathon.postman.co/workspace/38156fba-f064-45d1-8e81-16757b452cfd/collection/39391560-1aaa7164-487f-497f-be6b-ad99fac9b60e?action=share&source=collection_link&creator=39746134"
+	},
+	"item": [
+		{
+			"name": "1. Create Practitioner Dr. Peters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"console.log(jsonData.id);\r",
+							"pm.collectionVariables.set(\"practitioner_id\", jsonData.id);\r",
+							"// Test the response body structure and values\r",
+							"pm.test(\"Response body structure is valid\", function () {\r",
+							"    var responseJSON = pm.response.json();\r",
+							"\r",
+							"    pm.expect(responseJSON).to.have.property('resourceType');\r",
+							"    pm.expect(responseJSON).to.have.property('id');\r",
+							"    pm.expect(responseJSON).to.have.property('meta');\r",
+							"    pm.expect(responseJSON).to.have.property('identifier');\r",
+							"    pm.expect(responseJSON).to.have.property('active');\r",
+							"    pm.expect(responseJSON).to.have.property('name');\r",
+							"    pm.expect(responseJSON).to.have.property('address');\r",
+							"    pm.expect(responseJSON).to.have.property('gender');\r",
+							"    pm.expect(responseJSON).to.have.property('qualification');\r",
+							"});\r",
+							"\r",
+							"// Test the correctness and validity of specific properties\r",
+							"pm.test(\"Validate resourceType is not empty\", function () {\r",
+							"    pm.expect(responseJSON.resourceType).to.not.be.empty;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate id is not empty\", function () {\r",
+							"    pm.expect(responseJSON.id).to.not.be.empty;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate meta is an object\", function () {\r",
+							"    pm.expect(responseJSON.meta).to.be.an('object');\r",
+							"});\r",
+							"\r",
+							"// Add more tests for other properties as needed"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Create Patient Anna Müller",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"console.log(jsonData.id);\r",
+							"pm.collectionVariables.set(\"patient_id\", jsonData.id);\r",
+							"pm.collectionVariables.set(\"patient_birthdate\", jsonData.birthDate);\r",
+							"\r",
+							"pm.test(\"Correct meta.profile is set\", function () {\r",
+							"    \r",
+							"    pm.expect(jsonData.meta.profile[0]).to.equal(\"https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient\");\r",
+							"});\r",
+							"pm.test(\"Check if the gender is set to female\", function () {\r",
+							"    \r",
+							"    pm.expect(jsonData.gender).to.equal(\"female\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check if the birthdate is set to '1957-08-12'\", function () {\r",
+							"    pm.expect(jsonData.birthDate).to.equal(\"1957-08-12\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Check if name array contains specific values\", function () {\r",
+							"    var nameArray = jsonData.name;\r",
+							"    var nameMatch = nameArray.some(function(nameObj) {\r",
+							"        return (nameObj.use === \"official\" && nameObj.family === \"Müller\" && nameObj.given.includes(\"Anna\") && nameObj._family.extension[0].url === \"http://hl7.org/fhir/StructureDefinition/humanname-own-name\" && nameObj._family.extension[0].valueString === \"Müller\");\r",
+							"    });\r",
+							"    pm.expect(nameMatch).to.be.true;\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Validieren der Patienten-Instanz",
+			"request": {
+				"method": "OPTIONS",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "3. Create Condition Primäre Gonarthrose",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verify code element contains correct values\", function () {\r",
+							"   pm.expect(pm.response.json().code.coding[0].system).to.include(\"http://fhir.de/CodeSystem/bfar\");\r",
+							"   console.log( pm.response.json().code?.coding[0]?.system);\r",
+							"    pm.expect(pm.response.json().code.coding[0].version).to.eql(\"2020\");\r",
+							"    pm.expect(pm.response.json().code.coding[0].code).to.eql(\"M17.0\");\r",
+							"    pm.expect(pm.response.json().code.coding[0].display).to.eql(\"Primäre Gonarthrose\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check if subject reference contains the variable patient id\", function () {\r",
+							"    let patient_id = pm.collectionVariables.get(\"patient_id\");\r",
+							"    pm.expect(pm.response.json().subject.reference).to.include(\"Patient/\" + patient_id);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check if asserter reference contains the variable practitioner id and log the value\", function () {\r",
+							"    let practitioner_id = pm.collectionVariables.get(\"practitioner_id\");\r",
+							"    pm.expect(pm.response.json().asserter.reference).to.include(\"Practitioner/\" + practitioner_id);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Nachname von Anna Müller",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Check if the name family is Maier\", function () {\r",
+							"    let officialName = jsonData.name.find(el => el.use === \"official\");\r",
+							"   pm.expect(officialName.family).to.eql(\"Maier\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check if the maiden name exists and family is Müller\", function () {\r",
+							"    let maidenName = jsonData.name.find(el => el.use === \"maiden\");\r",
+							"    pm.expect(maidenName).to.exist;\r",
+							"    pm.expect(maidenName.family).to.eql(\"Müller\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zusammenfassung der Instanz von Anna Maier holen",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Abrufen der alten Versionen der Patienteninstanz",
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Abrufen aller Patientinnen mit Alter > Anna Müller",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Limit results to 5",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List number of patients",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Copy Patient dein Name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"console.log(jsonData.id);\r",
+							"pm.collectionVariables.set(\"patient_id\", jsonData.id);\r",
+							"pm.collectionVariables.set(\"patient_birthdate\", jsonData.birthDate);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Löschen deines Patientenprofils",
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "variable_key",
+			"value": ""
+		},
+		{
+			"key": "practitioner_id",
+			"value": ""
+		},
+		{
+			"key": "patient_id",
+			"value": ""
+		},
+		{
+			"key": "patient_birthdate",
+			"value": ""
+		}
+	]
+}
