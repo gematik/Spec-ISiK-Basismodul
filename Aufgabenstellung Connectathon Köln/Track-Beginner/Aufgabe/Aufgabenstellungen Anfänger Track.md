@@ -27,7 +27,7 @@ Laden Sie die json Datei mit dem Namen  [Condition-PrimaereGonarthrose_Ausschnit
 
 Die API Plattform Postman kann verwendet werden, um FHIR-Ressourcen zu senden und zu empfangen; er ist sowohl als Browser-Erweiterung als auch als App verfügbar. Mit einem Post-Client lassen sich Server-Anfragen über das Hypertext Transfer Protocol (HTTP) erstellen. FHIR liefert die Antwort als Rohdaten (XML oder JSON) an, daher ist ein HTTP-Client wie Postman notwendig, um die Daten abzurufen und anzuzeigen.
 
-Laden und installieren Sie Postman oder greifes Sie über den Browser auf Postman zu und registrieren Sie sich. Alternative REST-Clients können auch verwendet werden, sofern Sie mit deren Handhabung vertraut sind. Die Erstellung eines Accounts ist nur bei der Nutzung der Browser-Erweiterung notwendig.
+Laden und installieren Sie Postman oder greifen Sie über den Browser auf Postman zu und registrieren Sie sich. Alternative REST-Clients können auch verwendet werden, sofern Sie mit deren Handhabung vertraut sind. Die Erstellung eines Accounts ist nur bei der Nutzung der Browser-Erweiterung notwendig.
 
 ### Aufgabe:
 
