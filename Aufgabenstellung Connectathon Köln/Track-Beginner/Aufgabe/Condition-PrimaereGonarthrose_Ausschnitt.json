@@ -1,11 +1,7 @@
 {
   "resourceType": "Condition",
   "id": "PrimaereGonarthrose",
-  "meta": {
-    "profile": [
-      "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKDiagnose"
-    ]
-  },
+  // meta.profile ergänzen
   "clinicalStatus": {
     "coding": [
       {

@@ -21,7 +21,7 @@ Anna Müller, 67 Jahre, mit der Diagnose primäre Gonarthrose, beidseitig (ICD M
 Laden Sie die json Datei mit dem Namen  [Patient-PatientinAnnaMueller_Ausschnitt.json](https://wiki.gematik.de/download/attachments/606557316/Patient-PatientinAnnaMueller_Ausschnitt.json?version=1&modificationDate=1731596482272&api=v2) herunter. Diese Datei ist eine FHIR Repräsentation der oben aufgeführten Informationen. Bitte befüllen Sie diese Instanz mit allen fehlenden Informationen aus der oben aufgeführten Beschreibung.  Achtung: Einige der oben aufgeführten Informationen können nicht im Profil abgebildet werden und müssen dementsprechend nicht überführt werden.
 
 ### Aufgabe 2: Condition anlegen
-Laden Sie die json Datei mit dem Namen  [Condition-PrimaereGonarthrose_Ausschnitt.json](https://wiki.gematik.de/download/attachments/606557316/Condition-PrimaereGonarthrose_Ausschnitt.json?version=1&modificationDate=1731596519747&api=v2) herunter. Diese Datei ist eine FHIR Repräsentation der unten aufgeführten Informationen. Bitte befüllen Sie diese Instanz mit allen fehlenden Informationen.  
+Laden Sie die json Datei mit dem Namen  [Condition-PrimaereGonarthrose_Ausschnitt.json](https://wiki.gematik.de/download/attachments/606557316/Condition-PrimaereGonarthrose_Ausschnitt.json?version=1&modificationDate=1731596519747&api=v2) herunter. Diese Datei ist eine FHIR Repräsentation der oben aufgeführten Informationen. Bitte befüllen Sie diese Instanz mit allen fehlenden Informationen. **Hinweis:** Falls in der Instanz technische Informationen fehlen sollten, können Sie diese Informationen unter folgendem Link finden: https://simplifier.net/isik-basis-v3/isikdiagnose 
 
 ## Teil 2 - Serverabfragen
 

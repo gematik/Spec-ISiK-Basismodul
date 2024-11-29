@@ -1,9 +1,10 @@
 {
   "resourceType": "Patient",
-  /*
-  meta.profile ergänzen
-  */
-  
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient"
+    ]
+  },
   "identifier": [
     {
       "type": {
