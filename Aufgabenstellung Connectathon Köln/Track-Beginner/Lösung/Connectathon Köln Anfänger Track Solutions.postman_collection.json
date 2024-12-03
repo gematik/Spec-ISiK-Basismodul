@@ -9,7 +9,7 @@
 	},
 	"item": [
 		{
-			"name": "Create Practitioner Dr. Peters",
+			"name": "1. Create Practitioner Dr. Peters",
 			"event": [
 				{
 					"listen": "test",
@@ -99,7 +99,7 @@
 			"response": []
 		},
 		{
-			"name": "Create Patient Anna Müller",
+			"name": "2. Create Patient Anna Müller",
 			"event": [
 				{
 					"listen": "test",
@@ -195,7 +195,7 @@
 			"response": []
 		},
 		{
-			"name": "Create Condition Primäre Gonarthrose",
+			"name": "4. Create Condition Primäre Gonarthrose",
 			"event": [
 				{
 					"listen": "test",
@@ -262,7 +262,7 @@
 			"response": []
 		},
 		{
-			"name": "Update Nachname von Anna Müller",
+			"name": "5. Update Nachname von Anna Müller",
 			"event": [
 				{
 					"listen": "test",
@@ -323,7 +323,7 @@
 			"response": []
 		},
 		{
-			"name": "Zusammenfassung der Instanz von Anna Müller holen",
+			"name": "6. Zusammenfassung der Instanz von Anna Müller holen",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -346,7 +346,7 @@
 			"response": []
 		},
 		{
-			"name": "Abrufen der alten Versionen der Patienteninstanz",
+			"name": "7. Abrufen der alten Versionen der Patienteninstanz",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -376,7 +376,7 @@
 			"response": []
 		},
 		{
-			"name": "Abrufen aller Patientinnen mit Alter > Anna Müller",
+			"name": "8. Abrufen aller Patientinnen mit Alter > Anna Müller",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -404,7 +404,7 @@
 			"response": []
 		},
 		{
-			"name": "Limit results to 5",
+			"name": "9. Limit results to 5",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -428,7 +428,7 @@
 			"response": []
 		},
 		{
-			"name": "List number of patients",
+			"name": "10. List number of patients",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -452,7 +452,7 @@
 			"response": []
 		},
 		{
-			"name": "Patient dein Name",
+			"name": "11. Patient dein Name",
 			"event": [
 				{
 					"listen": "test",
@@ -504,7 +504,7 @@
 			"response": []
 		},
 		{
-			"name": "Löschen deines Patientenprofils",
+			"name": "12. Löschen deines Patientenprofils",
 			"request": {
 				"method": "DELETE",
 				"header": [
