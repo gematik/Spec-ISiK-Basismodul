@@ -15,9 +15,9 @@ All jobs with an `x` in the boxes were performed to the best of knowledge.
 <!--- Lets check everything before we continue. -->
 - [ ] This PR refers to a versioned Branch with a name and a version number in the form of N.n.n, e.g. "TC_3.2.1".
 - [ ] This PR has a clean meaningful commit history. Minor commits or commits without description have been squashed, at the latest now.
-- [ ] Eventually, increase the dependency of to newer Basis Modul and Basispofil-de and possibly others (package json and sushi-config)
+- [ ] Eventually, increase the dependency of to newer Basisprofil-de and possibly others (package json and sushi-config)
 - [ ] Run Python script in terminal and increment version
-- [ ] New Release Notes were created, alined to the commit history. Possibly, if you want to check the release notes for completeness, check against automatic relesase note generation in GitHub. In Github, go to 
+- [ ] New Release Notes were created, alined to the commit history. Possibly, if you want to check the release notes for completeness, check against automatic release note generation in GitHub. In Github, go to 
   - [ ] _-> Releases_ then _-> Draft a new release_ with the _Modul Name and Version_, then
   - [ ] _-> Target the main-Branch_ and _-> enter a new Tag according to the Version_, then click.
   - [ ] Click _-> Generate Release notes_ , _-> Adjust them if necessary_ and _-> Copy/Paste the Details in the RealeaseNotes.md_ of the very Branch you want to merge.
