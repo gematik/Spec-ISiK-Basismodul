@@ -162,7 +162,7 @@
 			"response": []
 		},
 		{
-			"name": "3. Create Condition Primäre Gonarthrose",
+			"name": "4. Create Condition Primäre Gonarthrose",
 			"event": [
 				{
 					"listen": "test",
@@ -223,7 +223,7 @@
 			"response": []
 		},
 		{
-			"name": "Update Nachname von Anna Müller",
+			"name": "5. Update Nachname von Anna Müller",
 			"event": [
 				{
 					"listen": "test",
@@ -277,7 +277,7 @@
 			"response": []
 		},
 		{
-			"name": "Zusammenfassung der Instanz von Anna Maier holen",
+			"name": "6. Zusammenfassung der Instanz von Anna Maier holen",
 			"request": {
 				"method": "OPTIONS",
 				"header": [],
@@ -288,7 +288,7 @@
 			"response": []
 		},
 		{
-			"name": "Abrufen der alten Versionen der Patienteninstanz",
+			"name": "7. Abrufen der alten Versionen der Patienteninstanz",
 			"request": {
 				"method": "OPTIONS",
 				"header": [
@@ -310,7 +310,7 @@
 			"response": []
 		},
 		{
-			"name": "Abrufen aller Patientinnen mit Alter > Anna Müller",
+			"name": "8. Abrufen aller Patientinnen mit Alter > Anna Müller",
 			"request": {
 				"method": "OPTIONS",
 				"header": [],
@@ -321,7 +321,7 @@
 			"response": []
 		},
 		{
-			"name": "Limit results to 5",
+			"name": "9. Limit results to 5",
 			"request": {
 				"method": "OPTIONS",
 				"header": [],
@@ -332,7 +332,7 @@
 			"response": []
 		},
 		{
-			"name": "List number of patients",
+			"name": "10. Anzahl aller Patient:innen ausgeben lassen",
 			"request": {
 				"method": "OPTIONS",
 				"header": [],
@@ -343,7 +343,7 @@
 			"response": []
 		},
 		{
-			"name": "Copy Patient dein Name",
+			"name": "11. Kopieren der Patient:innen-Instanz",
 			"event": [
 				{
 					"listen": "test",
@@ -389,7 +389,7 @@
 			"response": []
 		},
 		{
-			"name": "Löschen deines Patientenprofils",
+			"name": "12. Löschen deines Patientenprofils",
 			"request": {
 				"method": "OPTIONS",
 				"header": [
