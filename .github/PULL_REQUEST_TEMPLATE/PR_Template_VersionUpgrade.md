@@ -51,7 +51,7 @@ All jobs with an `x` in the boxes were performed to the best of knowledge.
 
 ## Obsolete
 
-- [ ] Provide / Archive the IG in the corresponding _gh-pages_ branch of the GitHub project.
+-  Provide / Archive the IG in the corresponding _gh-pages_ branch of the GitHub project.
   - Checkout the Branch (no need to merge it later). 
   - Export from Simplifier via _-> Guides -> Expand the Modul ... -> Export_
   - Add the zip (other tasks are automated by action called "Unzip and Update IG Version in webpage", in order to provide the Archige in the following page . https://gematik.github.io/spec-ISiK-Basismodul/index.html)
