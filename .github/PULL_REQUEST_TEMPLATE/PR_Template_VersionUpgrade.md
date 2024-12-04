@@ -47,7 +47,7 @@ All jobs with an `x` in the boxes were performed to the best of knowledge.
   - [ ]  Scope the IG to the published package
   - [ ]  Set URL key to isik-[module-name]-version (version without dots)
   - [ ]  Publish via Simplifier GUI (set to overwritable)
-- [ ] Publish the previosuly drafteted Release, including version number, on GitHub.
+
 
 ## Obsolete
 
