@@ -13,15 +13,16 @@ All jobs with an `x` in the boxes were performed to the best of knowledge.
 
 ## Pre-Merge Activities
 <!--- Lets check everything before we continue. -->
-- [ ] This PR refers to a versioned Branch with a name and a version number in the form of N.n.n, e.g. "TC_3.2.1".
-- [ ] This PR has a clean meaningful commit history. Minor commits or commits without description have been squashed, at the latest now.
-- [ ] Eventually, increase the dependency of to newer Basis Modul and Basispofil-de and possibly others (package json and sushi-config)
-- [ ] Run Python script in terminal and increment version
+- This PR refers to a versioned Branch with a name and a version number in the form of N.n.n, e.g. "TC_3.2.1".
+- This PR has a clean meaningful commit history. Minor commits or commits without description have been squashed, at the latest now.
+- The GitHub Actions "TC version update" and "CI (FHIR Validation)" finished successfull, release version and date was updated accordingly.
+- Eventually, increase the dependency of to newer Basis Modul and Basispofil-de and possibly others (package json and sushi-config)
+- Run Python script in terminal and increment version --> Eventeu
 - [ ] New Release Notes were created, alined to the commit history. Possibly, if you want to check the release notes for completeness, check against automatic relesase note generation in GitHub. In Github, go to 
-  - [ ] _-> Releases_ then _-> Draft a new release_ with the _Modul Name and Version_, then
-  - [ ] _-> Target the main-Branch_ and _-> enter a new Tag according to the Version_, then click.
-  - [ ] Click _-> Generate Release notes_ , _-> Adjust them if necessary_ and _-> Copy/Paste the Details in the RealeaseNotes.md_ of the very Branch you want to merge.
-  - [ ] Finally _-> Save as Draft_
+  - _-> Releases_ then _-> Draft a new release_ with the _Modul Name and Version_, then
+  - _-> Target the main-Branch_ and _-> enter a new Tag according to the Version_, then click.
+  - Click _-> Generate Release notes_ , _-> Adjust them if necessary_ and _-> Copy/Paste the Details in the RealeaseNotes.md_ of the very Branch you want to merge.
+  - Finally _-> Save as Draft_
 
 ## Merge and Publishing
 <!--- Now lets do the merge. -->
@@ -41,11 +42,20 @@ All jobs with an `x` in the boxes were performed to the best of knowledge.
   - [ ] The Release notes (from above) and a compare-link to the previous Release.
   - [ ] Unlist the old package by _-> clicking on the old package_, _-> go to Administration_ and _-> click on Unlist_
 - [ ] Publish the previously drafted Release, including version number, on GitHub.
+- [ ] Publish IG in Simplifier
+  - [ ]  Provide a version in the IG title --> (x.x.x)
+  - [ ]  Scope the IG to the published package
+  - [ ]  Set URL key to isik-[module-name]-version (version without dots)
+  - [ ]  Publish via Simplifier GUI (set to overwritable)
+- [ ] Publish the previosuly drafteted Release, including version number, on GitHub.
+
+## Obsolete
+
 - [ ] Provide / Archive the IG in the corresponding _gh-pages_ branch of the GitHub project.
-  - [ ] Checkout the Branch (no need to merge it later). 
-  - [ ] Export from Simplifier via _-> Guides -> Expand the Modul ... -> Export_
-  - [ ] Add the zip (other tasks are automated by action called "Unzip and Update IG Version in webpage", in order to provide the Archige in the following page . https://gematik.github.io/spec-ISiK-Basismodul/index.html)
-- [ ] If ISiK Basismodul was updated all depending Modules should be updated  with a renewed dependency to the incremented Basismodul version - possibly including and closing technical corrections
+  - Checkout the Branch (no need to merge it later). 
+  - Export from Simplifier via _-> Guides -> Expand the Modul ... -> Export_
+  - Add the zip (other tasks are automated by action called "Unzip and Update IG Version in webpage", in order to provide the Archige in the following page . https://gematik.github.io/spec-ISiK-Basismodul/index.html)
+- If ISiK Basismodul was updated all depending Modules should be updated  with a renewed dependency to the incremented Basismodul version - possibly including and closing technical corrections
 
 
 ## Finished
