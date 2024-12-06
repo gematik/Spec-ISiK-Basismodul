@@ -17,7 +17,7 @@ All jobs with an `x` in the boxes were performed to the best of knowledge.
 - This PR has a clean meaningful commit history. Minor commits or commits without description have been squashed, at the latest now.
 - The GitHub Actions "TC version update" and "CI (FHIR Validation)" finished successfull, release version and date was updated accordingly by release_publish.py (triggered by action)
 - Eventually, increase the dependency of to newer Basis Modul and Basispofil-de and possibly others (package json and sushi-config)
-- [ ] All release note items have been annotated as `test-modifiying` OR `test stable`
+- [ ] All release note items have been annotated as `test modifiying` OR `test stable`
 - [ ] the release notes were reviewed with a person responsible for testing
 - [ ] New Release Notes were created, alined to the commit history. Possibly, if you want to check the release notes for completeness, check against automatic relesase note generation in GitHub. In Github, go to 
   - _-> Releases_ then _-> Draft a new release_ with the _Modul Name and Version_, then
