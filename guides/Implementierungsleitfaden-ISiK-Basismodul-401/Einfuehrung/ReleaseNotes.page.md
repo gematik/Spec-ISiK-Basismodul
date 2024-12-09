@@ -178,8 +178,6 @@ Datum: 31.03.2023
 * ISiKVersicherungsverhaeltnisSelbstzahler: Organisation als möglicher 'payor' hinzugefügt (es gibt auch Konstellationen, in denen die Zahlung direkt über die PKV erfolgt)
   * add: organization as payor by @f-peverali in <https://github.com/gematik/spec-ISiK-Basismodul/pull/236>
 
-**Full Changelog**: <https://github.com/gematik/spec-ISiK-Basismodul/compare/master-isik-stufe-2...main-isik-stufe-3-rc>
-
 ----
 ## Version: 2.0.5
 
