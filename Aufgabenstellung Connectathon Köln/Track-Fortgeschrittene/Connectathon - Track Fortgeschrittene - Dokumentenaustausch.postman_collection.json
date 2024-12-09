@@ -20,6 +20,11 @@
 								"key": "Content-Type",
 								"value": "application/fhir+json",
 								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/fhir+json",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -204,6 +209,92 @@
 									"key": "account.identifier",
 									"value": "https://test.krankenhaus.de/fhir/sid/abrechnungsnummer|0123456789"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Anfrage-d.velop",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "FTCD2024",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "dvelop",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/fhir+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url2}}/Patient",
+							"host": [
+								"{{base_url2}}"
+							],
+							"path": [
+								"Patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Anfrage-new",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "FTCD2024",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "dvelop",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/fhir+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url2}}/CapabilityStatement",
+							"host": [
+								"{{base_url2}}"
+							],
+							"path": [
+								"CapabilityStatement"
 							]
 						}
 					},
