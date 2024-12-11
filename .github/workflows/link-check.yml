@@ -35,7 +35,10 @@ jobs:
           # Exclude all links in the "Material" directory.
           args: >
             .
-            --exclude "^https://jira\.hl7\.org,^https://test.krankenhaus.de,^http://hl7.org/fhir/StructureDefinition/condition-related"
+            exclude:
+              - ^https://jira\.hl7\.org
+              - https://test.krankenhaus.de
+              - http://hl7.org/fhir/StructureDefinition/condition-related
             --exclude-path ImplementationGuide/style
             --exclude-path Material
             
