@@ -6,6 +6,7 @@ Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-cli
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v2-0116-BedStatus = http://terminology.hl7.org/ValueSet/v2-0116
+Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $diagnosis-role = http://terminology.hl7.org/CodeSystem/diagnosis-role
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $DiagnosisRole = http://terminology.hl7.org/CodeSystem/diagnosis-role
@@ -48,6 +49,8 @@ Alias: $vsAllergyIntoleranceVerificationStatus = http://terminology.hl7.org/Code
 Alias: $IHEpracticeSettingVS = http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode 
 Alias: $IHEAerztlicheFachrichtungen = http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen
 Alias: $IHEXDSFacilityType = http://ihe-d.de/ValueSets/IHEXDShealthcareFacilityTypeCode
+Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
+Alias: $identifier-type-de-basis = http://fhir.de/CodeSystem/identifier-type-de-basis
 
 Alias: $GEM_PR_KIM_AdressIdentifier = https://gematik.de/fhir/atf/StructureDefinition/identifier-address-kim
 Alias: $GEM_PR_TIM_AdressIdentifier = https://gematik.de/fhir/atf/StructureDefinition/identifier-address-tim
