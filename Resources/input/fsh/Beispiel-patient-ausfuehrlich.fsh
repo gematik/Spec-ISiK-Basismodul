@@ -1,28 +1,15 @@
-Profile: ISiKPatient
-Parent: Patient
-Id: ISiKPatient
-Description: "Dr. Fürstin Anna von Müller, geboren Weber, 67 Jahre, mit der Diagnose primäre Gonarthrose, 
+
+/*Dr. Fürstin Anna von Müller, geboren Weber, 67 Jahre, mit der Diagnose primäre Gonarthrose, 
 beidseitig (ICD M17.0), die durch ihre Orthopädin (Frau Dr. Peters) gestellt wurde,
 möchte durch die geplante Implantation einer Knie-Endoprothese (OPS 5-822)
-in einem spezialisierten Krankenhaus ihre Mobilität und Lebensqualität verbessern.
-
-### Kompatibilität
-Für das Profil ISIKPatient wird eine Kompatibilität mit folgenden Profilen angestrebt; allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen ISIKPatient valide sind, auch valide sind gegen:
-
-* [Profil KBV_PR_Base_Patient der KBV Basisprofile](https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient)
-* [Profil Patient im International Patient Summary (IPS)](https://hl7.org/fhir/uv/ips/StructureDefinition-Patient-uv-ips.html)
-* [Profil Patient der MI-Initiative](https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient)  
-
-Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden."
+in einem spezialisierten Krankenhaus ihre Mobilität und Lebensqualität verbessern.*/
 
 
-* meta.profile = "https://gematik.de/fhir/isik/v4/Basismodul/StructureDefinition/ISiKPatient"
-/*v3 oder v4?*/
-* obeys isik-pat-1
-* . ^constraint[5].source = Canonical(ISiKPatient)
-/*obeys notwendig?*/
+Instance: PatientinAusfuehrlich
+InstanceOf: ISiKPatient
+Usage: #example
 * identifier[0].type = $v2-0203#MR
-* identifier[=].system = "https://fhir.krankenhaus.example/sid/PID"
+* identifier[=].system = "https://fhir.krankenhaus.example/sid/PID" 
 /*Link funktioniert nicht*/
 * identifier[=].value = "TestPID1"
 /*PID?*/
@@ -96,3 +83,13 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
 /*Beispiel Organization evtl. erstellen*/
 * link[0].other = Reference(Patient/9876)
 * link[0].type = #seealso
+
+Invariant: isik-pat-1
+Description: "Falls die Geschlechtsangabe 'other' gewählt wird, muss die amtliche Differenzierung per Extension angegeben werden"
+Severity: #error
+Expression: "gender.exists() and gender='other' implies gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').exists()"
+
+Invariant: address-cnt-2or3-char
+Description: "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2."
+Severity: #warning
+Expression: "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))"
