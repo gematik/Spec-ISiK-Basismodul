@@ -34,13 +34,13 @@ Usage: #example
 * name[=].family = "Weber"
 * name[=].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
 * name[=].family.extension.valueString = "Weber"
-* telecom[0].system = "phone"
+* telecom[0].system = #phone
 * telecom[0].value = "+49 170 1234567"
-* telecom[0].use = "mobile"
+* telecom[0].use = #mobile
 * telecom[0].rank = 1
-* telecom[1].system = "email"
+* telecom[1].system = #email
 * telecom[1].value = "anna.mueller@example.com"
-* telecom[1].use = "work"
+* telecom[1].use = #work
 * telecom[0].rank = 2
 * gender = #female
 * birthDate = "1957-08-12"
@@ -65,17 +65,17 @@ Usage: #example
 * address[=].postalCode = "98764"
 * address[=].country = "DE"
 * maritalStatus = $v3-MaritalStatus#M
-* multipleBirth = true
-* multipleBirth = 2
-* photo.contentType = "image/jpeg"
+* multipleBirthBoolean = true
+* multipleBirthInteger = 2
+* photo.contentType = #image/jpeg
 * photo.url = "https://example.com/patient-photo.jpg"
 * contact[0].relationship = $v2-0131#EP
 * contact[0].name.family = "Schmidt"
 * contact[0].name.given = "Clara"
-* contact[0].telecom.system = "phone"
+* contact[0].telecom.system = #phone
 * contact[0].telecom.value = "+49 123 456789"
 * communication[0].language.coding[0].system = "urn:ietf:bcp:47"
-* communication[0].language.coding[0].code = "en-US"
+* communication[0].language.coding[0].code = #en-US
 * communication[0].language.coding[0].display = "American English"
 * generalPractitioner[0] = Reference(Practitioner/1234)
 /*Beispiel Practitioner evtl. erstellen*/
