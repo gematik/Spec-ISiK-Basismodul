@@ -7,5 +7,9 @@
   "dependencies": {
     "de.basisprofil.r4": "1.5.0",
     "hl7.fhir.uv.subscriptions-backport.r4": "1.1.0"
+  },
+  "zts-dependencies": {
+    "bfarm.terminologien.icd10gm": "1.0.0",
+    "bfarm.terminologien.icd10gm2": "1.0.0"
   }
 }
