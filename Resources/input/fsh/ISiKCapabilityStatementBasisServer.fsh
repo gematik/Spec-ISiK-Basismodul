@@ -26,7 +26,14 @@ Das CapabilityStatement der Instanz MUSS alle Funktionalitäten auflisten, die i
 Das CapabilityStatement KANN darüber hinaus die mit `MAY` gekennzeichneten Funktionalitäten, sowie weitere Funktionalitäten auflisten, 
 sofern diese in der Instanz implementiert wurden.  
 
-Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich."
+Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich.  
+  
+**HISTORIE:**    
+*Version 4.0.2*  
+* `change` Die Verbindlichkeit des Suchparameters `subject` wurde von SHALL auf MAY reduziert, da der Suchparameter `patient` für ISiK-Zwecke ausreichend ist.   
+* `change` Die Verbindlichkeit von Include und RevInclude wurde von SHALL auf MAY reduziert, außer bei den Parameter `patient` und `encounter`, da diese für ISiK-Zwecke ausreichend sind.  
+
+*Version 4.0.1*  "
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
 * kind = #requirements
 * fhirVersion = #4.0.1
