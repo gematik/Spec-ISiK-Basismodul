@@ -288,7 +288,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  
         Dieser Suchparameter ist für die Umsetzung des IHE QEDm Profils verpflichtend."
     * searchParam[+]
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
       * name = "subject"
       * definition = "http://hl7.org/fhir/SearchParameter/Encounter-subject"
       * type = #reference
@@ -472,7 +472,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  
         Dieser Suchparameter ist für die Umsetzung des IHE QEDm Profils verpflichtend."
     * searchParam[+]
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
       * name = "subject"
       * definition = "http://hl7.org/fhir/SearchParameter/Condition-subject"
       * type = #reference
@@ -585,7 +585,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         **Anwendungshinweis:**   
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
     * searchParam[+]
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
       * name = "subject"
       * definition = "http://hl7.org/fhir/SearchParameter/Procedure-subject"
       * type = #reference
@@ -1015,7 +1015,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         **Anwendungshinweis:**   
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
     * searchParam[+]
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
       * name = "subject"
       * definition = "http://hl7.org/fhir/SearchParameter/Observation-subject"
       * type = #reference
