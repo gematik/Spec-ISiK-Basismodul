@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "ISiKKopfumfangExample",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKopfumfang",
+      "http://hl7.org/fhir/StructureDefinition/headcircum",
+      "http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "9843-4",
+        "display": "Head Occipital-frontal circumference"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "363812007",
+        "display": "Head circumference (observable entity)"
+      },
+      {
+        "code": "153856",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_CIRCUM_HEAD"
+      }
+    ],
+    "text": "Kopfumfang"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "cm",
+    "value": 38,
+    "unit": "Centimeter"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectiveDateTime": "2019-07-02"
+}

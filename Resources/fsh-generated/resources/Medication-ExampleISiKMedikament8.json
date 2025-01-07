@@ -1,0 +1,76 @@
+{
+  "resourceType": "Medication",
+  "id": "ExampleISiKMedikament8",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikament"
+    ]
+  },
+  "ingredient": [
+    {
+      "strength": {
+        "numerator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 80,
+          "unit": "mg",
+          "code": "mg"
+        },
+        "denominator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 1,
+          "unit": "m² KOF",
+          "code": "m2"
+        }
+      },
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+            "code": "L01CD01",
+            "display": "Paclitaxel"
+          }
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "strength": {
+        "numerator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 50,
+          "unit": "mg",
+          "code": "mg"
+        },
+        "denominator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 1,
+          "unit": "Milliliter",
+          "code": "mL"
+        }
+      },
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+            "code": "B05BA11",
+            "display": "Glucose"
+          }
+        ]
+      },
+      "isActive": false
+    }
+  ],
+  "code": {
+    "text": "Infusion bestehend aus 80 mg/m² KOF Paclitaxel aufgelöst zur Verabreichung in 5-%iger (50 mg/ml) Glucose-Infusionslösung"
+  },
+  "status": "active",
+  "form": {
+    "coding": [
+      {
+        "system": "http://standardterms.edqm.eu",
+        "code": "11210000",
+        "display": "Solution for infusion"
+      }
+    ]
+  }
+}

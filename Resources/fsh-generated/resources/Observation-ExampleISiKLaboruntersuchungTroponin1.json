@@ -1,0 +1,50 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleISiKLaboruntersuchungTroponin1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungTroponin"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "105000003",
+        "system": "http://snomed.info/sct",
+        "display": "Troponin measurement"
+      },
+      {
+        "code": "42757-5",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 0.1,
+    "code": "ug/L"
+  },
+  "referenceRange": [
+    {
+      "high": {
+        "system": "http://unitsofmeasure.org",
+        "value": 0.4,
+        "code": "ug/L"
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  }
+}

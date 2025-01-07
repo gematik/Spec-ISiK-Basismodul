@@ -1,0 +1,67 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-koerpertemperatur-harnblase",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase",
+  "version": "4.0.1",
+  "name": "SD_MII_ICU_Koerpertemperatur_Harnblase",
+  "title": "SD MII ICU Koerpertemperatur Harnblase",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 2
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "698832009",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "8334-5",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "max": "0"
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "89837001",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

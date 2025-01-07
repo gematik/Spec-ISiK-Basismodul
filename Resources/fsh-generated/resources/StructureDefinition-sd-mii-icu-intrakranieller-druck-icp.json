@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-intrakranieller-druck-icp",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp",
+  "version": "4.0.1",
+  "name": "SD_MII_ICU_Intrakranieller_Druck_Icp",
+  "title": "SD MII ICU Intrakranieller Druck ICP",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 3
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "250844005",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "60956-0",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "153608",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "patternQuantity": {
+          "code": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "unit": "millimeter Mercury column"
+        }
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "min": 1
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "731998000",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

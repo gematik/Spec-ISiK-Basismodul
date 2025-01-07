@@ -1,0 +1,19 @@
+{
+  "resourceType": "Medication",
+  "id": "ExampleISiKMedikament3",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikament"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "07265233",
+        "display": "Pantozol® 40 mg 98 St."
+      }
+    ]
+  },
+  "status": "active"
+}

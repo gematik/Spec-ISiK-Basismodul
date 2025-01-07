@@ -1,0 +1,230 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_MII_ICU_Code_Monitoring_und_Vitaldaten_LOINC",
+  "id": "vs-mii-icu-code-monitoring-und-vitaldaten-loinc",
+  "title": "VS MII ICU Code Monitoring und Vitaldaten [LOINC]",
+  "description": "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring.",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-loinc",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "8867-4",
+            "display": "Heart Rate"
+          },
+          {
+            "code": "8480-6",
+            "display": "Systolic blood Pressure"
+          },
+          {
+            "code": "8478-0",
+            "display": "Mean blood Pressure"
+          },
+          {
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          },
+          {
+            "code": "60985-9",
+            "display": "Central venous pressure (CVP)"
+          },
+          {
+            "code": "8440-0",
+            "display": "Pulmonary artery Systolic blood pressure"
+          },
+          {
+            "code": "8414-5",
+            "display": "Pulmonary artery Mean blood pressure"
+          },
+          {
+            "code": "8385-7",
+            "display": "Pulmonary artery Diastolic blood pressure"
+          },
+          {
+            "code": "75994-4",
+            "display": "Pulmonary artery wedge pressure"
+          },
+          {
+            "code": "8737-9",
+            "display": "Left ventricular Cardiac output by Indicator dilution"
+          },
+          {
+            "code": "8751-0",
+            "display": "Left ventricular Cardiac index by Indicator dilution"
+          },
+          {
+            "code": "8741-1",
+            "display": "Left ventricular Cardiac output"
+          },
+          {
+            "code": "75919-1",
+            "display": "Left ventricular Cardiac index"
+          },
+          {
+            "code": "8837-7",
+            "display": "Systemic vascular Resistance index"
+          },
+          {
+            "code": "8834-4",
+            "display": "Pulmonary vascular Resistance index"
+          },
+          {
+            "code": "8771-8",
+            "display": "Left ventricular Stroke volume by Indicator dilution"
+          },
+          {
+            "code": "8791-6",
+            "display": "Left ventricular Stroke volume index by Indicator dilution"
+          },
+          {
+            "code": "20562-5",
+            "display": "Left ventricular Stroke volume"
+          },
+          {
+            "code": "76297-1",
+            "display": "Left ventricular Stroke volume index"
+          },
+          {
+            "code": "8329-5",
+            "display": "Body temperature - Core"
+          },
+          {
+            "code": "59408-5",
+            "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+          },
+          {
+            "code": "59418-4",
+            "display": "Oxygen saturation in Blood Postductal by Pulse oximetry"
+          },
+          {
+            "code": "59407-7",
+            "display": "Oxygen saturation in Blood Preductal by Pulse oximetry"
+          },
+          {
+            "code": "60956-0",
+            "display": "Intracranial pressure (ICP)"
+          },
+          {
+            "code": "8404-6",
+            "display": "Left ventricular Intrachamber mean pressure"
+          },
+          {
+            "code": "8406-1",
+            "display": "Right ventricular Intrachamber mean pressure"
+          },
+          {
+            "code": "8430-1",
+            "display": "Left ventricular Intrachamber systolic pressure"
+          },
+          {
+            "code": "8432-7",
+            "display": "Right ventricular Intrachamber systolic pressure"
+          },
+          {
+            "code": "8375-8",
+            "display": "Left ventricular Intrachamber diastolic pressure"
+          },
+          {
+            "code": "8377-4",
+            "display": "Right ventricular Intrachamber diastolic pressure"
+          },
+          {
+            "code": "60998-2",
+            "display": "Right atrial pressure Systolic"
+          },
+          {
+            "code": "60989-1",
+            "display": "Left atrial pressure Systolic"
+          },
+          {
+            "code": "8399-8",
+            "display": "Left atrial Intrachamber mean pressure"
+          },
+          {
+            "code": "8400-4",
+            "display": "Right atrial Intrachamber mean pressure"
+          },
+          {
+            "code": "75933-2",
+            "display": "Left atrial pressure Diastolic"
+          },
+          {
+            "code": "60997-4",
+            "display": "Right atrial pressure Diastolic"
+          },
+          {
+            "code": "29463-7",
+            "display": "Body weight"
+          },
+          {
+            "code": "50064-5",
+            "display": "Ideal body weight"
+          },
+          {
+            "code": "8302-2",
+            "display": "Body height"
+          },
+          {
+            "code": "8303-0",
+            "display": "Body height [Percentile]"
+          },
+          {
+            "code": "8336-0",
+            "display": "Body weight [Percentile] Per age"
+          },
+          {
+            "code": "8333-7",
+            "display": "Tympanic membrane temperature"
+          },
+          {
+            "code": "8332-9",
+            "display": "Rectal temperature"
+          },
+          {
+            "code": "60836-4",
+            "display": "Esophageal temperature"
+          },
+          {
+            "code": "8334-5",
+            "display": "Body temperature - Urinary bladder"
+          },
+          {
+            "code": "8328-7",
+            "display": "Axillary temperature"
+          },
+          {
+            "code": "8331-1",
+            "display": "Oral temperature"
+          },
+          {
+            "code": "60834-9",
+            "display": "Blood temperature"
+          },
+          {
+            "code": "60955-2",
+            "display": "Airway temperature"
+          },
+          {
+            "code": "61009-7",
+            "display": "Myocardial temperature"
+          },
+          {
+            "code": "76010-8",
+            "display": "Nasal temperature"
+          },
+          {
+            "code": "8310-5",
+            "display": "Body temperature"
+          }
+        ]
+      }
+    ]
+  }
+}

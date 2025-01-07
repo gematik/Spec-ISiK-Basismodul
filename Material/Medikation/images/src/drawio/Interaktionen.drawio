@@ -1,0 +1,39 @@
+<mxfile host="Electron" modified="2024-04-03T17:40:13.450Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="HWTjw5ypJUtVszlPrGTb" version="24.1.0" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1172" dy="872" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="5" value="X Repository" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;fontColor=#000000;fillColor=none;strokeColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="240" y="180" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=12;fontColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6" value="X Provider" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;fontColor=#000000;fillColor=none;strokeColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="140" y="240" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="X Consumer" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;fontColor=#000000;fillColor=none;strokeColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="340" y="240" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="&lt;span style=&quot;text-indent: 0in; background-color: initial; font-family: &amp;quot;Liberation Sans&amp;quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal;&quot;&gt;X &lt;/span&gt;&lt;span style=&quot;text-indent: 0in; background-color: initial; font-family: &amp;quot;Liberation Sans&amp;quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal;&quot;&gt;∈&lt;/span&gt;&lt;br&gt;&lt;p style=&quot;line-height: normal; margin-top: 0pt; margin-bottom: 0pt; margin-right: 0in; text-indent: 0in; unicode-bidi: embed; word-break: normal; font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px; font-family: &amp;quot;Liberation Sans&amp;quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal;&quot;&gt;{&quot;&lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: &amp;quot;Liberation Sans&amp;quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal;&quot;&gt;Medication&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: &amp;quot;Liberation Sans&amp;quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal;&quot;&gt;Summary&quot;, &quot;&lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: &amp;quot;Liberation Sans&amp;quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal;&quot;&gt;Medication&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: &amp;quot;Liberation Sans&amp;quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal;&quot;&gt;Order&quot;, &quot;&lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: &amp;quot;Liberation Sans&amp;quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal;&quot;&gt;Administered&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: &amp;quot;Liberation Sans&amp;quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal;&quot;&gt;Medication&lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: &amp;quot;Liberation Sans&amp;quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal;&quot;&gt;&quot;}&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="100" y="283" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="10" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5" target="7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="195" as="targetPoint" />
+            <mxPoint x="200" y="250" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="390" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

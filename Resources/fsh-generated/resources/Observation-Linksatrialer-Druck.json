@@ -1,0 +1,136 @@
+{
+  "resourceType": "Observation",
+  "id": "Linksatrialer-Druck",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksatrialer-druck"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "75367002",
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "code": "276760007",
+        "system": "http://snomed.info/sct",
+        "display": "Left atrial pressure"
+      },
+      {
+        "code": "60988-3",
+        "system": "http://loinc.org",
+        "display": "Left atrial pressure"
+      },
+      {
+        "code": "150064",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_PRESS_BLD_ATR_LEFT"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8480-6",
+            "system": "http://loinc.org"
+          },
+          {
+            "code": "150065",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "Systolic left atrial pressure"
+          },
+          {
+            "code": "60989-1",
+            "system": "http://loinc.org",
+            "display": "Left atrial pressure Systolic"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "code": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter Mercury column",
+        "value": 8
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8478-0",
+            "system": "http://loinc.org"
+          },
+          {
+            "code": "150067",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "Mean left atrial pressure"
+          },
+          {
+            "code": "8399-8",
+            "system": "http://loinc.org",
+            "display": "Left atrial Intrachamber mean pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "code": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter Mercury column",
+        "value": 6
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8462-4",
+            "system": "http://loinc.org"
+          },
+          {
+            "code": "150066",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "Diastolic left atrial pressure"
+          },
+          {
+            "code": "75933-2",
+            "system": "http://loinc.org",
+            "display": "Left atrial pressure Diastolic"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "code": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter Mercury column",
+        "value": 4
+      }
+    }
+  ],
+  "bodySite": {
+    "coding": [
+      {
+        "code": "82471001",
+        "system": "http://snomed.info/sct",
+        "display": "Left atrial structure"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectiveDateTime": "2019-12-23T09:30:10+01:00"
+}

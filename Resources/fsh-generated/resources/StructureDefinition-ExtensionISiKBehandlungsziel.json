@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ExtensionISiKBehandlungsziel",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKBehandlungsziel",
+  "version": "4.0.1",
+  "name": "ExtensionISiKBehandlungsziel",
+  "title": "ISiK Behandlungsziel",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "description": "Extension zur freitextlichen Angabe des Behandlungsziels.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationStatement"
+    },
+    {
+      "type": "element",
+      "expression": "MedicationRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKBehandlungsziel"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

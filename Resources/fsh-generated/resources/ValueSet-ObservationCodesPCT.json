@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationCodesPCT",
+  "id": "ObservationCodesPCT",
+  "description": "Enthält LOINC-Codes für die Observation PCT",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesPCT",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "33959-8",
+            "display": "Procalcitonin [Masse/Volumen] in Serum oder Plasma"
+          },
+          {
+            "code": "75241-0",
+            "display": "Procalcitonin [Masse/Volumen] in Serum oder Plasma mittels Immunoassay"
+          },
+          {
+            "code": "51637-7",
+            "display": "Thrombokrit [Volumenfraktion] in Blut"
+          }
+        ]
+      }
+    ]
+  }
+}

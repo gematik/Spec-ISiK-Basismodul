@@ -3,7 +3,12 @@ fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false
 dependencies:
-  de.basisprofil.r4: 1.5.0
   hl7.fhir.r4.core: 4.0.1
   hl7.fhir.extensions.r5: 4.0.1
   hl7.fhir.uv.subscriptions-backport.r4: 1.1.0
+  hl7.fhir.uv.ips: 1.1.0
+  de.basisprofil.r4: 1.5.1-beta2
+  ihe.iti.mhd: 4.2.0
+  de.ihe-d.terminology: 3.0.1
+  dvmd.kdl.r4.2022: 2022.1.2
+  ihe.formatcode.fhir: 1.2.0

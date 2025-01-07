@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_MII_ICU_Method_Observation_Blutdruck",
+  "id": "vs-mii-icu-method-observation-blutdruck",
+  "title": "VS MII ICU Method Observation Blutdruck",
+  "description": "Dieses ValueSet enthält Codes zur Angabe, ob ein Blutdruck invasiv oder nicht-invasiv gemessen ist. ",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-method-observation-blutdruck",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "10179008"
+          },
+          {
+            "code": "22762002"
+          }
+        ]
+      }
+    ]
+  }
+}

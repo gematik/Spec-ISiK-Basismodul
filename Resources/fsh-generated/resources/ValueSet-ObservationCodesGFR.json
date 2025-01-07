@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationCodesGFR",
+  "id": "ObservationCodesGFR",
+  "description": "Enthält LOINC-Codes für die Observation GFR",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesGFR",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "98980-6",
+            "display": "Glomeruläre Filtrationsrate/1,73 qm.geschätzt:Volumenrate pro Fläche:Zeitpunkt:Serum, Plasma oder Blut:Quantitativ:Creatinin- und Cystatin-C-basierte Formel (CKD-EPI 2021)"
+          },
+          {
+            "code": "98979-8",
+            "display": "Glomeruläre Filtrationsrate/1,73 qm.geschätzt:Volumenrate pro Fläche:Zeitpunkt:Serum, Plasma oder Blut:Quantitativ:Creatinin-basierte Formel (CKD-EPI 2021)"
+          },
+          {
+            "code": "94677-2",
+            "display": "Glomeruläre Filtrationsrate/1,73 qm.geschätzt:Volumenrate pro Fläche:Zeitpunkt:Serum, Plasma oder Blut:Quantitativ:Creatinin- und Cystatin-C-basierte Formel (CKD-EPI)"
+          },
+          {
+            "code": "62238-1",
+            "display": "Glomeruläre Filtrationsrate/1,73 qm.geschätzt:Volumenrate pro Fläche:Zeitpunkt:Serum, Plasma oder Blut:Quantitativ:Creatinin-basierte Formel (CKD-EPI)"
+          },
+          {
+            "code": "77147-7",
+            "display": "Glomeruläre Filtrationsrate/1,73 qm.geschätzt:Volumenrate pro Fläche:Zeitpunkt:Serum, Plasma oder Blut:Quantitativ:Creatinin-basierte Formel (MDRD)"
+          },
+          {
+            "code": "50384-7",
+            "display": "Glomeruläre Filtrationsrate/1,73 qm.geschätzt:Volumenrate pro Fläche:Zeitpunkt:Serum, Plasma oder Blut:Quantitativ:Creatinin-basierte Formel (Schwartz)"
+          }
+        ]
+      }
+    ]
+  }
+}

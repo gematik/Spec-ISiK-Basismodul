@@ -1,0 +1,56 @@
+{
+  "resourceType": "Observation",
+  "id": "Koerpertemperatur-Leiste",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "415929009",
+        "system": "http://snomed.info/sct",
+        "display": "Estimated core body temperature measured in inguinal region (observable entity)"
+      },
+      {
+        "code": "104063-3",
+        "system": "http://loinc.org",
+        "display": "Body temperature - Groin"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "Cel",
+    "system": "http://unitsofmeasure.org",
+    "unit": "degree Celsius",
+    "value": 37
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "26893007",
+        "system": "http://snomed.info/sct",
+        "display": "Inguinal region structure (body structure)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

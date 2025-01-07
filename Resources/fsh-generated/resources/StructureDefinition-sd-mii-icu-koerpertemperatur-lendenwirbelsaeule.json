@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-koerpertemperatur-lendenwirbelsaeule",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule",
+  "version": "4.0.1",
+  "name": "SD_MII_ICU_Koerpertemperatur_Lendenwirbelsaeule",
+  "title": "SD MII ICU Koerpertemperatur Lendenwirbelsaeule",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "364429006",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "max": "0"
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "max": "0"
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "122496007",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

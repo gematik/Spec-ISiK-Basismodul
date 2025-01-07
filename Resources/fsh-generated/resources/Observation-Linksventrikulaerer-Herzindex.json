@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "Linksventrikulaerer-Herzindex",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "54993008",
+        "system": "http://snomed.info/sct",
+        "display": "Cardiac index (observable entity)"
+      },
+      {
+        "code": "75919-1",
+        "system": "http://loinc.org",
+        "display": "Left ventricular Cardiac index"
+      },
+      {
+        "code": "149772",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "Cardiac index"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "unit": "liter per minute and square meter",
+    "value": 3,
+    "code": "L/(min.m2)"
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "87878005",
+        "system": "http://snomed.info/sct",
+        "display": "Left cardiac ventricular structure"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationCodesThrombozyten",
+  "id": "ObservationCodesThrombozyten",
+  "description": "Enthält LOINC-Codes für die Observation Thrombozyten",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesThrombozyten",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "13057-5",
+            "display": "Thrombozyten [Einheiten/Volumen] in Dialysat"
+          },
+          {
+            "code": "26515-7",
+            "display": "Thrombozyten [#/Volumen] in Blut"
+          },
+          {
+            "code": "26516-5",
+            "display": "Thrombozyten [#/Volumen] in Plasma"
+          },
+          {
+            "code": "49497-1",
+            "display": "Thrombozyten [#/Volumen] in Blut mittels Schätzung"
+          },
+          {
+            "code": "778-1",
+            "display": "Thrombozyten [#/Volumen] in Blut mittels manueller Zählung"
+          },
+          {
+            "code": "777-3",
+            "display": "Thrombozyten [#/Volumen] in Blut mittels automatisierter Zählung"
+          },
+          {
+            "code": "13056-7",
+            "display": "Thrombozyten [#/Volumen] in Plasma mittels automatisierter Zählung"
+          },
+          {
+            "code": "74775-8",
+            "display": "Thrombozyten [#/Volumen] in thrombozytenreichem Plasma mittels automatisierter Zählung"
+          },
+          {
+            "code": "74464-9",
+            "display": "Thrombozyten [#/Volumen] in Kapillarblut mittels manueller Zählung"
+          },
+          {
+            "code": "40574-6",
+            "display": "Thrombozyten [#/Volumen] in Körperflüssigkeit mittels automatisierter Zählung"
+          }
+        ]
+      }
+    ]
+  }
+}

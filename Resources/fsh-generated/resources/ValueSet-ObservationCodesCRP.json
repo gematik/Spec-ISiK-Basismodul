@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationCodesCRP",
+  "id": "ObservationCodesCRP",
+  "description": "Enthält LOINC-Codes für die Observation CRP",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesCRP",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "71426-1",
+            "display": "C-reaktives Protein [Masse/Volumen] in Blut mittels Hochsensitivitätsmethode"
+          },
+          {
+            "code": "30522-7",
+            "display": "C-reaktives Protein [Masse/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode"
+          },
+          {
+            "code": "78486-0",
+            "display": "C-reaktives Protein [Mol/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode"
+          },
+          {
+            "code": "45062-7",
+            "display": "C-reaktives Protein [Masse/Volumen] in Liquor"
+          },
+          {
+            "code": "48421-2",
+            "display": "C-reaktives Protein [Masse/Volumen] in Kapillarblut"
+          },
+          {
+            "code": "11039-5",
+            "display": "C-reaktives Protein [Nachweis] in Serum oder Plasma"
+          },
+          {
+            "code": "76485-2",
+            "display": "C-reaktives Protein [Mol/Volumen] in Serum oder Plasma"
+          },
+          {
+            "code": "16503-5",
+            "display": "C-reaktives Protein [Masse/Volumen] in Körperflüssigkeit"
+          },
+          {
+            "code": "1988-5",
+            "display": "C-reaktives Protein [Masse/Volumen] in Serum oder Plasma"
+          },
+          {
+            "code": "14634-0",
+            "display": "C-reaktives Protein [Titer] in Serum oder Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "Herzzeitvolumen",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-herzzeitvolumen"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "82799009",
+        "system": "http://snomed.info/sct",
+        "display": "Cardiac output (observable entity)"
+      },
+      {
+        "code": "8741-1",
+        "system": "http://loinc.org",
+        "display": "Left ventricular Cardiac output"
+      },
+      {
+        "code": "150276",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "Cardiac output"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "unit": "liter per minute",
+    "value": 5,
+    "code": "L/min"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

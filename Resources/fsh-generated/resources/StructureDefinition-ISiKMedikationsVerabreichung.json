@@ -1,0 +1,508 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKMedikationsVerabreichung",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerabreichung",
+  "version": "4.0.1",
+  "name": "ISiKMedikationsVerabreichung",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "description": "Dieses Profil ermöglicht die Abbildung der Verabreichung von Medikamenten für einen Patienten in ISiK Szenarien.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration.status",
+        "path": "MedicationAdministration.status",
+        "short": "Status der Verabreichungsinformation",
+        "comment": "Begründung des Must-Support: Erforderliche Angabe im FHIR-Standard",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]",
+        "path": "MedicationAdministration.medication[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationAdministration.medication[x]:medicationCodeableConcept",
+        "path": "MedicationAdministration.medication[x]",
+        "sliceName": "medicationCodeableConcept",
+        "short": "Medikament in codierter Form oder ggf. als Freitext",
+        "comment": "Begründung des Must-Support: Basisinformation\n\n  Hinweis: kann verwendet werden, wenn keine detaillierten Informationen zum Medikament (z.B. Rezepturen) existieren.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]:medicationCodeableConcept.coding",
+        "path": "MedicationAdministration.medication[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]:medicationCodeableConcept.coding:PZN",
+        "path": "MedicationAdministration.medication[x].coding",
+        "sliceName": "PZN",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKPZNCoding"
+            ]
+          }
+        ],
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/ifa/pzn"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]:medicationCodeableConcept.coding:ATC-DE",
+        "path": "MedicationAdministration.medication[x].coding",
+        "sliceName": "ATC-DE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKATCCoding"
+            ]
+          }
+        ],
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/atc"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]:medicationCodeableConcept.coding:SCT",
+        "path": "MedicationAdministration.medication[x].coding",
+        "sliceName": "SCT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKSnomedCTCoding"
+            ]
+          }
+        ],
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]:medicationReference",
+        "path": "MedicationAdministration.medication[x]",
+        "sliceName": "medicationReference",
+        "short": "Referenz auf das Medikament (Medication-Ressource)",
+        "comment": "Begründung des Must-Support: Basisinformation\n\n  Hinweis: wird verwendet, wenn detaillierte Informationen zum Medikament vorliegen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Medication"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]:medicationReference.reference",
+        "path": "MedicationAdministration.medication[x].reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.subject",
+        "path": "MedicationAdministration.subject",
+        "short": "Referenz auf den Patienten",
+        "comment": "Begründung des Must-Support: Basisinformation",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.subject.reference",
+        "path": "MedicationAdministration.subject.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.context",
+        "path": "MedicationAdministration.context",
+        "short": "Referenz auf den Abteilungskontakt",
+        "comment": "Begründung des Must-Support: Basisinformation im Krankenhaus-Kontext",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.context.reference",
+        "path": "MedicationAdministration.context.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x]",
+        "path": "MedicationAdministration.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationAdministration.effective[x]:effectiveDateTime",
+        "path": "MedicationAdministration.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "short": "Zeitpunkt der Verabreichung",
+        "comment": "Begründung des Must-Support: Basisinformation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x]:effectivePeriod",
+        "path": "MedicationAdministration.effective[x]",
+        "sliceName": "effectivePeriod",
+        "short": "Zeitraum der Verabreichung",
+        "comment": "Begründung des Must-Support: Basisinformation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x]:effectivePeriod.start",
+        "path": "MedicationAdministration.effective[x].start",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x]:effectivePeriod.end",
+        "path": "MedicationAdministration.effective[x].end",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.performer",
+        "path": "MedicationAdministration.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.performer.actor",
+        "path": "MedicationAdministration.performer.actor",
+        "short": "Referenz auf die verabreichende Person",
+        "comment": "Begründung des Must-Support: Nachvollziehbarkeit",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.performer.actor.reference",
+        "path": "MedicationAdministration.performer.actor.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.reasonCode",
+        "path": "MedicationAdministration.reasonCode",
+        "short": "Grund der Medikation (Referenz)",
+        "comment": "  Festlegung zum MS: Die Elemente .reasonCode und .reasonReference MÜSSEN nach OR-Logik in der Ausgabe verwendet werden, d.h. nur eines MUSS geliefert werden können. Weiterhin MÜSSEN beide Elemente interpretiert werden können.",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.reasonReference",
+        "path": "MedicationAdministration.reasonReference",
+        "short": "Grund der Medikation (Referenz)",
+        "comment": "  Festlegung zum MS: Die Elemente .reasonCode und .reasonReference MÜSSEN nach OR-Logik in der Ausgabe verwendet werden, d.h. nur eines MUSS geliefert werden können. Weiterhin MÜSSEN beide Elemente interpretiert werden können.",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.reasonReference.reference",
+        "path": "MedicationAdministration.reasonReference.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.note",
+        "path": "MedicationAdministration.note",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.note.text",
+        "path": "MedicationAdministration.note.text",
+        "short": "Freitext-Notiz",
+        "comment": "Begründung des Must-Support: Angabe zusätzlicher Informationen kann fachlich relevant sein",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage",
+        "path": "MedicationAdministration.dosage",
+        "short": "Dosierungsangaben",
+        "comment": "Begründung des Must-Support: Basisinformation. Zur vollständig strukturierten Abbildung der zahlreichen Möglichkeiten sind die hier mit Must-Support gekennzeichneten Unterelemente erforderlich gemäß Konsens der ISiK AG Medikation",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.text",
+        "path": "MedicationAdministration.dosage.text",
+        "short": "Freitext-Dosierungsangabe",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.site",
+        "path": "MedicationAdministration.dosage.site",
+        "short": "Körperstelle der Verabreichung",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.coding",
+        "path": "MedicationAdministration.dosage.site.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.coding:SNOMED-CT",
+        "path": "MedicationAdministration.dosage.site.coding",
+        "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKSnomedCTCoding"
+            ]
+          }
+        ],
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.text",
+        "path": "MedicationAdministration.dosage.site.text",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.route",
+        "path": "MedicationAdministration.dosage.route",
+        "short": "Route",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding",
+        "path": "MedicationAdministration.dosage.route.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding:EDQM",
+        "path": "MedicationAdministration.dosage.route.coding",
+        "sliceName": "EDQM",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKCoding"
+            ]
+          }
+        ],
+        "patternCoding": {
+          "system": "http://standardterms.edqm.eu"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"
+        }
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding:SNOMED-CT",
+        "path": "MedicationAdministration.dosage.route.coding",
+        "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKSnomedCTCoding"
+            ]
+          }
+        ],
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://gematik.de/fhir/isik/ValueSet/SctRouteOfAdministration"
+        }
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.text",
+        "path": "MedicationAdministration.dosage.route.text",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose",
+        "path": "MedicationAdministration.dosage.dose",
+        "short": "verabreichte Dosis",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/MedicationQuantity"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]",
+        "path": "MedicationAdministration.dosage.rate[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio",
+        "path": "MedicationAdministration.dosage.rate[x]",
+        "sliceName": "rateRatio",
+        "short": "Verabreichungs-Rate (Verhältnis)",
+        "comment": "Das Must-Support-Flag auf rateRatio bzw. rateQuantity bedeutet, dass produzierende Systeme zur Kodierung der Ratenangaben nach eigenem Ermessen entweder den Datentyp Ratio oder Quantity verwenden können. Beim Empfang und Verarbeitung der eingehenden Daten müssen dagegen beide Datentypen interpretiert werden können.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.numerator",
+        "path": "MedicationAdministration.dosage.rate[x].numerator",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/MedicationQuantity"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.denominator",
+        "path": "MedicationAdministration.dosage.rate[x].denominator",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/MedicationQuantity"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateQuantity",
+        "path": "MedicationAdministration.dosage.rate[x]",
+        "sliceName": "rateQuantity",
+        "short": "Verabreichungs-Rate",
+        "comment": "Das Must-Support-Flag auf rateRatio bzw. rateQuantity bedeutet, dass produzierende Systeme zur Kodierung der Ratenangaben nach eigenem Ermessen entweder den Datentyp Ratio oder Quantity verwenden können. Beim Empfang und Verarbeitung der eingehenden Daten müssen dagegen beide Datentypen interpretiert werden können.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/MedicationQuantity"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

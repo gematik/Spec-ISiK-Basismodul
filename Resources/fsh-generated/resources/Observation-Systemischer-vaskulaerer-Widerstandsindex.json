@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "Systemischer-vaskulaerer-Widerstandsindex",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "276900001",
+        "system": "http://snomed.info/sct",
+        "display": "Systemic vascular Resistance index (observable entity)"
+      },
+      {
+        "code": "8837-7",
+        "system": "http://loinc.org",
+        "display": "Systemic vascular Resistance index"
+      },
+      {
+        "code": "149760",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "Systemic vascular resistance indexed"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "unit": "dyne second per centimeter5 and square meter",
+    "value": 2000,
+    "code": "dyn.s/(cm5.m2)"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

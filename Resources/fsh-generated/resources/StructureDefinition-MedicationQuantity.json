@@ -1,0 +1,47 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MedicationQuantity",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/MedicationQuantity",
+  "version": "4.0.1",
+  "name": "MedicationQuantity",
+  "title": "Medication Quantity",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "description": "Quantity Datentyp der die Nutzung von UCUM vorgibt. Bei dimensionslosen Einheiten wie 'Tablette' wird ein code von '1' erwartet, 'Tablette' kann als String in Unit hinterlegt werden.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Quantity",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/SimpleQuantity",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Quantity.value",
+        "path": "Quantity.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Quantity.unit",
+        "path": "Quantity.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Quantity.system",
+        "path": "Quantity.system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Quantity.code",
+        "path": "Quantity.code",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

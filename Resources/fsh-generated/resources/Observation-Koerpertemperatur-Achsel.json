@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "Koerpertemperatur-Achsel",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "415882003",
+        "system": "http://snomed.info/sct",
+        "display": "Estimated core body temperature measured in axillary region (observable entity)"
+      },
+      {
+        "code": "8328-7",
+        "system": "http://loinc.org",
+        "display": "Axillary temperature"
+      },
+      {
+        "code": "188452",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_TEMP_AXILLA"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "Cel",
+    "system": "http://unitsofmeasure.org",
+    "unit": "degree Celsius",
+    "value": 37
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "91470000",
+        "system": "http://snomed.info/sct",
+        "display": "Axillary region structure (body structure)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "Pulmonalvaskulaerer-Widerstandsindex",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "276902009",
+        "system": "http://snomed.info/sct",
+        "display": "Pulmonary vascular Resistance index (observable entity)"
+      },
+      {
+        "code": "8834-4",
+        "system": "http://loinc.org",
+        "display": "Pulmonary vascular Resistance index"
+      },
+      {
+        "code": "152852",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "Pulmonary Vascular Resistance Index"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "unit": "dyne second per centimeter5 and square meter",
+    "value": 80,
+    "code": "dyn.s/(cm5.m2)"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

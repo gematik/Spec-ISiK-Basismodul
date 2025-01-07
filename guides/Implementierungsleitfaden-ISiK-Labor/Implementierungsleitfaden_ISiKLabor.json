@@ -1,0 +1,115 @@
+{
+  "resourceType": "ImplementationGuide",
+  "url": "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Labor",
+  "name": "Implementierungsleitfaden ISiK-Labor",
+  "status": "draft",
+  "version": "4.0.0-rc",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "packageId": "de.gematik.isik-labor",
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Patient/test"
+        }
+      }
+    ],
+    "page": {
+      "nameUrl": "ImplementationGuide/markdown/Einfuehrung.md",
+      "title": "Einführung",
+      "generation": "markdown",
+      "page": [
+        {
+          "nameUrl": "ImplementationGuide/markdown/ReleaseNotes.md",
+          "title": "Release Notes",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide/markdown/Zusammenfassung.md",
+          "title": "Zusammenfassung",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/UseCases.md",
+              "title": "Anwendungsfälle (Use Cases)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/Informationsmodell.md",
+              "title": "Ressourcen- und Informationsmodell",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/InteraktionenUndSearchTypes.md",
+              "title": "Interaktionen Und SearchTypes",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen.md",
+          "title": "Übergreifende Festlegungen",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/BestaetigungsrelevanteSysteme.md",
+              "title": "Bestätigungsrelevante Systeme",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md",
+              "title": "Kompatibilität",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/RestApi.md",
+              "title": "REST-API",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "ImplementationGuide/markdown/UebergreifendeUseCases.md",
+          "title": "Übergreifende Use Cases",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeUseCases/AMTS.md",
+              "title": "Arzneimitteltherapiesicherheit (AMTS)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeUseCases/UeberleitungIntensiv.md",
+              "title": "Überleitung Normal- und Intensivversorgung",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "generation": "markdown",
+          "nameUrl": "ImplementationGuide/markdown/Datenobjekte.md",
+          "title": "Datenobjekte",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Profile_ISiKLaboruntersuchung.md",
+              "title": "Laboruntersuchung",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/CapabilityStatement.md",
+              "title": "Capability Statement",
+              "generation": "markdown"
+            },
+            {
+              "generation": "markdown",
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Terminologie.md",
+              "title": "Terminologie"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

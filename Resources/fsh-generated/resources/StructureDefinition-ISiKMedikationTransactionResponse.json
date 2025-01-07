@@ -1,0 +1,91 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKMedikationTransactionResponse",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationTransactionResponse",
+  "version": "4.0.1",
+  "name": "ISiKMedikationTransactionResponse",
+  "title": "ISiK Medikation TransactionBundle-Response",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "description": "Dieses Profil definiert die Server-Antwort auf Transaktions-Bundles im Rahmen von ISiK-Medikations-Szenarien.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "short": "Type des Bundles",
+        "comment": "fix: transaction-response",
+        "fixedCode": "transaction-response",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "short": "Der einzelne Eintrag zur Interaktion",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.link",
+        "path": "Bundle.entry.link",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.fullUrl",
+        "path": "Bundle.entry.fullUrl",
+        "short": "vollständige URL der Ressource",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.resource",
+        "path": "Bundle.entry.resource",
+        "short": "Die Ressourcen-Instanz der Interaktion",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.search",
+        "path": "Bundle.entry.search",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.request",
+        "path": "Bundle.entry.request",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.response",
+        "path": "Bundle.entry.response",
+        "short": "HTTP-Response des Servers innerhalb der Transaktions-Antwort",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.response.status",
+        "path": "Bundle.entry.response.status",
+        "short": "HTTP-Statuscode",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.response.location",
+        "path": "Bundle.entry.response.location",
+        "short": "Location der Ressource (URL) auf dem Server",
+        "comment": "Gemäß FHIR-Spezifikation MUSS hier der Pfad zur exakten Version (History) enthalten sein, wenn der Server History unterstützt.",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.response.outcome",
+        "path": "Bundle.entry.response.outcome",
+        "short": "OperationOutcome-Ressource zur Rückgabe von Fehler-Details sowie Informationen.",
+        "mustSupport": true
+      }
+    ]
+  }
+}

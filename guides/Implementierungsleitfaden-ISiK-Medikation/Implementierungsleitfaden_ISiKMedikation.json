@@ -1,0 +1,165 @@
+{
+  "resourceType": "ImplementationGuide",
+  "url": "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Medikation",
+  "version": "4.0.1",
+  "name": "Implementierungsleitfaden ISiK-Medikation",
+  "status": "active",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "packageId": "de.gematik.isik-medikation-stufe-4",
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Medication/test"
+        }
+      }
+    ],
+    "page": {
+      "nameUrl": "ImplementationGuide/markdown/Einfuehrung.md",
+      "title": "Einführung",
+      "generation": "markdown",
+      "page": [
+        {
+          "nameUrl": "ImplementationGuide/markdown/Motivation.md",
+          "title": "Motivation",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide/markdown/ReleaseNotes.md",
+          "title": "ReleaseNotes",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide/markdown/UseCases.md",
+          "title": "Use Cases und Informationsmodell",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide/markdown/UseCases/UseCases.md",
+              "title": "Übersicht Anwendungsfälle (Use Cases)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UseCases/Informationsmodell.md",
+              "title": "Informationsmodell",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UseCases/AMTS.md",
+              "title": "Arzneimitteltherapiesicherheit (AMTS)",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "ImplementationGuide/markdown/UseCases/AMTS/AMTS_Narrative.md",
+                  "title": "AMTS Einführung",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/UseCases/AMTS/AMTS_Diagramme.md",
+                  "title": "Grafische Zusammenfassung",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/UseCases/AMTS/AMTS_Profile.md",
+                  "title": "Profile",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/UseCases/AMTS/AMTS_Apx_AuszugAK.md",
+                  "title": "Anhang I - Auszug ",
+                  "generation": "markdown"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen.md",
+          "title": "Übergreifende Festlegungen",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/BestaetigungsrelevanteSysteme.md",
+              "title": "Bestätigungsrelevante Systeme",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md",
+              "title": "Kompatibilität",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/RestApi.md",
+              "title": "REST-API",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/AkteureUndInteraktionen.md",
+              "title": "Akteure und Interaktionen",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "generation": "markdown",
+          "nameUrl": "ImplementationGuide/markdown/Datenobjekte.md",
+          "title": "Datenobjekte",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/CapabilityStatement.md",
+              "title": "Capability Statement",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Profile_MedikationsInformation.md",
+              "title": "MedikationsInformation",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Profile_MedikationsListe.md",
+              "title": "MedikationsListe",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Profile_MedikationsVerordnung.md",
+              "title": "MedikationsVerordnung",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Profile_MedikationsVerabreichung.md",
+              "title": "MedikationsVerabreichung",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Profile_Medikament.md",
+              "title": "Medikament",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Profile_AMTSBewertung.md",
+              "title": "AMTS-Bewertung",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Bundle_MedikationTransaction.md",
+              "title": "Bundle MedikationTransaction",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Bundle_MedikationTransactionResponse.md",
+              "title": "Bundle MedikationTransactionResponse",
+              "generation": "markdown"
+            },
+            {
+              "generation": "markdown",
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Terminologie.md",
+              "title": "Terminologie"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

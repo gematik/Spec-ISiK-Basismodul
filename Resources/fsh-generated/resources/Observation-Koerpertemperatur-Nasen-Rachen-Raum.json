@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "Koerpertemperatur-Nasen-Rachen-Raum",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "698831002",
+        "system": "http://snomed.info/sct",
+        "display": "Core body temperature measured in nasopharynx (observable entity)"
+      },
+      {
+        "code": "60838-0",
+        "system": "http://loinc.org",
+        "display": "Nasopharyngeal temperature"
+      },
+      {
+        "code": "150380",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_TEMP_NASOPH"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "Cel",
+    "system": "http://unitsofmeasure.org",
+    "unit": "degree Celsius",
+    "value": 37
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "71836000",
+        "system": "http://snomed.info/sct",
+        "display": "Nasopharyngeal structure (body structure)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

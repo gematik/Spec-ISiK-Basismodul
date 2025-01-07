@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationUnitsPCT",
+  "id": "ObservationUnitsPCT",
+  "description": "Enthält UCUM-Einheiten für die Observation PCT",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsPCT",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://unitsofmeasure.org",
+        "concept": [
+          {
+            "code": "ng/mL",
+            "display": "nanogram per milliliter"
+          },
+          {
+            "code": "%",
+            "display": "percent"
+          }
+        ]
+      }
+    ]
+  }
+}

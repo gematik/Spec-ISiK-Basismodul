@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationUnitsThrombozyten",
+  "id": "ObservationUnitsThrombozyten",
+  "description": "Enthält UCUM-Einheiten für die Observation Thrombozyten",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsThrombozyten",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://unitsofmeasure.org",
+        "concept": [
+          {
+            "code": "10*3/uL",
+            "display": "10^3 per microliter"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "ExampleISiKMedikationsInformationParkinson5",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsInformation"
+    ]
+  },
+  "dosage": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "unit": "Tbl.",
+            "code": "1"
+          }
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "timeOfDay": [
+            "22:00:00"
+          ]
+        }
+      }
+    }
+  ],
+  "status": "active",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "04855419",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "LevoCarb 200/50 ret - 1 A Pharma®"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "context": {
+    "reference": "Encounter/Fachabteilungskontakt"
+  },
+  "effectivePeriod": {
+    "start": "2024-02-20"
+  },
+  "dateAsserted": "2024-02-20",
+  "reasonReference": [
+    {
+      "reference": "Condition/DiagnoseParkinson"
+    }
+  ]
+}

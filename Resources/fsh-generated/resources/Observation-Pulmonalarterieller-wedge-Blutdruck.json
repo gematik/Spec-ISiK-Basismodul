@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "Pulmonalarterieller-wedge-Blutdruck",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "118433006",
+        "system": "http://snomed.info/sct",
+        "display": "Pulmonary artery wedge pressure (observable entity)"
+      },
+      {
+        "code": "75994-4",
+        "system": "http://loinc.org",
+        "display": "Pulmonary artery wedge pressure"
+      },
+      {
+        "code": "150052",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "Pulmonary artery wedge pressure"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "mm[Hg]",
+    "system": "http://unitsofmeasure.org",
+    "unit": "millimeter Mercury column",
+    "value": 10
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "430160002",
+        "system": "http://snomed.info/sct",
+        "display": "Entire vein of lung"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "ExampleISiKMedikationsVerordnung",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerordnung"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKAcceptedRisk",
+      "valueString": "Erhöhtes Blutungsrisiko ist in diesem Fall vertretbar."
+    },
+    {
+      "url": "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKMedikationsart",
+      "valueCoding": {
+        "code": "akut",
+        "system": "https://gematik.de/fhir/isik/CodeSystem/ISiKMedikationsartCS"
+      }
+    },
+    {
+      "url": "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKBehandlungsziel",
+      "valueString": "Schmerztherapie postoperativ"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "unit": "Brausetablette",
+            "code": "1"
+          }
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "when": [
+            "MORN",
+            "NOON",
+            "EVE"
+          ]
+        }
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/ExampleISiKMedikament1"
+  },
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "encounter": {
+    "reference": "Encounter/Fachabteilungskontakt"
+  },
+  "authoredOn": "2021-07-01",
+  "requester": {
+    "reference": "Practitioner/PractitionerWalterArzt"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/BehandlungsDiagnoseFreitext"
+    }
+  ]
+}

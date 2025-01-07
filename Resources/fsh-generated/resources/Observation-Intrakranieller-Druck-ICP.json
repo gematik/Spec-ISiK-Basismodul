@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "Intrakranieller-Druck-ICP",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "250844005",
+        "system": "http://snomed.info/sct",
+        "display": "Intracranial pressure (observable entity)"
+      },
+      {
+        "code": "60956-0",
+        "system": "http://loinc.org",
+        "display": "Intracranial pressure (ICP)"
+      },
+      {
+        "code": "153608",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "Intracranial pressure"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "mm[Hg]",
+    "system": "http://unitsofmeasure.org",
+    "unit": "millimeter Mercury column",
+    "value": 10
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "731998000",
+        "system": "http://snomed.info/sct",
+        "display": "Entire intracranial structure"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleISiKLaboruntersuchungGFR1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungGFR"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "80274001",
+        "system": "http://snomed.info/sct",
+        "display": "Glomerular filtration rate"
+      },
+      {
+        "code": "98980-6",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 100,
+    "code": "mL/min/{1.73_m2}",
+    "unit": "milliliter pro Minute pro Körperoberfläche von 1,73 m2"
+  },
+  "referenceRange": [
+    {
+      "high": {
+        "system": "http://unitsofmeasure.org",
+        "value": 100,
+        "code": "mL/min/{1.73_m2}"
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  }
+}

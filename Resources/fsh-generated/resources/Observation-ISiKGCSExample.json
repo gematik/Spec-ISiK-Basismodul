@@ -1,0 +1,112 @@
+{
+  "resourceType": "Observation",
+  "id": "ISiKGCSExample",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKGCS",
+      "http://fhir.de/StructureDefinition/observation-de-score-gcs"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "1",
+    "value": 11,
+    "unit": "Punktwert"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "9269-2",
+        "display": "Glasgow coma score total"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "248241002",
+        "display": "Glasgow coma score (observable entity)"
+      },
+      {
+        "code": "153728",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_SCORE_GLAS_COMA"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "9270-0",
+            "display": "Glasgow coma score verbal"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA6560-2",
+            "system": "http://loinc.org",
+            "display": "Confused"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "9268-4",
+            "display": "Glasgow coma score motor"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA6566-9",
+            "system": "http://loinc.org",
+            "display": "Localizing pain"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "9267-6",
+            "display": "Glasgow coma score eye opening"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA6555-2",
+            "system": "http://loinc.org",
+            "display": "Eye opening to verbal command"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectiveDateTime": "2020-10-11"
+}

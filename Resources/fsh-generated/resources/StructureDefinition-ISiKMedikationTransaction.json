@@ -1,0 +1,85 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKMedikationTransaction",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationTransaction",
+  "version": "4.0.1",
+  "name": "ISiKMedikationTransaction",
+  "title": "ISiK Medikation Transactionbundle",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "description": "Dieses Profil definiert die Transaktions-Bundles im Rahmen von ISiK-Medikations-Szenarien.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "short": "Type des Bundles",
+        "comment": "fix: transaction",
+        "fixedCode": "transaction",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "short": "Der einzelne Eintrag zur Interaktion",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.link",
+        "path": "Bundle.entry.link",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.fullUrl",
+        "path": "Bundle.entry.fullUrl",
+        "short": "vollständige URL der Ressource",
+        "comment": "auch die Verwendung von UUIDs in der Form ';urn:uuid:.....' ist möglich.",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.resource",
+        "path": "Bundle.entry.resource",
+        "short": "Die Ressourcen-Instanz der Interaktion",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.search",
+        "path": "Bundle.entry.search",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.request",
+        "path": "Bundle.entry.request",
+        "short": "HTTP-Request innerhalb der Transaktion",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.request.method",
+        "path": "Bundle.entry.request.method",
+        "short": "HTTP-Verb",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.request.url",
+        "path": "Bundle.entry.request.url",
+        "short": "Request-URL",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.response",
+        "path": "Bundle.entry.response",
+        "max": "0"
+      }
+    ]
+  }
+}

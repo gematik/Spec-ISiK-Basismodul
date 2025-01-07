@@ -1,0 +1,42 @@
+{
+  "resourceType": "Observation",
+  "id": "Koerpergroesse-Percentil",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "1153605006",
+        "system": "http://snomed.info/sct",
+        "display": "Body height for age percentile (observable entity)"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "%",
+    "system": "http://unitsofmeasure.org",
+    "unit": "percent",
+    "value": 50
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

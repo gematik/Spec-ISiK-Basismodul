@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "Linksventrikulaeres-Schlagvolumen",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "90096001",
+        "system": "http://snomed.info/sct",
+        "display": "Stroke volume (observable entity)"
+      },
+      {
+        "code": "20562-5",
+        "system": "http://loinc.org",
+        "display": "Left ventricular Stroke volume"
+      },
+      {
+        "code": "150408",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_VOL_BLD_VENT_LEFT_STROKE"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "mL",
+    "system": "http://unitsofmeasure.org",
+    "unit": "milliliter",
+    "value": 70
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "244385005",
+        "system": "http://snomed.info/sct",
+        "display": "Entire left cardiac ventricle"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

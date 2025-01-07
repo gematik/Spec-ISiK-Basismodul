@@ -1,0 +1,141 @@
+{
+  "resourceType": "Observation",
+  "id": "Rechtsventrikulaerer-Druck",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "75367002",
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "code": "276756009",
+        "system": "http://snomed.info/sct",
+        "display": "Right ventricular pressure (observable entity)"
+      },
+      {
+        "code": "150104",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_PRESS_BLD_VENT_RIGHT"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8478-0",
+            "system": "http://loinc.org"
+          },
+          {
+            "code": "150107",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "Mean right ventricular pressure"
+          },
+          {
+            "code": "8406-1",
+            "system": "http://loinc.org",
+            "display": "Right ventricular Intrachamber mean pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "code": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter Mercury column",
+        "value": 10
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8480-6",
+            "system": "http://loinc.org"
+          },
+          {
+            "code": "150105",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "Systolic right ventricular pressure"
+          },
+          {
+            "code": "8432-7",
+            "system": "http://loinc.org",
+            "display": "Right ventricular Intrachamber systolic pressure"
+          },
+          {
+            "code": "276772001",
+            "system": "http://snomed.info/sct",
+            "display": "Right ventricular systolic pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "code": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter Mercury column",
+        "value": 25
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8462-4",
+            "system": "http://loinc.org"
+          },
+          {
+            "code": "150106",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "Diastolic right ventricular pressure"
+          },
+          {
+            "code": "8377-4",
+            "system": "http://loinc.org",
+            "display": "Right ventricular Intrachamber diastolic pressure"
+          },
+          {
+            "code": "276773006",
+            "system": "http://snomed.info/sct",
+            "display": "Right ventricular diastolic pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "code": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter Mercury column",
+        "value": 5
+      }
+    }
+  ],
+  "bodySite": {
+    "coding": [
+      {
+        "code": "53085002",
+        "system": "http://snomed.info/sct",
+        "display": "Right cardiac ventricular structure"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectiveDateTime": "2019-12-23T09:30:10+01:00"
+}

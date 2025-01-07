@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationCodesTroponin",
+  "id": "ObservationCodesTroponin",
+  "description": "Enthält LOINC-Codes für die Observation Troponin",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesTroponin",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "48425-3",
+            "display": "Troponin T.kardial [Masse/Volumen] in Blut"
+          },
+          {
+            "code": "42757-5",
+            "display": "Troponin I.kardial [Masse/Volumen] in Blut"
+          },
+          {
+            "code": "6597-9",
+            "display": "Troponin T.kardial [Masse/Volumen] in venösem Blut"
+          },
+          {
+            "code": "10839-9",
+            "display": "Troponin I.kardial [Masse/Volumen] in Serum oder Plasma"
+          },
+          {
+            "code": "6598-7",
+            "display": "Troponin T.kardial [Masse/Volumen] in Serum oder Plasma"
+          },
+          {
+            "code": "89579-7",
+            "display": "Troponin I.kardial [Masse/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode"
+          },
+          {
+            "code": "67151-1",
+            "display": "Troponin T.kardial [Masse/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode"
+          },
+          {
+            "code": "49563-0",
+            "display": "Troponin I.kardial [Masse/Volumen] in Serum oder Plasma mittels Nachweisgrenze <= 0,01 ng/mL"
+          }
+        ]
+      }
+    ]
+  }
+}

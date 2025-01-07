@@ -1,0 +1,112 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_MII_ICU_BodySite_Observation_Monitoring_und_Vitaldaten",
+  "id": "vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten",
+  "title": "VS MII ICU BodySite Observation Monitoring und Vitaldaten",
+  "description": "Dieses ValueSet enthält Codes für bodySites von Vitaldaten sowie Daten aus dem Patientenmonitoring.",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "80891009"
+          },
+          {
+            "code": "81040000"
+          },
+          {
+            "code": "87878005"
+          },
+          {
+            "code": "727614001"
+          },
+          {
+            "code": "123851003"
+          },
+          {
+            "code": "11527006"
+          },
+          {
+            "code": "56459004"
+          },
+          {
+            "code": "85562004"
+          },
+          {
+            "code": "12738006"
+          },
+          {
+            "code": "264856002"
+          },
+          {
+            "code": "277633001"
+          },
+          {
+            "code": "244387002"
+          },
+          {
+            "code": "32849002"
+          },
+          {
+            "code": "244383003"
+          },
+          {
+            "code": "76752008"
+          },
+          {
+            "code": "91470000"
+          },
+          {
+            "code": "122495006"
+          },
+          {
+            "code": "39352004"
+          },
+          {
+            "code": "122494005"
+          },
+          {
+            "code": "89837001"
+          },
+          {
+            "code": "26893007"
+          },
+          {
+            "code": "122496007"
+          },
+          {
+            "code": "74281007"
+          },
+          {
+            "code": "71836000"
+          },
+          {
+            "code": "52795006"
+          },
+          {
+            "code": "42859004"
+          },
+          {
+            "code": "45206002"
+          },
+          {
+            "code": "34402009"
+          },
+          {
+            "code": "76784001"
+          },
+          {
+            "code": "89187006"
+          }
+        ]
+      }
+    ]
+  }
+}

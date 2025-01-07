@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "Ideales-Koerpergewicht",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "170804003",
+        "system": "http://snomed.info/sct",
+        "display": "Ideal body weight (observable entity)"
+      },
+      {
+        "code": "50064-5",
+        "system": "http://loinc.org",
+        "display": "Ideal body weight"
+      },
+      {
+        "code": "188796",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_MASS_BODY_EST_IBW"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "kg",
+    "system": "http://unitsofmeasure.org",
+    "unit": "kilogram",
+    "value": 70
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

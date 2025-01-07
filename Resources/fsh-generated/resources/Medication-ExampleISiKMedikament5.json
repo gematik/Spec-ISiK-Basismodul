@@ -1,0 +1,67 @@
+{
+  "resourceType": "Medication",
+  "id": "ExampleISiKMedikament5",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikament"
+    ]
+  },
+  "ingredient": [
+    {
+      "strength": {
+        "numerator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 400,
+          "unit": "mg",
+          "code": "mg"
+        },
+        "denominator": {
+          "system": "http://unitsofmeasure.org",
+          "unit": "Tablette",
+          "value": 1,
+          "code": "1"
+        }
+      },
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+            "code": "M02AA13",
+            "display": "Ibuprofen"
+          }
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "strength": {
+        "numerator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 500,
+          "unit": "mg",
+          "code": "mg"
+        },
+        "denominator": {
+          "system": "http://unitsofmeasure.org",
+          "unit": "Tablette",
+          "value": 1,
+          "code": "1"
+        }
+      },
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+            "code": "N02BE01",
+            "display": "Paracetamol"
+          }
+        ]
+      },
+      "isActive": true
+    }
+  ],
+  "status": "active",
+  "form": {
+    "text": "Tabletten"
+  }
+}

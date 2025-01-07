@@ -1,0 +1,66 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleISiKLaboruntersuchungHb1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungHb"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "416125006",
+        "system": "http://snomed.info/sct",
+        "display": "Concentration of hemoglobin in erythrocyte"
+      },
+      {
+        "code": "718-7",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 11.4,
+    "code": "g/dL"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "system": "http://unitsofmeasure.org",
+        "value": 12,
+        "code": "g/dL"
+      },
+      "high": {
+        "system": "http://unitsofmeasure.org",
+        "value": 16,
+        "code": "g/dL"
+      },
+      "appliesTo": [
+        {
+          "coding": [
+            {
+              "code": "248152002",
+              "system": "http://snomed.info/sct",
+              "display": "female"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  }
+}

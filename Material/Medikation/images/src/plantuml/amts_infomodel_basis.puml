@@ -1,0 +1,241 @@
+@startuml amts_infomodel_basis
+
+' verhindere Probleme mit gewinkelten Krähenfüßen
+'skinparam linetype ortho
+ 
+' package Dummy{
+' Entität01 }|..|| Entität02
+' Entität03 }o..o| Entität04
+' Entität05 ||--o{ Entität06
+' Entität07 |o--|| Entität08
+' }
+ 
+ ' TODO:
+ ' Vervollständigen im Sinne von: https://github.com/gematik/spec-ISiK-Medikation/blob/rc/main-stufe-4/Material/docs/Medikation%20Abgleich%20bestehende%20Spezifikationen.xlsx
+
+
+
+'Valuesets Observations
+
+
+   class SchwangerschaftEtMethodeVS <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/schwangerschaftetmethodevs Schwangerschaft Estimated Methode]] from [[http://loinc.org LOINC]]
+   }
+
+
+together {
+   class AllergyIntoleranceCriticality <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf HL7 Org 
+      [[https://hl7.org/fhir/R4/valueset-allergy-intolerance-criticality.html Allergy Intolerance Criticality]] from [[https://hl7.org/fhir/R4/codesystem-allergy-intolerance-criticality.html HL7]]
+   }
+   class AllergyIntoleranceVerificationStatus <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf HL7 Org 
+      [[https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification.html Allergy Intolerance Verification Status]] from [[https://www.hl7.org/fhir/R4/codesystem-allergyintolerance-verification.html HL7]]
+   }
+   class AllergyIntoleranceClinicalStatus <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf HL7 Org 
+      [[https://www.hl7.org/fhir/R4/valueset-allergyintolerance-clinical.html Allergy Intolerance Clinical Status]] from [[https://www.hl7.org/fhir/R4/codesystem-allergyintolerance-clinical.html HL7]]
+   }
+   class AllergyIntoleranceType <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf HL7 Org 
+      [[http://hl7.org/fhir/ValueSet/allergy-intolerance-type Allergy Intolerance Type]] from [[http://hl7.org/fhir/allergy-intolerance-type Code System of Allergy Intolerance]]
+   }
+   class AllergyIntoleranceCode <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf HL7 Org 
+      [[http://hl7.org/fhir/ValueSet/allergyintolerance-code Substance/Product, Condition, NegationCodes]] from [[http://snomed.info/sct SNOMED CT]]
+   }
+   class ReactionEventSeverity <ValueSet><<(V,#8DA5C4)>> {
+      Dokumentation auf HL7 Org 
+      [[https://hl7.org/fhir/R4/valueset-reaction-event-severity.html Reaction Eventu Severity]] from [[https://hl7.org/fhir/R4/codesystem-reaction-event-severity.html HL7]]
+   }
+}
+together {
+class ISiKAllergieUnvertraeglichkeit <AllergyIntolerance><<(P,#8DA5C4)>>{
+   Dokumentation auf Simplifier 
+   [[https://simplifier.net/isik-basis-v4/isikallergieunvertraeglichkeit ISiK AllergieUnvertraeglichkeit]]
+   ---
+   clinicalStatus : **AllergyIntoleranceClinicalStatusCodes**
+   |_ coding
+   verificationStatus : **AllergyIntoleranceVerificationStatusCodes**
+   |_ coding
+   type : **AllergyIntoleranceType**
+   category : **AllergyIntoleranceCategory**
+   criticality : **AllergyIntoleranceCriticality**
+   code
+   |_ coding
+   . . .
+}
+
+class ISiKDiagnose <Condition><<(P,#8DA5C4)>>{
+   Dokumentation auf Simplifier 
+   [[https://simplifier.net/isik-basis-v4/isikdiagnose ISiK Diagnose]]
+}
+
+class ISiKLebensZustand <Observation><<(P,#8DA5C4)>>{
+   Dokumentation auf Simplifier 
+   [[https://simplifier.net/isik-basis-v4/isiklebenszustand ISiK LebensZustand]]
+   ---
+   status : **ObservationStatus**
+   code
+   subject : Reference ( **Patient** | \nGroup | Device | Location)
+   . . .
+}
+}
+ 
+   class ISiKAlkoholAbusus <Observation><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikalkoholabusus ISiK Alkohol Abusus]]
+      ---
+      code : snomed sct **15167005**
+      . . .
+   }
+   class ISiKRaucherStatus <Observation><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikraucherstatus ISiK Raucherstatus]]
+      ---
+      code : snomed sct **77176002**
+      . . .
+   }
+'Oservation Childs    
+together  {
+   class ISiKSchwangerschaftErwarteterEntbindungstermin <Observation><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikschwangerschafterwarteterentbindungstermin ISiK Schwangerschaft - Erwarteter Entbindungstermin]]
+      ---
+      code : **SchwangerschaftEtMethodeVS**
+      . . .
+   }
+   class ISiKSchwangerschaftsstatus <Observation><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikschwangerschaftsstatus ISiK Schwangerschaftsstatus]]
+      ---
+      code : loinc **82810-3**
+      . . .
+   }
+   
+   class SchwangerschaftsstatusVS <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/schwangerschaftsstatusvs Schwangerschaft Status]] from [[http://loinc.org LOINC]]
+   }
+
+   class ISiKStillstatus <Observation><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikstillstatus ISiK Stillstatus]]
+      ---
+      code : snomed sct **1260078007**
+      . . .
+   }
+}
+
+'together ISiK_Basis {
+   class ISiKPatient <Patient><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikpatient ISiK Patient]]
+   }
+   class ISiKPersonImGesundheitsberuf <Practitioner><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikpersonimgesundheitsberuf ISiK Person im Gesundheitsberuf]]
+   }
+   class ISiKKontaktGesundheitseinrichtung <Encounter><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikkontaktgesundheitseinrichtung ISiK Kontakt Gesundheitseinrichtung]]
+   }  
+    class ISiKProzedur <Procedure><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikprozedur ISiK Prozedur]]
+   }
+   
+   class ISiKAngehoeriger <RelatedPerson><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikangehoeriger ISiK Angehoeriger]]
+   }
+'}
+
+'Medikation related
+namespace Infomodell_Medikation {
+   class  ISiKMedikationsVerabreichung <Medication><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-medikation-v4/isikmedikationsverabreichung ISiK MedikationsVerabreichung]]
+   }
+
+   class ISiKMedikationsInformation <MedicationStatement><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-medikation-v4/isikmedikationsinformation ISiK MedikationsInformation]]
+   }
+}
+
+namespace Infomodell_LaborVitalObservations {
+      class ISiKKoerpergewicht <Observation><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-vitalparameter-und-koerpermasze-v4/isikkoerpergewicht ISiK Körpergewicht]]
+   }
+   class ISiKKoerpergroesse <Observation><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergroesse ISiK Koerpergroesse]]
+   }
+
+   class  ISiKLaboruntersuchung <Observation><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-labor-v4/isiklaboruntersuchung ISiK Laboruntersuchung]]
+   }
+}
+
+
+'Relations regarding the observation
+
+'diamonds
+'together {
+<> MultiRef_PatEncProc
+MultiRef_PatEncProc -- "  1..1  " ISiKPatient
+MultiRef_PatEncProc -- "  0..1  " ISiKKontaktGesundheitseinrichtung
+<> MultiRef_MedRelation
+MultiRef_MedRelation <-- Infomodell_Medikation.ISiKMedikationsInformation
+MultiRef_MedRelation <-- Infomodell_Medikation.ISiKMedikationsVerabreichung
+'}
+
+ISiKPatient - MultiRef_MedRelation
+
+ISiKAllergieUnvertraeglichkeit --> ISiKProzedur
+Infomodell_LaborVitalObservations.ISiKLaboruntersuchung <-- ISiKProzedur
+'Vital Observations
+Infomodell_LaborVitalObservations.ISiKKoerpergewicht --> MultiRef_PatEncProc
+Infomodell_LaborVitalObservations.ISiKKoerpergroesse --> MultiRef_PatEncProc
+
+'Relations regarding basis AMTS
+
+'diamonds
+'together {
+<> MultiRef_PracPatRel
+MultiRef_PracPatRel -- ISiKPersonImGesundheitsberuf
+MultiRef_PracPatRel -- ISiKPatient
+MultiRef_PracPatRel -- ISiKAngehoeriger
+<> MultiRef_AllergyDetails
+MultiRef_AllergyDetails -up- AllergyIntoleranceCriticality
+MultiRef_AllergyDetails -up- AllergyIntoleranceVerificationStatus
+MultiRef_AllergyDetails -up- AllergyIntoleranceClinicalStatus
+MultiRef_AllergyDetails -up- ReactionEventSeverity
+MultiRef_AllergyDetails -up- AllergyIntoleranceType
+MultiRef_AllergyDetails -up-> "  1..1  " AllergyIntoleranceCode
+'}
+
+'AMTS
+ISiKAllergieUnvertraeglichkeit::patient --> MultiRef_PatEncProc
+ISiKAllergieUnvertraeglichkeit::recorder --> "  0..1  " MultiRef_PracPatRel
+ISiKAllergieUnvertraeglichkeit::recorder .up.  MultiRef_AllergyDetails
+
+'Specific Observations inherit from generic obseration
+ISiKLebensZustand <|-- ISiKAlkoholAbusus
+ISiKLebensZustand <|-- ISiKRaucherStatus
+ISiKLebensZustand <|-- ISiKSchwangerschaftsstatus
+ISiKLebensZustand <|-- ISiKSchwangerschaftErwarteterEntbindungstermin
+ISiKLebensZustand <|-- ISiKStillstatus
+
+ISiKSchwangerschaftsstatus::hasMember -down-> "  0..1  " ISiKSchwangerschaftErwarteterEntbindungstermin
+ISiKSchwangerschaftsstatus::value ..> "  0..1  " SchwangerschaftsstatusVS
+ISiKSchwangerschaftErwarteterEntbindungstermin::code ..> "  1..1  " SchwangerschaftEtMethodeVS 
+
+ ISiKAllergieUnvertraeglichkeit . ISiKDiagnose
+ ISiKDiagnose . ISiKLebensZustand 
+
+@enduml

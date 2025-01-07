@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_MII_ICU_BodySite_Observation_Blutdruck",
+  "id": "vs-mii-icu-bodysite-observation-blutdruck",
+  "title": "VS MII ICU BodySite Observation Blutdruck",
+  "description": "Dieses ValueSet enthält Codes für bodySites von Blutdrücken (pulsatilen Drücken).",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-bodysite-observation-blutdruck",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "11527006"
+          },
+          {
+            "code": "81040000"
+          },
+          {
+            "code": "264856002"
+          },
+          {
+            "code": "277633001"
+          },
+          {
+            "code": "244383003"
+          },
+          {
+            "code": "244387002"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationUnitsCRP",
+  "id": "ObservationUnitsCRP",
+  "description": "Enthält UCUM-Einheiten für die Observation CRP",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsCRP",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://unitsofmeasure.org",
+        "concept": [
+          {
+            "code": "mg/L",
+            "display": "milligram per liter"
+          },
+          {
+            "code": "nmol/L",
+            "display": "nanomol per liter"
+          }
+        ]
+      }
+    ]
+  }
+}

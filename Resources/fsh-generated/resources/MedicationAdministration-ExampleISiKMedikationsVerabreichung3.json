@@ -1,0 +1,61 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "ExampleISiKMedikationsVerabreichung3",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerabreichung"
+    ]
+  },
+  "dosage": {
+    "dose": {
+      "system": "http://unitsofmeasure.org",
+      "value": 1000,
+      "unit": "mL",
+      "code": "mL"
+    },
+    "rateQuantity": {
+      "system": "http://unitsofmeasure.org",
+      "value": 50,
+      "unit": "mL/h",
+      "code": "mL/h"
+    },
+    "text": "1L Infusion mit Rate 50ml/h",
+    "site": {
+      "coding": [
+        {
+          "code": "6073002",
+          "system": "http://snomed.info/sct",
+          "display": "Structure of ligament of left superior vena cava"
+        }
+      ]
+    },
+    "route": {
+      "coding": [
+        {
+          "code": "255560000",
+          "system": "http://snomed.info/sct",
+          "display": "Intravenous"
+        }
+      ]
+    }
+  },
+  "status": "completed",
+  "medicationReference": {
+    "reference": "Medication-Read-Example"
+  },
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "context": {
+    "reference": "Encounter/Fachabteilungskontakt",
+    "identifier": {
+      "value": "0123456789"
+    }
+  },
+  "effectiveDateTime": "2021-07-01",
+  "note": [
+    {
+      "text": "Testnotiz"
+    }
+  ]
+}

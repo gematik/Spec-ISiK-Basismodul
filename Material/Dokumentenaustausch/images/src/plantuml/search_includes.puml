@@ -1,0 +1,21 @@
+
+@startuml search_includes
+left to right direction
+'skinparam packageStyle cloud
+skinparam linetype ortho
+
+
+folder CSt_MedInfo as "Alle Systeme mit dem Charakter eines Dokumentenservers" {
+    component CSt_Operations [
+        **ISiK Dokumentenaustausch**
+        ====
+        MAY enable following **Operations**
+        * update-metadata
+        * generate-metadata
+    ]
+
+    component "ISiK DokumentenMetadaten"
+    component "ISiK Binary"
+}
+
+@enduml

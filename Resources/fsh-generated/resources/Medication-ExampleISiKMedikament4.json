@@ -1,0 +1,67 @@
+{
+  "resourceType": "Medication",
+  "id": "ExampleISiKMedikament4",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikament"
+    ]
+  },
+  "ingredient": [
+    {
+      "strength": {
+        "numerator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 400,
+          "unit": "mg",
+          "code": "mg"
+        },
+        "denominator": {
+          "system": "http://unitsofmeasure.org",
+          "unit": "Tablette",
+          "value": 1,
+          "code": "1"
+        }
+      },
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ifa/pzn",
+            "code": "00266040",
+            "display": "IBU-ratiopharm® 400 mg akut Schmerztabletten 20 St."
+          }
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "strength": {
+        "numerator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 500,
+          "unit": "mg",
+          "code": "mg"
+        },
+        "denominator": {
+          "system": "http://unitsofmeasure.org",
+          "unit": "Tablette",
+          "value": 1,
+          "code": "1"
+        }
+      },
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ifa/pzn",
+            "code": "01126111",
+            "display": "Paracetamol-ratiopharm® 500 mg 20 St."
+          }
+        ]
+      },
+      "isActive": true
+    }
+  ],
+  "status": "active",
+  "form": {
+    "text": "Tabletten"
+  }
+}

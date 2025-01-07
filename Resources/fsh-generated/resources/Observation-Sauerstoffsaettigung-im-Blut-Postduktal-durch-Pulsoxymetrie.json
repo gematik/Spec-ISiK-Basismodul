@@ -1,0 +1,47 @@
+{
+  "resourceType": "Observation",
+  "id": "Sauerstoffsaettigung-im-Blut-Postduktal-durch-Pulsoxymetrie",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "59418-4",
+        "system": "http://loinc.org",
+        "display": "Oxygen saturation in Blood Postductal by Pulse oximetry"
+      },
+      {
+        "code": "160300",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "Postductal SpO2"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "%",
+    "system": "http://unitsofmeasure.org",
+    "unit": "percent",
+    "value": 91
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleISiKLaboruntersuchungThrombozyten1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungThrombozyten"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "365632008",
+        "system": "http://snomed.info/sct",
+        "display": "Platelet count - finding"
+      },
+      {
+        "code": "26515-7",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 178,
+    "code": "10*3/uL"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "system": "http://unitsofmeasure.org",
+        "value": 150,
+        "code": "10*3/uL"
+      },
+      "high": {
+        "system": "http://unitsofmeasure.org",
+        "value": 400,
+        "code": "10*3/uL"
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  }
+}

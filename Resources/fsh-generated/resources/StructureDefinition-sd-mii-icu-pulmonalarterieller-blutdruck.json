@@ -1,0 +1,192 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-pulmonalarterieller-blutdruck",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck",
+  "version": "4.0.1",
+  "name": "SD_MII_ICU_Pulmonalarterieller_Blutdruck",
+  "title": "SD MII ICU Pulmonalarterieller Blutdruck",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "vital-signs",
+              "system": "http://hl7.org/fhir/secondary-finding"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 4,
+        "max": "4"
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "250767002",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "76284-9",
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "150044",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "81040000",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:SystolicBP",
+        "path": "Observation.component",
+        "sliceName": "SystolicBP"
+      },
+      {
+        "id": "Observation.component:SystolicBP.code.coding:IEEE-11073",
+        "path": "Observation.component.code.coding",
+        "sliceName": "IEEE-11073",
+        "patternCoding": {
+          "code": "150045",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.component:SystolicBP.code.coding:loinc-detailed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc-detailed",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "8440-0",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.component:SystolicBP.code.coding:sct-detailed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct-detailed",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "250768007",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.component:DiastolicBP",
+        "path": "Observation.component",
+        "sliceName": "DiastolicBP"
+      },
+      {
+        "id": "Observation.component:DiastolicBP.code.coding:IEEE-11073",
+        "path": "Observation.component.code.coding",
+        "sliceName": "IEEE-11073",
+        "patternCoding": {
+          "code": "150046",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.component:DiastolicBP.code.coding:loinc-detailed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc-detailed",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "8385-7",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.component:DiastolicBP.code.coding:sct-detailed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct-detailed",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "250769004",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.component:meanBP",
+        "path": "Observation.component",
+        "sliceName": "meanBP"
+      },
+      {
+        "id": "Observation.component:meanBP.code.coding:IEEE-11073",
+        "path": "Observation.component.code.coding",
+        "sliceName": "IEEE-11073",
+        "patternCoding": {
+          "code": "150047",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.component:meanBP.code.coding:loinc-detailed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc-detailed",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "8414-5",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.component:meanBP.code.coding:sct-detailed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "sct-detailed",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "250770003",
+          "system": "http://snomed.info/sct"
+        }
+      }
+    ]
+  }
+}

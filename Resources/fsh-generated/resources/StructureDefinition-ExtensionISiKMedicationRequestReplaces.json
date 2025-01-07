@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ExtensionISiKMedicationRequestReplaces",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKMedicationRequestReplaces",
+  "version": "4.0.1",
+  "name": "ExtensionISiKMedicationRequestReplaces",
+  "title": "ISiK MedicationRequestReplaces",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "description": "Extension zur Verlinkung der Medikationsverordnung die ersetzt wurde",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKMedicationRequestReplaces"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].reference",
+        "path": "Extension.value[x].reference",
+        "min": 1
+      }
+    ]
+  }
+}

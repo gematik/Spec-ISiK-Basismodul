@@ -1,0 +1,408 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKLaboruntersuchung",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchung",
+  "version": "4.0.1",
+  "name": "ISiKLaboruntersuchung",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "description": "Dieses Profil ermöglicht die Abbildung von Informationen zur Laboruntersuchungen eines Patienten in ISiK Szenarien. Es dient primär als Vorlage, von der spezifische Laboruntersuchungs-Profile abgeleitet werden, kann aber grundsätzlich auch zur Repräsentation von nicht weiter ausspezifizierten Laboruntersuchungen genutzt werden.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "short": "Status der Laboruntersuchung",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "short": "Kategorie der Laboruntersuchung",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "laboratory",
+              "system": "http://hl7.org/fhir/secondary-finding"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Gegenstand der Untersuchung (Laborparameter)",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/observation-codes"
+        }
+      },
+      {
+        "id": "Observation.code.coding:snomed",
+        "path": "Observation.code.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.code.text",
+        "path": "Observation.code.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Referenz auf den Patienten",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "short": "Referenz auf den Abteilungskontakt",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Zeitpunkt der Untersuchung",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]:effectiveDateTime",
+        "path": "Observation.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.issued",
+        "path": "Observation.issued",
+        "short": "Zeitpunkt der Verfügbarkeit des Untersuchungsergebnisses",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Festgestellter (Mess)Wert für den Laborparameter",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value",
+        "path": "Observation.value[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.system",
+        "path": "Observation.value[x].system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.specimen",
+        "path": "Observation.specimen",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.specimen.reference",
+        "path": "Observation.specimen.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.specimen.identifier",
+        "path": "Observation.specimen.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.specimen.identifier.system",
+        "path": "Observation.specimen.identifier.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.specimen.identifier.value",
+        "path": "Observation.specimen.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.device",
+        "path": "Observation.device",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low",
+        "path": "Observation.referenceRange.low",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.value",
+        "path": "Observation.referenceRange.low.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.unit",
+        "path": "Observation.referenceRange.low.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.system",
+        "path": "Observation.referenceRange.low.system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.code",
+        "path": "Observation.referenceRange.low.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high",
+        "path": "Observation.referenceRange.high",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.value",
+        "path": "Observation.referenceRange.high.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.unit",
+        "path": "Observation.referenceRange.high.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.system",
+        "path": "Observation.referenceRange.high.system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.code",
+        "path": "Observation.referenceRange.high.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type",
+        "path": "Observation.referenceRange.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type.coding",
+        "path": "Observation.referenceRange.type.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type.coding.system",
+        "path": "Observation.referenceRange.type.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type.coding.code",
+        "path": "Observation.referenceRange.type.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type.coding.display",
+        "path": "Observation.referenceRange.type.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type.text",
+        "path": "Observation.referenceRange.type.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo",
+        "path": "Observation.referenceRange.appliesTo",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo.coding",
+        "path": "Observation.referenceRange.appliesTo.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo.coding.system",
+        "path": "Observation.referenceRange.appliesTo.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo.coding.code",
+        "path": "Observation.referenceRange.appliesTo.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo.coding.display",
+        "path": "Observation.referenceRange.appliesTo.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo.text",
+        "path": "Observation.referenceRange.appliesTo.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.age",
+        "path": "Observation.referenceRange.age",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.age.low",
+        "path": "Observation.referenceRange.age.low",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.age.high",
+        "path": "Observation.referenceRange.age.high",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.text",
+        "path": "Observation.referenceRange.text",
+        "mustSupport": true
+      }
+    ]
+  }
+}

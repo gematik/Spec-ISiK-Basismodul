@@ -1,0 +1,42 @@
+{
+  "resourceType": "Observation",
+  "id": "Linksvent-Schlagvolumenindex-Durch-Indikatorverduennung",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "8791-6",
+        "system": "http://loinc.org",
+        "display": "Left ventricular Stroke volume index by Indicator dilution"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "mL/m2",
+    "system": "http://unitsofmeasure.org",
+    "unit": "milliliter per square meter",
+    "value": 40
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

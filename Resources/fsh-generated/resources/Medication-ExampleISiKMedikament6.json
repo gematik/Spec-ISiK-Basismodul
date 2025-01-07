@@ -1,0 +1,13 @@
+{
+  "resourceType": "Medication",
+  "id": "ExampleISiKMedikament6",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikament"
+    ]
+  },
+  "code": {
+    "text": "Enoxaparin-Natrium 40 mg"
+  },
+  "status": "active"
+}

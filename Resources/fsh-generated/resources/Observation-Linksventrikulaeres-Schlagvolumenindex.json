@@ -1,0 +1,56 @@
+{
+  "resourceType": "Observation",
+  "id": "Linksventrikulaeres-Schlagvolumenindex",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "76297-1",
+        "system": "http://loinc.org",
+        "display": "Left ventricular Stroke volume index"
+      },
+      {
+        "code": "150636",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_VOL_BLD_STROKE_INDEX"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "mL/m2",
+    "system": "http://unitsofmeasure.org",
+    "unit": "milliliter per square meter",
+    "value": 40
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "87878005",
+        "system": "http://snomed.info/sct",
+        "display": "Left cardiac ventricular structure"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "Zentralvenoeser-Blutdruck",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "71420008",
+        "system": "http://snomed.info/sct",
+        "display": "Central venous pressure (observable entity)"
+      },
+      {
+        "code": "60985-9",
+        "system": "http://loinc.org",
+        "display": "Central venous pressure (CVP)"
+      },
+      {
+        "code": "150084",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "Central venous pressure"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "mm[Hg]",
+    "system": "http://unitsofmeasure.org",
+    "unit": "millimeter Mercury column",
+    "value": 12
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "73829009",
+        "system": "http://snomed.info/sct",
+        "display": "Right atrial structure"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

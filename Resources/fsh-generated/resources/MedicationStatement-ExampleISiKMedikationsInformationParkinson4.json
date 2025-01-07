@@ -1,0 +1,55 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "ExampleISiKMedikationsInformationParkinson4",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsInformation"
+    ]
+  },
+  "dosage": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "unit": "Tbl.",
+            "code": "1"
+          }
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "timeOfDay": [
+            "22:00:00"
+          ]
+        }
+      }
+    }
+  ],
+  "status": "active",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "11119856",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Entacapon HEC 200 mg"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "context": {
+    "reference": "Encounter/Fachabteilungskontakt"
+  },
+  "effectivePeriod": {
+    "start": "2024-02-20"
+  },
+  "dateAsserted": "2024-02-20",
+  "reasonReference": [
+    {
+      "reference": "Condition/DiagnoseParkinson"
+    }
+  ]
+}

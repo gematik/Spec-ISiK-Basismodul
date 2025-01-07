@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "Koerpertemperatur-Oral",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "415945006",
+        "system": "http://snomed.info/sct",
+        "display": "Core body temperature measured in sublingual space (observable entity)"
+      },
+      {
+        "code": "8331-1",
+        "system": "http://loinc.org",
+        "display": "Oral temperature"
+      },
+      {
+        "code": "188424",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "Oral temperature"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "Cel",
+    "system": "http://unitsofmeasure.org",
+    "unit": "degree Celsius",
+    "value": 37
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "123851003",
+        "system": "http://snomed.info/sct",
+        "display": "Mouth region structure (body structure)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

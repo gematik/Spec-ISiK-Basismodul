@@ -1,0 +1,96 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie",
+  "version": "4.0.1",
+  "name": "SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Postduktal_Durch_Pulsoxymetrie",
+  "title": "SD MII ICU Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 2
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "max": "0",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "59418-4",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "160300",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc-fhir-core",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc-fhir-core",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "code": "2708-6",
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc-fhir-core.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc-fhir-core.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "patternQuantity": {
+          "code": "%",
+          "system": "http://unitsofmeasure.org",
+          "unit": "percent"
+        }
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "min": 1
+      }
+    ]
+  }
+}

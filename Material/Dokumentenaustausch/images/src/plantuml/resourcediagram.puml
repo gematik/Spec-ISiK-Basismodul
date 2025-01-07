@@ -1,0 +1,271 @@
+@startuml dummy
+' package Dummy{
+' entity Entität01 {
+'    optionales Attribut
+'    **optionales fettes Attribut**
+'    * **vorgeschriebens fettes Attribut**
+' }
+' 
+' entity Entität01 {
+'    optionales Attribut : text
+'    **optionales fettes Attribut** nummer <<auto>>
+'    * **vorgeschriebens fettes Attribut**
+' }
+' Entität01 }|..|| Entität02
+' Entität03 }o..o| Entität04
+' Entität05 ||--o{ Entität06
+' Entität07 |o--|| Entität08
+' }
+@enduml
+
+
+' TODO:
+' Vervollständigen im Sinne  von: https://github.com/gematik/spec-ISiK-Medikation/blob/rc/main-stufe-4/Material/docs/Medikation%20Abgleich%20bestehende%20Spezifikationen.xlsx
+
+@startuml resourcediagram
+'verhindere Probleme mit gewinkelten Krähenfüßen
+'skinparam linetype ortho
+
+'Namespace enhancement
+set separator none
+
+'ISiK_Medikation.ISiKMedikationsListe::subject --> ISiK_Basis.ISiKPatient
+'ISiK_Medikation.ISiKMedikationTransaction --> R4_Core.Bundle
+'ISiK_Medikation.ISiKMedikationTransactionResponse --|> R4_Core.Bundle
+
+namespace ISiK_DokumentenAustausch {
+   class  ISiKDokuementenMetaDaten <DocumentReference><<(P,#8DA5C4)>>{
+      masterIdentifier
+      |_ system : **urn:ietf:rfc:3986**
+      |_ value
+      identifier
+      status : DocumentReferenceStatus
+      docStatus : CompositionStatus
+      type
+      |_ KDL : **valueset-kdl-2022**
+         |_ system : **http://dvmd.de/fhir/CodeSystem/kdl**
+         |_ code
+         |_ display
+      |_ XDS : *IHEXDStypeCode**
+      category
+      |_ coding
+         |_ XDS : **IDEXDSclassCode**
+            |_ system : **IDEXDSclassCode**
+            |_ code
+            |_ display
+      subject : Reference (**Patient**)
+      |_ reference
+      author : Reference (**Practitioner** | PractitionerRole \n| Organization | Device | **Patient** | **RelatedPerson**) 
+      |_ display
+      relatesTo
+      |_ description
+      |_ securityLabel : **ISiKConfidentialityCodes**
+      description
+      securityLabel : **ISiKConfidentialityCodes**
+      content
+      |_ attachment
+         |_ contentType
+         |_ language
+         |_ data
+         |_ uri
+         |_ creation
+      |_ format : **IDEXDSformatCodeDE**
+      context
+      |_ encounter : Reference (**Encounter** | EpisodeOfCare)
+         |_ facilityType : **IHEXDShealthcareFacilityTypeCode**
+         |_ practiceSetting : **IHEXDShealthcareFacilityTypeCode**
+   }
+   'ISiKMedikation::itemReference --> ISiKMedikation
+
+   class ISiKDokumentenSuchergebnisse <Bundle><<(P,#8DA5C4)>>{
+      type : BundleType.**searchset**
+      total
+      entry
+      |_ (All Slices)
+        |_ fullUrl
+      |_ DocumentReference
+         |_ resource : ** ISiKDokumentenMetadaten **
+   }
+
+   class ISiKConfidentialityCodes <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-dokumentenaustausch-v3/ISiKConfidentialityCodes/ ISiK Confidentiality Codes]]
+      Includes codes from the code System
+      [[http://terminology.hl7.org/CodeSystem/v3-Confidentiality V3 Confidentiality]]
+      --
+      **N** displays-as **normal**
+      **R** displays-as **restricted**
+      **V** displays-as **very restricted**
+   }
+}
+
+
+namespace DE_Basisprofile_R4 {
+   class Basisprofile_DE <<(M,#FFAAAA)>>{
+      Dokumentation auf HL7 Org
+      [[https://simplifier.net/basisprofil-de-r4 Basisprofil DE (RE4)]]
+   }
+   class IHEXDShealthcareFacilityTypeCode <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/packages/de.basisprofil.r4/1.4.0/files/656621 IHEXDS Healthcare Facility Type Code]]
+      Includes all codes from the value set and underlying code System
+      [[https://simplifier.net/packages/de.basisprofil.r4/1.4.0/files/656626 Patient Bezogene Gesundheitsversorgung]], and
+      Includes all codes from the value set and underlying code System
+      [[https://simplifier.net/packages/de.basisprofil.r4/1.4.0/files/656627 Nicht Patient Bezogene Gesundheitsversorgung]]
+      --
+      **All Codes** from **IHEXDShealthcareFacilityTypeCode**
+                        \t\t\t\t**PatientRelatedHealthcare**
+      **All Codes** from **IHEXDShealthcareFacilityTypeCode**
+                        \t\t\t\t**OutsidePatientReleatedHealthcare**
+   }
+   class IHEXDSpracticeSettingCode <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/packages/de.basisprofil.r4/1.4.0/files/656622 IHEXDS Practice Setting Code]]
+      Includes all codes from the value set and underlying code System
+      [[https://simplifier.net/packages/de.ihe-d.terminology/3.0.0-alpha1/files/694186 Ärztliche Fachrichtung]], and
+      Includes all codes from the value set and underlying code System
+      [[https://simplifier.net/packages/de.ihe-d.terminology/3.0.0-alpha1/files/694187 Nicht ärztliche Fachrichtung]]
+      --
+      **All Codes** from **IHEXDShealthcarePracticeSettingCode**
+                        \t\t\t\t**Doctoral**
+      **All Codes** from **IHEXDShealthcarePracticeSettingCode**
+                        \t\t\t\t**NonDoctoral**
+   }
+   class IHEXDStypeCode <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/packages/de.basisprofil.r4/1.4.0/files/656623 IHEXDS Type Code]]
+      Includes codes from the underlying code System
+      [[http://loinc.org LOINC]], and
+      Includes codes from the value set and underlying 
+      [[http://ihe-d.de/CodeSystems/IHEXDStypeCode Code System]]
+      --
+      **Codes** from **LOINC**
+      **Codes** from **IDEXDStypeCode**
+   }
+   class IHEXDSclassCode <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/packages/de.basisprofil.r4/1.4.0/files/656617 IHEXDS Class Code]]
+      Includes codes from the underlying code System
+      [[http://loinc.org LOINC]], and
+      Includes codes from the value set and underlying 
+      [[http://ihe-d.de/CodeSystems/IHEXDSclassCode Code System]]
+      --
+      **Codes** from **LOINC**
+      **Codes** from **IDEXDSclassCode**
+   }
+   class IHEXDSeventCodeList <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/packages/de.basisprofil.r4/1.4.0/files/656619 IHEXDS Event Code List]]
+      Includes codes from various underlying code Systems
+      --
+      **All Codes** from **SignatureTypeCodes**
+      **All Codes** from **urn:oid:1.2.840.10008.6.1.19**
+      **All Codes** from **urn:oid:1.2.840.10008.6.1.2**
+      **All Codes** from **DokumentenWarnhinweise**
+      **All Codes** from **FallkontextBeiDokumentenerstellung**
+      **Codes** from **FallkontextBeiDokumentenerstellung**
+      **Codes** from **DokumentenWarnhinweise**
+      **Codes** from **IDEFormatCode**
+   }
+   class IHEXDSformatCodeDE <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/packages/de.basisprofil.r4/1.4.0/files/656620 IHEXDS Format Code]]
+      Includes codes from the underlying code System
+      [[http://ihe-d.de/CodeSystems/DeutscheDokumentenformate Deutsche Dokumentenformate]], and
+      Includes all codes from the value set and underlying code System
+      [[http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.71--20180713170639 IHEXDS formatCode (Intl)]]
+      --
+      **Codes** from **DeutscheDokumentenformate**
+      **All Codes** from **IHEXDSformatCodeINTL**
+   }
+}
+
+namespace HL7_FHIR_R4_Core {
+   class Foundation_Modul <<(M,#FFAAAA)>>{
+      Dokumentation auf HL7 Org
+      [[https://hl7.org/fhir/R4/ HL7 FHIR R4 Core Foundation]]
+   }
+   class Bundle <<(P,#FFAAAA)>>{
+      Dokumentation [[https://hl7.org/fhir/R4/bundle.html R4 Bundle]]
+      --
+      identifier
+      type : BundleType
+      timestamp
+      total
+      link
+      |_ relation
+      |_ url
+      entry
+      |_ link
+      |_ fullUrl
+      |_ resource : ** Resource **
+      |_ search
+         |_ mode
+         |_ score
+      |_ request
+         |_ method
+         |_ url
+         |_ ifNoneMatch
+         |_ ifModifiedSince
+         |_ ifMatch
+         |_ ifNoneExist
+      |_ response
+         |_ status
+         |_ location
+         |_ etag
+         |_ lastModified
+         |_ outcome
+   }
+}
+namespace DVMD_KDL_R4 {
+   class valueset-kdl-2022 <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/packages/dvmd.kdl.r4.2022/2022.1.2/files/773899 Valueset KDL 2022]]
+      Includes the codes defined in the code system 
+      [[https://simplifier.net/packages/dvmd.kdl.r4.2022/2022.1.2/files/773896 Code System KDL 2022]]
+      --
+      **Codes** defined in **Code System KDL 2022**
+                        \t\t\t\t, where child Exists false
+   }
+   class DVMD_KDL_Modul <<(M,#FFAAAA)>>{
+      Dokumentation auf HL7 Org
+      [[https://simplifier.net/basisprofil-de-r4 Basisprofil DE (RE4)]]
+   }
+}
+namespace ISiK_Basis {
+   class Basismodul_Stufe_4 <<(M,#FFDC36)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/~introduction ISiK Basis Stufe 4]]
+   }
+   class ISiKPatient <Patient><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikpatient ISiK Patient]]
+   }
+   class ISiKKontaktGesundheitseinrichtung <Encounter><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikkontaktgesundheitseinrichtung ISiK Kontakt Gesundheitseinrichtung]]
+   }
+   class ISiKPractitioner <Practitioner><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikpersonimgesundheitsberuf ISiK Person im Gesundheitsberuf]]
+   }
+   class ISiKAngehoeriger <RelatedPerson><<(P,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikangehoeriger ISiK Angehoeriger]]
+   }  
+}
+
+
+'namespace dummy {
+'   class Foo {
+'   + field1
+'   + field2
+'   }
+'   class Bar {
+'   + field3
+'   + field4
+'   }
+'   Foo::field1 --> Bar::field3 : foo
+'   Foo::field2 --> Bar::field4 : bar
+'}
+@enduml

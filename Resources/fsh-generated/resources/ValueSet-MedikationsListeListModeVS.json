@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MedikationsListeListModeVS",
+  "id": "MedikationsListeListModeVS",
+  "title": "Medikationslisten-Modes",
+  "description": "Erlaubte ListModes der ISiK MedikationsListe",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/MedikationsListeListModeVS",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/list-mode",
+        "concept": [
+          {
+            "code": "working"
+          },
+          {
+            "code": "snapshot"
+          }
+        ]
+      }
+    ]
+  }
+}

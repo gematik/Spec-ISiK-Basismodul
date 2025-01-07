@@ -1,0 +1,56 @@
+{
+  "resourceType": "Observation",
+  "id": "Koerpertemperatur-nasal",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "76010-8",
+        "system": "http://loinc.org",
+        "display": "Nasal temperature"
+      },
+      {
+        "code": "188504",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "Nasal temperature"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "code": "Cel",
+    "system": "http://unitsofmeasure.org",
+    "unit": "degree Celsius",
+    "value": 37
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "45206002",
+        "system": "http://snomed.info/sct",
+        "display": "Nasal structure (body structure)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}

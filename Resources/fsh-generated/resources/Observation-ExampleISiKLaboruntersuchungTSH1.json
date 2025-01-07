@@ -1,0 +1,55 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleISiKLaboruntersuchungTSH1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungTSH"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "61167004",
+        "system": "http://snomed.info/sct",
+        "display": "Thyroid stimulating hormone measurement"
+      },
+      {
+        "code": "3015-5",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 3.4,
+    "code": "u[IU]/mL"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "system": "http://unitsofmeasure.org",
+        "value": 0.27,
+        "code": "u[IU]/mL"
+      },
+      "high": {
+        "system": "http://unitsofmeasure.org",
+        "value": 4.2,
+        "code": "u[IU]/mL"
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  }
+}

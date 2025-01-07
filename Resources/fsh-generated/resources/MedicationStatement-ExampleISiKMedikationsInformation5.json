@@ -1,0 +1,54 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "ExampleISiKMedikationsInformation5",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsInformation"
+    ]
+  },
+  "dosage": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "unit": "Tabl.",
+            "code": "1"
+          }
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 3,
+          "periodUnit": "mo",
+          "dayOfWeek": [
+            "tue"
+          ]
+        }
+      },
+      "patientInstruction": "alle 3 Monate am 1. Dienstag"
+    }
+  ],
+  "status": "active",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "07260796",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Vitamin-B12-ratiopharm® N Ampullen zur Injektion"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "context": {
+    "reference": "Encounter/Fachabteilungskontakt"
+  },
+  "effectivePeriod": {
+    "start": "2024-02-06"
+  },
+  "dateAsserted": "2024-01-31"
+}

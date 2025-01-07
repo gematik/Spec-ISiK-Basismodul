@@ -1,0 +1,50 @@
+'@startuml dummy
+'usecase Medikation as "
+'    = Medikation
+'    
+'    ___
+'    Some text
+'    === Neu-Verordnung
+'    Other text
+'    === Anpassung
+'    Information
+'    === Abgabe
+'"
+'@enduml
+
+@startuml amts_usecases
+left to right direction
+skinparam packageStyle storage
+actor :Heilberufler:
+actor Versicherter
+storage (AMTS) {
+    storage (Medikation){
+        (Neu-Verordung)
+        (Änderung)
+        (Abgabe)
+        (Wechselwirkung)
+    }
+    storage (Reconciliation){
+        (Stationäre Aufnahme mit\n Medikationsumstellung)
+        (Entlassung mit\n Medikationsumstellung)
+    }
+    (Risikofaktoren)
+    (Allergien &\n Inteloranzen)
+    (Lebenzustände)
+    (Umfassender\n Medikationsplan)
+    cloud "Neue Informationslage" as cl1 {
+    }
+}
+'AMTS --> Versicherter
+'(Medikation) --> Versicherter
+(Medikationsprozess) ..> (AMTS) 
+Heilberufler --> Medikation
+Heilberufler -> Reconciliation
+Heilberufler --> cl1
+'Versicherter <-- Medikation
+Versicherter <-- AMTS
+Versicherter --> cl1
+'Medikation --> Versicherter
+'AMTS --> Versicherter
+'cl1 <-- Versicherter 
+@enduml

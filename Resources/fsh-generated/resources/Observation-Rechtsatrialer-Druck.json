@@ -1,0 +1,141 @@
+{
+  "resourceType": "Observation",
+  "id": "Rechtsatrialer-Druck",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsatrialer-druck"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "75367002",
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "code": "276755008",
+        "system": "http://snomed.info/sct",
+        "display": "Right atrial pressure (observable entity)"
+      },
+      {
+        "code": "60996-6",
+        "system": "http://loinc.org",
+        "display": "Right atrial pressure"
+      },
+      {
+        "code": "150068",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_PRESS_BLD_ATR_RIGHT"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8480-6",
+            "system": "http://loinc.org"
+          },
+          {
+            "code": "150069",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "Systolic right atrial pressure"
+          },
+          {
+            "code": "60998-2",
+            "system": "http://loinc.org",
+            "display": "Right atrial pressure Systolic"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "code": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter Mercury column",
+        "value": 5
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8478-0",
+            "system": "http://loinc.org"
+          },
+          {
+            "code": "150071",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "Mean right atrial pressure"
+          },
+          {
+            "code": "8400-4",
+            "system": "http://loinc.org",
+            "display": "Right atrial Intrachamber mean pressure"
+          },
+          {
+            "code": "276775004",
+            "system": "http://snomed.info/sct",
+            "display": "Mean right atrial pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "code": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter Mercury column",
+        "value": 4
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8462-4",
+            "system": "http://loinc.org"
+          },
+          {
+            "code": "150070",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "Diastolic right atrial pressure"
+          },
+          {
+            "code": "60997-4",
+            "system": "http://loinc.org",
+            "display": "Right atrial pressure Diastolic"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "code": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter Mercury column",
+        "value": 3
+      }
+    }
+  ],
+  "bodySite": {
+    "coding": [
+      {
+        "code": "73829009",
+        "system": "http://snomed.info/sct",
+        "display": "Right atrial structure"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
+  "effectiveDateTime": "2019-12-23T09:30:10+01:00"
+}

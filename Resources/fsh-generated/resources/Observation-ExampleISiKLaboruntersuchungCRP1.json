@@ -1,0 +1,51 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleISiKLaboruntersuchungCRP1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungCRP"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "55235003",
+        "system": "http://snomed.info/sct",
+        "display": "C-reactive protein measurement"
+      },
+      {
+        "code": "1988-5",
+        "system": "http://loinc.org",
+        "display": "C-reaktives Protein [Masse/Volumen] in Serum oder Plasma"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 7.4,
+    "code": "mg/L"
+  },
+  "referenceRange": [
+    {
+      "high": {
+        "system": "http://unitsofmeasure.org",
+        "value": 5,
+        "code": "mg/L"
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PatientinMusterfrau"
+  }
+}

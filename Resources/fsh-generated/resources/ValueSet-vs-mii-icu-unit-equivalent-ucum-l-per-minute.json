@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute",
+  "id": "vs-mii-icu-unit-equivalent-ucum-l-per-minute",
+  "title": "VS MII ICU Unit equivalent UCUM L per minute",
+  "description": "Dieses ValueSet enthält äquivalente Codes für Liter pro Minute.",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-unit-equivalent-ucum-l-per-minute",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://unitsofmeasure.org",
+        "concept": [
+          {
+            "code": "L/min"
+          },
+          {
+            "code": "l/min"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,505 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationCodesHb",
+  "id": "ObservationCodesHb",
+  "description": "Enthält LOINC-Codes für die Observation Hb",
+  "version": "4.0.1",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesHb",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "11559-2",
+            "display": "Fraktioniertes Oxyhämoglobin in Blut"
+          },
+          {
+            "code": "14276-0",
+            "display": "Hämoglobin F-Verteilung [Interpretation] in Blut mittels Kleihauer-Betke-Methode"
+          },
+          {
+            "code": "14563-1",
+            "display": "Hämoglobin.gastrointestinal [Nachweis] in Stuhl --1. Probenmaterial"
+          },
+          {
+            "code": "14775-1",
+            "display": "Hämoglobin [Masse/Volumen] in arteriellem Blut mittels Oximetrie"
+          },
+          {
+            "code": "17855-8",
+            "display": "Hämoglobin A1c/Hämoglobin.gesamt in Blut mittels Berechnung"
+          },
+          {
+            "code": "17856-6",
+            "display": "Hämoglobin A1c/Hämoglobin.gesamt in Blut mittels Hochleistungsflüssigkeitschromatographie (HPLC)"
+          },
+          {
+            "code": "18277-4",
+            "display": "Hämoglobin F [Nachweis] in Magenflüssigkeit mittels Apt-Downey-Methode"
+          },
+          {
+            "code": "18278-2",
+            "display": "Hämoglobin F [Nachweis] in Mekonium mittels Apt-Downey-Methode"
+          },
+          {
+            "code": "2030-5",
+            "display": "Carboxyhämoglobin/Hämoglobin.gesamt in arteriellem Blut"
+          },
+          {
+            "code": "2031-3",
+            "display": "Carboxyhämoglobin/Hämoglobin.gesamt in Kapillarblut"
+          },
+          {
+            "code": "2032-1",
+            "display": "Carboxyhämoglobin/Hämoglobin.gesamt in venösem Blut"
+          },
+          {
+            "code": "20509-6",
+            "display": "Hämoglobin [Masse/Volumen] in Blut mittels Berechnung"
+          },
+          {
+            "code": "20563-3",
+            "display": "Carboxyhämoglobin/Hämoglobin.gesamt in Blut"
+          },
+          {
+            "code": "20572-4",
+            "display": "Hämoglobin A/Hämoglobin.gesamt in Blut mittels Elektrophorese"
+          },
+          {
+            "code": "2334-1",
+            "display": "Hämoglobin.gastrointestinal [Nachweis] in Magenflüssigkeit"
+          },
+          {
+            "code": "2335-8",
+            "display": "Hämoglobin.gastrointestinal [Nachweis] in Stuhl"
+          },
+          {
+            "code": "25433-4",
+            "display": "Freies Hämoglobin [Mol/Volumen] in Plasma"
+          },
+          {
+            "code": "2614-6",
+            "display": "Methämoglobin/Hämoglobin.gesamt in Blut"
+          },
+          {
+            "code": "2615-3",
+            "display": "Methämoglobin/Hämoglobin.gesamt in arteriellem Blut"
+          },
+          {
+            "code": "2616-1",
+            "display": "Methämoglobin/Hämoglobin.gesamt in Kapillarblut"
+          },
+          {
+            "code": "2617-9",
+            "display": "Methämoglobin/Hämoglobin.gesamt in venösem Blut"
+          },
+          {
+            "code": "2714-4",
+            "display": "Fraktioniertes Oxyhämoglobin in arteriellem Blut"
+          },
+          {
+            "code": "2716-9",
+            "display": "Fraktioniertes Oxyhämoglobin in venösem Blut"
+          },
+          {
+            "code": "27396-1",
+            "display": "Hämoglobin.gastrointestinal [Masse/Masse] in Stuhl"
+          },
+          {
+            "code": "27401-9",
+            "display": "Hämoglobin.gastrointestinal [Nachweis] in Stuhl --6. Probenmaterial"
+          },
+          {
+            "code": "28539-5",
+            "display": "Mittleres korpuskuläres Hämoglobin (MCH) [Entitische Masse]"
+          },
+          {
+            "code": "28559-3",
+            "display": "Hämoglobin A2 [Nachweis] in Blut"
+          },
+          {
+            "code": "30313-1",
+            "display": "Hämoglobin [Masse/Volumen] in arteriellem Blut"
+          },
+          {
+            "code": "30350-3",
+            "display": "Hämoglobin [Masse/Volumen] in venösem Blut"
+          },
+          {
+            "code": "30351-1",
+            "display": "Hämoglobin [Masse/Volumen] in gemischt-venösem Blut"
+          },
+          {
+            "code": "30352-9",
+            "display": "Hämoglobin [Masse/Volumen] in Kapillarblut"
+          },
+          {
+            "code": "30353-7",
+            "display": "Hämoglobin [Masse/Volumen] in venösem Nabelschnurblut"
+          },
+          {
+            "code": "32017-6",
+            "display": "Hämoglobin.andere/Hämoglobin.gesamt in Blut mittels Elektrophorese"
+          },
+          {
+            "code": "32681-9",
+            "display": "Hämoglobin C/Hämoglobin.gesamt in Blut mittels Elektrophorese"
+          },
+          {
+            "code": "32682-7",
+            "display": "Hämoglobin F/Hämoglobin.gesamt in Blut mittels Elektrophorese"
+          },
+          {
+            "code": "32683-5",
+            "display": "Hämoglobin S/Hämoglobin.gesamt in Blut mittels Elektrophorese"
+          },
+          {
+            "code": "33509-1",
+            "display": "Hämoglobin [Masse/Volumen] in Körperflüssigkeit"
+          },
+          {
+            "code": "33517-4",
+            "display": "Hämoglobin [Nachweis] in Körperflüssigkeit"
+          },
+          {
+            "code": "34402-8",
+            "display": "Coproporphyrin/Hämoglobin [Massenverhältnis] in Erythrozyten"
+          },
+          {
+            "code": "40546-4",
+            "display": "Hämoglobin E [Nachweis] in Blut mittels Elektrophorese"
+          },
+          {
+            "code": "40549-8",
+            "display": "Hämoglobin F [Masse/Volumen] in Blut mittels Elektrophorese"
+          },
+          {
+            "code": "40719-7",
+            "display": "Hämoglobin [Masse/Volumen] in Nabelschnurblut"
+          },
+          {
+            "code": "40720-5",
+            "display": "Hämoglobin C [Nachweis] in Blut"
+          },
+          {
+            "code": "40721-3",
+            "display": "Hämoglobin F [Nachweis] in Probenmaterial mittels Apt-Downey-Methode"
+          },
+          {
+            "code": "41607-3",
+            "display": "Methämoglobin/Hämoglobin.gesamt in gemischt-venösem Blut"
+          },
+          {
+            "code": "41619-8",
+            "display": "Instabiles Hämoglobin [Nachweis] in Erythrozyten mittels Isopropanolstabilität"
+          },
+          {
+            "code": "41648-7",
+            "display": "Carboxyhämoglobin/Hämoglobin.gesamt in gemischt-venösem Blut"
+          },
+          {
+            "code": "42244-4",
+            "display": "Hämoglobin A/Hämoglobin.gesamt in Blut mittels Hochleistungsflüssigkeitschromatographie (HPLC)"
+          },
+          {
+            "code": "42245-1",
+            "display": "Hämoglobin A2/Hämoglobin.gesamt in Blut mittels Hochleistungsflüssigkeitschromatographie (HPLC)"
+          },
+          {
+            "code": "42246-9",
+            "display": "Hämoglobin F/Hämoglobin.gesamt in Blut mittels Hochleistungsflüssigkeitschromatographie (HPLC)"
+          },
+          {
+            "code": "42248-5",
+            "display": "Hämoglobin.andere/Hämoglobin.gesamt in Blut mittels Hochleistungsflüssigkeitschromatographie (HPLC)"
+          },
+          {
+            "code": "42810-2",
+            "display": "Hämoglobin [Entitische Masse] in Retikulozyten"
+          },
+          {
+            "code": "42913-4",
+            "display": "Hämoglobin.gastrointestinal [Nachweis] in Probenmaterial --1. Probenmaterial"
+          },
+          {
+            "code": "44920-7",
+            "display": "Hämoglobin C/Hämoglobin.gesamt in Blut mittels Hochleistungsflüssigkeitschromatographie (HPLC)"
+          },
+          {
+            "code": "44921-5",
+            "display": "Hämoglobin D/Hämoglobin.gesamt in Blut mittels Hochleistungsflüssigkeitschromatographie (HPLC)"
+          },
+          {
+            "code": "44922-3",
+            "display": "Hämoglobin E/Hämoglobin.gesamt in Blut mittels Hochleistungsflüssigkeitschromatographie (HPLC)"
+          },
+          {
+            "code": "44923-1",
+            "display": "Hämoglobin S/Hämoglobin.gesamt in Blut mittels Hochleistungsflüssigkeitschromatographie (HPLC)"
+          },
+          {
+            "code": "45208-6",
+            "display": "Hämoglobin A [Nachweis] in Blut mittels Elektrophorese"
+          },
+          {
+            "code": "4546-8",
+            "display": "Hämoglobin A/Hämoglobin.gesamt in Blut"
+          },
+          {
+            "code": "4547-6",
+            "display": "Hämoglobin A1/Hämoglobin.gesamt in Blut"
+          },
+          {
+            "code": "4548-4",
+            "display": "Hämoglobin A1c/Hämoglobin.gesamt in Blut"
+          },
+          {
+            "code": "4549-2",
+            "display": "Hämoglobin A1c/Hämoglobin.gesamt in Blut mittels Elektrophorese"
+          },
+          {
+            "code": "4551-8",
+            "display": "Hämoglobin A2/Hämoglobin.gesamt in Blut"
+          },
+          {
+            "code": "4552-6",
+            "display": "Hämoglobin A2/Hämoglobin.gesamt in Blut mittels Elektrophorese"
+          },
+          {
+            "code": "4561-7",
+            "display": "Hämoglobin C/Hämoglobin.gesamt in Blut mittels Elektrophorese (pH 6,3)"
+          },
+          {
+            "code": "4563-3",
+            "display": "Hämoglobin C/Hämoglobin.gesamt in Blut"
+          },
+          {
+            "code": "4569-0",
+            "display": "Hämoglobin D/Hämoglobin.gesamt in Blut"
+          },
+          {
+            "code": "4573-2",
+            "display": "Hämoglobin E/Hämoglobin.gesamt in Blut mittels Elektrophorese (pH 6,3)"
+          },
+          {
+            "code": "4576-5",
+            "display": "Hämoglobin F/Hämoglobin.gesamt in Blut"
+          },
+          {
+            "code": "4621-9",
+            "display": "Hämoglobin S [Nachweis] in Blut"
+          },
+          {
+            "code": "4622-7",
+            "display": "Hämoglobin S [Nachweis] in Blut mittels Elektrophorese (pH 6,3)"
+          },
+          {
+            "code": "4623-5",
+            "display": "Hämoglobin S [Nachweis] in Blut mittels Elektrophorese (pH 8,9)"
+          },
+          {
+            "code": "4625-0",
+            "display": "Hämoglobin S/Hämoglobin.gesamt in Blut"
+          },
+          {
+            "code": "4635-9",
+            "display": "Freies Hämoglobin [Masse/Volumen] in Serum"
+          },
+          {
+            "code": "4636-7",
+            "display": "Freies Hämoglobin [Masse/Volumen] in Urin"
+          },
+          {
+            "code": "48035-0",
+            "display": "Hämoglobin [Nachweis] in Liquor"
+          },
+          {
+            "code": "49000-3",
+            "display": "Freies Hämoglobin [Nachweis] in Liquor"
+          },
+          {
+            "code": "49137-3",
+            "display": "Hämoglobin [Masse/Volumen] in Urin mittels Teststreifen"
+          },
+          {
+            "code": "50559-4",
+            "display": "Hämoglobin [Masse/Volumen] in Urin mittels automatisiertem Teststreifen"
+          },
+          {
+            "code": "53857-9",
+            "display": "Hämoglobin F [Masse/Volumen] in Blut"
+          },
+          {
+            "code": "54070-8",
+            "display": "Hämoglobin D/Hämoglobin.gesamt in Trockenblut"
+          },
+          {
+            "code": "54071-6",
+            "display": "Hämoglobin E/Hämoglobin.gesamt in Trockenblut"
+          },
+          {
+            "code": "54072-4",
+            "display": "Hämoglobin A/Hämoglobin.gesamt in Trockenblut"
+          },
+          {
+            "code": "54073-2",
+            "display": "Hämoglobin C/Hämoglobin.gesamt in Trockenblut"
+          },
+          {
+            "code": "54074-0",
+            "display": "Hämoglobin F/Hämoglobin.gesamt in Trockenblut"
+          },
+          {
+            "code": "55782-7",
+            "display": "Hämoglobin [Masse/Volumen] in Blut mittels Oximetrie"
+          },
+          {
+            "code": "55942-7",
+            "display": "Methämoglobin/Hämoglobin.gesamt in Nabelschnurblut"
+          },
+          {
+            "code": "56476-5",
+            "display": "Hämoglobin S/Hämoglobin.gesamt in Trockenblut"
+          },
+          {
+            "code": "56490-6",
+            "display": "Hämoglobin.gastrointestinal.unterer [Nachweis] in Stuhl mittels Immunoassay --2. Probenmaterial"
+          },
+          {
+            "code": "56491-4",
+            "display": "Hämoglobin.gastrointestinal.unterer [Nachweis] in Stuhl mittels Immunoassay --3. Probenmaterial"
+          },
+          {
+            "code": "57751-0",
+            "display": "Hämoglobin [Nachweis] in Urin mittels automatisiertem Teststreifen"
+          },
+          {
+            "code": "57905-2",
+            "display": "Hämoglobin.gastrointestinal.unterer [Nachweis] in Stuhl mittels Immunoassay --1. Probenmaterial"
+          },
+          {
+            "code": "5794-3",
+            "display": "Hämoglobin [Nachweis] in Urin mittels Teststreifen"
+          },
+          {
+            "code": "58453-2",
+            "display": "Hämoglobin.gastrointestinal.unterer [Masse/Volumen] in Stuhl mittels Immunoassay"
+          },
+          {
+            "code": "59260-0",
+            "display": "Hämoglobin [Mol/Volumen] in Blut"
+          },
+          {
+            "code": "59261-8",
+            "display": "Hämoglobin A1c/Hämoglobin.gesamt in Blut mittels International Federation of Clinical Chemistry and Laboratory Medicine (IFCC)-Protokoll"
+          },
+          {
+            "code": "59468-9",
+            "display": "Mittleres korpuskuläres Hämoglobin (MCH) [Entitische Substanz]"
+          },
+          {
+            "code": "62388-4",
+            "display": "Hämoglobin A1c/Hämoglobin.gesamt in Blut mittels Japanese Diabetes Society/Japanese Society for Clinical Chemistry (JDS/JSCC)-Protokoll"
+          },
+          {
+            "code": "64117-5",
+            "display": "Häufigstes Hämoglobin in Trockenblut"
+          },
+          {
+            "code": "64118-3",
+            "display": "Zweithäufigstes Hämoglobin in Trockenblut"
+          },
+          {
+            "code": "64119-1",
+            "display": "Dritthäufigstes Hämoglobin in Trockenblut"
+          },
+          {
+            "code": "64120-9",
+            "display": "Vierthäufigstes Hämoglobin in Trockenblut"
+          },
+          {
+            "code": "64121-7",
+            "display": "Fünfthäufigstes Hämoglobin in Trockenblut"
+          },
+          {
+            "code": "6864-3",
+            "display": "Hämoglobin S [Nachweis] in Blut mittels Löslichkeitstest"
+          },
+          {
+            "code": "71694-4",
+            "display": "Hämoglobin [Entitische Masse] in Retikulozyten mittels automatisierter Zählung"
+          },
+          {
+            "code": "717-9",
+            "display": "Hämoglobin [Nachweis] in Blut"
+          },
+          {
+            "code": "718-7",
+            "display": "Hämoglobin [Masse/Volumen] in Blut"
+          },
+          {
+            "code": "719-5",
+            "display": "Hämoglobin [Masse/Volumen] in Liquor"
+          },
+          {
+            "code": "720-3",
+            "display": "Freies Hämoglobin [Nachweis] in Plasma"
+          },
+          {
+            "code": "721-1",
+            "display": "Freies Hämoglobin [Masse/Volumen] in Plasma"
+          },
+          {
+            "code": "723-7",
+            "display": "Hämoglobin [Masse/Volumen] in Peritonealflüssigkeit"
+          },
+          {
+            "code": "724-5",
+            "display": "Hämoglobin [Masse/Volumen] in Synovialflüssigkeit"
+          },
+          {
+            "code": "725-2",
+            "display": "Hämoglobin [Nachweis] in Urin"
+          },
+          {
+            "code": "726-0",
+            "display": "Hämoglobin [Masse/Volumen] in Urin"
+          },
+          {
+            "code": "73895-5",
+            "display": "Hämoglobin [Entitische Substanz] in Retikulozyten mittels automatisierter Zählung"
+          },
+          {
+            "code": "75928-2",
+            "display": "Hämoglobin [Mol/Volumen] in arteriellem Blut"
+          },
+          {
+            "code": "76768-1",
+            "display": "Hämoglobin [Masse/Volumen] in gemischt-venösem Blut mittels Oximetrie"
+          },
+          {
+            "code": "76769-9",
+            "display": "Hämoglobin [Masse/Volumen] in venösem Blut mittels Oximetrie"
+          },
+          {
+            "code": "785-6",
+            "display": "Mittleres korpuskuläres Hämoglobin (MCH) [Entitische Masse] mittels automatisierter Zählung"
+          },
+          {
+            "code": "86904-0",
+            "display": "Carboxyhämoglobin/Hämoglobin.gesamt in arteriellem Blut mittels Pulsoximetrie"
+          },
+          {
+            "code": "86912-3",
+            "display": "Hämoglobin-Zielwert [Masse/Volumen] in Blut"
+          }
+        ]
+      }
+    ]
+  }
+}
