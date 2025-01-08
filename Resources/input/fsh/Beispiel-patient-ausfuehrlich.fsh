@@ -1,5 +1,5 @@
 
-/*Dr. Fürstin Anna von Müller, geboren Weber, 67 Jahre, mit der Diagnose primäre Gonarthrose, 
+/*Dr. Anna von Müller, geboren Weber, 67 Jahre, mit der Diagnose primäre Gonarthrose, 
 beidseitig (ICD M17.0), die durch ihre Orthopädin (Frau Dr. Peters) gestellt wurde,
 möchte durch die geplante Implantation einer Knie-Endoprothese (OPS 5-822)
 in einem spezialisierten Krankenhaus ihre Mobilität und Lebensqualität verbessern.*/
