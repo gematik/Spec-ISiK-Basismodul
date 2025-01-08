@@ -88,12 +88,13 @@
       "system": "phone",
       "value": "+49 170 1234567",
       "use": "mobile",
-      "rank": 2
+      "rank": 1
     },
     {
       "system": "email",
       "value": "anna.mueller@example.com",
-      "use": "work"
+      "use": "work",
+      "rank": 2
     }
   ],
   "gender": "female",
@@ -116,17 +117,14 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
               "valueString": "2"
-            }
-          ]
-        },
-        {
-          "extension": [
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
               "valueString": "3. Etage"
             }
           ]
-        }
+        },
+        null
       ],
       "city": "Demmin",
       "postalCode": "17109",
