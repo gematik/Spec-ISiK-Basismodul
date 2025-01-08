@@ -8,15 +8,12 @@ in einem spezialisierten Krankenhaus ihre Mobilität und Lebensqualität verbess
 Instance: PatientinAusfuehrlich
 InstanceOf: ISiKPatient
 Usage: #example
-* identifier[Patientennummer].type = $v2-0203#MR
-* identifier[Patientennummer].system = "https://fhir.krankenhaus.example/sid/PID" 
-/*Link funktioniert nicht*/
-* identifier[Patientennummer].value = "TestPID1"
-/*PID?*/
-* identifier[VersichertenId].type = $identifier-type-de-basis#GKV
-/*GKV retired? https://simplifier.net/packages/de.basisprofil.r4/1.5.1-beta1/files/2680552 */
+* identifier[VersichertenId].type = $identifier-type-de-basis#KVZ10
 * identifier[VersichertenId].system = "http://fhir.de/sid/gkv/kvid-10"
 * identifier[VersichertenId].value = "A1234567890"
+* identifier[Patientennummer].type = $v2-0203#MR
+* identifier[Patientennummer].system = "https://fhir.krankenhaus.example/sid/PID" 
+* identifier[Patientennummer].value = "TestPID1"
 * active = true
 * name[0].use = #official
 * name[=].family = "Müller"
