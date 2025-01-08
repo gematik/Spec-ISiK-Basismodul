@@ -16,51 +16,51 @@ Usage: #example
 * identifier[Patientennummer].value = "TestPID1"
 * active = true
 * name[0].use = #official
-* name[=].family = "Müller"
-* name[=].family.extension[0].url = "http://fhir.de/StructureDefinition/humanname-namenszusatz"
-* name[=].family.extension[0].valueString = "Fürstin"
-* name[=].family.extension[+].url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
-* name[=].family.extension[+].valueString = "Müller"
-* name[=].family.extension[+].url = "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"
-* name[=].family.extension[+].valueString = "von"
-* name[=].given = "Anna"
-* name[=].prefix = "Dr."
-* name[=].prefix.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"
-* name[=].prefix.extension.valueCode = #AC
-* name[+].use = #maiden
-* name[=].family = "Weber"
-* name[=].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
-* name[=].family.extension.valueString = "Weber"
+* name[0].family = "Müller"
+* name[0].family.extension[0].url = "http://fhir.de/StructureDefinition/humanname-namenszusatz"
+* name[0].family.extension[0].valueString = "Fürstin"
+* name[0].family.extension[1].url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
+* name[0].family.extension[1].valueString = "Müller"
+* name[0].family.extension[2].url = "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"
+* name[0].family.extension[2].valueString = "von"
+* name[0].given = "Anna"
+* name[0].prefix = "Dr."
+* name[0].prefix.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"
+* name[0].prefix.extension[0].valueCode = #AC
+* name[1].use = #maiden
+* name[1].family = "Weber"
+* name[1].family.extension[0].url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
+* name[1].family.extension[0].valueString = "Weber"
 * telecom[0].system = #phone
 * telecom[0].value = "+49 170 1234567"
 * telecom[0].use = #mobile
 * telecom[0].rank = 1
-* telecom[+].system = #email
-* telecom[+].value = "anna.mueller@example.com"
-* telecom[+].use = #work
-* telecom[+].rank = 2
+* telecom[1].system = #email
+* telecom[1].value = "anna.mueller@example.com"
+* telecom[1].use = #work
+* telecom[1].rank = 2
 * gender = #female
 * birthDate = "1957-08-12"
 * deceasedBoolean = false
 * address[0].type = #both
-* address[=].line[0] = "Musterweg 2"
-* address[=].line[+] = "3. Etage"
-* address[=].line[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
-* address[=].line[=].extension[=].valueString = "Musterweg"
-* address[=].line[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
-* address[=].line[=].extension[+].valueString = "2"
-* address[=].line[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
-* address[=].line[=].extension[+].valueString = "3. Etage"
-* address[=].city = "Demmin"
-* address[=].postalCode = "17109"
-* address[=].country = "DE"
-* address[+].type = #postal
-* address[=].line[0] = "Postfach 8 15"
-* address[=].line[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"
-* address[=].line[=].extension[0].valueString = "Postfach 8 15"
-* address[=].city = "Musterhausen"
-* address[=].postalCode = "98764"
-* address[=].country = "DE"
+* address[0].line[0] = "Musterweg 2"
+* address[0].line[1] = "3. Etage"
+* address[0].line[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+* address[0].line[0].extension[0].valueString = "Musterweg"
+* address[0].line[0].extension[1].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+* address[0].line[0].extension[1].valueString = "2"
+* address[0].line[0].extension[2].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
+* address[0].line[0].extension[2].valueString = "3. Etage"
+* address[0].city = "Demmin"
+* address[0].postalCode = "17109"
+* address[0].country = "DE"
+* address[1].type = #postal
+* address[1].line[0] = "Postfach 8 15"
+* address[1].line[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"
+* address[1].line[0].extension[0].valueString = "Postfach 8 15"
+* address[1].city = "Musterhausen"
+* address[1].postalCode = "98764"
+* address[1].country = "DE"
 * maritalStatus = $v3-MaritalStatus#M
 * multipleBirthBoolean = true
 * multipleBirthInteger = 2
