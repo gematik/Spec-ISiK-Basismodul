@@ -9,18 +9,16 @@ Instance: PatientinAusfuehrlich
 InstanceOf: ISiKPatient
 Usage: #example
 * identifier[Patientennummer].type = $v2-0203#MR
-* identifier[=].system = "https://fhir.krankenhaus.example/sid/PID" 
+* identifier[Patientennummer].system = "https://fhir.krankenhaus.example/sid/PID" 
 /*Link funktioniert nicht*/
-* identifier[=].value = "TestPID1"
+* identifier[Patientennummer].value = "TestPID1"
 /*PID?*/
-* identifier[+].type = $identifier-type-de-basis#GKV
+* identifier[VersichertenId].type = $identifier-type-de-basis#GKV
 /*GKV retired? https://simplifier.net/packages/de.basisprofil.r4/1.5.1-beta1/files/2680552 */
-* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
-* identifier[=].value = "A1234567890"
+* identifier[VersichertenId].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[VersichertenId].value = "A1234567890"
 * active = true
 * name[0].use = #official
-
-
 * name[=].family = "Müller"
 * name[=].family.extension[0].url = "http://fhir.de/StructureDefinition/humanname-namenszusatz"
 * name[=].family.extension[=].valueString = "Fürstin"
