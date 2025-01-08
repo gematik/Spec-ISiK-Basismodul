@@ -8,7 +8,7 @@ in einem spezialisierten Krankenhaus ihre Mobilität und Lebensqualität verbess
 Instance: PatientinAusfuehrlich
 InstanceOf: ISiKPatient
 Usage: #example
-* identifier[0].type = $v2-0203#MR
+* identifier[Patientennummer].type = $v2-0203#MR
 * identifier[=].system = "https://fhir.krankenhaus.example/sid/PID" 
 /*Link funktioniert nicht*/
 * identifier[=].value = "TestPID1"
@@ -19,6 +19,8 @@ Usage: #example
 * identifier[=].value = "A1234567890"
 * active = true
 * name[0].use = #official
+
+
 * name[=].family = "Müller"
 * name[=].family.extension[0].url = "http://fhir.de/StructureDefinition/humanname-namenszusatz"
 * name[=].family.extension[=].valueString = "Fürstin"
