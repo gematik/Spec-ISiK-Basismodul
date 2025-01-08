@@ -11,7 +11,7 @@ Usage: #example
 * identifier[Patientennummer].type = $v2-0203#MR
 * identifier[Patientennummer].system = "https://fhir.krankenhaus.example/sid/PID" 
 * identifier[Patientennummer].value = "TestPID1"
-* name[=].use = #official
+* name[0].use = #official
 * name[=].family = "Müller"
 * name[=].given = "Anna"
 * gender = #female
