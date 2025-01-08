@@ -36,5 +36,5 @@ Usage: #example
 * address[=].city = "Musterhausen"
 * address[=].postalCode = "98764"
 * address[=].country = "DE"
-* link[=].other = Reference(Patient/9876)
+* link[0].other = Reference(Patient/9876)
 * link[=].type = #seealso
