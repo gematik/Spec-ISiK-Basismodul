@@ -216,6 +216,71 @@ Usage: #example
 * onsetDateTime = "2019-09-02"
 * recordedDate = "2021-01-01"
 
+
+Instance: PrimaereGonarthroseMinimal
+InstanceOf: ISiKDiagnose
+Usage: #example
+* code.coding = $icd-10-gm#M17.0 "Primäre Gonarthrose" /* code oder code.coding hier?*/
+* subject = Reference(Patient/PatientinAusfuehrlich)
+* recordedDate = "2024-10-21"
+
+Instance: PrimaereGonarthroseNormal
+InstanceOf: ISiKDiagnose
+Usage: #example
+* extension.url = "http://hl7.org/fhir/StructureDefinition/condition-related" /* überprüfen*/
+* extension.valueReference = Reference(PrimaereGonarthroseMinimal) /* überprüfen*/
+* clinicalStatus = $condition-clinical#active
+* code.coding[ICD-10-GM].system = http://fhir.de/CodeSystem/bfarm/icd-10-gm
+* code.coding[ICD-10-GM].version = "2025"
+* code.coding[ICD-10-GM].code = $icd-10-gm#M17.0 
+* code.coding[ICD-10-GM].display = "Primäre Gonarthrose" 
+* code.coding[Alpha-ID].system = "http://fhir.de/ValueSet/bfarm/alpha-id"
+* code.coding[Alpha-ID].code = $alpha-id#A1111
+* code.coding[SMOMED-CT].system = "http://snomed.info/sct"
+* code.coding[SMOMED-CT].code = $sct#1234567891
+* code.coding[Orphanet].system = "http://www.orpha.net"
+* bodySite.coding[snomed-ct] = $sct#1234567891
+* subject = Reference(Patient/PatientinAusfuehrlich)
+* encounter = Reference(Encounter/SZ1Stationaer)
+* onsetDateTime = "2022-09-02"
+* abatementDateTime = "2024-03-15"
+* recordedDate = "2022-10-21"
+* note.text = "Beispiel für eine Anmerkung"
+
+Instance: PrimaereGonarthroseAusfuehrlich
+InstanceOf: ISiKDiagnose
+Usage: #example
+* extension.url = "http://hl7.org/fhir/StructureDefinition/condition-related" /* überprüfen*/
+* extension.valueReference = Reference(PrimaereGonarthroseMinimal) /* überprüfen*/
+* identifier = 
+* clinicalStatus = $condition-clinical#inactive
+* verificationStatus = $ver-statu#confirmed
+* category = $condition-category#problem-list-item
+* severity = $severity#severe http://snomed.info/id/246112005 /* Ich kann die Code Liste nicht finden*/
+* code.coding[ICD-10-GM].system = http://fhir.de/CodeSystem/bfarm/icd-10-gm
+* code.coding[ICD-10-GM].version = "2025"
+* code.coding[ICD-10-GM].code = $icd-10-gm#M17.0 
+* code.coding[ICD-10-GM].display = "Primäre Gonarthrose" 
+* code.coding[Alpha-ID].system = "http://fhir.de/ValueSet/bfarm/alpha-id"
+* code.coding[Alpha-ID].code = $alpha-id#A1111
+* code.coding[SMOMED-CT].system = "http://snomed.info/sct"
+* code.coding[SMOMED-CT].code = $sct#1234567891
+* code.coding[Orphanet].system = "http://www.orpha.net"
+* bodySite.coding[snomed-ct] = $sct#1234567891
+* subject = Reference(Patient/PatientinAusfuehrlich)
+* encounter = Reference(Encounter/SZ1Stationaer)
+* onsetDateTime = "2022-09-02"
+* abatementDateTime = "2024-03-15"
+* recordedDate = "2022-10-21"
+* recorder = Reference(Practitioner/PractitionerExample)
+* asserter = Reference(Practitioner/PractitionerExample)
+* stage.summary.coding.system = "http://snomed.info/sct"
+* stage.summary.coding.code = $sct752000119104  /* Beispiel für das Stadium eines Kolonkarzinoms (Stage I)*/
+* stage.summary.coding.display = "Carcinoma of colon, stage I"
+* evidence.code = $sct#300872008"
+* note.text = "Beispiel für eine Anmerkung"
+
+
 Invariant: isik-con1
 Description: "Falls eine kodierte Diagnose vorliegt muss angegeben werden durch welchen Kontakt diese Dokumentation erfolgte."
 Severity: #error
