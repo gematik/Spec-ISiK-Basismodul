@@ -516,11 +516,9 @@ Usage: #example
 * communication[0].language.coding[0].system = "urn:ietf:bcp:47"
 * communication[0].language.coding[0].code = #en-US
 * communication[0].language.coding[0].display = "American English"
-* generalPractitioner[0] = Reference(Practitioner/1234)
-/*Beispiel Practitioner evtl. erstellen*/
-* managingOrganization = Reference(Organization/5678)
-/*Beispiel Organization evtl. erstellen*/
-* link[0].other = Reference(Patient/9876)
+* generalPractitioner[0] = Reference(Practitioner/PractitionerWalterArzt)
+* managingOrganization = Reference(Organization/KrankenhausOrganisationBeispiel)
+* link[0].other = Reference(Patient/1234)
 * link[0].type = #seealso
 
 
