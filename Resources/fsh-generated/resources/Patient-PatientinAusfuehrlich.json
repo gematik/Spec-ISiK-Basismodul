@@ -207,16 +207,16 @@
   ],
   "generalPractitioner": [
     {
-      "reference": "Practitioner/1234"
+      "reference": "Practitioner/PractitionerWalterArzt"
     }
   ],
   "managingOrganization": {
-    "reference": "Organization/5678"
+    "reference": "Organization/KrankenhausOrganisationBeispiel"
   },
   "link": [
     {
       "other": {
-        "reference": "Patient/9876"
+        "reference": "Patient/1234"
       },
       "type": "seealso"
     }
