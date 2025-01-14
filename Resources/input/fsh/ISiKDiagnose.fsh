@@ -258,8 +258,8 @@ Usage: #example
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $ver-statu#confirmed
 * category = $condition-category#problem-list-item
-* severity = $severity#severe /* Ich kann die Code Liste nicht finden*/
-* code.coding[0].system = http://fhir.de/CodeSystem/bfarm/icd-10-gm
+* severity = $sct#severe /* Ich kann die Code Liste nicht finden*/
+* code.coding[0].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[0].version = "2025"
 * code.coding[0].code = #M17.0 
 * code.coding[0].display = "Primäre Gonarthrose" 
@@ -278,7 +278,7 @@ Usage: #example
 * asserter = Reference(Practitioner/PractitionerExample)
 * stage.summary.coding.code = $sct752000119104  /* Beispiel für das Stadium eines Kolonkarzinoms (Stage I)*/
 * stage.summary.coding.display = "Carcinoma of colon, stage I"
-* evidence.code = $sct#300872008"
+* evidence.code = $sct#300872008
 * note.text = "Beispiel für eine Anmerkung"
 
 
