@@ -227,18 +227,18 @@ Usage: #example
 Instance: PrimaereGonarthroseNormal
 InstanceOf: ISiKDiagnose
 Usage: #example
-* extension.url = "http://hl7.org/fhir/StructureDefinition/condition-related" /* überprüfen*/
-* extension.valueReference = Reference(PrimaereGonarthroseMinimal) /* überprüfen*/
+* extension.url = "http://hl7.org/fhir/StructureDefinition/condition-related" 
+* extension.valueReference = Reference(PrimaereGonarthroseMinimal)
 * clinicalStatus = $condition-clinical#active
-* code.coding[ICD-10-GM].system = http://fhir.de/CodeSystem/bfarm/icd-10-gm
-* code.coding[ICD-10-GM].version = "2025"
-* code.coding[ICD-10-GM].code = #M17.0 
-* code.coding[ICD-10-GM].display = "Primäre Gonarthrose" 
-* code.coding[Alpha-ID].system = "http://fhir.de/ValueSet/bfarm/alpha-id"
-* code.coding[Alpha-ID].code = #A1111
-* code.coding[SMOMED-CT].system = "http://snomed.info/sct"
-* code.coding[SMOMED-CT].code = #1234567891
-* code.coding[Orphanet].system = "http://www.orpha.net"
+* code.coding[0].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+* code.coding[0].version = "2025"
+* code.coding[0].code = #M17.0 
+* code.coding[0].display = "Primäre Gonarthrose" 
+* code.coding[1].system = "http://fhir.de/CodeSystem/bfarm/alpha-id"
+* code.coding[1].code = #A1111
+* code.coding[2].system = "http://snomed.info/sct"
+* code.coding[2].code = #1234567891
+* code.coding[3].system = "http://www.orpha.net"
 * bodySite.coding[snomed-ct] = $sct#1234567891
 * subject = Reference(Patient/PatientinAusfuehrlich)
 * encounter = Reference(Encounter/SZ1Stationaer)
