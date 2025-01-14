@@ -276,7 +276,7 @@ Usage: #example
 * recordedDate = "2022-10-21"
 * recorder = Reference(Practitioner/PractitionerExample)
 * asserter = Reference(Practitioner/PractitionerExample)
-* stage.summary.coding.code = $sct752000119104  /* Beispiel für das Stadium eines Kolonkarzinoms (Stage I)*/
+* stage.summary.coding.code = $sct#752000119104  /* Beispiel für das Stadium eines Kolonkarzinoms (Stage I)*/
 * stage.summary.coding.display = "Carcinoma of colon, stage I"
 * evidence.code = $sct#300872008
 * note.text = "Beispiel für eine Anmerkung"
