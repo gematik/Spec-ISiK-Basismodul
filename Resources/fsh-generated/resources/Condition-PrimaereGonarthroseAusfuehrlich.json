@@ -1,0 +1,135 @@
+{
+  "resourceType": "Condition",
+  "id": "PrimaereGonarthroseAusfuehrlich",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose"
+    ]
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1234567891"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+      "valueReference": {
+        "reference": "Condition/PrimaereGonarthroseMinimal"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://hospital.smarthealth.org/conditions",
+      "value": "COND123456"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-statu"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "problem-list-item",
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+        }
+      ]
+    }
+  ],
+  "severity": {
+    "coding": [
+      {
+        "code": "severe",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2025",
+        "code": "M17.0",
+        "display": "Primäre Gonarthrose"
+      },
+      {
+        "system": "http://fhir.de/ValueSet/bfarm/alpha-id",
+        "code": "A1111"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1234567891"
+      },
+      {
+        "system": "http://www.orpha.net"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientinAusfuehrlich"
+  },
+  "encounter": {
+    "reference": "Encounter/SZ1Stationaer"
+  },
+  "onsetDateTime": "2022-09-02",
+  "abatementDateTime": "2024-03-15",
+  "recordedDate": "2022-10-21",
+  "recorder": {
+    "reference": "Practitioner/PractitionerExample"
+  },
+  "asserter": {
+    "reference": "Practitioner/PractitionerExample"
+  },
+  "stage": [
+    {
+      "summary": {
+        "coding": [
+          {
+            "code": "752000119104",
+            "display": "Carcinoma of colon, stage I"
+          }
+        ]
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "300872008",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Beispiel für eine Anmerkung"
+    }
+  ]
+}
