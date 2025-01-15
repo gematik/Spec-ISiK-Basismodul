@@ -533,11 +533,11 @@ Usage: #example
 * location.location.display = "Zimmer 1234"
 * location.status = #active /* Frage: wann muss ich das Code oder ValueSet nicht angeben?*/
 * location.physicalType = $LocationPhysicalType#ro "Room"
-* location.location[1] = Reference(BettenstellplatzStandortBeispiel)
+/* location.location[1] = Reference(BettenstellplatzStandortBeispiel) Beispiel existiert aber wird als bug angezeigt*/
 * location.location.identifier.system = "https://test.krankenhaus.de/fhir/sid/locationid"
 * location.location.identifier.value = "1234"
 * location.location.display = "Bettenstellplatz 1234"
-* location.status = #active /* Frage: wann muss ich das Code oder ValueSet nicht angeben?*/
+* location.status = #active /* Frage: wann muss ich das ValueSet nicht angeben?*/
 * location.physicalType = $LocationPhysicalType#bd "Bed"
 /* location.location[2] = Reference(Station) noch kein Beispiel vorhanden*/
 * location.location.identifier.system = "https://test.krankenhaus.de/fhir/sid/locationid"
