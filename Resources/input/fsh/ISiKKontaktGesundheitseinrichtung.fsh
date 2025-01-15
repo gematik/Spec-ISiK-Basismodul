@@ -498,8 +498,8 @@ Usage: #example
 * identifier.value = "0123456789"
 * status = #in-progress /* muss man system nicht angeben?*/
 * class = $v3-ActCode#IMP
-* type[Kontaktebene] = $Kontaktebene#einrichtungskontakt
-* type[KontaktArt] = $Kontaktart-de#operation
+* type[0] = $Kontaktebene#einrichtungskontakt
+* type[1] = $Kontaktart-de#operation
 * serviceType.coding = $Service-Type#218
 * subject = Reference(PatientinAusfuehrlich)
 * period.start = "2025-01-02"
@@ -539,7 +539,7 @@ Usage: #example
 * location.location.display = "Bettenstellplatz 1234"
 * location.status = #active /* Frage: wann muss ich das Code oder ValueSet nicht angeben?*/
 * location.physicalType = $LocationPhysicalType#bd "Bed"
-* location.location[2] = Reference(Station) /*noch kein Beispiel vorhanden*/
+/* location.location[2] = Reference(Station) noch kein Beispiel vorhanden*/
 * location.location.identifier.system = "https://test.krankenhaus.de/fhir/sid/locationid"
 * location.location.identifier.value = "1234"
 * location.location.display = "Ward 1234"
