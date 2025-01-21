@@ -616,7 +616,7 @@ Usage: #example
 * location.location.identifier.system = "https://test.krankenhaus.de/fhir/sid/locationid"
 * location.location.identifier.value = "1234"
 * location.location.display = "Zimmer 1234"
-* location.status = #active */
+* location.status = #active
 * location.physicalType = $LocationPhysicalType#ro "Room"
 /* location.location[1] = Reference(BettenstellplatzStandortBeispiel) Beispiel existiert aber wird als bug angezeigt*/
 * location.location.identifier.system = "https://test.krankenhaus.de/fhir/sid/locationid"
