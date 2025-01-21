@@ -2,11 +2,11 @@
   "resourceType": "CapabilityStatement",
   "id": "ISiKCapabilityStatementBasisServer",
   "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementBasisServer",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "status": "active",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-11-25",
+  "date": "2025-01-21",
   "implementationGuide": [
     "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Basismodul"
   ],
