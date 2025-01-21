@@ -96,7 +96,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     Eine binäre Einteilung in Hauptkostenträger (1) und alle anderen (2) wird der Komplexität der Priorisierung zur Kostenträgerschaft nicht gerecht. 
     Eine Ausdifferenzierung ist wünschenswert und sollte angestrebt werden."
   * extension MS
-  * extension contains http://fhir.de/StructureDefinition/ExtensionAbrechnungsart named Abrechnungsart .. 1 MS
+  * extension contains http://fhir.de/StructureDefinition/ExtensionAbrechnungsart named Abrechnungsart 0..1 MS
   * extension[Abrechnungsart]
     * ^short = "Abrechnungsart"
     * ^comment = "Art der Abrechnung, für die das Versicherungsverhältnis herangezogen wird. Die Abrechnungsart bezieht sich auf die Hauptversicherung über die der Fall abgerechnet wird. Bei initialen Fallanlage kann es vorkommen, dass die Abrechnungsart noch nicht bekannt ist (z.B. Unklare Versicherungszugehörigkeit, Rückfragen an den Kostenträger, Ungeklärte Zusatzleistungen). Sobald bekannt, SOLL angegeben werden, in welcher Abrechnungsart die Abrechnung erfolgt."
