@@ -469,7 +469,7 @@ Usage: #example
 * serviceProvider.identifier.value = "XYZ"
 * serviceProvider.display = "Fachabteilung XYZ"
 
-Instance: FachabteilungskontaktMinimal
+Instance: FachabteilungskontaktMinimal2
 InstanceOf: ISiKKontaktGesundheitseinrichtung
 Usage: #example
 * identifier.type = $v2-0203#VN
@@ -585,7 +585,7 @@ Usage: #example
 * period.end = "2021-01-05"
 * length.value = 5
 * length.unit = "d"
-* reasonCode = $sct#
+* reasonCode = $sct##404684003
 /* reasonReference = Reference() noch kein Beispiel vorhanden*/
 * diagnosis.condition = Reference(PrimaereGonarthroseAusfuehrlich) /*MS nicht bei Überkategorie diagnosis*/
 * diagnosis.use = http://fhir.de/CodeSystem/KontaktDiagnoseProzedur#surgery-diagnosis

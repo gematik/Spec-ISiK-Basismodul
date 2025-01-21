@@ -9,6 +9,19 @@ Description: "Enthaelt alle SNOMED Clinical finding, Event und Situation with ex
 * include codes from system SNOMED_CT
     where concept is-a #243796009
 
+ValueSet: EncounterReasonCodes
+Id: EncounterReasonCodes
+Description: "Enthaelt alle SNOMED Reason Codes"
+* insert Meta
+* include codes from system SNOMED_CT
+    where concept is-a #404684003
+* include codes from system SNOMED_CT
+    where concept is-a #71388002
+* include codes from system SNOMED_CT
+    where concept is-a #243796009
+* include codes from system SNOMED_CT
+    where concept is-a #272379006
+
 ValueSet: ProzedurenCodesSCT
 Id: ProzedurenCodesSCT
 Description: "Enthaelt alle SNOMED Procedure Codes"
