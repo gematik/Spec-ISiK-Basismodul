@@ -549,6 +549,90 @@ Usage: #example
 * serviceProvider.identifier.value = "XYZ"
 * serviceProvider.display = "Fachabteilung XYZ"
 
+Instance: FachabteilungskontaktAusfuehrlich
+InstanceOf: ISiKKontaktGesundheitseinrichtung
+Usage: #example
+* extension.url = "http://fhir.de/StructureDefinition/Aufnahmegrund"
+* extension.extension[0].url = "ErsteUndZweiteStelle"
+* extension.extension[=].valueCoding = $AufnahmegrundErsteUndZweiteStelle#01 "Krankenhausbehandlung, vollstationär"
+* extension.extension[+].url = "DritteStelle"
+* extension.extension[=].valueCoding = $AufnahmegrundDritteStelle#0 "Anderes"
+* extension.extension[+].url = "VierteStelle"
+* extension.extension[=].valueCoding = $AufnahmegrundVierteStelle#1 "Normalfall"
+* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate" /* Link funktioniert nicht*/
+* extension[=].valueDateTime = "2025-01-02"
+* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate" /* Link funktioniert nicht*/
+* extension[=].valueDateTime = "2025-01-04"
+* identifier.type = $v2-0203#VN
+* identifier.system = "https://test.krankenhaus.de/fhir/sid/besuchsnummer"
+* identifier.value = "0123456789"
+* status = #in-progress /* muss man system nicht angeben?*/
+* statusHistory.status = 
+* class = $v3-ActCode#IMP
+* classHistory.class = $v3-ActCode#IMP
+* classHistory.period.start = "2025-01-02"
+* classHistory.period.end = "2025-01-05"
+* type[0] = $Kontaktebene#einrichtungskontakt
+* type[1] = $Kontaktart-de#operation
+* serviceType.coding = $Service-Type#218
+* priority = $Priority#PRN "as needed"
+/* episodeOfCare = Reference() noch kein Beispiel vorhanden*/
+/* basedOn = Reference() noch kein Beispiel vorhanden*/
+* participant = $ParticipantType#PART
+/* appointment = Reference () noch kein Beispiel vorhanden*/
+* subject = Reference(PatientinAusfuehrlich)
+* period.start = "2025-01-02"
+* period.end = "2021-01-05"
+* length.value = 5
+* length.unit = "d"
+* reasonCode = $sct#
+/* reasonReference = Reference() noch kein Beispiel vorhanden*/
+* diagnosis.condition = Reference(PrimaereGonarthroseAusfuehrlich) /*MS nicht bei Überkategorie diagnosis*/
+* diagnosis.use = http://fhir.de/CodeSystem/KontaktDiagnoseProzedur#surgery-diagnosis
+* diagnosis.rank = 1
+* account = Reference(AbrechnungsfallDRG) /*ggf. eigenen Abrechnungsfall für unser Szenario erstellen*/
+* account.identifier
+  * value = "1234"
+  * system = "https://test.krankenhaus.de/fhir/sid/fallnummer"
+* hospitalization.admitSource = $Aufnahmeanlass#E
+* hospitalization.dischargeDisposition = $Entlassungsgrund#home
+* hospitalization.dischargeDisposition.extension.url = "http://fhir.de/StructureDefinition/Entlassungsgrund"
+* hospitalization.dischargeDisposition.extension.extension[0].url = "ErsteUndZweiteStelle"
+* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $EntlassungsgrundErsteUndZweiteStelle#01 "Behandlung regulär beendet"
+* hospitalization.dischargeDisposition.extension.extension[+].url = "DritteStelle"
+* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $EntlassungsgrundDritteStelle#1 "arbeitsfähig entlassen" 
+* hospitalization.dischargeDisposition.extension.url = "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKRehaEntlassung"
+* hospitalization.dischargeDisposition.extension.extension[1].url = "EntlassungsformReha"
+* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $EntlassungsformReha#01 "Behandlung regulär beendet"
+* hospitalization.dischargeDisposition.extension.extension[+].url = "BesondereBehandlung"
+* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $BesondereBehandlung#0 "keine"
+* hospitalization.dischargeDisposition.extension.extension[+].url = "BehandlungsergebnisReha"
+* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $BehandlungsergebnisReha#1 "gebessert"
+* hospitalization.dischargeDisposition.extension.extension[+].url = "UnterbrechungReha"
+* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $UnterbrechungReha#04 "Stationäre Krankenhausbehandlung"
+* location.location[0] = Reference(RaumStandortBeispiel)
+* location.location.identifier.system = "https://test.krankenhaus.de/fhir/sid/locationid"
+* location.location.identifier.value = "1234"
+* location.location.display = "Zimmer 1234"
+* location.status = #active /* Frage: wann muss ich das Code oder ValueSet nicht angeben?*/
+* location.physicalType = $LocationPhysicalType#ro "Room"
+/* location.location[1] = Reference(BettenstellplatzStandortBeispiel) Beispiel existiert aber wird als bug angezeigt*/
+* location.location.identifier.system = "https://test.krankenhaus.de/fhir/sid/locationid"
+* location.location.identifier.value = "1234"
+* location.location.display = "Bettenstellplatz 1234"
+* location.status = #active /* Frage: wann muss ich das ValueSet nicht angeben?*/
+* location.physicalType = $LocationPhysicalType#bd "Bed"
+/* location.location[2] = Reference(Station) noch kein Beispiel vorhanden*/
+* location.location.identifier.system = "https://test.krankenhaus.de/fhir/sid/locationid"
+* location.location.identifier.value = "1234"
+* location.location.display = "Ward 1234"
+* location.status = #active /* Frage: wann muss ich das Code oder ValueSet nicht angeben?*/
+* location.physicalType = $LocationPhysicalType#wa "Ward"
+* serviceProvider.identifier.system = "https://test.krankenhaus.de/fhir/sid/fachabteilungsid"
+* serviceProvider.identifier.value = "XYZ"
+* serviceProvider.display = "Fachabteilung XYZ"
+/* partOf = Reference() noch kein Beispiel vorhanden*/
+
 
 Invariant: ISiK-enc-1
 Description: "Abgeschlossene, ambulante Kontakte sollten einen Start-Zeitpunkt angeben"
