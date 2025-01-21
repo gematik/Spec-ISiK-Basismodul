@@ -566,8 +566,8 @@ Usage: #example
 * identifier.type = $v2-0203#VN
 * identifier.system = "https://test.krankenhaus.de/fhir/sid/besuchsnummer"
 * identifier.value = "0123456789"
-* status = #in-progress /* muss man system nicht angeben?*/
-* statusHistory.status = 
+* status = #in-progress
+* statusHistory.status = #finished
 * class = $v3-ActCode#IMP
 * classHistory.class = $v3-ActCode#IMP
 * classHistory.period.start = "2025-01-02"
