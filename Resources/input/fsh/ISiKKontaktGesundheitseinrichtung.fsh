@@ -580,7 +580,7 @@ Usage: #example
 * priority = $Priority#PRN "as needed"
 /* episodeOfCare = Reference() noch kein Beispiel vorhanden*/
 /* basedOn = Reference() noch kein Beispiel vorhanden*/
-* participant = $ParticipantType#PART
+* participant.type = $ParticipantType#PART
 /* appointment = Reference () noch kein Beispiel vorhanden*/
 * subject = Reference(PatientinAusfuehrlich)
 * period.start = "2025-01-02"
