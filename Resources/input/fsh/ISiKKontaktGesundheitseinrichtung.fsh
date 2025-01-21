@@ -476,7 +476,7 @@ Usage: #example
 * identifier.value = "0123456789"
 * status = #in-progress
 * class = $v3-ActCode#IMP
-* type[Kontaktebene] = $Kontaktebene#einrichtungskontakt
+* type[Kontaktebene] = $Kontaktebene#abteilungskontakt
 * subject = Reference(PatientinAusfuehrlich)
 
 Instance: FachabteilungskontaktNormal
@@ -568,6 +568,8 @@ Usage: #example
 * identifier.value = "0123456789"
 * status = #in-progress
 * statusHistory.status = #finished
+* statusHistory.period.start = "2025-01-02"
+* statusHistory.period.end = "2025-01-05"
 * class = $v3-ActCode#IMP
 * classHistory.class = $v3-ActCode#IMP
 * classHistory.period.start = "2025-01-02"
