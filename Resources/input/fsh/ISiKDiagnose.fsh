@@ -220,7 +220,7 @@ Usage: #example
 Instance: PrimaereGonarthroseMinimal
 InstanceOf: ISiKDiagnose
 Usage: #example
-* code.coding = $icd-10-gm#M17.0 "Primäre Gonarthrose" /* code oder code.coding hier?*/
+* code.coding = $icd-10-gm#M17.0 "Primäre Gonarthrose"
 * subject = Reference(Patient/PatientinAusfuehrlich)
 * recordedDate = "2024-10-21"
 
@@ -228,7 +228,7 @@ Instance: PrimaereGonarthroseNormal
 InstanceOf: ISiKDiagnose
 Usage: #example
 * extension.url = "http://hl7.org/fhir/StructureDefinition/condition-related" 
-* extension.valueReference = Reference(PrimaereGonarthroseMinimal)
+* extension.valueReference = Reference(PrimaereGonarthroseAusfuehrlich) /* überprüfen*/
 * clinicalStatus = $condition-clinical#active
 * code.coding[0].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[0].version = "2025"
@@ -241,7 +241,7 @@ Usage: #example
 * code.coding[3].system = "http://www.orpha.net"
 * bodySite.coding[snomed-ct] = $sct#1234567891
 * subject = Reference(Patient/PatientinAusfuehrlich)
-* encounter = Reference(Encounter/SZ1Stationaer)
+* encounter = Reference(Encounter/FachabteilungskontaktAusfuehrlich)
 * onsetDateTime = "2022-09-02"
 * abatementDateTime = "2024-03-15"
 * recordedDate = "2022-10-21"
@@ -250,15 +250,15 @@ Usage: #example
 Instance: PrimaereGonarthroseAusfuehrlich
 InstanceOf: ISiKDiagnose
 Usage: #example
-* extension.url = "http://hl7.org/fhir/StructureDefinition/condition-related" /* überprüfen*/
-* extension.valueReference = Reference(PrimaereGonarthroseMinimal) /* überprüfen*/
+* extension.url = "http://hl7.org/fhir/StructureDefinition/condition-related" 
+* extension.valueReference = Reference(PrimaereGonarthroseNormal) /* überprüfen*/
 * identifier.use = #official
 * identifier.system = "http://hospital.smarthealth.org/conditions"
 * identifier.value = "COND123456"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $ver-statu#confirmed
 * category = $condition-category#problem-list-item
-* severity = $sct#severe /* Ich kann die Code Liste nicht finden*/
+* severity = $sct#272379006 "mild"
 * code.coding[0].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[0].version = "2025"
 * code.coding[0].code = #M17.0 
@@ -266,18 +266,18 @@ Usage: #example
 * code.coding[1].system = "http://fhir.de/ValueSet/bfarm/alpha-id"
 * code.coding[1].code = #A1111
 * code.coding[2].system = "http://snomed.info/sct"
-* code.coding[2].code = t#1234567891
+* code.coding[2].code = #1234567891
 * code.coding[3].system = "http://www.orpha.net"
 * bodySite.coding[snomed-ct] = $sct#1234567891
 * subject = Reference(Patient/PatientinAusfuehrlich)
-* encounter = Reference(Encounter/SZ1Stationaer)
+* encounter = Reference(Encounter/FachabteilungskontaktAusfuehrlich)
 * onsetDateTime = "2022-09-02"
 * abatementDateTime = "2024-03-15"
 * recordedDate = "2022-10-21"
-* recorder = Reference(Practitioner/PractitionerExample)
-* asserter = Reference(Practitioner/PractitionerExample)
-* stage.summary.coding.code = $sct#752000119104  /* Beispiel für das Stadium eines Kolonkarzinoms (Stage I)*/
-* stage.summary.coding.display = "Carcinoma of colon, stage I"
+* recorder = Reference(Practitioner/PractitionerWalterArzt)
+* asserter = Reference(Practitioner/PractitionerWalterArzt)
+* stage.summary.coding.code = $sct#752000119104  /* Beispiel für das Stadium eines Kolonkarzinoms (Stage I), passt nicht zur User Story*/
+* stage.summary.coding.display = "Carcinoma of colon, stage I" /* passt nicht zur User Story*/
 * evidence.code = $sct#300872008
 * note.text = "Beispiel für eine Anmerkung"
 

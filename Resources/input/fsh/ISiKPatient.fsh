@@ -396,10 +396,10 @@ Usage: #example
 * address[=].postalCode = "98764"
 * address[=].country = "DE"
 
-/*Dr. Anna von Müller, geboren Weber, 67 Jahre, mit der Diagnose primäre Gonarthrose, 
+/*Anna Müller, geboren Weber, 67 Jahre, mit der Diagnose primäre Gonarthrose, 
 beidseitig (ICD M17.0), die durch ihre Orthopädin (Frau Dr. Peters) gestellt wurde,
 möchte durch die geplante Implantation einer Knie-Endoprothese (OPS 5-822)
-in einem spezialisierten Krankenhaus ihre Mobilität und Lebensqualität verbessern.*/
+in einem Krankenhaus ihre Mobilität und Lebensqualität verbessern.*/
 
 Instance: PatientinMinimal
 InstanceOf: ISiKPatient
@@ -444,7 +444,7 @@ Usage: #example
 * address[=].city = "Musterhausen"
 * address[=].postalCode = "98764"
 * address[=].country = "DE"
-* link[0].other = Reference(Patient/9876)
+* link[0].other = Reference(Patient/PatientinAusfuehrlich)
 * link[=].type = #seealso
 
 Instance: PatientinAusfuehrlich
@@ -518,7 +518,7 @@ Usage: #example
 * communication[0].language.coding[0].display = "American English"
 * generalPractitioner[0] = Reference(Practitioner/PractitionerWalterArzt)
 * managingOrganization = Reference(Organization/KrankenhausOrganisationBeispiel)
-* link[0].other = Reference(Patient/1234)
+* link[0].other = Reference(Patient/PatientinNormal)
 * link[0].type = #seealso
 
 
