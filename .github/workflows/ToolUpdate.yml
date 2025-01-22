@@ -1,18 +1,9 @@
 name: Update Dependency
 
 on: # Trigger on commits to any branch and manual trigger
-    workflow_dispatch: # Allows manual trigger  
-    push:
-      paths:
-      - 'Resources/**'
-      branches-ignore:
-      - 'main**'
-    pull_request:
-      branches:
-      - 'main**'
+    workflow_dispatch: # Allows manual trigger
     schedule:
       - cron: '0 0 * * *' # Runs at 00:00 UTC every day
-
 
 permissions:
   contents: write
@@ -24,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         token: ${{ secrets.WORKFLOW_PERMISSION_GITHUB }} # Personal access token with workflow permissions
 
@@ -47,7 +38,6 @@ jobs:
         echo "LATEST_VERSION_SUSHI=$LATEST_VERSION_SUSHI" >> $GITHUB_ENV
         echo $LATEST_VERSION_SUSHI
 
-    
     - name: Check if Firely version is up-to-date
       id: check_firely_version
       run: |
@@ -77,7 +67,6 @@ jobs:
         echo "No update needed. Exiting."
         exit 0
 
-    
     - name: Update main.yml for Firely and Sushi
       run: |
         # Update the main.yml file with the new versions of Firely and Sushi
