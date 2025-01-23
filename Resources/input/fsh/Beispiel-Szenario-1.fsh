@@ -115,7 +115,7 @@ Usage: #example
 * status = #finished
 * class = $v3-ActCode#IMP
 * type[Kontaktebene] = $Kontaktebene#abteilungskontakt
-* type[KontaktArt] = $Kontaktart-de#stationaer "Stationär"
+* type[KontaktArt] = $Kontaktart-de#normalstationaer "Normalstationär"
 * subject = Reference(SZ1Patient)
 * period.start = "2024-10-07"
 * period.end = "2024-10-10"
