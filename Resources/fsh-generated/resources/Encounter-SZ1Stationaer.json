@@ -19,8 +19,8 @@
       "coding": [
         {
           "system": "http://fhir.de/CodeSystem/kontaktart-de",
-          "code": "stationaer",
-          "display": "Stationär"
+          "code": "normalstationaer",
+          "display": "Normalstationär"
         }
       ]
     }
