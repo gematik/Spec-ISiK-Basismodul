@@ -9,6 +9,8 @@
     "Terminology_TX_NoValid_3_CC@Encounter.hospitalization.admitSource",
     "Terminology_TX_NoValid_2_CC@Coverage.subscriber.identifier.type",
     "Terminology_TX_NoValid_2_CC@Encounter.identifier[0].type",
-    "Terminology_TX_NoValid_2_CC@Organization.identifier[0].type"
+    "Terminology_TX_NoValid_2_CC@Organization.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@RelatedPerson.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[6].pattern.ofType(Identifier).type"
   ]
 }
