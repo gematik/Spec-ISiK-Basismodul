@@ -112,6 +112,7 @@ Title: "ISiKSchwangerschaftsstatusBeispiel"
   * coding.version = "2.77"
 * hasMember = Reference(ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel)
 * encounter = Reference(Fachabteilungskontakt)
+* performer = Reference(PractitionerWalterArzt)
 
 Profile: ISiKSchwangerschaftErwarteterEntbindungstermin
 Parent: ISiKLebensZustand
