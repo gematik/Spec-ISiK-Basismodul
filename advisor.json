@@ -25,7 +25,7 @@
     "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[2].pattern.ofType(Identifier).type",
     "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[14].pattern.ofType(Identifier).type",
     "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[2].pattern.ofType(Identifier).type",
-    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[4].pattern.ofType(Identifier).type"
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[4].pattern.ofType(Identifier).type",
     "TYPE_SPECIFIC_CHECKS_DT_BASE64_NO_WS_WARNING@Binary.data"
   ]
 }
