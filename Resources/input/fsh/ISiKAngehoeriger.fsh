@@ -40,7 +40,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
 
 
 * name MS
-* name only HumannameDeBasis
+* name
   * ^short = "Offizieller Name der angehörigen Person"
   * ^comment = "Aufgrund der primären Nutzung von Angehörigen-Informationen im ISiK-Kontext als Brief- und Rechnungsempfänger, 
   ist die Angabe des offiziellen Namens relevant.
@@ -51,7 +51,8 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * ^slicing.rules = #open
 * name contains
     Name 1..1 MS 
-* name[Name]    
+* name[Name] only HumannameDeBasis
+  * ^patternHumanName.use = #official    
   * use MS
     * ^short = "Verwendungszweck"
     * ^comment = "Verwendungszweck des Namens. Der präferierte Namen für die Brief- und Rechnungszustellung SOLLTE als `official`
