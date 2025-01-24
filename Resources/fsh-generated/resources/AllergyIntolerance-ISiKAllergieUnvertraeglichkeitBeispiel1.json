@@ -62,9 +62,9 @@
         {
           "coding": [
             {
-              "code": "162367006",
+              "code": "76067001",
               "system": "http://snomed.info/sct",
-              "display": "Sneezing symptom"
+              "display": "Sneezing (finding)"
             }
           ]
         }
