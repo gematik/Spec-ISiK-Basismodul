@@ -72,7 +72,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^comment = "Enthält den eigentlichen Wert des Identifiers.  
     **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden."
 * status = #final (exactly)
-  * ^short = " Status des Dokumentes"
+  * ^short = "Status des Dokumentes"
   * ^comment = "Im Kontext diese Moduls ist nur der Austausch finaler Berichte vorgesehen. 
   Ein Mechanismus zur Änderung oder Ersetzung bereits übermittelter Daten ist derzeit nicht spezifiziert. 
   Hier ist stets der Wert `final` anzugeben."
