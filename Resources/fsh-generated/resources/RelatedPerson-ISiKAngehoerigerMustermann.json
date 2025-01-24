@@ -6,17 +6,18 @@
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKAngehoeriger"
     ]
   },
-  "patient": {
-    "reference": "Patient/PatientinMusterfrau"
-  },
   "name": [
     {
+      "use": "official",
       "family": "Mustermann",
       "given": [
         "Maxine"
       ]
     }
   ],
+  "patient": {
+    "reference": "Patient/PatientinMusterfrau"
+  },
   "address": [
     {
       "type": "both",

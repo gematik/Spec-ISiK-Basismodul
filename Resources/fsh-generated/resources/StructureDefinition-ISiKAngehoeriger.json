@@ -66,14 +66,6 @@
         "short": "Offizieller Name der angehörigen Person",
         "comment": "Aufgrund der primären Nutzung von Angehörigen-Informationen im ISiK-Kontext als Brief- und Rechnungsempfänger, \n  ist die Angabe des offiziellen Namens relevant.\n  Wenn kein Name vorliegt, MUSS die [data-absent-reason-Extension](https://www.hl7.org/fhir/R4/extension-data-absent-reason.html) eingesetzt werden.   \n  **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Name)",
         "min": 1,
-        "type": [
-          {
-            "code": "HumanName",
-            "profile": [
-              "http://fhir.de/StructureDefinition/humanname-de-basis"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -82,6 +74,17 @@
         "sliceName": "Name",
         "min": 1,
         "max": "1",
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://fhir.de/StructureDefinition/humanname-de-basis"
+            ]
+          }
+        ],
+        "patternHumanName": {
+          "use": "official"
+        },
         "mustSupport": true
       },
       {
