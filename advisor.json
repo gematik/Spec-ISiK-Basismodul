@@ -3,6 +3,8 @@
     "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
     "SD_PATH_SLICING_DEPRECATED",
     "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE@CapabilityStatement.implementationGuide",
-    "MSG_DRAFT@Subscription.channel.type"
+    "MSG_DRAFT@Subscription.channel.type",
+    "Terminology_TX_NoValid_3_CC@Coverage.type",
+    "Terminology_TX_NoValid_2_CC@Coverage.subscriber.identifier.type"
   ]
 }
