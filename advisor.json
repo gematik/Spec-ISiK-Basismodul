@@ -6,6 +6,7 @@
     "MSG_DRAFT@Subscription.channel.type",
     "MSG_DRAFT@Encounter.status",
     "Terminology_TX_NoValid_3_CC@Coverage.type",
+    "Terminology_TX_NoValid_3_CC@Encounter.hospitalization.admitSource",
     "Terminology_TX_NoValid_2_CC@Coverage.subscriber.identifier.type",
     "Terminology_TX_NoValid_2_CC@Encounter.identifier[0].type"
   ]
