@@ -101,7 +101,6 @@
       {
         "id": "RelatedPerson.name:Name.given",
         "path": "RelatedPerson.name.given",
-        "short": "Vorname ",
         "comment": "Kann mehrfach verwendet werden, um den Rufnamen sowie weitere Vornamen, Mittelnamen oder Mittel-Initialen abzubilden.\n      **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind.",
         "mustSupport": true
       },
@@ -206,21 +205,19 @@
         "id": "RelatedPerson.address:Strassenanschrift.line.extension:Strasse",
         "path": "RelatedPerson.address.line.extension",
         "sliceName": "Strasse",
-        "short": "Strassenname ",
+        "short": "Strassenname",
         "comment": "Strassenname (ohne Hausnummer).\n        Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
       },
       {
         "id": "RelatedPerson.address:Strassenanschrift.line.extension:Hausnummer",
         "path": "RelatedPerson.address.line.extension",
         "sliceName": "Hausnummer",
-        "short": "Hausnummer ",
         "comment": "Hausnummer, sowie Zusätze (Appartmentnummer, Etage...). \n        Bei Angabe einer Hausnummer in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.   \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
       },
       {
         "id": "RelatedPerson.address:Strassenanschrift.line.extension:Adresszusatz",
         "path": "RelatedPerson.address.line.extension",
         "sliceName": "Adresszusatz",
-        "short": "Adresszusatz ",
         "comment": "Zusätzliche Informationen, wie z.B. '3. Etage', 'Appartment C'.\n        Bei Angabe einer Zusatzinformation in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
       },
       {
@@ -242,7 +239,6 @@
       {
         "id": "RelatedPerson.address:Strassenanschrift.postalCode",
         "path": "RelatedPerson.address.postalCode",
-        "short": "Postleitzahl ",
         "comment": "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar.",
         "min": 1,
         "mustSupport": true
@@ -337,7 +333,6 @@
       {
         "id": "RelatedPerson.address:Postfach.postalCode",
         "path": "RelatedPerson.address.postalCode",
-        "short": "Postleitzahl ",
         "comment": "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar.",
         "min": 1,
         "mustSupport": true
