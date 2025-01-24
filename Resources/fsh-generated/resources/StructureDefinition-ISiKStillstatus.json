@@ -37,6 +37,13 @@
         }
       },
       {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "patternReference": {
+          "reference": "Practitioner/PractitionerWalterArzt"
+        }
+      },
+      {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "type": [
