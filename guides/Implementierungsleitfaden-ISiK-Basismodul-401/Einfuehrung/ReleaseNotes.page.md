@@ -13,7 +13,7 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Datum: tbd.
 
-* `fix` Korrektur eines Beispiels für eine GET-Abfrage zum Suchparameter 'near'
+* `fix` Korrektur eines Beispiels für eine GET-Abfrage zum Suchparameter 'near' https://github.com/gematik/spec-ISiK-Basismodul/pull/533
 
 ----
 
