@@ -60,7 +60,7 @@
       {
         "id": "Composition.status",
         "path": "Composition.status",
-        "short": " Status des Dokumentes",
+        "short": "Status des Dokumentes",
         "comment": "Im Kontext diese Moduls ist nur der Austausch finaler Berichte vorgesehen. \n  Ein Mechanismus zur Änderung oder Ersetzung bereits übermittelter Daten ist derzeit nicht spezifiziert. \n  Hier ist stets der Wert `final` anzugeben.",
         "fixedCode": "final",
         "mustSupport": true
