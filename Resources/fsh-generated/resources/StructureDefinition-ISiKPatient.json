@@ -469,7 +469,7 @@
         "id": "Patient.gender.extension:Geschlecht-Administrativ",
         "path": "Patient.gender.extension",
         "sliceName": "Geschlecht-Administrativ",
-        "short": "Extension zur Differenzierung des Geschlechtskennzeichens ",
+        "short": "Extension zur Differenzierung des Geschlechtskennzeichens",
         "comment": "Diese Extension darf nur in Verbindung mit dem Geschlechtskennzeichen `other` verwendet werden\n      und dient der Differenzierung zwischen den in Deutschland möglichen Geschlechtskennzeichen `D` (divers) und `X`(unbestimmt)",
         "min": 0,
         "max": "1",
