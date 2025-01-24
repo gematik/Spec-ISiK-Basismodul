@@ -220,7 +220,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Geschlecht)"
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
   * extension[Geschlecht-Administrativ]
-    * ^short = "Extension zur Differenzierung des Geschlechtskennzeichens "
+    * ^short = "Extension zur Differenzierung des Geschlechtskennzeichens"
     * ^comment = "Diese Extension darf nur in Verbindung mit dem Geschlechtskennzeichen `other` verwendet werden
       und dient der Differenzierung zwischen den in Deutschland möglichen Geschlechtskennzeichen `D` (divers) und `X`(unbestimmt)"
 * birthDate 1.. MS
