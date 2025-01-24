@@ -166,11 +166,11 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
       * ^comment = "Nachname ohne Vor- und Zusätze.  
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."   
     * extension[vorsatzwort] 0..1 MS
-      * ^short = "Vorsatzwort "
+      * ^short = "Vorsatzwort"
       * ^comment = "Enthält Vorsätze, die vor dem Nachnamen stehen, z.B. 'von', 'van', 'zu'...  
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."    
   * given 1.. MS
-    * ^short = "Vorname "
+    * ^short = "Vorname"
     * ^comment = "Kann mehrfach verwendet werden, um den Rufnamen sowie weitere Vornamen, Mittelnamen oder Mittel-Initialen abzubilden.
       **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind."   
   * prefix MS
@@ -202,7 +202,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
       * ^comment = "Nachname ohne Vor- und Zusätze.  
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."   
     * extension[vorsatzwort] 0..1 MS
-      * ^short = "Vorsatzwort "
+      * ^short = "Vorsatzwort"
       * ^comment = "Enthält Vorsätze, die vor dem Nachnamen stehen, z.B. 'von', 'van', 'zu'...  
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."   
   * given ..0
@@ -210,7 +210,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
 * telecom.system 1..
 * telecom.value 1..
 * gender 1.. MS
-  * ^short = "Administratives Geschlecht " 
+  * ^short = "Administratives Geschlecht" 
   * ^comment = "Für die Geschlechtskennzeichen 'unbestimmt' und 'divers' ist der international vereinbarte code `other` zu verwenden.
     Zur weiteren Differenzierung kann dann die Extension `Geschlecht-Admnistrativ` verwendet werden.
     **Begründung Pflichtfeld:** Die Geschlechtsangabe ist für viele Versorgungsprozesse unerlässlich, z.B.  
@@ -230,7 +230,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^comment = "ToDo"
     * value[x] = #unknown (exactly)
     * value[x] MS
-  * ^short = "Geburtsdatum "
+  * ^short = "Geburtsdatum"
   * ^comment = "Tages-, monats- oder jahresgenaues Geburtsdatum.  
     **Begründung Pflichtfeld:** Das Geburstdatum dient - in Verbindung mit dem Namen - als wichtiges Such- und Unterscheidungskriterium.  
     **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Geburtsdatum)"
@@ -274,7 +274,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^short = "Stadt"
     * ^comment = "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar."
   * postalCode 1.. MS
-    * ^short = "Postleitzahl "
+    * ^short = "Postleitzahl"
     * ^comment = "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar."
   * country 1.. MS
     * ^short = "Land"
@@ -302,19 +302,19 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     **Begründung für Reduktion der max. Kardinalität:** Die maximale Kardinalität wurde in Übereinstimmung mit der 
     DIN-Norm 5008 (Schreib- und Gestaltungsregeln für die Text- und Informationsverarbeitung) auf 3 beschränkt."
     * extension[Strasse] 0..1 MS
-      * ^short = "Strassenname "
+      * ^short = "Strassenname"
       * ^comment = "Strassenname (ohne Hausnummer).
         Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden,
         um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
     * extension[Hausnummer] 0..1 MS
-      * ^short = "Hausnummer "
+      * ^short = "Hausnummer"
       * ^comment = "Hausnummer, sowie Zusätze (Appartmentnummer, Etage...). 
         Bei Angabe einer Hausnummer in dieser Extension muss diese auch in Address.line angegeben werden,
         um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.   
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
     * extension[Adresszusatz] 0..1 MS
-      * ^short = "Adresszusatz "
+      * ^short = "Adresszusatz"
       * ^comment = "Zusätzliche Informationen, wie z.B. '3. Etage', 'Appartment C'.
         Bei Angabe einer Zusatzinformation in dieser Extension muss diese auch in Address.line angegeben werden,
         um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  
@@ -329,7 +329,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^short = "Stadt"
     * ^comment = "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar."
   * postalCode 1.. MS
-    * ^short = "Postleitzahl "
+    * ^short = "Postleitzahl"
     * ^comment = "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar."
   * country 1.. MS
     * ^short = "Land"
