@@ -154,7 +154,7 @@ Usage: #example
 * birthDate.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * birthDate.extension.valueCode = #masked
 * qualification.code.coding.version = "http://snomed.info/sct/900000000000207008/version/20200131"
-* qualification.code.coding = $sct#112247003 "Medical doctor (occupation)"
+* qualification.code.coding = $sct#309343006 "Physician (occupation)"
 
 Invariant: prac-de-1
 Description: "Die amtliche Differenzierung der Geschlechtsangabe 'other' darf nur gefüllt sein, wenn das Geschlecht 'other' angegeben ist"
