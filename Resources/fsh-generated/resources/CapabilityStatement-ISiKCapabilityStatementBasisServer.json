@@ -1184,7 +1184,7 @@
                 }
               ],
               "name": "code",
-              "definition": "http://hl7.org/fhir/SearchParameter/Procedure-code",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
               "type": "token",
               "documentation": "**Beispiel:**    \n        `GET [base]/Procedure?code=http://fhir.de/CodeSystem/bfarm/ops|5-470`    \n        **Anwendungshinweis:**   \n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#token).  "
             },
