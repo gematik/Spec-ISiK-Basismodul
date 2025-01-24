@@ -95,14 +95,15 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     Bei der Auswahl des Encounters ist zu beachten, dass unter einer (Abrechnungs-)&quot;Fallnummer&quot; (hier: `Encounter.account`) 
     unter Umständen mehrere Encounter gruppiert sein können (z.B. stationärer Besuch mit mehreren vor- und nachstationären Aufenthalten.)"
 * onset[x] MS 
-* onset[x] only dateTime or Age
   * ^short = "Erkrankungsbeginn"
   * ^comment = "Datum oder Alter/Lebensphase des Erkrankungsbeginns
   **Begründung MS:** Die Kenntnis des Erkrankungszeitraumes ist wichtig für die korrekte Einschätzung der medizinischen Relevanz einer Erkraknung.  
   **Einschränkung der übergreifenden MS-Definition:** Verfügt ein bestätigungsrelevantes System nicht über die Datenstruktur zur Hinterlegung des Erkrankungszeitraumes,
   so MUSS dieses System die Information NICHT abbilden. 
   Das System MUSS jedoch klinischen Status (`active`/`inactive`/`resolved`...) der Diagnose korrekt angeben, sofern die Information verfügbar ist."
-* onsetAge  
+* onset[x] only dateTime or Age
+* onsetDateTime MS
+* onsetAge MS 
   * extension contains ExtensionLebensphase named Lebensphase-Beginn 0..1
   * extension[Lebensphase-Beginn]
     * ^short = "Lebensphase des Erkrankungsbeginns"
