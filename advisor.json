@@ -13,6 +13,7 @@
     "Terminology_TX_NoValid_2_CC@Organization.identifier[0].type",
     "Terminology_TX_NoValid_2_CC@RelatedPerson.identifier[0].type",
     "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[6].pattern.ofType(Identifier).type",
-    "Terminology_TX_NoValid_3_CC@Encounter.diagnosis[0].use"
+    "Terminology_TX_NoValid_3_CC@Encounter.diagnosis[0].use",
+    "TYPE_SPECIFIC_CHECKS_DT_BASE64_NO_WS_WARNING@Binary.data"
   ]
 }
