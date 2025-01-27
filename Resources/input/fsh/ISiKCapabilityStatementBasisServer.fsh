@@ -1210,7 +1210,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
       * type = #special
       * documentation = 
         "**Beispiel zur Suche nach Standort nahe (100m) Koordinaten:**    
-        `GET [base]/Location?contains=52.525851|13.37774|100|m`    
+        `GET [base]/Location?near=52.525851|13.37774|100|m`    
         **Anwendungshinweis:**   
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#special).  "
 
