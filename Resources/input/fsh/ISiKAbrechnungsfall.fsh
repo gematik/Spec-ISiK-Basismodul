@@ -76,9 +76,6 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   * Alle client-seitigen Implementierungen MÜSSEN in der Lage sein, sämtliche Status-Codes zu interpretieren und dem Anwender in angemessener Form darstellen zu können, 
   beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben."
 
-//* type 1.. MS
-//* type from ISiKAccountType (required)
-
 * subject only Reference(Patient)
 * subject 1..1 MS
   * ^short = "Patientenbezug"
@@ -98,11 +95,11 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     Diskussionstand der ISIK-Arbeitsgruppe vom 28.5.: Die Abbildung über einen Integer ist wünschenswert. 
     Eine binäre Einteilung in Hauptkostenträger (1) und alle anderen (2) wird der Komplexität der Priorisierung zur Kostenträgerschaft nicht gerecht. 
     Eine Ausdifferenzierung ist wünschenswert und sollte angestrebt werden."
-  * extension 1..1 MS
-  * extension contains http://fhir.de/StructureDefinition/ExtensionAbrechnungsart named Abrechnungsart 1..1 MS
+  * extension MS
+  * extension contains http://fhir.de/StructureDefinition/ExtensionAbrechnungsart named Abrechnungsart 0..1 MS
   * extension[Abrechnungsart]
     * ^short = "Abrechnungsart"
-    * ^comment = "Art der Abrechnung, für die das Versicherungsverhältnis herangezogen wird."
+    * ^comment = "Art der Abrechnung, für die das Versicherungsverhältnis herangezogen wird. Die Abrechnungsart bezieht sich auf die Hauptversicherung über die der Fall abgerechnet wird. Bei initialen Fallanlage kann es vorkommen, dass die Abrechnungsart noch nicht bekannt ist (z.B. Unklare Versicherungszugehörigkeit, Rückfragen an den Kostenträger, Ungeklärte Zusatzleistungen). Sobald bekannt, SOLL angegeben werden, in welcher Abrechnungsart die Abrechnung erfolgt."
   * coverage MS
     * reference 1.. MS
       * ^short = "Coverage-Link"
