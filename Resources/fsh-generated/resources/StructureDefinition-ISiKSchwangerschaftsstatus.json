@@ -7,7 +7,7 @@
   "title": "ISiK Schwangerschaftsstatus",
   "status": "active",
   "experimental": false,
-  "date": "2025-01-21",
+  "date": "2025-01-27",
   "publisher": "gematik GmbH",
   "description": "Schwangerschaftsstatus einer Patientin",
   "fhirVersion": "4.0.1",
