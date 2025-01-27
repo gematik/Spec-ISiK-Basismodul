@@ -11,8 +11,12 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 ## Version 4.0.2
 * `fixed` Anpassung Kardinaltiät von "ExtensionAbrechnungsart" unter Account.coverage https://github.com/gematik/spec-ISiK-Basismodul/pull/526
+* `fixed` `test stable` Korrektur eines Beispiels für eine GET-Abfrage zum Suchparameter 'near' https://github.com/gematik/spec-ISiK-Basismodul/pull/533
 
 ## Version 4.0.1
+
+Datum: 25.11.2024
+
 * `improved` Refactoring des ImplementationGuides
 * `fixed` Procedure.code zu Pflichfeld gemacht https://github.com/gematik/spec-ISiK-Basismodul/issues/454
 * `fixed` Condition.onset harmonisiert mit KBV-Profil und mit Condition.abatement https://github.com/gematik/spec-ISiK-Basismodul/issues/454
