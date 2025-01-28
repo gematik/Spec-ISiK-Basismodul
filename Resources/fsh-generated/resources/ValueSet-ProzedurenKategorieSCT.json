@@ -4,11 +4,11 @@
   "name": "ProzedurenKategorieSCT",
   "id": "ProzedurenKategorieSCT",
   "description": "Enthaelt alle SNOMED Codes für ein Mapping der OPS Klassentitel",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "url": "https://gematik.de/fhir/isik/v3/Basismodul/ValueSet/ProzedurenKategorieSCT",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-11-19",
+  "date": "2025-01-28",
   "compose": {
     "include": [
       {

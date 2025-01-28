@@ -6,7 +6,16 @@ Usage: #definition
 * title = "ISiK CapabilityStatement Basis Server"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.gematik.de"
-* description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes System unterstützen muss um das Bestätigungsverfahren des Basismoduls zu bestehen."
+* description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes System unterstützen muss um das Bestätigungsverfahren des Basismoduls zu bestehen.
+  
+**HISTORIE:**    
+
+*Version 3.0.7* 
+* `change` Die Verbindlichkeit des Suchparameters `subject` wurde von SHALL auf MAY reduziert, da der Suchparameter `patient` für ISiK-Zwecke ausreichend ist.   
+* `change` Die Verbindlichkeit von Include und RevInclude wurde von SHALL auf MAY reduziert, außer bei den Parameter `patient` und `encounter`, da diese für ISiK-Zwecke ausreichend sind.  
+
+*Version 3.0.6*  
+"
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
 * kind = #requirements
 * fhirVersion = #4.0.1
@@ -98,43 +107,43 @@ Usage: #definition
 * rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchRevInclude[+] = "Composition:subject"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchRevInclude[+] = "Composition:author"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchRevInclude[+] = "Condition:patient"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchRevInclude[+] = "Condition:subject"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchRevInclude[+] = "Procedure:patient"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchRevInclude[+] = "Procedure:subject"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchRevInclude[+] = "Encounter:patient"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchRevInclude[+] = "Encounter:subject"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchRevInclude[+] = "Coverage:beneficiary"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchRevInclude[+] = "Coverage:subscriber"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchRevInclude[+] = "Coverage:patient"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchRevInclude[+] = "Coverage:payor"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchRevInclude[+] = "Account:subject"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchRevInclude[+] = "Account:patient"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
@@ -185,7 +194,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Encounter-subject"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[+].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[=].extension.valueCode = #MAY
 * rest.resource[=].searchParam[=].name = "account"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Encounter-account"
 * rest.resource[=].searchParam[=].type = #reference
@@ -224,19 +233,19 @@ Usage: #definition
 * rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchInclude[+] = "Encounter:subject"
 * rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchInclude[+] = "Encounter:part-of"
 * rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchInclude[+] = "Encounter:diagnosis"
 * rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchInclude[+] = "Encounter:account"
 * rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchRevInclude = "Encounter:part-of"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchRevInclude[+] = "Condition:encounter"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
@@ -316,7 +325,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-patient"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[+].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[=].extension.valueCode = #MAY
 * rest.resource[=].searchParam[=].name = "subject"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Condition-subject"
 * rest.resource[=].searchParam[=].type = #reference
@@ -350,13 +359,13 @@ Usage: #definition
 * rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchInclude[+] = "Condition:subject"
 * rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchInclude[+] = "Condition:encounter"
 * rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchRevInclude = "Encounter:diagnosis"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[+].extension.url = $capabilitystatement-expectation
 * rest.resource[=].extension.valueCode = #SHALL
 * rest.resource[=].type = #Procedure
@@ -393,7 +402,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-patient"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[+].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[=].extension.valueCode = #MAY
 * rest.resource[=].searchParam[=].name = "subject"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Procedure-subject"
 * rest.resource[=].searchParam[=].type = #reference
@@ -417,13 +426,13 @@ Usage: #definition
 * rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchInclude[+] = "Procedure:subject"
 * rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchInclude[=].extension.valueCode = #MAY
 * rest.resource[=].searchInclude[+] = "Procedure:encounter"
 * rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchRevInclude = "Encounter:diagnosis"
 * rest.resource[=].searchRevInclude[=].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchRevInclude[=].extension.valueCode = #MAY
 * rest.resource[+].extension.url = $capabilitystatement-expectation
 * rest.resource[=].extension.valueCode = #SHALL
 * rest.resource[=].type = #Coverage
