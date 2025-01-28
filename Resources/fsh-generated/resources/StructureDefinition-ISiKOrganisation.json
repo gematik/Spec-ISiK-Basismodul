@@ -6,7 +6,7 @@
   "name": "ISiKOrganisation",
   "status": "active",
   "experimental": false,
-  "date": "2025-01-21",
+  "date": "2025-01-27",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil beschreibt die Nutzung von Organisationseinheiten innerhalb eines Krankenhauses oder eines Krankenhauses als ganzem in ISiK-Szenarien.",
   "fhirVersion": "4.0.1",
