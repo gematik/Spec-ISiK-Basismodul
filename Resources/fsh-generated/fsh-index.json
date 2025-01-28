@@ -3,7 +3,7 @@
     "outputFile": "Account-AbrechnungsfallDRG.json",
     "fshName": "AbrechnungsfallDRG",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKAbrechnungsfall.fsh",
+    "fshFile": "Basis\\ISiKAbrechnungsfall.fsh",
     "startLine": 112,
     "endLine": 130
   },
@@ -11,7 +11,7 @@
     "outputFile": "Account-SZ1DRGFall.json",
     "fshName": "SZ1DRGFall",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-1.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-1.fsh",
     "startLine": 73,
     "endLine": 87
   },
@@ -19,7 +19,7 @@
     "outputFile": "Account-SZ2DRGFall.json",
     "fshName": "SZ2DRGFall",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-2.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-2.fsh",
     "startLine": 69,
     "endLine": 83
   },
@@ -27,7 +27,7 @@
     "outputFile": "AllergyIntolerance-ISiKAllergieUnvertraeglichkeitBeispiel1.json",
     "fshName": "ISiKAllergieUnvertraeglichkeitBeispiel1",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKAllergieUnvertraeglichkeit.fsh",
+    "fshFile": "Basis\\ISiKAllergieUnvertraeglichkeit.fsh",
     "startLine": 138,
     "endLine": 159
   },
@@ -35,7 +35,7 @@
     "outputFile": "Appointment-ISiKTerminExample.json",
     "fshName": "ISiKTerminExample",
     "fshType": "Instance",
-    "fshFile": "Terminplanung/ISiKTermin.fsh",
+    "fshFile": "Terminplanung\\ISiKTermin.fsh",
     "startLine": 140,
     "endLine": 157
   },
@@ -43,7 +43,7 @@
     "outputFile": "Appointment-ISiKTerminExampleExtendedICU.json",
     "fshName": "ISiKTerminExampleExtendedICU",
     "fshType": "Instance",
-    "fshFile": "Terminplanung/ISiKTermin.fsh",
+    "fshFile": "Terminplanung\\ISiKTermin.fsh",
     "startLine": 159,
     "endLine": 177
   },
@@ -51,7 +51,7 @@
     "outputFile": "Binary-Binary-JPEG-Example-short.json",
     "fshName": "Binary-JPEG-Example-short",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKBinary.fsh",
+    "fshFile": "Basis\\ISiKBinary.fsh",
     "startLine": 30,
     "endLine": 34
   },
@@ -59,7 +59,7 @@
     "outputFile": "Binary-Binary-JPEG-Example.json",
     "fshName": "Binary-JPEG-Example",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKBinary.fsh",
+    "fshFile": "Basis\\ISiKBinary.fsh",
     "startLine": 43,
     "endLine": 47
   },
@@ -67,7 +67,7 @@
     "outputFile": "Binary-Binary-PDF-Example-short.json",
     "fshName": "Binary-PDF-Example-short",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKBinary.fsh",
+    "fshFile": "Basis\\ISiKBinary.fsh",
     "startLine": 36,
     "endLine": 41
   },
@@ -75,7 +75,7 @@
     "outputFile": "Binary-Binary-PDF-Example.json",
     "fshName": "Binary-PDF-Example",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKBinary.fsh",
+    "fshFile": "Basis\\ISiKBinary.fsh",
     "startLine": 49,
     "endLine": 54
   },
@@ -83,7 +83,7 @@
     "outputFile": "Bundle-ExampleISiKMedikationTransaction.json",
     "fshName": "ExampleISiKMedikationTransaction",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationTransaction.fsh",
+    "fshFile": "Medikation\\ISiKMedikationTransaction.fsh",
     "startLine": 28,
     "endLine": 43
   },
@@ -91,7 +91,7 @@
     "outputFile": "Bundle-ExampleISiKMedikationTransactionResponse.json",
     "fshName": "ExampleISiKMedikationTransactionResponse",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationTransactionResponse.fsh",
+    "fshFile": "Medikation\\ISiKMedikationTransactionResponse.fsh",
     "startLine": 30,
     "endLine": 45
   },
@@ -99,7 +99,7 @@
     "outputFile": "Bundle-ISiKBundle-Example.json",
     "fshName": "ISiKBundle-Example",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKBerichtBundle.fsh",
+    "fshFile": "Basis\\ISiKBerichtBundle.fsh",
     "startLine": 24,
     "endLine": 38
   },
@@ -107,7 +107,7 @@
     "outputFile": "Bundle-SubscriptionNotificationBundleExample.json",
     "fshName": "SubscriptionNotificationBundleExample",
     "fshType": "Instance",
-    "fshFile": "Basis/IsiKPatientMerge.fsh",
+    "fshFile": "Basis\\IsiKPatientMerge.fsh",
     "startLine": 153,
     "endLine": 166
   },
@@ -115,7 +115,7 @@
     "outputFile": "Bundle-Suchergebnis-Beispiel.json",
     "fshName": "Suchergebnis-Beispiel",
     "fshType": "Instance",
-    "fshFile": "Dokumentenaustausch/ISiKDokumentenSuchergebnisse.fsh",
+    "fshFile": "Dokumentenaustausch\\ISiKDokumentenSuchergebnisse.fsh",
     "startLine": 29,
     "endLine": 38
   },
@@ -123,7 +123,7 @@
     "outputFile": "Bundle-Szenario1.json",
     "fshName": "Szenario1",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-1.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-1.fsh",
     "startLine": 164,
     "endLine": 174
   },
@@ -131,23 +131,71 @@
     "outputFile": "Bundle-Szenario2.json",
     "fshName": "Szenario2",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-2.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-2.fsh",
     "startLine": 99,
     "endLine": 107
+  },
+  {
+    "outputFile": "CapabilityStatement-ISiKAkteurDokumentenverwaltung.json",
+    "fshName": "ISiKAkteurDokumentenverwaltung",
+    "fshType": "Instance",
+    "fshFile": "Akteure\\ISiKAkteurDokumentenverwaltung.fsh",
+    "startLine": 1,
+    "endLine": 133
+  },
+  {
+    "outputFile": "CapabilityStatement-ISiKAkteurDokumentenverwaltungOptionMetadatenErzeugen.json",
+    "fshName": "ISiKAkteurDokumentenverwaltungOptionMetadatenErzeugen",
+    "fshType": "Instance",
+    "fshFile": "Akteure\\ISiKAkteurDokumentenverwaltungOptionMetadatenErzeugen.fsh",
+    "startLine": 1,
+    "endLine": 41
+  },
+  {
+    "outputFile": "CapabilityStatement-ISiKAkteurDokumentenverwaltungOptionMetadatenUpdate.json",
+    "fshName": "ISiKAkteurDokumentenverwaltungOptionMetadatenUpdate",
+    "fshType": "Instance",
+    "fshFile": "Akteure\\ISiKAkteurDokumentenverwaltungOptionMetadatenUpdate.fsh",
+    "startLine": 1,
+    "endLine": 41
+  },
+  {
+    "outputFile": "CapabilityStatement-ISiKAkteurMinimaleStammdatenVerwaltung.json",
+    "fshName": "ISiKAkteurMinimaleStammdatenVerwaltung",
+    "fshType": "Instance",
+    "fshFile": "Akteure\\ISiKAkteurMinimaleStammdatenVerwaltung.fsh",
+    "startLine": 1,
+    "endLine": 218
+  },
+  {
+    "outputFile": "CapabilityStatement-ISiKAkteurMinimaleStammdatenVerwaltungOptionErweiterteSuche.json",
+    "fshName": "ISiKAkteurMinimaleStammdatenVerwaltungOptionErweiterteSuche",
+    "fshType": "Instance",
+    "fshFile": "Akteure\\ISiKAkteurMinimaleStammdatenVerwaltungOptionErweiterteSuche.fsh",
+    "startLine": 1,
+    "endLine": 170
+  },
+  {
+    "outputFile": "CapabilityStatement-ISiKAkteurMinimaleStammdatenVerwaltungOptionPatientMerge.json",
+    "fshName": "ISiKAkteurMinimaleStammdatenVerwaltungOptionPatientMerge",
+    "fshType": "Instance",
+    "fshFile": "Akteure\\ISiKAkteurMinimaleStammdatenVerwaltungOptionPatientMerge.fsh",
+    "startLine": 1,
+    "endLine": 63
   },
   {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementAMTS.json",
     "fshName": "ISiKCapabilityStatementAMTS",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKCapabilityStatementAMTS.fsh",
+    "fshFile": "Medikation\\ISiKCapabilityStatementAMTS.fsh",
     "startLine": 1,
-    "endLine": 858
+    "endLine": 853
   },
   {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementBasisServer.json",
     "fshName": "ISiKCapabilityStatementBasisServer",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKCapabilityStatementBasisServer.fsh",
+    "fshFile": "Basis\\ISiKCapabilityStatementBasisServer.fsh",
     "startLine": 1,
     "endLine": 1469
   },
@@ -155,7 +203,7 @@
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementDokumentenaustauschServer.json",
     "fshName": "ISiKCapabilityStatementDokumentenaustauschServer",
     "fshType": "Instance",
-    "fshFile": "Dokumentenaustausch/ISiKCapabilityStatementDokumentenaustauschServer.fsh",
+    "fshFile": "Dokumentenaustausch\\ISiKCapabilityStatementDokumentenaustauschServer.fsh",
     "startLine": 1,
     "endLine": 146
   },
@@ -163,55 +211,39 @@
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementMedikationInformation.json",
     "fshName": "ISiKCapabilityStatementMedikationInformation",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKCapabilityStatementMedikationInformation.fsh",
+    "fshFile": "Medikation\\ISiKCapabilityStatementMedikationInformation.fsh",
     "startLine": 1,
-    "endLine": 494
+    "endLine": 489
   },
   {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementMedikationVerabreichung.json",
     "fshName": "ISiKCapabilityStatementMedikationVerabreichung",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKCapabilityStatementMedikationVerabreichung.fsh",
+    "fshFile": "Medikation\\ISiKCapabilityStatementMedikationVerabreichung.fsh",
     "startLine": 1,
-    "endLine": 411
+    "endLine": 406
   },
   {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementMedikationVerordnung.json",
     "fshName": "ISiKCapabilityStatementMedikationVerordnung",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKCapabilityStatementMedikationVerordnung.fsh",
+    "fshFile": "Medikation\\ISiKCapabilityStatementMedikationVerordnung.fsh",
     "startLine": 1,
-    "endLine": 425
+    "endLine": 420
   },
   {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementTerminplanungServer.json",
     "fshName": "ISiKCapabilityStatementTerminplanungServer",
     "fshType": "Instance",
-    "fshFile": "Terminplanung/ISiKTerminplanungCapabilityStatement.fsh",
+    "fshFile": "Terminplanung\\ISiKTerminplanungCapabilityStatement.fsh",
     "startLine": 1,
     "endLine": 379
-  },
-  {
-    "outputFile": "CapabilityStatement-ISiKCapabilityStatementVitalparameterServerHospital.json",
-    "fshName": "ISiKCapabilityStatementVitalparameterServerHospital",
-    "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-CapabilityStatement-Hospital.fsh",
-    "startLine": 1,
-    "endLine": 134
-  },
-  {
-    "outputFile": "CapabilityStatement-ISiKCapabilityStatementVitalparameterServerPDMS.json",
-    "fshName": "ISiKCapabilityStatementVitalparameterServerPDMS",
-    "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-CapabilityStatement-PDMS.fsh",
-    "startLine": 1,
-    "endLine": 164
   },
   {
     "outputFile": "CodeSystem-CodeSystemExample.json",
     "fshName": "CodeSystemExample",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKCodeSystem.fsh",
+    "fshFile": "Basis\\ISiKCodeSystem.fsh",
     "startLine": 55,
     "endLine": 65
   },
@@ -219,7 +251,7 @@
     "outputFile": "CodeSystem-ISiKBehandlungsergebnisRehaCS.json",
     "fshName": "ISiKBehandlungsergebnisReha",
     "fshType": "CodeSystem",
-    "fshFile": "Basis/CodeSystems.fsh",
+    "fshFile": "Basis\\CodeSystems.fsh",
     "startLine": 11,
     "endLine": 18
   },
@@ -227,7 +259,7 @@
     "outputFile": "CodeSystem-ISiKBesondereBehandlungsformRehaCS.json",
     "fshName": "ISiKBesondereBehandlungsformReha",
     "fshType": "CodeSystem",
-    "fshFile": "Basis/CodeSystems.fsh",
+    "fshFile": "Basis\\CodeSystems.fsh",
     "startLine": 1,
     "endLine": 9
   },
@@ -235,7 +267,7 @@
     "outputFile": "CodeSystem-ISiKEntlassformRehaCS.json",
     "fshName": "ISiKEntlassformReha",
     "fshType": "CodeSystem",
-    "fshFile": "Basis/CodeSystems.fsh",
+    "fshFile": "Basis\\CodeSystems.fsh",
     "startLine": 20,
     "endLine": 40
   },
@@ -243,7 +275,7 @@
     "outputFile": "CodeSystem-ISiKMedikationsartCS.json",
     "fshName": "ISiKMedikationsartCS",
     "fshType": "CodeSystem",
-    "fshFile": "Medikation/codeSystems.fsh",
+    "fshFile": "Medikation\\codeSystems.fsh",
     "startLine": 1,
     "endLine": 7
   },
@@ -251,7 +283,7 @@
     "outputFile": "CodeSystem-ISiKUnterbrechnungRehaCS.json",
     "fshName": "ISiKUnterbrechnungReha",
     "fshType": "CodeSystem",
-    "fshFile": "Basis/CodeSystems.fsh",
+    "fshFile": "Basis\\CodeSystems.fsh",
     "startLine": 44,
     "endLine": 54
   },
@@ -259,7 +291,7 @@
     "outputFile": "Communication-ISiKNachrichtExample.json",
     "fshName": "ISiKNachrichtExample",
     "fshType": "Instance",
-    "fshFile": "Terminplanung/ISiKNachricht.fsh",
+    "fshFile": "Terminplanung\\ISiKNachricht.fsh",
     "startLine": 45,
     "endLine": 54
   },
@@ -267,7 +299,7 @@
     "outputFile": "Composition-composition-blutdruck.json",
     "fshName": "composition-blutdruck",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKBerichtSubSysteme.fsh",
+    "fshFile": "Basis\\ISiKBerichtSubSysteme.fsh",
     "startLine": 187,
     "endLine": 205
   },
@@ -275,7 +307,7 @@
     "outputFile": "Condition-BehandlungsDiagnoseFreitext.json",
     "fshName": "BehandlungsDiagnoseFreitext",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKDiagnose.fsh",
+    "fshFile": "Basis\\ISiKDiagnose.fsh",
     "startLine": 210,
     "endLine": 217
   },
@@ -283,7 +315,7 @@
     "outputFile": "Condition-Example-condition-ausrufezeichen-primaer.json",
     "fshName": "Example-condition-ausrufezeichen-primaer",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKDiagnose.fsh",
+    "fshFile": "Basis\\ISiKDiagnose.fsh",
     "startLine": 142,
     "endLine": 151
   },
@@ -291,7 +323,7 @@
     "outputFile": "Condition-Example-condition-ausrufezeichen-sekundaer.json",
     "fshName": "Example-condition-ausrufezeichen-sekundaer",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKDiagnose.fsh",
+    "fshFile": "Basis\\ISiKDiagnose.fsh",
     "startLine": 153,
     "endLine": 166
   },
@@ -299,7 +331,7 @@
     "outputFile": "Condition-Example-condition-kreuz-stern-primaer.json",
     "fshName": "Example-condition-kreuz-stern-primaer",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKDiagnose.fsh",
+    "fshFile": "Basis\\ISiKDiagnose.fsh",
     "startLine": 168,
     "endLine": 180
   },
@@ -307,7 +339,7 @@
     "outputFile": "Condition-Example-condition-kreuz-stern-sekundaer.json",
     "fshName": "Example-condition-kreuz-stern-sekundaer",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKDiagnose.fsh",
+    "fshFile": "Basis\\ISiKDiagnose.fsh",
     "startLine": 182,
     "endLine": 197
   },
@@ -315,7 +347,7 @@
     "outputFile": "Condition-MittelgradigeIntelligenzminderung.json",
     "fshName": "MittelgradigeIntelligenzminderung",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKDiagnose.fsh",
+    "fshFile": "Basis\\ISiKDiagnose.fsh",
     "startLine": 199,
     "endLine": 208
   },
@@ -323,7 +355,7 @@
     "outputFile": "Condition-SZ2Primaerdiagnose.json",
     "fshName": "SZ2Primaerdiagnose",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-2.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-2.fsh",
     "startLine": 26,
     "endLine": 35
   },
@@ -331,7 +363,7 @@
     "outputFile": "Condition-SZ2Sekundaerdiagnose.json",
     "fshName": "SZ2Sekundaerdiagnose",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-2.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-2.fsh",
     "startLine": 37,
     "endLine": 48
   },
@@ -339,7 +371,7 @@
     "outputFile": "Coverage-CoverageGesetzlich.json",
     "fshName": "CoverageGesetzlich",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKVersicherungsverhaeltnisGesetzlich.fsh",
+    "fshFile": "Basis\\ISiKVersicherungsverhaeltnisGesetzlich.fsh",
     "startLine": 111,
     "endLine": 120
   },
@@ -347,7 +379,7 @@
     "outputFile": "Coverage-CoveragePrivat.json",
     "fshName": "CoveragePrivat",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKVersicherungsverhaeltnisSelbstzahler.fsh",
+    "fshFile": "Basis\\ISiKVersicherungsverhaeltnisSelbstzahler.fsh",
     "startLine": 77,
     "endLine": 83
   },
@@ -355,7 +387,7 @@
     "outputFile": "Coverage-SZ1VersicherungGesetzlich.json",
     "fshName": "SZ1VersicherungGesetzlich",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-1.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-1.fsh",
     "startLine": 47,
     "endLine": 63
   },
@@ -363,7 +395,7 @@
     "outputFile": "Coverage-SZ1VersicherungSelbstzahler.json",
     "fshName": "SZ1VersicherungSelbstzahler",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-1.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-1.fsh",
     "startLine": 65,
     "endLine": 71
   },
@@ -371,7 +403,7 @@
     "outputFile": "Coverage-SZ2VersicherungGesetzlich.json",
     "fshName": "SZ2VersicherungGesetzlich",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-2.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-2.fsh",
     "startLine": 85,
     "endLine": 97
   },
@@ -379,7 +411,7 @@
     "outputFile": "DocumentReference-dok-beispiel-client-with-binary-jpeg-example-short.json",
     "fshName": "dok-beispiel-client-with-binary-jpeg-example-short",
     "fshType": "Instance",
-    "fshFile": "Dokumentenaustausch/ISiKDokumentenMetadaten.fsh",
+    "fshFile": "Dokumentenaustausch\\ISiKDokumentenMetadaten.fsh",
     "startLine": 256,
     "endLine": 275
   },
@@ -387,7 +419,7 @@
     "outputFile": "DocumentReference-dok-beispiel-client-with-binary-jpeg-example.json",
     "fshName": "dok-beispiel-client-with-binary-jpeg-example",
     "fshType": "Instance",
-    "fshFile": "Dokumentenaustausch/ISiKDokumentenMetadaten.fsh",
+    "fshFile": "Dokumentenaustausch\\ISiKDokumentenMetadaten.fsh",
     "startLine": 277,
     "endLine": 296
   },
@@ -395,7 +427,7 @@
     "outputFile": "DocumentReference-dok-beispiel-client-with-binary-pdf-example-short.json",
     "fshName": "dok-beispiel-client-with-binary-pdf-example-short",
     "fshType": "Instance",
-    "fshFile": "Dokumentenaustausch/ISiKDokumentenMetadaten.fsh",
+    "fshFile": "Dokumentenaustausch\\ISiKDokumentenMetadaten.fsh",
     "startLine": 235,
     "endLine": 254
   },
@@ -403,7 +435,7 @@
     "outputFile": "DocumentReference-dok-beispiel-client-with-binary-pdf-example.json",
     "fshName": "dok-beispiel-client-with-binary-pdf-example",
     "fshType": "Instance",
-    "fshFile": "Dokumentenaustausch/ISiKDokumentenMetadaten.fsh",
+    "fshFile": "Dokumentenaustausch\\ISiKDokumentenMetadaten.fsh",
     "startLine": 298,
     "endLine": 317
   },
@@ -411,7 +443,7 @@
     "outputFile": "DocumentReference-dok-beispiel-server.json",
     "fshName": "dok-beispiel-server",
     "fshType": "Instance",
-    "fshFile": "Dokumentenaustausch/ISiKDokumentenMetadaten.fsh",
+    "fshFile": "Dokumentenaustausch\\ISiKDokumentenMetadaten.fsh",
     "startLine": 212,
     "endLine": 233
   },
@@ -419,7 +451,7 @@
     "outputFile": "Encounter-BeispielBesuch.json",
     "fshName": "BeispielBesuch",
     "fshType": "Instance",
-    "fshFile": "Dokumentenaustausch/referencedExamples.fsh",
+    "fshFile": "Dokumentenaustausch\\referencedExamples.fsh",
     "startLine": 53,
     "endLine": 88
   },
@@ -427,7 +459,7 @@
     "outputFile": "Encounter-Fachabteilungskontakt.json",
     "fshName": "Fachabteilungskontakt",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKKontaktGesundheitseinrichtung.fsh",
+    "fshFile": "Basis\\ISiKKontaktGesundheitseinrichtung.fsh",
     "startLine": 430,
     "endLine": 470
   },
@@ -435,7 +467,7 @@
     "outputFile": "Encounter-FachabteilungskontaktMinimal.json",
     "fshName": "FachabteilungskontaktMinimal",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKBerichtBundle.fsh",
+    "fshFile": "Basis\\ISiKBerichtBundle.fsh",
     "startLine": 55,
     "endLine": 68
   },
@@ -443,7 +475,7 @@
     "outputFile": "Encounter-SZ1Nachstationaer.json",
     "fshName": "SZ1Nachstationaer",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-1.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-1.fsh",
     "startLine": 145,
     "endLine": 162
   },
@@ -451,7 +483,7 @@
     "outputFile": "Encounter-SZ1Stationaer.json",
     "fshName": "SZ1Stationaer",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-1.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-1.fsh",
     "startLine": 108,
     "endLine": 143
   },
@@ -459,7 +491,7 @@
     "outputFile": "Encounter-SZ1Vorstationaer.json",
     "fshName": "SZ1Vorstationaer",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-1.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-1.fsh",
     "startLine": 89,
     "endLine": 106
   },
@@ -467,7 +499,7 @@
     "outputFile": "Encounter-SZ2Encounter.json",
     "fshName": "SZ2Encounter",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-2.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-2.fsh",
     "startLine": 50,
     "endLine": 67
   },
@@ -475,7 +507,7 @@
     "outputFile": "HealthcareService-ISiKMedizinischeBehandlungseinheitExample.json",
     "fshName": "ISiKMedizinischeBehandlungseinheitExample",
     "fshType": "Instance",
-    "fshFile": "Terminplanung/ISiKMedizinischeBehandlungseinheit.fsh",
+    "fshFile": "Terminplanung\\ISiKMedizinischeBehandlungseinheit.fsh",
     "startLine": 44,
     "endLine": 50
   },
@@ -483,7 +515,7 @@
     "outputFile": "List-ExampleISiKMedikationsListe.json",
     "fshName": "ExampleISiKMedikationsListe",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsListe.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsListe.fsh",
     "startLine": 58,
     "endLine": 71
   },
@@ -491,7 +523,7 @@
     "outputFile": "List-ExampleISiKMedikationsListeParkinson.json",
     "fshName": "ExampleISiKMedikationsListeParkinson",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsListe.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsListe.fsh",
     "startLine": 73,
     "endLine": 95
   },
@@ -499,7 +531,7 @@
     "outputFile": "Location-BettenstellplatzStandortBeispiel.json",
     "fshName": "BettenstellplatzStandortBeispiel",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKStandort.fsh",
+    "fshFile": "Basis\\ISiKStandort.fsh",
     "startLine": 96,
     "endLine": 100
   },
@@ -507,7 +539,7 @@
     "outputFile": "Location-RaumStandortBeispiel.json",
     "fshName": "RaumStandortBeispiel",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKStandort.fsh",
+    "fshFile": "Basis\\ISiKStandort.fsh",
     "startLine": 90,
     "endLine": 94
   },
@@ -515,7 +547,7 @@
     "outputFile": "Medication-ExampleISiKMedikament1.json",
     "fshName": "ExampleISiKMedikament1",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikament.fsh",
+    "fshFile": "Medikation\\ISiKMedikament.fsh",
     "startLine": 118,
     "endLine": 125
   },
@@ -523,7 +555,7 @@
     "outputFile": "Medication-ExampleISiKMedikament2.json",
     "fshName": "ExampleISiKMedikament2",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikament.fsh",
+    "fshFile": "Medikation\\ISiKMedikament.fsh",
     "startLine": 127,
     "endLine": 159
   },
@@ -531,7 +563,7 @@
     "outputFile": "Medication-ExampleISiKMedikament3.json",
     "fshName": "ExampleISiKMedikament3",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikament.fsh",
+    "fshFile": "Medikation\\ISiKMedikament.fsh",
     "startLine": 161,
     "endLine": 168
   },
@@ -539,7 +571,7 @@
     "outputFile": "Medication-ExampleISiKMedikament4.json",
     "fshName": "ExampleISiKMedikament4",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikament.fsh",
+    "fshFile": "Medikation\\ISiKMedikament.fsh",
     "startLine": 170,
     "endLine": 208
   },
@@ -547,7 +579,7 @@
     "outputFile": "Medication-ExampleISiKMedikament5.json",
     "fshName": "ExampleISiKMedikament5",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikament.fsh",
+    "fshFile": "Medikation\\ISiKMedikament.fsh",
     "startLine": 210,
     "endLine": 248
   },
@@ -555,7 +587,7 @@
     "outputFile": "Medication-ExampleISiKMedikament6.json",
     "fshName": "ExampleISiKMedikament6",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikament.fsh",
+    "fshFile": "Medikation\\ISiKMedikament.fsh",
     "startLine": 250,
     "endLine": 254
   },
@@ -563,7 +595,7 @@
     "outputFile": "Medication-ExampleISiKMedikament7.json",
     "fshName": "ExampleISiKMedikament7",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikament.fsh",
+    "fshFile": "Medikation\\ISiKMedikament.fsh",
     "startLine": 256,
     "endLine": 289
   },
@@ -571,7 +603,7 @@
     "outputFile": "Medication-ExampleISiKMedikament8.json",
     "fshName": "ExampleISiKMedikament8",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikament.fsh",
+    "fshFile": "Medikation\\ISiKMedikament.fsh",
     "startLine": 291,
     "endLine": 333
   },
@@ -579,7 +611,7 @@
     "outputFile": "Medication-ExampleISiKMedikament9.json",
     "fshName": "ExampleISiKMedikament9",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikament.fsh",
+    "fshFile": "Medikation\\ISiKMedikament.fsh",
     "startLine": 335,
     "endLine": 377
   },
@@ -587,7 +619,7 @@
     "outputFile": "MedicationAdministration-ExampleISiKMedikationsVerabreichung.json",
     "fshName": "ExampleISiKMedikationsVerabreichung",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsVerabreichung.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsVerabreichung.fsh",
     "startLine": 114,
     "endLine": 127
   },
@@ -595,7 +627,7 @@
     "outputFile": "MedicationAdministration-ExampleISiKMedikationsVerabreichung2.json",
     "fshName": "ExampleISiKMedikationsVerabreichung2",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsVerabreichung.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsVerabreichung.fsh",
     "startLine": 129,
     "endLine": 142
   },
@@ -603,7 +635,7 @@
     "outputFile": "MedicationAdministration-ExampleISiKMedikationsVerabreichung3.json",
     "fshName": "ExampleISiKMedikationsVerabreichung3",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsVerabreichung.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsVerabreichung.fsh",
     "startLine": 144,
     "endLine": 167
   },
@@ -611,7 +643,7 @@
     "outputFile": "MedicationAdministration-ExampleISiKMedikationsVerabreichung4.json",
     "fshName": "ExampleISiKMedikationsVerabreichung4",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsVerabreichung.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsVerabreichung.fsh",
     "startLine": 169,
     "endLine": 198
   },
@@ -619,7 +651,7 @@
     "outputFile": "MedicationRequest-ExampleISiKMedikationsVerordnung.json",
     "fshName": "ExampleISiKMedikationsVerordnung",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsVerordnung.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsVerordnung.fsh",
     "startLine": 238,
     "endLine": 261
   },
@@ -627,7 +659,7 @@
     "outputFile": "MedicationRequest-ExampleISiKMedikationsVerordnung2.json",
     "fshName": "ExampleISiKMedikationsVerordnung2",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsVerordnung.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsVerordnung.fsh",
     "startLine": 263,
     "endLine": 286
   },
@@ -635,7 +667,7 @@
     "outputFile": "MedicationStatement-ExampleISiKMedikationsInformation1.json",
     "fshName": "ExampleISiKMedikationsInformation1",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 254,
     "endLine": 277
   },
@@ -643,7 +675,7 @@
     "outputFile": "MedicationStatement-ExampleISiKMedikationsInformation2.json",
     "fshName": "ExampleISiKMedikationsInformation2",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 279,
     "endLine": 299
   },
@@ -651,7 +683,7 @@
     "outputFile": "MedicationStatement-ExampleISiKMedikationsInformation3.json",
     "fshName": "ExampleISiKMedikationsInformation3",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 301,
     "endLine": 324
   },
@@ -659,7 +691,7 @@
     "outputFile": "MedicationStatement-ExampleISiKMedikationsInformation4.json",
     "fshName": "ExampleISiKMedikationsInformation4",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 327,
     "endLine": 346
   },
@@ -667,7 +699,7 @@
     "outputFile": "MedicationStatement-ExampleISiKMedikationsInformation5.json",
     "fshName": "ExampleISiKMedikationsInformation5",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 349,
     "endLine": 371
   },
@@ -675,7 +707,7 @@
     "outputFile": "MedicationStatement-ExampleISiKMedikationsInformation6.json",
     "fshName": "ExampleISiKMedikationsInformation6",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 374,
     "endLine": 390
   },
@@ -683,7 +715,7 @@
     "outputFile": "MedicationStatement-ExampleISiKMedikationsInformationParkinson1.json",
     "fshName": "ExampleISiKMedikationsInformationParkinson1",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 393,
     "endLine": 415
   },
@@ -691,7 +723,7 @@
     "outputFile": "MedicationStatement-ExampleISiKMedikationsInformationParkinson2.json",
     "fshName": "ExampleISiKMedikationsInformationParkinson2",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 418,
     "endLine": 438
   },
@@ -699,7 +731,7 @@
     "outputFile": "MedicationStatement-ExampleISiKMedikationsInformationParkinson3.json",
     "fshName": "ExampleISiKMedikationsInformationParkinson3",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 441,
     "endLine": 470
   },
@@ -707,7 +739,7 @@
     "outputFile": "MedicationStatement-ExampleISiKMedikationsInformationParkinson4.json",
     "fshName": "ExampleISiKMedikationsInformationParkinson4",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 473,
     "endLine": 493
   },
@@ -715,7 +747,7 @@
     "outputFile": "MedicationStatement-ExampleISiKMedikationsInformationParkinson5.json",
     "fshName": "ExampleISiKMedikationsInformationParkinson5",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 496,
     "endLine": 515
   },
@@ -723,7 +755,7 @@
     "outputFile": "Observation-ExampleISiKLaboruntersuchungCRP1.json",
     "fshName": "ExampleISiKLaboruntersuchungCRP1",
     "fshType": "Instance",
-    "fshFile": "Labor/ISiKLaboruntersuchungCRP.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungCRP.fsh",
     "startLine": 35,
     "endLine": 44
   },
@@ -731,7 +763,7 @@
     "outputFile": "Observation-ExampleISiKLaboruntersuchungGFR1.json",
     "fshName": "ExampleISiKLaboruntersuchungGFR1",
     "fshType": "Instance",
-    "fshFile": "Labor/ISiKLaboruntersuchungGFR.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungGFR.fsh",
     "startLine": 31,
     "endLine": 41
   },
@@ -739,7 +771,7 @@
     "outputFile": "Observation-ExampleISiKLaboruntersuchungHb1.json",
     "fshName": "ExampleISiKLaboruntersuchungHb1",
     "fshType": "Instance",
-    "fshFile": "Labor/ISiKLaboruntersuchungHb.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungHb.fsh",
     "startLine": 146,
     "endLine": 157
   },
@@ -747,7 +779,7 @@
     "outputFile": "Observation-ExampleISiKLaboruntersuchungPCT1.json",
     "fshName": "ExampleISiKLaboruntersuchungPCT1",
     "fshType": "Instance",
-    "fshFile": "Labor/ISiKLaboruntersuchungPCT.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungPCT.fsh",
     "startLine": 28,
     "endLine": 37
   },
@@ -755,7 +787,7 @@
     "outputFile": "Observation-ExampleISiKLaboruntersuchungSerumkreatinin1.json",
     "fshName": "ExampleISiKLaboruntersuchungSerumkreatinin1",
     "fshType": "Instance",
-    "fshFile": "Labor/ISiKLaboruntersuchungSerumkreatinin.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungSerumkreatinin.fsh",
     "startLine": 46,
     "endLine": 57
   },
@@ -763,7 +795,7 @@
     "outputFile": "Observation-ExampleISiKLaboruntersuchungTSH1.json",
     "fshName": "ExampleISiKLaboruntersuchungTSH1",
     "fshType": "Instance",
-    "fshFile": "Labor/ISiKLaboruntersuchungTSH.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungTSH.fsh",
     "startLine": 64,
     "endLine": 74
   },
@@ -771,7 +803,7 @@
     "outputFile": "Observation-ExampleISiKLaboruntersuchungThrombozyten1.json",
     "fshName": "ExampleISiKLaboruntersuchungThrombozyten1",
     "fshType": "Instance",
-    "fshFile": "Labor/ISiKLaboruntersuchungThrombozyten.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungThrombozyten.fsh",
     "startLine": 34,
     "endLine": 44
   },
@@ -779,7 +811,7 @@
     "outputFile": "Observation-ExampleISiKLaboruntersuchungTroponin1.json",
     "fshName": "ExampleISiKLaboruntersuchungTroponin1",
     "fshType": "Instance",
-    "fshFile": "Labor/ISiKLaboruntersuchungTroponin.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungTroponin.fsh",
     "startLine": 33,
     "endLine": 42
   },
@@ -787,7 +819,7 @@
     "outputFile": "Observation-Herzzeitvolumen.json",
     "fshName": "Herzzeitvolumen",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Herzzeitvolumen.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Herzzeitvolumen.fsh",
     "startLine": 17,
     "endLine": 29
   },
@@ -795,7 +827,7 @@
     "outputFile": "Observation-ISiKAlkoholAbususBeispiel.json",
     "fshName": "ISiKAlkoholAbususBeispiel",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKLebenszustandOberservations.fsh",
+    "fshFile": "Basis\\ISiKLebenszustandOberservations.fsh",
     "startLine": 150,
     "endLine": 162
   },
@@ -803,7 +835,7 @@
     "outputFile": "Observation-ISiKAtemfrequenzExample.json",
     "fshName": "ISiKAtemfrequenzExample",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-Atemfrequenz.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Atemfrequenz.fsh",
     "startLine": 20,
     "endLine": 33
   },
@@ -811,7 +843,7 @@
     "outputFile": "Observation-ISiKBlutdruckSystemischArteriellExample.json",
     "fshName": "ISiKBlutdruckSystemischArteriellExample",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-Blutdruck.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Blutdruck.fsh",
     "startLine": 71,
     "endLine": 99
   },
@@ -819,7 +851,7 @@
     "outputFile": "Observation-ISiKEKGExample.json",
     "fshName": "ISiKEKGExample",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-Ekg.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Ekg.fsh",
     "startLine": 32,
     "endLine": 57
   },
@@ -827,7 +859,7 @@
     "outputFile": "Observation-ISiKGCSExample.json",
     "fshName": "ISiKGCSExample",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-GCS.fsh",
+    "fshFile": "Vitalparameter\\ISiK-GCS.fsh",
     "startLine": 51,
     "endLine": 67
   },
@@ -835,7 +867,7 @@
     "outputFile": "Observation-ISiKHerzfrequenzExample.json",
     "fshName": "ISiKHerzfrequenzExample",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-Herzfrequenz.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Herzfrequenz.fsh",
     "startLine": 27,
     "endLine": 40
   },
@@ -843,7 +875,7 @@
     "outputFile": "Observation-ISiKKoerpergewichtExample.json",
     "fshName": "ISiKKoerpergewichtExample",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-Koerpergewicht.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Koerpergewicht.fsh",
     "startLine": 27,
     "endLine": 40
   },
@@ -851,7 +883,7 @@
     "outputFile": "Observation-ISiKKoerpergroesseExample.json",
     "fshName": "ISiKKoerpergroesseExample",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-Koerpergroesse.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Koerpergroesse.fsh",
     "startLine": 27,
     "endLine": 40
   },
@@ -859,7 +891,7 @@
     "outputFile": "Observation-ISiKKoerpertemperaturExample.json",
     "fshName": "ISiKKoerpertemperaturExample",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-Koerpertemperatur.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Koerpertemperatur.fsh",
     "startLine": 27,
     "endLine": 40
   },
@@ -867,7 +899,7 @@
     "outputFile": "Observation-ISiKKopfumfangExample.json",
     "fshName": "ISiKKopfumfangExample",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-Kopfumfang.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Kopfumfang.fsh",
     "startLine": 30,
     "endLine": 43
   },
@@ -875,7 +907,7 @@
     "outputFile": "Observation-ISiKRaucherStatusBeispiel.json",
     "fshName": "ISiKRaucherStatusBeispiel",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKLebenszustandOberservations.fsh",
+    "fshFile": "Basis\\ISiKLebenszustandOberservations.fsh",
     "startLine": 177,
     "endLine": 190
   },
@@ -883,7 +915,7 @@
     "outputFile": "Observation-ISiKSauerstoffsaettigungArteriellExample.json",
     "fshName": "ISiKSauerstoffsaettigungArteriellExample",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/ISiK-Sauerstoffsaettigung.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Sauerstoffsaettigung.fsh",
     "startLine": 19,
     "endLine": 40
   },
@@ -891,7 +923,7 @@
     "outputFile": "Observation-ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel.json",
     "fshName": "ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKLebenszustandOberservations.fsh",
+    "fshFile": "Basis\\ISiKLebenszustandOberservations.fsh",
     "startLine": 126,
     "endLine": 136
   },
@@ -899,7 +931,7 @@
     "outputFile": "Observation-ISiKSchwangerschaftsstatusBeispiel.json",
     "fshName": "ISiKSchwangerschaftsstatusBeispiel",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKLebenszustandOberservations.fsh",
+    "fshFile": "Basis\\ISiKLebenszustandOberservations.fsh",
     "startLine": 102,
     "endLine": 114
   },
@@ -907,7 +939,7 @@
     "outputFile": "Observation-ISiKStillstatusBeispiel.json",
     "fshName": "ISiKStillstatusBeispiel",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKLebenszustandOberservations.fsh",
+    "fshFile": "Basis\\ISiKLebenszustandOberservations.fsh",
     "startLine": 204,
     "endLine": 217
   },
@@ -915,7 +947,7 @@
     "outputFile": "Observation-Ideales-Koerpergewicht.json",
     "fshName": "Ideales-Koerpergewicht",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Ideales_Koerpergewicht.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Ideales_Koerpergewicht.fsh",
     "startLine": 16,
     "endLine": 28
   },
@@ -923,7 +955,7 @@
     "outputFile": "Observation-Intrakranieller-Druck-ICP.json",
     "fshName": "Intrakranieller-Druck-ICP",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Intrakranieller_Druck_Icp.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Intrakranieller_Druck_Icp.fsh",
     "startLine": 17,
     "endLine": 30
   },
@@ -931,7 +963,7 @@
     "outputFile": "Observation-Koerpergewicht-Percentile-altersabhaengig.json",
     "fshName": "Koerpergewicht-Percentile-altersabhaengig",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig.fsh",
     "startLine": 21,
     "endLine": 32
   },
@@ -939,7 +971,7 @@
     "outputFile": "Observation-Koerpergroesse-Percentil.json",
     "fshName": "Koerpergroesse-Percentil",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpergroesse_Percentil.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpergroesse_Percentil.fsh",
     "startLine": 21,
     "endLine": 31
   },
@@ -947,7 +979,7 @@
     "outputFile": "Observation-Koerpertemperatur-Achsel.json",
     "fshName": "Koerpertemperatur-Achsel",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Achsel.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Achsel.fsh",
     "startLine": 15,
     "endLine": 28
   },
@@ -955,7 +987,7 @@
     "outputFile": "Observation-Koerpertemperatur-Atemwege.json",
     "fshName": "Koerpertemperatur-Atemwege",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Atemwege.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Atemwege.fsh",
     "startLine": 15,
     "endLine": 27
   },
@@ -963,7 +995,7 @@
     "outputFile": "Observation-Koerpertemperatur-Blut.json",
     "fshName": "Koerpertemperatur-Blut",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Blut.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Blut.fsh",
     "startLine": 15,
     "endLine": 27
   },
@@ -971,7 +1003,7 @@
     "outputFile": "Observation-Koerpertemperatur-Brust.json",
     "fshName": "Koerpertemperatur-Brust",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Brust.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Brust.fsh",
     "startLine": 15,
     "endLine": 26
   },
@@ -979,7 +1011,7 @@
     "outputFile": "Observation-Koerpertemperatur-Brustwirbelsaeule.json",
     "fshName": "Koerpertemperatur-Brustwirbelsaeule",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Brustwirbelsaeule.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Brustwirbelsaeule.fsh",
     "startLine": 15,
     "endLine": 26
   },
@@ -987,7 +1019,7 @@
     "outputFile": "Observation-Koerpertemperatur-Gelenk.json",
     "fshName": "Koerpertemperatur-Gelenk",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Gelenk.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Gelenk.fsh",
     "startLine": 15,
     "endLine": 26
   },
@@ -995,7 +1027,7 @@
     "outputFile": "Observation-Koerpertemperatur-Halswirbelsaeule.json",
     "fshName": "Koerpertemperatur-Halswirbelsaeule",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Halswirbelsaeule.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Halswirbelsaeule.fsh",
     "startLine": 15,
     "endLine": 26
   },
@@ -1003,7 +1035,7 @@
     "outputFile": "Observation-Koerpertemperatur-Harnblase.json",
     "fshName": "Koerpertemperatur-Harnblase",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Harnblase.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Harnblase.fsh",
     "startLine": 15,
     "endLine": 27
   },
@@ -1011,7 +1043,7 @@
     "outputFile": "Observation-Koerpertemperatur-Kern.json",
     "fshName": "Koerpertemperatur-Kern",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Kern.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Kern.fsh",
     "startLine": 18,
     "endLine": 31
   },
@@ -1019,7 +1051,7 @@
     "outputFile": "Observation-Koerpertemperatur-Leiste.json",
     "fshName": "Koerpertemperatur-Leiste",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Leiste.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Leiste.fsh",
     "startLine": 15,
     "endLine": 27
   },
@@ -1027,7 +1059,7 @@
     "outputFile": "Observation-Koerpertemperatur-Lendenwirbelsaeule.json",
     "fshName": "Koerpertemperatur-Lendenwirbelsaeule",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Lendenwirbelsaeule.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Lendenwirbelsaeule.fsh",
     "startLine": 15,
     "endLine": 26
   },
@@ -1035,7 +1067,7 @@
     "outputFile": "Observation-Koerpertemperatur-Myokard.json",
     "fshName": "Koerpertemperatur-Myokard",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Myokard.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Myokard.fsh",
     "startLine": 15,
     "endLine": 27
   },
@@ -1043,7 +1075,7 @@
     "outputFile": "Observation-Koerpertemperatur-Nasen-Rachen-Raum.json",
     "fshName": "Koerpertemperatur-Nasen-Rachen-Raum",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Nasen_Rachen_Raum.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Nasen_Rachen_Raum.fsh",
     "startLine": 15,
     "endLine": 28
   },
@@ -1051,7 +1083,7 @@
     "outputFile": "Observation-Koerpertemperatur-Oral.json",
     "fshName": "Koerpertemperatur-Oral",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Oral.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Oral.fsh",
     "startLine": 15,
     "endLine": 28
   },
@@ -1059,7 +1091,7 @@
     "outputFile": "Observation-Koerpertemperatur-Speiseroehre.json",
     "fshName": "Koerpertemperatur-Speiseroehre",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Speiseroehre.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Speiseroehre.fsh",
     "startLine": 15,
     "endLine": 28
   },
@@ -1067,7 +1099,7 @@
     "outputFile": "Observation-Koerpertemperatur-Stirn.json",
     "fshName": "Koerpertemperatur-Stirn",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Stirn.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Stirn.fsh",
     "startLine": 15,
     "endLine": 26
   },
@@ -1075,7 +1107,7 @@
     "outputFile": "Observation-Koerpertemperatur-Trommelfell.json",
     "fshName": "Koerpertemperatur-Trommelfell",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Trommelfell.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Trommelfell.fsh",
     "startLine": 15,
     "endLine": 28
   },
@@ -1083,7 +1115,7 @@
     "outputFile": "Observation-Koerpertemperatur-nasal.json",
     "fshName": "Koerpertemperatur-nasal",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Nasal.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Nasal.fsh",
     "startLine": 15,
     "endLine": 27
   },
@@ -1091,7 +1123,7 @@
     "outputFile": "Observation-Koerpertemperatur-rektal.json",
     "fshName": "Koerpertemperatur-rektal",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Rektal.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Rektal.fsh",
     "startLine": 15,
     "endLine": 28
   },
@@ -1099,7 +1131,7 @@
     "outputFile": "Observation-Koerpertemperatur-vaginal.json",
     "fshName": "Koerpertemperatur-vaginal",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Vaginal.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Vaginal.fsh",
     "startLine": 15,
     "endLine": 26
   },
@@ -1107,7 +1139,7 @@
     "outputFile": "Observation-Linksatrialer-Druck.json",
     "fshName": "Linksatrialer-Druck",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksatrialer_Druck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksatrialer_Druck.fsh",
     "startLine": 32,
     "endLine": 61
   },
@@ -1115,7 +1147,7 @@
     "outputFile": "Observation-Linksvent-Schlagvolumenindex-Durch-Indikatorverduennung.json",
     "fshName": "Linksvent-Schlagvolumenindex-Durch-Indikatorverduennung",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaerer_Schlagvolumenindex_Durch_Indikatorverduennung.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaerer_Schlagvolumenindex_Durch_Indikatorverduennung.fsh",
     "startLine": 16,
     "endLine": 25
   },
@@ -1123,7 +1155,7 @@
     "outputFile": "Observation-Linksventrikulaerer-Druck.json",
     "fshName": "Linksventrikulaerer-Druck",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaerer_Druck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaerer_Druck.fsh",
     "startLine": 28,
     "endLine": 55
   },
@@ -1131,7 +1163,7 @@
     "outputFile": "Observation-Linksventrikulaerer-Herzindex-Durch-Indikatorverduennung.json",
     "fshName": "Linksventrikulaerer-Herzindex-Durch-Indikatorverduennung",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaerer_Herzindex_Durch_Indikatorverduennung.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaerer_Herzindex_Durch_Indikatorverduennung.fsh",
     "startLine": 18,
     "endLine": 27
   },
@@ -1139,7 +1171,7 @@
     "outputFile": "Observation-Linksventrikulaerer-Herzindex.json",
     "fshName": "Linksventrikulaerer-Herzindex",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaerer_Herzindex.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaerer_Herzindex.fsh",
     "startLine": 20,
     "endLine": 33
   },
@@ -1147,7 +1179,7 @@
     "outputFile": "Observation-Linksventrikulaeres-Herzzeitvolumen-durch-Indikatorverduennung.json",
     "fshName": "Linksventrikulaeres-Herzzeitvolumen-durch-Indikatorverduennung",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung.fsh",
     "startLine": 18,
     "endLine": 27
   },
@@ -1155,7 +1187,7 @@
     "outputFile": "Observation-Linksventrikulaeres-Schlagvolumen-Durch-Indikatorverduennung.json",
     "fshName": "Linksventrikulaeres-Schlagvolumen-Durch-Indikatorverduennung",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaeres_Schlagvolumen_Durch_Indikatorverduennung.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaeres_Schlagvolumen_Durch_Indikatorverduennung.fsh",
     "startLine": 16,
     "endLine": 25
   },
@@ -1163,7 +1195,7 @@
     "outputFile": "Observation-Linksventrikulaeres-Schlagvolumen.json",
     "fshName": "Linksventrikulaeres-Schlagvolumen",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaeres_Schlagvolumen.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaeres_Schlagvolumen.fsh",
     "startLine": 17,
     "endLine": 30
   },
@@ -1171,7 +1203,7 @@
     "outputFile": "Observation-Linksventrikulaeres-Schlagvolumenindex.json",
     "fshName": "Linksventrikulaeres-Schlagvolumenindex",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaeres_Schlagvolumenindex.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaeres_Schlagvolumenindex.fsh",
     "startLine": 14,
     "endLine": 26
   },
@@ -1179,7 +1211,7 @@
     "outputFile": "Observation-Pulmonalarterieller-Blutdruck.json",
     "fshName": "Pulmonalarterieller-Blutdruck",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Pulmonalarterieller_Blutdruck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Pulmonalarterieller_Blutdruck.fsh",
     "startLine": 41,
     "endLine": 73
   },
@@ -1187,7 +1219,7 @@
     "outputFile": "Observation-Pulmonalarterieller-wedge-Blutdruck.json",
     "fshName": "Pulmonalarterieller-wedge-Blutdruck",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Pulmonalarterieller_Wedge_Druck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Pulmonalarterieller_Wedge_Druck.fsh",
     "startLine": 17,
     "endLine": 30
   },
@@ -1195,7 +1227,7 @@
     "outputFile": "Observation-Pulmonalvaskulaerer-Widerstandsindex.json",
     "fshName": "Pulmonalvaskulaerer-Widerstandsindex",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Pulmonalvaskulaerer_Widerstandsindex.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Pulmonalvaskulaerer_Widerstandsindex.fsh",
     "startLine": 19,
     "endLine": 31
   },
@@ -1203,7 +1235,7 @@
     "outputFile": "Observation-Puls.json",
     "fshName": "Puls",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Puls.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Puls.fsh",
     "startLine": 24,
     "endLine": 35
   },
@@ -1211,7 +1243,7 @@
     "outputFile": "Observation-Rechtsatrialer-Druck.json",
     "fshName": "Rechtsatrialer-Druck",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Rechtsatrialer_Druck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Rechtsatrialer_Druck.fsh",
     "startLine": 35,
     "endLine": 65
   },
@@ -1219,7 +1251,7 @@
     "outputFile": "Observation-Rechtsventrikulaerer-Druck.json",
     "fshName": "Rechtsventrikulaerer-Druck",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Rechtsventrikulaerer_Druck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Rechtsventrikulaerer_Druck.fsh",
     "startLine": 32,
     "endLine": 61
   },
@@ -1227,7 +1259,7 @@
     "outputFile": "Observation-Sauerstoffsaettigung-im-Arteriellen-Blut-durch-Pulsoxymetrie.json",
     "fshName": "Sauerstoffsaettigung-im-Arteriellen-Blut-durch-Pulsoxymetrie",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie.fsh",
     "startLine": 24,
     "endLine": 37
   },
@@ -1235,7 +1267,7 @@
     "outputFile": "Observation-Sauerstoffsaettigung-im-Blut-Postduktal-durch-Pulsoxymetrie.json",
     "fshName": "Sauerstoffsaettigung-im-Blut-Postduktal-durch-Pulsoxymetrie",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Postduktal_Durch_Pulsoxymetrie.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Postduktal_Durch_Pulsoxymetrie.fsh",
     "startLine": 20,
     "endLine": 31
   },
@@ -1243,7 +1275,7 @@
     "outputFile": "Observation-Sauerstoffsaettigung-im-Blut-Preduktal-durch-Pulsoxymetrie.json",
     "fshName": "Sauerstoffsaettigung-im-Blut-Preduktal-durch-Pulsoxymetrie",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie.fsh",
     "startLine": 20,
     "endLine": 31
   },
@@ -1251,7 +1283,7 @@
     "outputFile": "Observation-Systemischer-vaskulaerer-Widerstandsindex.json",
     "fshName": "Systemischer-vaskulaerer-Widerstandsindex",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Systemischer_Vaskulaerer_Widerstandsindex.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Systemischer_Vaskulaerer_Widerstandsindex.fsh",
     "startLine": 20,
     "endLine": 32
   },
@@ -1259,7 +1291,7 @@
     "outputFile": "Observation-Zentralvenoeser-Blutdruck.json",
     "fshName": "Zentralvenoeser-Blutdruck",
     "fshType": "Instance",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Zentralvenoeser_Blutdruck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Zentralvenoeser_Blutdruck.fsh",
     "startLine": 17,
     "endLine": 30
   },
@@ -1267,7 +1299,7 @@
     "outputFile": "OperationDefinition-ISiKAppointmentBookOperation.json",
     "fshName": "Book",
     "fshType": "Instance",
-    "fshFile": "Terminplanung/ISiKBookOperation.fsh",
+    "fshFile": "Terminplanung\\ISiKBookOperation.fsh",
     "startLine": 1,
     "endLine": 52
   },
@@ -1275,7 +1307,7 @@
     "outputFile": "OperationDefinition-UpdateMetadata.json",
     "fshName": "UpdateMetadata",
     "fshType": "Instance",
-    "fshFile": "Dokumentenaustausch/OperationUpdateMetadata.fsh",
+    "fshFile": "Dokumentenaustausch\\OperationUpdateMetadata.fsh",
     "startLine": 1,
     "endLine": 32
   },
@@ -1283,7 +1315,7 @@
     "outputFile": "Organization-AbteilungAllgemeinchirurgieOrganisationBeispiel.json",
     "fshName": "AbteilungAllgemeinchirurgieOrganisationBeispiel",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKOrganisation.fsh",
+    "fshFile": "Basis\\ISiKOrganisation.fsh",
     "startLine": 260,
     "endLine": 270
   },
@@ -1291,7 +1323,7 @@
     "outputFile": "Organization-KrankenhausOrganisationBeispiel.json",
     "fshName": "KrankenhausOrganisationBeispiel",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKOrganisation.fsh",
+    "fshFile": "Basis\\ISiKOrganisation.fsh",
     "startLine": 251,
     "endLine": 257
   },
@@ -1299,7 +1331,7 @@
     "outputFile": "Patient-DorisQuelle.json",
     "fshName": "DorisQuelle",
     "fshType": "Instance",
-    "fshFile": "Basis/IsiKPatientMerge.fsh",
+    "fshFile": "Basis\\IsiKPatientMerge.fsh",
     "startLine": 102,
     "endLine": 114
   },
@@ -1307,7 +1339,7 @@
     "outputFile": "Patient-DorisZiel.json",
     "fshName": "DorisZiel",
     "fshType": "Instance",
-    "fshFile": "Basis/IsiKPatientMerge.fsh",
+    "fshFile": "Basis\\IsiKPatientMerge.fsh",
     "startLine": 116,
     "endLine": 128
   },
@@ -1315,7 +1347,7 @@
     "outputFile": "Patient-PatientinMusterfrau.json",
     "fshName": "PatientinMusterfrau",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKPatient.fsh",
+    "fshFile": "Basis\\ISiKPatient.fsh",
     "startLine": 347,
     "endLine": 397
   },
@@ -1323,7 +1355,7 @@
     "outputFile": "Patient-PatientinMusterfrauMinimal.json",
     "fshName": "PatientinMusterfrauMinimal",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKBerichtBundle.fsh",
+    "fshFile": "Basis\\ISiKBerichtBundle.fsh",
     "startLine": 41,
     "endLine": 53
   },
@@ -1331,7 +1363,7 @@
     "outputFile": "Patient-SZ1Patient.json",
     "fshName": "SZ1Patient",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-1.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-1.fsh",
     "startLine": 11,
     "endLine": 27
   },
@@ -1339,7 +1371,7 @@
     "outputFile": "Patient-SZ2Patient.json",
     "fshName": "SZ2Patient",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-2.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-2.fsh",
     "startLine": 8,
     "endLine": 24
   },
@@ -1347,7 +1379,7 @@
     "outputFile": "Practitioner-PractitionerWalterArzt.json",
     "fshName": "PractitionerWalterArzt",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKPersonImGesundheitsberuf.fsh",
+    "fshFile": "Basis\\ISiKPersonImGesundheitsberuf.fsh",
     "startLine": 122,
     "endLine": 157
   },
@@ -1355,7 +1387,7 @@
     "outputFile": "Procedure-Appendektomie.json",
     "fshName": "Appendektomie",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKProzedur.fsh",
+    "fshFile": "Basis\\ISiKProzedur.fsh",
     "startLine": 110,
     "endLine": 123
   },
@@ -1363,7 +1395,7 @@
     "outputFile": "RelatedPerson-ISiKAngehoerigerMustermann.json",
     "fshName": "ISiKAngehoerigerMustermann",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKAngehoeriger.fsh",
+    "fshFile": "Basis\\ISiKAngehoeriger.fsh",
     "startLine": 178,
     "endLine": 189
   },
@@ -1371,7 +1403,7 @@
     "outputFile": "RelatedPerson-SZ1Mutter.json",
     "fshName": "SZ1Mutter",
     "fshType": "Instance",
-    "fshFile": "Basis/Beispiel-Szenario-1.fsh",
+    "fshFile": "Basis\\Beispiel-Szenario-1.fsh",
     "startLine": 29,
     "endLine": 45
   },
@@ -1379,7 +1411,7 @@
     "outputFile": "RiskAssessment-ExampleISiKAMTSBewertung1.json",
     "fshName": "ExampleISiKAMTSBewertung1",
     "fshType": "Instance",
-    "fshFile": "Medikation/ISiKAMTSBewertung.fsh",
+    "fshFile": "Medikation\\ISiKAMTSBewertung.fsh",
     "startLine": 118,
     "endLine": 135
   },
@@ -1387,7 +1419,7 @@
     "outputFile": "Schedule-ISiKKalenderExample.json",
     "fshName": "ISiKKalenderExample",
     "fshType": "Instance",
-    "fshFile": "Terminplanung/ISiKKalender.fsh",
+    "fshFile": "Terminplanung\\ISiKKalender.fsh",
     "startLine": 64,
     "endLine": 71
   },
@@ -1395,7 +1427,7 @@
     "outputFile": "SearchParameter-Encounter-date-start.json",
     "fshName": "Encounter-date-start",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKKontaktGesundheitseinrichtung.fsh",
+    "fshFile": "Basis\\ISiKKontaktGesundheitseinrichtung.fsh",
     "startLine": 513,
     "endLine": 531
   },
@@ -1403,7 +1435,7 @@
     "outputFile": "SearchParameter-Encounter-end-date.json",
     "fshName": "Encounter-end-date",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKKontaktGesundheitseinrichtung.fsh",
+    "fshFile": "Basis\\ISiKKontaktGesundheitseinrichtung.fsh",
     "startLine": 533,
     "endLine": 551
   },
@@ -1411,7 +1443,7 @@
     "outputFile": "Slot-ISiKTerminblockExample.json",
     "fshName": "ISiKTerminblockExample",
     "fshType": "Instance",
-    "fshFile": "Terminplanung/ISiKTerminblock.fsh",
+    "fshFile": "Terminplanung\\ISiKTerminblock.fsh",
     "startLine": 22,
     "endLine": 28
   },
@@ -1419,7 +1451,7 @@
     "outputFile": "StructureDefinition-AppointmentReplaces.json",
     "fshName": "AppointmentReplaces",
     "fshType": "Extension",
-    "fshFile": "Terminplanung/ISiKTermin.fsh",
+    "fshFile": "Terminplanung\\ISiKTermin.fsh",
     "startLine": 127,
     "endLine": 133
   },
@@ -1427,7 +1459,7 @@
     "outputFile": "StructureDefinition-ExtensionISiKAcceptedRisk.json",
     "fshName": "ExtensionISiKAcceptedRisk",
     "fshType": "Extension",
-    "fshFile": "Medikation/ExtensionISiKAcceptedRisk.fsh",
+    "fshFile": "Medikation\\ExtensionISiKAcceptedRisk.fsh",
     "startLine": 1,
     "endLine": 14
   },
@@ -1435,7 +1467,7 @@
     "outputFile": "StructureDefinition-ExtensionISiKBehandlungsziel.json",
     "fshName": "ExtensionISiKBehandlungsziel",
     "fshType": "Extension",
-    "fshFile": "Medikation/ExtensionISiKBehandlungsziel.fsh",
+    "fshFile": "Medikation\\ExtensionISiKBehandlungsziel.fsh",
     "startLine": 1,
     "endLine": 12
   },
@@ -1443,7 +1475,7 @@
     "outputFile": "StructureDefinition-ExtensionISiKMedicationRequestReplaces.json",
     "fshName": "ExtensionISiKMedicationRequestReplaces",
     "fshType": "Extension",
-    "fshFile": "Medikation/ExtensionISiKMedicationRequestReplaces.fsh",
+    "fshFile": "Medikation\\ExtensionISiKMedicationRequestReplaces.fsh",
     "startLine": 1,
     "endLine": 12
   },
@@ -1451,7 +1483,7 @@
     "outputFile": "StructureDefinition-ExtensionISiKMedicationStatementReplaces.json",
     "fshName": "ExtensionISiKMedicationStatementReplaces",
     "fshType": "Extension",
-    "fshFile": "Medikation/ExtensionISiKMedicationStatementReplaces.fsh",
+    "fshFile": "Medikation\\ExtensionISiKMedicationStatementReplaces.fsh",
     "startLine": 1,
     "endLine": 12
   },
@@ -1459,7 +1491,7 @@
     "outputFile": "StructureDefinition-ExtensionISiKMedikationsart.json",
     "fshName": "ExtensionISiKMedikationsart",
     "fshType": "Extension",
-    "fshFile": "Medikation/ExtensionISiKMedikationsart.fsh",
+    "fshFile": "Medikation\\ExtensionISiKMedikationsart.fsh",
     "startLine": 1,
     "endLine": 15
   },
@@ -1467,7 +1499,7 @@
     "outputFile": "StructureDefinition-ExtensionISiKRehaEntlassung.json",
     "fshName": "ExtensionISiKRehaEntlassung",
     "fshType": "Extension",
-    "fshFile": "Basis/ISiKKontaktGesundheitseinrichtung.fsh",
+    "fshFile": "Basis\\ISiKKontaktGesundheitseinrichtung.fsh",
     "startLine": 407,
     "endLine": 428
   },
@@ -1475,7 +1507,7 @@
     "outputFile": "StructureDefinition-ExtensionISiKSelbstmedikation.json",
     "fshName": "ExtensionISiKSelbstmedikation",
     "fshType": "Extension",
-    "fshFile": "Medikation/ExtensionISiKSelbstmedikation.fsh",
+    "fshFile": "Medikation\\ExtensionISiKSelbstmedikation.fsh",
     "startLine": 1,
     "endLine": 10
   },
@@ -1483,7 +1515,7 @@
     "outputFile": "StructureDefinition-ISiKAMTSBewertung.json",
     "fshName": "ISiKAMTSBewertung",
     "fshType": "Profile",
-    "fshFile": "Medikation/ISiKAMTSBewertung.fsh",
+    "fshFile": "Medikation\\ISiKAMTSBewertung.fsh",
     "startLine": 1,
     "endLine": 113
   },
@@ -1491,7 +1523,7 @@
     "outputFile": "StructureDefinition-ISiKASKCoding.json",
     "fshName": "ISiKASKCoding",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKDataTypeProfiles.fsh",
+    "fshFile": "Basis\\ISiKDataTypeProfiles.fsh",
     "startLine": 44,
     "endLine": 52
   },
@@ -1499,7 +1531,7 @@
     "outputFile": "StructureDefinition-ISiKATCCoding.json",
     "fshName": "ISiKATCCoding",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKDataTypeProfiles.fsh",
+    "fshFile": "Basis\\ISiKDataTypeProfiles.fsh",
     "startLine": 54,
     "endLine": 62
   },
@@ -1507,7 +1539,7 @@
     "outputFile": "StructureDefinition-ISiKAbrechnungsfall.json",
     "fshName": "ISiKAbrechnungsfall",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKAbrechnungsfall.fsh",
+    "fshFile": "Basis\\ISiKAbrechnungsfall.fsh",
     "startLine": 1,
     "endLine": 109
   },
@@ -1515,7 +1547,7 @@
     "outputFile": "StructureDefinition-ISiKAlkoholAbusus.json",
     "fshName": "ISiKAlkoholAbusus",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKLebenszustandOberservations.fsh",
+    "fshFile": "Basis\\ISiKLebenszustandOberservations.fsh",
     "startLine": 138,
     "endLine": 148
   },
@@ -1523,7 +1555,7 @@
     "outputFile": "StructureDefinition-ISiKAllergieUnvertraeglichkeit.json",
     "fshName": "ISiKAllergieUnvertraeglichkeit",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKAllergieUnvertraeglichkeit.fsh",
+    "fshFile": "Basis\\ISiKAllergieUnvertraeglichkeit.fsh",
     "startLine": 1,
     "endLine": 136
   },
@@ -1531,7 +1563,7 @@
     "outputFile": "StructureDefinition-ISiKAngehoeriger.json",
     "fshName": "ISiKAngehoeriger",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKAngehoeriger.fsh",
+    "fshFile": "Basis\\ISiKAngehoeriger.fsh",
     "startLine": 1,
     "endLine": 175
   },
@@ -1539,7 +1571,7 @@
     "outputFile": "StructureDefinition-ISiKAtemfrequenz.json",
     "fshName": "ISiKAtemfrequenz",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/ISiK-Atemfrequenz.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Atemfrequenz.fsh",
     "startLine": 1,
     "endLine": 18
   },
@@ -1547,7 +1579,7 @@
     "outputFile": "StructureDefinition-ISiKBerichtBundle.json",
     "fshName": "ISiKBerichtBundle",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKBerichtBundle.fsh",
+    "fshFile": "Basis\\ISiKBerichtBundle.fsh",
     "startLine": 1,
     "endLine": 22
   },
@@ -1555,7 +1587,7 @@
     "outputFile": "StructureDefinition-ISiKBerichtSubSysteme.json",
     "fshName": "ISiKBerichtSubSysteme",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKBerichtSubSysteme.fsh",
+    "fshFile": "Basis\\ISiKBerichtSubSysteme.fsh",
     "startLine": 1,
     "endLine": 185
   },
@@ -1563,7 +1595,7 @@
     "outputFile": "StructureDefinition-ISiKBinary.json",
     "fshName": "ISiKBinary",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKBinary.fsh",
+    "fshFile": "Basis\\ISiKBinary.fsh",
     "startLine": 1,
     "endLine": 28
   },
@@ -1571,7 +1603,7 @@
     "outputFile": "StructureDefinition-ISiKBlutdruckSystemischArteriell.json",
     "fshName": "ISiKBlutdruckSystemischArteriell",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/ISiK-Blutdruck.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Blutdruck.fsh",
     "startLine": 1,
     "endLine": 69
   },
@@ -1579,7 +1611,7 @@
     "outputFile": "StructureDefinition-ISiKCodeSystem.json",
     "fshName": "ISiKCodeSystem",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKCodeSystem.fsh",
+    "fshFile": "Basis\\ISiKCodeSystem.fsh",
     "startLine": 1,
     "endLine": 53
   },
@@ -1587,7 +1619,7 @@
     "outputFile": "StructureDefinition-ISiKCoding.json",
     "fshName": "ISiKCoding",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKDataTypeProfiles.fsh",
+    "fshFile": "Basis\\ISiKDataTypeProfiles.fsh",
     "startLine": 1,
     "endLine": 9
   },
@@ -1595,7 +1627,7 @@
     "outputFile": "StructureDefinition-ISiKDiagnose.json",
     "fshName": "ISiKDiagnose",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKDiagnose.fsh",
+    "fshFile": "Basis\\ISiKDiagnose.fsh",
     "startLine": 1,
     "endLine": 140
   },
@@ -1603,7 +1635,7 @@
     "outputFile": "StructureDefinition-ISiKDokumentenMetadaten.json",
     "fshName": "ISiKDokumentenMetadaten",
     "fshType": "Profile",
-    "fshFile": "Dokumentenaustausch/ISiKDokumentenMetadaten.fsh",
+    "fshFile": "Dokumentenaustausch\\ISiKDokumentenMetadaten.fsh",
     "startLine": 1,
     "endLine": 208
   },
@@ -1611,7 +1643,7 @@
     "outputFile": "StructureDefinition-ISiKDokumentenSuchergebnisse.json",
     "fshName": "ISiKDokumentenSuchergebnisse",
     "fshType": "Profile",
-    "fshFile": "Dokumentenaustausch/ISiKDokumentenSuchergebnisse.fsh",
+    "fshFile": "Dokumentenaustausch\\ISiKDokumentenSuchergebnisse.fsh",
     "startLine": 1,
     "endLine": 27
   },
@@ -1619,7 +1651,7 @@
     "outputFile": "StructureDefinition-ISiKEKG.json",
     "fshName": "ISiKEKG",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/ISiK-Ekg.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Ekg.fsh",
     "startLine": 1,
     "endLine": 30
   },
@@ -1627,7 +1659,7 @@
     "outputFile": "StructureDefinition-ISiKGCS.json",
     "fshName": "ISiKGCS",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/ISiK-GCS.fsh",
+    "fshFile": "Vitalparameter\\ISiK-GCS.fsh",
     "startLine": 1,
     "endLine": 49
   },
@@ -1635,7 +1667,7 @@
     "outputFile": "StructureDefinition-ISiKHerzfrequenz.json",
     "fshName": "ISiKHerzfrequenz",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/ISiK-Herzfrequenz.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Herzfrequenz.fsh",
     "startLine": 1,
     "endLine": 18
   },
@@ -1643,7 +1675,7 @@
     "outputFile": "StructureDefinition-ISiKICD10GMCoding.json",
     "fshName": "ISiKICD10GMCoding",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKDataTypeProfiles.fsh",
+    "fshFile": "Basis\\ISiKDataTypeProfiles.fsh",
     "startLine": 33,
     "endLine": 42
   },
@@ -1651,7 +1683,7 @@
     "outputFile": "StructureDefinition-ISiKKalender.json",
     "fshName": "ISiKKalender",
     "fshType": "Profile",
-    "fshFile": "Terminplanung/ISiKKalender.fsh",
+    "fshFile": "Terminplanung\\ISiKKalender.fsh",
     "startLine": 1,
     "endLine": 52
   },
@@ -1659,7 +1691,7 @@
     "outputFile": "StructureDefinition-ISiKKoerpergewicht.json",
     "fshName": "ISiKKoerpergewicht",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/ISiK-Koerpergewicht.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Koerpergewicht.fsh",
     "startLine": 1,
     "endLine": 18
   },
@@ -1667,7 +1699,7 @@
     "outputFile": "StructureDefinition-ISiKKoerpergroesse.json",
     "fshName": "ISiKKoerpergroesse",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/ISiK-Koerpergroesse.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Koerpergroesse.fsh",
     "startLine": 1,
     "endLine": 18
   },
@@ -1675,7 +1707,7 @@
     "outputFile": "StructureDefinition-ISiKKoerpertemperatur.json",
     "fshName": "ISiKKoerpertemperatur",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/ISiK-Koerpertemperatur.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Koerpertemperatur.fsh",
     "startLine": 1,
     "endLine": 18
   },
@@ -1683,7 +1715,7 @@
     "outputFile": "StructureDefinition-ISiKKontaktGesundheitseinrichtung.json",
     "fshName": "ISiKKontaktGesundheitseinrichtung",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKKontaktGesundheitseinrichtung.fsh",
+    "fshFile": "Basis\\ISiKKontaktGesundheitseinrichtung.fsh",
     "startLine": 1,
     "endLine": 405
   },
@@ -1691,7 +1723,7 @@
     "outputFile": "StructureDefinition-ISiKKopfumfang.json",
     "fshName": "ISiKKopfumfang",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/ISiK-Kopfumfang.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Kopfumfang.fsh",
     "startLine": 1,
     "endLine": 20
   },
@@ -1699,7 +1731,7 @@
     "outputFile": "StructureDefinition-ISiKLaboruntersuchung.json",
     "fshName": "ISiKLaboruntersuchung",
     "fshType": "Profile",
-    "fshFile": "Labor/ISiKLaboruntersuchung.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchung.fsh",
     "startLine": 1,
     "endLine": 80
   },
@@ -1707,7 +1739,7 @@
     "outputFile": "StructureDefinition-ISiKLaboruntersuchungCRP.json",
     "fshName": "ISiKLaboruntersuchungCRP",
     "fshType": "Profile",
-    "fshFile": "Labor/ISiKLaboruntersuchungCRP.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungCRP.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -1715,7 +1747,7 @@
     "outputFile": "StructureDefinition-ISiKLaboruntersuchungGFR.json",
     "fshName": "ISiKLaboruntersuchungGFR",
     "fshType": "Profile",
-    "fshFile": "Labor/ISiKLaboruntersuchungGFR.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungGFR.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -1723,7 +1755,7 @@
     "outputFile": "StructureDefinition-ISiKLaboruntersuchungHb.json",
     "fshName": "ISiKLaboruntersuchungHb",
     "fshType": "Profile",
-    "fshFile": "Labor/ISiKLaboruntersuchungHb.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungHb.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -1731,7 +1763,7 @@
     "outputFile": "StructureDefinition-ISiKLaboruntersuchungPCT.json",
     "fshName": "ISiKLaboruntersuchungPCT",
     "fshType": "Profile",
-    "fshFile": "Labor/ISiKLaboruntersuchungPCT.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungPCT.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -1739,7 +1771,7 @@
     "outputFile": "StructureDefinition-ISiKLaboruntersuchungSerumkreatinin.json",
     "fshName": "ISiKLaboruntersuchungSerumkreatinin",
     "fshType": "Profile",
-    "fshFile": "Labor/ISiKLaboruntersuchungSerumkreatinin.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungSerumkreatinin.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -1747,7 +1779,7 @@
     "outputFile": "StructureDefinition-ISiKLaboruntersuchungTSH.json",
     "fshName": "ISiKLaboruntersuchungTSH",
     "fshType": "Profile",
-    "fshFile": "Labor/ISiKLaboruntersuchungTSH.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungTSH.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -1755,7 +1787,7 @@
     "outputFile": "StructureDefinition-ISiKLaboruntersuchungThrombozyten.json",
     "fshName": "ISiKLaboruntersuchungThrombozyten",
     "fshType": "Profile",
-    "fshFile": "Labor/ISiKLaboruntersuchungThrombozyten.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungThrombozyten.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -1763,7 +1795,7 @@
     "outputFile": "StructureDefinition-ISiKLaboruntersuchungTroponin.json",
     "fshName": "ISiKLaboruntersuchungTroponin",
     "fshType": "Profile",
-    "fshFile": "Labor/ISiKLaboruntersuchungTroponin.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungTroponin.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -1771,7 +1803,7 @@
     "outputFile": "StructureDefinition-ISiKLebensZustand.json",
     "fshName": "ISiKLebensZustand",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKLebenszustandOberservations.fsh",
+    "fshFile": "Basis\\ISiKLebenszustandOberservations.fsh",
     "startLine": 1,
     "endLine": 82
   },
@@ -1779,7 +1811,7 @@
     "outputFile": "StructureDefinition-ISiKLoincCoding.json",
     "fshName": "ISiKLoincCoding",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKDataTypeProfiles.fsh",
+    "fshFile": "Basis\\ISiKDataTypeProfiles.fsh",
     "startLine": 21,
     "endLine": 28
   },
@@ -1787,7 +1819,7 @@
     "outputFile": "StructureDefinition-ISiKMedikament.json",
     "fshName": "ISiKMedikament",
     "fshType": "Profile",
-    "fshFile": "Medikation/ISiKMedikament.fsh",
+    "fshFile": "Medikation\\ISiKMedikament.fsh",
     "startLine": 1,
     "endLine": 109
   },
@@ -1795,7 +1827,7 @@
     "outputFile": "StructureDefinition-ISiKMedikationTransaction.json",
     "fshName": "ISiKMedikationTransaction",
     "fshType": "Profile",
-    "fshFile": "Medikation/ISiKMedikationTransaction.fsh",
+    "fshFile": "Medikation\\ISiKMedikationTransaction.fsh",
     "startLine": 1,
     "endLine": 26
   },
@@ -1803,7 +1835,7 @@
     "outputFile": "StructureDefinition-ISiKMedikationTransactionResponse.json",
     "fshName": "ISiKMedikationTransactionResponse",
     "fshType": "Profile",
-    "fshFile": "Medikation/ISiKMedikationTransactionResponse.fsh",
+    "fshFile": "Medikation\\ISiKMedikationTransactionResponse.fsh",
     "startLine": 1,
     "endLine": 28
   },
@@ -1811,7 +1843,7 @@
     "outputFile": "StructureDefinition-ISiKMedikationsInformation.json",
     "fshName": "ISiKMedikationsInformation",
     "fshType": "Profile",
-    "fshFile": "Medikation/ISiKMedikationsInformation.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsInformation.fsh",
     "startLine": 1,
     "endLine": 252
   },
@@ -1819,7 +1851,7 @@
     "outputFile": "StructureDefinition-ISiKMedikationsListe.json",
     "fshName": "ISiKMedikationsListe",
     "fshType": "Profile",
-    "fshFile": "Medikation/ISiKMedikationsListe.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsListe.fsh",
     "startLine": 1,
     "endLine": 56
   },
@@ -1827,7 +1859,7 @@
     "outputFile": "StructureDefinition-ISiKMedikationsVerabreichung.json",
     "fshName": "ISiKMedikationsVerabreichung",
     "fshType": "Profile",
-    "fshFile": "Medikation/ISiKMedikationsVerabreichung.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsVerabreichung.fsh",
     "startLine": 1,
     "endLine": 112
   },
@@ -1835,7 +1867,7 @@
     "outputFile": "StructureDefinition-ISiKMedikationsVerordnung.json",
     "fshName": "ISiKMedikationsVerordnung",
     "fshType": "Profile",
-    "fshFile": "Medikation/ISiKMedikationsVerordnung.fsh",
+    "fshFile": "Medikation\\ISiKMedikationsVerordnung.fsh",
     "startLine": 1,
     "endLine": 236
   },
@@ -1843,7 +1875,7 @@
     "outputFile": "StructureDefinition-ISiKMedizinischeBehandlungseinheit.json",
     "fshName": "ISiKMedizinischeBehandlungseinheit",
     "fshType": "Profile",
-    "fshFile": "Terminplanung/ISiKMedizinischeBehandlungseinheit.fsh",
+    "fshFile": "Terminplanung\\ISiKMedizinischeBehandlungseinheit.fsh",
     "startLine": 1,
     "endLine": 38
   },
@@ -1851,7 +1883,7 @@
     "outputFile": "StructureDefinition-ISiKNachricht.json",
     "fshName": "ISiKNachricht",
     "fshType": "Profile",
-    "fshFile": "Terminplanung/ISiKNachricht.fsh",
+    "fshFile": "Terminplanung\\ISiKNachricht.fsh",
     "startLine": 1,
     "endLine": 43
   },
@@ -1859,7 +1891,7 @@
     "outputFile": "StructureDefinition-ISiKNachrichtExtension.json",
     "fshName": "ISiKNachrichtExtension",
     "fshType": "Extension",
-    "fshFile": "Terminplanung/ISiKTermin.fsh",
+    "fshFile": "Terminplanung\\ISiKTermin.fsh",
     "startLine": 111,
     "endLine": 115
   },
@@ -1867,7 +1899,7 @@
     "outputFile": "StructureDefinition-ISiKOrganisation.json",
     "fshName": "ISiKOrganisation",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKOrganisation.fsh",
+    "fshFile": "Basis\\ISiKOrganisation.fsh",
     "startLine": 135,
     "endLine": 245
   },
@@ -1875,7 +1907,7 @@
     "outputFile": "StructureDefinition-ISiKOrganisationFachabteilung.json",
     "fshName": "ISiKOrganisationFachabteilung",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKOrganisation.fsh",
+    "fshFile": "Basis\\ISiKOrganisation.fsh",
     "startLine": 1,
     "endLine": 131
   },
@@ -1883,7 +1915,7 @@
     "outputFile": "StructureDefinition-ISiKPZNCoding.json",
     "fshName": "ISiKPZNCoding",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKDataTypeProfiles.fsh",
+    "fshFile": "Basis\\ISiKDataTypeProfiles.fsh",
     "startLine": 64,
     "endLine": 72
   },
@@ -1891,7 +1923,7 @@
     "outputFile": "StructureDefinition-ISiKPatient.json",
     "fshName": "ISiKPatient",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKPatient.fsh",
+    "fshFile": "Basis\\ISiKPatient.fsh",
     "startLine": 2,
     "endLine": 345
   },
@@ -1899,7 +1931,7 @@
     "outputFile": "StructureDefinition-ISiKPersonImGesundheitsberuf.json",
     "fshName": "ISiKPersonImGesundheitsberuf",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKPersonImGesundheitsberuf.fsh",
+    "fshFile": "Basis\\ISiKPersonImGesundheitsberuf.fsh",
     "startLine": 1,
     "endLine": 118
   },
@@ -1907,7 +1939,7 @@
     "outputFile": "StructureDefinition-ISiKProzedur.json",
     "fshName": "ISiKProzedur",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKProzedur.fsh",
+    "fshFile": "Basis\\ISiKProzedur.fsh",
     "startLine": 1,
     "endLine": 108
   },
@@ -1915,7 +1947,7 @@
     "outputFile": "StructureDefinition-ISiKRaucherStatus.json",
     "fshName": "ISiKRaucherStatus",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKLebenszustandOberservations.fsh",
+    "fshFile": "Basis\\ISiKLebenszustandOberservations.fsh",
     "startLine": 164,
     "endLine": 174
   },
@@ -1923,7 +1955,7 @@
     "outputFile": "StructureDefinition-ISiKSauerstoffsaettigungArteriell.json",
     "fshName": "ISiKSauerstoffsaettigungArteriell",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/ISiK-Sauerstoffsaettigung.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Sauerstoffsaettigung.fsh",
     "startLine": 1,
     "endLine": 17
   },
@@ -1931,7 +1963,7 @@
     "outputFile": "StructureDefinition-ISiKSchwangerschaftErwarteterEntbindungstermin.json",
     "fshName": "ISiKSchwangerschaftErwarteterEntbindungstermin",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKLebenszustandOberservations.fsh",
+    "fshFile": "Basis\\ISiKLebenszustandOberservations.fsh",
     "startLine": 116,
     "endLine": 124
   },
@@ -1939,7 +1971,7 @@
     "outputFile": "StructureDefinition-ISiKSchwangerschaftsstatus.json",
     "fshName": "ISiKSchwangerschaftsstatus",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKLebenszustandOberservations.fsh",
+    "fshFile": "Basis\\ISiKLebenszustandOberservations.fsh",
     "startLine": 86,
     "endLine": 100
   },
@@ -1947,7 +1979,7 @@
     "outputFile": "StructureDefinition-ISiKSnomedCTCoding.json",
     "fshName": "ISiKSnomedCTCoding",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKDataTypeProfiles.fsh",
+    "fshFile": "Basis\\ISiKDataTypeProfiles.fsh",
     "startLine": 11,
     "endLine": 19
   },
@@ -1955,7 +1987,7 @@
     "outputFile": "StructureDefinition-ISiKStandort.json",
     "fshName": "ISiKStandort",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKStandort.fsh",
+    "fshFile": "Basis\\ISiKStandort.fsh",
     "startLine": 1,
     "endLine": 62
   },
@@ -1963,7 +1995,7 @@
     "outputFile": "StructureDefinition-ISiKStandortBettenstellplatz.json",
     "fshName": "ISiKStandortBettenstellplatz",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKStandort.fsh",
+    "fshFile": "Basis\\ISiKStandort.fsh",
     "startLine": 74,
     "endLine": 87
   },
@@ -1971,7 +2003,7 @@
     "outputFile": "StructureDefinition-ISiKStandortRaum.json",
     "fshName": "ISiKStandortRaum",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKStandort.fsh",
+    "fshFile": "Basis\\ISiKStandort.fsh",
     "startLine": 64,
     "endLine": 72
   },
@@ -1979,7 +2011,7 @@
     "outputFile": "StructureDefinition-ISiKStillstatus.json",
     "fshName": "ISiKStillstatus",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKLebenszustandOberservations.fsh",
+    "fshFile": "Basis\\ISiKLebenszustandOberservations.fsh",
     "startLine": 192,
     "endLine": 202
   },
@@ -1987,7 +2019,7 @@
     "outputFile": "StructureDefinition-ISiKTermin.json",
     "fshName": "ISiKTermin",
     "fshType": "Profile",
-    "fshFile": "Terminplanung/ISiKTermin.fsh",
+    "fshFile": "Terminplanung\\ISiKTermin.fsh",
     "startLine": 1,
     "endLine": 107
   },
@@ -1995,7 +2027,7 @@
     "outputFile": "StructureDefinition-ISiKTerminKontaktMitGesundheitseinrichtung.json",
     "fshName": "ISiKTerminKontaktMitGesundheitseinrichtung",
     "fshType": "Profile",
-    "fshFile": "Terminplanung/ISiKTerminKontaktMitGesundheitseinrichtung.fsh",
+    "fshFile": "Terminplanung\\ISiKTerminKontaktMitGesundheitseinrichtung.fsh",
     "startLine": 1,
     "endLine": 6
   },
@@ -2003,7 +2035,7 @@
     "outputFile": "StructureDefinition-ISiKTerminPriorityExtension.json",
     "fshName": "ISiKTerminPriorityExtension",
     "fshType": "Extension",
-    "fshFile": "Terminplanung/ISiKTermin.fsh",
+    "fshFile": "Terminplanung\\ISiKTermin.fsh",
     "startLine": 117,
     "endLine": 123
   },
@@ -2011,7 +2043,7 @@
     "outputFile": "StructureDefinition-ISiKTerminblock.json",
     "fshName": "ISiKTerminblock",
     "fshType": "Profile",
-    "fshFile": "Terminplanung/ISiKTerminblock.fsh",
+    "fshFile": "Terminplanung\\ISiKTerminblock.fsh",
     "startLine": 1,
     "endLine": 15
   },
@@ -2019,7 +2051,7 @@
     "outputFile": "StructureDefinition-ISiKValueSet.json",
     "fshName": "ISiKValueSet",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKValueSet.fsh",
+    "fshFile": "Basis\\ISiKValueSet.fsh",
     "startLine": 1,
     "endLine": 75
   },
@@ -2027,7 +2059,7 @@
     "outputFile": "StructureDefinition-ISiKVersicherungsverhaeltnisGesetzlich.json",
     "fshName": "ISiKVersicherungsverhaeltnisGesetzlich",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKVersicherungsverhaeltnisGesetzlich.fsh",
+    "fshFile": "Basis\\ISiKVersicherungsverhaeltnisGesetzlich.fsh",
     "startLine": 1,
     "endLine": 108
   },
@@ -2035,7 +2067,7 @@
     "outputFile": "StructureDefinition-ISiKVersicherungsverhaeltnisSelbstzahler.json",
     "fshName": "ISiKVersicherungsverhaeltnisSelbstzahler",
     "fshType": "Profile",
-    "fshFile": "Basis/ISiKVersicherungsverhaeltnisSelbstzahler.fsh",
+    "fshFile": "Basis\\ISiKVersicherungsverhaeltnisSelbstzahler.fsh",
     "startLine": 1,
     "endLine": 72
   },
@@ -2043,7 +2075,7 @@
     "outputFile": "StructureDefinition-MedicationQuantity.json",
     "fshName": "MedicationQuantity",
     "fshType": "Profile",
-    "fshFile": "Medikation/dataTypeProfiles.fsh",
+    "fshFile": "Medikation\\dataTypeProfiles.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -2051,7 +2083,7 @@
     "outputFile": "StructureDefinition-ScheduleName.json",
     "fshName": "ScheduleName",
     "fshType": "Extension",
-    "fshFile": "Terminplanung/ISiKKalender.fsh",
+    "fshFile": "Terminplanung\\ISiKKalender.fsh",
     "startLine": 56,
     "endLine": 62
   },
@@ -2059,7 +2091,7 @@
     "outputFile": "StructureDefinition-patient-merge-subscription.json",
     "fshName": "PatientMergeSubscription",
     "fshType": "Profile",
-    "fshFile": "Basis/IsiKPatientMerge.fsh",
+    "fshFile": "Basis\\IsiKPatientMerge.fsh",
     "startLine": 3,
     "endLine": 59
   },
@@ -2067,7 +2099,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-herzzeitvolumen.json",
     "fshName": "SD_MII_ICU_Herzzeitvolumen",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Herzzeitvolumen.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Herzzeitvolumen.fsh",
     "startLine": 1,
     "endLine": 15
   },
@@ -2075,7 +2107,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-ideales-koerpergewicht.json",
     "fshName": "SD_MII_ICU_Ideales_Koerpergewicht",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Ideales_Koerpergewicht.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Ideales_Koerpergewicht.fsh",
     "startLine": 1,
     "endLine": 14
   },
@@ -2083,7 +2115,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-intrakranieller-druck-icp.json",
     "fshName": "SD_MII_ICU_Intrakranieller_Druck_Icp",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Intrakranieller_Druck_Icp.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Intrakranieller_Druck_Icp.fsh",
     "startLine": 1,
     "endLine": 15
   },
@@ -2091,7 +2123,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpergewicht-percentil-altersabhaengig.json",
     "fshName": "SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig.fsh",
     "startLine": 1,
     "endLine": 19
   },
@@ -2099,7 +2131,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpergroesse-percentil-altersabhaengig.json",
     "fshName": "SD_MII_ICU_Koerpergroesse_Percentil_Altersabhaengig",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpergroesse_Percentil.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpergroesse_Percentil.fsh",
     "startLine": 1,
     "endLine": 19
   },
@@ -2107,7 +2139,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-achsel.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Achsel",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Achsel.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Achsel.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2115,7 +2147,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-atemwege.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Atemwege",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Atemwege.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Atemwege.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2123,7 +2155,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-blut.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Blut",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Blut.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Blut.fsh",
     "startLine": 1,
     "endLine": 12
   },
@@ -2131,7 +2163,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-brust.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Brust",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Brust.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Brust.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2139,7 +2171,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-brustwirbelsaeule.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Brustwirbelsaeule",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Brustwirbelsaeule.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Brustwirbelsaeule.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2147,7 +2179,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-gelenk.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Gelenk",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Gelenk.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Gelenk.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2155,7 +2187,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-generisch.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Generisch",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Generisch.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Generisch.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -2163,7 +2195,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-halswirbelsaeule.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Halswirbelsaeule",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Halswirbelsaeule.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Halswirbelsaeule.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2171,7 +2203,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-harnblase.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Harnblase",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Harnblase.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Harnblase.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2179,7 +2211,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-kern.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Kern",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Kern.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Kern.fsh",
     "startLine": 1,
     "endLine": 16
   },
@@ -2187,7 +2219,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-leiste.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Leiste",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Leiste.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Leiste.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2195,7 +2227,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-lendenwirbelsaeule.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Lendenwirbelsaeule",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Lendenwirbelsaeule.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Lendenwirbelsaeule.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2203,7 +2235,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-myokard.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Myokard",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Myokard.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Myokard.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2211,7 +2243,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-nasal.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Nasal",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Nasal.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Nasal.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2219,7 +2251,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-nasen-rachen-raum.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Nasen_Rachen_Raum",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Nasen_Rachen_Raum.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Nasen_Rachen_Raum.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2227,7 +2259,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-rektal.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Rektal",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Rektal.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Rektal.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2235,7 +2267,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-speiseroehre.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Speiseroehre",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Speiseroehre.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Speiseroehre.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2243,7 +2275,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-stirn.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Stirn",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Stirn.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Stirn.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2251,7 +2283,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-trommelfell.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Trommelfell",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Trommelfell.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Trommelfell.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2259,7 +2291,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-unter-der-zunge.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Oral",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Oral.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Oral.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2267,7 +2299,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-koerpertemperatur-vaginal.json",
     "fshName": "SD_MII_ICU_Koerpertemperatur_Vaginal",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Koerpertemperatur_Vaginal.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Koerpertemperatur_Vaginal.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -2275,7 +2307,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-linksatrialer-druck.json",
     "fshName": "SD_MII_ICU_Linksatrialer_Druck",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksatrialer_Druck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksatrialer_Druck.fsh",
     "startLine": 1,
     "endLine": 30
   },
@@ -2283,7 +2315,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung.json",
     "fshName": "SD_MII_ICU_Linksventrikulaerer_Herzindex_Durch_Indikatorverduennung",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaerer_Herzindex_Durch_Indikatorverduennung.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaerer_Herzindex_Durch_Indikatorverduennung.fsh",
     "startLine": 1,
     "endLine": 16
   },
@@ -2291,7 +2323,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd.json",
     "fshName": "SD_MII_ICU_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung.fsh",
     "startLine": 1,
     "endLine": 16
   },
@@ -2299,7 +2331,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung.json",
     "fshName": "SD_MII_ICU_Linksventrikulaeres_Schlagvolumen_Durch_Indikatorverduennung",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaeres_Schlagvolumen_Durch_Indikatorverduennung.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaeres_Schlagvolumen_Durch_Indikatorverduennung.fsh",
     "startLine": 1,
     "endLine": 14
   },
@@ -2307,7 +2339,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd.json",
     "fshName": "SD_MII_ICU_Linksventrikulaerer_Schlagvolumenindex_Durch_Indikatorverduennung",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaerer_Schlagvolumenindex_Durch_Indikatorverduennung.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaerer_Schlagvolumenindex_Durch_Indikatorverduennung.fsh",
     "startLine": 1,
     "endLine": 14
   },
@@ -2315,7 +2347,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-linksventrikulaerer-druck.json",
     "fshName": "SD_MII_ICU_Linksventrikulaerer_Druck",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaerer_Druck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaerer_Druck.fsh",
     "startLine": 1,
     "endLine": 26
   },
@@ -2323,7 +2355,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-linksventrikulaerer-herzindex.json",
     "fshName": "SD_MII_ICU_Linksventrikulaerer_Herzindex",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaerer_Herzindex.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaerer_Herzindex.fsh",
     "startLine": 1,
     "endLine": 18
   },
@@ -2331,7 +2363,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-linksventrikulaeres-schlagvolumen.json",
     "fshName": "SD_MII_ICU_Linksventrikulaeres_Schlagvolumen",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaeres_Schlagvolumen.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaeres_Schlagvolumen.fsh",
     "startLine": 1,
     "endLine": 15
   },
@@ -2339,7 +2371,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-linksventrikulaeres-schlagvolumenindex.json",
     "fshName": "SD_MII_ICU_Linksventrikulaeres_Schlagvolumenindex",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Linksventrikulaeres_Schlagvolumenindex.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Linksventrikulaeres_Schlagvolumenindex.fsh",
     "startLine": 1,
     "endLine": 12
   },
@@ -2347,7 +2379,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-monitoring-und-vitaldaten.json",
     "fshName": "SD_MII_ICU_Monitoring_Und_Vitaldaten",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Monitoring_Und_Vitaldaten.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Monitoring_Und_Vitaldaten.fsh",
     "startLine": 1,
     "endLine": 77
   },
@@ -2355,7 +2387,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie.json",
     "fshName": "SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie.fsh",
     "startLine": 1,
     "endLine": 22
   },
@@ -2363,7 +2395,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie.json",
     "fshName": "SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Postduktal_Durch_Pulsoxymetrie",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Postduktal_Durch_Pulsoxymetrie.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Postduktal_Durch_Pulsoxymetrie.fsh",
     "startLine": 1,
     "endLine": 18
   },
@@ -2371,7 +2403,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie.json",
     "fshName": "SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie.fsh",
     "startLine": 1,
     "endLine": 18
   },
@@ -2379,7 +2411,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-pulmonalarterieller-blutdruck.json",
     "fshName": "SD_MII_ICU_Pulmonalarterieller_Blutdruck",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Pulmonalarterieller_Blutdruck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Pulmonalarterieller_Blutdruck.fsh",
     "startLine": 1,
     "endLine": 39
   },
@@ -2387,7 +2419,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-pulmonalarterieller-wedge-druck.json",
     "fshName": "SD_MII_ICU_Pulmonalarterieller_Wedge_Druck",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Pulmonalarterieller_Wedge_Druck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Pulmonalarterieller_Wedge_Druck.fsh",
     "startLine": 1,
     "endLine": 15
   },
@@ -2395,7 +2427,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-pulmonalvaskulaerer-widerstandsindex.json",
     "fshName": "SD_MII_ICU_Pulmonalvaskulaerer_Widerstandsindex",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Pulmonalvaskulaerer_Widerstandsindex.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Pulmonalvaskulaerer_Widerstandsindex.fsh",
     "startLine": 1,
     "endLine": 17
   },
@@ -2403,7 +2435,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-puls.json",
     "fshName": "SD_MII_ICU_Puls",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Puls.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Puls.fsh",
     "startLine": 1,
     "endLine": 22
   },
@@ -2411,7 +2443,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-rechtsatrialer-druck.json",
     "fshName": "SD_MII_ICU_Rechtsatrialer_Druck",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Rechtsatrialer_Druck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Rechtsatrialer_Druck.fsh",
     "startLine": 1,
     "endLine": 33
   },
@@ -2419,7 +2451,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-rechtsventrikulaerer-druck.json",
     "fshName": "SD_MII_ICU_Rechtsventrikulaerer_Druck",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Rechtsventrikulaerer_Druck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Rechtsventrikulaerer_Druck.fsh",
     "startLine": 1,
     "endLine": 30
   },
@@ -2427,7 +2459,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-sonstige-pulsatile-druecke-generisch.json",
     "fshName": "SD_MII_ICU_Sonstige_Pulsatile_Druecke_Generisch",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Sonstige_Pulsatile_Druecke_Generisch.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Sonstige_Pulsatile_Druecke_Generisch.fsh",
     "startLine": 1,
     "endLine": 138
   },
@@ -2435,7 +2467,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-systemischer-vaskulaerer-widerstandsindex.json",
     "fshName": "SD_MII_ICU_Systemischer_Vaskulaerer_Widerstandsindex",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Systemischer_Vaskulaerer_Widerstandsindex.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Systemischer_Vaskulaerer_Widerstandsindex.fsh",
     "startLine": 1,
     "endLine": 18
   },
@@ -2443,7 +2475,7 @@
     "outputFile": "StructureDefinition-sd-mii-icu-zentralvenoeser-blutdruck.json",
     "fshName": "SD_MII_ICU_Zentralvenoeser_Blutdruck",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter/mii-backport/SD_MII_ICU_Zentralvenoeser_Blutdruck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\SD_MII_ICU_Zentralvenoeser_Blutdruck.fsh",
     "startLine": 1,
     "endLine": 15
   },
@@ -2451,7 +2483,7 @@
     "outputFile": "Subscription-PatientMergeSubscriptionExample.json",
     "fshName": "PatientMergeSubscriptionExample",
     "fshType": "Instance",
-    "fshFile": "Basis/IsiKPatientMerge.fsh",
+    "fshFile": "Basis\\IsiKPatientMerge.fsh",
     "startLine": 73,
     "endLine": 84
   },
@@ -2459,7 +2491,7 @@
     "outputFile": "ValueSet-DiagnosesSCT.json",
     "fshName": "DiagnosesSCT",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 1,
     "endLine": 10
   },
@@ -2467,7 +2499,7 @@
     "outputFile": "ValueSet-FhirMimeTypeVS.json",
     "fshName": "FhirMimeTypeVS",
     "fshType": "ValueSet",
-    "fshFile": "Basis/IsiKPatientMerge.fsh",
+    "fshFile": "Basis\\IsiKPatientMerge.fsh",
     "startLine": 94,
     "endLine": 100
   },
@@ -2475,7 +2507,7 @@
     "outputFile": "ValueSet-ISiKAccountType.json",
     "fshName": "ISiKAccountType",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 36,
     "endLine": 41
   },
@@ -2483,7 +2515,7 @@
     "outputFile": "ValueSet-ISiKBehandlungsergebnisReha.json",
     "fshName": "ISiKBehandlungsergebnisReha",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 79,
     "endLine": 83
   },
@@ -2491,7 +2523,7 @@
     "outputFile": "ValueSet-ISiKBesondereBehandlungsformReha.json",
     "fshName": "ISiKBesondereBehandlungsformReha",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 73,
     "endLine": 77
   },
@@ -2499,7 +2531,7 @@
     "outputFile": "ValueSet-ISiKConfidentialityCodes.json",
     "fshName": "ISiKConfidentialityCodes",
     "fshType": "ValueSet",
-    "fshFile": "Dokumentenaustausch/terminologies.fsh",
+    "fshFile": "Dokumentenaustausch\\terminologies.fsh",
     "startLine": 1,
     "endLine": 8
   },
@@ -2507,7 +2539,7 @@
     "outputFile": "ValueSet-ISiKEntlassformReha.json",
     "fshName": "ISiKEntlassformReha",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 85,
     "endLine": 89
   },
@@ -2515,7 +2547,7 @@
     "outputFile": "ValueSet-ISiKHerzfrequenzSCTVS.json",
     "fshName": "ISiKHerzfrequenzSCTVS",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/ISiK-Herzfrequenz.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Herzfrequenz.fsh",
     "startLine": 20,
     "endLine": 25
   },
@@ -2523,7 +2555,7 @@
     "outputFile": "ValueSet-ISiKKoerpergewichtSCTVS.json",
     "fshName": "ISiKKoerpergewichtSCTVS",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/ISiK-Koerpergewicht.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Koerpergewicht.fsh",
     "startLine": 20,
     "endLine": 25
   },
@@ -2531,7 +2563,7 @@
     "outputFile": "ValueSet-ISiKKoerpergroesseSCTVS.json",
     "fshName": "ISiKKoerpergroesseSCTVS",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/ISiK-Koerpergroesse.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Koerpergroesse.fsh",
     "startLine": 20,
     "endLine": 25
   },
@@ -2539,7 +2571,7 @@
     "outputFile": "ValueSet-ISiKKoerpertemperaturSCTVS.json",
     "fshName": "ISiKKoerpertemperaturSCTVS",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/ISiK-Koerpertemperatur.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Koerpertemperatur.fsh",
     "startLine": 20,
     "endLine": 25
   },
@@ -2547,7 +2579,7 @@
     "outputFile": "ValueSet-ISiKKopfumfangSCTVS.json",
     "fshName": "ISiKKopfumfangSCTVS",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/ISiK-Kopfumfang.fsh",
+    "fshFile": "Vitalparameter\\ISiK-Kopfumfang.fsh",
     "startLine": 23,
     "endLine": 28
   },
@@ -2555,7 +2587,7 @@
     "outputFile": "ValueSet-ISiKLocationPhysicalType.json",
     "fshName": "ISiKLocationPhysicalType",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 29,
     "endLine": 34
   },
@@ -2563,7 +2595,7 @@
     "outputFile": "ValueSet-ISiKMedikationsartVS.json",
     "fshName": "ISiKMedikationsartVS",
     "fshType": "ValueSet",
-    "fshFile": "Medikation/valueSets.fsh",
+    "fshFile": "Medikation\\valueSets.fsh",
     "startLine": 7,
     "endLine": 11
   },
@@ -2571,7 +2603,7 @@
     "outputFile": "ValueSet-ISiKTerminCancelationReason.json",
     "fshName": "ISiKTerminCancelationReason",
     "fshType": "ValueSet",
-    "fshFile": "Terminplanung/valueSets.fsh",
+    "fshFile": "Terminplanung\\valueSets.fsh",
     "startLine": 1,
     "endLine": 9
   },
@@ -2579,7 +2611,7 @@
     "outputFile": "ValueSet-ISiKTerminPriority.json",
     "fshName": "ISiKTerminPriority",
     "fshType": "ValueSet",
-    "fshFile": "Terminplanung/valueSets.fsh",
+    "fshFile": "Terminplanung\\valueSets.fsh",
     "startLine": 11,
     "endLine": 31
   },
@@ -2587,7 +2619,7 @@
     "outputFile": "ValueSet-ISiKUnterbrechnungReha.json",
     "fshName": "ISiKUnterbrechnungReha",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 91,
     "endLine": 95
   },
@@ -2595,7 +2627,7 @@
     "outputFile": "ValueSet-ISiKValueSetExample.json",
     "fshName": "ISiKValueSetExample",
     "fshType": "Instance",
-    "fshFile": "Basis/ISiKValueSet.fsh",
+    "fshFile": "Basis\\ISiKValueSet.fsh",
     "startLine": 77,
     "endLine": 90
   },
@@ -2603,7 +2635,7 @@
     "outputFile": "ValueSet-MedikationsListeListModeVS.json",
     "fshName": "MedikationsListeListModeVS",
     "fshType": "ValueSet",
-    "fshFile": "Medikation/valueSets.fsh",
+    "fshFile": "Medikation\\valueSets.fsh",
     "startLine": 13,
     "endLine": 19
   },
@@ -2611,7 +2643,7 @@
     "outputFile": "ValueSet-ObservationCodesCRP.json",
     "fshName": "ObservationCodesCRP",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungCRP.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungCRP.fsh",
     "startLine": 13,
     "endLine": 26
   },
@@ -2619,7 +2651,7 @@
     "outputFile": "ValueSet-ObservationCodesGFR.json",
     "fshName": "ObservationCodesGFR",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungGFR.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungGFR.fsh",
     "startLine": 13,
     "endLine": 22
   },
@@ -2627,7 +2659,7 @@
     "outputFile": "ValueSet-ObservationCodesHb.json",
     "fshName": "ObservationCodesHb",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungHb.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungHb.fsh",
     "startLine": 13,
     "endLine": 137
   },
@@ -2635,7 +2667,7 @@
     "outputFile": "ValueSet-ObservationCodesPCT.json",
     "fshName": "ObservationCodesPCT",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungPCT.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungPCT.fsh",
     "startLine": 13,
     "endLine": 19
   },
@@ -2643,7 +2675,7 @@
     "outputFile": "ValueSet-ObservationCodesSerumkreatinin.json",
     "fshName": "ObservationCodesSerumkreatinin",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungSerumkreatinin.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungSerumkreatinin.fsh",
     "startLine": 13,
     "endLine": 37
   },
@@ -2651,7 +2683,7 @@
     "outputFile": "ValueSet-ObservationCodesTSH.json",
     "fshName": "ObservationCodesTSH",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungTSH.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungTSH.fsh",
     "startLine": 13,
     "endLine": 55
   },
@@ -2659,7 +2691,7 @@
     "outputFile": "ValueSet-ObservationCodesThrombozyten.json",
     "fshName": "ObservationCodesThrombozyten",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungThrombozyten.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungThrombozyten.fsh",
     "startLine": 13,
     "endLine": 26
   },
@@ -2667,7 +2699,7 @@
     "outputFile": "ValueSet-ObservationCodesTroponin.json",
     "fshName": "ObservationCodesTroponin",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungTroponin.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungTroponin.fsh",
     "startLine": 13,
     "endLine": 24
   },
@@ -2675,7 +2707,7 @@
     "outputFile": "ValueSet-ObservationUnitsCRP.json",
     "fshName": "ObservationUnitsCRP",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungCRP.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungCRP.fsh",
     "startLine": 28,
     "endLine": 33
   },
@@ -2683,7 +2715,7 @@
     "outputFile": "ValueSet-ObservationUnitsGFR.json",
     "fshName": "ObservationUnitsGFR",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungGFR.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungGFR.fsh",
     "startLine": 24,
     "endLine": 28
   },
@@ -2691,7 +2723,7 @@
     "outputFile": "ValueSet-ObservationUnitsHb.json",
     "fshName": "ObservationUnitsHb",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungHb.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungHb.fsh",
     "startLine": 139,
     "endLine": 144
   },
@@ -2699,7 +2731,7 @@
     "outputFile": "ValueSet-ObservationUnitsPCT.json",
     "fshName": "ObservationUnitsPCT",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungPCT.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungPCT.fsh",
     "startLine": 21,
     "endLine": 26
   },
@@ -2707,7 +2739,7 @@
     "outputFile": "ValueSet-ObservationUnitsSerumkreatinin.json",
     "fshName": "ObservationUnitsSerumkreatinin",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungSerumkreatinin.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungSerumkreatinin.fsh",
     "startLine": 39,
     "endLine": 44
   },
@@ -2715,7 +2747,7 @@
     "outputFile": "ValueSet-ObservationUnitsTSH.json",
     "fshName": "ObservationUnitsTSH",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungTSH.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungTSH.fsh",
     "startLine": 57,
     "endLine": 62
   },
@@ -2723,7 +2755,7 @@
     "outputFile": "ValueSet-ObservationUnitsThrombozyten.json",
     "fshName": "ObservationUnitsThrombozyten",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungThrombozyten.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungThrombozyten.fsh",
     "startLine": 28,
     "endLine": 32
   },
@@ -2731,7 +2763,7 @@
     "outputFile": "ValueSet-ObservationUnitsTroponin.json",
     "fshName": "ObservationUnitsTroponin",
     "fshType": "ValueSet",
-    "fshFile": "Labor/ISiKLaboruntersuchungTroponin.fsh",
+    "fshFile": "Labor\\ISiKLaboruntersuchungTroponin.fsh",
     "startLine": 26,
     "endLine": 31
   },
@@ -2739,7 +2771,7 @@
     "outputFile": "ValueSet-ProzedurenCodesSCT.json",
     "fshName": "ProzedurenCodesSCT",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 12,
     "endLine": 16
   },
@@ -2747,7 +2779,7 @@
     "outputFile": "ValueSet-ProzedurenKategorieSCT.json",
     "fshName": "ProzedurenKategorieSCT",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 18,
     "endLine": 27
   },
@@ -2755,7 +2787,7 @@
     "outputFile": "ValueSet-RestAndWSSubscriptionChannelType.json",
     "fshName": "RestAndWSSubscriptionChannelType",
     "fshType": "ValueSet",
-    "fshFile": "Basis/IsiKPatientMerge.fsh",
+    "fshFile": "Basis\\IsiKPatientMerge.fsh",
     "startLine": 86,
     "endLine": 92
   },
@@ -2763,7 +2795,7 @@
     "outputFile": "ValueSet-SchwangerschaftEtMethodeVS.json",
     "fshName": "SchwangerschaftEtMethodeVS",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 51,
     "endLine": 62
   },
@@ -2771,7 +2803,7 @@
     "outputFile": "ValueSet-SchwangerschaftsstatusVS.json",
     "fshName": "SchwangerschaftsstatusVS",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 43,
     "endLine": 49
   },
@@ -2779,7 +2811,7 @@
     "outputFile": "ValueSet-SctRouteOfAdministration.json",
     "fshName": "SctRouteOfAdministration",
     "fshType": "ValueSet",
-    "fshFile": "Medikation/valueSets.fsh",
+    "fshFile": "Medikation\\valueSets.fsh",
     "startLine": 1,
     "endLine": 5
   },
@@ -2787,7 +2819,7 @@
     "outputFile": "ValueSet-StillstatusVS.json",
     "fshName": "StillstatusVS",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 64,
     "endLine": 71
   },
@@ -2795,7 +2827,7 @@
     "outputFile": "ValueSet-current-smoking-status-uv-ips.json",
     "fshName": "CurrentSmokingStatusUvIps",
     "fshType": "ValueSet",
-    "fshFile": "Basis/valueSets.fsh",
+    "fshFile": "Basis\\valueSets.fsh",
     "startLine": 99,
     "endLine": 149
   },
@@ -2803,7 +2835,7 @@
     "outputFile": "ValueSet-vs-mii-icu-bodysite-observation-blutdruck.json",
     "fshName": "VS_MII_ICU_BodySite_Observation_Blutdruck",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/mii-backport/valueSet/VS_MII_ICU_BodySite_Observation_Blutdruck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\valueSet\\VS_MII_ICU_BodySite_Observation_Blutdruck.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -2811,7 +2843,7 @@
     "outputFile": "ValueSet-vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten.json",
     "fshName": "VS_MII_ICU_BodySite_Observation_Monitoring_und_Vitaldaten",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/mii-backport/valueSet/VS_MII_ICU_BodySite_Observation_Monitoring_und_Vitaldaten.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\valueSet\\VS_MII_ICU_BodySite_Observation_Monitoring_und_Vitaldaten.fsh",
     "startLine": 1,
     "endLine": 35
   },
@@ -2819,7 +2851,7 @@
     "outputFile": "ValueSet-vs-mii-icu-code-monitoring-und-vitaldaten-iso11073.json",
     "fshName": "VS_MII_ICU_Code_Monitoring_und_Vitaldaten_ISO11073",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/mii-backport/valueSet/VS_MII_ICU_Code_Monitoring_und_Vitaldaten_ISO11073.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\valueSet\\VS_MII_ICU_Code_Monitoring_und_Vitaldaten_ISO11073.fsh",
     "startLine": 1,
     "endLine": 47
   },
@@ -2827,7 +2859,7 @@
     "outputFile": "ValueSet-vs-mii-icu-code-monitoring-und-vitaldaten-loinc.json",
     "fshName": "VS_MII_ICU_Code_Monitoring_und_Vitaldaten_LOINC",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/mii-backport/valueSet/VS_MII_ICU_Code_Monitoring_und_Vitaldaten_LOINC.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\valueSet\\VS_MII_ICU_Code_Monitoring_und_Vitaldaten_LOINC.fsh",
     "startLine": 1,
     "endLine": 57
   },
@@ -2835,7 +2867,7 @@
     "outputFile": "ValueSet-vs-mii-icu-code-monitoring-und-vitaldaten-snomed.json",
     "fshName": "VS_MII_ICU_Code_Monitoring_und_Vitaldaten_SNOMED",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/mii-backport/valueSet/VS_MII_ICU_Code_Monitoring_und_Vitaldaten_SNOMED.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\valueSet\\VS_MII_ICU_Code_Monitoring_und_Vitaldaten_SNOMED.fsh",
     "startLine": 1,
     "endLine": 43
   },
@@ -2843,7 +2875,7 @@
     "outputFile": "ValueSet-vs-mii-icu-method-observation-blutdruck.json",
     "fshName": "VS_MII_ICU_Method_Observation_Blutdruck",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/mii-backport/valueSet/VS_MII_ICU_Method_Observation_Blutdruck.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\valueSet\\VS_MII_ICU_Method_Observation_Blutdruck.fsh",
     "startLine": 1,
     "endLine": 7
   },
@@ -2851,7 +2883,7 @@
     "outputFile": "ValueSet-vs-mii-icu-unit-equivalent-ucum-beats-per-minute.json",
     "fshName": "VS_MII_ICU_Unit_equivalent_UCUM_beats_per_minute",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/mii-backport/valueSet/VS_MII_ICU_Unit_equivalent_UCUM_beats_per_minute.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\valueSet\\VS_MII_ICU_Unit_equivalent_UCUM_beats_per_minute.fsh",
     "startLine": 1,
     "endLine": 9
   },
@@ -2859,7 +2891,7 @@
     "outputFile": "ValueSet-vs-mii-icu-unit-equivalent-ucum-dyn-s-cm5-m2.json",
     "fshName": "VS_MII_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/mii-backport/valueSet/VS_MII_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\valueSet\\VS_MII_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2.fsh",
     "startLine": 1,
     "endLine": 9
   },
@@ -2867,7 +2899,7 @@
     "outputFile": "ValueSet-vs-mii-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter.json",
     "fshName": "VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/mii-backport/valueSet/VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\valueSet\\VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter.fsh",
     "startLine": 1,
     "endLine": 9
   },
@@ -2875,7 +2907,7 @@
     "outputFile": "ValueSet-vs-mii-icu-unit-equivalent-ucum-l-per-minute.json",
     "fshName": "VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute",
     "fshType": "ValueSet",
-    "fshFile": "Vitalparameter/mii-backport/valueSet/VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute.fsh",
+    "fshFile": "Vitalparameter\\mii-backport\\valueSet\\VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute.fsh",
     "startLine": 1,
     "endLine": 7
   }

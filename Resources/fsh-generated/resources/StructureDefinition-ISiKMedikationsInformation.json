@@ -27,7 +27,7 @@
         "path": "MedicationStatement.extension",
         "sliceName": "acceptedRisk",
         "short": "akzeptiertes (in Kauf genommenes) Risiko",
-        "comment": "Begründung des Must-Support: Folgeinformation der AMTS-Bewertung, sollte auch an nachfolgende Behandelnde übermittelbar sein\n\n  Hinweis: Hier kann ein im Rahmen der Medikation festgestelltes, aber in Kauf genommenes Risiko dokumentiert werden, speziell auch die Begründung und ggf. erforderliche Begleitmaßnahmen.",
+        "comment": "Begründung des Must-Support: Folgeinformation der AMTS-Bewertung, sollte auch an nachfolgende Behandelnde übermittelbar sein\r\n\r\n  Hinweis: Hier kann ein im Rahmen der Medikation festgestelltes, aber in Kauf genommenes Risiko dokumentiert werden, speziell auch die Begründung und ggf. erforderliche Begleitmaßnahmen.",
         "min": 0,
         "max": "1",
         "type": [
@@ -50,7 +50,7 @@
         "path": "MedicationStatement.extension",
         "sliceName": "medikationsart",
         "short": "Therapieart der Medikation",
-        "comment": "Begründung des Must-Support: von der Fachseite gewünschte Angabe\n\n  Hinweis: Angabe Akut- oder Dauermedikation.",
+        "comment": "Begründung des Must-Support: von der Fachseite gewünschte Angabe\r\n\r\n  Hinweis: Angabe Akut- oder Dauermedikation.",
         "min": 0,
         "max": "1",
         "type": [
@@ -83,7 +83,7 @@
         "path": "MedicationStatement.extension",
         "sliceName": "selbstmedikation",
         "short": "Selbstmedikation",
-        "comment": "Begründung des Must-Support: von der Fachseite gewünschte Angabe\n\n  Hinweis: Flag zur Selbstmedikation.",
+        "comment": "Begründung des Must-Support: von der Fachseite gewünschte Angabe\r\n\r\n  Hinweis: Flag zur Selbstmedikation.",
         "min": 0,
         "max": "1",
         "type": [
@@ -106,7 +106,7 @@
         "path": "MedicationStatement.extension",
         "sliceName": "behandlungsziel",
         "short": "Behandlungsziel (textuell)",
-        "comment": "Begründung des Must-Support: von der Fachseite gewünschte Angabe\n\n  Hinweis: Freitext-Beschreibung des Behandlungsziels.",
+        "comment": "Begründung des Must-Support: von der Fachseite gewünschte Angabe\r\n\r\n  Hinweis: Freitext-Beschreibung des Behandlungsziels.",
         "min": 0,
         "max": "1",
         "type": [
@@ -129,7 +129,7 @@
         "path": "MedicationStatement.extension",
         "sliceName": "medicationStatementReplaces",
         "short": "Welche Medikationsinformation wird ersetzt?",
-        "comment": "Begründung des Must-Support: historische Nachvollziehbarkeit\n\n  Hinweis: Welche Medikationsinformation wird ersetzt?",
+        "comment": "Begründung des Must-Support: historische Nachvollziehbarkeit\r\n\r\n  Hinweis: Welche Medikationsinformation wird ersetzt?",
         "min": 0,
         "max": "1",
         "type": [
@@ -185,7 +185,7 @@
         "path": "MedicationStatement.medication[x]",
         "sliceName": "medicationCodeableConcept",
         "short": "Medikament in codierter Form oder ggf. als Freitext",
-        "comment": "Begründung des Must-Support: Basisinformation\n\n  Hinweis: kann verwendet werden, wenn keine detaillierten Informationen zum Medikament (z.B. Rezepturen) existieren.",
+        "comment": "Begründung des Must-Support: Basisinformation\r\n\r\n  Hinweis: kann verwendet werden, wenn keine detaillierten Informationen zum Medikament (z.B. Rezepturen) existieren.",
         "min": 0,
         "max": "1",
         "type": [
@@ -276,7 +276,7 @@
         "path": "MedicationStatement.medication[x]",
         "sliceName": "medicationReference",
         "short": "Referenz auf das Medikament (Medication-Ressource)",
-        "comment": "Begründung des Must-Support: Basisinformation\n\n  Hinweis: wird verwendet, wenn detaillierte Informationen zum Medikament vorliegen",
+        "comment": "Begründung des Must-Support: Basisinformation\r\n\r\n  Hinweis: wird verwendet, wenn detaillierte Informationen zum Medikament vorliegen",
         "min": 0,
         "max": "1",
         "type": [
@@ -396,7 +396,7 @@
         "id": "MedicationStatement.reasonCode",
         "path": "MedicationStatement.reasonCode",
         "short": "Grund der Medikation (codiert)",
-        "comment": "  Festlegung zum MS: Die Elemente .reasonCode und .reasonReference MÜSSEN nach OR-Logik in der Ausgabe verwendet werden, d.h. nur eines MUSS geliefert werden können. Weiterhin MÜSSEN beide Elemente interpretiert werden können.\n  \n  Begründung zu Must-Support: Konsolidierung mit MII.",
+        "comment": "  Festlegung zum MS: Die Elemente .reasonCode und .reasonReference MÜSSEN nach OR-Logik in der Ausgabe verwendet werden, d.h. nur eines MUSS geliefert werden können. Weiterhin MÜSSEN beide Elemente interpretiert werden können.\r\n  \r\n  Begründung zu Must-Support: Konsolidierung mit MII.",
         "mustSupport": true
       },
       {
@@ -430,7 +430,7 @@
         "id": "MedicationStatement.reasonReference",
         "path": "MedicationStatement.reasonReference",
         "short": "Grund der Medikation (Referenz)",
-        "comment": "  Festlegung zum MS: Die Elemente .reasonCode und .reasonReference MÜSSEN nach OR-Logik in der Ausgabe verwendet werden, d.h. nur eines MUSS geliefert werden können. Weiterhin MÜSSEN beide Elemente interpretiert werden können.\n  \n  Begründung zu Must-Support: Konsolidierung mit MII.",
+        "comment": "  Festlegung zum MS: Die Elemente .reasonCode und .reasonReference MÜSSEN nach OR-Logik in der Ausgabe verwendet werden, d.h. nur eines MUSS geliefert werden können. Weiterhin MÜSSEN beide Elemente interpretiert werden können.\r\n  \r\n  Begründung zu Must-Support: Konsolidierung mit MII.",
         "mustSupport": true
       },
       {

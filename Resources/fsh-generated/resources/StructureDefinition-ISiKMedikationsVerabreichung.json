@@ -43,7 +43,7 @@
         "path": "MedicationAdministration.medication[x]",
         "sliceName": "medicationCodeableConcept",
         "short": "Medikament in codierter Form oder ggf. als Freitext",
-        "comment": "Begründung des Must-Support: Basisinformation\n\n  Hinweis: kann verwendet werden, wenn keine detaillierten Informationen zum Medikament (z.B. Rezepturen) existieren.",
+        "comment": "Begründung des Must-Support: Basisinformation\r\n\r\n  Hinweis: kann verwendet werden, wenn keine detaillierten Informationen zum Medikament (z.B. Rezepturen) existieren.",
         "min": 0,
         "max": "1",
         "type": [
@@ -129,7 +129,7 @@
         "path": "MedicationAdministration.medication[x]",
         "sliceName": "medicationReference",
         "short": "Referenz auf das Medikament (Medication-Ressource)",
-        "comment": "Begründung des Must-Support: Basisinformation\n\n  Hinweis: wird verwendet, wenn detaillierte Informationen zum Medikament vorliegen",
+        "comment": "Begründung des Must-Support: Basisinformation\r\n\r\n  Hinweis: wird verwendet, wenn detaillierte Informationen zum Medikament vorliegen",
         "min": 0,
         "max": "1",
         "type": [

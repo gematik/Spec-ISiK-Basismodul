@@ -1,6 +1,13 @@
-Instance: ISiKCapabilityStatementDokumentenaustauschServer
+Instance: ISiKAkteurDokumentenverwaltung
 InstanceOf: CapabilityStatement
 Usage: #definition
+* insert Meta-CapabilityStatement
+* url = "https://gematik.de/fhir/isik/CapabilityStatement/ISiKAkteurDokumentenverwaltung"
+* name = "ISiKCapabilityStatementDokumentenaustauschServer"
+* title = "ISiK CapabilityStatement Dokumentenaustausch Server"
+* implementationGuide = "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Dokumentenaustausch"
+* imports = Canonical(ISiKAkteurMinimaleStammdatenVerwaltung)
+
 * description =
   "Dieses CapabilityStatement beschreibt alle Interaktionen, die ein ISiK-konformes System unterstützen MUSS bzw. KANN,
   um das Bestätigungsverfahren für dieses Modul zu bestehen.
@@ -22,18 +29,8 @@ sofern diese in der Instanz implementiert wurden.
 
 Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich."
 
-* insert Meta-CapabilityStatement
-* name = "ISiKCapabilityStatementDokumentenaustauschServer"
-* title = "ISiK CapabilityStatement Dokumentenaustausch Server"
-* contact.telecom.system = #url
-* contact.telecom.value = "https://www.gematik.de"
-* jurisdiction = urn:iso:std:iso:3166#DE "Germany"
-* kind = #requirements
-* fhirVersion = #4.0.1
-* format[0] = #application/fhir+xml
-* format[+] = #application/fhir+json
+
 * rest.mode = #server
-  
 * rest.resource[+]
   * insert Expectation (#SHALL)
   * type = #DocumentReference
@@ -124,16 +121,6 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
     * insert Expectation(#SHALL)
   * searchInclude[+] = "DocumentReference:encounter"
     * insert Expectation(#SHALL)
-
-  * operation[+]
-    * insert Expectation (#MAY)
-    * name = #update-metadata
-    * definition = Canonical(UpdateMetadata)
-  * operation[+]
-    * insert Expectation (#MAY)
-    * name = #generate-metadata
-    * definition = "https://profiles.ihe.net/ITI/MHD/OperationDefinition/generate-metadata"
-
 
 * rest.resource[+]
   * insert Expectation (#SHALL)

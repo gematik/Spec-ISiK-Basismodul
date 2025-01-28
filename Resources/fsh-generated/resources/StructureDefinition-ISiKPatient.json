@@ -8,7 +8,7 @@
   "experimental": false,
   "date": "2024-11-25",
   "publisher": "gematik GmbH",
-  "description": "Dieses Profil spezifiziert die Minimalanforderungen für die Bereitstellung von administrativen Patientendaten im Rahmen des Bestätigungsverfahrens der gematik.\n### Motivation  \nDer Austausch administrativer Patientendaten ist eine der grundlegenden Funktionalitäten beim Datenaustausch in der klinischen Versorgung.  \nIn FHIR werden sämtliche klinischen Ressourcen durch Verlinkung auf die Ressource 'Patient' in einen Patientenkontext gestellt.  \nDie Herstellung des korrekten Patientenkontextes durch Suchen der Patientenressource anhand von Eigenschaften wie Aufnahmenummer, Name oder Geburtsdatum, \ndie Anzeige der zutreffenden Suchergebnisse und der Auswahl bzw. Bestätigung des richtigen Datensatzes durch den Anwender steht am Beginn der meisten klinischen Workflows.  \n\n### Kompatibilität\nFür das Profil ISIKPatient wird eine Kompatibilität mit folgenden Profilen angestrebt; allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen ISIKPatient valide sind, auch valide sind gegen:\n\n* [Profil KBV_PR_Base_Patient der KBV Basisprofile](https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient)\n* [Profil Patient im International Patient Summary (IPS)](https://hl7.org/fhir/uv/ips/StructureDefinition-Patient-uv-ips.html)\n* [Profil Patient der MI-Initiative](https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient)  \n\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
+  "description": "Dieses Profil spezifiziert die Minimalanforderungen für die Bereitstellung von administrativen Patientendaten im Rahmen des Bestätigungsverfahrens der gematik.\r\n### Motivation  \r\nDer Austausch administrativer Patientendaten ist eine der grundlegenden Funktionalitäten beim Datenaustausch in der klinischen Versorgung.  \r\nIn FHIR werden sämtliche klinischen Ressourcen durch Verlinkung auf die Ressource 'Patient' in einen Patientenkontext gestellt.  \r\nDie Herstellung des korrekten Patientenkontextes durch Suchen der Patientenressource anhand von Eigenschaften wie Aufnahmenummer, Name oder Geburtsdatum, \r\ndie Anzeige der zutreffenden Suchergebnisse und der Auswahl bzw. Bestätigung des richtigen Datensatzes durch den Anwender steht am Beginn der meisten klinischen Workflows.  \r\n\r\n### Kompatibilität\r\nFür das Profil ISIKPatient wird eine Kompatibilität mit folgenden Profilen angestrebt; allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen ISIKPatient valide sind, auch valide sind gegen:\r\n\r\n* [Profil KBV_PR_Base_Patient der KBV Basisprofile](https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient)\r\n* [Profil Patient im International Patient Summary (IPS)](https://hl7.org/fhir/uv/ips/StructureDefinition-Patient-uv-ips.html)\r\n* [Profil Patient der MI-Initiative](https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient)  \r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -50,7 +50,7 @@
         "path": "Patient.identifier",
         "sliceName": "VersichertenId",
         "short": "Lebenslange Krankenversichertennummer",
-        "comment": "Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, \n    unveränderbare Teil der Versichertennummer, \n    der lesbar auf die Elektronische Gesundheitskarte aufgedruckt ist.\n    Er gilt für alle Krankenversichertennummern, \n    unabhängig davon, ob es sich um GKV, PKV oder Sonderkostenträger handelt.  \n    **Weitere Hinweise:** siehe [Deutschen Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-LebenslangeKrankenversichertennummer10-stelligeKVID-Identifier?version=current)",
+        "comment": "Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, \r\n    unveränderbare Teil der Versichertennummer, \r\n    der lesbar auf die Elektronische Gesundheitskarte aufgedruckt ist.\r\n    Er gilt für alle Krankenversichertennummern, \r\n    unabhängig davon, ob es sich um GKV, PKV oder Sonderkostenträger handelt.  \r\n    **Weitere Hinweise:** siehe [Deutschen Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-LebenslangeKrankenversichertennummer10-stelligeKVID-Identifier?version=current)",
         "min": 0,
         "max": "1",
         "type": [
@@ -77,7 +77,7 @@
         "id": "Patient.identifier:VersichertenId.type",
         "path": "Patient.identifier.type",
         "short": "Art des Identifiers",
-        "comment": "Hier ist stets der Code `KVZ10` \n    aus dem CodeSystem `http://fhir.de/CodeSystem/identifier-type-de-basis` anzugeben.  \n    **Begründung Pflichtfeld:** `type` dient der Unterscheidung verschiedener Identifier-Typen",
+        "comment": "Hier ist stets der Code `KVZ10` \r\n    aus dem CodeSystem `http://fhir.de/CodeSystem/identifier-type-de-basis` anzugeben.  \r\n    **Begründung Pflichtfeld:** `type` dient der Unterscheidung verschiedener Identifier-Typen",
         "min": 1,
         "mustSupport": true
       },
@@ -85,7 +85,7 @@
         "id": "Patient.identifier:VersichertenId.system",
         "path": "Patient.identifier.system",
         "short": "Namensraum der Versichertennummer",
-        "comment": "Hier ist stets der Wert `http://fhir.de/sid/gkv/kvid-10` anzugeben.  \n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "comment": "Hier ist stets der Wert `http://fhir.de/sid/gkv/kvid-10` anzugeben.  \r\n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
         "mustSupport": true
       },
       {
@@ -100,7 +100,7 @@
         "path": "Patient.identifier",
         "sliceName": "VersichertenId-GKV",
         "short": "Gesetzliche Krankenversichertennummer",
-        "comment": "**WARNUNG**: Die Verwendung der 'GKV'-Kodierung einer Versichertennummer ist abgekündigt,\n  da die lebenslangen Versichertennummer ab 2024 auch für PKV oder Sonderkostenträger eingeführt wird. \n  Bitte statt dessen künftig den 'VersichertenId'-Slice verwenden.",
+        "comment": "**WARNUNG**: Die Verwendung der 'GKV'-Kodierung einer Versichertennummer ist abgekündigt,\r\n  da die lebenslangen Versichertennummer ab 2024 auch für PKV oder Sonderkostenträger eingeführt wird. \r\n  Bitte statt dessen künftig den 'VersichertenId'-Slice verwenden.",
         "min": 0,
         "max": "1",
         "type": [
@@ -127,7 +127,7 @@
         "id": "Patient.identifier:VersichertenId-GKV.type",
         "path": "Patient.identifier.type",
         "short": "Art des Identifiers",
-        "comment": "Hier ist stets der Code `GKV` \n    aus dem CodeSystem `http://fhir.de/CodeSystem/identifier-type-de-basis` anzugeben.  \n    **Begründung Pflichtfeld:** `type` dient der Unterscheidung verschiedener Identifier-Typen",
+        "comment": "Hier ist stets der Code `GKV` \r\n    aus dem CodeSystem `http://fhir.de/CodeSystem/identifier-type-de-basis` anzugeben.  \r\n    **Begründung Pflichtfeld:** `type` dient der Unterscheidung verschiedener Identifier-Typen",
         "min": 1,
         "mustSupport": true
       },
@@ -135,13 +135,13 @@
         "id": "Patient.identifier:VersichertenId-GKV.system",
         "path": "Patient.identifier.system",
         "short": "Namensraum der Versichertennummer",
-        "comment": "Hier ist stets der Wert `http://fhir.de/sid/gkv/kvid-10` anzugeben.  \n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "comment": "Hier ist stets der Wert `http://fhir.de/sid/gkv/kvid-10` anzugeben.  \r\n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
         "mustSupport": true
       },
       {
         "id": "Patient.identifier:VersichertenId-GKV.value",
         "path": "Patient.identifier.value",
-        "comment": "Enthält den eigentlichen Wert des Identifiers.  \n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "comment": "Enthält den eigentlichen Wert des Identifiers.  \r\n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
         "mustSupport": true
       },
       {
@@ -149,7 +149,7 @@
         "path": "Patient.identifier",
         "sliceName": "Patientennummer",
         "short": "Organisationsinterner Patienten-Identifier (PID)",
-        "comment": "Organisationsintere Patienten-Identifier werden von z.B. von KIS-Systemen vergeben \n  und dienen innerhalb einer Einreichtung meist als primäres Identifikationsmerkmal für Patienten, \n  u.A. in der HL7 V2-Kommunikation.  \n  **Weitere Hinweise:** siehe [Deutschen Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-OrganisationsinternerPatienten-Identifier?version=current)",
+        "comment": "Organisationsintere Patienten-Identifier werden von z.B. von KIS-Systemen vergeben \r\n  und dienen innerhalb einer Einreichtung meist als primäres Identifikationsmerkmal für Patienten, \r\n  u.A. in der HL7 V2-Kommunikation.  \r\n  **Weitere Hinweise:** siehe [Deutschen Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-OrganisationsinternerPatienten-Identifier?version=current)",
         "min": 1,
         "max": "*",
         "type": [
@@ -176,20 +176,20 @@
         "id": "Patient.identifier:Patientennummer.type",
         "path": "Patient.identifier.type",
         "short": "Art des Identifiers",
-        "comment": "Hier ist stets der Code `MR` \n    aus dem CodeSystem `http://terminology.hl7.org/CodeSystem/v2-0203` anzugeben.  \n    **Begründung Pflichtfeld:** `type` dient der Unterscheidung verschiedener Identifier-Typen",
+        "comment": "Hier ist stets der Code `MR` \r\n    aus dem CodeSystem `http://terminology.hl7.org/CodeSystem/v2-0203` anzugeben.  \r\n    **Begründung Pflichtfeld:** `type` dient der Unterscheidung verschiedener Identifier-Typen",
         "mustSupport": true
       },
       {
         "id": "Patient.identifier:Patientennummer.system",
         "path": "Patient.identifier.system",
         "short": "Namensraum des Identifiers",
-        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \n    aus dem der Identifier stammt. \n    Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \n    [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \r\n    aus dem der Identifier stammt. \r\n    Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \r\n    [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \r\n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
         "mustSupport": true
       },
       {
         "id": "Patient.identifier:Patientennummer.value",
         "path": "Patient.identifier.value",
-        "comment": "Enthält den eigentlichen Wert des Identifiers.  \n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "comment": "Enthält den eigentlichen Wert des Identifiers.  \r\n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
         "mustSupport": true
       },
       {
@@ -197,7 +197,7 @@
         "path": "Patient.identifier",
         "sliceName": "Versichertennummer_PKV",
         "short": "Private Krankenversichertennummer",
-        "comment": "Für Privatpatienten, die noch nicht über eine lebenslange, unveränderliche Krankenversichertennummer (KVNR) verfügen,\n  können bis auf weiteres noch die versicherungsspezifischen PKV-Nummern angegeben werden. \n  Da bei diesen der Bezeichner des vom Kostenträger verwendeten Namensraums mest nicht ermittelt werden kann,\n  ist statt dessen der Name des Kostenträgers in `assigner` anzugeben.  \n  **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-PrivateKrankenversichertennummer-Identifier?version=current)",
+        "comment": "Für Privatpatienten, die noch nicht über eine lebenslange, unveränderliche Krankenversichertennummer (KVNR) verfügen,\r\n  können bis auf weiteres noch die versicherungsspezifischen PKV-Nummern angegeben werden. \r\n  Da bei diesen der Bezeichner des vom Kostenträger verwendeten Namensraums mest nicht ermittelt werden kann,\r\n  ist statt dessen der Name des Kostenträgers in `assigner` anzugeben.  \r\n  **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-PrivateKrankenversichertennummer-Identifier?version=current)",
         "min": 0,
         "max": "1",
         "type": [
@@ -231,7 +231,7 @@
         "id": "Patient.identifier:Versichertennummer_PKV.type",
         "path": "Patient.identifier.type",
         "short": "Art des Identifiers",
-        "comment": "Hier ist stets der Code `PKV` \n    aus dem CodeSystem `http://fhir.de/CodeSystem/identifier-type-de-basis` anzugeben.  \n    **Begründung Pflichtfeld:** `type` dient der Unterscheidung verschiedener Identifier-Typen",
+        "comment": "Hier ist stets der Code `PKV` \r\n    aus dem CodeSystem `http://fhir.de/CodeSystem/identifier-type-de-basis` anzugeben.  \r\n    **Begründung Pflichtfeld:** `type` dient der Unterscheidung verschiedener Identifier-Typen",
         "min": 1,
         "mustSupport": true
       },
@@ -239,7 +239,7 @@
         "id": "Patient.identifier:Versichertennummer_PKV.value",
         "path": "Patient.identifier.value",
         "short": "Private Krankenversichertennummer",
-        "comment": "Enthält den eigentlichen Wert des Identifiers.  \n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "comment": "Enthält den eigentlichen Wert des Identifiers.  \r\n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
         "mustSupport": true
       },
       {
@@ -272,7 +272,7 @@
         "id": "Patient.active",
         "path": "Patient.active",
         "short": "Status des Datensatzes",
-        "comment": "\n  `true` = Der Datensatz befindet sich in Verwendung/kann verwendet werden  \n  `false`= Der Datensatz wurde storniert (z.B. bei Dubletten, Merge) oder archiviert  \n  **Einschränkung der übergreifenden MS-Definition:**  \n  Verfügt ein bestätigungsrelevantes System nicht über die Datenstruktur zur Hinterlegung des Aktivitätsstatus einer Patienten-Ressource, \n  so MUSS dieses System die Information NICHT abbilden. \n  Das System SOLL jedoch den Aktivitätsstatus hart kodieren in der Patienteninstanz \n  (Patient.active auf 'true'), sodass Clients nicht missverständlich mit einer inaktiven \n  Patient-Ressource interagieren.",
+        "comment": "\r\n  `true` = Der Datensatz befindet sich in Verwendung/kann verwendet werden  \r\n  `false`= Der Datensatz wurde storniert (z.B. bei Dubletten, Merge) oder archiviert  \r\n  **Einschränkung der übergreifenden MS-Definition:**  \r\n  Verfügt ein bestätigungsrelevantes System nicht über die Datenstruktur zur Hinterlegung des Aktivitätsstatus einer Patienten-Ressource, \r\n  so MUSS dieses System die Information NICHT abbilden. \r\n  Das System SOLL jedoch den Aktivitätsstatus hart kodieren in der Patienteninstanz \r\n  (Patient.active auf 'true'), sodass Clients nicht missverständlich mit einer inaktiven \r\n  Patient-Ressource interagieren.",
         "mustSupport": true
       },
       {
@@ -295,7 +295,7 @@
         "path": "Patient.name",
         "sliceName": "Name",
         "short": "Offizieller Name",
-        "comment": "Offizieller Name des Patienten, wie er z.B. in Ausweis oder Versicherungsdokumenten erscheint. \n  **Begründung Pflichtfeld:** Der offizielle Name des Patienten ist unerlässlich, um Verwechlungen zu vermeiden und den Patienten im Versorgungskontext korrekt anzusprechen.\n  Wenn kein Name vorliegt, MUSS die [data-absent-reason-Extension](https://www.hl7.org/fhir/R4/extension-data-absent-reason.html) eingesetzt werden.   \n  **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Name)",
+        "comment": "Offizieller Name des Patienten, wie er z.B. in Ausweis oder Versicherungsdokumenten erscheint. \r\n  **Begründung Pflichtfeld:** Der offizielle Name des Patienten ist unerlässlich, um Verwechlungen zu vermeiden und den Patienten im Versorgungskontext korrekt anzusprechen.\r\n  Wenn kein Name vorliegt, MUSS die [data-absent-reason-Extension](https://www.hl7.org/fhir/R4/extension-data-absent-reason.html) eingesetzt werden.   \r\n  **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Name)",
         "min": 1,
         "max": "1",
         "type": [
@@ -315,7 +315,7 @@
         "id": "Patient.name:Name.use",
         "path": "Patient.name.use",
         "short": "Verwendungszweck",
-        "comment": "Hier ist stets der Wert `official` anzugeben.  \n      **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium",
+        "comment": "Hier ist stets der Wert `official` anzugeben.  \r\n      **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium",
         "min": 1,
         "mustSupport": true
       },
@@ -323,7 +323,7 @@
         "id": "Patient.name:Name.family",
         "path": "Patient.name.family",
         "short": "Nachname",
-        "comment": "Vollständiger Nachname bzw. Familienname der Person, einschließlich Vor- und Zusätze.  \n      **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind.",
+        "comment": "Vollständiger Nachname bzw. Familienname der Person, einschließlich Vor- und Zusätze.  \r\n      **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind.",
         "min": 1,
         "mustSupport": true
       },
@@ -332,7 +332,7 @@
         "path": "Patient.name.family.extension",
         "sliceName": "namenszusatz",
         "short": "Namenszusatz",
-        "comment": "Enthält ehem. Adelstitel wie z.B. 'Graf', 'Baronesse', 'Freiherr'...  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Enthält ehem. Adelstitel wie z.B. 'Graf', 'Baronesse', 'Freiherr'...  \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "mustSupport": true
       },
       {
@@ -340,7 +340,7 @@
         "path": "Patient.name.family.extension",
         "sliceName": "nachname",
         "short": "Nachname",
-        "comment": "Nachname ohne Vor- und Zusätze.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Nachname ohne Vor- und Zusätze.  \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "mustSupport": true
       },
       {
@@ -348,14 +348,14 @@
         "path": "Patient.name.family.extension",
         "sliceName": "vorsatzwort",
         "short": "Vorsatzwort ",
-        "comment": "Enthält Vorsätze, die vor dem Nachnamen stehen, z.B. 'von', 'van', 'zu'...  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Enthält Vorsätze, die vor dem Nachnamen stehen, z.B. 'von', 'van', 'zu'...  \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "mustSupport": true
       },
       {
         "id": "Patient.name:Name.given",
         "path": "Patient.name.given",
         "short": "Vorname ",
-        "comment": "Kann mehrfach verwendet werden, um den Rufnamen sowie weitere Vornamen, Mittelnamen oder Mittel-Initialen abzubilden.\n      **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind.",
+        "comment": "Kann mehrfach verwendet werden, um den Rufnamen sowie weitere Vornamen, Mittelnamen oder Mittel-Initialen abzubilden.\r\n      **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind.",
         "min": 1,
         "mustSupport": true
       },
@@ -371,7 +371,7 @@
         "path": "Patient.name.prefix.extension",
         "sliceName": "prefix-qualifier",
         "short": "Extension, um das Präfix als akademischen Titel zu qualifizieren",
-        "comment": "Hier ist stets der Wert `AC` anzugeben.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Hier ist stets der Wert `AC` anzugeben.  \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "mustSupport": true
       },
       {
@@ -404,7 +404,7 @@
         "id": "Patient.name:Geburtsname.use",
         "path": "Patient.name.use",
         "short": "Verwendungszweck",
-        "comment": "Hier ist stets der Wert `maiden` anzugeben.  \n      **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium",
+        "comment": "Hier ist stets der Wert `maiden` anzugeben.  \r\n      **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium",
         "min": 1,
         "mustSupport": true
       },
@@ -412,7 +412,7 @@
         "id": "Patient.name:Geburtsname.family",
         "path": "Patient.name.family",
         "short": "Nachname",
-        "comment": "Vollständiger Nachname bzw. Familienname des Patienten, einschließlich Vor- und Zusätze.  \n      **Begründung Pflichtfeld:** Ist der Nachname zum Zeitpunkt der Geburt nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "comment": "Vollständiger Nachname bzw. Familienname des Patienten, einschließlich Vor- und Zusätze.  \r\n      **Begründung Pflichtfeld:** Ist der Nachname zum Zeitpunkt der Geburt nicht bekannt, sollte der gesamte Slice weggelassen werden.",
         "min": 1,
         "mustSupport": true
       },
@@ -421,7 +421,7 @@
         "path": "Patient.name.family.extension",
         "sliceName": "namenszusatz",
         "short": "Namenszusatz",
-        "comment": "Enthält ehem. Adelstitel wie z.B. 'Graf', 'Baronesse', 'Freiherr'...  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Enthält ehem. Adelstitel wie z.B. 'Graf', 'Baronesse', 'Freiherr'...  \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "mustSupport": true
       },
       {
@@ -429,7 +429,7 @@
         "path": "Patient.name.family.extension",
         "sliceName": "nachname",
         "short": "Nachname",
-        "comment": "Nachname ohne Vor- und Zusätze.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Nachname ohne Vor- und Zusätze.  \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "mustSupport": true
       },
       {
@@ -437,7 +437,7 @@
         "path": "Patient.name.family.extension",
         "sliceName": "vorsatzwort",
         "short": "Vorsatzwort ",
-        "comment": "Enthält Vorsätze, die vor dem Nachnamen stehen, z.B. 'von', 'van', 'zu'...  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Enthält Vorsätze, die vor dem Nachnamen stehen, z.B. 'von', 'van', 'zu'...  \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "mustSupport": true
       },
       {
@@ -464,7 +464,7 @@
         "id": "Patient.gender",
         "path": "Patient.gender",
         "short": "Administratives Geschlecht ",
-        "comment": "Für die Geschlechtskennzeichen 'unbestimmt' und 'divers' ist der international vereinbarte code `other` zu verwenden.\n    Zur weiteren Differenzierung kann dann die Extension `Geschlecht-Admnistrativ` verwendet werden.\n    **Begründung Pflichtfeld:** Die Geschlechtsangabe ist für viele Versorgungsprozesse unerlässlich, z.B.  \n* Bettendisposition\n* Ermittlung von Referenzwerten\n* korrekte Anrede des Patienten  \n    **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Geschlecht)",
+        "comment": "Für die Geschlechtskennzeichen 'unbestimmt' und 'divers' ist der international vereinbarte code `other` zu verwenden.\r\n    Zur weiteren Differenzierung kann dann die Extension `Geschlecht-Admnistrativ` verwendet werden.\r\n    **Begründung Pflichtfeld:** Die Geschlechtsangabe ist für viele Versorgungsprozesse unerlässlich, z.B.  \r\n* Bettendisposition\r\n* Ermittlung von Referenzwerten\r\n* korrekte Anrede des Patienten  \r\n    **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Geschlecht)",
         "min": 1,
         "mustSupport": true
       },
@@ -473,7 +473,7 @@
         "path": "Patient.gender.extension",
         "sliceName": "Geschlecht-Administrativ",
         "short": "Extension zur Differenzierung des Geschlechtskennzeichens ",
-        "comment": "Diese Extension darf nur in Verbindung mit dem Geschlechtskennzeichen `other` verwendet werden\n      und dient der Differenzierung zwischen den in Deutschland möglichen Geschlechtskennzeichen `D` (divers) und `X`(unbestimmt)",
+        "comment": "Diese Extension darf nur in Verbindung mit dem Geschlechtskennzeichen `other` verwendet werden\r\n      und dient der Differenzierung zwischen den in Deutschland möglichen Geschlechtskennzeichen `D` (divers) und `X`(unbestimmt)",
         "min": 0,
         "max": "1",
         "type": [
@@ -490,7 +490,7 @@
         "id": "Patient.birthDate",
         "path": "Patient.birthDate",
         "short": "Geburtsdatum ",
-        "comment": "Tages-, monats- oder jahresgenaues Geburtsdatum.  \n    **Begründung Pflichtfeld:** Das Geburstdatum dient - in Verbindung mit dem Namen - als wichtiges Such- und Unterscheidungskriterium.  \n    **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Geburtsdatum)",
+        "comment": "Tages-, monats- oder jahresgenaues Geburtsdatum.  \r\n    **Begründung Pflichtfeld:** Das Geburstdatum dient - in Verbindung mit dem Namen - als wichtiges Such- und Unterscheidungskriterium.  \r\n    **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Geburtsdatum)",
         "min": 1,
         "mustSupport": true
       },
@@ -572,7 +572,7 @@
         "id": "Patient.address:Strassenanschrift.type",
         "path": "Patient.address.type",
         "short": "Adresstyp",
-        "comment": "Hier ist stets der Wert `both` anzugeben.  \n    **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium",
+        "comment": "Hier ist stets der Wert `both` anzugeben.  \r\n    **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium",
         "min": 1,
         "mustSupport": true
       },
@@ -580,7 +580,7 @@
         "id": "Patient.address:Strassenanschrift.line",
         "path": "Patient.address.line",
         "short": "Adresszeile",
-        "comment": "Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, c/o \n    sowie weitere Zustellungshinweise enthalten. \n    Die Informationen können in mehrere line-Komponenten aufgeteilt werden. \n    Bei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, \n    müssen diese Informationen stets vollständig auch in der line-Komponente, \n    die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, \n    auf diese Informationen zugreifen zu können.  \n    **Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar.  \n    **Begründung für Reduktion der max. Kardinalität:** Die maximale Kardinalität wurde in Übereinstimmung mit der \n    DIN-Norm 5008 (Schreib- und Gestaltungsregeln für die Text- und Informationsverarbeitung) auf 3 beschränkt.",
+        "comment": "Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, c/o \r\n    sowie weitere Zustellungshinweise enthalten. \r\n    Die Informationen können in mehrere line-Komponenten aufgeteilt werden. \r\n    Bei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, \r\n    müssen diese Informationen stets vollständig auch in der line-Komponente, \r\n    die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, \r\n    auf diese Informationen zugreifen zu können.  \r\n    **Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar.  \r\n    **Begründung für Reduktion der max. Kardinalität:** Die maximale Kardinalität wurde in Übereinstimmung mit der \r\n    DIN-Norm 5008 (Schreib- und Gestaltungsregeln für die Text- und Informationsverarbeitung) auf 3 beschränkt.",
         "min": 1,
         "mustSupport": true
       },
@@ -589,7 +589,7 @@
         "path": "Patient.address.line.extension",
         "sliceName": "Strasse",
         "short": "Strassenname ",
-        "comment": "Strassenname (ohne Hausnummer).\n        Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Strassenname (ohne Hausnummer).\r\n        Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden,\r\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "mustSupport": true
       },
       {
@@ -597,7 +597,7 @@
         "path": "Patient.address.line.extension",
         "sliceName": "Hausnummer",
         "short": "Hausnummer ",
-        "comment": "Hausnummer, sowie Zusätze (Appartmentnummer, Etage...). \n        Bei Angabe einer Hausnummer in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.   \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Hausnummer, sowie Zusätze (Appartmentnummer, Etage...). \r\n        Bei Angabe einer Hausnummer in dieser Extension muss diese auch in Address.line angegeben werden,\r\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.   \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "mustSupport": true
       },
       {
@@ -605,7 +605,7 @@
         "path": "Patient.address.line.extension",
         "sliceName": "Adresszusatz",
         "short": "Adresszusatz ",
-        "comment": "Zusätzliche Informationen, wie z.B. '3. Etage', 'Appartment C'.\n        Bei Angabe einer Zusatzinformation in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Zusätzliche Informationen, wie z.B. '3. Etage', 'Appartment C'.\r\n        Bei Angabe einer Zusatzinformation in dieser Extension muss diese auch in Address.line angegeben werden,\r\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "mustSupport": true
       },
       {
@@ -613,7 +613,7 @@
         "path": "Patient.address.line.extension",
         "sliceName": "Postfach",
         "short": "Postfachnummer",
-        "comment": "Postfach-Adresse. Bei Angabe eines Postfaches in dieser Extension muss das Postfach auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. \n        Eine Postfach-Adresse darf nicht in Verbindung mit Address.type `physical` oder `both` verwendet werden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Postfach-Adresse. Bei Angabe eines Postfaches in dieser Extension muss das Postfach auch in Address.line angegeben werden,\r\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. \r\n        Eine Postfach-Adresse darf nicht in Verbindung mit Address.type `physical` oder `both` verwendet werden.  \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "max": "0"
       },
       {
@@ -674,7 +674,7 @@
         "id": "Patient.address:Postfach.type",
         "path": "Patient.address.type",
         "short": "Adresstyp",
-        "comment": "Hier ist stets der Wert `postal` anzugeben.  \n    **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium",
+        "comment": "Hier ist stets der Wert `postal` anzugeben.  \r\n    **Begründung Pflichtfeld:** Dient als Unterscheidungs- und Auswahlkriterium",
         "min": 1,
         "mustSupport": true
       },
@@ -682,7 +682,7 @@
         "id": "Patient.address:Postfach.line",
         "path": "Patient.address.line",
         "short": "Adresszeile",
-        "comment": "Diese Komponente enthält die Postfachadresse als String der Form 'Postfach: 12345'.\n    Bei Verwendung der Postfach-Extension, um die Postfachnummer strukturiert zu übermitteln, \n    müssen diese Informationen stets vollständig auch in der line-Komponente, \n    die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, \n    auf diese Informationen zugreifen zu können.  \n    **Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar.  \n    **Begründung für Reduktion der max. Kardinalität:** Die maximale Kardinalität wurde in Übereinstimmung mit der \n    DIN-Norm 5008 (Schreib- und Gestaltungsregeln für die Text- und Informationsverarbeitung) auf 3 beschränkt.",
+        "comment": "Diese Komponente enthält die Postfachadresse als String der Form 'Postfach: 12345'.\r\n    Bei Verwendung der Postfach-Extension, um die Postfachnummer strukturiert zu übermitteln, \r\n    müssen diese Informationen stets vollständig auch in der line-Komponente, \r\n    die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, \r\n    auf diese Informationen zugreifen zu können.  \r\n    **Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar.  \r\n    **Begründung für Reduktion der max. Kardinalität:** Die maximale Kardinalität wurde in Übereinstimmung mit der \r\n    DIN-Norm 5008 (Schreib- und Gestaltungsregeln für die Text- und Informationsverarbeitung) auf 3 beschränkt.",
         "min": 1,
         "mustSupport": true
       },
@@ -709,7 +709,7 @@
         "path": "Patient.address.line.extension",
         "sliceName": "Postfach",
         "short": "Postfachnummer",
-        "comment": "Postfach-Adresse. Bei Angabe eines Postfaches in dieser Extension muss das Postfach auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. \n        Eine Postfach-Adresse darf nicht in Verbindung mit Address.type `physical` oder `both` verwendet werden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
+        "comment": "Postfach-Adresse. Bei Angabe eines Postfaches in dieser Extension muss das Postfach auch in Address.line angegeben werden,\r\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. \r\n        Eine Postfach-Adresse darf nicht in Verbindung mit Address.type `physical` oder `both` verwendet werden.  \r\n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten.",
         "mustSupport": true
       },
       {
@@ -740,7 +740,7 @@
         "id": "Patient.link",
         "path": "Patient.link",
         "short": "Link",
-        "comment": "Dieses und untergeordnete Elemente KÖNNEN bei einem erfolgten Patient merge entsprechend der Festlegungen unter {{pagelink:Patient-merge}} befüllt werden. \n  Da das Element der Unterstützung der Patient merge Notification dient, \n  MUSS es im Rahmen des Bestätigungsverfahrens NICHT unterstützt werden (Stand: Stufe 4).",
+        "comment": "Dieses und untergeordnete Elemente KÖNNEN bei einem erfolgten Patient merge entsprechend der Festlegungen unter {{pagelink:Patient-merge}} befüllt werden. \r\n  Da das Element der Unterstützung der Patient merge Notification dient, \r\n  MUSS es im Rahmen des Bestätigungsverfahrens NICHT unterstützt werden (Stand: Stufe 4).",
         "mustSupport": true
       },
       {

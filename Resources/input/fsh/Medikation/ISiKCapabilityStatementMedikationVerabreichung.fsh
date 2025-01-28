@@ -1,18 +1,13 @@
 Instance: ISiKCapabilityStatementMedikationVerabreichung
 InstanceOf: CapabilityStatement
 Usage: #definition
-* insert Meta-CapabilityStatementVerabreichung
+* insert Meta-CapabilityStatement
+* url = "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationVerabreichung"
 * name = "ISiKCapabilityStatementMedikationVerabreichung"
 * title = "ISiK CapabilityStatement Medikation Server - Medikationsverabreichung"
-* contact.telecom.system = #url
-* contact.telecom.value = "https://www.gematik.de"
+
 * description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes System unterstützen muss um das Bestätigungsverfahren des Moduls 'Medikation', Bereich 'Medikationsverabreichung' zu bestehen."
-* jurisdiction = urn:iso:std:iso:3166#DE "Germany"
-* kind = #requirements
-* fhirVersion = #4.0.1
-* format[0] = #application/fhir+xml
-* format[+] = #application/fhir+json
-* instantiates = Canonical(ISiKCapabilityStatementMedikationVerabreichung)
+
 * rest
   * mode = #server
   * resource[0]

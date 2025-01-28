@@ -9,7 +9,7 @@
   "experimental": false,
   "date": "2024-11-25",
   "publisher": "gematik GmbH",
-  "description": "Patient Merge Subscription  \n### Motivation\n\nSubscription ist eine FHIR Ressource, um als Client-System Benachrichtigungen über Events auf dem FHIR Server anzufragen. Der Subscription Mechanismus in FHIR R4 ist nicht geeignet, um alle relevanten Events (hier im Speziellen das Mergen von Patienten) zu unterstützen. Daher basiert das ISiK Subscription-Profil auf dem [Subscriptions R5 Backport Profil von HL7](https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/StructureDefinition-backport-subscription.html).\n\nSiehe auch: {{pagelink:Patient-merge, text:Use Case Patient-merge}}\n\nUm als Subsystem über ein Patienten-Merge-Event informiert zu werden, KANN der FHIR Subscription Mechanismus gemäß des [Subscriptions R5 Backport IGs von HL7](https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/index.html) genutzt werden.\n\n### Kompatibilität\n\nDas Profil PatientMergeSubscription basiert auf dem [Backport-Subscription Profil](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription.html).  \nDer [SubscriptionStatus](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription-status-r4.html), sowie das [Subscription Notification Bundle](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription-notification-r4.html) werden unverändert direkt aus dem [Subscriptions R5 Backport IG](https://hl7.org/fhir/uv/subscriptions-backport/index.html) genutzt.  \n\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
+  "description": "Patient Merge Subscription  \r\n### Motivation\r\n\r\nSubscription ist eine FHIR Ressource, um als Client-System Benachrichtigungen über Events auf dem FHIR Server anzufragen. Der Subscription Mechanismus in FHIR R4 ist nicht geeignet, um alle relevanten Events (hier im Speziellen das Mergen von Patienten) zu unterstützen. Daher basiert das ISiK Subscription-Profil auf dem [Subscriptions R5 Backport Profil von HL7](https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/StructureDefinition-backport-subscription.html).\r\n\r\nSiehe auch: {{pagelink:Patient-merge, text:Use Case Patient-merge}}\r\n\r\nUm als Subsystem über ein Patienten-Merge-Event informiert zu werden, KANN der FHIR Subscription Mechanismus gemäß des [Subscriptions R5 Backport IGs von HL7](https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/index.html) genutzt werden.\r\n\r\n### Kompatibilität\r\n\r\nDas Profil PatientMergeSubscription basiert auf dem [Backport-Subscription Profil](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription.html).  \r\nDer [SubscriptionStatus](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription-status-r4.html), sowie das [Subscription Notification Bundle](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription-notification-r4.html) werden unverändert direkt aus dem [Subscriptions R5 Backport IG](https://hl7.org/fhir/uv/subscriptions-backport/index.html) genutzt.  \r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -22,14 +22,14 @@
         "id": "Subscription.status",
         "path": "Subscription.status",
         "short": "",
-        "comment": "**Bedeutung:** Der Status der Subscription, der den Serverstatus der Subscription angibt. \n  Neue Subscriptions werden immer mit dem Status `requested` an den Server übergeben. \n  Der Server ändert im Anschluss den Status auf `active` oder im Fehlerfall auf `error`.  \n  **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
+        "comment": "**Bedeutung:** Der Status der Subscription, der den Serverstatus der Subscription angibt. \r\n  Neue Subscriptions werden immer mit dem Status `requested` an den Server übergeben. \r\n  Der Server ändert im Anschluss den Status auf `active` oder im Fehlerfall auf `error`.  \r\n  **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
         "mustSupport": true
       },
       {
         "id": "Subscription.reason",
         "path": "Subscription.reason",
         "short": "",
-        "comment": "**Bedeutung:** Beschreibung wieso diese Subscription erstellt wurde.  \n  **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
+        "comment": "**Bedeutung:** Beschreibung wieso diese Subscription erstellt wurde.  \r\n  **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
         "mustSupport": true
       },
       {
@@ -61,14 +61,14 @@
         "id": "Subscription.channel.endpoint",
         "path": "Subscription.channel.endpoint",
         "short": "",
-        "comment": "**Bedeutung:** Adresse des Kommunikationskanals/ Endpunkts, an den Subscription-Benachrichtigungen gesendet werden sollen. Dies ist nur für rest-hook Subscriptions relevant.  \n    **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
+        "comment": "**Bedeutung:** Adresse des Kommunikationskanals/ Endpunkts, an den Subscription-Benachrichtigungen gesendet werden sollen. Dies ist nur für rest-hook Subscriptions relevant.  \r\n    **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
         "mustSupport": true
       },
       {
         "id": "Subscription.channel.payload",
         "path": "Subscription.channel.payload",
         "short": "",
-        "comment": "**Bedeutung:** Format in dem Subscription Notifications versendet werden sollen (JSON oder XML)\n    **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
+        "comment": "**Bedeutung:** Format in dem Subscription Notifications versendet werden sollen (JSON oder XML)\r\n    **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -79,7 +79,7 @@
         "id": "Subscription.channel.header",
         "path": "Subscription.channel.header",
         "short": "Falls eine REST-Enpunkt einen Authorization-Header benötigt, kann dieser hier gesetzt werden",
-        "comment": "**Bedeutung:** http-Header welcher dazu genutzt werden kann einen Authorization-header zu setzen. Dies ist nur für rest-hook Subscriptions relevant.  \n    **Hinweise:** ACHTUNG: dieses Datenfeld muss bei READ-Interaktionen maskiert werden! Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
+        "comment": "**Bedeutung:** http-Header welcher dazu genutzt werden kann einen Authorization-header zu setzen. Dies ist nur für rest-hook Subscriptions relevant.  \r\n    **Hinweise:** ACHTUNG: dieses Datenfeld muss bei READ-Interaktionen maskiert werden! Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
         "mustSupport": true
       }
     ]

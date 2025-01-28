@@ -92,7 +92,7 @@
       {
         "id": "Schedule.specialty",
         "path": "Schedule.specialty",
-        "comment": "Hinweis: Ein Kalender kann für ein Akteur gepflegt werden. Dieser Akteur kann in einer oder mehreren Fachrichtungen agieren. Für die Ressourcenplanung (z.B. welche Akteure sind für einen Termin verfügbar) sollte auch auf die Speciality des Akteurs zurückgegriffen werden für den Fall, dass ein Kalender pro Fachbereich - d.h. Akteur-übergreifend - gepflegt wird. \n  \n  Begründung Kardinalität Must-Support-Flag (MS): Die Kardinalität 1..* und das Must-Support-Flag (MS) für das 'specialty'-Element stellen sicher, dass jeder Kalender mindestens eine Fachrichtung angibt. Dies ist wichtig für die Ressourcenplanung und die Verfügbarkeit von Terminen, sodass angefragte Termine einem Fachbereich zugeordnet werden können.\n\n  Hintergrund: Die Festlegung hat in einer Expertengruppe am 4.6.2024 stattgefunden. Diese war zuvor in einer ISiK Arbeitsgruppe bekanntgegeben worden und stand damit allen Beteiligten offen. \n  ",
+        "comment": "Hinweis: Ein Kalender kann für ein Akteur gepflegt werden. Dieser Akteur kann in einer oder mehreren Fachrichtungen agieren. Für die Ressourcenplanung (z.B. welche Akteure sind für einen Termin verfügbar) sollte auch auf die Speciality des Akteurs zurückgegriffen werden für den Fall, dass ein Kalender pro Fachbereich - d.h. Akteur-übergreifend - gepflegt wird. \r\n  \r\n  Begründung Kardinalität Must-Support-Flag (MS): Die Kardinalität 1..* und das Must-Support-Flag (MS) für das 'specialty'-Element stellen sicher, dass jeder Kalender mindestens eine Fachrichtung angibt. Dies ist wichtig für die Ressourcenplanung und die Verfügbarkeit von Terminen, sodass angefragte Termine einem Fachbereich zugeordnet werden können.\r\n\r\n  Hintergrund: Die Festlegung hat in einer Expertengruppe am 4.6.2024 stattgefunden. Diese war zuvor in einer ISiK Arbeitsgruppe bekanntgegeben worden und stand damit allen Beteiligten offen. \r\n  ",
         "min": 1,
         "mustSupport": true
       },
@@ -108,7 +108,7 @@
           ],
           "rules": "open"
         },
-        "comment": "Begründung Kardinalität Fachrichtung: Die Kardinalität der Fachrichtung-Eigenschaft wird auf 1..1 festgelegt, um sicherzustellen, dass genau eine Fachrichtung per IHE-XDS-Kodierung vorhanden ist. Dies ist notwendig, um die Spezialisierung des Kalenders eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.\n  \n  Begründung Kardinalität ErweiterterFachabteilungsschluessel: Die Kardinalität der ErweiterterFachabteilungsschluessel-Eigenschaft wird auf 0..1 festgelegt, um sicherzustellen, dass optional ein erweiterter Fachabteilungsschlüssel vorhanden sein kann.",
+        "comment": "Begründung Kardinalität Fachrichtung: Die Kardinalität der Fachrichtung-Eigenschaft wird auf 1..1 festgelegt, um sicherzustellen, dass genau eine Fachrichtung per IHE-XDS-Kodierung vorhanden ist. Dies ist notwendig, um die Spezialisierung des Kalenders eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.\r\n  \r\n  Begründung Kardinalität ErweiterterFachabteilungsschluessel: Die Kardinalität der ErweiterterFachabteilungsschluessel-Eigenschaft wird auf 0..1 festgelegt, um sicherzustellen, dass optional ein erweiterter Fachabteilungsschlüssel vorhanden sein kann.",
         "min": 1,
         "mustSupport": true
       },
@@ -155,13 +155,13 @@
       {
         "id": "Schedule.actor.identifier",
         "path": "Schedule.actor.identifier",
-        "comment": "Begründung Must-Support-Flag (MS):\n  Das Must-Support-Flag (MS) für das 'identifier'-Element stellt sicher, dass Systeme in der Lage sind, einen Identifier zu unterstützen, wenn er vorhanden ist. Dies ist wichtig für die eindeutige Identifizierung und Verknüpfung von Akteuren in verschiedenen Systemen.",
+        "comment": "Begründung Must-Support-Flag (MS):\r\n  Das Must-Support-Flag (MS) für das 'identifier'-Element stellt sicher, dass Systeme in der Lage sind, einen Identifier zu unterstützen, wenn er vorhanden ist. Dies ist wichtig für die eindeutige Identifizierung und Verknüpfung von Akteuren in verschiedenen Systemen.",
         "mustSupport": true
       },
       {
         "id": "Schedule.actor.display",
         "path": "Schedule.actor.display",
-        "comment": "Hinweis und Begründung zum Must Support: Für alle Target-Ressourcen SOLL ein Displaywert für die Referenz angegeben werden, sodass Systeme eine Übersicht der am Termin beteiligten Akteure anzeigen können ohne die Referenzen auflösen zu müssen. Somit kann ein Termin-Consumer direkt anzeigen für welche Akteure ein Terminkalender existiert.\n    \n",
+        "comment": "Hinweis und Begründung zum Must Support: Für alle Target-Ressourcen SOLL ein Displaywert für die Referenz angegeben werden, sodass Systeme eine Übersicht der am Termin beteiligten Akteure anzeigen können ohne die Referenzen auflösen zu müssen. Somit kann ein Termin-Consumer direkt anzeigen für welche Akteure ein Terminkalender existiert.\r\n    \r\n",
         "mustSupport": true
       },
       {

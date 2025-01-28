@@ -130,7 +130,7 @@
       {
         "id": "Appointment.specialty",
         "path": "Appointment.specialty",
-        "comment": "Optionale Angabe aller Fachbereiche aus denen ein oder mehrere Akteure für die Durchführung des Termins benötigt werden. \n  \n  Begründung zu Kardinalität und Must Support: KANN auch anhand des Kalenders, in dem ein Termin gebucht wird, ermittelt werden.\n  Die Angabe der Fachbereiche ist optional (0..*), muss jedoch implementiert werden (MS), um die Spezialisierung hinsichtlich der zugeordneten Behandlungseinheit des Termins eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.\n  ",
+        "comment": "Optionale Angabe aller Fachbereiche aus denen ein oder mehrere Akteure für die Durchführung des Termins benötigt werden. \r\n  \r\n  Begründung zu Kardinalität und Must Support: KANN auch anhand des Kalenders, in dem ein Termin gebucht wird, ermittelt werden.\r\n  Die Angabe der Fachbereiche ist optional (0..*), muss jedoch implementiert werden (MS), um die Spezialisierung hinsichtlich der zugeordneten Behandlungseinheit des Termins eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.\r\n  ",
         "mustSupport": true
       },
       {
@@ -152,7 +152,7 @@
         "id": "Appointment.specialty.coding:Fachrichtung",
         "path": "Appointment.specialty.coding",
         "sliceName": "Fachrichtung",
-        "comment": "Begründung zur Kardinalität: Die Kardinalität der Fachrichtung-Eigenschaft wird auf 1..1 festgelegt, um sicherzustellen, dass genau eine Fachrichtung vorhanden ist. Dies ist notwendig, um die Spezialisierung des Termins eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.\n  \n  Hintergrund zur Entscheidung: Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) sowie mit der KBV abgestimmt (Stand:13.6.2024).",
+        "comment": "Begründung zur Kardinalität: Die Kardinalität der Fachrichtung-Eigenschaft wird auf 1..1 festgelegt, um sicherzustellen, dass genau eine Fachrichtung vorhanden ist. Dies ist notwendig, um die Spezialisierung des Termins eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.\r\n  \r\n  Hintergrund zur Entscheidung: Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) sowie mit der KBV abgestimmt (Stand:13.6.2024).",
         "min": 1,
         "max": "1",
         "mustSupport": true,
@@ -182,7 +182,7 @@
       {
         "id": "Appointment.priority.extension",
         "path": "Appointment.priority.extension",
-        "comment": "Hinweis: In R5 ist die Priority ein CodeableConcept. \n  \n  Begründung zu Must Support: Dieses Element ist optional (0..1), muss jedoch implementiert werden (MS), um besonders einen Notfall als solchen ausweisen zu können.",
+        "comment": "Hinweis: In R5 ist die Priority ein CodeableConcept. \r\n  \r\n  Begründung zu Must Support: Dieses Element ist optional (0..1), muss jedoch implementiert werden (MS), um besonders einen Notfall als solchen ausweisen zu können.",
         "mustSupport": true
       },
       {
@@ -230,13 +230,13 @@
       {
         "id": "Appointment.comment",
         "path": "Appointment.comment",
-        "comment": "Hinweis: Im ISiK Kontext sollte dieses Feld zur internen Kommunikation zwischen Leistungserbringern verwendet werden, z.B. für interne Notizen rund um den Termin.\n\nBegründung zum Must Support: Dieses Feld ist optional (0..1), muss jedoch implementiert werden (MS), um die Möglichkeit zu bieten, zusätzliche Informationen zum Termin zu hinterlegen und abrufen zu können. \n\nEs gilt weiterhin die Semantik des Elements nach FHIR-Kernspezifikation:\n\n'Additional text to aid in facilitating the appointment. For instance, a comment might be, 'patient should proceed immediately to infusion room upon arrival'\n\nWhere this is a planned appointment and the start/end dates are not set then this field can be used to provide additional guidance on the details of the appointment request, including any restrictions on when to book it.'",
+        "comment": "Hinweis: Im ISiK Kontext sollte dieses Feld zur internen Kommunikation zwischen Leistungserbringern verwendet werden, z.B. für interne Notizen rund um den Termin.\r\n\r\nBegründung zum Must Support: Dieses Feld ist optional (0..1), muss jedoch implementiert werden (MS), um die Möglichkeit zu bieten, zusätzliche Informationen zum Termin zu hinterlegen und abrufen zu können. \r\n\r\nEs gilt weiterhin die Semantik des Elements nach FHIR-Kernspezifikation:\r\n\r\n'Additional text to aid in facilitating the appointment. For instance, a comment might be, 'patient should proceed immediately to infusion room upon arrival'\r\n\r\nWhere this is a planned appointment and the start/end dates are not set then this field can be used to provide additional guidance on the details of the appointment request, including any restrictions on when to book it.'",
         "mustSupport": true
       },
       {
         "id": "Appointment.patientInstruction",
         "path": "Appointment.patientInstruction",
-        "comment": "Hinweis: Dieses Feld sollte im Kontext von ISIK verwendet werden für die Kommunikation im Sinne der Definition der FHIR-Kernspezifikation - sowohl von Systemseite (administrativ) als auch von Seiten des medizinischen Fachpersonals.\n\nBeispiel für eine Nachricht: 'Bitte nüchtern erscheinen' etc.\n\nBegründung zum Must Support: Dieses Feld ist optional (0..1), muss jedoch implementiert werden (MS), um die Möglichkeit zu bieten, zusätzliche Informationen für Patienten zum Termin zu hinterlegen und abrufen zu können. \n\nEs gilt weiterhin der Hinweis der FHIR Kernspezifikation:\n'Note that FHIR strings SHALL NOT exceed 1MB in size'",
+        "comment": "Hinweis: Dieses Feld sollte im Kontext von ISIK verwendet werden für die Kommunikation im Sinne der Definition der FHIR-Kernspezifikation - sowohl von Systemseite (administrativ) als auch von Seiten des medizinischen Fachpersonals.\r\n\r\nBeispiel für eine Nachricht: 'Bitte nüchtern erscheinen' etc.\r\n\r\nBegründung zum Must Support: Dieses Feld ist optional (0..1), muss jedoch implementiert werden (MS), um die Möglichkeit zu bieten, zusätzliche Informationen für Patienten zum Termin zu hinterlegen und abrufen zu können. \r\n\r\nEs gilt weiterhin der Hinweis der FHIR Kernspezifikation:\r\n'Note that FHIR strings SHALL NOT exceed 1MB in size'",
         "mustSupport": true
       },
       {
@@ -251,7 +251,7 @@
           ],
           "rules": "open"
         },
-        "comment": "Hinweis: Die Kardinalität von actor.display und das MS-Flag von .status wird an die Slices vererbt und diese sind entsprechend zu implementieren.\n\nBegründung zu Kardinalität und Must Support: Die Teilnehmer eines Termins sind von entscheidender Bedeutung, um die Verfügbarkeit und Planung des Termins zu gewährleisten. Daher muss dieses Feld unterstützt werden (MS).",
+        "comment": "Hinweis: Die Kardinalität von actor.display und das MS-Flag von .status wird an die Slices vererbt und diese sind entsprechend zu implementieren.\r\n\r\nBegründung zu Kardinalität und Must Support: Die Teilnehmer eines Termins sind von entscheidender Bedeutung, um die Verfügbarkeit und Planung des Termins zu gewährleisten. Daher muss dieses Feld unterstützt werden (MS).",
         "mustSupport": true
       },
       {
@@ -275,7 +275,7 @@
         "id": "Appointment.participant:AkteurPatient",
         "path": "Appointment.participant",
         "sliceName": "AkteurPatient",
-        "comment": "Hinweis: Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein.\n\nBegründung zu Kardinalität und Must Support: Die teilnehmenden Patienten eines Termins sind von entscheidender Bedeutung, um die Verfügbarkeit und Planung des Termins zu gewährleisten. Daher ist dieses Feld verpflichtend (1..*) und muss unterstützt werden (MS).",
+        "comment": "Hinweis: Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein.\r\n\r\nBegründung zu Kardinalität und Must Support: Die teilnehmenden Patienten eines Termins sind von entscheidender Bedeutung, um die Verfügbarkeit und Planung des Termins zu gewährleisten. Daher ist dieses Feld verpflichtend (1..*) und muss unterstützt werden (MS).",
         "min": 1,
         "max": "*",
         "mustSupport": true
@@ -302,7 +302,7 @@
         "id": "Appointment.participant:AkteurPersonImGesundheitsberuf",
         "path": "Appointment.participant",
         "sliceName": "AkteurPersonImGesundheitsberuf",
-        "comment": "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein.\n\nBegründung zu Kardinalität und Must Support: Die teilnehmenden Personen mit einem Gesundheitsberuf eines Termins sind entscheidend und müssen daher implementiert werden (MS), allerdings sind sie nicht zwingend erforderlich (0..*), da die Übernahme auch durch eine Behandlungseinheit erfolgen kann.",
+        "comment": "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein.\r\n\r\nBegründung zu Kardinalität und Must Support: Die teilnehmenden Personen mit einem Gesundheitsberuf eines Termins sind entscheidend und müssen daher implementiert werden (MS), allerdings sind sie nicht zwingend erforderlich (0..*), da die Übernahme auch durch eine Behandlungseinheit erfolgen kann.",
         "min": 0,
         "max": "*",
         "mustSupport": true

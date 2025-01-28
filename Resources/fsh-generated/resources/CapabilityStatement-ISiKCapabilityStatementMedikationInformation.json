@@ -2,16 +2,11 @@
   "resourceType": "CapabilityStatement",
   "id": "ISiKCapabilityStatementMedikationInformation",
   "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationInformation",
+  "version": "4.0.1",
   "status": "active",
   "experimental": false,
-  "version": "4.0.1",
   "publisher": "gematik GmbH",
-  "date": "2024-12-12",
-  "implementationGuide": [
-    "https://gematik.de/fhir/Medikation/ImplementationGuide/ISiK-Medikation"
-  ],
-  "name": "ISiKCapabilityStatementMedikationInformation",
-  "title": "ISiK CapabilityStatement Medikation Server - Medikationsinformation",
+  "date": "2024-11-25",
   "contact": [
     {
       "telecom": [
@@ -22,7 +17,6 @@
       ]
     }
   ],
-  "description": "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes System unterstützen muss um das Bestätigungsverfahren des Moduls 'Medikation', Bereich 'Medikationsinformation' zu bestehen.",
   "jurisdiction": [
     {
       "coding": [
@@ -40,9 +34,9 @@
     "application/fhir+xml",
     "application/fhir+json"
   ],
-  "instantiates": [
-    "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationInformation"
-  ],
+  "name": "ISiKCapabilityStatementMedikationInformation",
+  "title": "ISiK CapabilityStatement Medikation Server - Medikationsinformation",
+  "description": "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes System unterstützen muss um das Bestätigungsverfahren des Moduls 'Medikation', Bereich 'Medikationsinformation' zu bestehen.",
   "rest": [
     {
       "mode": "server",
