@@ -515,7 +515,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * description = "The actual start date of the Encounter (Backport from R5). The parameter cannot repeat or have multiple values."
 * insert MetaInstance
-* name = "Date-start"
+* name = "DateStart"
 * code = #date-start
 * base = #Encounter
 * type = #date
@@ -535,7 +535,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * description = "The actual end date of the Encounter (Backport from R5). The parameter cannot repeat or have multiple values."
 * insert MetaInstance
-* name = "End-date"
+* name = "EndDate"
 * code = #end-date
 * base = #Encounter
 * type = #date
