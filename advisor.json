@@ -9,7 +9,7 @@
     "MSG_DRAFT@Encounter.status",
     "MSG_DRAFT@Bundle.entry[4].resource/*Encounter/SZ1Vorstationaer*/.status",
     "MSG_DRAFT@Bundle.entry[5].resource/*Encounter/SZ1Stationaer*/.status",
-    "MSG_DRAFT@Bundle.entry[6].resource/*Encounter/SZ1Nachstationaer*/.status"
+    "MSG_DRAFT@Bundle.entry[6].resource/*Encounter/SZ1Nachstationaer*/.status",
     "MSG_DRAFT@Bundle.entry[3].resource/*Encounter/SZ2Encounter*/.status",
     "Terminology_TX_NoValid_3_CC@Coverage.type",
     "Terminology_TX_NoValid_3_CC@Encounter.hospitalization.admitSource",
