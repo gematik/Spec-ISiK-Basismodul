@@ -99,9 +99,21 @@ Usage: #example
 Instance: Szenario2
 InstanceOf: Bundle
 * type = #collection
-* entry[+].resource = SZ2Patient
-* entry[+].resource = SZ2Primaerdiagnose
-* entry[+].resource = SZ2Sekundaerdiagnose
-* entry[+].resource = SZ2Encounter
-* entry[+].resource = SZ2DRGFall
-* entry[+].resource = SZ2VersicherungGesetzlich 
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Patient/SZ2Patient"
+  * resource = SZ2Patient
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Condition/SZ2Primaerdiagnose"
+  * resource = SZ2Primaerdiagnose
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Condition/SZ2Sekundaerdiagnose"
+  * resource = SZ2Sekundaerdiagnose
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Encounter/SZ2Encounter"
+  * resource = SZ2Encounter
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Account/SZ2DRGFall"
+  * resource = SZ2DRGFall
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Coverage/SZ2VersicherungGesetzlich"
+  * resource = SZ2VersicherungGesetzlich
