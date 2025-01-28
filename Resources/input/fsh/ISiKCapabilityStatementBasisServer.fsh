@@ -30,6 +30,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
   
 **HISTORIE:**    
  
+*Version 4.0.2* 
 * `change` Die Verbindlichkeit des Suchparameters `subject` wurde von SHALL auf MAY reduziert, da der Suchparameter `patient` für ISiK-Zwecke ausreichend ist.   
 
 *Version 4.0.1*  
