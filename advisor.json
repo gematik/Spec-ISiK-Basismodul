@@ -30,6 +30,6 @@
     "Terminology_TX_NoValid_2_CC@Bundle.entry[3].resource/*Encounter/SZ2Encounter*/.identifier[0].type",
     "TYPE_SPECIFIC_CHECKS_DT_BASE64_NO_WS_WARNING@Binary.data",
     "Details_for__matching_against_Profile_@Bundle.entry[1]",
-    "Details_for__matching_against_Profile_@Bundle.entry[2]",
+    "Details_for__matching_against_Profile_@Bundle.entry[2]"
   ]
 }
