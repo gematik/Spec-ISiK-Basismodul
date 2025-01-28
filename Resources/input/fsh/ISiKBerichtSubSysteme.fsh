@@ -55,10 +55,10 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   Wenn es sich bei dem verwendeten Identifier um eine OID oder UUID handelt, so ist hier der Wert `urn:ietf:rfc:3986` anzugeben und in `Identifier.value` das jeweilige Präfix `urn:uuid:` bzw. `urn:oid:` zu verwenden.  
   Beispiel:
 ```xml  
-<identifier> 
-    <system value="urn:ietf:rfc:3986">  
-    <value value="urn:oid:2.16.840.1.113883.6.96"> 
-</identifier>
+&lt;identifier&gt; 
+    &lt;system value="urn:ietf:rfc:3986"&gt;  
+    &lt;value value="urn:oid:2.16.840.1.113883.6.96"&gt; 
+&lt;/identifier&gt;
 ```
 """
   * system MS
