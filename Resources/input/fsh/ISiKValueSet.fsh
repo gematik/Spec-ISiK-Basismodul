@@ -13,18 +13,15 @@ Für das Profil ISiKValueSet wurde bis zum Zeitpunkt der Veröffentlichung kein 
 Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden."
 * insert Meta
 * url 1.. MS
-  * ^short = ""
   * ^comment = "**Bedeutung:** Eindeutige Url zur Identifizierung des ValueSets. Absolute Urls sind zu bevorzugen.
 
 **Hinweise:** OIDs SOLLTEN als weitere Identifier des CodeSystems verwendet werden. In jedem Fall SOLLTE eine Canonical Url vergeben werden."
 * version 1.. MS
-  * ^short = ""
   * ^comment = "
 **Bedeutung:** Version des ValueSets
 
 **Hinweise:** Jede Änderung des dazugehörigen CodeSystems MUSS eine Änderung in der Version des CodeSystems und ValueSets nach sich ziehen."
 * name 1.. MS
-  * ^short = ""
   * ^comment = "**Bedeutung:** Maschinenlesbarer Name des ValueSets
 
 **Hinweise:** Der Constraint [vsd-0](https://www.hl7.org/fhir/R4/valueset.html#invs) ist hierbei zu beachten."
@@ -38,41 +35,31 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   beispielsweise durch Ausblenden/Durchstreichen von Ressourcen mit dem status `entered-in-error` und Ausgrauen von Ressourcen, die einen Plan- oder Entwurfs-Status haben."
 
 * useContext 1.. MS
-  * ^short = ""
   * ^comment = "**Bedeutung:** Angabe für welches Datenelement das ValueSet relevant ist
 
 **Hinweise:** Es muss mindestens ein useContext angegeben werden, in dem der Ressourcen-Typ kodiert wird, in dem das ValueSet in einem Element zur Verwendung kommt."
 * useContext.code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-  * ^short = ""
-  * ^comment = ""
+  * ^comment = "Der Code 'focus' MUSS angegeben werden, um zu kennzeichnen, dass die UsageContext-Angabe sich auf die durch das ValueSet zu kodierenden Konzepte bezieht."
 * useContext.value[x] only CodeableConcept
 * useContext.value[x] from ResourceType (required)
 * useContext.value[x] ^binding.description = "One of the resource types defined as part of this version of FHIR."
-  * ^short = ""
-  * ^comment = ""
+  * ^comment = "Angabe in welchem Ressourcen-Typ das ValueSet verwendet wird."
 * expansion 1.. MS
-  * ^short = ""
   * ^comment = "**Bedeutung:** Angabe der Konzepte aus denen sich das ValueSet zusammensetzt.
 
 **Hinweise:** Mindestens MUSS ein Code und ein Anzeigetext spezifiziert werden."
 * expansion.timestamp MS
-  * ^short = ""
-  * ^comment = ""
+  * ^comment = "Angabe zu welchem Zeitpunkt die Expansion generiert wurden ist."
 * expansion.contains 1.. MS
-  * ^short = ""
-  * ^comment = ""
+  * ^comment = "Enthält die Liste der Konzepte, die in der Expansion enthalten sind."
 * expansion.contains.system 1.. MS
-  * ^short = ""
-  * ^comment = ""
+  * ^comment = "Gibt das Codingsystem an, aus dem das Konzept stammt."
 * expansion.contains.version 1.. MS
-  * ^short = ""
-  * ^comment = ""
+  * ^comment = "Spezifiziert die Version des Codingsystems, die verwendet wurde."
 * expansion.contains.code 1.. MS
-  * ^short = ""
-  * ^comment = ""
+  * ^comment = "Der spezifische Code des Konzepts im definierten Codingsystem."
 * expansion.contains.display 1.. MS
-  * ^short = ""
-  * ^comment = ""
+  * ^comment = "Die menschlich lesbare Darstellung des Konzepts."
 
 Instance: ISiKValueSetExample
 InstanceOf: ISiKValueSet
