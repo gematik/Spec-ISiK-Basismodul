@@ -1,2 +1,4 @@
 /fhirpkg.lock.json
 .vscode/*
+scripts/__pycache__/test_update_index.cpython-311.pyc
+scripts/__pycache__/update_index.cpython-311.pyc
