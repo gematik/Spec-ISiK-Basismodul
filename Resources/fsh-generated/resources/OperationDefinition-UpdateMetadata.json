@@ -1,16 +1,13 @@
 {
   "resourceType": "OperationDefinition",
   "id": "UpdateMetadata",
-  "status": "active",
-  "publisher": "gematik GmbH",
-  "date": "2024-12-05",
   "url": "https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata",
   "title": "Update document metadata",
   "kind": "operation",
   "name": "Update-metadata",
   "description": "Update selected, uncritical document metadata in a safe and controlled manner without having to replace the whole document",
   "code": "update-metadata",
-  "comment": "\n    Expected behaviour:\n* Servers SHALL update the DocumentReference.docStatus with the submitted values\n* Servers SHALL ensure that DocumentReference.text reflects this change\n",
+  "comment": "\r\n    Expected behaviour:\r\n* Servers SHALL update the DocumentReference.docStatus with the submitted values\r\n* Servers SHALL ensure that DocumentReference.text reflects this change\r\n",
   "resource": [
     "DocumentReference"
   ],

@@ -22,7 +22,7 @@
         "id": "RiskAssessment.extension",
         "path": "RiskAssessment.extension",
         "short": "akzeptiertes (in Kauf genommenes) Risiko",
-        "comment": "Begründung des Must-Support: Die Möglichkeit der freitextlichen Dokumentation dieser Daten wurde von der Fachseite (AG) gewünscht.\n\n  Hinweis: Hier kann die Begründung und ggf. erforderliche Begleitmaßnahmen für ein in Kauf genommenes Risiko dokumentiert werden.",
+        "comment": "Begründung des Must-Support: Die Möglichkeit der freitextlichen Dokumentation dieser Daten wurde von der Fachseite (AG) gewünscht.\r\n\r\n  Hinweis: Hier kann die Begründung und ggf. erforderliche Begleitmaßnahmen für ein in Kauf genommenes Risiko dokumentiert werden.",
         "mustSupport": true
       },
       {
@@ -44,14 +44,14 @@
       {
         "id": "RiskAssessment.status",
         "path": "RiskAssessment.status",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe des Status ist im Standard vorgeschrieben.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe des Status ist im Standard vorgeschrieben.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       },
       {
         "id": "RiskAssessment.code",
         "path": "RiskAssessment.code",
         "short": "Art der Risikobeurteilung",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Es handelt sich um eine Grundinformation zur Risikobewertung.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Es handelt sich um eine Grundinformation zur Risikobewertung.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       },
       {
@@ -85,7 +85,7 @@
         "id": "RiskAssessment.subject",
         "path": "RiskAssessment.subject",
         "short": "Referenz auf den Patienten",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Eine Risikobewertung muss sich immer auf ein Subjekt (hier: Patient) beziehen.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Eine Risikobewertung muss sich immer auf ein Subjekt (hier: Patient) beziehen.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "type": [
           {
             "code": "Reference",
@@ -106,7 +106,7 @@
         "id": "RiskAssessment.encounter",
         "path": "RiskAssessment.encounter",
         "short": "Referenz auf den Abteilungskontakt",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Der Encounter liefert den Kontext zur Risikobeurteilung.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Der Encounter liefert den Kontext zur Risikobeurteilung.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       },
       {
@@ -129,14 +129,14 @@
           "rules": "open"
         },
         "short": "Zeitpunkt oder Zeitraum der Beurteilung",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe des Zeitpunkts oder Zeitraums ist essentiell für die Nachvollziehbarkeit.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe des Zeitpunkts oder Zeitraums ist essentiell für die Nachvollziehbarkeit.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       },
       {
         "id": "RiskAssessment.occurrence[x]:occurrenceDateTime",
         "path": "RiskAssessment.occurrence[x]",
         "sliceName": "occurrenceDateTime",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe des Zeitpunkts ist essentiell für die Nachvollziehbarkeit.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe des Zeitpunkts ist essentiell für die Nachvollziehbarkeit.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "min": 0,
         "max": "1",
         "type": [
@@ -150,7 +150,7 @@
         "id": "RiskAssessment.occurrence[x]:occurrencePeriod",
         "path": "RiskAssessment.occurrence[x]",
         "sliceName": "occurrencePeriod",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe des Zeitraums ist essentiell für die Nachvollziehbarkeit.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe des Zeitraums ist essentiell für die Nachvollziehbarkeit.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "min": 0,
         "max": "1",
         "type": [
@@ -164,7 +164,7 @@
         "id": "RiskAssessment.condition",
         "path": "RiskAssessment.condition",
         "short": "Bezugsdiagnose (Referenz)",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Bezugsdiagnose ist eine relevante Hintergrundinformation.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Bezugsdiagnose ist eine relevante Hintergrundinformation.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       },
       {
@@ -177,7 +177,7 @@
         "id": "RiskAssessment.reasonCode",
         "path": "RiskAssessment.reasonCode",
         "short": "Grund der Risikobewertung (codiert)",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe einer Begründung ist fachlich üblich und angebracht.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe einer Begründung ist fachlich üblich und angebracht.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       },
       {
@@ -211,7 +211,7 @@
         "id": "RiskAssessment.reasonReference",
         "path": "RiskAssessment.reasonReference",
         "short": "Grund der Risikobewertung (Referenz)",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe einer Begründung ist fachlich üblich und angebracht.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Angabe einer Begründung ist fachlich üblich und angebracht.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       },
       {
@@ -224,7 +224,7 @@
         "id": "RiskAssessment.basis",
         "path": "RiskAssessment.basis",
         "short": "Entscheidungsgrundlagen der Risikobewertung (Referenz)",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Referenz zu den Grundlagen der Beurteilung ermöglicht die Transparenz der Beurteilungs-Findung.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Referenz zu den Grundlagen der Beurteilung ermöglicht die Transparenz der Beurteilungs-Findung.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       },
       {
@@ -236,14 +236,14 @@
       {
         "id": "RiskAssessment.prediction",
         "path": "RiskAssessment.prediction",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Angaben über Outcome und Größe des Risikos.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Angaben über Outcome und Größe des Risikos.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       },
       {
         "id": "RiskAssessment.prediction.outcome",
         "path": "RiskAssessment.prediction.outcome",
         "short": "Mögliches Outcome für den Patienten",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Das erwartete Outcome ist eine Kerninformation der Risikobeurteilung.\n\n    Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Das erwartete Outcome ist eine Kerninformation der Risikobeurteilung.\r\n\r\n    Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       },
       {
@@ -277,7 +277,7 @@
         "id": "RiskAssessment.prediction.qualitativeRisk",
         "path": "RiskAssessment.prediction.qualitativeRisk",
         "short": "Risikowahrscheinlichkeit (qualitativ, codiert)",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Risikowahrscheinlichkeit ist eine Kerninformation der Risikobeurteilung.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Die Risikowahrscheinlichkeit ist eine Kerninformation der Risikobeurteilung.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
@@ -315,14 +315,14 @@
         "id": "RiskAssessment.mitigation",
         "path": "RiskAssessment.mitigation",
         "short": "Hinweis zur Risikovermeidung",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): Hinweise zur Risikovermeidung sind eine Kerninformation der Risikobeurteilung.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): Hinweise zur Risikovermeidung sind eine Kerninformation der Risikobeurteilung.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       },
       {
         "id": "RiskAssessment.note",
         "path": "RiskAssessment.note",
         "short": "Anmerkung zur Risikobewertung",
-        "comment": "Begründung des Must-Support-Support-Flag (MS): freitextliche Anmerkungen sind fachlich üblich und gewünscht.\n\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
+        "comment": "Begründung des Must-Support-Support-Flag (MS): freitextliche Anmerkungen sind fachlich üblich und gewünscht.\r\n\r\n  Hintergrund: Das MS wurde im Rahmen der Ausarbeitung zur Stufe 4 des ISiK Moduls Medikation hinzugefügt und mit den Stakeholdern abgestimmt. ",
         "mustSupport": true
       }
     ]

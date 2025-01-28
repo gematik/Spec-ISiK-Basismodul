@@ -1,8 +1,8 @@
 Instance: ISiKCapabilityStatementTerminplanungServer
 InstanceOf: CapabilityStatement
 Usage: #definition
-* insert MetaInstance
 * insert Meta-CapabilityStatement
+* url = "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementTerminplanungServer"
 * name = "ISiKCapabilityStatementTerminplanungServer"
 * title = "ISiK CapabilityStatement Terminplanung Server"
 * contact.telecom.system = #url

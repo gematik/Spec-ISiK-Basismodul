@@ -1,18 +1,13 @@
 Instance: ISiKCapabilityStatementAMTS
 InstanceOf: CapabilityStatement
 Usage: #definition
-* insert Meta-CapabilityStatementAMTS
+* insert Meta-CapabilityStatement
+* url = "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationAMTS"
 * name = "ISiKCapabilityStatementAMTS"
 * title = "ISiK CapabilityStatement AMTS Server"
-* contact.telecom.system = #url
-* contact.telecom.value = "https://www.gematik.de"
+
 * description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes System unterstützen muss um das Bestätigungsverfahren des Moduls 'Medikation', Bereich 'AMTS' zu bestehen."
-* jurisdiction = urn:iso:std:iso:3166#DE "Germany"
-* kind = #requirements
-* fhirVersion = #4.0.1
-* format[+] = #application/fhir+xml
-* format[+] = #application/fhir+json
-* instantiates = Canonical(ISiKCapabilityStatementAMTS)
+
 * rest
   * mode = #server
   * resource[+]

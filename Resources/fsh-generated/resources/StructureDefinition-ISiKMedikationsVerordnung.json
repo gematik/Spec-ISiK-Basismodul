@@ -27,7 +27,7 @@
         "path": "MedicationRequest.extension",
         "sliceName": "acceptedRisk",
         "short": "akzeptiertes (in Kauf genommenes) Risiko",
-        "comment": "Begründung des Must-Support: Folgeinformation der AMTS-Bewertung, sollte auch an nachfolgende Behandelnde übermittelbar sein\n\n  Hinweis: Hier kann ein im Rahmen der Medikation festgestelltes, aber in Kauf genommenes Risiko dokumentiert werden, speziell auch die Begründung und ggf. erforderliche Begleitmaßnahmen.",
+        "comment": "Begründung des Must-Support: Folgeinformation der AMTS-Bewertung, sollte auch an nachfolgende Behandelnde übermittelbar sein\r\n\r\n  Hinweis: Hier kann ein im Rahmen der Medikation festgestelltes, aber in Kauf genommenes Risiko dokumentiert werden, speziell auch die Begründung und ggf. erforderliche Begleitmaßnahmen.",
         "min": 0,
         "max": "1",
         "type": [
@@ -50,7 +50,7 @@
         "path": "MedicationRequest.extension",
         "sliceName": "medikationsart",
         "short": "Therapieart der Medikation",
-        "comment": "Begründung des Must-Support: von der Fachseite gewünschte Angabe\n\n  Hinweis: Angabe Akut- oder Dauermedikation.",
+        "comment": "Begründung des Must-Support: von der Fachseite gewünschte Angabe\r\n\r\n  Hinweis: Angabe Akut- oder Dauermedikation.",
         "min": 0,
         "max": "1",
         "type": [
@@ -83,7 +83,7 @@
         "path": "MedicationRequest.extension",
         "sliceName": "behandlungsziel",
         "short": "Behandlungsziel (textuell)",
-        "comment": "Begründung des Must-Support: von der Fachseite gewünschte Angabe\n\n  Hinweis: Freitext-Beschreibung des Behandlungsziels.",
+        "comment": "Begründung des Must-Support: von der Fachseite gewünschte Angabe\r\n\r\n  Hinweis: Freitext-Beschreibung des Behandlungsziels.",
         "min": 0,
         "max": "1",
         "type": [
@@ -106,7 +106,7 @@
         "path": "MedicationRequest.extension",
         "sliceName": "medicationRequestReplaces",
         "short": "Welche Medikationsverordnung wird ersetzt?",
-        "comment": "Begründung des Must-Support: historische Nachvollziehbarkeit\n\n  Hinweis: FWelche Medikationsverordnung wird ersetzt?",
+        "comment": "Begründung des Must-Support: historische Nachvollziehbarkeit\r\n\r\n  Hinweis: FWelche Medikationsverordnung wird ersetzt?",
         "min": 0,
         "max": "1",
         "type": [
@@ -140,7 +140,7 @@
         "id": "MedicationRequest.intent",
         "path": "MedicationRequest.intent",
         "short": "Ziel der Verordnungsinformation",
-        "comment": "Begründung des Must-Support: Erforderliche Angabe im FHIR-Standard\n\n  Hinweis: i.d.R. 'order'",
+        "comment": "Begründung des Must-Support: Erforderliche Angabe im FHIR-Standard\r\n\r\n  Hinweis: i.d.R. 'order'",
         "mustSupport": true
       },
       {
@@ -168,7 +168,7 @@
         "path": "MedicationRequest.medication[x]",
         "sliceName": "medicationCodeableConcept",
         "short": "Medikament in codierter Form oder ggf. als Freitext",
-        "comment": "Begründung des Must-Support: Basisinformation\n\n  Hinweis: kann verwendet werden, wenn keine detaillierten Informationen zum Medikament (z.B. Rezepturen) existieren.",
+        "comment": "Begründung des Must-Support: Basisinformation\r\n\r\n  Hinweis: kann verwendet werden, wenn keine detaillierten Informationen zum Medikament (z.B. Rezepturen) existieren.",
         "min": 0,
         "max": "1",
         "type": [
@@ -259,7 +259,7 @@
         "path": "MedicationRequest.medication[x]",
         "sliceName": "medicationReference",
         "short": "Referenz auf das Medikament (Medication-Ressource)",
-        "comment": "Begründung des Must-Support: Basisinformation\n\n  Hinweis: wird verwendet, wenn detaillierte Informationen zum Medikament vorliegen",
+        "comment": "Begründung des Must-Support: Basisinformation\r\n\r\n  Hinweis: wird verwendet, wenn detaillierte Informationen zum Medikament vorliegen",
         "min": 0,
         "max": "1",
         "type": [

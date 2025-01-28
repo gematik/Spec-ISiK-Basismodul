@@ -1,0 +1,290 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "ISiKAkteurMinimaleStammdatenVerwaltungOptionErweiterteSuche",
+  "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKAkteurMinimaleStammdatenVerwaltungOptionErweiterteSuche",
+  "version": "4.0.1",
+  "status": "active",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.gematik.de"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "DE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Germany"
+        }
+      ]
+    }
+  ],
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "application/fhir+xml",
+    "application/fhir+json"
+  ],
+  "name": "ISiKAkteurMinimaleStammdatenVerwaltungOptionErweiterteSuche",
+  "title": "Option &quot;Erweiterte Suche&quot; für Akteur &quot;Minimale Stammdaten-Verwaltung&quot;",
+  "implementationGuide": [
+    "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Basismodul"
+  ],
+  "imports": [
+    "https://gematik.de/fhir/isik/CapabilityStatement/ISiKAkteurMinimaleStammdatenVerwaltung"
+  ],
+  "description": "Dieses CapabilityStatement beschreibt alle *zusätzlichen* Interaktionen, \r\n  die ein System unterstützen MUSS, das den Akteur &quot;Minimale Stammdaten-Verwaltung&quot; mit der Option &quot;Erweiterte Suche&quot; implementiert.   \r\n\r\n  Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine CapabilityStatement-Ressource bereitstellen.\r\nHierzu MUSS die [capabilities-Interaktion gemäß FHIR-Kernspezifikation](https://hl7.org/fhir/R4/http.html#capabilities) unterstützt werden. \r\nDer `MODE`-Parameter kann ignoriert werden.  \r\nDas CapabilityStatement in dieser Spezifikation stellt die Anforderungen seitens der gematik dar (`kind = requirements`). \r\nZur Unterscheidung von Anforderungen, die erfüllt werden MÜSSEN gegenüber jenen, die erfüllt werden KÖNNEN, \r\nwird die [CapabilityStatement-Expectation-Extension](https://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html) mit den möglichen Werten `SHALL` (=MUSS) und `MAY` (=KANN) verwendet.  \r\n\r\nEine Server-Instanz MUSS ihrerseits ein CapabilityStatement vom `kind = instance` liefern und im Element `software` den Namen \r\nund die Versionsnummer angeben. \r\nDarüber hinaus MUSS in `CapabilityStatement.instantiates` die Canonical URL des nachfolgenden CapabilityStatements angegeben werden.  \r\n\r\nDas CapabilityStatement der Instanz MUSS alle Funktionalitäten auflisten, die im folgenden CapabilityStatement mit `SHALL` gekennzeichnet sind. \r\nDas CapabilityStatement KANN darüber hinaus die mit `MAY` gekennzeichneten Funktionalitäten, sowie weitere Funktionalitäten auflisten, \r\nsofern diese in der Instanz implementiert wurden.  \r\n\r\nDie Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich.",
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "type": "Patient",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "supportedProfile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient"
+          ],
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/Patient-name",
+              "type": "string",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/Patient?name=Erika`    \r\n        `GET [base]/Patient?name=Erika`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#string).  "
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "address",
+              "definition": "http://hl7.org/fhir/SearchParameter/individual-address",
+              "type": "string",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/Patient?address=Berlin`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#string).  \r\n        Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "address-city",
+              "definition": "http://hl7.org/fhir/SearchParameter/individual-address-city",
+              "type": "string",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/Patient?address-city=Berlin`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#string).  \r\n        Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "address-country",
+              "definition": "http://hl7.org/fhir/SearchParameter/individual-address-country",
+              "type": "string",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/Patient?address-country=DE`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#string).  \r\n        Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "address-postalcode",
+              "definition": "http://hl7.org/fhir/SearchParameter/individual-address-postalcode",
+              "type": "string",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/Patient?address-postalcode=10117`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#string).  \r\n        Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "active",
+              "definition": "http://hl7.org/fhir/SearchParameter/Patient-active",
+              "type": "token",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/Patient?active=true`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#token).  \r\n        Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "telecom",
+              "definition": "http://hl7.org/fhir/SearchParameter/individual-telecom",
+              "type": "token",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/Patient?telecom=phone|+49152236898`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#token).  \r\n        Dieser Suchparameter ist für die Umsetzung des IHE PDQm Profils verpflichtend."
+            }
+          ],
+          "searchRevInclude": [
+            "Encounter:patient",
+            "Encounter:subject"
+          ],
+          "_searchRevInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Encounter",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "supportedProfile": [
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung"
+          ],
+          "interaction": [
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "location",
+              "definition": "http://hl7.org/fhir/SearchParameter/Encounter-location",
+              "type": "reference",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/Encounter?location=Location/test`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "service-provider",
+              "definition": "http://hl7.org/fhir/SearchParameter/Encounter-service-provider",
+              "type": "reference",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/Encounter?service-provider=Organization/test`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
+            }
+          ],
+          "searchInclude": [
+            "Encounter:subject",
+            "Encounter:part-of",
+            "Encounter:diagnosis",
+            "Encounter:account"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchRevInclude": [
+            "Encounter:part-of"
+          ],
+          "_searchRevInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

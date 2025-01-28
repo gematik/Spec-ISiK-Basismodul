@@ -8,7 +8,7 @@
   "experimental": false,
   "date": "2024-11-25",
   "publisher": "gematik GmbH",
-  "description": "Dieses Profil ermöglicht die krankenhaus-interne Übermittlung eines Berichtes bestehend aus beliebien strukturierten FHIR-Ressourcen \nsowie einer textuellen HTML-Repräsentation (Narrative) an einen ISiK-Basis-kompatiblen Server.\n### Motivation\nIn der heterogenen Systemlandschaft im Krankenhaus sind eine Vielzahl spezialisierter Subsysteme im Einsatz. Die Ergebnisse aus diesen Subsystemen sind aktuell jedoch häufig nicht in den Primärsystemen des Krankenhauses verfügbar, denn es bestehen folgende Herausforderungen:\n\nDie Daten in Subsystemen sind sehr heterogen und können hochspezialisiert sein.\nBei der Nutzung dieser Subsysteme besteht häufig ein Interesse, auf die menschenlesbare Repräsentation der strukturierten Daten einwirken zu können.\nKünftig ist mit Szenarien zu rechnen, bei denen Befunde aus Subsystemen in eine elektronische Patientenakte übertragen werden sollen.\nAktuell werden Befunde, obwohl diese in den Subsystemen in hochstrukturierter Form vorliegen, nur als PDF an das Primärsystem übermittelt. Oft weil kein strukturiertes Format spezifiziert ist, das sowohl versendendes Subsystem als auch empfangendes Primärsystem implementiert haben.\nDer Umfang, in dem eine Datenübernahme in ein Primärsystem möglich ist, variiert stark zwischen den Systemen oder Installationen, z.B. abhängig davon, ob ein Modul für Vitalparameter installiert ist.\nDie ISiK-Spezifikation begegnet diesen Herausforderungen, indem sie die Übermittlung von Ergebnissen aus Subsystemen an die Primärsysteme in Form von strukturierten Dokumenten erfordert, die über eine menschenlesbare Repräsentation verfügen. Diese strukturierten Dokumente werden im ISiK-Kontext als Berichte bezeichnet. Dabei sind die strukturierten Inhalte der Berichte harmonisiert mit den verbreiteten Formaten für Primärsysteme.\n\n(Semi-)Strukturierte Dokumente werden in FHIR mit der `Composition`-Ressource repräsentiert, \ndie die Dokumentenmetadaten sowie die textuelle Repräsentation des Dokumentes enthält.\nDie Composition referenziert auf beliebige weiter FHIR-Ressourcen, die die strukturierten Komponenten des Dokumentes darstellen.\n\nFür den Transport wird die Composition zusammen mit allen direkt oder indirekt referenzierten Ressourcen in eine `Bundle`-Ressource\n vom Typ `document` aggregiert. \nDas Document-Bundle trägt alle Eigenschaften eines Dokumentes: Abgeschlossenheit, Unveränderbarkeit, Signierbarkeit.  \n\nEs obliegt dem empfangenden System, ob dieses Dokument lediglich in seiner Gesamtheit persistiert wird, oder ob darüber hinaus einzelne Bestandteile (Ressourcen) \nals strukturierte Daten automatisch oder auf Veranlassung eines Benutzers in die Patientenakte übernommen werden. \n\nIn der aktuellen Ausbaustufe von ISiK ist lediglich die Übernahme und Anzeige der Dokument-Metadaten (z.B. Dokumenttyp, Dokumentdatum, Quelle) und der menschenlesbaren HTML-Repräsentation in die Primärsysteme erforderlich.  \n\nIn weiteren Ausbaustufen von ISiK soll darüber hinaus eine Übernahme der strukturierten Anteile der Dokumente möglich sein, die den ISiK-Spezifikationen entsprechen, z.B. Diagnosen und Prozeduren.  \n\n### Kompatibilität  \nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
+  "description": "Dieses Profil ermöglicht die krankenhaus-interne Übermittlung eines Berichtes bestehend aus beliebien strukturierten FHIR-Ressourcen \r\nsowie einer textuellen HTML-Repräsentation (Narrative) an einen ISiK-Basis-kompatiblen Server.\r\n### Motivation\r\nIn der heterogenen Systemlandschaft im Krankenhaus sind eine Vielzahl spezialisierter Subsysteme im Einsatz. Die Ergebnisse aus diesen Subsystemen sind aktuell jedoch häufig nicht in den Primärsystemen des Krankenhauses verfügbar, denn es bestehen folgende Herausforderungen:\r\n\r\nDie Daten in Subsystemen sind sehr heterogen und können hochspezialisiert sein.\r\nBei der Nutzung dieser Subsysteme besteht häufig ein Interesse, auf die menschenlesbare Repräsentation der strukturierten Daten einwirken zu können.\r\nKünftig ist mit Szenarien zu rechnen, bei denen Befunde aus Subsystemen in eine elektronische Patientenakte übertragen werden sollen.\r\nAktuell werden Befunde, obwohl diese in den Subsystemen in hochstrukturierter Form vorliegen, nur als PDF an das Primärsystem übermittelt. Oft weil kein strukturiertes Format spezifiziert ist, das sowohl versendendes Subsystem als auch empfangendes Primärsystem implementiert haben.\r\nDer Umfang, in dem eine Datenübernahme in ein Primärsystem möglich ist, variiert stark zwischen den Systemen oder Installationen, z.B. abhängig davon, ob ein Modul für Vitalparameter installiert ist.\r\nDie ISiK-Spezifikation begegnet diesen Herausforderungen, indem sie die Übermittlung von Ergebnissen aus Subsystemen an die Primärsysteme in Form von strukturierten Dokumenten erfordert, die über eine menschenlesbare Repräsentation verfügen. Diese strukturierten Dokumente werden im ISiK-Kontext als Berichte bezeichnet. Dabei sind die strukturierten Inhalte der Berichte harmonisiert mit den verbreiteten Formaten für Primärsysteme.\r\n\r\n(Semi-)Strukturierte Dokumente werden in FHIR mit der `Composition`-Ressource repräsentiert, \r\ndie die Dokumentenmetadaten sowie die textuelle Repräsentation des Dokumentes enthält.\r\nDie Composition referenziert auf beliebige weiter FHIR-Ressourcen, die die strukturierten Komponenten des Dokumentes darstellen.\r\n\r\nFür den Transport wird die Composition zusammen mit allen direkt oder indirekt referenzierten Ressourcen in eine `Bundle`-Ressource\r\n vom Typ `document` aggregiert. \r\nDas Document-Bundle trägt alle Eigenschaften eines Dokumentes: Abgeschlossenheit, Unveränderbarkeit, Signierbarkeit.  \r\n\r\nEs obliegt dem empfangenden System, ob dieses Dokument lediglich in seiner Gesamtheit persistiert wird, oder ob darüber hinaus einzelne Bestandteile (Ressourcen) \r\nals strukturierte Daten automatisch oder auf Veranlassung eines Benutzers in die Patientenakte übernommen werden. \r\n\r\nIn der aktuellen Ausbaustufe von ISiK ist lediglich die Übernahme und Anzeige der Dokument-Metadaten (z.B. Dokumenttyp, Dokumentdatum, Quelle) und der menschenlesbaren HTML-Repräsentation in die Primärsysteme erforderlich.  \r\n\r\nIn weiteren Ausbaustufen von ISiK soll darüber hinaus eine Übernahme der strukturierten Anteile der Dokumente möglich sein, die den ISiK-Spezifikationen entsprechen, z.B. Diagnosen und Prozeduren.  \r\n\r\n### Kompatibilität  \r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -21,7 +21,7 @@
         "id": "Composition.text",
         "path": "Composition.text",
         "short": "Narrativ",
-        "comment": "HTML-Repräsentation des Dokumenten-Headers.   \n    Bitte Hinweise unter [Document Presentation](https://hl7.org/fhir/documents.html#presentation) beachten.  \n    Der DokumentenHeader muss mindestens die folgenden Informationen enthalten:\n* `Composition.subject:Patient.name.family`\n* `Composition.subject:Patient.birthDate`\n* `Composition.subject:Patient.identifier:pid`\n* `Composition.status`\n* `Composition.type.text`\n* `Composition.date`\n* `Composition.title`\n* `Composition.author.display`",
+        "comment": "HTML-Repräsentation des Dokumenten-Headers.   \r\n    Bitte Hinweise unter [Document Presentation](https://hl7.org/fhir/documents.html#presentation) beachten.  \r\n    Der DokumentenHeader muss mindestens die folgenden Informationen enthalten:\r\n* `Composition.subject:Patient.name.family`\r\n* `Composition.subject:Patient.birthDate`\r\n* `Composition.subject:Patient.identifier:pid`\r\n* `Composition.status`\r\n* `Composition.type.text`\r\n* `Composition.date`\r\n* `Composition.title`\r\n* `Composition.author.display`",
         "min": 1,
         "mustSupport": true
       },
@@ -48,20 +48,20 @@
         "id": "Composition.identifier.system",
         "path": "Composition.identifier.system",
         "short": "Namensraum des Identifiers",
-        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \n    aus dem der Identifier stammt. \n    Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \n    [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
+        "comment": "Hier ist stets der eindeutige Name (URL) des Namensraums anzugeben, \r\n    aus dem der Identifier stammt. \r\n    Hinweise zur Festlegung der URLs für lokale Namensräume sind in den \r\n    [Deutschen Basisprofilen](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Terminologie-Namensraeume?version=current) beschrieben.  \r\n    **Begründung Pflichtfeld:** `system` stellt in Kombination mit `value` die Eindeutigkeit eines Identifiers sicher.",
         "mustSupport": true
       },
       {
         "id": "Composition.identifier.value",
         "path": "Composition.identifier.value",
-        "comment": "Enthält den eigentlichen Wert des Identifiers.  \n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
+        "comment": "Enthält den eigentlichen Wert des Identifiers.  \r\n    **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden.",
         "mustSupport": true
       },
       {
         "id": "Composition.status",
         "path": "Composition.status",
         "short": " Status des Dokumentes",
-        "comment": "Im Kontext diese Moduls ist nur der Austausch finaler Berichte vorgesehen. \n  Ein Mechanismus zur Änderung oder Ersetzung bereits übermittelter Daten ist derzeit nicht spezifiziert. \n  Hier ist stets der Wert `final` anzugeben.",
+        "comment": "Im Kontext diese Moduls ist nur der Austausch finaler Berichte vorgesehen. \r\n  Ein Mechanismus zur Änderung oder Ersetzung bereits übermittelter Daten ist derzeit nicht spezifiziert. \r\n  Hier ist stets der Wert `final` anzugeben.",
         "fixedCode": "final",
         "mustSupport": true
       },
@@ -69,7 +69,7 @@
         "id": "Composition.type",
         "path": "Composition.type",
         "short": "Dokumenttyp",
-        "comment": "Das Dokument KANN z.B. mittels LOINC, KDL oder IHE-D-XDS-Typecodes klassifiziert werden.  \n  Derzeit MUSS lediglich eine textuelle Beschreibung des Dokumenttyps angegeben werden.",
+        "comment": "Das Dokument KANN z.B. mittels LOINC, KDL oder IHE-D-XDS-Typecodes klassifiziert werden.  \r\n  Derzeit MUSS lediglich eine textuelle Beschreibung des Dokumenttyps angegeben werden.",
         "mustSupport": true
       },
       {
@@ -241,7 +241,7 @@
         "id": "Composition.subject.reference",
         "path": "Composition.subject.reference",
         "short": "Patienten-Link",
-        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung des Dokumentes zu einem Patienten \n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
+        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung des Dokumentes zu einem Patienten \r\n  und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.",
         "min": 1,
         "mustSupport": true
       },
@@ -255,7 +255,7 @@
         "id": "Composition.encounter.reference",
         "path": "Composition.encounter.reference",
         "short": "Encounter-Link",
-        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt \n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.    \n    **WICHTIGER Hinweis für Implementierer:** Die Zuordnung MUSS auf auf einen Encounter der Ebene &quot;Abteilungskontakt&quot; (siehe hierzu {{pagelink:Fall}}) erfolgen. \n    Bei der Auswahl des Encounters ist zu beachten, dass unter einer (Abrechnungs-)&quot;Fallnummer&quot; (hier: `Encounter.account`) \n    unter Umständen mehrere Encounter gruppiert sein können (z.B. stationärer Besuch mit mehreren vor- und nachstationären Aufenthalten.)",
+        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt \r\n    und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.    \r\n    **WICHTIGER Hinweis für Implementierer:** Die Zuordnung MUSS auf auf einen Encounter der Ebene &quot;Abteilungskontakt&quot; (siehe hierzu {{pagelink:Fall}}) erfolgen. \r\n    Bei der Auswahl des Encounters ist zu beachten, dass unter einer (Abrechnungs-)&quot;Fallnummer&quot; (hier: `Encounter.account`) \r\n    unter Umständen mehrere Encounter gruppiert sein können (z.B. stationärer Besuch mit mehreren vor- und nachstationären Aufenthalten.)",
         "min": 1,
         "mustSupport": true
       },
@@ -270,7 +270,7 @@
         "id": "Composition.author",
         "path": "Composition.author",
         "short": "Verfasser/Ersteller des Dokumentes (Person oder Subsystem/Gerät)",
-        "comment": "In der aktuellen Ausbaustufe von ISiK ist die Verwendung der textuellen Repräsentation (display) \n  von Autor und Subsystem ausreichend. \n  Die darüber hinausgehende Verlinkung auf Practitioner bzw. Device-Ressourcen \n  KANN implementiert werden.",
+        "comment": "In der aktuellen Ausbaustufe von ISiK ist die Verwendung der textuellen Repräsentation (display) \r\n  von Autor und Subsystem ausreichend. \r\n  Die darüber hinausgehende Verlinkung auf Practitioner bzw. Device-Ressourcen \r\n  KANN implementiert werden.",
         "type": [
           {
             "code": "Reference",
@@ -298,7 +298,7 @@
         "id": "Composition.title",
         "path": "Composition.title",
         "short": "Dokumentenbezeichnung",
-        "comment": "Die Dokumentenbezeichnung dient der Darstellung des Dokumentes in einer Übersicht, \n  z.B. in einer Patientenakte, und KANN der schnellen Auffindbarkeit \n  eines gesuchten Dokumentes dienen. \n  Geeignete Bezeichnungen sind zum Beispiel:  \n* &quot;Kleines Blutbild vom 13.10.2020&quot;\n* &quot;Pathologiebefund (Abstrich) vom 13.10.2020&quot;\n* &quot;Blutgasmessung vom 13.10.2020 14:14h&quot;",
+        "comment": "Die Dokumentenbezeichnung dient der Darstellung des Dokumentes in einer Übersicht, \r\n  z.B. in einer Patientenakte, und KANN der schnellen Auffindbarkeit \r\n  eines gesuchten Dokumentes dienen. \r\n  Geeignete Bezeichnungen sind zum Beispiel:  \r\n* &quot;Kleines Blutbild vom 13.10.2020&quot;\r\n* &quot;Pathologiebefund (Abstrich) vom 13.10.2020&quot;\r\n* &quot;Blutgasmessung vom 13.10.2020 14:14h&quot;",
         "mustSupport": true
       },
       {
@@ -320,7 +320,7 @@
         "id": "Composition.section.text",
         "path": "Composition.section.text",
         "short": "Narrativ",
-        "comment": "menschenlesbare HTML-Repräsentation des Inhalts dieses Kapitels.  \n    Hinweise: Für Aggregation einer vollständigen menschenlesbaren Repräsentation \n    MÜSSEN die Repräsentationen der einzelnen Kapitel an die Repräsentation \n    der Metadaten (Composition.text) angehängt werden. \n    Für die Separierung KÖNNEN einfache &lt;div&gt;-Tags verwendet werden. \n    Es ist zu beachten, dass Kapitel auch Unterkapitel enthalten KÖNNEN \n    (Composition.section.section), die bei der Aggregation entsprechend \n    berücksichtigt werden MÜSSEN.  \nDie Mindestanforderungen an den Inhalt der menschenlesbaren Repräsentation umfasst folgende Informationen:\n* `section.title` + Freitext oder\n* `section.title` + `Resource.text` der referenzierten Ressource oder\n* `section.title` + eine aggregierte Repräsentation von `Resource.text`,\n    wenn in einer Section mehrere Ressourcen referenziert werden \n    (z.B. eine tabellarische Auflistung mehrere Blutdruckmesswerte, Diagnosen oder Allergien).",
+        "comment": "menschenlesbare HTML-Repräsentation des Inhalts dieses Kapitels.  \r\n    Hinweise: Für Aggregation einer vollständigen menschenlesbaren Repräsentation \r\n    MÜSSEN die Repräsentationen der einzelnen Kapitel an die Repräsentation \r\n    der Metadaten (Composition.text) angehängt werden. \r\n    Für die Separierung KÖNNEN einfache &lt;div&gt;-Tags verwendet werden. \r\n    Es ist zu beachten, dass Kapitel auch Unterkapitel enthalten KÖNNEN \r\n    (Composition.section.section), die bei der Aggregation entsprechend \r\n    berücksichtigt werden MÜSSEN.  \r\nDie Mindestanforderungen an den Inhalt der menschenlesbaren Repräsentation umfasst folgende Informationen:\r\n* `section.title` + Freitext oder\r\n* `section.title` + `Resource.text` der referenzierten Ressource oder\r\n* `section.title` + eine aggregierte Repräsentation von `Resource.text`,\r\n    wenn in einer Section mehrere Ressourcen referenziert werden \r\n    (z.B. eine tabellarische Auflistung mehrere Blutdruckmesswerte, Diagnosen oder Allergien).",
         "min": 1,
         "mustSupport": true
       },

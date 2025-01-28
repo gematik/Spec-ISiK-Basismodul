@@ -29,7 +29,7 @@
         "id": "List.mode",
         "path": "List.mode",
         "short": "Listenmodus",
-        "comment": "Begründung des Must-Support: Erforderliche Angabe im FHIR-Standard\n\n  Beispiel: eingelesene Medikationspläne werden als snapshot repräsentiert. Kontinuierlich fortgeschriebene Listen, z.B. im Rahmen der hausinternen Behandlung, sind als 'working' codiert.",
+        "comment": "Begründung des Must-Support: Erforderliche Angabe im FHIR-Standard\r\n\r\n  Beispiel: eingelesene Medikationspläne werden als snapshot repräsentiert. Kontinuierlich fortgeschriebene Listen, z.B. im Rahmen der hausinternen Behandlung, sind als 'working' codiert.",
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -40,7 +40,7 @@
         "id": "List.code",
         "path": "List.code",
         "short": "Art der Liste.",
-        "comment": "Begründung des Must-Support: Dient der Differenzierung zu anderen Listen.\n\n  Hinweis: Es ist mindestens ein Coding mit dem Code 'medications' anzugeben. Weitere Codes, z.B. im Kontext anderer Spezifikationen oder Hauscodierungen sind zulässig.",
+        "comment": "Begründung des Must-Support: Dient der Differenzierung zu anderen Listen.\r\n\r\n  Hinweis: Es ist mindestens ein Coding mit dem Code 'medications' anzugeben. Weitere Codes, z.B. im Kontext anderer Spezifikationen oder Hauscodierungen sind zulässig.",
         "min": 1,
         "mustSupport": true
       },
@@ -140,7 +140,7 @@
         "id": "List.entry.date",
         "path": "List.entry.date",
         "short": "Datum des Listeneintrags",
-        "comment": "Begründung des Must-Support: Nachvollziehbarkeit\n\n    Hinweis: nur zulässig im Listenmodus 'working'",
+        "comment": "Begründung des Must-Support: Nachvollziehbarkeit\r\n\r\n    Hinweis: nur zulässig im Listenmodus 'working'",
         "mustSupport": true
       },
       {
