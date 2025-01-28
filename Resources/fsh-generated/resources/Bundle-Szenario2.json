@@ -4,6 +4,7 @@
   "type": "collection",
   "entry": [
     {
+      "fullUrl": "https://example.com/fhir/Patient/SZ2Patient",
       "resource": {
         "resourceType": "Patient",
         "id": "SZ2Patient",
@@ -53,6 +54,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/Condition/SZ2Primaerdiagnose",
       "resource": {
         "resourceType": "Condition",
         "id": "SZ2Primaerdiagnose",
@@ -90,6 +92,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/Condition/SZ2Sekundaerdiagnose",
       "resource": {
         "resourceType": "Condition",
         "id": "SZ2Sekundaerdiagnose",
@@ -135,6 +138,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/Encounter/SZ2Encounter",
       "resource": {
         "resourceType": "Encounter",
         "id": "SZ2Encounter",
@@ -200,6 +204,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/Account/SZ2DRGFall",
       "resource": {
         "resourceType": "Account",
         "id": "SZ2DRGFall",
@@ -276,6 +281,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/Coverage/SZ2VersicherungGesetzlich",
       "resource": {
         "resourceType": "Coverage",
         "id": "SZ2VersicherungGesetzlich",
