@@ -4,6 +4,7 @@
   "type": "collection",
   "entry": [
     {
+      "fullUrl": "https://example.com/fhir/Patient/SZ1Patient",
       "resource": {
         "resourceType": "Patient",
         "id": "SZ1Patient",
@@ -53,6 +54,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/RelatedPerson/SZ1Mutter",
       "resource": {
         "resourceType": "RelatedPerson",
         "id": "SZ1Mutter",
@@ -111,6 +113,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/Coverage/SZ1VersicherungGesetzlich",
       "resource": {
         "resourceType": "Coverage",
         "id": "SZ1VersicherungGesetzlich",
@@ -166,6 +169,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/Coverage/SZ1VersicherungSelbstzahler",
       "resource": {
         "resourceType": "Coverage",
         "id": "SZ1VersicherungSelbstzahler",
@@ -194,6 +198,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/Encounter/SZ1Vorstationaer",
       "resource": {
         "resourceType": "Encounter",
         "id": "SZ1Vorstationaer",
@@ -259,6 +264,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/Encounter/SZ1Stationaer",
       "resource": {
         "resourceType": "Encounter",
         "id": "SZ1Stationaer",
@@ -376,6 +382,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/Encounter/SZ1Nachstationaer",
       "resource": {
         "resourceType": "Encounter",
         "id": "SZ1Nachstationaer",
@@ -441,6 +448,7 @@
       }
     },
     {
+      "fullUrl": "https://example.com/fhir/Account/SZ1DRGFall",
       "resource": {
         "resourceType": "Account",
         "id": "SZ1DRGFall",
