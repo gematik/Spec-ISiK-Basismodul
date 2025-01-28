@@ -149,7 +149,7 @@
     "fshType": "Instance",
     "fshFile": "Akteure\\ISiKAkteurDokumentenverwaltungOptionMetadatenErzeugen.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 41
   },
   {
     "outputFile": "CapabilityStatement-ISiKAkteurDokumentenverwaltungOptionMetadatenUpdate.json",

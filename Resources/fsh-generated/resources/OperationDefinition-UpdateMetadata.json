@@ -1,6 +1,32 @@
 {
   "resourceType": "OperationDefinition",
   "id": "UpdateMetadata",
+  "version": "4.0.1",
+  "status": "active",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2024-11-25",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.gematik.de"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "DE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Germany"
+        }
+      ]
+    }
+  ],
   "url": "https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata",
   "title": "Update document metadata",
   "kind": "operation",
