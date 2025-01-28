@@ -20,7 +20,6 @@
       {
         "id": "ValueSet.url",
         "path": "ValueSet.url",
-        "short": "",
         "comment": "**Bedeutung:** Eindeutige Url zur Identifizierung des ValueSets. Absolute Urls sind zu bevorzugen.\n\n**Hinweise:** OIDs SOLLTEN als weitere Identifier des CodeSystems verwendet werden. In jedem Fall SOLLTE eine Canonical Url vergeben werden.",
         "min": 1,
         "mustSupport": true
@@ -28,7 +27,6 @@
       {
         "id": "ValueSet.version",
         "path": "ValueSet.version",
-        "short": "",
         "comment": "\n**Bedeutung:** Version des ValueSets\n\n**Hinweise:** Jede Änderung des dazugehörigen CodeSystems MUSS eine Änderung in der Version des CodeSystems und ValueSets nach sich ziehen.",
         "min": 1,
         "mustSupport": true
@@ -36,7 +34,6 @@
       {
         "id": "ValueSet.name",
         "path": "ValueSet.name",
-        "short": "",
         "comment": "**Bedeutung:** Maschinenlesbarer Name des ValueSets\n\n**Hinweise:** Der Constraint [vsd-0](https://www.hl7.org/fhir/R4/valueset.html#invs) ist hierbei zu beachten.",
         "min": 1,
         "mustSupport": true
@@ -51,7 +48,6 @@
       {
         "id": "ValueSet.useContext",
         "path": "ValueSet.useContext",
-        "short": "",
         "comment": "**Bedeutung:** Angabe für welches Datenelement das ValueSet relevant ist\n\n**Hinweise:** Es muss mindestens ein useContext angegeben werden, in dem der Ressourcen-Typ kodiert wird, in dem das ValueSet in einem Element zur Verwendung kommt.",
         "min": 1,
         "mustSupport": true
@@ -59,8 +55,7 @@
       {
         "id": "ValueSet.useContext.code",
         "path": "ValueSet.useContext.code",
-        "short": "",
-        "comment": "",
+        "comment": "Der Code 'focus' MUSS angegeben werden, um zu kennzeichnen, dass die UsageContext-Angabe sich auf die durch das ValueSet zu kodierenden Konzepte bezieht.",
         "patternCoding": {
           "code": "focus",
           "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
@@ -69,8 +64,7 @@
       {
         "id": "ValueSet.useContext.value[x]",
         "path": "ValueSet.useContext.value[x]",
-        "short": "",
-        "comment": "",
+        "comment": "Angabe in welchem Ressourcen-Typ das ValueSet verwendet wird.",
         "type": [
           {
             "code": "CodeableConcept"
@@ -85,7 +79,6 @@
       {
         "id": "ValueSet.expansion",
         "path": "ValueSet.expansion",
-        "short": "",
         "comment": "**Bedeutung:** Angabe der Konzepte aus denen sich das ValueSet zusammensetzt.\n\n**Hinweise:** Mindestens MUSS ein Code und ein Anzeigetext spezifiziert werden.",
         "min": 1,
         "mustSupport": true
@@ -93,47 +86,41 @@
       {
         "id": "ValueSet.expansion.timestamp",
         "path": "ValueSet.expansion.timestamp",
-        "short": "",
-        "comment": "",
+        "comment": "Angabe zu welchem Zeitpunkt die Expansion generiert wurden ist.",
         "mustSupport": true
       },
       {
         "id": "ValueSet.expansion.contains",
         "path": "ValueSet.expansion.contains",
-        "short": "",
-        "comment": "",
+        "comment": "Enthält die Liste der Konzepte, die in der Expansion enthalten sind.",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "ValueSet.expansion.contains.system",
         "path": "ValueSet.expansion.contains.system",
-        "short": "",
-        "comment": "",
+        "comment": "Gibt das Codingsystem an, aus dem das Konzept stammt.",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "ValueSet.expansion.contains.version",
         "path": "ValueSet.expansion.contains.version",
-        "short": "",
-        "comment": "",
+        "comment": "Spezifiziert die Version des Codingsystems, die verwendet wurde.",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "ValueSet.expansion.contains.code",
         "path": "ValueSet.expansion.contains.code",
-        "short": "",
-        "comment": "",
+        "comment": "Der spezifische Code des Konzepts im definierten Codingsystem.",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "ValueSet.expansion.contains.display",
         "path": "ValueSet.expansion.contains.display",
-        "short": "",
-        "comment": "",
+        "comment": "Die menschlich lesbare Darstellung des Konzepts.",
         "min": 1,
         "mustSupport": true
       }
