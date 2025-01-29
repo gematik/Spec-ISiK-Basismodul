@@ -419,9 +419,6 @@ Usage: #example
 * identifier[VersichertenId].type = $identifier-type-de-basis#KVZ10
 * identifier[VersichertenId].system = "http://fhir.de/sid/gkv/kvid-10"
 * identifier[VersichertenId].value = "A1234567890"
-* identifier[VersichertenId-GKV].type = $identifier-type-de-basis#KVZ10
-* identifier[VersichertenId-GKV].system = "http://fhir.de/sid/gkv/kvid-10"
-* identifier[VersichertenId-GKV].value = "A1234567890"
 * identifier[Patientennummer].type = $v2-0203#MR
 * identifier[Patientennummer].system = "https://fhir.krankenhaus.example/sid/PID" 
 * identifier[Patientennummer].value = "TestPID1"

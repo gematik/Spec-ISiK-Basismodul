@@ -221,27 +221,24 @@ Instance: PrimaereGonarthroseMinimal
 InstanceOf: ISiKDiagnose
 Usage: #example
 * code.coding = $icd-10-gm#M17.0 "Primäre Gonarthrose"
-* subject = Reference(Patient/PatientinAusfuehrlich)
+* subject = Reference(PatientinNormal)
 * recordedDate = "2024-10-21"
 
 Instance: PrimaereGonarthroseNormal
 InstanceOf: ISiKDiagnose
 Usage: #example
-* extension.url = "http://hl7.org/fhir/StructureDefinition/condition-related" 
-* extension.valueReference = Reference(PrimaereGonarthroseAusfuehrlich) /* überprüfen*/
 * clinicalStatus = $condition-clinical#active
 * code.coding[0].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[0].version = "2025"
 * code.coding[0].code = #M17.0 
 * code.coding[0].display = "Primäre Gonarthrose" 
-* code.coding[1].system = "http://fhir.de/CodeSystem/bfarm/alpha-id"
-* bodySite.coding[snomed-ct] = $sct#1234567891
-* subject = Reference(PatientinAusfuehrlich)
-* encounter = Reference(FachabteilungskontaktAusfuehrlich)
-* onsetDateTime = "2022-09-02"
-* abatementDateTime = "2024-03-15"
-* recordedDate = "2022-10-21"
-* note.text = "Beispiel für eine Anmerkung"
+* bodySite.coding[snomed-ct] = $sct#49076000
+* subject = Reference(PatientinNormal)
+* encounter = Reference(FachabteilungskontaktNormal)
+* onsetDateTime = "2020-09-02"
+* abatementDateTime = "2025-01-01"
+* recordedDate = "2024-10-21"
+* note.text = "Patientin mit primärer Gonarthrose beidseitig (ICD M17.0), seit mehreren Jahren bestehend."
 
 
 

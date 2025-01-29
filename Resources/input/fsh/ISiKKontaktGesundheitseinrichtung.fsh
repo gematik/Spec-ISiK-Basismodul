@@ -450,7 +450,7 @@ Usage: #example
 * period.end = "2021-02-13"
 * diagnosis.condition = Reference(BehandlungsDiagnoseFreitext)
 * diagnosis.use = http://fhir.de/CodeSystem/KontaktDiagnoseProzedur#treatment-diagnosis
-* account = Reference(AbrechnungsfallGonarthrose)
+* account = Reference(AbrechnungsfallDRG)
 * account.identifier
   * value = "XZY"
   * system = "https://test.krankenhaus.de/fhir/sid/fallnummer"
@@ -485,13 +485,9 @@ Usage: #example
 * extension.url = "http://fhir.de/StructureDefinition/Aufnahmegrund"
 * extension.extension[0].url = "ErsteUndZweiteStelle"
 * extension.extension[=].valueCoding = $AufnahmegrundErsteUndZweiteStelle#01 "Krankenhausbehandlung, vollstationär"
-* extension.extension[+].url = "DritteStelle"
-* extension.extension[=].valueCoding = $AufnahmegrundDritteStelle#0 "Anderes"
-* extension.extension[+].url = "VierteStelle"
-* extension.extension[=].valueCoding = $AufnahmegrundVierteStelle#1 "Normalfall"
-* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate" /* Link funktioniert nicht*/
+* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate"
 * extension[=].valueDateTime = "2025-01-02"
-* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate" /* Link funktioniert nicht*/
+* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate"
 * extension[=].valueDateTime = "2025-01-04"
 * identifier.type = $v2-0203#VN
 * identifier.system = "https://test.krankenhaus.de/fhir/sid/besuchsnummer"
@@ -502,31 +498,21 @@ Usage: #example
 * type[1] = $Kontaktart-de#operation
 * serviceType.coding = $Service-Type#218
 * subject = Reference(PatientinNormal)
-* period.start = "2025-01-02"
-* period.end = "2021-01-05"
+* period.start = "2024-10-21"
+* period.end = "2025-01-01"
 * diagnosis.condition = Reference(PrimaereGonarthroseNormal)
-* diagnosis.use = http://fhir.de/CodeSystem/KontaktDiagnoseProzedur#surgery-diagnosis
+* diagnosis.use.coding.system = "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur"
+* diagnosis.use.coding.code = "treatment-diagnosis"
+* diagnosis.use.coding.display = "Behandlungsrelevante Diagnose"
 * diagnosis.rank = 1
 * account = Reference(AbrechnungsfallGonarthrose)
-* account.identifier
-  * value = "1234"
-  * system = "https://test.krankenhaus.de/fhir/sid/fallnummer"
+* account.identifier.value = "1234"
+* account.identifier.system = "https://test.krankenhaus.de/fhir/sid/fallnummer"
 * hospitalization.admitSource = $Aufnahmeanlass#E
 * hospitalization.dischargeDisposition = $Entlassungsgrund#home
 * hospitalization.dischargeDisposition.extension.url = "http://fhir.de/StructureDefinition/Entlassungsgrund"
 * hospitalization.dischargeDisposition.extension.extension[0].url = "ErsteUndZweiteStelle"
 * hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $EntlassungsgrundErsteUndZweiteStelle#01 "Behandlung regulär beendet"
-* hospitalization.dischargeDisposition.extension.extension[+].url = "DritteStelle"
-* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $EntlassungsgrundDritteStelle#1 "arbeitsfähig entlassen" 
-* hospitalization.dischargeDisposition.extension.url = "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKRehaEntlassung"
-* hospitalization.dischargeDisposition.extension.extension[1].url = "EntlassungsformReha"
-* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $EntlassungsformReha#01 "Behandlung regulär beendet"
-* hospitalization.dischargeDisposition.extension.extension[+].url = "BesondereBehandlung"
-* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $BesondereBehandlung#0 "keine"
-* hospitalization.dischargeDisposition.extension.extension[+].url = "BehandlungsergebnisReha"
-* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $BehandlungsergebnisReha#1 "gebessert"
-* hospitalization.dischargeDisposition.extension.extension[+].url = "UnterbrechungReha"
-* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $UnterbrechungReha#04 "Stationäre Krankenhausbehandlung"
 * location[0].location = Reference(RaumStandortBeispiel)
 * location[0].location.identifier.system = "https://test.krankenhaus.de/fhir/sid/roomid"
 * location[0].location.identifier.value = "1234"
@@ -545,8 +531,8 @@ Usage: #example
 * location[2].status = #active
 * location[2].physicalType = $LocationPhysicalType#wa "Ward"
 * serviceProvider.identifier.system = "https://test.krankenhaus.de/fhir/sid/fachabteilungsid"
-* serviceProvider.identifier.value = "XYZ"
-* serviceProvider.display = "Fachabteilung XYZ"
+* serviceProvider.identifier.value = "ORTHO-1234"
+* serviceProvider.display = "Fachabteilung für Orthopädie und Endoprothetik"
 
 
 Invariant: ISiK-enc-1
