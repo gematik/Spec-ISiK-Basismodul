@@ -1,6 +1,6 @@
 ---
 topic: PatientMergeSubscription-Interaktionen
-canonical: https://gematik.de/fhir/isik/StructureDefinition/patient-merge-subscription
+canonical: https://gematik.de/fhir/isik/StructureDefinition/ISiKPatientMergeSubscription
 ---
 
 ### Interaktionen
