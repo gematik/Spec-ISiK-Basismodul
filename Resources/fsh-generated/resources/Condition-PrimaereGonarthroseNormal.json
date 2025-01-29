@@ -11,17 +11,9 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "1234567891"
+          "code": "49076000"
         }
       ]
-    }
-  ],
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
-      "valueReference": {
-        "reference": "PrimaereGonarthroseAusfuehrlich"
-      }
     }
   ],
   "clinicalStatus": {
@@ -39,24 +31,21 @@
         "version": "2025",
         "code": "M17.0",
         "display": "Primäre Gonarthrose"
-      },
-      {
-        "system": "http://fhir.de/CodeSystem/bfarm/alpha-id"
       }
     ]
   },
   "subject": {
-    "reference": "PatientinAusfuehrlich"
+    "reference": "Patient/PatientinNormal"
   },
   "encounter": {
-    "reference": "FachabteilungskontaktAusfuehrlich"
+    "reference": "Encounter/FachabteilungskontaktNormal"
   },
-  "onsetDateTime": "2022-09-02",
-  "abatementDateTime": "2024-03-15",
-  "recordedDate": "2022-10-21",
+  "onsetDateTime": "2020-09-02",
+  "abatementDateTime": "2025-01-01",
+  "recordedDate": "2024-10-21",
   "note": [
     {
-      "text": "Beispiel für eine Anmerkung"
+      "text": "Patientin mit primärer Gonarthrose beidseitig (ICD M17.0), seit mehreren Jahren bestehend."
     }
   ]
 }

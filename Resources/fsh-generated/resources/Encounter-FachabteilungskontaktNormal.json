@@ -35,22 +35,6 @@
             "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle",
             "display": "Krankenhausbehandlung, vollstationär"
           }
-        },
-        {
-          "url": "DritteStelle",
-          "valueCoding": {
-            "code": "0",
-            "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle",
-            "display": "Anderes"
-          }
-        },
-        {
-          "url": "VierteStelle",
-          "valueCoding": {
-            "code": "1",
-            "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle",
-            "display": "Normalfall"
-          }
         }
       ]
     },
@@ -94,8 +78,8 @@
     "reference": "Patient/PatientinNormal"
   },
   "period": {
-    "start": "2025-01-02",
-    "end": "2021-01-05"
+    "start": "2024-10-21",
+    "end": "2025-01-01"
   },
   "diagnosis": [
     {
@@ -105,8 +89,8 @@
       "use": {
         "coding": [
           {
-            "code": "surgery-diagnosis",
-            "system": "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur"
+            "system": "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
+            "display": "treatment-diagnosis"
           }
         ]
       },
@@ -140,7 +124,7 @@
       ],
       "extension": [
         {
-          "url": "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKRehaEntlassung",
+          "url": "http://fhir.de/StructureDefinition/Entlassungsgrund",
           "extension": [
             {
               "url": "ErsteUndZweiteStelle",
@@ -148,38 +132,6 @@
                 "code": "01",
                 "system": "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle",
                 "display": "Behandlung regulär beendet"
-              }
-            },
-            {
-              "url": "EntlassungsformReha",
-              "valueCoding": {
-                "code": "01",
-                "system": "https://gematik.de/fhir/isik/CodeSystem/ISiKEntlassformRehaCS",
-                "display": "Behandlung regulär beendet"
-              }
-            },
-            {
-              "url": "BesondereBehandlung",
-              "valueCoding": {
-                "code": "0",
-                "system": "https://gematik.de/fhir/isik/CodeSystem/ISiKBesondereBehandlungsformRehaCS",
-                "display": "keine"
-              }
-            },
-            {
-              "url": "BehandlungsergebnisReha",
-              "valueCoding": {
-                "code": "1",
-                "system": "https://gematik.de/fhir/isik/CodeSystem/ISiKBehandlungsergebnisRehaC",
-                "display": "gebessert"
-              }
-            },
-            {
-              "url": "UnterbrechungReha",
-              "valueCoding": {
-                "code": "04",
-                "system": "https://gematik.de/fhir/isik/CodeSystem/ISiKUnterbrechnungRehaCS",
-                "display": "Stationäre Krankenhausbehandlung"
               }
             }
           ]
@@ -251,8 +203,8 @@
   "serviceProvider": {
     "identifier": {
       "system": "https://test.krankenhaus.de/fhir/sid/fachabteilungsid",
-      "value": "XYZ"
+      "value": "ORTHO-1234"
     },
-    "display": "Fachabteilung XYZ"
+    "display": "Fachabteilung für Orthopädie und Endoprothetik"
   }
 }
