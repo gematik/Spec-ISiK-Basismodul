@@ -90,7 +90,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
-            "display": "treatment-diagnosis"
+            "code": "treatment-diagnosis"
           }
         ]
       },
