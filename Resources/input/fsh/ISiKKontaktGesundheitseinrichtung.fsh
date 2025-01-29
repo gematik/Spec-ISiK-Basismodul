@@ -474,7 +474,7 @@ InstanceOf: ISiKKontaktGesundheitseinrichtung
 Usage: #example
 * identifier.type = $v2-0203#VN
 * identifier.value = "0123456789"
-* status = #in-progress
+* status = #finished
 * class = $v3-ActCode#IMP
 * type[Kontaktebene] = $Kontaktebene#abteilungskontakt
 * subject = Reference(PatientinNormal)
@@ -492,7 +492,7 @@ Usage: #example
 * identifier.type = $v2-0203#VN
 * identifier.system = "https://test.krankenhaus.de/fhir/sid/besuchsnummer"
 * identifier.value = "0123456789"
-* status = #in-progress
+* status = #finished
 * class = $v3-ActCode#IMP
 * type[0] = $Kontaktebene#einrichtungskontakt
 * type[1] = $Kontaktart-de#operation
