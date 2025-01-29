@@ -6,7 +6,7 @@
   "status": "active",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2025-01-27",
+  "date": "2025-01-28",
   "implementationGuide": [
     "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Basismodul"
   ],
@@ -2944,7 +2944,7 @@
           ],
           "type": "Subscription",
           "supportedProfile": [
-            "https://gematik.de/fhir/isik/StructureDefinition/patient-merge-subscription"
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatientMergeSubscription"
           ],
           "_supportedProfile": [
             {
