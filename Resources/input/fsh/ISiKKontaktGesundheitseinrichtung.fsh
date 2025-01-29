@@ -502,8 +502,7 @@ Usage: #example
 * period.end = "2025-01-01"
 * diagnosis.condition = Reference(PrimaereGonarthroseNormal)
 * diagnosis.use.coding.system = "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur"
-* diagnosis.use.coding.code = "treatment-diagnosis"
-* diagnosis.use.coding.display = "Behandlungsrelevante Diagnose"
+* diagnosis.use.coding.display = "treatment-diagnosis"
 * diagnosis.rank = 1
 * account = Reference(AbrechnungsfallGonarthrose)
 * account.identifier.value = "1234"
