@@ -16,7 +16,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/PatientinAusfuehrlich"
+    "reference": "Patient/PatientinNormal"
   },
   "recordedDate": "2024-10-21"
 }

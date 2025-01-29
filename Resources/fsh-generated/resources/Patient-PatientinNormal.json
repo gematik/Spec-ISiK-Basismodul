@@ -30,22 +30,6 @@
       },
       "system": "http://fhir.de/sid/gkv/kvid-10",
       "value": "A1234567890"
-    },
-    {
-      "type": {
-        "coding": [
-          {
-            "code": "GKV",
-            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-          },
-          {
-            "code": "KVZ10",
-            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-          }
-        ]
-      },
-      "system": "http://fhir.de/sid/gkv/kvid-10",
-      "value": "A1234567890"
     }
   ],
   "name": [
