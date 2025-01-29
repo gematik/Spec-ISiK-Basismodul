@@ -22,8 +22,8 @@ Description: "Enthaelt alle SNOMED Reason Codes"
 * include codes from system SNOMED_CT
     where concept is-a #272379006
 
-ValueSet: Condition/DiagnosisSeverity
-Id: Condition/DiagnosisSeverity
+ValueSet: ConditionDiagnosisSeverity
+Id: ConditionDiagnosisSeverity
 Description: "Enthaelt alle SNOMED DiagnosisSeverity Codes"
 * insert Meta
 * include codes from system SNOMED_CT

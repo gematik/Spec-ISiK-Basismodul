@@ -88,7 +88,7 @@ das einen Bettenstellplatz referenziert.
 
 
 Instance: RaumStandortBeispiel
-InstanceOf: ISiKStandort
+InstanceOf: ISiKStandortRaum
 Usage: #example
 * physicalType = $LocationPhysicalType#ro "Room"
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
@@ -96,6 +96,7 @@ Usage: #example
 Instance: BettenstellplatzStandortBeispiel
 InstanceOf: ISiKStandortBettenstellplatz
 Usage: #example
+* physicalType = $LocationPhysicalType#bd "Bed"
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
 * partOf = Reference(RaumStandortBeispiel)
 
