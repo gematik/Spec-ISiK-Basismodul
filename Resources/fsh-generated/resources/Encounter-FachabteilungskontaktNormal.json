@@ -91,7 +91,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/PatientinAusfuehrlich"
+    "reference": "Patient/PatientinNormal"
   },
   "period": {
     "start": "2025-01-02",
@@ -100,7 +100,7 @@
   "diagnosis": [
     {
       "condition": {
-        "reference": "Condition/PrimaereGonarthroseAusfuehrlich"
+        "reference": "Condition/PrimaereGonarthroseNormal"
       },
       "use": {
         "coding": [
@@ -115,7 +115,7 @@
   ],
   "account": [
     {
-      "reference": "Account/AbrechnungsfallDRG",
+      "reference": "Account/AbrechnungsfallGonarthrose",
       "identifier": {
         "value": "1234",
         "system": "https://test.krankenhaus.de/fhir/sid/fallnummer"
@@ -192,7 +192,46 @@
       "location": {
         "reference": "Location/RaumStandortBeispiel",
         "identifier": {
-          "system": "https://test.krankenhaus.de/fhir/sid/locationid",
+          "system": "https://test.krankenhaus.de/fhir/sid/roomid",
+          "value": "1234"
+        },
+        "display": "Zimmer 1234"
+      },
+      "status": "active",
+      "physicalType": {
+        "coding": [
+          {
+            "code": "ro",
+            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+            "display": "Room"
+          }
+        ]
+      }
+    },
+    {
+      "location": {
+        "reference": "Location/BettenstellplatzStandortBeispiel",
+        "identifier": {
+          "system": "https://test.krankenhaus.de/fhir/sid/bedid",
+          "value": "1234"
+        },
+        "display": "Bettenstellplatz 1234"
+      },
+      "status": "active",
+      "physicalType": {
+        "coding": [
+          {
+            "code": "bd",
+            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+            "display": "Bed"
+          }
+        ]
+      }
+    },
+    {
+      "location": {
+        "identifier": {
+          "system": "https://test.krankenhaus.de/fhir/sid/stationid",
           "value": "1234"
         },
         "display": "Ward 1234"
