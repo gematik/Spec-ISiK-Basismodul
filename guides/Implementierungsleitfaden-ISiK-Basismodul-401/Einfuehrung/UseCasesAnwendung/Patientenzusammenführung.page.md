@@ -26,7 +26,7 @@ Falls eine Patient merge Notification im Rahmen von ISIK bereitgestellt wird, ge
 
 Das patientenführende System SOLL einen Client mittels FHIR Subscription über einen erfolgten Patienten merge informieren können. Dieser Mechanismus basiert auf dem [Subscriptions R5 Backport IG](https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/channels.html) und nutzt das Konzept der "Topic-Based Subscription" aus FHIR R5.  
 
-Hierfür wurde das Subscription Topic: *https://gematik.de/fhir/isik/StructureDefinition/patient-merge-subscription* definiert.
+Hierfür wurde das Subscription Topic: *https://gematik.de/fhir/isik/StructureDefinition/ISiKPatientMergeSubscription* definiert.
 
 Das patientenführende System SOLL den Support dieser Subscription innerhalb des CapabilityStatements bekannt geben.
 

@@ -7,7 +7,7 @@
   "title": "ISiKBinary",
   "status": "active",
   "experimental": false,
-  "date": "2025-01-27",
+  "date": "2025-01-28",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Darstellung von FHIR-fremden Formaten (z.B. PDFs, Bilder, CDA) in ISiK Szenarien. \r\n\r\n### Motivation\r\nFür FHIR-fremde Formate werden die Daten base64-codiert in der Binary-Ressource (in XML oder JSON) transportiert oder \r\nüber die REST-API am Binary-Endpunkt in ihrem nativen Format bereitgestellt. \r\nBinary-Ressourcen werden von Attachment-Elementen in DocumentReference-Ressourcen verlinkt und damit in den Kontext anderer FHIR-Ressourcen (z.B. Patient und Encounter) gestellt. \r\n\r\n### Kompatibilität\r\n\r\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.\r\n\r\n### Hinweis\r\n\r\nDas ISIK-Binary-Profil ist *nicht* Bestandteil der Implementierung und des Bestätigungsverfahrens zum ISIK Basismodul.\r\nDas Profil ist Teil des ISIK Basismoduls, da es als übergreifend genutzte Ressource sowohl im [Modul Terminplanung](https://simplifier.net/guide/isik-terminplanung-v4/ImplementationGuide-markdown-Datenobjekte?version=current) als auch im [Modul Dokumentenaustausch](https://simplifier.net/guide/isik-dokumentenaustausch-v4/ImplementationGuide-markdown-Datenobjekte?version=current) implementiert werden muss.  ",
   "fhirVersion": "4.0.1",

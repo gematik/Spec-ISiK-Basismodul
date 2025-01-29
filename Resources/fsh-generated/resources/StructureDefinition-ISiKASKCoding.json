@@ -7,7 +7,7 @@
   "title": "ISiKASKCoding",
   "status": "active",
   "experimental": false,
-  "date": "2025-01-27",
+  "date": "2025-01-28",
   "publisher": "gematik GmbH",
   "description": "Data Type profile for ASK Codings in ISiK",
   "fhirVersion": "4.0.1",
