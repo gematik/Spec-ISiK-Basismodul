@@ -106,7 +106,7 @@
   ],
   "account": [
     {
-      "reference": "Account/AbrechnungsfallDRG",
+      "reference": "Account/AbrechnungsfallGonarthrose",
       "identifier": {
         "value": "XZY",
         "system": "https://test.krankenhaus.de/fhir/sid/fallnummer"

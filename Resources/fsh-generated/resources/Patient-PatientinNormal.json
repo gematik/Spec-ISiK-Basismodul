@@ -90,7 +90,7 @@
   "link": [
     {
       "other": {
-        "reference": "Patient/9876"
+        "reference": "Patient/PatientinMinimal"
       },
       "type": "seealso"
     }

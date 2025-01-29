@@ -20,7 +20,7 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
       "valueReference": {
-        "reference": "Condition/PrimaereGonarthroseMinimal"
+        "reference": "PrimaereGonarthroseAusfuehrlich"
       }
     }
   ],
@@ -41,23 +41,15 @@
         "display": "Primäre Gonarthrose"
       },
       {
-        "system": "http://fhir.de/CodeSystem/bfarm/alpha-id",
-        "code": "A1111"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "1234567891"
-      },
-      {
-        "system": "http://www.orpha.net"
+        "system": "http://fhir.de/CodeSystem/bfarm/alpha-id"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/PatientinAusfuehrlich"
+    "reference": "PatientinAusfuehrlich"
   },
   "encounter": {
-    "reference": "Encounter/SZ1Stationaer"
+    "reference": "FachabteilungskontaktAusfuehrlich"
   },
   "onsetDateTime": "2022-09-02",
   "abatementDateTime": "2024-03-15",
