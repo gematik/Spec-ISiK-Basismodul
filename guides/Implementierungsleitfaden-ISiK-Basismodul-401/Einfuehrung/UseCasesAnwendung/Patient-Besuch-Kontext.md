@@ -20,14 +20,14 @@ Ungeachtet der serverseitigen Implementierungsvariante, können Clients stets ei
 
 1. **SMART-App-Launch**: Wenn der Aufruf des Clients im Rahmen von ISiK-Connect erfolgt, kennt der Client bereits beim Start den aktuellen Patienten- und ggf. den Encounterkontext. Dabei wählt ein Anwender im Primärsystem (Server) einen Patienten und Fall aus und startet in diesem Kontext den Client. Referenzen auf Patient und Encounter werden im Zuge der Autorisierung vom Server an Client übermittelt. (Siehe Modul [Connect - Launch Context und Scopes](https://simplifier.net/guide/isik-connect-v4/ImplementationGuide-markdown-Conformance-ConformanceScopesKontexte?version=current)). 
 
-||  |
-|-
+| |  |
+|---------|---------------------|
 |![BestPractice](https://wiki.hl7.de/images/thumb/Bestpractice.svg/75px-Bestpractice.svg.png)|**Best Practice Empfehlung:** Aus Gründen der Anwenderfreundlichkeit, Interoperabilität und Sicherheit ist dieses Verfahren das empfehlenswerteste. |
 
 2. **Bekannte Fallnummer**: Der Client kennt die (Abrechnungs-)Fallnummer (z.B. durch das Einscannen eines Barcodes, oder beim Mapping von V2 auf FHIR aus dem Feldinhalt von PV1.#19). Anhand dieser kann der Client die im Modul Basis beschriebenen Suchfunktionen für die Encounter-Ressource verwenden, um passende Aufenthalte zu identifizieren (`[base]/Encounter?account:identifier=<Fallnummer>`). Da unter einer Abrechnungs-Fallnummer mehrere Encounter (Besuche) zusammengefasst werden können (z.B. vorstationär + stationär + nachstationär), sollte als zusätzliches Suchkriterium entweder ein Datum/Zeitraum oder eine Selektion auf `Encounter.status` verwendet werden. Wenn ein zutreffender Encounter gefunden wurde, kann der Patientenkontext aus der subject-Referenz des Encounters entnommen werden. (Siehe Modul [Basis - Encounter Interkationen](https://simplifier.net/guide/isik-basis-401/Einfuehrung/Datenobjekte/Datenobjekte_Kontakt?version=4.0.1#Encounter_Interaktionen)
 
-||  |
-|-
+| |  |
+|---------|---------------------|
 |![Diskussion](https://wiki.hl7.de/images/thumb/Faq.svg/75px-Faq.svg.png)|**Kontexterstellung über logische Identifier:** Derzeit wird in der Entwickler-Community der Bedarf diskutiert, den Patienten- und Fallkontext auch ausschließlich auf Basis einer bekannten (Abrechnungs-)Fall und Patientennummer zuzuordnen, was insbesondere die Zuordnung von Ressourcen erleichtert, die aus HL7 V2-Datenströmen erzeugt werden. Ein Beitrag zu dieser Diskussion kann auf [chat.fhir.org](https://chat.fhir.org/#narrow/channel/287581-german.2Fisik/topic/.5BDOK.2C.20VITAL.2C.20MED.5D.20Herstellung.20von.20Patienten-.20und.20Fallkontext) geleistet werden. |
 
 3. **Arbeitsliste**: Der Client ruft auf dem Server eine Arbeitsliste ab (z.B. Liste aller Encounter, die aktuell auf einer bestimmten Station/Ambulanz stattfinden, Liste aller ServiceRequests/Tasks, die durch den Client abgearbeitet werden müssen (aktuell noch nicht im Scope der ISiK-Spezifikationen!) und etabliert den Kontext, nachdem der Benutzer einen Eintrag der Liste ausgewählt hat.
