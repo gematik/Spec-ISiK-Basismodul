@@ -7,7 +7,7 @@
   "title": "ISiKBerichtBundle",
   "status": "active",
   "experimental": false,
-  "date": "2025-01-28",
+  "date": "2025-02-03",
   "publisher": "gematik GmbH",
   "description": "A document style representation of the receipt (complete, self-contained, signed)",
   "fhirVersion": "4.0.1",
