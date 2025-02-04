@@ -2,7 +2,7 @@
 
 Vor der Bereitstellung von patientenbezogenen Ressourcen, wie sie u.a. von den Modulen Vitalparameter, Dokumentenaustausch oder Medikation beschrieben werden, muss ein Client einen Patienten- und Encounterkontext herstellen, damit diese serverseitig dem richtigen Patienten und Besuch zugeordnet werden können. Aus diesem Grund sind Hersteller, die serverseitige Akteure dieser Module implementieren, stets verpflichtet, die in diesem Leitfaden spezifizierten Interaktionen zum Suchen und Abrufen von Patienten- und Encounter-Ressourcen ebenfalls zu implementieren.
 
-### serverseitige Implementierungsvarianten
+### Serverseitige Implementierungsvarianten
 
 #### Stand Alone Implementierung
 Dabei ist es den Herstellern von nicht-patientenführenden Systemen ("Subsystemen") freigestellt, ob sie dauerhaft eine vollständige Kopie der relevanten Patienten- und Besuchsdaten des patientenführenden Systems vorhalten wollen. 
