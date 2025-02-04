@@ -13,6 +13,7 @@ Alias: $diagnosis-role = http://terminology.hl7.org/CodeSystem/diagnosis-role
 Alias: $Service-Type = http://terminology.hl7.org/CodeSystem/service-type
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $Priority = http://terminology.hl7.org/CodeSystem/v3-ActPriority
+Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $DiagnosisRole = http://terminology.hl7.org/CodeSystem/diagnosis-role
 Alias: $LocationPhysicalType = http://terminology.hl7.org/CodeSystem/location-physical-type
 Alias: $LocationMode = http://hl7.org/fhir/location-mode

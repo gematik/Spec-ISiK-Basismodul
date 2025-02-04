@@ -171,3 +171,20 @@ Description: "HL7 LOINC value set for smoking status.  Based on the HL7 Vocab an
 * LOINC#LA18982-1 "Light tobacco smoker"
 * LOINC#LA18982-1 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * LOINC#LA18982-1 ^extension[=].valueDecimal = 8
+
+
+ValueSet: RestAndWSSubscriptionChannelType
+Id: RestAndWSSubscriptionChannelType
+Title: "RestAndWSSubscriptionChannelType"
+Description: "Subscription Channel Type for ISiK"
+* insert Meta
+* SubscriptionChannelType#rest-hook
+* SubscriptionChannelType#websocket
+
+ValueSet: FhirMimeTypeVS
+Id: FhirMimeTypeVS
+Title: "FhirMimeTypeVS"
+Description: "FHIR Mime Types"
+* insert Meta
+* urn:ietf:bcp:13#application/fhir+json
+* urn:ietf:bcp:13#application/fhir+xml

@@ -1,13 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "patient-merge-subscription",
-  "url": "https://gematik.de/fhir/isik/StructureDefinition/patient-merge-subscription",
-  "version": "4.0.1",
-  "name": "PatientMergeSubscription",
-  "title": "Patient Merge Subscription",
+  "id": "ISiKPatientMergeSubscription",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatientMergeSubscription",
+  "version": "4.0.2",
+  "name": "ISiKPatientMergeSubscription",
   "status": "active",
   "experimental": false,
-  "date": "2024-11-25",
+  "date": "2025-02-03",
   "publisher": "gematik GmbH",
   "description": "Patient Merge Subscription  \n### Motivation\n\nSubscription ist eine FHIR Ressource, um als Client-System Benachrichtigungen über Events auf dem FHIR Server anzufragen. Der Subscription Mechanismus in FHIR R4 ist nicht geeignet, um alle relevanten Events (hier im Speziellen das Mergen von Patienten) zu unterstützen. Daher basiert das ISiK Subscription-Profil auf dem [Subscriptions R5 Backport Profil von HL7](https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/StructureDefinition-backport-subscription.html).\n\nSiehe auch: {{pagelink:Patient-merge, text:Use Case Patient-merge}}\n\nUm als Subsystem über ein Patienten-Merge-Event informiert zu werden, KANN der FHIR Subscription Mechanismus gemäß des [Subscriptions R5 Backport IGs von HL7](https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/index.html) genutzt werden.\n\n### Kompatibilität\n\nDas Profil PatientMergeSubscription basiert auf dem [Backport-Subscription Profil](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription.html).  \nDer [SubscriptionStatus](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription-status-r4.html), sowie das [Subscription Notification Bundle](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription-notification-r4.html) werden unverändert direkt aus dem [Subscriptions R5 Backport IG](https://hl7.org/fhir/uv/subscriptions-backport/index.html) genutzt.  \n\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
@@ -21,36 +20,36 @@
       {
         "id": "Subscription.status",
         "path": "Subscription.status",
-        "short": "",
+        "short": "Status",
         "comment": "**Bedeutung:** Der Status der Subscription, der den Serverstatus der Subscription angibt. \n  Neue Subscriptions werden immer mit dem Status `requested` an den Server übergeben. \n  Der Server ändert im Anschluss den Status auf `active` oder im Fehlerfall auf `error`.  \n  **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
         "mustSupport": true
       },
       {
         "id": "Subscription.reason",
         "path": "Subscription.reason",
-        "short": "",
-        "comment": "**Bedeutung:** Beschreibung wieso diese Subscription erstellt wurde.  \n  **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
+        "short": "Grund wieso diese Subscription erstellt wurde",
+        "comment": "**Bedeutung:** Beschreibung wieso diese Subscription erstellt wurde.",
         "mustSupport": true
       },
       {
         "id": "Subscription.criteria",
         "path": "Subscription.criteria",
-        "short": "",
-        "comment": "",
+        "short": "Patient Merge Subscription Topic",
+        "comment": "**Bedeutung:** Canonical URL des Subscription-Topics, aktuell wird nur das Patient Merge Subscription Topic unterstützt: https://gematik.de/fhir/isik/SubscriptionTopic/patient-merge\n**Hinweise:** Siehe [Subscriptions R5 Backport](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription.html)",
         "patternString": "https://gematik.de/fhir/isik/SubscriptionTopic/patient-merge"
       },
       {
         "id": "Subscription.channel",
         "path": "Subscription.channel",
-        "short": "",
-        "comment": "",
+        "short": "Benachrichtigungsweg",
+        "comment": "**Bedeutung:** Der Benachrichtigungsweg, über den Subscription-Benachrichtigungen gesendet werden sollen.",
         "mustSupport": true
       },
       {
         "id": "Subscription.channel.type",
         "path": "Subscription.channel.type",
-        "short": "",
-        "comment": "",
+        "short": "Typ des Kommunikationskanals",
+        "comment": "rest-hook | websocket",
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -60,20 +59,27 @@
       {
         "id": "Subscription.channel.endpoint",
         "path": "Subscription.channel.endpoint",
-        "short": "",
-        "comment": "**Bedeutung:** Adresse des Kommunikationskanals/ Endpunkts, an den Subscription-Benachrichtigungen gesendet werden sollen. Dies ist nur für rest-hook Subscriptions relevant.  \n    **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
+        "short": "Endpunkturl",
+        "comment": "**Bedeutung:** URL des Kommunikationskanals/ Endpunkts, an den Subscription-Benachrichtigungen gesendet werden sollen. Dies ist nur für rest-hook Subscriptions relevant.",
         "mustSupport": true
       },
       {
         "id": "Subscription.channel.payload",
         "path": "Subscription.channel.payload",
-        "short": "",
-        "comment": "**Bedeutung:** Format in dem Subscription Notifications versendet werden sollen (JSON oder XML)\n    **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)",
+        "short": "Mime Type der Subscription Benachrichtigung",
+        "comment": "application/fhir+json | application/fhir+xml",
         "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://gematik.de/fhir/isik/ValueSet/FhirMimeTypeVS"
         }
+      },
+      {
+        "id": "Subscription.channel.payload.extension:content",
+        "path": "Subscription.channel.payload.extension",
+        "sliceName": "content",
+        "short": "Inhalt der Benachrichtigung",
+        "comment": "**Bedeutung:** Welcher Ressourceninhalt in der Nutzlast der Benachrichtigung geliefert werden soll. Zur Auswahl stehen eine leere Nutzlast (`empty`), nur die Ressourcen-id (`id-only`) oder der gesamte Inhalt der Ressource (`full-resource`).\n**Hinweise:** Siehe [Extension: Backport R5 Subscription Payload Content Information](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-payload-content.html)"
       },
       {
         "id": "Subscription.channel.header",

@@ -4,9 +4,9 @@ topic: ImplementationGuide-markdown-Einfuehrung
 <img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Basismodul/main-isik-stufe-3/Material/images/Gematik_Logo_Flag.svg" alt="gematik logo" width="400"/>
 
 ----
-Version: 4.0.1
+Version: 4.0.2
 
-Datum: 25.11.2024
+Datum: 04.02.2025
 
 Status: Active
 
