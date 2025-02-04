@@ -9,7 +9,7 @@
   "url": "https://gematik.de/fhir/isik/ValueSet/StillstatusVS",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2025-02-03",
+  "date": "2025-02-04",
   "compose": {
     "include": [
       {
