@@ -5,11 +5,11 @@
   "id": "StillstatusVS",
   "title": "Stillstatus LOINC Antwortoptionen",
   "description": "Dieses Valueset enthält die Codes zur Beschreibung von Stillstatus LOINC.",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "url": "https://gematik.de/fhir/isik/ValueSet/StillstatusVS",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-11-25",
+  "date": "2025-02-03",
   "compose": {
     "include": [
       {

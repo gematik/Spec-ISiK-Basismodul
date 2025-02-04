@@ -155,7 +155,7 @@ Der Akteur "Termin-Repository" im Sinne des ISiK-Moduls "Terminplanung" ist ein 
 ### **Geltungsbereich**
 Systeme, die als Termin-Repository agieren sind u.a.:
 
-- Patietenportal im Falle, dass das System selbst terminführend ist
+- Patientenportal im Falle, dass das System selbst terminführend ist
 - terminführenden Systeme, z.B. KIS oder auch Klinische Arbeitsplatz-Systeme (KAS) inkl. Terminverwaltung
 - PDMS, die Termine verwalten
 ## **Akteur: Termin-Requestor (Termin-Source)**

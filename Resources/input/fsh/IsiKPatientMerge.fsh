@@ -1,9 +1,6 @@
-//TODO: Das Profil verwendet als einziges nicht das ISIK-Präfix im Namen. Anpassen?
-//Abweichende ID (und folglich Canonical) entspricht ebenfalls nicht dem Usus!!
-Profile: PatientMergeSubscription
+Profile: ISiKPatientMergeSubscription
 Parent: BackportSubscription
-Id: patient-merge-subscription
-Title: "Patient Merge Subscription"
+Id: ISiKPatientMergeSubscription
 Description: "Patient Merge Subscription  
 ### Motivation
 
@@ -23,55 +20,47 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
 * insert Meta
 * ^fhirVersion = #4.0.1
 * status MS
-  * ^short = ""
+  * ^short = "Status"
   * ^comment = "**Bedeutung:** Der Status der Subscription, der den Serverstatus der Subscription angibt. 
   Neue Subscriptions werden immer mit dem Status `requested` an den Server übergeben. 
   Der Server ändert im Anschluss den Status auf `active` oder im Fehlerfall auf `error`.  
   **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)"
 * reason MS
-  * ^short = ""
-  * ^comment = "**Bedeutung:** Beschreibung wieso diese Subscription erstellt wurde.  
-  **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)"
+  * ^short = "Grund wieso diese Subscription erstellt wurde"
+  * ^comment = "**Bedeutung:** Beschreibung wieso diese Subscription erstellt wurde."
 * criteria = $patient-merge-topic
-  * ^short = ""
-  * ^comment = ""
+  * ^short = "Patient Merge Subscription Topic"
+  * ^comment = "**Bedeutung:** Canonical URL des Subscription-Topics, aktuell wird nur das Patient Merge Subscription Topic unterstützt: https://gematik.de/fhir/isik/SubscriptionTopic/patient-merge
+**Hinweise:** Siehe [Subscriptions R5 Backport](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription.html)"
 * channel MS
-  * ^short = ""
-  * ^comment = ""
+  * ^short = "Benachrichtigungsweg"
+  * ^comment = "**Bedeutung:** Der Benachrichtigungsweg, über den Subscription-Benachrichtigungen gesendet werden sollen."
   * type MS
-    * ^short = ""
-    * ^comment = "**Bedeutung:** Der Typ des Kommunikationskanals, über den Subscription-Benachrichtigungen gesendet werden sollen.  
-    **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)"
+    * ^short = "Typ des Kommunikationskanals"
+    * ^comment = "rest-hook | websocket"
   * type from RestAndWSSubscriptionChannelType
-    * ^short = ""
-    * ^comment = ""
   * endpoint MS
-    * ^short = ""
-    * ^comment = "**Bedeutung:** Adresse des Kommunikationskanals/ Endpunkts, an den Subscription-Benachrichtigungen gesendet werden sollen. Dies ist nur für rest-hook Subscriptions relevant.  
-    **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)"
+    * ^short = "Endpunkturl"
+    * ^comment = "**Bedeutung:** URL des Kommunikationskanals/ Endpunkts, an den Subscription-Benachrichtigungen gesendet werden sollen. Dies ist nur für rest-hook Subscriptions relevant."
   * payload MS
     * ^short = ""
     * ^comment = "**Bedeutung:** Format in dem Subscription Notifications versendet werden sollen (JSON oder XML)
     **Hinweise:** Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)"
   * payload from FhirMimeTypeVS
+    * ^short = "Mime Type der Subscription Benachrichtigung"
+    * ^comment = "application/fhir+json | application/fhir+xml"
+    * extension[content] MS
+      * ^short = "Inhalt der Benachrichtigung"
+      * ^comment = "**Bedeutung:** Welcher Ressourceninhalt in der Nutzlast der Benachrichtigung geliefert werden soll. Zur Auswahl stehen eine leere Nutzlast (`empty`), nur die Ressourcen-id (`id-only`) oder der gesamte Inhalt der Ressource (`full-resource`).
+**Hinweise:** Siehe [Extension: Backport R5 Subscription Payload Content Information](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-payload-content.html)"
   * header MS
     * ^short = "Falls eine REST-Enpunkt einen Authorization-Header benötigt, kann dieser hier gesetzt werden"
     * ^comment = "**Bedeutung:** http-Header welcher dazu genutzt werden kann einen Authorization-header zu setzen. Dies ist nur für rest-hook Subscriptions relevant.  
     **Hinweise:** ACHTUNG: dieses Datenfeld muss bei READ-Interaktionen maskiert werden! Siehe [R4 Subscriptions](https://hl7.org/fhir/R4/subscription.html)"
-/* TODO: für folgende Felder gab es im IG Beschreibungen, hier aber keine Elemente:
-
-### `Subscription.category`
-**Bedeutung:** Canonical URL des Subscription-Topics, aktuell wird nur folgendes SubscriptionTopic unterstützt: https://gematik.de/fhir/isik/SubscriptionTopic/patient-merge
-**Hinweise:** Siehe [Subscriptions R5 Backport](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription.html)
-
-### `Subscription.payload.extension[content]`
-**Bedeutung:** Welcher Ressourceninhalt in der Nutzlast der Benachrichtigung geliefert werden soll. Zur Auswahl stehen eine leere Nutzlast (`empty`), nur die Ressourcen-id (`id-only`) oder der gesamte Inhalt der Ressource (`full-resource`).
-**Hinweise:** Siehe [Extension: Backport R5 Subscription Payload Content Information](https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-payload-content.html)
-*/   
 
 
 Instance: PatientMergeSubscriptionExample
-InstanceOf: PatientMergeSubscription
+InstanceOf: ISiKPatientMergeSubscription
 Usage: #example
 * status = #requested
 * reason = "Patient merge subscription"
@@ -82,22 +71,6 @@ Usage: #example
   * payload = #application/fhir+json
     * extension[content].valueCode = #full-resource
   * header = "Authorization: Bearer xxxxxxxxxx"
-
-ValueSet: RestAndWSSubscriptionChannelType
-Id: RestAndWSSubscriptionChannelType
-Title: "RestAndWSSubscriptionChannelType"
-Description: "Subscription Channel Type for ISiK"
-* insert Meta
-* SubscriptionChannelType#rest-hook
-* SubscriptionChannelType#websocket
-
-ValueSet: FhirMimeTypeVS
-Id: FhirMimeTypeVS
-Title: "FhirMimeTypeVS"
-Description: "FHIR Mime Types"
-* insert Meta
-* urn:ietf:bcp:13#application/fhir+json
-* urn:ietf:bcp:13#application/fhir+xml
 
 Instance: DorisQuelle
 InstanceOf: ISiKPatient
