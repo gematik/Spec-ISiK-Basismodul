@@ -22,7 +22,7 @@ Ungeachtet der serverseitigen Implementierungsvariante, können Clients stets ei
 
 | |  |
 |---------|---------------------|
-|![BestPractice](https://wiki.hl7.de/images/thumb/Bestpractice.svg/75px-Bestpractice.svg.png)|**Best Practice Empfehlung:** Aus Gründen der Anwenderfreundlichkeit, Interoperabilität und Sicherheit ist dieses Verfahren das empfehlenswerteste. |
+|![BestPractice](https://wiki.hl7.de/images/thumb/Bestpractice.svg/75px-Bestpractice.svg.png)|**Best Practice Empfehlung:** Aus Gründen der Anwenderfreundlichkeit, Interoperabilität und Sicherheit ist dieses Verfahren zu empfehlen. |
 
 2. **Bekannte Fallnummer**: Der Client kennt die (Abrechnungs-)Fallnummer (z.B. durch das Einscannen eines Barcodes, oder beim Mapping von V2 auf FHIR aus dem Feldinhalt von PV1.#19). Anhand dieser kann der Client die im Modul Basis beschriebenen Suchfunktionen für die Encounter-Ressource verwenden, um passende Aufenthalte zu identifizieren (`[base]/Encounter?account:identifier=<Fallnummer>`). Da unter einer Abrechnungs-Fallnummer mehrere Encounter (Besuche) zusammengefasst werden können (z.B. vorstationär + stationär + nachstationär), sollte als zusätzliches Suchkriterium entweder ein Datum/Zeitraum oder eine Selektion auf `Encounter.status` verwendet werden. Wenn ein zutreffender Encounter gefunden wurde, kann der Patientenkontext aus der subject-Referenz des Encounters entnommen werden. (Siehe Modul [Basis - Encounter Interkationen](https://simplifier.net/guide/isik-basis-401/Einfuehrung/Datenobjekte/Datenobjekte_Kontakt?version=4.0.1#Encounter_Interaktionen)
 
