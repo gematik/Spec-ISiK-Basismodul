@@ -1,0 +1,24 @@
+{
+  "resourceType": "Location",
+  "id": "StationStandortBeispiel",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKStandort"
+    ]
+  },
+  "physicalType": {
+    "coding": [
+      {
+        "code": "wa",
+        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+        "display": "Ward"
+      }
+    ]
+  },
+  "managingOrganization": {
+    "reference": "Organization/AbteilungAllgemeinchirurgieOrganisationBeispiel"
+  },
+  "partOf": {
+    "reference": "Location/RaumStandortBeispiel"
+  }
+}
