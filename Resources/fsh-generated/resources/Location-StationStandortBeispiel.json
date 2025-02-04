@@ -52,9 +52,6 @@
   "managingOrganization": {
     "reference": "Organization/AbteilungAllgemeinchirurgieOrganisationBeispiel"
   },
-  "partOf": {
-    "reference": "Location/RaumStandortBeispiel"
-  },
   "hoursOfOperation": [
     {
       "daysOfWeek": [
@@ -65,9 +62,7 @@
     {
       "daysOfWeek": [
         "sun"
-      ],
-      "openingTime": "08:00:00",
-      "closingTime": "20:00:00"
+      ]
     }
   ]
 }
