@@ -4,11 +4,11 @@
   "name": "EncounterReasonCodes",
   "id": "EncounterReasonCodes",
   "description": "Enthaelt alle SNOMED Reason Codes",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "url": "https://gematik.de/fhir/isik/ValueSet/EncounterReasonCodes",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-11-25",
+  "date": "2025-02-04",
   "compose": {
     "include": [
       {
