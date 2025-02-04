@@ -118,7 +118,6 @@ Usage: #example
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
 * partOf = Reference(RaumStandortBeispiel)
 * hoursOfOperation[0].daysOfWeek = #mon
-* hoursOfOperation[0].daysOfWeek = #mon
 * hoursOfOperation[0].daysOfWeek = #tue
 * hoursOfOperation[0].daysOfWeek = #wed
 * hoursOfOperation[0].daysOfWeek = #thu
@@ -126,6 +125,6 @@ Usage: #example
 * hoursOfOperation[0].allDay = true
 * hoursOfOperation[1].daysOfWeek = #sat
 * hoursOfOperation[1].daysOfWeek = #sun
-* hoursOfOperation[1].openingTime = "08:00"
-* hoursOfOperation[1].closingTime = "20:00"
+* hoursOfOperation[1].openingTime = 08:00:00
+* hoursOfOperation[1].closingTime = 20:00:00
 
