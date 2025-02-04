@@ -103,8 +103,23 @@ Usage: #example
 Instance: StationStandortBeispiel
 InstanceOf: ISiKStandort /* noch kein eigenes Profil vorhanden*/
 Usage: #example
+* identifier.system: "http://fhir.de/sid/dkgev/standortnummer"
+* identifier.value: "123456"
+* operationalStatus = $v2-0203#O "Occupied" /* bei Raum & Bettenstellplatz MS, nicht bei Standort*/
+* name = "Station A"
+* mode = #instance
+* type = $v3-RoleCode#_LocationIdentifiedEntityRoleCode /* überprüfen*/
+* address.line = "Krankenhausstraße 123"
+* address.city = "Musterstadt"
+* address.postalCode = "12345"
 * physicalType = $LocationPhysicalType#wa "Ward"
+* position.latitude = 52.5200
+* position.longitude = 13.4050
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
 * partOf = Reference(RaumStandortBeispiel)
-
+* hoursOfOperation[0].daysOfWeek = ["mon", "tue", "wed", "thu", "fri"]
+* hoursOfOperation[0].allDay = true
+* hoursOfOperation[1].daysOfWeek = ["sat", "sun"]
+* hoursOfOperation[1].openingTime = "08:00"
+* hoursOfOperation[1].closingTime = "20:00"
 
