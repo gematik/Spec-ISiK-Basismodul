@@ -126,5 +126,4 @@ Usage: #example
 * hoursOfOperation[0].allDay = true
 * hoursOfOperation[1].daysOfWeek = #sat
 * hoursOfOperation[1].daysOfWeek = #sun
-* hoursOfOperation[1].closingTime = 20:00:00
 
