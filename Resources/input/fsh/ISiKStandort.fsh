@@ -99,5 +99,10 @@ Usage: #example
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
 * partOf = Reference(RaumStandortBeispiel)
 
+Instance: StationStandortBeispiel
+InstanceOf: ISiKStandort /* noch kein eigenes Profil vorhanden*/
+Usage: #example
+* managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
+* partOf = Reference(RaumStandortBeispiel)
 
 
