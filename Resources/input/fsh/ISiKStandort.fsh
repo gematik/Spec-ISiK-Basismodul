@@ -96,12 +96,14 @@ Usage: #example
 Instance: BettenstellplatzStandortBeispiel
 InstanceOf: ISiKStandortBettenstellplatz
 Usage: #example
+* physicalType = $LocationPhysicalType#bd "Bed"
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
 * partOf = Reference(RaumStandortBeispiel)
 
 Instance: StationStandortBeispiel
 InstanceOf: ISiKStandort /* noch kein eigenes Profil vorhanden*/
 Usage: #example
+* physicalType = $LocationPhysicalType#wa "Ward"
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
 * partOf = Reference(RaumStandortBeispiel)
 
