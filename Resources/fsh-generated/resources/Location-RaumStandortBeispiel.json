@@ -3,7 +3,7 @@
   "id": "RaumStandortBeispiel",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKStandort"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKStandortRaum"
     ]
   },
   "physicalType": {

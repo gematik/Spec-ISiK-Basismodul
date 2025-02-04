@@ -8,6 +8,7 @@ Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v2-0116-BedStatus = http://terminology.hl7.org/ValueSet/v2-0116
 Alias: $diagnosis-role = http://terminology.hl7.org/CodeSystem/diagnosis-role
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $DiagnosisRole = http://terminology.hl7.org/CodeSystem/diagnosis-role
 Alias: $LocationPhysicalType = http://terminology.hl7.org/CodeSystem/location-physical-type
 Alias: $LocationMode = http://hl7.org/fhir/location-mode
