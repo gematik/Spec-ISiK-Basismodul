@@ -117,9 +117,9 @@ Usage: #example
 * position.longitude = 13.4050
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
 * partOf = Reference(RaumStandortBeispiel)
-* hoursOfOperation[0].daysOfWeek = ["mon", "tue", "wed", "thu", "fri"]
+* hoursOfOperation[0].daysOfWeek = #mon and #tue and #wed and #thu and #fri
 * hoursOfOperation[0].allDay = true
-* hoursOfOperation[1].daysOfWeek = ["sat", "sun"]
+* hoursOfOperation[1].daysOfWeek = #sat and #sun
 * hoursOfOperation[1].openingTime = "08:00"
 * hoursOfOperation[1].closingTime = "20:00"
 
