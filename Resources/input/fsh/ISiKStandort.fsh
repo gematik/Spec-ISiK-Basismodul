@@ -116,7 +116,8 @@ Usage: #example
 * position.latitude = 52.5200
 * position.longitude = 13.4050
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
-* partOf = Reference(RaumStandortBeispiel)
+// * partOf = Reference(KrankenhausStandortBeispiel) /* noch kein entsprechendes Beispiel vorhanden*/
+
 * hoursOfOperation[0].daysOfWeek = #mon
 * hoursOfOperation[0].daysOfWeek = #tue
 * hoursOfOperation[0].daysOfWeek = #wed
