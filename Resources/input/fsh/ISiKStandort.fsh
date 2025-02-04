@@ -105,7 +105,7 @@ InstanceOf: ISiKStandort /* noch kein eigenes Profil vorhanden*/
 Usage: #example
 * identifier.system = "http://fhir.de/sid/dkgev/standortnummer"
 * identifier.value = "123456"
-* operationalStatus = $v2-0203#O "Occupied" /* bei Raum & Bettenstellplatz MS, nicht bei Standort*/
+* operationalStatus = $v2-0203#O "Occupied"
 * name = "Station A"
 * mode = #instance
 * type = $v3-RoleCode#_LocationIdentifiedEntityRoleCode /* überprüfen*/
@@ -116,10 +116,14 @@ Usage: #example
 * position.latitude = 52.5200
 * position.longitude = 13.4050
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
-* partOf = Reference(RaumStandortBeispiel)
-* hoursOfOperation[0].daysOfWeek = ["mon", "tue", "wed", "thu", "fri"]
+// * partOf = Reference(KrankenhausStandortBeispiel) /* noch kein entsprechendes Beispiel vorhanden*/
+
+* hoursOfOperation[0].daysOfWeek = #mon
+* hoursOfOperation[0].daysOfWeek = #tue
+* hoursOfOperation[0].daysOfWeek = #wed
+* hoursOfOperation[0].daysOfWeek = #thu
+* hoursOfOperation[0].daysOfWeek = #fri
 * hoursOfOperation[0].allDay = true
-* hoursOfOperation[1].daysOfWeek = ["sat", "sun"]
-* hoursOfOperation[1].openingTime = "08:00"
-* hoursOfOperation[1].closingTime = "20:00"
+* hoursOfOperation[1].daysOfWeek = #sat
+* hoursOfOperation[1].daysOfWeek = #sun
 
