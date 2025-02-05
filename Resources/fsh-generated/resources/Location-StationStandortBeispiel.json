@@ -45,6 +45,12 @@
       }
     ]
   },
+  "managingOrganization": {
+    "reference": "Organization/AbteilungAllgemeinchirurgieOrganisationBeispiel"
+  },
+  "partOf": {
+    "reference": "Location/RaumStandortBeispiel"
+  }
   "position": {
     "latitude": 52.52,
     "longitude": 13.405

@@ -103,9 +103,9 @@ Usage: #example
 Instance: StationStandortBeispiel
 InstanceOf: ISiKStandort /* noch kein eigenes Profil vorhanden*/
 Usage: #example
-* identifier.system = "http://fhir.de/sid/dkgev/standortnummer"
-* identifier.value = "123456"
-* operationalStatus = $v2-0203#O "Occupied"
+* identifier.system: "http://fhir.de/sid/dkgev/standortnummer"
+* identifier.value: "123456"
+* operationalStatus = $v2-0203#O "Occupied" /* bei Raum & Bettenstellplatz MS, nicht bei Standort*/
 * name = "Station A"
 * mode = #instance
 * type = $v3-RoleCode#_LocationIdentifiedEntityRoleCode /* überprüfen*/
