@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ConditionDiagnosisSeverity",
+  "id": "ConditionDiagnosisSeverity",
+  "description": "Enthaelt alle SNOMED DiagnosisSeverity Codes",
+  "version": "4.0.2",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ConditionDiagnosisSeverity",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2025-02-04",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "24484000"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "6736007"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "255604002"
+          }
+        ]
+      }
+    ]
+  }
+}

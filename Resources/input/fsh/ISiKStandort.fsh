@@ -88,7 +88,7 @@ das einen Bettenstellplatz referenziert.
 
 
 Instance: RaumStandortBeispiel
-InstanceOf: ISiKStandort
+InstanceOf: ISiKStandortRaum
 Usage: #example
 * physicalType = $LocationPhysicalType#ro "Room"
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
@@ -116,10 +116,14 @@ Usage: #example
 * position.latitude = 52.5200
 * position.longitude = 13.4050
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
-* partOf = Reference(RaumStandortBeispiel)
-* hoursOfOperation[0].daysOfWeek = ["mon", "tue", "wed", "thu", "fri"]
+// * partOf = Reference(KrankenhausStandortBeispiel) /* noch kein entsprechendes Beispiel vorhanden*/
+
+* hoursOfOperation[0].daysOfWeek = #mon
+* hoursOfOperation[0].daysOfWeek = #tue
+* hoursOfOperation[0].daysOfWeek = #wed
+* hoursOfOperation[0].daysOfWeek = #thu
+* hoursOfOperation[0].daysOfWeek = #fri
 * hoursOfOperation[0].allDay = true
-* hoursOfOperation[1].daysOfWeek = ["sat", "sun"]
-* hoursOfOperation[1].openingTime = "08:00"
-* hoursOfOperation[1].closingTime = "20:00"
+* hoursOfOperation[1].daysOfWeek = #sat
+* hoursOfOperation[1].daysOfWeek = #sun
 

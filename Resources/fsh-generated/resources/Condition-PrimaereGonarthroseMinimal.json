@@ -1,0 +1,22 @@
+{
+  "resourceType": "Condition",
+  "id": "PrimaereGonarthroseMinimal",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "M17.0",
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "display": "Primäre Gonarthrose"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientinNormal"
+  },
+  "recordedDate": "2024-10-21"
+}

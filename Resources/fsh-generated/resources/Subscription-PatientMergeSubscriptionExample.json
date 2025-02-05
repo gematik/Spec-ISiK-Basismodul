@@ -3,7 +3,7 @@
   "id": "PatientMergeSubscriptionExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/patient-merge-subscription"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatientMergeSubscription"
     ]
   },
   "criteria": "https://gematik.de/fhir/isik/SubscriptionTopic/patient-merge",

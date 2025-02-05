@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKAbrechnungsfall",
   "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKAbrechnungsfall",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "name": "ISiKAbrechnungsfall",
   "status": "active",
   "experimental": false,
-  "date": "2024-11-25",
+  "date": "2025-02-04",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Gruppierung von medizinischen Leistungen zu einem gemeinsamen Abrechnungskontext.  \n### Motivation\nKomplementär zum Datenobjekt &quot;Kontakt - Encounter&quot; können Fälle, im Sinne einer Gruppierung von medizinischen Leistungen \ninnerhalb eines gemeinsamen Kontextes, zu einem Abrechnungsfall zusammengefasst werden.\nEin solcher Abrechnungsfall kann mehrere Kontakte umfassen (z.B. vorstationärer Besuch, stationärer Aufenthalt und nachstationärer Besuch).  \n\nGemeinsam mit dem Einrichtungskontakt bildet der Abrechnungsfall einen wichtigen Einstiegspunkt in die Dokumentation der Behandlungsleistungen der Patienten.\nAls Bindeglied zwischen den Kontakten und dem Versicherungsverhältnis erfolgt eine feingranulare Auflistung, \nin welchen Zeiträumen ein Behandlungskontext zwischen einer Gesundheitseinrichtung und der Patienten bestand.\nZudem werden Diagnosen abschließend / nachträglich dokumentiert, sodass eine Übersicht von relevanten (DRG)-Diagnosen ermöglicht wird, \nohne die Gesamtheit aller Kontakte betrachten zu müssen.\n\nIn FHIR wird der Abrechnungsfall mit der `Account`-Ressource repräsentiert.\n\nWeitere Hinweise zu den Abgrenzungen der Begrifflichkeiten Fall und Kontakt finden sie unter {{pagelink: Fall, text: Fall-Begriff in ISiK}}.\n\n### Kompatibilität\n* zum Zeitpunkt der Veröffentlichung sind keine abweichenden Modellierungen der Account-Ressource bekannt.\n\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
@@ -184,8 +184,6 @@
       {
         "id": "Account.coverage.extension",
         "path": "Account.coverage.extension",
-        "min": 1,
-        "max": "1",
         "mustSupport": true
       },
       {
@@ -193,8 +191,8 @@
         "path": "Account.coverage.extension",
         "sliceName": "Abrechnungsart",
         "short": "Abrechnungsart",
-        "comment": "Art der Abrechnung, für die das Versicherungsverhältnis herangezogen wird.",
-        "min": 1,
+        "comment": "Art der Abrechnung, für die das Versicherungsverhältnis herangezogen wird. Die Abrechnungsart bezieht sich auf die Hauptversicherung über die der Fall abgerechnet wird. Bei initialen Fallanlage kann es vorkommen, dass die Abrechnungsart noch nicht bekannt ist (z.B. Unklare Versicherungszugehörigkeit, Rückfragen an den Kostenträger, Ungeklärte Zusatzleistungen). Sobald bekannt, SOLL angegeben werden, in welcher Abrechnungsart die Abrechnung erfolgt.",
+        "min": 0,
         "max": "1",
         "type": [
           {
