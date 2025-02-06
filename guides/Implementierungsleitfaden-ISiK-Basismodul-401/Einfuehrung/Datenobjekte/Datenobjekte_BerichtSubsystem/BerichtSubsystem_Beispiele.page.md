@@ -6,7 +6,7 @@ topic: BerichtSubsystem-Beispiele
 
 <tabs>
     <tab title="Übersicht">      
-        {{render:composition-blutdruck}}
+        {{tree:composition-blutdruck}}
     </tab>
     <tab title="XML">      
         {{xml:composition-blutdruck}}
