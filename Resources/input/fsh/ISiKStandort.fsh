@@ -101,14 +101,17 @@ Usage: #example
 * partOf = Reference(RaumStandortBeispiel)
 
 Instance: StationStandortBeispiel
-InstanceOf: ISiKStandort /* noch kein eigenes Profil vorhanden*/
+//  noch kein eigenes Profil vorhanden
+InstanceOf: ISiKStandort 
 Usage: #example
 * identifier.system: "http://fhir.de/sid/dkgev/standortnummer"
 * identifier.value: "123456"
-* operationalStatus = $v2-0203#O "Occupied" /* bei Raum & Bettenstellplatz MS, nicht bei Standort*/
+* operationalStatus = $v2-0203#O "Occupied" 
+// bei Raum & Bettenstellplatz MS, nicht bei Standort
 * name = "Station A"
 * mode = #instance
-* type = $v3-RoleCode#_LocationIdentifiedEntityRoleCode /* überprüfen*/
+* type = $v3-RoleCode#_LocationIdentifiedEntityRoleCode 
+// überprüfen
 * address.line = "Krankenhausstraße 123"
 * address.city = "Musterstadt"
 * address.postalCode = "12345"
