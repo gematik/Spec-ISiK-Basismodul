@@ -101,9 +101,9 @@ Usage: #example
 * partOf = Reference(RaumStandortBeispiel)
 
 Instance: StationStandortBeispiel
-//  noch kein eigenes Profil vorhanden
 InstanceOf: ISiKStandort 
 Usage: #example
+//  noch kein eigenes Profil vorhanden
 * identifier.system: "http://fhir.de/sid/dkgev/standortnummer"
 * identifier.value: "123456"
 * operationalStatus = $v2-0203#O "Occupied" 
@@ -119,7 +119,7 @@ Usage: #example
 * position.latitude = 52.5200
 * position.longitude = 13.4050
 * managingOrganization = Reference(AbteilungAllgemeinchirurgieOrganisationBeispiel)
-// * partOf = Reference(KrankenhausStandortBeispiel) /* noch kein entsprechendes Beispiel vorhanden*/
+// * partOf = Reference(KrankenhausStandortBeispiel) - noch kein entsprechendes Beispiel vorhanden
 
 * hoursOfOperation[0].daysOfWeek = #mon
 * hoursOfOperation[0].daysOfWeek = #tue
