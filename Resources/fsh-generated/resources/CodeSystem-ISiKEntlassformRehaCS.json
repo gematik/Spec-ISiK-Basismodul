@@ -5,7 +5,7 @@
   "name": "ISiKEntlassformReha",
   "id": "ISiKEntlassformRehaCS",
   "description": "ISiK Entlassform Reha. Beschreibt Form und ggf. Weiterbehandlung der Entlassung eines Versicherten/Berechtigten aus verwaltungs- und medizinischer Sicht. Vgl. Schlüsseltabelle 2.107 Entlassungsform.",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "url": "https://gematik.de/fhir/isik/CodeSystem/ISiKEntlassformRehaCS",
   "concept": [
     {
@@ -79,7 +79,6 @@
   ],
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-11-25",
-  "caseSensitive": false,
+  "date": "2025-02-06",
   "count": 17
 }

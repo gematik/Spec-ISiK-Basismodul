@@ -108,7 +108,7 @@ Tabellarisch gelistet wird hier die Bestätigungsrelevanz in Bezug auf die zuvor
 
 |**Akteur**|**konkrete Anforderungen**|**bestätigungsrelevant**|
 | :-: | :-: | :-: |
-|Dokumenten-Server|<https://simplifier.net/guide/isik-dokumentenaustausch-v4/ImplementationGuide-markdown-Datenobjekte-CapabilityStatement?version=current>|ja|
+|Dokumenten-Server|<https://simplifier.net/guide/isik-dokumentenaustausch-401/Einfuehrung/Datenobjekte/CapabilityStatement.page.md?version=current>|ja|
 |Dokumenten-Client|keine|nein|
 # **Vitalparameter und Körpermaße**
 ## **Akteur: Vitalparameter-Server**
