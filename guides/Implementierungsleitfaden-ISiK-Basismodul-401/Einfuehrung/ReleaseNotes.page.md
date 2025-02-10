@@ -10,7 +10,6 @@ Im Rahmen der ISiK-Veröffentlichungen wird das [Semantic Versioning](https://se
 Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.
 
 
-
 ## Version 4.0.2
 * `fixed` Anpassung Kardinaltiät von "ExtensionAbrechnungsart" unter Account.coverage https://github.com/gematik/spec-ISiK-Basismodul/pull/526
 * `fixed` `test stable` Korrektur eines Beispiels für eine GET-Abfrage zum Suchparameter 'near' https://github.com/gematik/spec-ISiK-Basismodul/pull/533
@@ -22,6 +21,8 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 * `improved` Groß- und kleinschreibung bei ISiK-eigenen CodeSystemen deaktiviert https://github.com/gematik/spec-ISiK-Basismodul/pull/532/files
 * `fix` `test stable` Korrektur eines Beispiels für eine GET-Abfrage zum Suchparameter 'near' https://github.com/gematik/spec-ISiK-Basismodul/pull/533
 * `improved` Groß- und kleinschreibung bei ISiK-eigenen CodeSystemen deaktiviert https://github.com/gematik/spec-ISiK-Basismodul/pull/532/files
+* `fix` Procedure-code existiert nicht, verwende clinical-code https://github.com/gematik/spec-ISiK-Basismodul/pull/531
+
 
 ----
 

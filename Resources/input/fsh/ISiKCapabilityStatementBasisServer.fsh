@@ -576,7 +576,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
     * searchParam[+]
       * insert Expectation(#SHALL)
       * name = "code"
-      * definition = "http://hl7.org/fhir/SearchParameter/Procedure-code"
+      * definition = "http://hl7.org/fhir/SearchParameter/clinical-code"
       * type = #token
       * documentation = 
         "**Beispiel:**    
