@@ -12,7 +12,7 @@ Da es sich um eine Zusammenfassung handelt, werden nur folgende Use Case und daf
 
 **Use Case Digramm**
 
-<img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Basismodul/rc/main-stufe-4/Material/images/diagrams/usecases.svg" alt="Use Case Diagrams" width="90%"/>
+<img src="https://github.com/gematik/spec-ISiK-Basismodul/blob/main-isik-stufe-4/Material/images/diagrams/usecases.svg" alt="Use Case Diagrams" width="90%"/>
 
 
 
