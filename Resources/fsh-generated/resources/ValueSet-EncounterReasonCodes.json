@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EncounterReasonCodes",
+  "id": "EncounterReasonCodes",
+  "description": "Enthaelt alle SNOMED Reason Codes",
+  "version": "4.0.2",
+  "url": "https://gematik.de/fhir/isik/ValueSet/EncounterReasonCodes",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2025-02-06",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "404684003"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "71388002"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "243796009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "272379006"
+          }
+        ]
+      }
+    ]
+  }
+}

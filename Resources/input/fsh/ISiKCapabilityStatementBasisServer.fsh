@@ -26,7 +26,16 @@ Das CapabilityStatement der Instanz MUSS alle Funktionalitäten auflisten, die i
 Das CapabilityStatement KANN darüber hinaus die mit `MAY` gekennzeichneten Funktionalitäten, sowie weitere Funktionalitäten auflisten, 
 sofern diese in der Instanz implementiert wurden.  
 
-Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich."
+Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich.  
+  
+**HISTORIE:**    
+ 
+*Version 4.0.2* 
+* `change` Die Verbindlichkeit des Suchparameters `subject` wurde von SHALL auf MAY reduziert, da der Suchparameter `patient` für ISiK-Zwecke ausreichend ist.   
+
+*Version 4.0.1*  
+* `change` Die Verbindlichkeit von Include und RevInclude wurde von SHALL auf MAY reduziert, außer bei den Parameter `patient` und `encounter`, da diese für ISiK-Zwecke ausreichend sind.  
+"
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
 * kind = #requirements
 * fhirVersion = #4.0.1
@@ -288,7 +297,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  
         Dieser Suchparameter ist für die Umsetzung des IHE QEDm Profils verpflichtend."
     * searchParam[+]
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
       * name = "subject"
       * definition = "http://hl7.org/fhir/SearchParameter/Encounter-subject"
       * type = #reference
@@ -472,7 +481,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  
         Dieser Suchparameter ist für die Umsetzung des IHE QEDm Profils verpflichtend."
     * searchParam[+]
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
       * name = "subject"
       * definition = "http://hl7.org/fhir/SearchParameter/Condition-subject"
       * type = #reference
@@ -585,7 +594,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         **Anwendungshinweis:**   
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
     * searchParam[+]
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
       * name = "subject"
       * definition = "http://hl7.org/fhir/SearchParameter/Procedure-subject"
       * type = #reference
@@ -1015,7 +1024,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         **Anwendungshinweis:**   
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
     * searchParam[+]
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
       * name = "subject"
       * definition = "http://hl7.org/fhir/SearchParameter/Observation-subject"
       * type = #reference
@@ -1202,7 +1211,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
       * type = #special
       * documentation = 
         "**Beispiel zur Suche nach Standort nahe (100m) Koordinaten:**    
-        `GET [base]/Location?contains=52.525851|13.37774|100|m`    
+        `GET [base]/Location?near=52.525851|13.37774|100|m`    
         **Anwendungshinweis:**   
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#special).  "
 
@@ -1438,7 +1447,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
   * resource[+]
     * insert Expectation(#MAY)
     * type = #Subscription
-    * supportedProfile = Canonical(PatientMergeSubscription)
+    * supportedProfile = Canonical(ISiKPatientMergeSubscription)
       * insert Expectation(#MAY)
     * interaction[+]
       * insert Expectation(#MAY)

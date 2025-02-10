@@ -1,0 +1,210 @@
+{
+  "resourceType": "Encounter",
+  "id": "FachabteilungskontaktNormal",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung"
+    ]
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "einrichtungskontakt",
+          "system": "http://fhir.de/CodeSystem/Kontaktebene"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "operation",
+          "system": "http://fhir.de/CodeSystem/kontaktart-de"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://fhir.de/StructureDefinition/Aufnahmegrund",
+      "extension": [
+        {
+          "url": "ErsteUndZweiteStelle",
+          "valueCoding": {
+            "code": "01",
+            "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle",
+            "display": "Krankenhausbehandlung, vollstationär"
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate",
+      "valueDateTime": "2025-01-02"
+    },
+    {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate",
+      "valueDateTime": "2025-01-04"
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "VN",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "system": "https://test.krankenhaus.de/fhir/sid/besuchsnummer",
+      "value": "0123456789"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "code": "IMP",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+  },
+  "serviceType": {
+    "coding": [
+      {
+        "code": "218",
+        "system": "http://terminology.hl7.org/CodeSystem/service-type"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientinNormal"
+  },
+  "period": {
+    "start": "2024-10-21",
+    "end": "2025-01-01"
+  },
+  "diagnosis": [
+    {
+      "condition": {
+        "reference": "Condition/PrimaereGonarthroseNormal"
+      },
+      "use": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
+            "code": "treatment-diagnosis"
+          }
+        ]
+      },
+      "rank": 1
+    }
+  ],
+  "account": [
+    {
+      "reference": "Account/AbrechnungsfallGonarthrose",
+      "identifier": {
+        "value": "1234",
+        "system": "https://test.krankenhaus.de/fhir/sid/fallnummer"
+      }
+    }
+  ],
+  "hospitalization": {
+    "admitSource": {
+      "coding": [
+        {
+          "code": "E",
+          "system": "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass"
+        }
+      ]
+    },
+    "dischargeDisposition": {
+      "coding": [
+        {
+          "code": "home",
+          "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://fhir.de/StructureDefinition/Entlassungsgrund",
+          "extension": [
+            {
+              "url": "ErsteUndZweiteStelle",
+              "valueCoding": {
+                "code": "01",
+                "system": "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle",
+                "display": "Behandlung regulär beendet"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/RaumStandortBeispiel",
+        "identifier": {
+          "system": "https://test.krankenhaus.de/fhir/sid/roomid",
+          "value": "1234"
+        },
+        "display": "Zimmer 1234"
+      },
+      "status": "active",
+      "physicalType": {
+        "coding": [
+          {
+            "code": "ro",
+            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+            "display": "Room"
+          }
+        ]
+      }
+    },
+    {
+      "location": {
+        "reference": "Location/BettenstellplatzStandortBeispiel",
+        "identifier": {
+          "system": "https://test.krankenhaus.de/fhir/sid/bedid",
+          "value": "1234"
+        },
+        "display": "Bettenstellplatz 1234"
+      },
+      "status": "active",
+      "physicalType": {
+        "coding": [
+          {
+            "code": "bd",
+            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+            "display": "Bed"
+          }
+        ]
+      }
+    },
+    {
+      "location": {
+        "identifier": {
+          "system": "https://test.krankenhaus.de/fhir/sid/stationid",
+          "value": "1234"
+        },
+        "display": "Ward 1234"
+      },
+      "status": "active",
+      "physicalType": {
+        "coding": [
+          {
+            "code": "wa",
+            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+            "display": "Ward"
+          }
+        ]
+      }
+    }
+  ],
+  "serviceProvider": {
+    "identifier": {
+      "system": "https://test.krankenhaus.de/fhir/sid/fachabteilungsid",
+      "value": "ORTHO-1234"
+    },
+    "display": "Fachabteilung für Orthopädie und Endoprothetik"
+  }
+}

@@ -75,11 +75,10 @@ Während die Deutschen Basisprofile hier die Abkürzung LANR verwenden, ist im K
     Postfach 0..* MS
 * address[Postfach] only AddressDeBasis
   * ^short = "Postfachanschrift"
-  * ^comment = "Ist die Postfachadresse bekannt, unter der ein Arzt erreichbar ist, MUSS sie bereitgestellt werden."
+  * ^comment = "Ist die Postfachadresse bekannt, unter der ein Arzt erreichbar ist, MUSS sie bereitgestellt werden. Diese kann zur Unterscheidung von Personen herangezogen werden. Die Ausdifferenzierung der Adresse in die Adressbestandteile erfolgt in Hinblick auf eine einheitliche Verwendung von Adressen."
   * ^patternAddress.type = #postal
   * type 1.. MS
   * line 1.. MS
-  //VSDM-Extensions WARUM? 
     * extension[Strasse] 0..0
     * extension[Hausnummer] 0..0
     * extension[Adresszusatz] 0..0
@@ -89,12 +88,11 @@ Während die Deutschen Basisprofile hier die Abkürzung LANR verwenden, ist im K
   * country 1.. MS
 * address[Strassenanschrift] only AddressDeBasis
   * ^short = "Straßenanschrift"
-  * ^comment = "Ist die Adresse bekannt, unter der ein Arzt erreichbar ist, MUSS sie bereitgestellt werden."
+  * ^comment = "Ist die Adresse bekannt, unter der ein Arzt erreichbar ist, MUSS sie bereitgestellt werden. Diese kann zur Unterscheidung von Personen herangezogen werden. Die Ausdifferenzierung der Adresse in die Adressbestandteile erfolgt in Hinblick auf eine einheitliche Verwendung von Adressen."
   * extension[Stadtteil] MS
   * ^patternAddress.type = #both
   * type 1.. MS
   * line 1.. MS
-  //VSDM-Extensions WARUM? 
     * extension[Strasse] 0..1 MS
     * extension[Hausnummer] 0..1 MS
     * extension[Adresszusatz] 0..1 MS
@@ -104,16 +102,9 @@ Während die Deutschen Basisprofile hier die Abkürzung LANR verwenden, ist im K
   * country 1.. MS
 * gender MS
   * ^short = "Administratives Geschlecht"
-  * ^short = "Ist das Geschlecht des Arztes bekannt, MUSS es bereitgestellt werden."
-  //Extension WARUM?
+  * ^short = "Ist das Geschlecht des Arztes bekannt, MUSS es bereitgestellt werden. Eine korrekte Kodierung des Geschlechtseintrags 'divers' MUSS per GenderOtherDE-Extension unterstüzt werden."
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
   * extension[Geschlecht-Administrativ].value[x] MS
-  //Slicing kann weg weil implizit:
-* birthDate.extension ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "url"
-  * ^slicing.rules = #open
-  //WAS? WIESO Data-Absent-Reason!? Das Element ist doch optional! Es ist nichtmal MS!!
-* birthDate.extension contains $data-absent-reason named Data-Absent-Reason 0..1 MS
 //Achtung, VZD weicht hier ab: https://simplifier.net/vzd-fhir-directory/practitionerqualificationvs
 * qualification.code ^comment = "Zur Kodierung der Qualifikation ist das entsprechende [ValueSet der KBV](https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_Speciality) zu empfehlen."
 

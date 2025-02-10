@@ -4,11 +4,11 @@
   "name": "ProzedurenCodesSCT",
   "id": "ProzedurenCodesSCT",
   "description": "Enthaelt alle SNOMED Procedure Codes",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "url": "https://gematik.de/fhir/isik/ValueSet/ProzedurenCodesSCT",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-11-25",
+  "date": "2025-02-06",
   "compose": {
     "include": [
       {

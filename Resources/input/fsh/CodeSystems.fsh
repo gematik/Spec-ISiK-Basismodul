@@ -2,6 +2,7 @@ CodeSystem: ISiKBesondereBehandlungsformReha
 Id: ISiKBesondereBehandlungsformRehaCS
 Description: "Besondere Behandlungsform der Reha gemäß §301(4 UND 4A) SGB V. Vgl. Schlüsseltabelle 2.51 Besondere Behandlungsformen."
 * insert Meta
+* ^caseSensitive = false
 * #0 "keine"
 * #1 "MBOR" "Medizinisch beruflich orientierte Rehabilitation"
 * #2 "VMO (vor dem Jahr 2021) / Kombination MBOR/VMO (ab dem Jahr 2021)" "Verhaltensmedizinische Orthopädie"
@@ -12,6 +13,7 @@ CodeSystem: ISiKBehandlungsergebnisReha
 Id: ISiKBehandlungsergebnisRehaCS
 Description: "Behandlungsergebnis Reha gemäß §301(4 UND 4A) SGB V. Diagnosenbezogene Bewertung des Behandlungsergebnisses für einen Versicherten/Berechtigten bei Entlassung aus der Reha-Maßnahme bzw. Stellung eines Antrags auf Verlängerung. Vgl. Schlüsseltabelle 2.71 Diagnose - Behandlungsergebnis."
 * insert Meta
+* ^caseSensitive = false
 * #0 "Ziff. 1-3 trifft nicht zu"
 * #1 "gebessert"
 * #2 "unverändert"
@@ -21,6 +23,7 @@ CodeSystem: ISiKEntlassformReha
 Id: ISiKEntlassformRehaCS
 Description: "ISiK Entlassform Reha. Beschreibt Form und ggf. Weiterbehandlung der Entlassung eines Versicherten/Berechtigten aus verwaltungs- und medizinischer Sicht. Vgl. Schlüsseltabelle 2.107 Entlassungsform."
 * insert Meta
+* ^caseSensitive = false
 * #01 "Behandlung regulär beendet"
 * #02 "Behandlung vorzeitig auf ärztliche Veranlassung beendet"
 * #03 "Behandlung vorzeitig mit ärztlichem Einverständnis beendet"
@@ -45,6 +48,7 @@ CodeSystem: ISiKUnterbrechnungReha
 Id: ISiKUnterbrechnungRehaCS
 Description: "ISiK Unterbrechung Reha. Dokumentiert die relevanten Gründe einer Unterbrechung einer Rehabilitationsmaßnahme im Einzelfall. Vgl. Schlüsseltabelle 2.111 Erläuterung zur Unterbrechung."
 * insert Meta
+* ^caseSensitive = false
 * #01 "Interkurrente Erkrankung"
 * #02 "Stationäre Krankenhausbehandlung (nicht interkurrente Erkrankung)"
 * #03 "Beurlaubung"
