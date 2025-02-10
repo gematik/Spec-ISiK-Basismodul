@@ -1,0 +1,68 @@
+{
+  "resourceType": "Location",
+  "id": "StationStandortBeispiel",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKStandort"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.de/sid/dkgev/standortnummer",
+      "value": "123456"
+    }
+  ],
+  "mode": "instance",
+  "operationalStatus": {
+    "code": "O",
+    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+    "display": "Occupied"
+  },
+  "name": "Station A",
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "_LocationIdentifiedEntityRoleCode",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+        }
+      ]
+    }
+  ],
+  "address": {
+    "line": [
+      "Krankenhausstraße 123"
+    ],
+    "city": "Musterstadt",
+    "postalCode": "12345"
+  },
+  "physicalType": {
+    "coding": [
+      {
+        "code": "wa",
+        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+        "display": "Ward"
+      }
+    ]
+  },
+  "position": {
+    "latitude": 52.52,
+    "longitude": 13.405
+  },
+  "managingOrganization": {
+    "reference": "Organization/AbteilungAllgemeinchirurgieOrganisationBeispiel"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "fri"
+      ],
+      "allDay": true
+    },
+    {
+      "daysOfWeek": [
+        "sun"
+      ]
+    }
+  ]
+}

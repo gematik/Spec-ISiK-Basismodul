@@ -76,8 +76,8 @@
     "fshName": "SubscriptionNotificationBundleExample",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 153,
-    "endLine": 166
+    "startLine": 128,
+    "endLine": 141
   },
   {
     "outputFile": "Bundle-Szenario1.json",
@@ -101,7 +101,7 @@
     "fshType": "Instance",
     "fshFile": "ISiKCapabilityStatementBasisServer.fsh",
     "startLine": 1,
-    "endLine": 1469
+    "endLine": 1478
   },
   {
     "outputFile": "CodeSystem-CodeSystemExample.json",
@@ -156,48 +156,48 @@
     "fshName": "BehandlungsDiagnoseFreitext",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 208,
-    "endLine": 215
+    "startLine": 210,
+    "endLine": 217
   },
   {
     "outputFile": "Condition-Example-condition-ausrufezeichen-primaer.json",
     "fshName": "Example-condition-ausrufezeichen-primaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 140,
-    "endLine": 149
+    "startLine": 142,
+    "endLine": 151
   },
   {
     "outputFile": "Condition-Example-condition-ausrufezeichen-sekundaer.json",
     "fshName": "Example-condition-ausrufezeichen-sekundaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 151,
-    "endLine": 164
+    "startLine": 153,
+    "endLine": 166
   },
   {
     "outputFile": "Condition-Example-condition-kreuz-stern-primaer.json",
     "fshName": "Example-condition-kreuz-stern-primaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 166,
-    "endLine": 178
+    "startLine": 168,
+    "endLine": 180
   },
   {
     "outputFile": "Condition-Example-condition-kreuz-stern-sekundaer.json",
     "fshName": "Example-condition-kreuz-stern-sekundaer",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 180,
-    "endLine": 195
+    "startLine": 182,
+    "endLine": 197
   },
   {
     "outputFile": "Condition-MittelgradigeIntelligenzminderung.json",
     "fshName": "MittelgradigeIntelligenzminderung",
     "fshType": "Instance",
     "fshFile": "ISiKDiagnose.fsh",
-    "startLine": 197,
-    "endLine": 206
+    "startLine": 199,
+    "endLine": 208
   },
   {
     "outputFile": "Condition-SZ2Primaerdiagnose.json",
@@ -260,8 +260,8 @@
     "fshName": "Fachabteilungskontakt",
     "fshType": "Instance",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 421,
-    "endLine": 461
+    "startLine": 430,
+    "endLine": 470
   },
   {
     "outputFile": "Encounter-FachabteilungskontaktMinimal.json",
@@ -308,16 +308,16 @@
     "fshName": "BettenstellplatzStandortBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 91,
-    "endLine": 95
+    "startLine": 96,
+    "endLine": 100
   },
   {
     "outputFile": "Location-RaumStandortBeispiel.json",
     "fshName": "RaumStandortBeispiel",
     "fshType": "Instance",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 85,
-    "endLine": 89
+    "startLine": 90,
+    "endLine": 94
   },
   {
     "outputFile": "Observation-ISiKAlkoholAbususBeispiel.json",
@@ -380,16 +380,16 @@
     "fshName": "DorisQuelle",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 102,
-    "endLine": 114
+    "startLine": 77,
+    "endLine": 89
   },
   {
     "outputFile": "Patient-DorisZiel.json",
     "fshName": "DorisZiel",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 116,
-    "endLine": 128
+    "startLine": 91,
+    "endLine": 103
   },
   {
     "outputFile": "Patient-PatientinMusterfrau.json",
@@ -460,24 +460,24 @@
     "fshName": "Encounter-date-start",
     "fshType": "Instance",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 504,
-    "endLine": 522
+    "startLine": 513,
+    "endLine": 531
   },
   {
     "outputFile": "SearchParameter-Encounter-end-date.json",
     "fshName": "Encounter-end-date",
     "fshType": "Instance",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 524,
-    "endLine": 542
+    "startLine": 533,
+    "endLine": 551
   },
   {
     "outputFile": "StructureDefinition-ExtensionISiKRehaEntlassung.json",
     "fshName": "ExtensionISiKRehaEntlassung",
     "fshType": "Extension",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
-    "startLine": 398,
-    "endLine": 419
+    "startLine": 407,
+    "endLine": 428
   },
   {
     "outputFile": "StructureDefinition-ISiKASKCoding.json",
@@ -573,7 +573,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKDiagnose.fsh",
     "startLine": 1,
-    "endLine": 138
+    "endLine": 140
   },
   {
     "outputFile": "StructureDefinition-ISiKICD10GMCoding.json",
@@ -589,7 +589,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKKontaktGesundheitseinrichtung.fsh",
     "startLine": 1,
-    "endLine": 396
+    "endLine": 405
   },
   {
     "outputFile": "StructureDefinition-ISiKLebensZustand.json",
@@ -638,6 +638,14 @@
     "fshFile": "ISiKPatient.fsh",
     "startLine": 2,
     "endLine": 345
+  },
+  {
+    "outputFile": "StructureDefinition-ISiKPatientMergeSubscription.json",
+    "fshName": "ISiKPatientMergeSubscription",
+    "fshType": "Profile",
+    "fshFile": "IsiKPatientMerge.fsh",
+    "startLine": 3,
+    "endLine": 60
   },
   {
     "outputFile": "StructureDefinition-ISiKPersonImGesundheitsberuf.json",
@@ -693,23 +701,23 @@
     "fshType": "Profile",
     "fshFile": "ISiKStandort.fsh",
     "startLine": 1,
-    "endLine": 57
+    "endLine": 62
   },
   {
     "outputFile": "StructureDefinition-ISiKStandortBettenstellplatz.json",
     "fshName": "ISiKStandortBettenstellplatz",
     "fshType": "Profile",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 69,
-    "endLine": 82
+    "startLine": 74,
+    "endLine": 87
   },
   {
     "outputFile": "StructureDefinition-ISiKStandortRaum.json",
     "fshName": "ISiKStandortRaum",
     "fshType": "Profile",
     "fshFile": "ISiKStandort.fsh",
-    "startLine": 59,
-    "endLine": 67
+    "startLine": 64,
+    "endLine": 72
   },
   {
     "outputFile": "StructureDefinition-ISiKStillstatus.json",
@@ -744,20 +752,12 @@
     "endLine": 72
   },
   {
-    "outputFile": "StructureDefinition-patient-merge-subscription.json",
-    "fshName": "PatientMergeSubscription",
-    "fshType": "Profile",
-    "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 3,
-    "endLine": 59
-  },
-  {
     "outputFile": "Subscription-PatientMergeSubscriptionExample.json",
     "fshName": "PatientMergeSubscriptionExample",
     "fshType": "Instance",
     "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 73,
-    "endLine": 84
+    "startLine": 64,
+    "endLine": 75
   },
   {
     "outputFile": "ValueSet-DiagnosesSCT.json",
@@ -771,9 +771,9 @@
     "outputFile": "ValueSet-FhirMimeTypeVS.json",
     "fshName": "FhirMimeTypeVS",
     "fshType": "ValueSet",
-    "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 94,
-    "endLine": 100
+    "fshFile": "valueSets.fsh",
+    "startLine": 160,
+    "endLine": 166
   },
   {
     "outputFile": "ValueSet-ISiKAccountType.json",
@@ -851,9 +851,9 @@
     "outputFile": "ValueSet-RestAndWSSubscriptionChannelType.json",
     "fshName": "RestAndWSSubscriptionChannelType",
     "fshType": "ValueSet",
-    "fshFile": "IsiKPatientMerge.fsh",
-    "startLine": 86,
-    "endLine": 92
+    "fshFile": "valueSets.fsh",
+    "startLine": 152,
+    "endLine": 158
   },
   {
     "outputFile": "ValueSet-SchwangerschaftEtMethodeVS.json",

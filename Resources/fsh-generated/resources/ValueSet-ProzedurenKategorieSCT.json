@@ -8,7 +8,7 @@
   "url": "https://gematik.de/fhir/isik/ValueSet/ProzedurenKategorieSCT",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2025-01-21",
+  "date": "2025-02-10",
   "compose": {
     "include": [
       {
