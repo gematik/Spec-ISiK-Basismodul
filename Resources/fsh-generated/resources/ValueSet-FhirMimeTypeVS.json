@@ -9,7 +9,7 @@
   "url": "https://gematik.de/fhir/isik/ValueSet/FhirMimeTypeVS",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2025-01-29",
+  "date": "2025-02-04",
   "compose": {
     "include": [
       {

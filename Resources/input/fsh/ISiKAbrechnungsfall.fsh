@@ -125,3 +125,15 @@ Usage: #example
   * extension[Abrechnungsart]
     * valueCoding = $Abrechnungsart#DRG "Diagnosebezogene Fallgruppen"
   * coverage = Reference(CoverageGesetzlich)
+
+
+Instance: AbrechnungsfallGonarthrose
+InstanceOf: ISiKAbrechnungsfall
+Usage: #example
+* identifier[Abrechnungsnummer]
+  * system = "https://test.krankenhaus.de/fhir/sid/abrechnungsnummer"
+  * value = "1234567891"
+  * type = $v2-0203#AN
+* status = #active
+* type = $v3-ActCode#IMP
+* subject = Reference(PatientinNormal)

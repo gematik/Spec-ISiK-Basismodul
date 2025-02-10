@@ -6,7 +6,7 @@
   "name": "ISiKStandortBettenstellplatz",
   "status": "active",
   "experimental": false,
-  "date": "2025-01-29",
+  "date": "2025-02-04",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil dient der strukturierten Erfassung von Bettenstellplätzen (als Standorten) \r\neines Krankenhauses.  \r\n### Hinweis  \r\nEin einzelnes Bett als Gegenstand kann als FHIR-Ressource 'Device' abgebildet werden, \r\ndas einen Bettenstellplatz referenziert.\r\n",
   "fhirVersion": "4.0.1",
