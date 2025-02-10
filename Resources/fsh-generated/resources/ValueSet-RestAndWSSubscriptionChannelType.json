@@ -9,7 +9,7 @@
   "url": "https://gematik.de/fhir/isik/ValueSet/RestAndWSSubscriptionChannelType",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2025-02-04",
+  "date": "2025-02-06",
   "compose": {
     "include": [
       {
