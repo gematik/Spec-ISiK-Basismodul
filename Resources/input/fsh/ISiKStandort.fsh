@@ -104,7 +104,6 @@ Instance: StationStandortBeispiel
 InstanceOf: ISiKStandort 
 Usage: #example
 //  noch kein eigenes Profil vorhanden
-* identifier.system: "http://fhir.de/sid/dkgev/standortnummer"
 * identifier.value: "123456"
 * operationalStatus = $v2-0203#O "Occupied" 
 // bei Raum & Bettenstellplatz MS, nicht bei Standort
