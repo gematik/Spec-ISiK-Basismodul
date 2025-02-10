@@ -20,6 +20,10 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 * `fixed` `test stable` Der Name, Id und Canonical des ISiKPatientMergeSubscription Profils wurde an das ISiK Namingschema angepasst. https://github.com/gematik/spec-ISiK-Basismodul/pull/539
 * `add``example` Beispiele hinzugefügt für Patient, Condition, Encounter https://github.com/gematik/spec-ISiK-Basismodul/pull/520 
 * `improved` Groß- und kleinschreibung bei ISiK-eigenen CodeSystemen deaktiviert https://github.com/gematik/spec-ISiK-Basismodul/pull/532/files
+* `fix` `test stable` Korrektur eines Beispiels für eine GET-Abfrage zum Suchparameter 'near' https://github.com/gematik/spec-ISiK-Basismodul/pull/533
+* `improved` Groß- und kleinschreibung bei ISiK-eigenen CodeSystemen deaktiviert https://github.com/gematik/spec-ISiK-Basismodul/pull/532/files
+
+----
 
 ## Version 4.0.1
 
