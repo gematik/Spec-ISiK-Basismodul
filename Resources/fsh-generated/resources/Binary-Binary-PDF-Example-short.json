@@ -1,9 +1,0 @@
-{
-  "resourceType": "Binary",
-  "id": "Binary-PDF-Example-short",
-  "contentType": "application/pdf",
-  "securityContext": {
-    "reference": "Patient/PatientinMusterfrau"
-  },
-  "data": "JVBERi0xLjUNJeLjz9MNCjEw"
-}

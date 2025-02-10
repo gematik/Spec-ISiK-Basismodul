@@ -1,27 +1,8 @@
 <img align="right" width="250" height="47" src="/Material/images/Gematik_Logo_Flag.svg"/> <br/> 
 
-# ISiK-Basis
+# ISiK-Archiv
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-       <ul>
-        <li><a href="#release-notes">Release Notes</a></li>
-      </ul>
-	</li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-## About The Project
-
-For full information and details, see [Simplifier Project Page for ISiK Basis Stufe 4](https://simplifier.net/isik-basis-v4)
-
-### Release Notes
-See [ReleaseNotes.md](/ImplementationGuide/markdown/ReleaseNotes.md) for all information regarding the (newest) releases.
+In diesem Branch werden Grafiken und weitere Dateien zur Wiederverwendung in verschiedenen IGs stabil vorgehalten (sodass sie referenziert werden können; z.B. svg in IGs per HTML-markup)
 
 ## License
  
