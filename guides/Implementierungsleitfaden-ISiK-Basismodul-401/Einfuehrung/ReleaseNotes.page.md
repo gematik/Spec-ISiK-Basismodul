@@ -9,11 +9,22 @@ Im Rahmen der ISiK-Veröffentlichungen wird das [Semantic Versioning](https://se
 
 Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.
 
-## Version: 4.0.2 (pre-release)
 
-Datum: tbd.
-
+## Version 4.0.2
+* `fixed` Anpassung Kardinaltiät von "ExtensionAbrechnungsart" unter Account.coverage https://github.com/gematik/spec-ISiK-Basismodul/pull/526
+* `fix` SearchParameter “contains” existiert nicht in FHIR R4, Suchparameter wird entfernt  https://github.com/gematik/spec-ISiK-Basismodul/pull/529
+* `fixed` `test stable` Korrektur eines Beispiels für eine GET-Abfrage zum Suchparameter 'near' https://github.com/gematik/spec-ISiK-Basismodul/pull/533
+* `improved` `softened` Die Verbindlichkeit des Suchparameters `subject` wurde von SHALL auf MAY reduziert, da der Suchparameter `patient` für ISiK-Zwecke ausreichend ist. https://github.com/gematik/spec-ISiK-Basismodul/pull/515
+* `fixed` `test stable` Der Name, Id und Canonical des ISiKPatientMergeSubscription Profils wurde an das ISiK Namingschema angepasst.  https://github.com/gematik/spec-ISiK-Basismodul/pull/539
+* `improved` `test stable` Schärfung von Kommentaren von MS-Feldern für das Datenobjekt ‘Practitioner’ https://github.com/gematik/spec-ISiK-Basismodul/pull/541
+* `fixed` `test stable` Der Name, Id und Canonical des ISiKPatientMergeSubscription Profils wurde an das ISiK Namingschema angepasst. https://github.com/gematik/spec-ISiK-Basismodul/pull/539
+* `add``example` Beispiele hinzugefügt für Patient, Condition, Encounter https://github.com/gematik/spec-ISiK-Basismodul/pull/520 
+* `improved` Groß- und kleinschreibung bei ISiK-eigenen CodeSystemen deaktiviert https://github.com/gematik/spec-ISiK-Basismodul/pull/532/files
 * `fix` `test stable` Korrektur eines Beispiels für eine GET-Abfrage zum Suchparameter 'near' https://github.com/gematik/spec-ISiK-Basismodul/pull/533
+* `improved` Groß- und kleinschreibung bei ISiK-eigenen CodeSystemen deaktiviert https://github.com/gematik/spec-ISiK-Basismodul/pull/532/files
+* `fix` Procedure-code existiert nicht, verwende clinical-code https://github.com/gematik/spec-ISiK-Basismodul/pull/531
+* `improve`Update Basisprofile-De Version auf 1.5.2 https://github.com/gematik/spec-ISiK-Basismodul/pull/549
+
 
 ----
 
@@ -33,6 +44,8 @@ https://github.com/gematik/spec-ISiK-Basismodul/issues/436
 * `improved` Hinweis zur Handhabung von leeren Elementen und einem :not-Modifier hinzugefügt https://github.com/gematik/spec-ISiK-Basismodul/pull/473 obsoleter PR, dafür umgesetzt hier: https://github.com/gematik/spec-ISiK-Basismodul/commit/e63cc68d311057f7b30b5b405c5533bef41e9d68
 * `fixed` Dependency zum R5 backporting IG auf das R4 only  package angepasst https://github.com/gematik/spec-ISiK-Basismodul/pull/479
 * `improved` Formulierung zur Verwendung des Versorgungsstellenkontaktes https://github.com/gematik/spec-ISiK-Basismodul/pull/488
+* `add``example`Beispiel Station hinzugefügt https://github.com/gematik/spec-ISiK-Basismodul/pull/546/files
+* `improved` Harmonisierung von Encounter.type und Account.type https://github.com/gematik/spec-ISiK-Basismodul/pull/441
 
 ## Version: 4.0.0
 

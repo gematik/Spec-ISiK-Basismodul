@@ -1,11 +1,12 @@
 {
   "name": "de.gematik.isik-basismodul",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "fhirVersions": [
     "4.0.1"
   ],
   "dependencies": {
-    "de.basisprofil.r4": "1.5.0",
+    "hl7.fhir.r4.core": "4.0.1",
+    "de.basisprofil.r4": "1.5.2",
     "hl7.fhir.uv.subscriptions-backport.r4": "1.1.0"
   }
 }

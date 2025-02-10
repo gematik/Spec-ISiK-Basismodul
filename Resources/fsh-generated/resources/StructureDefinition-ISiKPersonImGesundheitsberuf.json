@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKPersonImGesundheitsberuf",
   "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "name": "ISiKPersonImGesundheitsberuf",
   "status": "active",
   "experimental": false,
-  "date": "2024-11-25",
+  "date": "2025-02-10",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Nutzung von in Gesundheitsberufen tätigen Personen in ISiK Szenarien.\n### Motivation\n\nDas Profil ISIKPersonImGesundheitsberuf bildet alle denkbaren medizinischen Leistungserbringer und Fachexperten  ab. In den ISiK-FHIR-Profilen können PersonImGesundheitsberuf bspw. als Ausführende einer Prozedur auftreten, im Element `performer` der Procedure Ressource, oder als die Person, die eine Diagnose stellt, im Element `asserter` der Condition Ressource.\n\nIn FHIR werden PersonImGesundheitsberuf mit der [`Practitioner`](https://hl7.org/fhir/R4/practitioner.html)-Ressource\n repräsentiert.  \n Für das Profil ISIKPersonImGesundheitsberuf wird eine Kompatibilität mit folgenden Profilen angestrebt; allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen ISIKPatient valide sind, auch valide sind gegen:\n* [Profil KBV_PR_Base_Practitioner der KBV Basisprofile](https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Practitioner). \n* [Profil HiGHmed_IC_Practitioner, MI Initiative - HiGHmed Use Case Infection Control der  Medizininformatik Initiative ](https://simplifier.net/medizininformatikinitiative-highmed-ic/highmed-ic-practitioner)\n\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
@@ -271,7 +271,7 @@
         "path": "Practitioner.address",
         "sliceName": "Strassenanschrift",
         "short": "Straßenanschrift",
-        "comment": "Ist die Adresse bekannt, unter der ein Arzt erreichbar ist, MUSS sie bereitgestellt werden.",
+        "comment": "Ist die Adresse bekannt, unter der ein Arzt erreichbar ist, MUSS sie bereitgestellt werden. Diese kann zur Unterscheidung von Personen herangezogen werden. Die Ausdifferenzierung der Adresse in die Adressbestandteile erfolgt in Hinblick auf eine einheitliche Verwendung von Adressen.",
         "min": 0,
         "max": "*",
         "type": [
@@ -352,7 +352,7 @@
         "path": "Practitioner.address",
         "sliceName": "Postfach",
         "short": "Postfachanschrift",
-        "comment": "Ist die Postfachadresse bekannt, unter der ein Arzt erreichbar ist, MUSS sie bereitgestellt werden.",
+        "comment": "Ist die Postfachadresse bekannt, unter der ein Arzt erreichbar ist, MUSS sie bereitgestellt werden. Diese kann zur Unterscheidung von Personen herangezogen werden. Die Ausdifferenzierung der Adresse in die Adressbestandteile erfolgt in Hinblick auf eine einheitliche Verwendung von Adressen.",
         "min": 0,
         "max": "*",
         "type": [
@@ -425,7 +425,7 @@
       {
         "id": "Practitioner.gender",
         "path": "Practitioner.gender",
-        "short": "Ist das Geschlecht des Arztes bekannt, MUSS es bereitgestellt werden.",
+        "short": "Ist das Geschlecht des Arztes bekannt, MUSS es bereitgestellt werden. Eine korrekte Kodierung des Geschlechtseintrags 'divers' MUSS per GenderOtherDE-Extension unterstüzt werden.",
         "mustSupport": true
       },
       {
@@ -447,22 +447,6 @@
       {
         "id": "Practitioner.gender.extension:Geschlecht-Administrativ.value[x]",
         "path": "Practitioner.gender.extension.value[x]",
-        "mustSupport": true
-      },
-      {
-        "id": "Practitioner.birthDate.extension:Data-Absent-Reason",
-        "path": "Practitioner.birthDate.extension",
-        "sliceName": "Data-Absent-Reason",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
