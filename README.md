@@ -20,6 +20,8 @@
 
 For full information and details, see [Simplifier Project Page for ISiK Basis Stufe 4](https://simplifier.net/isik-basis-v4)
 
+Additional Material (e.g. pics etc. - also for internal use) can be found here : https://github.com/gematik/spec-ISiK-Basismodul/tree/archive-stable-pics-etc 
+
 ### Release Notes
 See [ReleaseNotes.md](/ImplementationGuide/markdown/ReleaseNotes.md) for all information regarding the (newest) releases.
 
