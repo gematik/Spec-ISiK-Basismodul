@@ -3,3 +3,4 @@
 ^http://hl7\.org/fhir/StructureDefinition/condition-related
 ^http://hl7\.org/fhir/5\.0/StructureDefinition/extension-Encounter\.plannedStartDate
 ^http://hl7\.org/fhir/5\.0/StructureDefinition/extension-Encounter\.plannedEndDate
+^https://gematik.de/fhir/isik/StructureDefinition/ISiKPatientMergeSubscription
