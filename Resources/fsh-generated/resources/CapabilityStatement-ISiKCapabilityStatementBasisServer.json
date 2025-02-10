@@ -2535,18 +2535,6 @@
                   "valueCode": "MAY"
                 }
               ],
-              "name": "contains",
-              "definition": "http://hl7.org/fhir/SearchParameter/Location-contains",
-              "type": "reference",
-              "documentation": "**Beispiel zur Suche nach Standort-Zugehörigkeit eines Raums:**    \n        `GET [base]/Location?contains=KoordinatenBeispielGeoJSON`    \n        **Anwendungshinweis:**   \n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
               "name": "near",
               "definition": "http://hl7.org/fhir/SearchParameter/Location-near",
               "type": "special",

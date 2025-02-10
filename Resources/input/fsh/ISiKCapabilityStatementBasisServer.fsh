@@ -1196,16 +1196,6 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
     * searchParam[+]
       * insert Expectation(#MAY)
-      * name = "contains"
-      * definition = "http://hl7.org/fhir/SearchParameter/Location-contains"
-      * type = #reference
-      * documentation = 
-        "**Beispiel zur Suche nach Standort-Zugehörigkeit eines Raums:**    
-        `GET [base]/Location?contains=KoordinatenBeispielGeoJSON`    
-        **Anwendungshinweis:**   
-        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
-    * searchParam[+]
-      * insert Expectation(#MAY)
       * name = "near"
       * definition = "http://hl7.org/fhir/SearchParameter/Location-near"
       * type = #special
