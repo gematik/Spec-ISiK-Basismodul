@@ -11,6 +11,7 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 ## Version 4.0.2
 * `fixed` Anpassung Kardinaltiät von "ExtensionAbrechnungsart" unter Account.coverage https://github.com/gematik/spec-ISiK-Basismodul/pull/526
+* `fix` SearchParameter “contains” existiert nicht in FHIR R4, Suchparameter wird entfernt  https://github.com/gematik/spec-ISiK-Basismodul/pull/529
 
 ## Version 4.0.1
 * `improved` Refactoring des ImplementationGuides
