@@ -6,7 +6,7 @@
   "name": "ISiKValueSet",
   "status": "active",
   "experimental": false,
-  "date": "2025-02-06",
+  "date": "2025-02-10",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil beschreibt die maschinenlesbare Auswahl von Codes \nfür die Kodierung spezifischer FHIR-Elemente in ISiK-Szenarien.\n### Motivation\n\nISiK erlaubt in diversen Kontexten die Erweiterung der Kodierung durch Krankenhaus- / System-interne Kodierungen.\nMittels der Veröffentlichung von ValueSets können Auswahllisten für externe Clients bereitgestellt werden, sodass diese entsprechende Kodierungen ebenfalls anbieten können.\n### Kompatibilität\n\nFür das Profil ISiKValueSet wurde bis zum Zeitpunkt der Veröffentlichung kein Abgleich der Kompatibilität zu anderen Profilen (der KBV und der Medizininformatik-Initiative) durchgeführt.\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
