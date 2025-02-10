@@ -1,0 +1,1 @@
+Die Beispiele hier wurden auf ISiK Stufe 3 gescoped. Sie dienen lediglich als Voralge für die Bearbeitung der Connectathon Aufgaben.

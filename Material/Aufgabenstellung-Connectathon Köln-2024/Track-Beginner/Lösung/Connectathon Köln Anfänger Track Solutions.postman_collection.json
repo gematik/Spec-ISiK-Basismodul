@@ -1,0 +1,581 @@
+{
+	"info": {
+		"_postman_id": "5bce1cbd-8a9a-4968-9043-be7346e38cf0",
+		"name": "Connectathon Köln Anfänger Track Solutions",
+		"description": "Hier Informationen vielleicht auch den kompletten Text reinbauen?!",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39746134",
+		"_collection_link": "https://connectathon.postman.co/workspace/38156fba-f064-45d1-8e81-16757b452cfd/collection/39391560-5bce1cbd-8a9a-4968-9043-be7346e38cf0?action=share&source=collection_link&creator=39746134"
+	},
+	"item": [
+		{
+			"name": "1. Create Practitioner Dr. Peters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"console.log(jsonData.id);\r",
+							"pm.collectionVariables.set(\"practitioner_id\", jsonData.id);\r",
+							"// Test the response body structure and values\r",
+							"pm.test(\"Response body structure is valid\", function () {\r",
+							"    var responseJSON = pm.response.json();\r",
+							"\r",
+							"    pm.expect(responseJSON).to.have.property('resourceType');\r",
+							"    pm.expect(responseJSON).to.have.property('id');\r",
+							"    pm.expect(responseJSON).to.have.property('meta');\r",
+							"    pm.expect(responseJSON).to.have.property('identifier');\r",
+							"    pm.expect(responseJSON).to.have.property('active');\r",
+							"    pm.expect(responseJSON).to.have.property('name');\r",
+							"    pm.expect(responseJSON).to.have.property('address');\r",
+							"    pm.expect(responseJSON).to.have.property('gender');\r",
+							"    pm.expect(responseJSON).to.have.property('qualification');\r",
+							"});\r",
+							"\r",
+							"// Test the correctness and validity of specific properties\r",
+							"pm.test(\"Validate resourceType is not empty\", function () {\r",
+							"    pm.expect(jsonData.resourceType).to.not.be.empty;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate id is not empty\", function () {\r",
+							"    pm.expect(jsonData.id).to.not.be.empty;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate meta is an object\", function () {\r",
+							"    pm.expect(jsonData.meta).to.be.an('object');\r",
+							"});\r",
+							"\r",
+							"// Add more tests for other properties as needed"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"resourceType\": \"Practitioner\",\r\n  \"id\": \"PractitionerPeters\",\r\n  \"meta\": {\r\n    \"source\": \"http://krankenhaus.de\",\r\n    \"profile\": [\r\n      \"https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf\"\r\n    ]\r\n  },\r\n  \"name\": [\r\n    {\r\n      \"use\": \"official\",\r\n      \"text\": \"Anja Peters\",\r\n      \"family\": \"Peters\",\r\n      \"_family\": {\r\n        \"extension\": [\r\n          {\r\n            \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-name\",\r\n            \"valueString\": \"Peters\"\r\n          }\r\n        ]\r\n      },\r\n      \"given\": [\r\n        \"Anja\"\r\n      ]\r\n    }\r\n  ],\r\n  \"identifier\": [\r\n    {\r\n      \"type\": {\r\n        \"coding\": [\r\n          {\r\n            \"code\": \"LANR\",\r\n            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\"\r\n          }\r\n        ]\r\n      },\r\n      \"system\": \"https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR\",\r\n      \"value\": \"123456789\"\r\n    },\r\n    {\r\n      \"type\": {\r\n        \"coding\": [\r\n          {\r\n            \"code\": \"DN\",\r\n            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\"\r\n          }\r\n        ]\r\n      },\r\n      \"system\": \"http://fhir.de/sid/bundesaerztekammer/efn\",\r\n      \"value\": \"123456789123456\"\r\n    }\r\n  ],\r\n  \"active\": true,\r\n  \"address\": [\r\n    {\r\n      \"type\": \"both\",\r\n      \"line\": [\r\n        \"Schmiedegasse 16\"\r\n      ],\r\n      \"_line\": [\r\n        {\r\n          \"extension\": [\r\n            {\r\n              \"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber\",\r\n              \"valueString\": \"16\"\r\n            },\r\n            {\r\n              \"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName\",\r\n              \"valueString\": \"Schmiedegasse\"\r\n            }\r\n          ]\r\n        }\r\n      ],\r\n      \"city\": \"Potsdam\",\r\n      \"postalCode\": \"14469\",\r\n      \"country\": \"DE\"\r\n    }\r\n  ],\r\n  \"gender\": \"female\",\r\n  \"qualification\": [\r\n    {\r\n      \"code\": {\r\n        \"coding\": [\r\n          {\r\n            \"version\": \"http://snomed.info/sct/900000000000207008/version/20200131\",\r\n            \"code\": \"112247003\",\r\n            \"system\": \"http://snomed.info/sct\",\r\n            \"display\": \"Medical doctor (occupation)\"\r\n          }\r\n        ]\r\n      }\r\n    }\r\n  ],\r\n  \"_birthDate\": {\r\n    \"extension\": [\r\n      {\r\n        \"url\": \"http://hl7.org/fhir/StructureDefinition/data-absent-reason\",\r\n        \"valueCode\": \"masked\"\r\n      }\r\n    ]\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Practitioner",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Practitioner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Create Patient Anna Müller",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"console.log(jsonData.id);\r",
+							"pm.collectionVariables.set(\"patient_id\", jsonData.id);\r",
+							"pm.collectionVariables.set(\"patient_birthdate\", jsonData.birthDate);\r",
+							"\r",
+							"pm.test(\"Correct meta.profile is set\", function () {\r",
+							"    \r",
+							"    pm.expect(jsonData.meta.profile[0]).to.equal(\"https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient\");\r",
+							"});\r",
+							"pm.test(\"Check if the gender is set to female\", function () {\r",
+							"    \r",
+							"    pm.expect(jsonData.gender).to.equal(\"female\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check if the birthdate is set to '1957-08-12'\", function () {\r",
+							"    pm.expect(jsonData.birthDate).to.equal(\"1957-08-12\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Check if name array contains specific values\", function () {\r",
+							"    var nameArray = jsonData.name;\r",
+							"    var nameMatch = nameArray.some(function(nameObj) {\r",
+							"        return (nameObj.use === \"official\" && nameObj.family === \"Müller\" && nameObj.given.includes(\"Anna\") && nameObj._family.extension[0].url === \"http://hl7.org/fhir/StructureDefinition/humanname-own-name\" && nameObj._family.extension[0].valueString === \"Müller\");\r",
+							"    });\r",
+							"    pm.expect(nameMatch).to.be.true;\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"resourceType\": \"Patient\",\r\n  \"id\": \"PatientinAnnaMueller\",\r\n  \"meta\": {\r\n    \"profile\": [\r\n      \"https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient\"\r\n    ]\r\n  },\r\n  \"identifier\": [\r\n    {\r\n      \"type\": {\r\n        \"coding\": [\r\n          {\r\n            \"code\": \"MR\",\r\n            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\"\r\n          }\r\n        ]\r\n      },\r\n      \"system\": \"https://fhir.krankenhaus.example/sid/PID\",\r\n      \"value\": \"TestPID1\"\r\n    },\r\n    {\r\n      \"type\": {\r\n        \"coding\": [\r\n          {\r\n            \"code\": \"GKV\",\r\n            \"system\": \"http://fhir.de/CodeSystem/identifier-type-de-basis\"\r\n          }\r\n        ]\r\n      },\r\n      \"system\": \"http://fhir.de/sid/gkv/kvid-10\",\r\n      \"value\": \"A1234567890\"\r\n    }\r\n  ],\r\n  \"name\": [\r\n    {\r\n      \"use\": \"official\",\r\n      \"family\": \"Müller\",\r\n      \"_family\": {\r\n        \"extension\": [\r\n          {\r\n            \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-name\",\r\n            \"valueString\": \"Müller\"\r\n          }\r\n        ]\r\n      },\r\n      \"given\": [\r\n        \"Anna\"\r\n      ]\r\n    }\r\n  ],\r\n  \"active\": true,\r\n  \"gender\": \"female\",\r\n  \"birthDate\": \"1957-08-12\",\r\n  \"address\": [\r\n    {\r\n      \"type\": \"both\",\r\n      \"line\": [\r\n        \"Musterweg 2\",\r\n        \"3. Etage\"\r\n      ],\r\n      \"_line\": [\r\n        {\r\n          \"extension\": [\r\n            {\r\n              \"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName\",\r\n              \"valueString\": \"Musterweg\"\r\n            },\r\n            {\r\n              \"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber\",\r\n              \"valueString\": \"2\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"extension\": [\r\n            {\r\n              \"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator\",\r\n              \"valueString\": \"3. Etage\"\r\n            }\r\n          ]\r\n        }\r\n      ],\r\n      \"city\": \"Demmin\",\r\n      \"postalCode\": \"17109\",\r\n      \"country\": \"DE\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Patient",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Validieren der Patienten-Instanz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Patient/{{patient_id}}/$validate",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Patient",
+						"{{patient_id}}",
+						"$validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Create Condition Primäre Gonarthrose",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verify code element contains correct values\", function () {\r",
+							"   pm.expect(pm.response.json().code.coding[0].system).to.include(\"http://fhir.de/CodeSystem/bfar\");\r",
+							"   console.log( pm.response.json().code?.coding[0]?.system);\r",
+							"    pm.expect(pm.response.json().code.coding[0].version).to.eql(\"2020\");\r",
+							"    pm.expect(pm.response.json().code.coding[0].code).to.eql(\"M17.0\");\r",
+							"    pm.expect(pm.response.json().code.coding[0].display).to.eql(\"Primäre Gonarthrose\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check if subject reference contains the variable patient id\", function () {\r",
+							"    let patient_id = pm.collectionVariables.get(\"patient_id\");\r",
+							"    pm.expect(pm.response.json().subject.reference).to.include(\"Patient/\" + patient_id);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check if asserter reference contains the variable practitioner id and log the value\", function () {\r",
+							"    let practitioner_id = pm.collectionVariables.get(\"practitioner_id\");\r",
+							"    pm.expect(pm.response.json().asserter.reference).to.include(\"Practitioner/\" + practitioner_id);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"resourceType\": \"Condition\",\r\n  \"id\": \"PrimaereGonarthrose\",\r\n  \"meta\": {\r\n    \"profile\": [\r\n      \"https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKDiagnose\"\r\n    ]\r\n  },\r\n  \"clinicalStatus\": {\r\n    \"coding\": [\r\n      {\r\n        \"code\": \"active\",\r\n        \"system\": \"http://terminology.hl7.org/CodeSystem/condition-clinical\"\r\n      }\r\n    ]\r\n  },\r\n  \"code\": {\r\n    \"coding\": [\r\n      {\r\n        \"version\": \"2020\",\r\n        \"code\": \"M17.0\",\r\n        \"system\": \"http://fhir.de/CodeSystem/bfarm/icd-10-gm\",\r\n        \"display\": \"Primäre Gonarthrose\"\r\n      }\r\n    ]\r\n  },\r\n  \"subject\": {\r\n    \"reference\": \"Patient/{{patient_id}}\"\r\n  },\r\n  \"asserter\": {\r\n    \"reference\": \"Practitioner/{{practitioner_id}}\"\r\n  },\r\n  \"recordedDate\": \"2024-10-21\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Condition",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Condition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Update Nachname von Anna Müller",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Check if the name family is Maier\", function () {\r",
+							"    let officialName = jsonData.name.find(el => el.use === \"official\");\r",
+							"   pm.expect(officialName.family).to.eql(\"Maier\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check if the maiden name exists and family is Müller\", function () {\r",
+							"    let maidenName = jsonData.name.find(el => el.use === \"maiden\");\r",
+							"    pm.expect(maidenName).to.exist;\r",
+							"    pm.expect(maidenName.family).to.eql(\"Müller\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"resourceType\": \"Patient\",\r\n  \"id\": {{patient_id}},\r\n  \"meta\": {\r\n    \"profile\": [\r\n      \"https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient\"\r\n    ]\r\n  },\r\n  \"identifier\": [\r\n    {\r\n      \"type\": {\r\n        \"coding\": [\r\n          {\r\n            \"code\": \"MR\",\r\n            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\"\r\n          }\r\n        ]\r\n      },\r\n      \"system\": \"https://fhir.krankenhaus.example/sid/PID\",\r\n      \"value\": \"TestPID1\"\r\n    },\r\n    {\r\n      \"type\": {\r\n        \"coding\": [\r\n          {\r\n            \"code\": \"GKV\",\r\n            \"system\": \"http://fhir.de/CodeSystem/identifier-type-de-basis\"\r\n          }\r\n        ]\r\n      },\r\n      \"system\": \"http://fhir.de/sid/gkv/kvid-10\",\r\n      \"value\": \"A1234567890\"\r\n    }\r\n  ],\r\n  \"name\": [\r\n    {\r\n      \"use\": \"official\",\r\n      \"family\": \"Maier\",\r\n      \"_family\": {\r\n        \"extension\": [\r\n          {\r\n            \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-name\",\r\n            \"valueString\": \"Müller\"\r\n          }\r\n        ]\r\n      },\r\n      \"given\": [\r\n        \"Anna\"\r\n      ]\r\n    }\r\n  ],\r\n  \"active\": true,\r\n  \"gender\": \"female\",\r\n  \"birthDate\": \"1957-08-12\",\r\n  \"address\": [\r\n    {\r\n      \"type\": \"both\",\r\n      \"line\": [\r\n        \"Musterweg 2\",\r\n        \"3. Etage\"\r\n      ],\r\n      \"_line\": [\r\n        {\r\n          \"extension\": [\r\n            {\r\n              \"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName\",\r\n              \"valueString\": \"Musterweg\"\r\n            },\r\n            {\r\n              \"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber\",\r\n              \"valueString\": \"2\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"extension\": [\r\n            {\r\n              \"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator\",\r\n              \"valueString\": \"3. Etage\"\r\n            }\r\n          ]\r\n        }\r\n      ],\r\n      \"city\": \"Demmin\",\r\n      \"postalCode\": \"17109\",\r\n      \"country\": \"DE\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Patient/{{patient_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Patient",
+						"{{patient_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Zusammenfassung der Instanz von Anna Müller holen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{patient_id}}?_summary=true",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{patient_id}}"
+					],
+					"query": [
+						{
+							"key": "_summary",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Abrufen der alten Versionen der Patienteninstanz",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/Patient/{{patient_id}}/_history",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Patient",
+						"{{patient_id}}",
+						"_history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8. Abrufen aller Patientinnen mit Alter > Anna Müller",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Patient/?birthdate=lt{{patient_birthdate}}&gender=female",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Patient",
+						""
+					],
+					"query": [
+						{
+							"key": "birthdate",
+							"value": "lt{{patient_birthdate}}"
+						},
+						{
+							"key": "gender",
+							"value": "female"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. Limit results to 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Patient/?_count=5",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Patient",
+						""
+					],
+					"query": [
+						{
+							"key": "_count",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10. List number of patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Patient/?_summary=count",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Patient",
+						""
+					],
+					"query": [
+						{
+							"key": "_summary",
+							"value": "count"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11. Patient dein Name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"console.log(jsonData.id);\r",
+							"pm.collectionVariables.set(\"patient_id\", jsonData.id);\r",
+							"pm.collectionVariables.set(\"patient_birthdate\", jsonData.birthDate);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"resourceType\": \"Patient\",\r\n  \"id\": \"PatientinAnnaMueller\",\r\n  \"meta\": {\r\n    \"profile\": [\r\n      \"https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient\"\r\n    ]\r\n  },\r\n  \"identifier\": [\r\n    {\r\n      \"type\": {\r\n        \"coding\": [\r\n          {\r\n            \"code\": \"MR\",\r\n            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\"\r\n          }\r\n        ]\r\n      },\r\n      \"system\": \"https://fhir.krankenhaus.example/sid/PID\",\r\n      \"value\": \"TestPID1\"\r\n    },\r\n    {\r\n      \"type\": {\r\n        \"coding\": [\r\n          {\r\n            \"code\": \"GKV\",\r\n            \"system\": \"http://fhir.de/CodeSystem/identifier-type-de-basis\"\r\n          }\r\n        ]\r\n      },\r\n      \"system\": \"http://fhir.de/sid/gkv/kvid-10\",\r\n      \"value\": \"A1234567890\"\r\n    }\r\n  ],\r\n  \"name\": [\r\n    {\r\n      \"use\": \"official\",\r\n      \"family\": \"Müller\",\r\n      \"_family\": {\r\n        \"extension\": [\r\n          {\r\n            \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-name\",\r\n            \"valueString\": \"Müller\"\r\n          }\r\n        ]\r\n      },\r\n      \"given\": [\r\n        \"Anna\"\r\n      ]\r\n    }\r\n  ],\r\n  \"active\": true,\r\n  \"gender\": \"female\",\r\n  \"birthDate\": \"1957-08-12\",\r\n  \"address\": [\r\n    {\r\n      \"type\": \"both\",\r\n      \"line\": [\r\n        \"Musterweg 2\",\r\n        \"3. Etage\"\r\n      ],\r\n      \"_line\": [\r\n        {\r\n          \"extension\": [\r\n            {\r\n              \"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName\",\r\n              \"valueString\": \"Musterweg\"\r\n            },\r\n            {\r\n              \"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber\",\r\n              \"valueString\": \"2\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"extension\": [\r\n            {\r\n              \"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator\",\r\n              \"valueString\": \"3. Etage\"\r\n            }\r\n          ]\r\n        }\r\n      ],\r\n      \"city\": \"Demmin\",\r\n      \"postalCode\": \"17109\",\r\n      \"country\": \"DE\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Patient",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12. Löschen deines Patientenprofils",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/Patient/{{patient_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Patient",
+						"{{patient_id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "variable_key",
+			"value": ""
+		},
+		{
+			"key": "practitioner_id",
+			"value": ""
+		},
+		{
+			"key": "patient_id",
+			"value": ""
+		},
+		{
+			"key": "patient_birthdate",
+			"value": ""
+		},
+		{
+			"key": "base_url",
+			"value": "https://fhir.echinos.eu/fhir",
+			"type": "string"
+		}
+	]
+}
