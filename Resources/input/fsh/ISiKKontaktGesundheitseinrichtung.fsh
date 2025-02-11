@@ -469,6 +469,71 @@ Usage: #example
 * serviceProvider.identifier.value = "XYZ"
 * serviceProvider.display = "Fachabteilung XYZ"
 
+Instance: FachabteilungskontaktMinimal2
+InstanceOf: ISiKKontaktGesundheitseinrichtung
+Usage: #example
+* identifier.type = $v2-0203#VN
+* identifier.value = "0123456789"
+* status = #finished
+* class = $v3-ActCode#IMP
+* type[Kontaktebene] = $Kontaktebene#abteilungskontakt
+* subject = Reference(PatientinNormal)
+
+Instance: FachabteilungskontaktNormal
+InstanceOf: ISiKKontaktGesundheitseinrichtung
+Usage: #example
+* extension.url = "http://fhir.de/StructureDefinition/Aufnahmegrund"
+* extension.extension[0].url = "ErsteUndZweiteStelle"
+* extension.extension[=].valueCoding = $AufnahmegrundErsteUndZweiteStelle#01 "Krankenhausbehandlung, vollstationär"
+* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate"
+* extension[=].valueDateTime = "2025-01-02"
+* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate"
+* extension[=].valueDateTime = "2025-01-04"
+* identifier.type = $v2-0203#VN
+* identifier.system = "https://test.krankenhaus.de/fhir/sid/besuchsnummer"
+* identifier.value = "0123456789"
+* status = #finished
+* class = $v3-ActCode#IMP
+* type[0] = $Kontaktebene#einrichtungskontakt
+* type[1] = $Kontaktart-de#operation
+* serviceType.coding = $Service-Type#218
+* subject = Reference(PatientinNormal)
+* period.start = "2024-10-21"
+* period.end = "2025-01-01"
+* diagnosis.condition = Reference(PrimaereGonarthroseNormal)
+* diagnosis.use.coding.system = "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur"
+* diagnosis.use.coding.code = #treatment-diagnosis
+* diagnosis.rank = 1
+* account = Reference(AbrechnungsfallGonarthrose)
+* account.identifier.value = "1234"
+* account.identifier.system = "https://test.krankenhaus.de/fhir/sid/fallnummer"
+* hospitalization.admitSource = $Aufnahmeanlass#E
+* hospitalization.dischargeDisposition = $Entlassungsgrund#home
+* hospitalization.dischargeDisposition.extension.url = "http://fhir.de/StructureDefinition/Entlassungsgrund"
+* hospitalization.dischargeDisposition.extension.extension[0].url = "ErsteUndZweiteStelle"
+* hospitalization.dischargeDisposition.extension.extension[=].valueCoding = $EntlassungsgrundErsteUndZweiteStelle#01 "Behandlung regulär beendet"
+* location[0].location = Reference(RaumStandortBeispiel)
+* location[0].location.identifier.system = "https://test.krankenhaus.de/fhir/sid/roomid"
+* location[0].location.identifier.value = "1234"
+* location[0].location.display = "Zimmer 1234"
+* location[0].status = #active
+* location[0].physicalType = $LocationPhysicalType#ro "Room"
+* location[1].location = Reference(BettenstellplatzStandortBeispiel)
+* location[1].location.identifier.system = "https://test.krankenhaus.de/fhir/sid/bedid"
+* location[1].location.identifier.value = "1234"
+* location[1].location.display = "Bettenstellplatz 1234"
+* location[1].status = #active 
+* location[1].physicalType = $LocationPhysicalType#bd "Bed"
+* location[2].location.identifier.system = "https://test.krankenhaus.de/fhir/sid/stationid"
+* location[2].location.identifier.value = "1234"
+* location[2].location.display = "Ward 1234"
+* location[2].status = #active
+* location[2].physicalType = $LocationPhysicalType#wa "Ward"
+* serviceProvider.identifier.system = "https://test.krankenhaus.de/fhir/sid/fachabteilungsid"
+* serviceProvider.identifier.value = "ORTHO-1234"
+* serviceProvider.display = "Fachabteilung für Orthopädie und Endoprothetik"
+
+
 Invariant: ISiK-enc-1
 Description: "Abgeschlossene, ambulante Kontakte sollten einen Start-Zeitpunkt angeben"
 Severity: #error

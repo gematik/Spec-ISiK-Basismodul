@@ -217,6 +217,32 @@ Usage: #example
 * onsetDateTime = "2019-09-02"
 * recordedDate = "2021-01-01"
 
+
+Instance: PrimaereGonarthroseMinimal
+InstanceOf: ISiKDiagnose
+Usage: #example
+* code.coding = $icd-10-gm#M17.0 "Primäre Gonarthrose"
+* subject = Reference(PatientinNormal)
+* recordedDate = "2024-10-21"
+
+Instance: PrimaereGonarthroseNormal
+InstanceOf: ISiKDiagnose
+Usage: #example
+* clinicalStatus = $condition-clinical#active
+* code.coding[0].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+* code.coding[0].version = "2025"
+* code.coding[0].code = #M17.0 
+* code.coding[0].display = "Primäre Gonarthrose" 
+* bodySite.coding[snomed-ct] = $sct#49076000
+* subject = Reference(PatientinNormal)
+* encounter = Reference(FachabteilungskontaktNormal)
+* onsetDateTime = "2020-09-02"
+* abatementDateTime = "2025-01-01"
+* recordedDate = "2024-10-21"
+* note.text = "Patientin mit primärer Gonarthrose beidseitig (ICD M17.0), seit mehreren Jahren bestehend."
+
+
+
 Invariant: isik-con1
 Description: "Falls eine kodierte Diagnose vorliegt muss angegeben werden durch welchen Kontakt diese Dokumentation erfolgte."
 Severity: #error

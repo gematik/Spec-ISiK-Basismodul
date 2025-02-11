@@ -9,6 +9,30 @@ Description: "Enthaelt alle SNOMED Clinical finding, Event und Situation with ex
 * include codes from system SNOMED_CT
     where concept is-a #243796009
 
+ValueSet: EncounterReasonCodes
+Id: EncounterReasonCodes
+Description: "Enthaelt alle SNOMED Reason Codes"
+* insert Meta
+* include codes from system SNOMED_CT
+    where concept is-a #404684003
+* include codes from system SNOMED_CT
+    where concept is-a #71388002
+* include codes from system SNOMED_CT
+    where concept is-a #243796009
+* include codes from system SNOMED_CT
+    where concept is-a #272379006
+
+ValueSet: ConditionDiagnosisSeverity
+Id: ConditionDiagnosisSeverity
+Description: "Enthaelt alle SNOMED DiagnosisSeverity Codes"
+* insert Meta
+* include codes from system SNOMED_CT
+    where concept is-a #24484000
+* include codes from system SNOMED_CT
+    where concept is-a #6736007
+* include codes from system SNOMED_CT
+    where concept is-a #255604002
+
 ValueSet: ProzedurenCodesSCT
 Id: ProzedurenCodesSCT
 Description: "Enthaelt alle SNOMED Procedure Codes"
@@ -137,3 +161,20 @@ Description: "HL7 LOINC value set for smoking status.  Based on the HL7 Vocab an
 * LOINC#LA18982-1 "Light tobacco smoker"
 * LOINC#LA18982-1 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * LOINC#LA18982-1 ^extension[=].valueDecimal = 8
+
+
+ValueSet: RestAndWSSubscriptionChannelType
+Id: RestAndWSSubscriptionChannelType
+Title: "RestAndWSSubscriptionChannelType"
+Description: "Subscription Channel Type for ISiK"
+* insert Meta
+* SubscriptionChannelType#rest-hook
+* SubscriptionChannelType#websocket
+
+ValueSet: FhirMimeTypeVS
+Id: FhirMimeTypeVS
+Title: "FhirMimeTypeVS"
+Description: "FHIR Mime Types"
+* insert Meta
+* urn:ietf:bcp:13#application/fhir+json
+* urn:ietf:bcp:13#application/fhir+xml
