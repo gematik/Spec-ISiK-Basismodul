@@ -8,7 +8,7 @@ Vor der Bereitstellung von patientenbezogenen Ressourcen, wie sie u.a. von den M
 Dabei ist es den Herstellern von nicht-patientenführenden Systemen ("Subsystemen") freigestellt, ob sie dauerhaft eine vollständige Kopie der relevanten Patienten- und Besuchsdaten des patientenführenden Systems vorhalten wollen. 
 Dies kann zum Beispiel über folgende Mechanismen erfolgen:
 * durch die Entgegennahme und Verarbeitung von HL7 V2 ADT-Nachrichten aus dem patientenführenden System
-* mittels zyklischer Ausführung der _history-Interaktion (derzeit in ISiK nicht spezifiziert) 
+* mittels zyklischer Abfragen des Ressourcentyp- oder Server-Level _history-Endpoints unter Nutzung von "_since"-Parametern (oder "_lastUpdated") können sowohl neue als auch geänderte Patientendaten ermittelt und abgeholt werden (derzeit in ISiK nicht spezifiziert) 
 * mit Hilfe von Subscription (derzeit in Ausarbeitung für ISiK Stufe 5)
 
 #### Fassadenimplementierung
