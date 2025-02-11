@@ -6,8 +6,6 @@
   filename: Abbildung-des-Konstrukts-Fall.page.md
 - name: Datenübermittlung aus Subsystemen
   filename: Datenübermittlung-aus-Subsystemen.page.md
-- name: Herstellung von Patienten- und Besuchskontext
-  filename: Patient-Besuch-Kontext.md
 - name: Patientenzusammenführung
   filename: Patientenzusammenführung.page.md
 - name: Beispielszenarien

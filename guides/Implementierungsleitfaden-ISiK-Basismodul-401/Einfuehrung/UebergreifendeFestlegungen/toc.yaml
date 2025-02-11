@@ -14,3 +14,5 @@
   filename: UebergreifendeFestlegungen_Suchparameter.page.md
 - name: REST-API
   filename: UebergreifendeFestlegungen_Rest.page.md
+- name: Herstellung von Patienten- und Besuchskontext
+  filename: Patient-Besuch-Kontext.md
