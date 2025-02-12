@@ -60,24 +60,18 @@ jobs:
           echo "UPDATE_NEEDED=true" >> $GITHUB_ENV
         fi
 
-    - name: Stop if no update is needed
-      id: stop_if_no_update_needed
+    - name: Update main.yml for Firely and Sushi # Stop if no update is needed; 
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
       run: |
         if [[ "$UPDATE_NEEDED" == "false" ]]; then
           echo "No update needed. Exiting."
           exit 0
         fi
-
-    - name: Update main.yml for Firely and Sushi
-      run: |
         # Update the main.yml file with the new versions of Firely and Sushi
         sed -i "s|uses: FirelyTeam/firely-terminal-pipeline@.*|uses: FirelyTeam/firely-terminal-pipeline@$LATEST_VERSION_FIRELY|" .github/workflows/main.yml
         sed -i "s|SUSHI_VERSION: .*|SUSHI_VERSION: $LATEST_VERSION_SUSHI|" .github/workflows/main.yml
 
-    - name: Commit changes
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-      run: |
         # Commit the changes
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -92,6 +86,11 @@ jobs:
         script: |
             const latestVersionFirely = process.env.LATEST_VERSION_FIRELY;
             const latestVersionSushi = process.env.LATEST_VERSION_SUSHI;
+            const updateNeeded = process.env.UPDATE_NEEDED;
+            if (updateNeeded === 'false') {
+              console.log('No update needed. Exiting.');
+              return;
+            }
             if (!latestVersionFirely || !latestVersionSushi) {
               throw new Error('Versions are not defined');
             }
