@@ -44,9 +44,9 @@ jobs:
         CURRENT_VERSION_FIRELY=$(grep -oP 'FirelyTeam/firely-terminal-pipeline@\K[^"]+' .github/workflows/main.yml)
         if [ "$CURRENT_VERSION_FIRELY" = "$LATEST_VERSION_FIRELY" ]; then
           echo "Firely version is up-to-date"
-          echo "update_needed=false" >> $GITHUB_ENV
+          echo "UPDATE_NEEDED=false" >> $GITHUB_ENV
         else
-          echo "update_needed=true" >> $GITHUB_ENV
+          echo "UPDATE_NEEDED=true" >> $GITHUB_ENV
         fi
 
     - name: Check if Sushi version is up-to-date
@@ -55,17 +55,18 @@ jobs:
         CURRENT_VERSION_SUSHI=$(grep -oP 'SUSHI_VERSION: \K[^"]+' .github/workflows/main.yml)
         if [ "$CURRENT_VERSION_SUSHI" = "$LATEST_VERSION_SUSHI" ]; then
           echo "Sushi version is up-to-date"
-          echo "update_needed=false" >> $GITHUB_ENV
+          echo "UPDATE_NEEDED=false" >> $GITHUB_ENV
         else
-          echo "update_needed=true" >> $GITHUB_ENV
+          echo "UPDATE_NEEDED=true" >> $GITHUB_ENV
         fi
 
     - name: Stop if no update is needed
-      if: env.update_needed == 'false'
-      continue-on-error: false
+      id: stop_if_no_update_needed
       run: |
-        echo "No update needed. Exiting."
-        exit 0
+        if [[ "$UPDATE_NEEDED" == "false" ]]; then
+          echo "No update needed. Exiting."
+          exit 0
+        fi
 
     - name: Update main.yml for Firely and Sushi
       run: |
