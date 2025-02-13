@@ -407,9 +407,9 @@ Usage: #example
 * identifier[Patientennummer].type = $v2-0203#MR
 * identifier[Patientennummer].system = "https://fhir.krankenhaus.example/sid/PID" 
 * identifier[Patientennummer].value = "TestPID1"
-* name[0].use = #official
-* name[=].family = "Müller"
-* name[=].given = "Anna"
+* name[Name]
+  * family = "Müller"
+  * given = "Anna"
 * gender = #female
 * birthDate = "1957-08-12"
 
@@ -418,29 +418,29 @@ InstanceOf: ISiKPatient
 Usage: #example
 * identifier[VersichertenId].type = $identifier-type-de-basis#KVZ10
 * identifier[VersichertenId].system = "http://fhir.de/sid/gkv/kvid-10"
-* identifier[VersichertenId].value = "A1234567890"
+* identifier[VersichertenId].value = "A123456789"
 * identifier[Patientennummer].type = $v2-0203#MR
 * identifier[Patientennummer].system = "https://fhir.krankenhaus.example/sid/PID" 
 * identifier[Patientennummer].value = "TestPID1"
 * active = true
-* name[0].use = #official
-* name[=].family = "Müller"
-* name[=].given = "Anna"
-* name[=].prefix = "Dr."
-* name[+].use = #maiden
-* name[=].family = "Weber"
+* name[Name]
+  * family = "Müller"
+  * given = "Anna"
+  * prefix = "Dr."
+* name[Geburtsname]
+  * family = "Weber"
 * gender = #female
 * birthDate = "1957-08-12"
-* address[0].type = #physical
-* address[=].line = "Musterweg 2"
-* address[=].city = "Demmin"
-* address[=].postalCode = "17109"
-* address[=].country = "DE"
-* address[+].type = #postal
-* address[=].line = "Postfach 815"
-* address[=].city = "Musterhausen"
-* address[=].postalCode = "98764"
-* address[=].country = "DE"
+* address[Strassenanschrift]
+  * line = "Musterweg 2"
+  * city = "Demmin"
+  * postalCode = "17109"
+  * country = "DE"
+* address[Postfach]
+  * line = "Postfach 815"
+  * city = "Musterhausen"
+  * postalCode = "98764"
+  * country = "DE"
 * link[0].other = Reference(PatientinMinimal)
 * link[=].type = #seealso
 

@@ -34,7 +34,7 @@ Usage: #example
   * system = "http://fhir.de/sid/gkv/kvid-10"
   * value = "A987654321"
 * patient = Reference(SZ1Patient)
-* name
+* name[Name]
   * family = "Musterfrau"
   * given = "Mama"
 * address.type = #both

@@ -127,16 +127,18 @@ Instance: SubscriptionNotificationBundleExample
 InstanceOf: Bundle
 Usage: #example
 * type = #history
-* entry[+].fullUrl = "urn:uuid:9bb6fcbd-8391-4e35-bd4c-620a2db47af0"
-* entry[=].resource = SubscriptionNotification
-* entry[=].request.method = #GET
-* entry[=].request.url = "https://gematik.de/fhir/isik/SubscriptionTopic/patient-merge/$status"
-* entry[=].response.status = "200"
-* entry[+].fullUrl = "http://example.org/fhir/Patient/DorisQuelle"
-* entry[=].resource = DorisQuelle
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Patient"
-* entry[=].response.status = "201"
+* entry[+]
+  * fullUrl = "urn:uuid:9bb6fcbd-8391-4e35-bd4c-620a2db47af0"
+  * resource = SubscriptionNotification
+  * request.method = #GET
+  * request.url = "https://gematik.de/fhir/isik/SubscriptionTopic/patient-merge/$status"
+  * response.status = "200"
+* entry[+]
+  * fullUrl = "http://example.org/fhir/Patient/DorisQuelle"
+  * resource = DorisQuelle
+  * request.method = #PUT
+  * request.url = "Patient"
+  * response.status = "201"
 
 Instance: SubscriptionNotification
 InstanceOf: Parameters

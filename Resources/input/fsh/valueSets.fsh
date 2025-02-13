@@ -94,25 +94,25 @@ Description: "Dieses Valueset enthält die Codes zur Beschreibung von Stillstatu
 * LOINC#LA29253-4 "Not currently breastfeeding"
 * LOINC#LA29252-6 "Currently breastfeeding"
 
-ValueSet: ISiKBesondereBehandlungsformReha
+ValueSet: ISiKBesondereBehandlungsformRehaVS
 Id: ISiKBesondereBehandlungsformReha
 Description: "Besondere Behandlungsform der Reha gemäß §301(4 UND 4A) SGB V. Vgl. Schlüsseltabelle 2.51 Besondere Behandlungsformen."
 * insert Meta
 * include codes from system ISiKBesondereBehandlungsformRehaCS
 
-ValueSet: ISiKBehandlungsergebnisReha
+ValueSet: ISiKBehandlungsergebnisRehaVS
 Id: ISiKBehandlungsergebnisReha
 Description: "Behandlungsergebnis Reha gemäß §301(4 UND 4A) SGB V. Diagnosenbezogene Bewertung des Behandlungsergebnisses für einen Versicherten/Berechtigten bei Entlassung aus der Reha-Maßnahme bzw. Stellung eines Antrags auf Verlängerung. Vgl. Schlüsseltabelle 2.71 Diagnose - Behandlungsergebnis."
 * insert Meta
 * include codes from system ISiKBehandlungsergebnisRehaCS
 
-ValueSet: ISiKEntlassformReha
+ValueSet: ISiKEntlassformRehaVS
 Id: ISiKEntlassformReha
 Description: "ISiK Entlassform Reha. Beschreibt Form und ggf. Weiterbehandlung der Entlassung eines Versicherten/Berechtigten aus verwaltungs- und medizinischer Sicht. Vgl. Schlüsseltabelle 2.107 Entlassungsform."
 * insert Meta
 * include codes from system ISiKEntlassformRehaCS
 
-ValueSet: ISiKUnterbrechnungReha
+ValueSet: ISiKUnterbrechnungRehaVS
 Id: ISiKUnterbrechnungReha
 Description: "ISiK Unterbrechung Reha. Dokumentiert die relevanten Gründe einer Unterbrechung einer Rehabilitationsmaßnahme im Einzelfall. Vgl. Schlüsseltabelle 2.111 Erläuterung zur Unterbrechung."
 * insert Meta

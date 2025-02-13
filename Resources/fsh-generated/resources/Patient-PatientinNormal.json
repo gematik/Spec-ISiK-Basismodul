@@ -29,7 +29,7 @@
         ]
       },
       "system": "http://fhir.de/sid/gkv/kvid-10",
-      "value": "A1234567890"
+      "value": "A123456789"
     }
   ],
   "name": [
@@ -48,12 +48,9 @@
       "family": "Weber"
     }
   ],
-  "active": true,
-  "gender": "female",
-  "birthDate": "1957-08-12",
   "address": [
     {
-      "type": "physical",
+      "type": "both",
       "line": [
         "Musterweg 2"
       ],
@@ -71,6 +68,9 @@
       "country": "DE"
     }
   ],
+  "active": true,
+  "gender": "female",
+  "birthDate": "1957-08-12",
   "link": [
     {
       "other": {

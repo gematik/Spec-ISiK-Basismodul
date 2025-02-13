@@ -106,7 +106,7 @@ Usage: #example
 //  noch kein eigenes Profil vorhanden
 * identifier[standortnummer-dkg]
   * value = "123456" 
-* operationalStatus = $v2-0203#O "Occupied" 
+* operationalStatus = $v2-0116#O "Occupied" 
 // bei Raum & Bettenstellplatz MS, nicht bei Standort
 * name = "Station A"
 * mode = #instance

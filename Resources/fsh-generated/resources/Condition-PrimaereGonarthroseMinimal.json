@@ -11,12 +11,16 @@
       {
         "code": "M17.0",
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "display": "Primäre Gonarthrose"
+        "display": "Primäre Gonarthrose",
+        "version": "2025"
       }
     ]
   },
   "subject": {
     "reference": "Patient/PatientinNormal"
   },
-  "recordedDate": "2024-10-21"
+  "recordedDate": "2024-10-21",
+  "encounter": {
+    "reference": "Encounter/FachabteilungskontaktNormal"
+  }
 }

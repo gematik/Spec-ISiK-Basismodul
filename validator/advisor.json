@@ -22,6 +22,7 @@
     "Terminology_TX_NoValid_2_CC@Organization.identifier[0].type",
     "Terminology_TX_NoValid_2_CC@RelatedPerson.identifier[0].type",
     "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[6].pattern.ofType(Identifier).type",
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[5].pattern.ofType(Identifier).type",
     "Terminology_TX_NoValid_2_CC@Bundle.entry[2].resource/*Encounter/FachabteilungskontaktMinimal*/.identifier[0].type",
     "Terminology_TX_NoValid_2_CC@Bundle.entry[6].resource/*Encounter/SZ1Nachstationaer*/.identifier[0].type",
     "Terminology_TX_NoValid_2_CC@Bundle.entry[4].resource/*Encounter/SZ1Vorstationaer*/.identifier[0].type",
@@ -37,8 +38,10 @@
     "Terminology_TX_NoValid_2_CC@Bundle.entry[5].resource/*Encounter/SZ1Stationaer*/.identifier[0].type",
     "Terminology_TX_NoValid_2_CC@Bundle.entry[4].resource/*Account/SZ2DRGFall*/.identifier[0].type",
     "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[9].pattern.ofType(Identifier).type",
-    "TYPE_SPECIFIC_CHECKS_DT_BASE64_NO_WS_WARNING@Binary.data",
-    "Details_for__matching_against_Profile_@Bundle.entry[1]",
-    "Details_for__matching_against_Profile_@Bundle.entry[2]"
+    "Terminology_TX_NoValid_2_CC@Location.type[0]",
+    "Terminology_TX_Confirm_4a@Procedure.code.coding[1]",
+    "MSG_DEPENDS_ON_DEPRECATED_NOTE@ValueSet.compose.include[0].concept[0].extension[0]",
+    "BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU@Bundle.entry[0].resource/*Parameters/SubscriptionNotification*/.parameter[5].part[2].value.ofType(Reference)",
+    "Terminology_TX_ValueSet_NotFound@Bundle.entry[0].resource/*Parameters/SubscriptionNotification*/.parameter[3].value.ofType(code)"
   ]
 }

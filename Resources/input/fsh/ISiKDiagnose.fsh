@@ -110,17 +110,18 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^comment = "Alternative Angabe, wenn genauere Eingrenzungen des Zeitraums nicht möglich sind, insbesondere im Kontext anamnestischer Diagnosen"
 * abatement[x] MS 
 * abatement[x] only dateTime or Age
-  * ^short = "Erkrankungsende"
-  * ^comment = "Datum oder Alter/Lebensphase des Erkrankungsendes  
+  * ^short = "Klinische relevanter Zeitraum Ende"
+  * ^comment = "Ende des klinisch relevanten Zeitraums der Diagnose  
   **Begründung MS:** Die Kenntnis des Erkrankungszeitraumes ist wichtig für die korrekte Einschätzung der medizinischen Relevanz einer Erkraknung.  
   **Einschränkung der übergreifenden MS-Definition:** Verfügt ein bestätigungsrelevantes System nicht über die Datenstruktur zur Hinterlegung des Erkrankungszeitraumes,
   so MUSS dieses System die Information NICHT abbilden. 
   Das System MUSS jedoch klinischen Status (`active`/`inactive`/`resolved`...) der Diagnose korrekt angeben, sofern die Information verfügbar ist."
-* abatementAge  
+* abatementAge MS
   * extension contains ExtensionLebensphase named Lebensphase-Ende 0..1
   * extension[Lebensphase-Ende]
     * ^short = "Lebensphase des Erkrankungsendes"
     * ^comment = "Alternative Angabe, wenn genauere Eingrenzungen des Zeitraums nicht möglich sind, insbesondere im Kontext anamnestischer Diagnosen"
+* abatementDateTime MS
 * recordedDate 1.. MS
   * ^short = "Dokumentationsdatum"
   * ^comment = "Datum, an dem die Diagnose dokumentiert wurde.   
@@ -222,13 +223,15 @@ Instance: PrimaereGonarthroseMinimal
 InstanceOf: ISiKDiagnose
 Usage: #example
 * code.coding = $icd-10-gm#M17.0 "Primäre Gonarthrose"
+  * version = "2025"
 * subject = Reference(PatientinNormal)
 * recordedDate = "2024-10-21"
+* encounter = Reference(FachabteilungskontaktNormal)
 
 Instance: PrimaereGonarthroseNormal
 InstanceOf: ISiKDiagnose
 Usage: #example
-* clinicalStatus = $condition-clinical#active
+* clinicalStatus = $condition-clinical#remission
 * code.coding[0].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[0].version = "2025"
 * code.coding[0].code = #M17.0 
@@ -239,7 +242,7 @@ Usage: #example
 * onsetDateTime = "2020-09-02"
 * abatementDateTime = "2025-01-01"
 * recordedDate = "2024-10-21"
-* note.text = "Patientin mit primärer Gonarthrose beidseitig (ICD M17.0), seit mehreren Jahren bestehend."
+* note.text = "Patientin mit primärer Gonarthrose beidseitig (ICD M17.0), seit mehreren Jahren bestehend, in Remission seit 01.01.2025"
 
 
 

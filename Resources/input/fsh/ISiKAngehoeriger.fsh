@@ -180,8 +180,9 @@ Instance: ISiKAngehoerigerMustermann
 InstanceOf: ISiKAngehoeriger
 Usage: #example
 * patient = Reference(PatientinMusterfrau)
-* name.family = "Mustermann"
-* name.given = "Maxine"
+* name[Name]
+  * family = "Mustermann"
+  * given = "Maxine"
 * address.type = #both
 * address.line = "Milchstr. 42"
 * address.city = "Beispielstadt"

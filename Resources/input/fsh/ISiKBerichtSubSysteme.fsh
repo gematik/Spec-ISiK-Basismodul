@@ -184,7 +184,7 @@ Die Mindestanforderungen an den Inhalt der menschenlesbaren Repräsentation umfa
   * section MS
     * ^short = "Unterkapitel"
 
-Instance: composition-blutdruck
+Instance: CompositionExampleBlutdruck
 InstanceOf: ISiKBerichtSubSysteme
 Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">  <p> Familienname:Fürstin von Musterfrau</p>   <p> Geburtsdatum:1964-08-12</p>   <p> PID:TestPID</p>   <p> Bericht-Status:final</p>   <p> Bericht-Typ:Berichtzusammenfassung / Document Summary</p>   <p> Datum:03.05.2022</p>   <p> Titel:Blutdruckmessung vom 3.5.2022</p>   <p> Autor:Gerät XY, Fa. Z, Modell T</p></div>"

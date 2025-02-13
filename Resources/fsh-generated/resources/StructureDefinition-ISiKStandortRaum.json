@@ -6,7 +6,7 @@
   "name": "ISiKStandortRaum",
   "status": "active",
   "experimental": false,
-  "date": "2025-02-10",
+  "date": "2025-02-11",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil dient der strukturierten Erfassung von Räumen (als Standorten) eines Krankenhauses.",
   "fhirVersion": "4.0.1",
