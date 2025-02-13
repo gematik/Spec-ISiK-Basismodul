@@ -12,9 +12,8 @@ Status: Active
 
 Realm: Deutschland
 
-
-
-Abgekündigte Versionen oder Zwischenveröffentlichungen der Implementierungsleitfäden finden Sie unter: https://gematik.github.io/spec-ISiK-Basismodul/index.html
+Abgekündigte Versionen oder Zwischenveröffentlichungen der Implementierungsleitfäden finden Sie
+unter: TBD
 
 
 ----
