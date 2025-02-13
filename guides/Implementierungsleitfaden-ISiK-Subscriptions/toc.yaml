@@ -1,0 +1,12 @@
+- name: Einführung
+  filename: Einfuehrung.md
+- name: Motivation
+  filename: Motivation.md
+- name: ReleaseNotes
+  filename: ReleaseNotes.md
+- name: Use Cases
+  filename: UseCasesAnwendung
+- name: Übergreifende Festlegungen
+  filename: UebergreifendeFestlegungen
+- name: Datenobjekte
+  filename: Datenobjekte
