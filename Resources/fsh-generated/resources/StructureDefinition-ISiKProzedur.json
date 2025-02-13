@@ -40,15 +40,6 @@
       {
         "id": "Procedure.extension",
         "path": "Procedure.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
         "mustSupport": true
       },
       {

@@ -33,15 +33,6 @@
       {
         "id": "Condition.extension",
         "path": "Condition.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
         "mustSupport": true
       },
       {

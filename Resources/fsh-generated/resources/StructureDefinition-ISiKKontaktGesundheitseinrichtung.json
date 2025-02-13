@@ -82,16 +82,6 @@
       {
         "id": "Encounter.extension",
         "path": "Encounter.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "mustSupport": true
       },
       {
@@ -598,20 +588,6 @@
         "short": "Details zum Aufenthalt",
         "comment": "Details zu einem stationären Aufenthalt",
         "mustSupport": true
-      },
-      {
-        "id": "Encounter.hospitalization.extension",
-        "path": "Encounter.hospitalization.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Encounter.hospitalization.extension:Wahlleistung",

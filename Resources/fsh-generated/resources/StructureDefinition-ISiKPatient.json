@@ -466,20 +466,6 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.gender.extension",
-        "path": "Patient.gender.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Patient.gender.extension:Geschlecht-Administrativ",
         "path": "Patient.gender.extension",
         "sliceName": "Geschlecht-Administrativ",
@@ -504,20 +490,6 @@
         "comment": "Tages-, monats- oder jahresgenaues Geburtsdatum.  \n    **Begründung Pflichtfeld:** Das Geburstdatum dient - in Verbindung mit dem Namen - als wichtiges Such- und Unterscheidungskriterium.  \n    **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Geburtsdatum)",
         "min": 1,
         "mustSupport": true
-      },
-      {
-        "id": "Patient.birthDate.extension",
-        "path": "Patient.birthDate.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Patient.birthDate.extension:Data-Absent-Reason",
