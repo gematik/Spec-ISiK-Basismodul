@@ -166,11 +166,11 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
       * ^comment = "Nachname ohne Vor- und Zusätze.  
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."   
     * extension[vorsatzwort] 0..1 MS
-      * ^short = "Vorsatzwort "
+      * ^short = "Vorsatzwort"
       * ^comment = "Enthält Vorsätze, die vor dem Nachnamen stehen, z.B. 'von', 'van', 'zu'...  
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."    
   * given 1.. MS
-    * ^short = "Vorname "
+    * ^short = "Vorname"
     * ^comment = "Kann mehrfach verwendet werden, um den Rufnamen sowie weitere Vornamen, Mittelnamen oder Mittel-Initialen abzubilden.
       **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind."   
   * prefix MS
@@ -202,7 +202,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
       * ^comment = "Nachname ohne Vor- und Zusätze.  
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."   
     * extension[vorsatzwort] 0..1 MS
-      * ^short = "Vorsatzwort "
+      * ^short = "Vorsatzwort"
       * ^comment = "Enthält Vorsätze, die vor dem Nachnamen stehen, z.B. 'von', 'van', 'zu'...  
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."   
   * given ..0
@@ -210,7 +210,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
 * telecom.system 1..
 * telecom.value 1..
 * gender 1.. MS
-  * ^short = "Administratives Geschlecht " 
+  * ^short = "Administratives Geschlecht" 
   * ^comment = "Für die Geschlechtskennzeichen 'unbestimmt' und 'divers' ist der international vereinbarte code `other` zu verwenden.
     Zur weiteren Differenzierung kann dann die Extension `Geschlecht-Admnistrativ` verwendet werden.
     **Begründung Pflichtfeld:** Die Geschlechtsangabe ist für viele Versorgungsprozesse unerlässlich, z.B.  
@@ -220,7 +220,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Geschlecht)"
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
   * extension[Geschlecht-Administrativ]
-    * ^short = "Extension zur Differenzierung des Geschlechtskennzeichens "
+    * ^short = "Extension zur Differenzierung des Geschlechtskennzeichens"
     * ^comment = "Diese Extension darf nur in Verbindung mit dem Geschlechtskennzeichen `other` verwendet werden
       und dient der Differenzierung zwischen den in Deutschland möglichen Geschlechtskennzeichen `D` (divers) und `X`(unbestimmt)"
 * birthDate 1.. MS
@@ -230,7 +230,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^comment = "ToDo"
     * value[x] = #unknown (exactly)
     * value[x] MS
-  * ^short = "Geburtsdatum "
+  * ^short = "Geburtsdatum"
   * ^comment = "Tages-, monats- oder jahresgenaues Geburtsdatum.  
     **Begründung Pflichtfeld:** Das Geburstdatum dient - in Verbindung mit dem Namen - als wichtiges Such- und Unterscheidungskriterium.  
     **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Geburtsdatum)"
@@ -274,7 +274,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^short = "Stadt"
     * ^comment = "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar."
   * postalCode 1.. MS
-    * ^short = "Postleitzahl "
+    * ^short = "Postleitzahl"
     * ^comment = "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar."
   * country 1.. MS
     * ^short = "Land"
@@ -302,19 +302,19 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     **Begründung für Reduktion der max. Kardinalität:** Die maximale Kardinalität wurde in Übereinstimmung mit der 
     DIN-Norm 5008 (Schreib- und Gestaltungsregeln für die Text- und Informationsverarbeitung) auf 3 beschränkt."
     * extension[Strasse] 0..1 MS
-      * ^short = "Strassenname "
+      * ^short = "Strassenname"
       * ^comment = "Strassenname (ohne Hausnummer).
         Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden,
         um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
     * extension[Hausnummer] 0..1 MS
-      * ^short = "Hausnummer "
+      * ^short = "Hausnummer"
       * ^comment = "Hausnummer, sowie Zusätze (Appartmentnummer, Etage...). 
         Bei Angabe einer Hausnummer in dieser Extension muss diese auch in Address.line angegeben werden,
         um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.   
         **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
     * extension[Adresszusatz] 0..1 MS
-      * ^short = "Adresszusatz "
+      * ^short = "Adresszusatz"
       * ^comment = "Zusätzliche Informationen, wie z.B. '3. Etage', 'Appartment C'.
         Bei Angabe einer Zusatzinformation in dieser Extension muss diese auch in Address.line angegeben werden,
         um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  
@@ -329,7 +329,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^short = "Stadt"
     * ^comment = "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar."
   * postalCode 1.. MS
-    * ^short = "Postleitzahl "
+    * ^short = "Postleitzahl"
     * ^comment = "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar."
   * country 1.. MS
     * ^short = "Land"
@@ -407,9 +407,9 @@ Usage: #example
 * identifier[Patientennummer].type = $v2-0203#MR
 * identifier[Patientennummer].system = "https://fhir.krankenhaus.example/sid/PID" 
 * identifier[Patientennummer].value = "TestPID1"
-* name[0].use = #official
-* name[=].family = "Müller"
-* name[=].given = "Anna"
+* name[Name]
+  * family = "Müller"
+  * given = "Anna"
 * gender = #female
 * birthDate = "1957-08-12"
 
@@ -418,29 +418,29 @@ InstanceOf: ISiKPatient
 Usage: #example
 * identifier[VersichertenId].type = $identifier-type-de-basis#KVZ10
 * identifier[VersichertenId].system = "http://fhir.de/sid/gkv/kvid-10"
-* identifier[VersichertenId].value = "A1234567890"
+* identifier[VersichertenId].value = "A123456789"
 * identifier[Patientennummer].type = $v2-0203#MR
 * identifier[Patientennummer].system = "https://fhir.krankenhaus.example/sid/PID" 
 * identifier[Patientennummer].value = "TestPID1"
 * active = true
-* name[0].use = #official
-* name[=].family = "Müller"
-* name[=].given = "Anna"
-* name[=].prefix = "Dr."
-* name[+].use = #maiden
-* name[=].family = "Weber"
+* name[Name]
+  * family = "Müller"
+  * given = "Anna"
+  * prefix = "Dr."
+* name[Geburtsname]
+  * family = "Weber"
 * gender = #female
 * birthDate = "1957-08-12"
-* address[0].type = #physical
-* address[=].line = "Musterweg 2"
-* address[=].city = "Demmin"
-* address[=].postalCode = "17109"
-* address[=].country = "DE"
-* address[+].type = #postal
-* address[=].line = "Postfach 815"
-* address[=].city = "Musterhausen"
-* address[=].postalCode = "98764"
-* address[=].country = "DE"
+* address[Strassenanschrift]
+  * line = "Musterweg 2"
+  * city = "Demmin"
+  * postalCode = "17109"
+  * country = "DE"
+* address[Postfach]
+  * line = "Postfach 815"
+  * city = "Musterhausen"
+  * postalCode = "98764"
+  * country = "DE"
 * link[0].other = Reference(PatientinMinimal)
 * link[=].type = #seealso
 

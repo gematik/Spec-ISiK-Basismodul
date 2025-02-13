@@ -24,7 +24,7 @@
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "composition-blutdruck",
+        "id": "CompositionExampleBlutdruck",
         "meta": {
           "profile": [
             "https://gematik.de/fhir/isik/StructureDefinition/ISiKBerichtSubSysteme"

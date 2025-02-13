@@ -154,6 +154,6 @@ Usage: #example
   * time = 2024-02-20T14:34:12+01:00
   * text = "Patientin berichtet von einer leichten Verschlimmerung in den letzten 3 Jahren."
 * reaction
-  * manifestation = $sct#162367006 "Sneezing symptom"
+  * manifestation = $sct#76067001 "Sneezing (finding)"
   * severity = #moderate
   * exposureRoute = $sct#14910006 "Inspiration"

@@ -6,6 +6,15 @@
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKAngehoeriger"
     ]
   },
+  "name": [
+    {
+      "use": "official",
+      "family": "Musterfrau",
+      "given": [
+        "Mama"
+      ]
+    }
+  ],
   "identifier": [
     {
       "type": {
@@ -23,14 +32,6 @@
   "patient": {
     "reference": "Patient/SZ1Patient"
   },
-  "name": [
-    {
-      "family": "Musterfrau",
-      "given": [
-        "Mama"
-      ]
-    }
-  ],
   "address": [
     {
       "type": "both",

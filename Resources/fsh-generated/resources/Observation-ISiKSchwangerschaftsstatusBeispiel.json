@@ -38,5 +38,10 @@
   ],
   "encounter": {
     "reference": "Encounter/Fachabteilungskontakt"
-  }
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/PractitionerWalterArzt"
+    }
+  ]
 }

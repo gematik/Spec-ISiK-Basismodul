@@ -34,7 +34,7 @@ Usage: #example
   * system = "http://fhir.de/sid/gkv/kvid-10"
   * value = "A987654321"
 * patient = Reference(SZ1Patient)
-* name
+* name[Name]
   * family = "Musterfrau"
   * given = "Mama"
 * address.type = #both
@@ -115,7 +115,7 @@ Usage: #example
 * status = #finished
 * class = $v3-ActCode#IMP
 * type[Kontaktebene] = $Kontaktebene#abteilungskontakt
-* type[KontaktArt] = $Kontaktart-de#stationaer "Stationär"
+* type[KontaktArt] = $Kontaktart-de#normalstationaer "Normalstationär"
 * subject = Reference(SZ1Patient)
 * period.start = "2024-10-07"
 * period.end = "2024-10-10"
@@ -164,11 +164,27 @@ Usage: #example
 Instance: Szenario1
 InstanceOf: Bundle
 * type = #collection
-* entry[+].resource = SZ1Patient
-* entry[+].resource = SZ1Mutter
-* entry[+].resource = SZ1VersicherungGesetzlich
-* entry[+].resource = SZ1VersicherungSelbstzahler
-* entry[+].resource = SZ1Vorstationaer
-* entry[+].resource = SZ1Stationaer
-* entry[+].resource = SZ1Nachstationaer
-* entry[+].resource = SZ1DRGFall
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Patient/SZ1Patient"
+  * resource = SZ1Patient
+* entry[+]
+  * fullUrl = "https://example.com/fhir/RelatedPerson/SZ1Mutter"
+  * resource = SZ1Mutter
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Coverage/SZ1VersicherungGesetzlich"
+  * resource = SZ1VersicherungGesetzlich
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Coverage/SZ1VersicherungSelbstzahler"
+  * resource = SZ1VersicherungSelbstzahler
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Encounter/SZ1Vorstationaer"
+  * resource = SZ1Vorstationaer
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Encounter/SZ1Stationaer"
+  * resource = SZ1Stationaer
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Encounter/SZ1Nachstationaer"
+  * resource = SZ1Nachstationaer
+* entry[+]
+  * fullUrl = "https://example.com/fhir/Account/SZ1DRGFall"
+  * resource = SZ1DRGFall

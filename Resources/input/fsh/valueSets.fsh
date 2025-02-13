@@ -94,25 +94,25 @@ Description: "Dieses Valueset enthält die Codes zur Beschreibung von Stillstatu
 * LOINC#LA29253-4 "Not currently breastfeeding"
 * LOINC#LA29252-6 "Currently breastfeeding"
 
-ValueSet: ISiKBesondereBehandlungsformReha
+ValueSet: ISiKBesondereBehandlungsformRehaVS
 Id: ISiKBesondereBehandlungsformReha
 Description: "Besondere Behandlungsform der Reha gemäß §301(4 UND 4A) SGB V. Vgl. Schlüsseltabelle 2.51 Besondere Behandlungsformen."
 * insert Meta
 * include codes from system ISiKBesondereBehandlungsformRehaCS
 
-ValueSet: ISiKBehandlungsergebnisReha
+ValueSet: ISiKBehandlungsergebnisRehaVS
 Id: ISiKBehandlungsergebnisReha
 Description: "Behandlungsergebnis Reha gemäß §301(4 UND 4A) SGB V. Diagnosenbezogene Bewertung des Behandlungsergebnisses für einen Versicherten/Berechtigten bei Entlassung aus der Reha-Maßnahme bzw. Stellung eines Antrags auf Verlängerung. Vgl. Schlüsseltabelle 2.71 Diagnose - Behandlungsergebnis."
 * insert Meta
 * include codes from system ISiKBehandlungsergebnisRehaCS
 
-ValueSet: ISiKEntlassformReha
+ValueSet: ISiKEntlassformRehaVS
 Id: ISiKEntlassformReha
 Description: "ISiK Entlassform Reha. Beschreibt Form und ggf. Weiterbehandlung der Entlassung eines Versicherten/Berechtigten aus verwaltungs- und medizinischer Sicht. Vgl. Schlüsseltabelle 2.107 Entlassungsform."
 * insert Meta
 * include codes from system ISiKEntlassformRehaCS
 
-ValueSet: ISiKUnterbrechnungReha
+ValueSet: ISiKUnterbrechnungRehaVS
 Id: ISiKUnterbrechnungReha
 Description: "ISiK Unterbrechung Reha. Dokumentiert die relevanten Gründe einer Unterbrechung einer Rehabilitationsmaßnahme im Einzelfall. Vgl. Schlüsseltabelle 2.111 Erläuterung zur Unterbrechung."
 * insert Meta
@@ -125,16 +125,6 @@ Id: current-smoking-status-uv-ips
 Title: "Current Smoking Status - IPS"
 Description: "HL7 LOINC value set for smoking status.  Based on the HL7 Vocab and Structured Doc WG (formerly TC) consensus - per US CDC submission 7/12/2012 for smoking status terms."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-* ^extension[=].valueCode = #pc
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension[=].valueInteger = 2
-* ^extension[=].valueInteger.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
-* ^extension[=].valueInteger.extension.valueCanonical = "http://hl7.org/fhir/uv/ips/ImplementationGuide/ig-uv-ips"
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* ^extension[=].valueCode = #trial-use
-* ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
-* ^extension[=].valueCode.extension.valueCanonical = "http://hl7.org/fhir/uv/ips/ImplementationGuide/ig-uv-ips"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "2.16.840.1.113883.11.22.59"

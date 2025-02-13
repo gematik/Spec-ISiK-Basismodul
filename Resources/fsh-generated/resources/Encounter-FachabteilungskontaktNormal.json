@@ -10,7 +10,7 @@
     {
       "coding": [
         {
-          "code": "einrichtungskontakt",
+          "code": "abteilungskontakt",
           "system": "http://fhir.de/CodeSystem/Kontaktebene"
         }
       ]
@@ -18,12 +18,21 @@
     {
       "coding": [
         {
-          "code": "operation",
-          "system": "http://fhir.de/CodeSystem/kontaktart-de"
+          "system": "http://fhir.de/CodeSystem/kontaktart-de",
+          "code": "operation"
         }
       ]
     }
   ],
+  "serviceType": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
+        "code": "2300",
+        "display": "Orthopädie"
+      }
+    ]
+  },
   "extension": [
     {
       "url": "http://fhir.de/StructureDefinition/Aufnahmegrund",
@@ -65,14 +74,6 @@
   "class": {
     "code": "IMP",
     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-  },
-  "serviceType": {
-    "coding": [
-      {
-        "code": "218",
-        "system": "http://terminology.hl7.org/CodeSystem/service-type"
-      }
-    ]
   },
   "subject": {
     "reference": "Patient/PatientinNormal"

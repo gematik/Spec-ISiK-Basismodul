@@ -416,16 +416,16 @@ Context: Encounter.hospitalization.dischargeDisposition
     UnterbrechnungReha ..1 MS
 * extension[Entlassform]
   * value[x] only Coding
-  * valueCoding from ISiKEntlassformReha (extensible)
+  * valueCoding from ISiKEntlassformRehaVS (extensible)
 * extension[BesondereBehandlung]
   * value[x] only Coding
-  * valueCoding from ISiKBesondereBehandlungsformReha (required)
+  * valueCoding from ISiKBesondereBehandlungsformRehaVS (required)
 * extension[BehandlungsergebnisReha]
   * value[x] only Coding
-  * valueCoding from ISiKBehandlungsergebnisReha (required)
+  * valueCoding from ISiKBehandlungsergebnisRehaVS (required)
 * extension[UnterbrechnungReha]
   * value[x] only Coding
-  * valueCoding from ISiKUnterbrechnungReha (required)
+  * valueCoding from ISiKUnterbrechnungRehaVS (required)
 
 Instance: Fachabteilungskontakt
 InstanceOf: ISiKKontaktGesundheitseinrichtung
@@ -494,9 +494,9 @@ Usage: #example
 * identifier.value = "0123456789"
 * status = #finished
 * class = $v3-ActCode#IMP
-* type[0] = $Kontaktebene#einrichtungskontakt
-* type[1] = $Kontaktart-de#operation
-* serviceType.coding = $Service-Type#218
+* type[Kontaktebene] = $Kontaktebene#abteilungskontakt
+* type[KontaktArt] = $Kontaktart-de#operation
+* serviceType.coding[Fachabteilungsschluessel] = CodeSystemFachabteilungsschluessel#2300 "Orthopädie"
 * subject = Reference(PatientinNormal)
 * period.start = "2024-10-21"
 * period.end = "2025-01-01"
@@ -580,7 +580,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * description = "The actual start date of the Encounter (Backport from R5). The parameter cannot repeat or have multiple values."
 * insert MetaInstance
-* name = "date-start"
+* name = "DateStart"
 * code = #date-start
 * base = #Encounter
 * type = #date
@@ -600,7 +600,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * description = "The actual end date of the Encounter (Backport from R5). The parameter cannot repeat or have multiple values."
 * insert MetaInstance
-* name = "end-date"
+* name = "EndDate"
 * code = #end-date
 * base = #Encounter
 * type = #date

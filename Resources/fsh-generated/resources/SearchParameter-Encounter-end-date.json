@@ -7,8 +7,8 @@
   "status": "active",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2025-02-10",
-  "name": "end-date",
+  "date": "2025-02-11",
+  "name": "EndDate",
   "code": "end-date",
   "base": [
     "Encounter"

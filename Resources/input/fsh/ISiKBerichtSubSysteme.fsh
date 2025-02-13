@@ -55,10 +55,10 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
   Wenn es sich bei dem verwendeten Identifier um eine OID oder UUID handelt, so ist hier der Wert `urn:ietf:rfc:3986` anzugeben und in `Identifier.value` das jeweilige Präfix `urn:uuid:` bzw. `urn:oid:` zu verwenden.  
   Beispiel:
 ```xml  
-<identifier> 
-    <system value="urn:ietf:rfc:3986">  
-    <value value="urn:oid:2.16.840.1.113883.6.96"> 
-</identifier>
+&lt;identifier&gt; 
+    &lt;system value="urn:ietf:rfc:3986"&gt;  
+    &lt;value value="urn:oid:2.16.840.1.113883.6.96"&gt; 
+&lt;/identifier&gt;
 ```
 """
   * system MS
@@ -72,7 +72,7 @@ Hinweise zu Inkompatibilitäten können über die [Portalseite](https://service.
     * ^comment = "Enthält den eigentlichen Wert des Identifiers.  
     **Begründung Pflichtfeld:** Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden."
 * status = #final (exactly)
-  * ^short = " Status des Dokumentes"
+  * ^short = "Status des Dokumentes"
   * ^comment = "Im Kontext diese Moduls ist nur der Austausch finaler Berichte vorgesehen. 
   Ein Mechanismus zur Änderung oder Ersetzung bereits übermittelter Daten ist derzeit nicht spezifiziert. 
   Hier ist stets der Wert `final` anzugeben."
@@ -184,7 +184,7 @@ Die Mindestanforderungen an den Inhalt der menschenlesbaren Repräsentation umfa
   * section MS
     * ^short = "Unterkapitel"
 
-Instance: composition-blutdruck
+Instance: CompositionExampleBlutdruck
 InstanceOf: ISiKBerichtSubSysteme
 Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">  <p> Familienname:Fürstin von Musterfrau</p>   <p> Geburtsdatum:1964-08-12</p>   <p> PID:TestPID</p>   <p> Bericht-Status:final</p>   <p> Bericht-Typ:Berichtzusammenfassung / Document Summary</p>   <p> Datum:03.05.2022</p>   <p> Titel:Blutdruckmessung vom 3.5.2022</p>   <p> Autor:Gerät XY, Fa. Z, Modell T</p></div>"

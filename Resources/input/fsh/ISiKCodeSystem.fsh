@@ -39,18 +39,14 @@ Darüber hinausgehend ist ein Use Case im Kontext der Katalogabfrage folgender: 
   * ^comment = "**Bedeutung:** Angabe, ob es sich um eine vollständige Repräsentation des CodeSystems oder nur um einen Auszug handelt.
     **Hinweise:** Alle in einem System möglichen Status-Werte müssen über FHIR korrekt repräsentiert werden können, mindestens jedoch die Status-Werte `fragment` und `complete`. Deren korrekte Abbildung wird im Rahmen des Bestätigungsverfahrens überprüft."
 * concept 1.. MS
-  * ^short = ""
   * ^comment = "**Bedeutung:** Angabe der Konzepte, aus denen sich das CodeSystem zusammensetzt.  
      **Hinweise:** Es MUSS mindestens ein Code und ein Anzeigetext spezifiziert werden."
   * code MS
-    * ^short = ""
-    * ^comment = ""
+    * ^comment = "Der eindeutige Code, der das Konzept im CodeSystem identifiziert."
   * display 1.. MS
-    * ^short = ""
-    * ^comment = ""
+    * ^comment = "Die menschlich lesbare Darstellung des Konzepts."
   * definition MS
-    * ^short = ""
-    * ^comment = ""
+    * ^comment = "Eine ausführliche Beschreibung oder Definition des Konzepts."
 
 Instance: CodeSystemExample
 InstanceOf: ISiKCodeSystem
@@ -60,6 +56,7 @@ Usage: #example
 * name = "TestKatalog"
 * status = #active
 * content = #complete
+* caseSensitive = true
 * concept[0].code = #test
 * concept[0].display = "Test"
 * concept[0].definition = "Dies ist ein Test-Code"

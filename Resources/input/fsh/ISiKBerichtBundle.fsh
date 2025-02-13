@@ -30,12 +30,15 @@ Description: "Beispiel für ein Bundle mit Composition Blutdruck, das folgende U
 * identifier[=].system = "https://fhir.krankenhaus.example/sid/subsystem-a/berichtbundlenummer"
 * identifier[=].value = "0123456789"
 * timestamp = "2022-05-03T17:57:34+01:00"
-* entry[0].resource = composition-blutdruck
-* entry[=].fullUrl = "urn:uuid:74b471ba-6fc9-11ed-a1eb-0242ac120002"
-* entry[+].resource = PatientinMusterfrauMinimal
-* entry[=].fullUrl = "urn:uuid:3bada18a-6fd2-11ed-a1eb-0242ac112345"
-* entry[+].resource = FachabteilungskontaktMinimal
-* entry[=].fullUrl = "urn:uuid:74b46c1a-6fc9-11ed-a1eb-0242ac198765"
+* entry[+]
+  * resource = CompositionExampleBlutdruck
+  * fullUrl = "urn:uuid:74b471ba-6fc9-11ed-a1eb-0242ac120002"
+* entry[+]
+  * resource = PatientinMusterfrauMinimal
+  * fullUrl = "urn:uuid:3bada18a-6fd2-11ed-a1eb-0242ac112345"
+* entry[+]
+  * resource = FachabteilungskontaktMinimal
+  * fullUrl = "urn:uuid:74b46c1a-6fc9-11ed-a1eb-0242ac198765"
 
 
 Instance: PatientinMusterfrauMinimal

@@ -6,7 +6,7 @@
   "name": "ISiKAngehoeriger",
   "status": "active",
   "experimental": false,
-  "date": "2025-02-10",
+  "date": "2025-02-11",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil ermöglicht die Darstellung von Angehörigen in ISiK Szenarien.  \n### Motivation\nDer Angehörige wird vor allem im Zusammenhang mit Anwendungsszenarien verwendet,\n in denen das Versicherungsverhältnis eine Rolle spielt. \n Hier können Angehörige, bspw. der hauptversicherte Elternteil \n eines minderjährigen Kindes, in der Familienversicherung sein. \n In Selbstzahler-Szenarien können Angehörige die Zahler für eine \n im Krankenhaus erbrachte Leistung sein.\nIn FHIR werden Angehörige von Patienten mit der RelatedPerson-Ressource repräsentiert.\n\n### Kompatibilität\nFür das Profil ISiKAngehoeriger wurde bis zum Zeitpunkt der Veröffentlichung kein Abgleich der Kompatibilität zu anderen Profilen (der KBV und der Medizininformatik-Initiative) durchgeführt.\n\nHinweise zu Inkompatibilitäten können über die [Portalseite](https://service.gematik.de/servicedesk/customer/portal/16) gemeldet werden.",
   "fhirVersion": "4.0.1",
@@ -66,14 +66,6 @@
         "short": "Offizieller Name der angehörigen Person",
         "comment": "Aufgrund der primären Nutzung von Angehörigen-Informationen im ISiK-Kontext als Brief- und Rechnungsempfänger, \n  ist die Angabe des offiziellen Namens relevant.\n  Wenn kein Name vorliegt, MUSS die [data-absent-reason-Extension](https://www.hl7.org/fhir/R4/extension-data-absent-reason.html) eingesetzt werden.   \n  **Weitere Hinweise:** siehe [Deutsche Basisprofile](https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Patient?version=current#ig-markdown-Ressourcen-Patient-Name)",
         "min": 1,
-        "type": [
-          {
-            "code": "HumanName",
-            "profile": [
-              "http://fhir.de/StructureDefinition/humanname-de-basis"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -82,6 +74,17 @@
         "sliceName": "Name",
         "min": 1,
         "max": "1",
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://fhir.de/StructureDefinition/humanname-de-basis"
+            ]
+          }
+        ],
+        "patternHumanName": {
+          "use": "official"
+        },
         "mustSupport": true
       },
       {
@@ -101,7 +104,6 @@
       {
         "id": "RelatedPerson.name:Name.given",
         "path": "RelatedPerson.name.given",
-        "short": "Vorname ",
         "comment": "Kann mehrfach verwendet werden, um den Rufnamen sowie weitere Vornamen, Mittelnamen oder Mittel-Initialen abzubilden.\n      **Begründung Pflichtfeld:** Ein offizieller Name ist nur zulässig, wenn der Nachname und mindestens ein Vorname angegeben sind.",
         "mustSupport": true
       },
@@ -206,21 +208,19 @@
         "id": "RelatedPerson.address:Strassenanschrift.line.extension:Strasse",
         "path": "RelatedPerson.address.line.extension",
         "sliceName": "Strasse",
-        "short": "Strassenname ",
+        "short": "Strassenname",
         "comment": "Strassenname (ohne Hausnummer).\n        Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
       },
       {
         "id": "RelatedPerson.address:Strassenanschrift.line.extension:Hausnummer",
         "path": "RelatedPerson.address.line.extension",
         "sliceName": "Hausnummer",
-        "short": "Hausnummer ",
         "comment": "Hausnummer, sowie Zusätze (Appartmentnummer, Etage...). \n        Bei Angabe einer Hausnummer in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.   \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
       },
       {
         "id": "RelatedPerson.address:Strassenanschrift.line.extension:Adresszusatz",
         "path": "RelatedPerson.address.line.extension",
         "sliceName": "Adresszusatz",
-        "short": "Adresszusatz ",
         "comment": "Zusätzliche Informationen, wie z.B. '3. Etage', 'Appartment C'.\n        Bei Angabe einer Zusatzinformation in dieser Extension muss diese auch in Address.line angegeben werden,\n        um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.  \n        **Begründung MS:** Erforderlich für die verlustfreie Kommunikation von VSDM-Daten."
       },
       {
@@ -242,7 +242,6 @@
       {
         "id": "RelatedPerson.address:Strassenanschrift.postalCode",
         "path": "RelatedPerson.address.postalCode",
-        "short": "Postleitzahl ",
         "comment": "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar.",
         "min": 1,
         "mustSupport": true
@@ -337,7 +336,6 @@
       {
         "id": "RelatedPerson.address:Postfach.postalCode",
         "path": "RelatedPerson.address.postalCode",
-        "short": "Postleitzahl ",
         "comment": "**Begründung Pflichtfeld:** Ohne diese Angabe ist die Adresse nicht zustellbar.",
         "min": 1,
         "mustSupport": true

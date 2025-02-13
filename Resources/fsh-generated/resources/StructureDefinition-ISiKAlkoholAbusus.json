@@ -7,7 +7,7 @@
   "title": "ISiK Alkohol Abusus",
   "status": "active",
   "experimental": false,
-  "date": "2025-02-10",
+  "date": "2025-02-11",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -45,6 +45,13 @@
         "patternCoding": {
           "code": "74043-1",
           "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "patternReference": {
+          "reference": "Practitioner/PractitionerWalterArzt"
         }
       },
       {

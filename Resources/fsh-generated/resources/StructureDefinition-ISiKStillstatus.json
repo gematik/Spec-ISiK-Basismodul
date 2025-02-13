@@ -7,7 +7,7 @@
   "title": "ISiKStillstatus",
   "status": "active",
   "experimental": false,
-  "date": "2025-02-10",
+  "date": "2025-02-11",
   "publisher": "gematik GmbH",
   "description": "Profil zur Abbildung ob gestillt/Muttermilch abgepumpt und gefüttert wird",
   "fhirVersion": "4.0.1",
@@ -34,6 +34,13 @@
         "patternCoding": {
           "code": "63895-7",
           "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "patternReference": {
+          "reference": "Practitioner/PractitionerWalterArzt"
         }
       },
       {
