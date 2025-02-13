@@ -1,5 +1,5 @@
 - name: Index
-  filename: Einfuehrung.md
+  filename: Index.page.md
 - name: Anwendungsfälle (Use Cases)
   filename: UseCases.page.md
 - name: Abbildung des Konstrukts "Fall"
