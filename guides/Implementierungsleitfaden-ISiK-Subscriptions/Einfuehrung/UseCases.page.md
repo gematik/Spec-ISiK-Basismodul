@@ -3,6 +3,10 @@ topic: ImplementationGuide-markdown-UseCasesAnwendung-UseCases
 ---
 # Use Cases - Übersicht
 
+Die folgenden Anwendungsfälle stellen eine Auswahl möglicher Einsatzszenarien dar und sind nicht
+abschließend. Je nach Bedarf und Systemlandschaft können weitere Subscriptions für spezifische
+Anforderungen definiert werden.
+
 ## 1. Patient oder Fall Merge
 
 * **Zusammenführung von Patientendaten:** Wenn zwei Patientenakten aufgrund einer fehlerhaften
